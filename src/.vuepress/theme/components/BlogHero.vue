@@ -1,9 +1,5 @@
 <script lang="ts">
-import {
-  usePageFrontmatter,
-  usePageData,
-  withBase,
-} from "vuepress/client";
+import { usePageFrontmatter, usePageData, withBase } from "vuepress/client";
 import {
   computed,
   onMounted,
@@ -83,7 +79,7 @@ export default defineComponent({
       BingApi.request().then((res) => {
         if (res.status == 200) {
           for (const [index, image] of res.data.images.entries()) {
-            image.url = `https://cn.bing.com/${image.url}`;
+            image.url = `https://www.bing.com/${image.url}`;
             var n = new Image();
             n.src = image.url;
             n.onload = () => {};
