@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://oragekk.me/rss.xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <atom:link href="https://oragekk.me/rss.xml" rel="self" type="application/rss+xml"/>
+    <title>TODO&amp;apos;s Blog</title>
+    <link>https://oragekk.me/</link>
+    <description>TODO</description>
+    <language>zh-CN</language>
+    <pubDate>Mon, 01 Apr 2024 12:15:03 GMT</pubDate>
+    <lastBuildDate>Mon, 01 Apr 2024 12:15:03 GMT</lastBuildDate>
+    <generator>@vuepress/plugin-feed</generator>
+    <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+    <category>Blog</category>
+    <category>About</category>
+    <item>
+      <title>关于本站</title>
+      <link>https://oragekk.me/about.html</link>
+      <guid>https://oragekk.me/about.html</guid>
+      <source url="https://oragekk.me/rss.xml">关于本站</source>
+      <description>关于本站 ✨📒 详细记录一下此次建站过程 开始 之前的博客是基于jekyll打造的，要添加和定制化的东西都只能基于html+js+css完成，有些麻烦，所以一直有想更换引擎的想法 直到偶然间发现vuepress，首先是被vue3+typescript+vite吸引，然后看到默认主题属实有点不合符我的期待，自己动手成本又太高，也没有太急着去折腾，直到无...</description>
+      <category>Blog</category>
+      <pubDate>Tue, 14 Mar 2023 21:45:45 GMT</pubDate>
+      <content:encoded><![CDATA[
+<div class="hint-container info">
+<p class="hint-container-title">✨📒</p>
+<p>详细记录一下此次建站过程</p>
+</div>
+<h2>开始</h2>
+<p>之前的博客是基于jekyll打造的，要添加和定制化的东西都只能基于html+js+css完成，有些麻烦，所以一直有想更换引擎的想法<br>
+直到偶然间发现vuepress，首先是被<code>vue3</code>+<code>typescript</code>+<code>vite</code>吸引，然后看到默认主题属实有点不合符我的期待，自己动手成本又太高，也没有太急着去折腾，直到无意中发现了<br>
+<a href="https://theme-hope.vuejs.press/zh/" target="_blank" rel="noopener noreferrer">vuepress-theme-hope</a>，漂亮的外观一下子就吸引到我了，然后去官网深入研究了一番，发现二次开发的成本并不高，对于我来说比较友好，基本都是基于选项的配置型，和一小部分的定制开发，也可以基于vue来写，这让我觉得很合适。所以，一步步折腾了起来……</p>
+<h2>Markdown增强</h2>
+<p>hope主题的markdown效果是出乎意料的好，而且支持了很多普通markdown不支持的东西，如自定义容器、带tab的代码块，最方便的是可以直接写流程图了，可选高亮主题（本站代码高亮基于shikiPlugin,虽不如默认的prismjs轻量高效，但能提供更准确的语法高亮）具体效果看这里☞<a href="/demo/markdown.html" target="_blank">Markdown展示</a></p>
+<h2>目录结构</h2>
+<div class="language-bash line-numbers-mode" data-ext="sh" data-title="sh"><pre class="shiki one-dark-pro" style="background-color:#282c34;color:#abb2bf" tabindex="0"><code><span class="line"><span style="color:#56B6C2">.</span></span>
+<span class="line"><span style="color:#61AFEF">├──</span><span style="color:#98C379"> .github</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   ├── ISSUE_TEMPLATE # issus 模版</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   └── bug-report.yml</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   └── workflows</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">       └── deploy-docs.yml # 推送脚本</span></span>
+<span class="line"><span style="color:#61AFEF">├──</span><span style="color:#98C379"> CNAME</span></span>
+<span class="line"><span style="color:#61AFEF">├──</span><span style="color:#98C379"> LICENSE</span></span>
+<span class="line"><span style="color:#61AFEF">├──</span><span style="color:#98C379"> README.md</span></span>
+<span class="line"><span style="color:#61AFEF">├──</span><span style="color:#98C379"> api</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   └── proxy.js # 跨域代理</span></span>
+<span class="line"><span style="color:#61AFEF">├──</span><span style="color:#98C379"> env.d.ts</span></span>
+<span class="line"><span style="color:#61AFEF">├──</span><span style="color:#98C379"> package.json</span></span>
+<span class="line"><span style="color:#61AFEF">├──</span><span style="color:#98C379"> pnpm-lock.yaml</span></span>
+<span class="line"><span style="color:#61AFEF">├──</span><span style="color:#98C379"> script</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   ├── requirements.txt </span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   └── submit.py # Github Actions 推送URL使用脚本</span></span>
+<span class="line"><span style="color:#61AFEF">├──</span><span style="color:#98C379"> src</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   ├── .vuepress</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   ├── client.ts # 客户端配置文件</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   ├── components</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   │   ├── MyCoverLink.vue # 友链组件</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   │   └── Mylink.vue # 卡片组件</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   ├── config.ts # vuepress配置文件</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   ├── data # 数据</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   ├── navbar</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   ├── plugins</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   │   ├── vuepress-plugin-canvas</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   │   ├── vuepress-plugin-gradient-cover</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   │   ├── vuepress-plugin-hitokoto</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   │   ├── vuepress-plugin-live2DAssist</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   │   └── vuepress-plugin-popper</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   ├── public</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   │   ├── assets # 资源</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   ├── sidebar</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   ├── styles</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   ├── theme</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   │   ├── api</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   │   │   └── bing.ts # bing 每日壁纸</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   │   ├── components #自定义组件</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   │   ├── index.ts</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   │   ├── layouts # 自定义布局</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   │   └── utils</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   │       ├── busuanzi.pure.js # 不蒜子统计</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   │       └── time.ts #运行时间</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   └── theme.ts # 主题配置文件</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   └── README.md</span></span>
+<span class="line"><span style="color:#61AFEF">├──</span><span style="color:#98C379"> tsconfig.json</span></span>
+<span class="line"><span style="color:#61AFEF">└──</span><span style="color:#98C379"> vercel.json # vercel 配置文件</span></span>
+<span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>框架支持</h2>
+<p><a href="https://v2.vuepress.vuejs.org/zh/" target="_blank" rel="noopener noreferrer">vuepress2.x</a></p>
+<h2>主题支持</h2>
+<p><a href="https://theme-hope.vuejs.press/zh/" target="_blank" rel="noopener noreferrer">vuepress-theme-hope</a></p>
+<h2>自定义内容</h2>
+<p>基于原主题进行了继承，个性化内容如下，主要自定义内容分为</p>
+<ol>
+<li>
+<p><strong>自定义布局</strong></p>
+<ul>
+<li>NotFound.vue</li>
+<li>Layout.vue(增加打赏组件)</li>
+<li>News.vue(说说列表布局)</li>
+</ul>
+</li>
+<li>
+<p><strong>自定义组件</strong></p>
+<ul>
+<li>BlogHero.vue</li>
+<li>PageFooter.vue</li>
+<li>Sponsor.vue（打赏组件）</li>
+<li>NewsList.vue （说说列表）</li>
+<li>NewsItem.vue （说说item）</li>
+</ul>
+</li>
+<li>
+<p><strong>本地插件开发</strong></p>
+<ul>
+<li>vuepress-plugin-canvas（支持彩虹背景和动态几何图形两种）</li>
+<li>vuepress-plugin-gradient-cover （遮罩背景）</li>
+<li>vuepress-plugin-hitokoto （一言插件）</li>
+<li>vuepress-plugin-live2DAssist （看板娘辅助，由于子页有sidebar，看板娘会挡住，所以写了一个子页隐藏的小东西）</li>
+<li>vuepress-plugin-popper （鼠标特效，基于<a href="https://github.com/moefyit/moefy-canvas" target="_blank" rel="noopener noreferrer">@moefy-canvas/theme-popper</a>）</li>
+</ul>
+</li>
+<li>
+<p><strong>引用外部内容</strong></p>
+<ul>
+<li>
+<p><a href="https://github.com/oh-my-live2d/vuepress-plugin-oh-my-live2d" target="_blank" rel="noopener noreferrer">vuepress-plugin-oh-my-live2d</a> 看板娘插件</p>
+</li>
+<li>
+<p>不蒜子统计</p>
+</li>
+<li>
+<p><a href="https://github.com/moefyit/moefy-canvas" target="_blank" rel="noopener noreferrer">@moefy-canvas/theme-popper</a>原有插件只支持vuepress1.x，自己基于moefy-canvas进行了支持vuepress2.x的本地化插件开发</p>
+</li>
+<li>
+<p><a href="https://v2.vuepress.vuejs.org/zh/reference/plugin/google-analytics.html" target="_blank" rel="noopener noreferrer">@vuepress/plugin-google-analytics</a> 支持Google Analytics 4 正好看到通知原来的UA也要被强制转换了，所以更换了G4</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>配置内容</strong></p>
+<ul>
+<li>navbar</li>
+<li>sidebar</li>
+<li>评论基于 <a href="https://waline.js.org/" target="_blank" rel="noopener noreferrer">Waline</a></li>
+<li>搜索基于<a href="https://www.algolia.com/developers/?utm_content=powered_by&amp;utm_source=localhost&amp;utm_medium=referral&amp;utm_campaign=docsearch" target="_blank" rel="noopener noreferrer">algolia</a></li>
+<li>启用 copyright 版权信息插件</li>
+<li>feed rss插件</li>
+<li>增加文章类型-说说，为说说markdown图片添加预览选择器</li>
+</ul>
+</li>
+<li>
+<p><strong>零碎</strong></p>
+<ul>
+<li>运行时间统计</li>
+<li>CSS 样式美化</li>
+<li>引入字体，品如手写体，夏行楷体</li>
+<li>wanlie 增加自定义emoji，并修改展示样式</li>
+<li>个性log</li>
+<li>自动推送新文章url到搜索引擎（百度、Bing、Google）👉<a href="/platform/github/github-action">详细配置</a></li>
+</ul>
+</li>
+</ol>
+<h2>总结</h2>
+<blockquote>
+<p>未完待续，持续优化中</p>
+</blockquote>
+<p>本地插件，喜欢自取，源码公开，点击右上角，github图标即可，当然不要忘记点个✨哦</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>关于我</title>
+      <link>https://oragekk.me/intro.html</link>
+      <guid>https://oragekk.me/intro.html</guid>
+      <source url="https://oragekk.me/rss.xml">关于我</source>
+      <description>关于我 Profile Exploration &amp; geek enthusiast, full-stack front-end engineer, UX Designer | Currently focusing on cross-platform development with main directions in iOS, ReactNative...</description>
+      <category>About</category>
+      <pubDate>Sun, 12 Mar 2023 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+
+<h2>Profile</h2>
+<p><em>Exploration &amp; geek enthusiast, full-stack front-end engineer, UX Designer | Currently focusing on cross-platform development with main directions in iOS, ReactNative, Flutter, and Vue | Discovering a bigger world together with you.</em></p>
+<div class="hint-container tip">
+<p class="hint-container-title">Profile</p>
+<p>探索 &amp; 极客 爱好者，大前端工程师，用户体验设计师 |目前主要研究方向在跨平台开发上，iOS、ReactNative、Flutter、Vue是主要方向| 期待与你一起发现更大的世界</p>
+</div>
+<h2>Skills</h2>
+<h3>Languages</h3>
+<img src="https://skillicons.dev/icons?i=c,cs,swift,javascript,ts,dart,python,html,css,java,regex,md,sass,bash&amp;theme=dark&amp;&amp;perline=10" alt="Skills">
+<h3>Frameworks</h3>
+<img src="https://skillicons.dev/icons?i=flutter,vue,nodejs,react,reactivex,redux,dotnet&amp;theme=dark&amp;&amp;perline=10" alt="Skills">
+<h3>Databases</h3>
+<img src="https://skillicons.dev/icons?i=sqlite,mysql,redis&amp;theme=dark&amp;&amp;perline=10" alt="Skills">
+<h3>Hardwares</h3>
+<img src="https://skillicons.dev/icons?i=raspberrypi&amp;theme=dark&amp;&amp;perline=10" alt="Skills">
+<h3>Others</h3>
+<img src="https://skillicons.dev/icons?i=vim,visualstudio,vscode,androidstudio,aws,figma,gradle,gcp,git,github,gitlab,idea,jenkins,linux,postman,powershell,linkedin,stackoverflow,svg,tensorflow,twitter&amp;theme=dark&amp;&amp;perline=10" alt="Skills">
+<h2>Github Summary</h2>
+<img src="https://github-trophies.vercel.app/?username=oragekk&amp;theme=radical&amp;margin-w=25" alt="Github Summary">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=oragekk&amp;theme=radical&amp;layout=compact&amp;bg_color=30,ef475d,904e95&amp;title_color=fff&amp;text_color=fff">
+<img src="https://github-readme-stats.vercel.app/api?username=oragekk&amp;count_private=true&amp;show_icons=true&amp;theme=radical&amp;bg_color=30,ef475d,904e95&amp;title_color=fff&amp;text_color=fff">
+<h2>Preview</h2>
+<figure><img src="https://count.getloli.com/get/@:oragekk?theme=gelbooru-h" alt=":Augenestern-creator" tabindex="0" loading="lazy"><figcaption>:Augenestern-creator</figcaption></figure>
+<h2>Activity Graph</h2>
+<figure><a href="https://github.com/OrageKK/github-readme-activity-graph" target="_blank" rel="noopener noreferrer"><img src="https://github-readme-activity-graph-sandy.vercel.app/graph?username=oragekk&amp;theme=dracula" alt="Ashutosh's github activity graph" tabindex="0" loading="lazy"></a><figcaption>Ashutosh's github activity graph</figcaption></figure>
+<h2>关于本站</h2>
+<p><a href="/about">传送门</a></p>
+]]></content:encoded>
+      <enclosure url="https://count.getloli.com/get/@:oragekk?theme=gelbooru-h" type="image/"/>
+    </item>
+  </channel>
+</rss>
