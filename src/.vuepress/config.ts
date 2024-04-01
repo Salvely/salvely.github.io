@@ -1,6 +1,6 @@
 import { defineUserConfig } from "vuepress";
 import { getDirname, path } from "vuepress/utils";
-import { viteBundler } from '@vuepress/bundler-vite'
+import { viteBundler } from "@vuepress/bundler-vite";
 import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 // import { ohmylive2dPlugin } from "vuepress-plugin-oh-my-live2d";
 import {
@@ -34,6 +34,10 @@ export default defineUserConfig({
     "@MyCoverLink": path.resolve(__dirname, "./components/MyCoverLink.vue"),
     "@Design": path.resolve(__dirname, "./data/design.ts"),
     "@Api": path.resolve(__dirname, "./data/api.ts"),
+    "@theme-hope/modules/blog/components/BlogHero": path.resolve(
+      __dirname,
+      "./components/BlogHero.vue"
+    ),
   },
 
   theme: theme,
@@ -50,7 +54,7 @@ export default defineUserConfig({
             rewrite: (path) => path.replace(/^\/bing/, ""),
           },
         },
-      }
+      },
     },
     // vuePluginOptions: {},
   }),
