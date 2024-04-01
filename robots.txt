@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://oragekk.me/sitemap.xml
+Sitemap: https://salvely.github.io/sitemap.xml

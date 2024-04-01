@@ -1,22 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://oragekk.me/rss.xsl"?>
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://salvely.github.io/rss.xsl"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <atom:link href="https://oragekk.me/rss.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://salvely.github.io/rss.xml" rel="self" type="application/rss+xml"/>
     <title>TODO&amp;apos;s Blog</title>
-    <link>https://oragekk.me/</link>
+    <link>https://salvely.github.io/</link>
     <description>TODO</description>
     <language>zh-CN</language>
-    <pubDate>Mon, 01 Apr 2024 12:29:40 GMT</pubDate>
-    <lastBuildDate>Mon, 01 Apr 2024 12:29:40 GMT</lastBuildDate>
+    <pubDate>Mon, 01 Apr 2024 14:41:32 GMT</pubDate>
+    <lastBuildDate>Mon, 01 Apr 2024 14:41:32 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>Blog</category>
     <category>About</category>
     <item>
       <title>关于本站</title>
-      <link>https://oragekk.me/about.html</link>
-      <guid>https://oragekk.me/about.html</guid>
-      <source url="https://oragekk.me/rss.xml">关于本站</source>
+      <link>https://salvely.github.io/about.html</link>
+      <guid>https://salvely.github.io/about.html</guid>
+      <source url="https://salvely.github.io/rss.xml">关于本站</source>
       <description>关于本站 ✨📒 详细记录一下此次建站过程 开始 之前的博客是基于jekyll打造的，要添加和定制化的东西都只能基于html+js+css完成，有些麻烦，所以一直有想更换引擎的想法 直到偶然间发现vuepress，首先是被vue3+typescript+vite吸引，然后看到默认主题属实有点不合符我的期待，自己动手成本又太高，也没有太急着去折腾，直到无...</description>
       <category>Blog</category>
       <pubDate>Tue, 14 Mar 2023 21:45:45 GMT</pubDate>
@@ -166,9 +166,9 @@
     </item>
     <item>
       <title>关于我</title>
-      <link>https://oragekk.me/intro.html</link>
-      <guid>https://oragekk.me/intro.html</guid>
-      <source url="https://oragekk.me/rss.xml">关于我</source>
+      <link>https://salvely.github.io/intro.html</link>
+      <guid>https://salvely.github.io/intro.html</guid>
+      <source url="https://salvely.github.io/rss.xml">关于我</source>
       <description>关于我 Profile Exploration &amp; geek enthusiast, full-stack front-end engineer, UX Designer | Currently focusing on cross-platform development with main directions in iOS, ReactNative...</description>
       <category>About</category>
       <pubDate>Sun, 12 Mar 2023 00:00:00 GMT</pubDate>
@@ -192,17 +192,17 @@
 <h3>Others</h3>
 <img src="https://skillicons.dev/icons?i=vim,visualstudio,vscode,androidstudio,aws,figma,gradle,gcp,git,github,gitlab,idea,jenkins,linux,postman,powershell,linkedin,stackoverflow,svg,tensorflow,twitter&amp;theme=dark&amp;&amp;perline=10" alt="Skills">
 <h2>Github Summary</h2>
-<img src="https://github-trophies.vercel.app/?username=oragekk&amp;theme=radical&amp;margin-w=25" alt="Github Summary">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=oragekk&amp;theme=radical&amp;layout=compact&amp;bg_color=30,ef475d,904e95&amp;title_color=fff&amp;text_color=fff">
-<img src="https://github-readme-stats.vercel.app/api?username=oragekk&amp;count_private=true&amp;show_icons=true&amp;theme=radical&amp;bg_color=30,ef475d,904e95&amp;title_color=fff&amp;text_color=fff">
+<img src="https://github-trophies.vercel.app/?username=salvely&amp;theme=radical&amp;margin-w=25" alt="Github Summary">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=salvely&amp;theme=radical&amp;layout=compact&amp;bg_color=30,ef475d,904e95&amp;title_color=fff&amp;text_color=fff">
+<img src="https://github-readme-stats.vercel.app/api?username=salvely&amp;count_private=true&amp;show_icons=true&amp;theme=radical&amp;bg_color=30,ef475d,904e95&amp;title_color=fff&amp;text_color=fff">
 <h2>Preview</h2>
-<figure><img src="https://count.getloli.com/get/@:oragekk?theme=gelbooru-h" alt=":Augenestern-creator" tabindex="0" loading="lazy"><figcaption>:Augenestern-creator</figcaption></figure>
+<figure><img src="https://count.getloli.com/get/@:salvely?theme=gelbooru-h" alt=":Augenestern-creator" tabindex="0" loading="lazy"><figcaption>:Augenestern-creator</figcaption></figure>
 <h2>Activity Graph</h2>
-<figure><a href="https://github.com/OrageKK/github-readme-activity-graph" target="_blank" rel="noopener noreferrer"><img src="https://github-readme-activity-graph-sandy.vercel.app/graph?username=oragekk&amp;theme=dracula" alt="Ashutosh's github activity graph" tabindex="0" loading="lazy"></a><figcaption>Ashutosh's github activity graph</figcaption></figure>
+<figure><a href="https://github.com/salvely/github-readme-activity-graph" target="_blank" rel="noopener noreferrer"><img src="https://github-readme-activity-graph-sandy.vercel.app/graph?username=salvely&amp;theme=dracula" alt="Ashutosh's github activity graph" tabindex="0" loading="lazy"></a><figcaption>Ashutosh's github activity graph</figcaption></figure>
 <h2>关于本站</h2>
 <p><a href="/about">传送门</a></p>
 ]]></content:encoded>
-      <enclosure url="https://count.getloli.com/get/@:oragekk?theme=gelbooru-h" type="image/"/>
+      <enclosure url="https://count.getloli.com/get/@:salvely?theme=gelbooru-h" type="image/"/>
     </item>
   </channel>
 </rss>
