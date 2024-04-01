@@ -23,8 +23,8 @@ import MyCoverLink from "@MyCoverLink";
 ```yml
 昵称: "TODO",
 简介: "TODO",
-头像: "https://oragekk.me/logo.svg",
-连接: "https://oragekk.me/"
+头像: "https://salvely.github.io/logo.svg",
+连接: "https://salvely.github.io/"
 ```
 
 @tab json
@@ -33,8 +33,8 @@ import MyCoverLink from "@MyCoverLink";
 {
   "name": "TODO",
   "desc": "TODO",
-  "ico": "https://oragekk.me/logo.svg",
-  "link": "https://oragekk.me/"
+  "ico": "https://salvely.github.io/logo.svg",
+  "link": "https://salvely.github.io/"
 }
 ```
 @tab yml
@@ -42,8 +42,8 @@ import MyCoverLink from "@MyCoverLink";
 ```yml
 - name: "TODO",
 - desc: "TODO",
-- ico: "https://oragekk.me/logo.svg",
-- link: "https://oragekk.me/"
+- ico: "https://salvely.github.io/logo.svg",
+- link: "https://salvely.github.io/"
 ```
 
 :::

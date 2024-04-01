@@ -103,7 +103,7 @@ export default defineUserConfig({
     docsearchPlugin({
       appId: "PI9QTF572N",
       apiKey: "07e2432555d8ecdd3fb72978f0a05cdc",
-      indexName: "oragekk",
+      indexName: "salvely",
       locales: {
         "/": {
           placeholder: "搜索内容",
@@ -151,7 +151,7 @@ export default defineUserConfig({
     // 看板娘插件
     // ohmylive2dPlugin({
     //   // 在这里进行配置
-    //   source: "https://cdn.jsdelivr.net/gh/oragekk/blog-assets/live2D",
+    //   source: "https://cdn.jsdelivr.net/gh/salvely/blog-assets/live2D",
     //   models: [
     //     {
     //       scale: 0.44,

@@ -10,7 +10,7 @@ export const friends: LinkData[] = [
     name: "TODO",
     desc: "到最后，竟庆幸于夕阳仍留在身上",
     icon: "/logo.svg",
-    link: "https://oragekk.me/",
+    link: "https://salvely.github.io/",
   },
   {
     name: "廿壴(GANXB2)博客",

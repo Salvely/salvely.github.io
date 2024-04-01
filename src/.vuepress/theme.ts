@@ -3,11 +3,11 @@ import { zhNavbar } from "./navbar/index.js";
 import { zhSidebar } from "./sidebar/index.js";
 export default MyTheme({
   hotReload: true,
-  hostname: "https://oragekk.me",
+  hostname: "https://salvely.github.io",
   themeColor: true,
   fullscreen: true,
   author: {
-    name: "Oragekk",
+    name: "salvely",
     url: "https://orgaekk.me",
   },
 
@@ -20,7 +20,7 @@ export default MyTheme({
 
   logo: "/logo.svg",
 
-  repo: "OrageKK/oragekk.github.io",
+  repo: "Salvely/salvely.github.io",
 
   docsDir: "src",
 
@@ -38,14 +38,14 @@ export default MyTheme({
       // Dingding: "https://example.com",
       // Discord: "https://example.com",
       // Dribbble: "https://example.com",
-      Email: "mailto:oragekk@163.com",
+      Email: "1247230776@qq.com",
       // Evernote: "https://example.com",
       // Facebook: "https://example.com",
       // Flipboard: "https://example.com",
       // Gitee: "https://example.com",
-      GitHub: "https://github.com/OrageKK",
+      GitHub: "https://github.com/Salvely",
       // Gitlab: "https://example.com",
-      Gmail: "mailto:oragekk@gmail.com",
+      Gmail: "iamgwen9@gmail.com",
       // Instagram: "https://example.com",
       // Lark: "https://example.com",
       // Lines: "https://example.com",
@@ -136,7 +136,7 @@ export default MyTheme({
     },
     comment: {
       provider: "Waline",
-      serverURL: "https://talk.oragekk.me/", // your server url
+      serverURL: "https://talk.salvely.github.io/", // your server url
       reaction: true,
       requiredMeta: ["nick"],
       wordLimit: 300,
@@ -160,7 +160,7 @@ export default MyTheme({
     },
     prismjs: false,
     copyright: {
-      author: "Oragekk",
+      author: "Salvely",
       license: "CC BY-NC-SA 4.0",
       global: true,
     },
