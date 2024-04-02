@@ -10,7 +10,7 @@ export default MyTheme({
   fullscreen: true,
   author: {
     name: "salvely",
-    url: "https://orgaekk.me",
+    url: "https://salvely.github.io",
   },
 
   iconAssets: [

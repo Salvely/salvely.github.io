@@ -1,6 +1,5 @@
 ---
 title: "系统方向刷课记录"
-icon: hk-apple
 date: 1978-01-09
 index: false
 timeline: true
