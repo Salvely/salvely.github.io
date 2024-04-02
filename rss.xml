@@ -6,13 +6,23 @@
     <link>https://salvely.github.io/</link>
     <description>Salvely</description>
     <language>zh-CN</language>
-    <pubDate>Tue, 02 Apr 2024 06:33:28 GMT</pubDate>
-    <lastBuildDate>Tue, 02 Apr 2024 06:33:28 GMT</lastBuildDate>
+    <pubDate>Tue, 02 Apr 2024 07:51:06 GMT</pubDate>
+    <lastBuildDate>Tue, 02 Apr 2024 07:51:06 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>Blog</category>
     <category>About</category>
     <category>使用指南</category>
+    <item>
+      <title>CMU 15-213 Lab1</title>
+      <link>https://salvely.github.io/course/System/System%20Intro/CMU%2015-213/lab1.html</link>
+      <guid>https://salvely.github.io/course/System/System%20Intro/CMU%2015-213/lab1.html</guid>
+      <source url="https://salvely.github.io/rss.xml">CMU 15-213 Lab1</source>
+      <description>这里是 CMU 15-213 Lab1 的实验记录。 </description>
+      <pubDate>Tue, 02 Apr 2024 07:49:57 GMT</pubDate>
+      <content:encoded><![CDATA[<p>这里是 CMU 15-213 Lab1 的实验记录。</p>
+]]></content:encoded>
+    </item>
     <item>
       <title>Welcome!</title>
       <link>https://salvely.github.io/life/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87.html</link>
@@ -21,16 +31,6 @@
       <description>这是新博客的第一篇博文！我要继续我的刷课计划，将在刷课记录中将所有的的名校课程刷完！加油！ </description>
       <pubDate>Tue, 02 Apr 2024 06:32:01 GMT</pubDate>
       <content:encoded><![CDATA[<p>这是新博客的第一篇博文！我要继续我的刷课计划，将在刷课记录中将所有的的名校课程刷完！加油！</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>CMU 15-213 Lab1</title>
-      <link>https://salvely.github.io/course/System/System%20Intro/15-213/lab1.html</link>
-      <guid>https://salvely.github.io/course/System/System%20Intro/15-213/lab1.html</guid>
-      <source url="https://salvely.github.io/rss.xml">CMU 15-213 Lab1</source>
-      <description>这里是 CMU 15-213 Lab1 的实验记录。 </description>
-      <pubDate>Tue, 02 Apr 2024 06:32:01 GMT</pubDate>
-      <content:encoded><![CDATA[<p>这里是 CMU 15-213 Lab1 的实验记录。</p>
 ]]></content:encoded>
     </item>
     <item>
