@@ -6,8 +6,8 @@
     <link>https://salvely.github.io/</link>
     <description>Salvely</description>
     <language>zh-CN</language>
-    <pubDate>Tue, 02 Apr 2024 06:33:11 GMT</pubDate>
-    <lastBuildDate>Tue, 02 Apr 2024 06:33:11 GMT</lastBuildDate>
+    <pubDate>Tue, 02 Apr 2024 06:33:28 GMT</pubDate>
+    <lastBuildDate>Tue, 02 Apr 2024 06:33:28 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>Blog</category>
@@ -28,9 +28,9 @@
       <link>https://salvely.github.io/course/System/System%20Intro/15-213/lab1.html</link>
       <guid>https://salvely.github.io/course/System/System%20Intro/15-213/lab1.html</guid>
       <source url="https://salvely.github.io/rss.xml">CMU 15-213 Lab1</source>
-      <description>这里是CMU 15-213 Lab1的实验记录。 </description>
+      <description>这里是 CMU 15-213 Lab1 的实验记录。 </description>
       <pubDate>Tue, 02 Apr 2024 06:32:01 GMT</pubDate>
-      <content:encoded><![CDATA[<p>这里是CMU 15-213 Lab1的实验记录。</p>
+      <content:encoded><![CDATA[<p>这里是 CMU 15-213 Lab1 的实验记录。</p>
 ]]></content:encoded>
     </item>
     <item>
