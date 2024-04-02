@@ -4,7 +4,7 @@ layout: BlogHome
 icon: home
 title: 主页
 heroImage: /logo.svg
-heroText: <Todo>'s Blog
+heroText: Salvely's Blog
 bgImage: "/assets/home_bg3.jpg"
 heroFullScreen: true
 tagline: Goals determine what you are going to be. —— Julius Erving
@@ -12,7 +12,7 @@ description: 「一生短暂，过程很美」 致力于分享自己涉及和了
 head:
   - - meta
     - name: keywords
-      content: <Todo>
+      content: <Salvely>
 projects:
   - icon: /logo.svg
     name: 关于本站

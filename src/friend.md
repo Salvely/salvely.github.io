@@ -21,8 +21,8 @@ import MyCoverLink from "@MyCoverLink";
 @tab 🌴General
 
 ```yml
-昵称: "TODO",
-简介: "TODO",
+昵称: "Salvely",
+简介: "Salvely",
 头像: "https://salvely.github.io/logo.svg",
 连接: "https://salvely.github.io/"
 ```
@@ -31,8 +31,8 @@ import MyCoverLink from "@MyCoverLink";
 
 ```json
 {
-  "name": "TODO",
-  "desc": "TODO",
+  "name": "Salvely",
+  "desc": "Salvely",
   "ico": "https://salvely.github.io/logo.svg",
   "link": "https://salvely.github.io/"
 }
@@ -40,8 +40,8 @@ import MyCoverLink from "@MyCoverLink";
 @tab yml
 
 ```yml
-- name: "TODO",
-- desc: "TODO",
+- name: "Salvely",
+- desc: "Salvely",
 - ico: "https://salvely.github.io/logo.svg",
 - link: "https://salvely.github.io/"
 ```

@@ -7,7 +7,7 @@ export interface LinkData {
 
 export const friends: LinkData[] = [
   {
-    name: "TODO",
+    name: "Salvely",
     desc: "到最后，竟庆幸于夕阳仍留在身上",
     icon: "/logo.svg",
     link: "https://salvely.github.io/",

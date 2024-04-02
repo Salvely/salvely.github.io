@@ -25,8 +25,8 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "zh-CN",
-      title: "TODO's Blog",
-      description: "TODO",
+      title: "Salvely's Blog",
+      description: "Salvely",
     },
   },
   alias: {

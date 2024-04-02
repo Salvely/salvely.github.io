@@ -4,50 +4,162 @@ export const zhNavbar = navbar([
   "/",
   { text: "导航", icon: "discover", link: "/demo/" },
   {
-    text: "笔记分类",
+    text: "刷课记录",
+    prefix: "/course/",
     icon: "edit",
     children: [
       {
-        text: "代码笔记",
-        prefix:"/posts/",
+        text: "工具使用",
+        link: "/Tools/",
+      },
+      {
+        text: "人工智能",
+        link: "/AI/",
+      },
+      {
+        text: "图形学",
+        link: "/Computer Graphics/",
+      },
+      {
+        text: "系统方向",
+        icon: "linux",
+        prefix: "System/",
         children: [
-          { text: "iOS笔记", icon: "hk-apple", link: "iOS/" },
-          { text: "前端笔记", icon: "code", link: "Web/" },
-          { text: "Linux", icon: "linux", link: "Linux/" },
-          { text: "Python", icon: "python", link: "Python/" },
-          { text: "Rust", icon: "hk-rust", link: "Rust/" },
-          { text: "React", icon: "react", link: "cross-platform/ReactNative/" },
           {
-            text: "Flutter",
-            icon: "hk-flutter",
-            link: "cross-platform/Flutter/",
+            text: "系统入门",
+            link: "System Intro/",
+          },
+          {
+            text: "数字逻辑",
+            link: "Digital Design/",
+          },
+          {
+            text: "计算机组成原理",
+            link: "COD/",
+          },
+          {
+            text: "计算机体系结构",
+            link: "CA/",
+          },
+          {
+            text: "编译原理",
+            link: "Compiler/",
+          },
+          {
+            text: "操作系统",
+            link: "OS/",
+          },
+          {
+            text: "计算机网络",
+            link: "Network/",
+          },
+          {
+            text: "数据库",
+            link: "Database/",
+          },
+          {
+            text: "分布式系统",
+            link: "Distributed System/",
           },
         ],
       },
       {
-        text: "博客相关",
-        prefix:"/blog/",
+        text: "Web开发",
+        prefix: "/Web/",
         children: [
-          { text: "博客相关", icon: "blog", link: "" },
+          {
+            text: "前端开发",
+            link: "FrontEnd/",
+          },
+          {
+            text: "后端开发",
+            link: "BackEnd/",
+          },
+        ],
+      },
+      {
+        text: "移动应用开发",
+        prefix: "/Mobile/",
+        children: [
+          {
+            text: "安卓开发",
+            link: "Android/",
+          },
+        ],
+      },
+      {
+        text: "安全方向",
+        prefix: "/Security/",
+        children: [
+          {
+            text: "系统安全",
+            link: "System Security/",
+          },
+          {
+            text: "Web安全",
+            link: "Web Security/",
+          },
+        ],
+      },
+      {
+        text: "嵌入式开发及IoT",
+        prefix: "/Embedded/",
+        children: [
+          {
+            text: "IoT",
+            link: "IoT/",
+          },
+          {
+            text: "FPGA",
+            link: "FPGA/",
+          },
+        ],
+      },
+      {
+        text: "电子设计",
+        prefix: "/Hardware/",
+        children: [
+          {
+            text: "信号处理",
+            link: "Signal/",
+          },
         ],
       },
     ],
   },
   {
-    text: "软件教程",
-    icon: "software",
-    link: "/tutorial/",
+    text: "数理基础",
+    icon: "edit",
+    children: [
+      {
+        text: "数学",
+        link: "/math/",
+      },
+      {
+        text: "物理",
+        link: "/physics/",
+      },
+      {
+        text: "经济学",
+        link: "/economics/",
+      },
+    ],
+  },
+  {
+    text: "生活",
+    icon: "news",
+    link: "/life/",
   },
   {
     text: "收藏",
     icon: "hk-shoucang1",
     link: "/collect",
   },
-  {
-    text: "说说",
-    icon: "news",
-    link: "/news/",
-  },
+//   {
+//     text: "说说",
+//     icon: "news",
+//     link: "/news/",
+//   },
   {
     text: "留言板",
     icon: "mark",
@@ -61,9 +173,9 @@ export const zhNavbar = navbar([
   {
     text: "关于",
     icon: "info",
-    children:[
+    children: [
       { text: "关于我", icon: "people", link: "/intro" },
       { text: "关于本站", icon: "info", link: "/about" },
-    ]
+    ],
   },
 ]);

@@ -9,7 +9,7 @@
         <div class="info-row">
           <img class="avatar" src="/assets/avatar.webp" />
           <div>
-            <a href="/intro"><span class="name">TODO</span></a>
+            <a href="/intro"><span class="name">Salvely</span></a>
             <div class="page-info" v-if="pinfo">
               <DateInfo v-bind="pinfo" />
               <PageViewInfo v-bind="pinfo" />

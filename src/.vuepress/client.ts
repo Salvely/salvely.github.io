@@ -21,7 +21,7 @@ export default defineClientConfig({
   setup: () => {
     onMounted(() => {
       console.log(
-        `%c ✨TODO的博客 v${packageJson.version}✨ %c ✨TODO's Blog✨ %c\n
+        `%c ✨Salvely的博客 v${packageJson.version}✨ %c ✨Salvely's Blog✨ %c\n
                你，对，你，就是你\n
                   🍻- ( ゜- ゜)つロ 乾杯~🍻\n
                           ---- 最是春风留不住，徒留我孤直。\n
