@@ -5,4 +5,5 @@ index: true
 timeline: true
 article: true
 ---
-这里是CMU 15-213 Lab1的实验记录。
+
+这里是 CMU 15-213 Lab1 的实验记录。
