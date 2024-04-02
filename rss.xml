@@ -6,13 +6,33 @@
     <link>https://salvely.github.io/</link>
     <description>Salvely</description>
     <language>zh-CN</language>
-    <pubDate>Tue, 02 Apr 2024 06:13:25 GMT</pubDate>
-    <lastBuildDate>Tue, 02 Apr 2024 06:13:25 GMT</lastBuildDate>
+    <pubDate>Tue, 02 Apr 2024 06:33:11 GMT</pubDate>
+    <lastBuildDate>Tue, 02 Apr 2024 06:33:11 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>Blog</category>
     <category>About</category>
     <category>使用指南</category>
+    <item>
+      <title>Welcome!</title>
+      <link>https://salvely.github.io/life/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87.html</link>
+      <guid>https://salvely.github.io/life/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87.html</guid>
+      <source url="https://salvely.github.io/rss.xml">Welcome!</source>
+      <description>这是新博客的第一篇博文！我要继续我的刷课计划，将在刷课记录中将所有的的名校课程刷完！加油！ </description>
+      <pubDate>Tue, 02 Apr 2024 06:32:01 GMT</pubDate>
+      <content:encoded><![CDATA[<p>这是新博客的第一篇博文！我要继续我的刷课计划，将在刷课记录中将所有的的名校课程刷完！加油！</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>CMU 15-213 Lab1</title>
+      <link>https://salvely.github.io/course/System/System%20Intro/15-213/lab1.html</link>
+      <guid>https://salvely.github.io/course/System/System%20Intro/15-213/lab1.html</guid>
+      <source url="https://salvely.github.io/rss.xml">CMU 15-213 Lab1</source>
+      <description>这里是CMU 15-213 Lab1的实验记录。 </description>
+      <pubDate>Tue, 02 Apr 2024 06:32:01 GMT</pubDate>
+      <content:encoded><![CDATA[<p>这里是CMU 15-213 Lab1的实验记录。</p>
+]]></content:encoded>
+    </item>
     <item>
       <title>幻灯片页</title>
       <link>https://salvely.github.io/demo/slides.html</link>
@@ -23,19 +43,6 @@
       <content:encoded><![CDATA[<!-- markdownlint-disable MD024 MD033 MD051 -->
 ]]></content:encoded>
       <enclosure url="https://salvely.github.io/logo.svg" type="image/svg+xml"/>
-    </item>
-    <item>
-      <title>15-213</title>
-      <link>https://salvely.github.io/course/System/System%20Intro/15-213/READEM.html</link>
-      <guid>https://salvely.github.io/course/System/System%20Intro/15-213/READEM.html</guid>
-      <source url="https://salvely.github.io/rss.xml">15-213</source>
-      <description> 相关信息 这里放置 iOS 相关的内容 </description>
-      <pubDate>Mon, 09 Jan 1978 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<div class="hint-container info">
-<p class="hint-container-title">相关信息</p>
-<p>这里放置 iOS 相关的内容</p>
-</div>
-]]></content:encoded>
     </item>
     <item>
       <title>关于本站</title>
