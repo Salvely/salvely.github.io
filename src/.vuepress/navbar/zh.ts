@@ -20,6 +20,10 @@ export const zhNavbar = navbar([
         link: "/Computer Graphics/",
       },
       {
+        text: "数据结构与算法",
+        link: "/DS & Algorithms/",
+      },
+      {
         text: "系统方向",
         icon: "linux",
         prefix: "System/",
@@ -156,6 +160,10 @@ export const zhNavbar = navbar([
         text: "ctf",
         link: "/ctf/",
       },
+      {
+        text: "OI",
+        link: "/OI/",
+      },
     ],
   },
   {
@@ -165,7 +173,28 @@ export const zhNavbar = navbar([
   {
     text: "生活",
     icon: "news",
-    link: "/life/",
+    prefix: "/life/",
+    children: [
+      { text: "Minecraft", link: "/minecraft" },
+      { text: "下厨", link: "/cook" },
+      { text: "乐理", link: "/music" },
+      { text: "创新创业", link: "/kickstart" },
+      { text: "吉他", link: "/guitar" },
+      { text: "围棋", link: "/go" },
+      { text: "导游", link: "/guide" },
+      { text: "手工", link: "/paperart" },
+      { text: "摄影", link: "/photo" },
+      { text: "汽车组装", link: "/car" },
+      { text: "电影", link: "/movie" },
+      { text: "自行车组装", link: "/bike" },
+      { text: "英语学习", link: "/english" },
+      { text: "记忆练习", link: "/memory" },
+      { text: "读书", link: "/reading" },
+      { text: "象棋", link: "/chess" },
+      { text: "财富管理", link: "/money" },
+      { text: "运动健身", link: "/fitness" },
+      { text: "魔术学习", link: "/magic" },
+    ],
   },
   {
     text: "收藏",
