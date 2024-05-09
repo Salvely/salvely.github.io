@@ -1,8 +1,8 @@
 ---
-title: 写在学习计算机组成原理之前的话
-shortTitle: 前言
+title: 数字逻辑与数字系统
+shortTitle: 数字逻辑与数字系统
 author: Salvely
-date: 2023-05-07T00:00:00.000Z
+date: 2023-05-09
 isOriginal: true
 article: true
 timeline: true
@@ -14,9 +14,10 @@ next: true
 footer: true
 copyright: Salvely
 toc: true
-date updated: 2024-05-07 15:15
+order: "1"
+dir.order: "2"
+index: false
 ---
-
 ## 前言
 
 在学习计算组成原理和体系结构时，我发现自己总是不太有信心：

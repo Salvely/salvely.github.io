@@ -1,8 +1,19 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export const zhSidebar = sidebar({
-  "/": "structure",
-  "/course/": "structure",
+  // "/": "structure",
+  "/course/System": "structure",
+  "/course/Intro to Programming/": "structure",
+  "/course/Tools/": "structure",
+  "/course/AI/": "structure",
+  "/course/Computer Graphics/": "structure",
+  "/course/DS & Algorithms/": "structure",
+  "/course/Web/": "structure",
+  "/course/Mobile/": "structure",
+  "/course/Security/": "structure",
+  "/course/Embedded/": "structure",
+  "/course/Hardware/": "structure",
+  "/course/TCS/": "structure",
   "/life/": "structure",
   "/posts/": "structure",
   "/competition/": "structure",

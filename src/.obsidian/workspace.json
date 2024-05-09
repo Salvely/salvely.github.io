@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "course/System/README.md",
+                "file": "life/fitness/README.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "前言",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "course/System/README.md",
+                "file": "life/fitness/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "course/System/README.md",
+                "file": "life/fitness/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "course/System/README.md"
+                "file": "life/fitness/README.md"
               }
             }
           }
@@ -148,6 +148,24 @@
   },
   "active": "d9d9a75b4a56c53c",
   "lastOpenFiles": [
+    "life/plan/2024-5月计划 & 进度记录 &月末总结.md",
+    "life/fitness/README.md",
+    "life/fitness/README.md",
+    "life/plan/README.md",
+    "course/System/System Intro/README.md",
+    "course/System/Digital Design/README.md",
+    "course/System/COD/README.md",
+    "course/System/COD/DDCA阅读笔记/3 inverter loop.png",
+    "course/System/CA/README.md",
+    "course/System/README.md",
+    "course/System/Digital Design/Verilog专题.md",
+    "course/System/Digital Design/综合专题.md",
+    "course/System/Digital Design/EDA工具使用专题.md",
+    "course/System/Digital Design/数电专题.md",
+    "course/System/Digital Design/数字逻辑/README.md",
+    "course/System/Digital Design/数字逻辑",
+    "course/TCS/形式语言与自动机理论/自动机理论初探.md",
+    "course/TCS/形式语言与自动机理论/正则表达式初探.md",
     "posts/二进制序列探测器实现.md",
     "about.md",
     "collect.md",
@@ -158,7 +176,6 @@
     "demo/markdown.md",
     "demo/encrypt.md",
     "demo/disable.md",
-    "life/plan/2024-5月计划 & 进度记录 &月末总结.md",
     "science",
     "competition",
     "course/Embedded/Robotics",
@@ -167,23 +184,7 @@
     "course/Hardware/Digital Design",
     "course/Security/Embedded System Security",
     "course/Web/DevOps",
-    "life/plan/README.md",
-    "math/数学课程学习计划.md",
-    "math/Ron Larson 微积分笔记.md",
-    "life/plan/2024-2025年计划.md",
-    "math/MIT 数学课程学习计划.md",
     "math/未命名",
-    "posts/Verilog环境配置.md",
-    "course/DS & Algorithms/Data Structure/CS61B课程笔记.md",
-    "course/TCS/形式语言与自动机理论/自动机理论初探.md",
-    "course/TCS/可计算性理论",
-    "course/System/COD/DDCA阅读笔记/Digital Design and Computer Architecture 阅读笔记.md",
-    "course/TCS/形式语言与自动机理论/正则表达式初探.md",
-    "life/fitness/减肥记录帖.md",
-    "course/System/Digital Design/Verilog专题.md",
-    "course/System/Digital Design/数电专题.md",
-    "2024-05-08.md",
-    "course/System/Digital Design/EDA工具使用专题.md",
     "course/System/COD/DDCA阅读笔记/synchronizer implementation.png",
     "course/System/COD/DDCA阅读笔记/synchronizer.png",
     "course/System/COD/DDCA阅读笔记/clock skew.png",
@@ -192,7 +193,6 @@
     "course/System/COD/DDCA阅读笔记/Moore & Mealy.png",
     "course/System/COD/DDCA阅读笔记/state machine comparsion.png",
     "course/System/COD/DDCA阅读笔记/factor state machine.png",
-    "course/System/COD/DDCA阅读笔记/counter.png",
-    "course/System/COD/DDCA阅读笔记/one hot encoding.png"
+    "course/System/COD/DDCA阅读笔记/counter.png"
   ]
 }

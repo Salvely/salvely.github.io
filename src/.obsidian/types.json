@@ -3,7 +3,8 @@
     "aliases": "aliases",
     "cssclasses": "multitext",
     "tags": "tags",
-    "order": "checkbox",
-    "datetoday": "checkbox"
+    "order": "number",
+    "datetoday": "checkbox",
+    "dir.order": "number"
   }
 }

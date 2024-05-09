@@ -175,19 +175,19 @@ export const zhNavbar = navbar([
   {
     text: "数理基础",
     icon: "edit",
-    prefix: "/science",
+    prefix: "/science/",
     children: [
       {
         text: "数学",
-        link: "/math/",
+        link: "math/",
       },
       {
         text: "物理",
-        link: "/physics/",
+        link: "physics/",
       },
       {
         text: "经济学",
-        link: "/economics/",
+        link: "economics/",
       },
     ],
   },
