@@ -1,44 +1,48 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export const zhSidebar = sidebar({
-  "/":
-    [
-    "",
-    {
-      text: "如何使用",
-      icon: "creative",
-      prefix: "demo/",
-      link: "demo/",
-      children: "structure",
-    },
-    {
-      text: "站点收藏",
-      icon: "sitemap",
-      prefix: "site",
-      link: "site",
-      children: "structure",
-    },
-    {
-      text: "随笔",
-      icon: "flower",
-      prefix: "private/",
-      children: "structure",
-    },
-    {
-      text: "关于",
-      icon: "info",
-      prefix: "about/",
-      link: "about",
-    },
-  ],
-  "/course/Tools/": "structure",
-  "/course/System/": "structure",
-  "/course/Security/": "structure",
-  "/course/Web/": "structure",
-  "/course/Mobile/": "structure",
-  "/course/AI/": "structure",
-  "/course/Computer Graphics/": "structure",
-  "/course/Embedded/": "structure",
-  "/course/Hardware/": "structure",
-  "/site/": "structure",
+  "/": "structure",
+  "/course/": "structure",
+  "/life/": "structure",
+  // // "/":
+  // //   [
+  // //   "",
+  // //   {
+  // //     text: "如何使用",
+  // //     icon: "creative",
+  // //     prefix: "demo/",
+  // //     link: "demo/",
+  // //     children: "structure",
+  // //   },
+  // //   {
+  // //     text: "站点收藏",
+  // //     icon: "sitemap",
+  // //     prefix: "site",
+  // //     link: "site",
+  // //     children: "structure",
+  // //   },
+  // //   {
+  // //     text: "随笔",
+  // //     icon: "flower",
+  // //     prefix: "private/",
+  // //     children: "structure",
+  // //   },
+  // //   {
+  // //     text: "关于",
+  // //     icon: "info",
+  // //     prefix: "about/",
+  // //     link: "about",
+  // //   },
+  // // ],
+  // "/course/Tools/": "structure",
+  // "/course/System/": "structure",
+  // "/course/Security/": "structure",
+  // "/course/Web/": "structure",
+  // "/course/Mobile/": "structure",
+  // "/course/AI/": "structure",
+  // "/course/Computer Graphics/": "structure",
+  // "/course/Embedded/": "structure",
+  // "/course/Hardware/": "structure",
+  // "/site/": "structure",
+  // "/life/": "structure"
 });

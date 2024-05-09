@@ -1,6 +1,6 @@
 ---
-title: "系统入门"
-date: 1978-01-09
+title: 系统入门
+date: 2024-04-28
 index: false
 timeline: true
 article: false

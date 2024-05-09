@@ -1,0 +1,198 @@
+{
+  "main": {
+    "id": "df7f282e0781ecb0",
+    "type": "split",
+    "children": [
+      {
+        "id": "e50c1c5b0af33d26",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d9d9a75b4a56c53c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "course/System/README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5fe1e9ae5351a1e8",
+    "type": "split",
+    "children": [
+      {
+        "id": "8d3c4a620e2bba01",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7643835b76de21e4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5f5e97449af53aa9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d20ee79bb843b5f8",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "5a8da25ca40b2635",
+    "type": "split",
+    "children": [
+      {
+        "id": "3c3cd4cd4beb0296",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9ec484bcfa5adbbc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "course/System/README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "153127179f4b60de",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "course/System/README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d03f6b5a87432ce8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "1bb0691520d5597a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "course/System/README.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "d9d9a75b4a56c53c",
+  "lastOpenFiles": [
+    "posts/二进制序列探测器实现.md",
+    "about.md",
+    "collect.md",
+    "friend.md",
+    "intro.md",
+    "visitorsbook.md",
+    "demo/page.md",
+    "demo/markdown.md",
+    "demo/encrypt.md",
+    "demo/disable.md",
+    "life/plan/2024-5月计划 & 进度记录 &月末总结.md",
+    "science",
+    "competition",
+    "course/Embedded/Robotics",
+    "course/Embedded/Microprocessor",
+    "course/Hardware/Circuit",
+    "course/Hardware/Digital Design",
+    "course/Security/Embedded System Security",
+    "course/Web/DevOps",
+    "life/plan/README.md",
+    "math/数学课程学习计划.md",
+    "math/Ron Larson 微积分笔记.md",
+    "life/plan/2024-2025年计划.md",
+    "math/MIT 数学课程学习计划.md",
+    "math/未命名",
+    "posts/Verilog环境配置.md",
+    "course/DS & Algorithms/Data Structure/CS61B课程笔记.md",
+    "course/TCS/形式语言与自动机理论/自动机理论初探.md",
+    "course/TCS/可计算性理论",
+    "course/System/COD/DDCA阅读笔记/Digital Design and Computer Architecture 阅读笔记.md",
+    "course/TCS/形式语言与自动机理论/正则表达式初探.md",
+    "life/fitness/减肥记录帖.md",
+    "course/System/Digital Design/Verilog专题.md",
+    "course/System/Digital Design/数电专题.md",
+    "2024-05-08.md",
+    "course/System/Digital Design/EDA工具使用专题.md",
+    "course/System/COD/DDCA阅读笔记/synchronizer implementation.png",
+    "course/System/COD/DDCA阅读笔记/synchronizer.png",
+    "course/System/COD/DDCA阅读笔记/clock skew.png",
+    "course/System/COD/DDCA阅读笔记/path between registers and timing diagram.png",
+    "course/System/COD/DDCA阅读笔记/Moore Mealy.png",
+    "course/System/COD/DDCA阅读笔记/Moore & Mealy.png",
+    "course/System/COD/DDCA阅读笔记/state machine comparsion.png",
+    "course/System/COD/DDCA阅读笔记/factor state machine.png",
+    "course/System/COD/DDCA阅读笔记/counter.png",
+    "course/System/COD/DDCA阅读笔记/one hot encoding.png"
+  ]
+}

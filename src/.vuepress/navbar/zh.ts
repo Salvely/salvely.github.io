@@ -8,20 +8,34 @@ export const zhNavbar = navbar([
     icon: "edit",
     children: [
       {
+        text: "编程入门",
+        link: "Intro to Programming/",
+      },
+      {
         text: "工具使用",
-        link: "/Tools/",
+        link: "Tools/",
       },
       {
         text: "人工智能",
-        link: "/AI/",
+        link: "AI/",
       },
       {
         text: "图形学",
-        link: "/Computer Graphics/",
+        link: "Computer Graphics/",
       },
       {
         text: "数据结构与算法",
-        link: "/DS & Algorithms/",
+        prefix: "DS & Algorithms/",
+        children: [
+          {
+            text: "数据结构",
+            link: "Data structure/",
+          },
+          {
+            text: "算法",
+            link: "Algorithms/",
+          },
+        ],
       },
       {
         text: "系统方向",
@@ -68,7 +82,7 @@ export const zhNavbar = navbar([
       },
       {
         text: "Web开发",
-        prefix: "/Web/",
+        prefix: "Web/",
         children: [
           {
             text: "前端开发",
@@ -78,11 +92,15 @@ export const zhNavbar = navbar([
             text: "后端开发",
             link: "BackEnd/",
           },
+          {
+            text: "运维",
+            link: "DevOps/",
+          },
         ],
       },
       {
         text: "移动应用开发",
-        prefix: "/Mobile/",
+        prefix: "Mobile/",
         children: [
           {
             text: "安卓开发",
@@ -92,7 +110,7 @@ export const zhNavbar = navbar([
       },
       {
         text: "安全方向",
-        prefix: "/Security/",
+        prefix: "Security/",
         children: [
           {
             text: "系统安全",
@@ -102,11 +120,15 @@ export const zhNavbar = navbar([
             text: "Web安全",
             link: "Web Security/",
           },
+          {
+            text: "嵌入式系统安全",
+            link: "Embedded System Security/",
+          },
         ],
       },
       {
         text: "嵌入式开发及IoT",
-        prefix: "/Embedded/",
+        prefix: "Embedded/",
         children: [
           {
             text: "IoT",
@@ -116,23 +138,44 @@ export const zhNavbar = navbar([
             text: "FPGA",
             link: "FPGA/",
           },
+          {
+            text: "单片机",
+            link: "Microprocessor/",
+          },
+          {
+            text: "机器人",
+            link: "Robotics/",
+          },
         ],
       },
       {
         text: "电子设计",
-        prefix: "/Hardware/",
+        prefix: "Hardware/",
         children: [
           {
+            text: "电子设计",
+            link: "Digital Design/",
+          },
+          {
             text: "信号处理",
-            link: "Signal/",
+            link: "Signal Processing/",
+          },
+          {
+            text: "电路",
+            link: "Circuit/",
           },
         ],
+      },
+      {
+        text: "理论计算机",
+        link: "TCS/",
       },
     ],
   },
   {
     text: "数理基础",
     icon: "edit",
+    prefix: "/science",
     children: [
       {
         text: "数学",
@@ -151,18 +194,19 @@ export const zhNavbar = navbar([
   {
     text: "做题家",
     icon: "edit",
+    prefix: "/competition/",
     children: [
       {
         text: "leetcode",
-        link: "/leetcode/",
+        link: "leetcode/",
       },
       {
         text: "ctf",
-        link: "/ctf/",
+        link: "ctf/",
       },
       {
         text: "OI",
-        link: "/OI/",
+        link: "OI/",
       },
     ],
   },
@@ -175,8 +219,9 @@ export const zhNavbar = navbar([
     icon: "news",
     prefix: "/life/",
     children: [
-      { text: "Minecraft", link: "/minecraft" },
-      { text: "下厨", link: "/cook" },
+      { text: "计划", link: "plan/" },
+      { text: "Minecraft", link: "minecraft/" },
+      { text: "下厨", link: "cook/" },
       { text: "乐理", link: "/music" },
       { text: "创新创业", link: "/kickstart" },
       { text: "吉他", link: "/guitar" },
