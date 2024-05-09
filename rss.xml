@@ -6,31 +6,903 @@
     <link>https://salvely.github.io/</link>
     <description>Salvely</description>
     <language>zh-CN</language>
-    <pubDate>Sat, 06 Apr 2024 08:37:10 GMT</pubDate>
-    <lastBuildDate>Sat, 06 Apr 2024 08:37:10 GMT</lastBuildDate>
+    <pubDate>Thu, 09 May 2024 15:09:48 GMT</pubDate>
+    <lastBuildDate>Thu, 09 May 2024 15:09:48 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+    <category>Vivado</category>
+    <category>安装教程</category>
+    <category>FPGA</category>
+    <category>VSCode</category>
     <category>Blog</category>
     <category>About</category>
     <category>使用指南</category>
     <item>
-      <title>CMU 15-213 Lab1</title>
-      <link>https://salvely.github.io/course/System/System%20Intro/CMU%2015-213/lab1.html</link>
-      <guid>https://salvely.github.io/course/System/System%20Intro/CMU%2015-213/lab1.html</guid>
-      <source url="https://salvely.github.io/rss.xml">CMU 15-213 Lab1</source>
-      <description>这里是 CMU 15-213 Lab1 的实验记录。 </description>
-      <pubDate>Tue, 02 Apr 2024 07:49:57 GMT</pubDate>
-      <content:encoded><![CDATA[<p>这里是 CMU 15-213 Lab1 的实验记录。</p>
+      <title>Windows 10 下 Verilog 开发环境的配置：Vivado 2023.2 + Vscode</title>
+      <link>https://salvely.github.io/posts/Verilog%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.html</link>
+      <guid>https://salvely.github.io/posts/Verilog%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.html</guid>
+      <source url="https://salvely.github.io/rss.xml">Windows 10 下 Verilog 开发环境的配置：Vivado 2023.2 + Vscode</source>
+      <description>以前学习组成原理与体系结构的时候，用的都是Logisim和Proteus这样的仿真工具，并没有实际写过Verilog代码。教学资源受限是一方面，没有板子又是另一个方面。但是最近找到了中科大的Digital Lab 2023 (ustc.edu.cn)数字逻辑实验（这是普通班的链接，还有提高班），发现他们提供了一个About - FPGA Online ...</description>
+      <category>Vivado</category>
+      <category>安装教程</category>
+      <category>FPGA</category>
+      <category>VSCode</category>
+      <pubDate>Thu, 09 May 2024 15:06:40 GMT</pubDate>
+      <content:encoded><![CDATA[<p>以前学习组成原理与体系结构的时候，用的都是Logisim和Proteus这样的仿真工具，并没有实际写过Verilog代码。教学资源受限是一方面，没有板子又是另一个方面。但是最近找到了中科大的<a href="https://soc.ustc.edu.cn/Digital/" target="_blank" rel="noopener noreferrer">Digital Lab 2023 (ustc.edu.cn)</a>数字逻辑实验（这是普通班的链接，还有提高班），发现他们提供了一个<a href="https://fpgaol.ustc.edu.cn/fpga/usage/" target="_blank" rel="noopener noreferrer">About - FPGA Online (ustc.edu.cn)</a>，其中的游客通道可以供校外学生使用，因此我这个暂时没有钱买板子，但是又想学习的学生，终于迎来了系统学习体系结构的机会。（非常感谢中科大开放这么好的资源！）</p>
+<p>工欲善其事，必先利其器。学习体系结构的第一步就是安装Vivado（之前学校推荐的是Quartus，但是教学资源不是很多），我准备的环境是Vivado + Vscode Verilog插件，下面开始正式配置环境。</p>
+<h2>Vivado 下载</h2>
+<p>vivado可以从xilinx的官网下载，地址在<a href="https://www.xilinx.com/support/download.html" target="_blank" rel="noopener noreferrer">Downloads (xilinx.com)</a>，其中有一些早期的版本，还有2023.1和2023.2版本。据中科大数字逻辑实验网站<a href="https://soc.ustc.edu.cn/Digital/lab0/vivado/" target="_blank" rel="noopener noreferrer">Vivado 安装教程 - Digital Lab 2023 (ustc.edu.cn)</a>，较早期的版本中会报出上千个的警告，导致真正需要修改的警告被隐匿在海洋中。但是2023.1及以后的版本修复了这个毛病。因此我们选择下载最新的2023.2版本。2023.2版本提供了Windows下的安装程序和Linux下的安装程序。在下载之前，我们需要注册一个账号，登录账号后即可下载对应的软件，这里我们下载Windows版本。</p>
+<h2>Vivado安装</h2>
+<p>Vivado在Windows下的安装过程可以参考中科大的<a href="https://soc.ustc.edu.cn/Digital/lab0/vivado/" target="_blank" rel="noopener noreferrer">Vivado 安装教程 - Digital Lab 2023 (ustc.edu.cn)</a>，写的非常详细，此处不再阐述。此外，如果空间不够大，可以参考这个PDF：<a href="https://soc.ustc.edu.cn/Digital-Pro/appendix/Vivado2022.2%E8%B6%85%E7%9C%81%E7%A9%BA%E9%97%B4%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97.pdf" target="_blank" rel="noopener noreferrer">Vivado2022.2超省空间安装指南.pdf (ustc.edu.cn)</a>。2023.2版本的部分安装界面与2023.1版本稍有不同，但是不影响整体过程。</p>
+<h2>Vivado工程的建立</h2>
+<blockquote>
+<p>一个新的Vivado工程的建立和使用可以参考中科大数字逻辑提高班的教程：<a href="https://soc.ustc.edu.cn/Digital-Pro/lab0/IDE/" target="_blank" rel="noopener noreferrer">Vivado的使用 - Digital Lab Pro 2023 (ustc.edu.cn)</a>和北理工的组成原理课程环境配置教程：<a href="https://zanpu.spencerwoo.com/1_Preparations/1-2_Vivado.html#%E5%88%9B%E5%BB%BA%E5%B7%A5%E7%A8%8B%E9%A1%B9%E7%9B%AE" target="_blank" rel="noopener noreferrer">利用 Vivado 创建项目 | Build Your PC (spencerwoo.com)</a></p>
+</blockquote>
+<h2>VSCode Verilog / SystemVerilog环境的配置</h2>
+<blockquote>
+<p>将Vscode设置为默认编辑器，及安装一些辅助插件的方式可以看这里：<a href="https://zanpu.spencerwoo.com/1_Preparations/1-3_Editor.html#%E6%9B%B4%E6%8D%A2%E9%BB%98%E8%AE%A4%E4%BB%A3%E7%A0%81%E7%BC%96%E8%BE%91%E5%99%A8" target="_blank" rel="noopener noreferrer">使用 VS Code 作为 Vivado 的默认代码编辑器 | Build Your PC (spencerwoo.com)</a></p>
+</blockquote>
 ]]></content:encoded>
     </item>
     <item>
-      <title>Welcome!</title>
-      <link>https://salvely.github.io/life/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87.html</link>
-      <guid>https://salvely.github.io/life/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87.html</guid>
-      <source url="https://salvely.github.io/rss.xml">Welcome!</source>
-      <description>这是新博客的第一篇博文！我要继续我的刷课计划，将在刷课记录中将所有的的名校课程刷完！加油！ </description>
-      <pubDate>Tue, 02 Apr 2024 06:32:01 GMT</pubDate>
-      <content:encoded><![CDATA[<p>这是新博客的第一篇博文！我要继续我的刷课计划，将在刷课记录中将所有的的名校课程刷完！加油！</p>
+      <title>二进制序列生成器实现</title>
+      <link>https://salvely.github.io/posts/%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%BA%8F%E5%88%97%E6%8E%A2%E6%B5%8B%E5%99%A8%E5%AE%9E%E7%8E%B0.html</link>
+      <guid>https://salvely.github.io/posts/%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%BA%8F%E5%88%97%E6%8E%A2%E6%B5%8B%E5%99%A8%E5%AE%9E%E7%8E%B0.html</guid>
+      <source url="https://salvely.github.io/rss.xml">二进制序列生成器实现</source>
+      <description>二进制序列探测器的主要功能是，探测一个输入序列中是否包含要求的二进制序列。 </description>
+      <pubDate>Mon, 08 May 2023 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p>二进制序列探测器的主要功能是，探测一个输入序列中是否包含要求的二进制序列。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>文章模板</title>
+      <link>https://salvely.github.io/template/post-template.html</link>
+      <guid>https://salvely.github.io/template/post-template.html</guid>
+      <source url="https://salvely.github.io/rss.xml">文章模板</source>
+      <pubDate>Sun, 02 Apr 2023 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>我的减肥记录帖</title>
+      <link>https://salvely.github.io/life/fitness/%E5%87%8F%E8%82%A5%E8%AE%B0%E5%BD%95%E5%B8%96.html</link>
+      <guid>https://salvely.github.io/life/fitness/%E5%87%8F%E8%82%A5%E8%AE%B0%E5%BD%95%E5%B8%96.html</guid>
+      <source url="https://salvely.github.io/rss.xml">我的减肥记录帖</source>
+      <description>当前状况记录 2024-5-8 记录 本人目前身体状况： 头发 头发容易出油出汗，贴着头皮 脸部 皮肤黑红 毛孔粗大 有荨麻疹过敏症状，时常上脸，导致脸部过敏，有时候会有痤疮 脸上容易出油 脸部肉多，容易水肿，把五官挤到一起 身体 身体抵抗力差，多发荨麻疹 体重大，120斤，太胖了 心肺能力不强，跑个步都喘 身材不好 有圆肩溜肩症状 手臂力量不强，也没...</description>
+      <pubDate>Thu, 09 May 2024 15:06:40 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>当前状况记录</h2>
+<blockquote>
+<p>2024-5-8 记录</p>
+</blockquote>
+<p>本人目前身体状况：</p>
+<ul>
+<li>头发
+<ul>
+<li>头发容易出油出汗，贴着头皮</li>
+</ul>
+</li>
+<li>脸部
+<ul>
+<li>皮肤黑红</li>
+<li>毛孔粗大</li>
+<li>有荨麻疹过敏症状，时常上脸，导致脸部过敏，有时候会有痤疮</li>
+<li>脸上容易出油</li>
+<li>脸部肉多，容易水肿，把五官挤到一起</li>
+</ul>
+</li>
+<li>身体
+<ul>
+<li>身体抵抗力差，多发荨麻疹</li>
+<li>体重大，120斤，太胖了</li>
+<li>心肺能力不强，跑个步都喘</li>
+<li>身材不好
+<ul>
+<li>有圆肩溜肩症状</li>
+<li>手臂力量不强，也没有线条</li>
+<li>背部没有力量</li>
+<li>腹部全是肉，核心力量不强</li>
+<li>大腿粗，全是肉，没有力量</li>
+<li>臀部没有力量</li>
+<li>胸部没有力量</li>
+</ul>
+</li>
+<li>有遗传脚气</li>
+</ul>
+</li>
+<li>其他
+<ul>
+<li>没有对象</li>
+</ul>
+</li>
+</ul>
+<h2>希望达到的状态</h2>
+<ul class="task-list-container">
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-0" disabled="disabled"><label class="task-list-item-label" for="task-item-0"> 皮肤白皙</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-1" disabled="disabled"><label class="task-list-item-label" for="task-item-1"> 脸上没有毛孔</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-2" disabled="disabled"><label class="task-list-item-label" for="task-item-2"> 提高身体抵抗力，根治荨麻疹</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-3" disabled="disabled"><label class="task-list-item-label" for="task-item-3"> 治疗玫瑰痤疮</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-4" disabled="disabled"><label class="task-list-item-label" for="task-item-4"> 减少脸部出油</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-5" disabled="disabled"><label class="task-list-item-label" for="task-item-5"> 减肥瘦脸，去除脸部水肿</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-6" disabled="disabled"><label class="task-list-item-label" for="task-item-6"> 去除体内湿气</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-7" disabled="disabled"><label class="task-list-item-label" for="task-item-7"> 减脂到100斤</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-8" disabled="disabled"><label class="task-list-item-label" for="task-item-8"> 心肺能力提高</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-9" disabled="disabled"><label class="task-list-item-label" for="task-item-9"> 把身材练好</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-10" disabled="disabled"><label class="task-list-item-label" for="task-item-10"> 根除脚气</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-11" disabled="disabled"><label class="task-list-item-label" for="task-item-11"> 找到对象</label></li>
+</ul>
+<h2>我的计划</h2>
+<p>对于头发和脸部，需要长期坚持防晒和护肤保养。对于身体，首先需要减脂，增强心肺能力，然后循序渐进的开始力量训练。对象是自然而然的事情，不能强求。</p>
+<ul>
+<li>头发
+<ul>
+<li>出汗后及时洗头，出油时用吹风机吹头发</li>
+</ul>
+</li>
+<li>脸部
+<ul>
+<li>先工作赚到钱，赚到钱后购买护肤品，每日护肤</li>
+<li>每天坚持从头到脚防晒</li>
+<li>定时喷保湿喷雾，喷完了护肤</li>
+<li>坚持运动出汗，抵御荨麻疹</li>
+<li>坚持吃玫瑰痤疮药物</li>
+<li>持续运动出汗，防止脸部出油和水肿</li>
+</ul>
+</li>
+<li>身体
+<ul>
+<li>第一阶段：每天2次使用帕梅拉10分钟腹部训练+T25每天25分钟减脂，提高心肺能力</li>
+<li>第二阶段：第一阶段+每天游泳5km</li>
+<li>第三阶段：健身房系统力量训练+每天游泳5km</li>
+</ul>
+</li>
+<li>每天涂脚气药</li>
+</ul>
+<h2>2024-5-8 记录</h2>
+<ul>
+<li>体重120斤</li>
+<li>完成帕梅拉10分钟腹部训练+T25第一阶段第一节课</li>
+<li>运动后脸色黑红，出汗多，但是感觉我做的动作还不标准，因此强度还不够大，下一次努力把动作做标准， 加油！</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>2024-5月计划 &amp; 进度记录 &amp;月末总结</title>
+      <link>https://salvely.github.io/life/plan/2024-5%E6%9C%88%E8%AE%A1%E5%88%92%20_%20%E8%BF%9B%E5%BA%A6%E8%AE%B0%E5%BD%95%20_%E6%9C%88%E6%9C%AB%E6%80%BB%E7%BB%93.html</link>
+      <guid>https://salvely.github.io/life/plan/2024-5%E6%9C%88%E8%AE%A1%E5%88%92%20_%20%E8%BF%9B%E5%BA%A6%E8%AE%B0%E5%BD%95%20_%E6%9C%88%E6%9C%AB%E6%80%BB%E7%BB%93.html</guid>
+      <source url="https://salvely.github.io/rss.xml">2024-5月计划 &amp; 进度记录 &amp;月末总结</source>
+      <description>5 月第 2-3 周计划 自我提升！坚持+专注，不要想别的事情！着急是没有用的，要沉下心来！ Task1：读书+刷课（基础） 对课程 Project： 1. 读相关书籍，掌握基本知识 2. 按照课程要求完成 Project（课程基本能力达到） 3. 使用该Project所用语言，对照手册重写Project（课程基本能力 + 代码基本读写能力 + 基础的...</description>
+      <pubDate>Thu, 09 May 2024 15:06:40 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>5 月第 2-3 周计划</h2>
+<blockquote>
+<p>自我提升！坚持+专注，不要想别的事情！着急是没有用的，要沉下心来！</p>
+</blockquote>
+<h3>Task1：读书+刷课（基础）</h3>
+<blockquote>
+<p>对课程 Project：<br>
+1. 读相关书籍，掌握基本知识<br>
+2. 按照课程要求完成 Project（课程基本能力达到）<br>
+3. 使用该Project所用语言，对照手册重写Project（课程基本能力 + 代码基本读写能力 + 基础的数据结构使用能力）<br>
+4. 自己从头实现 Project（用其他语言，如xv6 in Rust）（自主开发能力达到）<br>
+5. 阅读 Project 源码，在能力范围内对 Project 进行优化，提 PR（Project所用语言）（进阶工程能力 + 科研能力）<br>
+6. 结合系统方向经典论文，对 Project 进行优化，提 PR（Project所用语言）（进阶工程能力 + 科研能力）<br>
+7. 自己实现一些大型项目（Docker，Go语言编译器，Javascript v8引擎，TypeScript解释器，函数式语言解释器，Rust Core，操作系统，处理器，渲染器，数据库，网络协议栈，安全项目，重写Raft等分布式算法）（工程能力加倍）<br>
+8. 阅读高质量的开源项目源码（Linux，MySQL，LLVM等）（大型项目代码阅读能力）<br>
+9. 在能力范围内对开源项目进行优化，提 PR（项目使用语言），找bug（大型项目代码阅读能力 + 进阶工程能力 + 科研能力）<br>
+10. 结合系统方向经典论文，对开源项目进行优化，提 PR（项目使用语言）（进阶工程能力 + 科研能力）<br>
+11. 实现自己的高质量大型开源项目（其他语言）（进阶工程能力 + 科研能力）</p>
+</blockquote>
+<ul class="task-list-container">
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-0" disabled="disabled"><label class="task-list-item-label" for="task-item-0"> 读相关课程的经典书籍</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-1" disabled="disabled"><label class="task-list-item-label" for="task-item-1"> <code>course.md</code>中所有学校的计算机课程刷完</label>
+<ul class="task-list-container">
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-2" disabled="disabled"><label class="task-list-item-label" for="task-item-2"> 刷课</label>
+<ul class="task-list-container">
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-3" disabled="disabled"><label class="task-list-item-label" for="task-item-3"> 做课程笔记</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-4" disabled="disabled"><label class="task-list-item-label" for="task-item-4"> 完成 project</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-5" disabled="disabled"><label class="task-list-item-label" for="task-item-5"> 从头实现 project</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-6" disabled="disabled"><label class="task-list-item-label" for="task-item-6"> 使用其他语言实现 project</label></li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-7" disabled="disabled"><label class="task-list-item-label" for="task-item-7"> 读课程 project 源码</label>
+<ul class="task-list-container">
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-8" disabled="disabled"><label class="task-list-item-label" for="task-item-8"> 进行优化</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-9" disabled="disabled"><label class="task-list-item-label" for="task-item-9"> 结合论文优化</label></li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-10" disabled="disabled"><label class="task-list-item-label" for="task-item-10"> 造轮子</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-11" disabled="disabled"><label class="task-list-item-label" for="task-item-11"> 阅读开源项目源码</label>
+<ul class="task-list-container">
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-12" disabled="disabled"><label class="task-list-item-label" for="task-item-12"> 对开源项目优化</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-13" disabled="disabled"><label class="task-list-item-label" for="task-item-13"> 结合论文优化开源项目</label></li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-14" disabled="disabled"><label class="task-list-item-label" for="task-item-14"> 实现自己的开源项目</label></li>
+</ul>
+</li>
+</ul>
+<h3>Task2：其他技术栈修炼（拓展）</h3>
+<ul class="task-list-container">
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-15" disabled="disabled"><label class="task-list-item-label" for="task-item-15"> 安卓开发课程</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-16" disabled="disabled"><label class="task-list-item-label" for="task-item-16"> 图形学课程</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-17" disabled="disabled"><label class="task-list-item-label" for="task-item-17"> 物联网课程</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-18" disabled="disabled"><label class="task-list-item-label" for="task-item-18"> FPGA 课程</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-19" disabled="disabled"><label class="task-list-item-label" for="task-item-19"> 嵌入式课程</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-20" disabled="disabled"><label class="task-list-item-label" for="task-item-20"> 电子设计课程</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-21" disabled="disabled"><label class="task-list-item-label" for="task-item-21"> 工具使用 &amp; 开发</label></li>
+</ul>
+<h3>Task3：省图书馆书籍读完（拓展）</h3>
+<ul class="task-list-container">
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-22" disabled="disabled"><label class="task-list-item-label" for="task-item-22"> UI 交互学习</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-23" disabled="disabled"><label class="task-list-item-label" for="task-item-23"> 聊天机器人设计</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-24" disabled="disabled"><label class="task-list-item-label" for="task-item-24"> 自动控制学习</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-25" disabled="disabled"><label class="task-list-item-label" for="task-item-25"> 人工智能学习</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-26" disabled="disabled"><label class="task-list-item-label" for="task-item-26"> 图像处理学习</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-27" disabled="disabled"><label class="task-list-item-label" for="task-item-27"> 神经网络学习</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-28" disabled="disabled"><label class="task-list-item-label" for="task-item-28"> 仿生学学习</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-29" disabled="disabled"><label class="task-list-item-label" for="task-item-29"> 深度学习</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-30" disabled="disabled"><label class="task-list-item-label" for="task-item-30"> AI 安全</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-31" disabled="disabled"><label class="task-list-item-label" for="task-item-31"> 联邦学习</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-32" disabled="disabled"><label class="task-list-item-label" for="task-item-32"> 迁移学习</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-33" disabled="disabled"><label class="task-list-item-label" for="task-item-33"> 无线传感器技术</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-34" disabled="disabled"><label class="task-list-item-label" for="task-item-34"> 物联网技术</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-35" disabled="disabled"><label class="task-list-item-label" for="task-item-35"> 机器人开发</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-36" disabled="disabled"><label class="task-list-item-label" for="task-item-36"> 计算机控制系统</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-37" disabled="disabled"><label class="task-list-item-label" for="task-item-37"> 大数据</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-38" disabled="disabled"><label class="task-list-item-label" for="task-item-38"> 数据科学</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-39" disabled="disabled"><label class="task-list-item-label" for="task-item-39"> 分布式系统设计</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-40" disabled="disabled"><label class="task-list-item-label" for="task-item-40"> 数据挖掘</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-41" disabled="disabled"><label class="task-list-item-label" for="task-item-41"> 计算机基础</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-42" disabled="disabled"><label class="task-list-item-label" for="task-item-42"> 计算机文化</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-43" disabled="disabled"><label class="task-list-item-label" for="task-item-43"> 电脑入门 &amp; 维修 &amp; 组装</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-44" disabled="disabled"><label class="task-list-item-label" for="task-item-44"> 算法设计与分析</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-45" disabled="disabled"><label class="task-list-item-label" for="task-item-45"> 计算机视觉</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-46" disabled="disabled"><label class="task-list-item-label" for="task-item-46"> 计算机体系结构</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-47" disabled="disabled"><label class="task-list-item-label" for="task-item-47"> 硬件安全</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-48" disabled="disabled"><label class="task-list-item-label" for="task-item-48"> 恶意代码</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-49" disabled="disabled"><label class="task-list-item-label" for="task-item-49"> 可信计算</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-50" disabled="disabled"><label class="task-list-item-label" for="task-item-50"> 漏洞分析</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-51" disabled="disabled"><label class="task-list-item-label" for="task-item-51"> 信息安全</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-52" disabled="disabled"><label class="task-list-item-label" for="task-item-52"> 数据存储与恢复</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-53" disabled="disabled"><label class="task-list-item-label" for="task-item-53"> 前后端开发</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-54" disabled="disabled"><label class="task-list-item-label" for="task-item-54"> Linux 系统编程</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-55" disabled="disabled"><label class="task-list-item-label" for="task-item-55"> 软件工程</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-56" disabled="disabled"><label class="task-list-item-label" for="task-item-56"> 软件测试</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-57" disabled="disabled"><label class="task-list-item-label" for="task-item-57"> 逆向分析</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-58" disabled="disabled"><label class="task-list-item-label" for="task-item-58"> 游戏设计</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-59" disabled="disabled"><label class="task-list-item-label" for="task-item-59"> 数据库</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-60" disabled="disabled"><label class="task-list-item-label" for="task-item-60"> Javascript</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-61" disabled="disabled"><label class="task-list-item-label" for="task-item-61"> Java 高并发</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-62" disabled="disabled"><label class="task-list-item-label" for="task-item-62"> 编译原理</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-63" disabled="disabled"><label class="task-list-item-label" for="task-item-63"> 操作系统</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-64" disabled="disabled"><label class="task-list-item-label" for="task-item-64"> Windows 操作系统加密与解密</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-65" disabled="disabled"><label class="task-list-item-label" for="task-item-65"> 嵌入式操作系统设计</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-66" disabled="disabled"><label class="task-list-item-label" for="task-item-66"> 嵌入式系统开发</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-67" disabled="disabled"><label class="task-list-item-label" for="task-item-67"> FPGA 开发</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-68" disabled="disabled"><label class="task-list-item-label" for="task-item-68"> 处理器编程实战</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-69" disabled="disabled"><label class="task-list-item-label" for="task-item-69"> 计算机网络</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-70" disabled="disabled"><label class="task-list-item-label" for="task-item-70"> 网络安全</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-71" disabled="disabled"><label class="task-list-item-label" for="task-item-71"> 网络协议分析</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-72" disabled="disabled"><label class="task-list-item-label" for="task-item-72"> 物联网应用开发</label></li>
+</ul>
+<h3>Task3：纵向技能深化巩固（进阶）</h3>
+<ul class="task-list-container">
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-73" disabled="disabled"><label class="task-list-item-label" for="task-item-73"> 数学学习</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-74" disabled="disabled"><label class="task-list-item-label" for="task-item-74"> 物理学习</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-75" disabled="disabled"><label class="task-list-item-label" for="task-item-75"> 经济学学习</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-76" disabled="disabled"><label class="task-list-item-label" for="task-item-76"> 金融学学习</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-77" disabled="disabled"><label class="task-list-item-label" for="task-item-77"> 会计学学习</label></li>
+</ul>
+<h3>Task4：Goals &amp; Todos 中的目标全部达到（目标实现）</h3>
+<ul class="task-list-container">
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-78" disabled="disabled"><label class="task-list-item-label" for="task-item-78"> 开发计算机知识大全网站</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-79" disabled="disabled"><label class="task-list-item-label" for="task-item-79"> 系统课程刷完（按照要求）</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-80" disabled="disabled"><label class="task-list-item-label" for="task-item-80"> 数学课程刷完</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-81" disabled="disabled"><label class="task-list-item-label" for="task-item-81"> 数据结构 + 算法课程刷完</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-82" disabled="disabled"><label class="task-list-item-label" for="task-item-82"> OJ 刷完</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-83" disabled="disabled"><label class="task-list-item-label" for="task-item-83"> 理论计算机课程刷完</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-84" disabled="disabled"><label class="task-list-item-label" for="task-item-84"> 系统安全课程刷完</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-85" disabled="disabled"><label class="task-list-item-label" for="task-item-85"> CTF 打满</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-86" disabled="disabled"><label class="task-list-item-label" for="task-item-86"> AI 课程刷完（实现象棋人机对弈及其他 AI 系统）</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-87" disabled="disabled"><label class="task-list-item-label" for="task-item-87"> 安卓开发学习</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-88" disabled="disabled"><label class="task-list-item-label" for="task-item-88"> 前后端课程刷完</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-89" disabled="disabled"><label class="task-list-item-label" for="task-item-89"> 物理课程刷完</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-90" disabled="disabled"><label class="task-list-item-label" for="task-item-90"> Milo Yip 图形学路径学完 -&gt; 知识水平薄纱其他男生</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-91" disabled="disabled"><label class="task-list-item-label" for="task-item-91"> 其他美国大学课程 &amp; KAIST 课程 &amp; 上海科技大学课程 学习</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-92" disabled="disabled"><label class="task-list-item-label" for="task-item-92"> 清华等其他学校课程作业 &amp; 上交 ACM 班课程作业 &amp; 浙大图灵班课程作业 完成</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-93" disabled="disabled"><label class="task-list-item-label" for="task-item-93"> 国内其他高校有价值的大作业写一写</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-94" disabled="disabled"><label class="task-list-item-label" for="task-item-94"> 经济学课程刷完</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-95" disabled="disabled"><label class="task-list-item-label" for="task-item-95"> 金融学课程刷完</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-96" disabled="disabled"><label class="task-list-item-label" for="task-item-96"> 自己实现各个轮子</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-97" disabled="disabled"><label class="task-list-item-label" for="task-item-97"> 写小游戏</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-98" disabled="disabled"><label class="task-list-item-label" for="task-item-98"> FPGA 及其拓展应用学习</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-99" disabled="disabled"><label class="task-list-item-label" for="task-item-99"> 嵌入式课程刷完并自己制作嵌入式项目</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-100" disabled="disabled"><label class="task-list-item-label" for="task-item-100"> 各个 OJ 平台刷到 Top1</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-101" disabled="disabled"><label class="task-list-item-label" for="task-item-101"> 各平台 OI 竞赛打完</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-102" disabled="disabled"><label class="task-list-item-label" for="task-item-102"> AI 竞赛都打一遍（Kaggle 天池等）</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-103" disabled="disabled"><label class="task-list-item-label" for="task-item-103"> CTF 竞赛打满</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-104" disabled="disabled"><label class="task-list-item-label" for="task-item-104"> 参加阿里巴巴全球数学竞赛并获奖*</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-105" disabled="disabled"><label class="task-list-item-label" for="task-item-105"> 成为 Linux，MySQL 和 LLVM 的核心贡献者</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-106" disabled="disabled"><label class="task-list-item-label" for="task-item-106"> 找到所有遇到的开源项目的 bug</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-107" disabled="disabled"><label class="task-list-item-label" for="task-item-107"> 找到 10 个 Security Bounty bug</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-108" disabled="disabled"><label class="task-list-item-label" for="task-item-108"> 完成 10 个超过 1k star 的开源项目</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-109" disabled="disabled"><label class="task-list-item-label" for="task-item-109"> 开发 1 款实现完整系统的游戏并上架 Steam</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-110" disabled="disabled"><label class="task-list-item-label" for="task-item-110"> 写 100 篇刷课记录帖</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-111" disabled="disabled"><label class="task-list-item-label" for="task-item-111"> 写 100 篇高质量博客技术文章</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-112" disabled="disabled"><label class="task-list-item-label" for="task-item-112"> 进入 Google 工作</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-113" disabled="disabled"><label class="task-list-item-label" for="task-item-113"> 拿到大厂 ssp -&gt; 技术薄纱其他男生，得让那学长见了后悔</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-114" disabled="disabled"><label class="task-list-item-label" for="task-item-114"> 搭建个人网站，展现知识水平和技能水平</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-115" disabled="disabled"><label class="task-list-item-label" for="task-item-115"> 建个自学网站</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-116" disabled="disabled"><label class="task-list-item-label" for="task-item-116"> 自由培训网站搭建</label></li>
+</ul>
+<h3>Task5：实现每月赚到 10w 元（资金）</h3>
+<ul class="task-list-container">
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-117" disabled="disabled"><label class="task-list-item-label" for="task-item-117"> 找到工作</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-118" disabled="disabled"><label class="task-list-item-label" for="task-item-118"> 数据科学竞赛 &amp; 其他竞赛奖金</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-119" disabled="disabled"><label class="task-list-item-label" for="task-item-119"> Hackerone 等 Security Bounty 奖金</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-120" disabled="disabled"><label class="task-list-item-label" for="task-item-120"> 接 TopCoder 等外包</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-121" disabled="disabled"><label class="task-list-item-label" for="task-item-121"> 自己建立网站，实现创业 idea，赚钱</label></li>
+</ul>
+<h3>Task6：实现体能强化（身体强度）</h3>
+<ul class="task-list-container">
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-122" disabled="disabled"><label class="task-list-item-label" for="task-item-122"> 首先赚到1000w</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-123" disabled="disabled"><label class="task-list-item-label" for="task-item-123"> 例假过后，理工大游泳馆每日游泳 2 小时</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-124" disabled="disabled"><label class="task-list-item-label" for="task-item-124"> 晚上健身房健身 2 小时</label></li>
+</ul>
+<h3>Task7：外貌进化</h3>
+<blockquote>
+<p>保证皮肤状态，精神状态，身体状态永远一直年轻！</p>
+</blockquote>
+<ul class="task-list-container">
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-125" disabled="disabled"><label class="task-list-item-label" for="task-item-125"> 斜视治疗</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-126" disabled="disabled"><label class="task-list-item-label" for="task-item-126"> 坚持吃药</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-127" disabled="disabled"><label class="task-list-item-label" for="task-item-127"> 坚持护肤</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-128" disabled="disabled"><label class="task-list-item-label" for="task-item-128"> 坚持高强度有氧+无氧，减脂20斤</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-129" disabled="disabled"><label class="task-list-item-label" for="task-item-129"> 坚持防晒</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-130" disabled="disabled"><label class="task-list-item-label" for="task-item-130"> 穿搭学习</label></li>
+</ul>
+<h2>进度记录</h2>
+<h2>月末总结</h2>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>计算机组成原理基础巩固——EDA工具使用专题</title>
+      <link>https://salvely.github.io/course/System/Digital%20Design/EDA%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E4%B8%93%E9%A2%98.html</link>
+      <guid>https://salvely.github.io/course/System/Digital%20Design/EDA%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E4%B8%93%E9%A2%98.html</guid>
+      <source url="https://salvely.github.io/rss.xml">计算机组成原理基础巩固——EDA工具使用专题</source>
+      <description>Vivado 2023.2 Xilinx Altera A7 FPGA 开发板 </description>
+      <pubDate>Sun, 02 Apr 2023 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>Vivado 2023.2</h2>
+<h2>Xilinx Altera A7 FPGA 开发板</h2>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>写在学习计算机组成原理之前的话</title>
+      <link>https://salvely.github.io/course/System/Digital%20Design/</link>
+      <guid>https://salvely.github.io/course/System/Digital%20Design/</guid>
+      <source url="https://salvely.github.io/rss.xml">写在学习计算机组成原理之前的话</source>
+      <description>前言 在学习计算组成原理和体系结构时，我发现自己总是不太有信心： 一遇到时序逻辑电路的设计，就手足无措； 状态机的设计总是考虑不周； 实现电路的时候总是错漏百出； 对于时序特性的分析更是一团乱麻； 此外，对于Verilog语言的不熟悉，以及EDA设计工具的使用不扎实，总是让我备受打击； 我个人的学习方法是，循序渐进的打牢基础，然后再进行更深层次的学习，...</description>
+      <pubDate>Sun, 07 May 2023 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>前言</h2>
+<p>在学习计算组成原理和体系结构时，我发现自己总是不太有信心：</p>
+<ul>
+<li>一遇到时序逻辑电路的设计，就手足无措；</li>
+<li>状态机的设计总是考虑不周；</li>
+<li>实现电路的时候总是错漏百出；</li>
+<li>对于时序特性的分析更是一团乱麻；</li>
+<li>此外，对于Verilog语言的不熟悉，以及EDA设计工具的使用不扎实，总是让我备受打击；</li>
+</ul>
+<p>我个人的学习方法是，循序渐进的打牢基础，然后再进行更深层次的学习，而不是一步登天，在攀爬的过程中迷茫的到处踩坑。因此在学习计算机组成原理基础之前，我会分4个专题进行基础巩固，分别是：</p>
+<ul>
+<li>数字电路：包括数字逻辑、基础数字电路，以及数字系统设计，该部分主要文字和图像描述讲解，提供理论基础，使用Logisim电路模拟工具进行模拟学习</li>
+<li>EDA工具的使用（如Vivado），以及FPGA的使用入门（如Xilinx Altera A7 FPGA开发板）</li>
+<li>Verilog语言：Verilog语言的基础（主要基于HDLBits和一些教材上提到的数字电路）</li>
+<li>综合专题：基础数字系统的Verilog实现专题（使用Verilog语言，实现一些基本的数字系统）</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>计算机组成原理基础巩固——Verilog语言专题</title>
+      <link>https://salvely.github.io/course/System/Digital%20Design/Verilog%E4%B8%93%E9%A2%98.html</link>
+      <guid>https://salvely.github.io/course/System/Digital%20Design/Verilog%E4%B8%93%E9%A2%98.html</guid>
+      <source url="https://salvely.github.io/rss.xml">计算机组成原理基础巩固——Verilog语言专题</source>
+      <pubDate>Sun, 07 May 2023 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>计算机组成原理基础巩固——数电专题</title>
+      <link>https://salvely.github.io/course/System/Digital%20Design/%E6%95%B0%E7%94%B5%E4%B8%93%E9%A2%98.html</link>
+      <guid>https://salvely.github.io/course/System/Digital%20Design/%E6%95%B0%E7%94%B5%E4%B8%93%E9%A2%98.html</guid>
+      <source url="https://salvely.github.io/rss.xml">计算机组成原理基础巩固——数电专题</source>
+      <description>数字系统与布尔代数 组合逻辑电路 时序逻辑电路 数字系统设计 </description>
+      <pubDate>Sun, 07 May 2023 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>数字系统与布尔代数</h2>
+<h2>组合逻辑电路</h2>
+<h2>时序逻辑电路</h2>
+<h2>数字系统设计</h2>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>计算机组成原理基础巩固——数字系统设计综合专题</title>
+      <link>https://salvely.github.io/course/System/Digital%20Design/%E7%BB%BC%E5%90%88%E4%B8%93%E9%A2%98.html</link>
+      <guid>https://salvely.github.io/course/System/Digital%20Design/%E7%BB%BC%E5%90%88%E4%B8%93%E9%A2%98.html</guid>
+      <source url="https://salvely.github.io/rss.xml">计算机组成原理基础巩固——数字系统设计综合专题</source>
+      <pubDate>Sun, 07 May 2023 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>文章模板</title>
+      <link>https://salvely.github.io/course/TCS/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA%E7%90%86%E8%AE%BA/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%88%9D%E6%8E%A2.html</link>
+      <guid>https://salvely.github.io/course/TCS/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA%E7%90%86%E8%AE%BA/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%88%9D%E6%8E%A2.html</guid>
+      <source url="https://salvely.github.io/rss.xml">文章模板</source>
+      <pubDate>Sun, 02 Apr 2023 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>自动机理论初探</title>
+      <link>https://salvely.github.io/course/TCS/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA%E7%90%86%E8%AE%BA/%E8%87%AA%E5%8A%A8%E6%9C%BA%E7%90%86%E8%AE%BA%E5%88%9D%E6%8E%A2.html</link>
+      <guid>https://salvely.github.io/course/TCS/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA%E7%90%86%E8%AE%BA/%E8%87%AA%E5%8A%A8%E6%9C%BA%E7%90%86%E8%AE%BA%E5%88%9D%E6%8E%A2.html</guid>
+      <source url="https://salvely.github.io/rss.xml">自动机理论初探</source>
+      <pubDate>Sun, 02 Apr 2023 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>&amp;lt;Digital Design and Computer Architecture&amp;gt; MIPS 版本 阅读笔记</title>
+      <link>https://salvely.github.io/course/System/COD/DDCA%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/Digital%20Design%20and%20Computer%20Architecture%20%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0.html</link>
+      <guid>https://salvely.github.io/course/System/COD/DDCA%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/Digital%20Design%20and%20Computer%20Architecture%20%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0.html</guid>
+      <source url="https://salvely.github.io/rss.xml">&amp;lt;Digital Design and Computer Architecture&amp;gt; MIPS 版本 阅读笔记</source>
+      <description> 以下是 《Digital Design and Computer Architecture》 第 1-8 章的阅读笔记，目录采用原书结构，笔记内容为自己整理（3.5节 时序逻辑电路的时序特性分析跳过）。数字电路部分还可以参考这本教材：Fundamentals of Digital Logic with Verilog Design, THIRD ED...</description>
+      <pubDate>Thu, 09 May 2024 15:06:40 GMT</pubDate>
+      <content:encoded><![CDATA[<blockquote>
+<p>以下是 《Digital Design and Computer Architecture》 第 1-8 章的阅读笔记，目录采用原书结构，笔记内容为自己整理（3.5节 时序逻辑电路的时序特性分析跳过）。数字电路部分还可以参考这本教材：<a href="https://www.auhd.edu.ye/upfiles/elibrary/Azal2020-01-22-12-23-12-14318.pdf" target="_blank" rel="noopener noreferrer">Fundamentals of Digital Logic with Verilog Design, THIRD EDITION (auhd.edu.ye)</a></p>
+</blockquote>
+<h2>Chapter 1：从 0 到 1</h2>
+<h3>1.1 大纲</h3>
+<blockquote>
+<p>这一章主要为导引内容，比较简单，因此阅读笔记中仅介绍大纲和课后作业。</p>
+</blockquote>
+<ul>
+<li>Abstraction</li>
+<li>Dicipline</li>
+<li>3Y's Deisng Dicipline
+<ul>
+<li>Hierarchy</li>
+<li>Modularity</li>
+<li>Regularity</li>
+</ul>
+</li>
+<li>Digital Abstraction：From Analog to Digital System</li>
+<li>Number System
+<ul>
+<li>Decimal Numbers</li>
+<li>Binary Numbers</li>
+<li>Hexdecimal Numbers</li>
+<li>Bytes, Nibbles and All that Jazz</li>
+<li>8 bits -&gt; bytes</li>
+<li>4 bits -&gt; nibble</li>
+<li>Data in chunks -&gt; words -&gt; depend on the architecture of the microprocessor</li>
+<li>Memory size -&gt; bytes</li>
+<li>Communication speed -&gt; bits/sec</li>
+<li>Arithmetic</li>
+<li>Unsigned numbers
+<ul>
+<li>Binary Addition
+<ul>
+<li>溢出判断：使用全加器时，最高位是否为 1</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Signed Numbers
+<ul>
+<li>Sign-magnitude representation</li>
+<li>2's complement representation
+<ul>
+<li>溢出判断：如果两数的符号位相同，最高位是否和他们不同</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Comparison of Number System</li>
+<li>Unsigned</li>
+<li>Sign-Magnitude</li>
+<li>2's Complement</li>
+</ul>
+</li>
+<li>Logic Gates
+<ul>
+<li>Or</li>
+<li>And</li>
+<li>Not</li>
+<li>Buffer</li>
+<li>Nand</li>
+<li>Xor</li>
+</ul>
+</li>
+<li>Beneath the Digital Abstraction</li>
+<li>CMOS Transistors*</li>
+<li>Power Consumption*</li>
+</ul>
+<h2>Chapter 2：组合逻辑设计</h2>
+<blockquote>
+<p>这一章前面的布尔运算、公理和对偶式、卡诺图的使用、以及布尔代数到电路图的转换较为简单，因此不作详细说明，摆出重点公式和算法。</p>
+</blockquote>
+<h3>2.1 Introduction</h3>
+<p>组合逻辑电路主要有 4 个组成部分：</p>
+<ul>
+<li>一个或多个输入</li>
+<li>一个或多个输出</li>
+<li>组合逻辑函数</li>
+<li>表示组合逻辑延迟的时序</li>
+</ul>
+<h3>2.2 Boolean Equations</h3>
+<h4>最小项</h4>
+<p>每个布尔变量，以原变量或者其反变量的形式，在各个<code>&amp;</code>式中出现一次。真值表中输出为 1 的行，可以表示为所有这种<code>&amp;</code>式的或。譬如有布尔变量<code>A</code>和<code>B</code>，其输出公式为<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false">(</mo><mi>A</mi><mo separator="true">,</mo><mi>B</mi><mo stretchy="false">)</mo><mo>=</mo><mover accent="true"><mi>A</mi><mo>ˉ</mo></mover><mi>B</mi><mo>+</mo><mi>A</mi><mi>B</mi></mrow><annotation encoding="application/x-tex">F(A,B)=\bar{A}B+AB</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.9034em;vertical-align:-0.0833em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">A</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1111em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span>将每个<code>&amp;</code>式表达为一个十进制的值（如 AB 对应<code>0b11</code>，其十进制的值为 3，该项就可以表示为<code>m3</code>），对他们进行<code>|</code>运算，这种表示就是最小项。其最小项公式可以表述为：<br>
+<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false">(</mo><mi>A</mi><mo separator="true">,</mo><mi>B</mi><mo stretchy="false">)</mo><mo>=</mo><mi mathvariant="normal">Σ</mi><mo stretchy="false">(</mo><mi>m</mi><mn>1</mn><mo separator="true">,</mo><mi>m</mi><mn>3</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">F(A,B)=\Sigma(m1,m3)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">Σ</span><span class="mopen">(</span><span class="mord mathnormal">m</span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">m</span><span class="mord">3</span><span class="mclose">)</span></span></span></span></p>
+<h4>最大项</h4>
+<p>找到真值表中所有输出为 0 的行，将其中为 1 的布尔变量取反，和值为 0 的布尔变量相或。将每个这样的行的值相与，得到的就是最大项。</p>
+<h4>最大项和最小项的关系</h4>
+<ul>
+<li>最小项中的每一项结果都为 1，只要这些项有 1 个为 1，结果就为 1</li>
+<li>最大项中每一项的结果都为 0，只要有一个项为 0，结果就为 0</li>
+<li>最大项可以由最小项进行取反得到</li>
+</ul>
+<h3>2.3 Boolean Algebra</h3>
+<ul>
+<li>公理及其对偶式</li>
+<li>单变量定理</li>
+<li>多变量定理</li>
+<li>真值表</li>
+<li>简化真值表</li>
+</ul>
+<h3>2.4 From Logic to Gates</h3>
+<ul>
+<li>单输出的 Gates：单个逻辑表达式</li>
+<li>多输出的 Gates：多个逻辑表达式</li>
+</ul>
+<h3>2.5 Multilevel Combinational Logic</h3>
+<ul>
+<li>硬件简化</li>
+<li>Bubble Pushing</li>
+</ul>
+<h3>2.6 X’s and Z’s, Oh My</h3>
+<p>X：</p>
+<ul>
+<li>不合法的值，如输出同时出现 1 和 0，导致冲突</li>
+<li>电路尚未初始化的值</li>
+<li>卡诺图中的无关项（注意区分和电路中的区别）<br>
+Z：</li>
+<li>高阻态，非 0 也非 1</li>
+<li>多见于三态门</li>
+</ul>
+<h3>2.7 Karnaugh Maps</h3>
+<ul>
+<li>一次在卡诺图中圈出一个大小为 1，2，4，8（或其他 2 的倍数）的块</li>
+<li>每个圈都代表一个逻辑表达式</li>
+<li>卡诺图的上下，左右的边缘相连</li>
+<li>所有逻辑表达式的和就是，电路最后的简化逻辑表达式</li>
+</ul>
+<h3>2.8 Combinational Building Blocks</h3>
+<ul>
+<li>选择器</li>
+<li>译码器</li>
+</ul>
+<h3>2.9 Timing</h3>
+<h4>Propagation</h4>
+<ul>
+<li>传播延迟：从输入改变 -&gt; 输出值完全稳定下来，中间所需要的时间，一个模块从输入到输出的传播延迟取决于最长的那条路径（关键路径）</li>
+<li>最小延迟：从输入改变 -&gt; 输出开始改变，中间所需要的时间</li>
+</ul>
+<h4>Glitches</h4>
+<ul>
+<li>竞争冒险：多见于关键路径和最短路径输出的值不一样，而其值到达输出的时刻不一样，导致输出电路的值出现波动。</li>
+<li>竞争冒险的消除可以通过向电路中增加卡诺图中的冗余项实现。冗余项来源于卡诺图中两个圈相切的部分，将相切的部分的两个圈化为一个圈，将其添加到电路中，即可消除竞争冒险。</li>
+</ul>
+<h2>Chapter 3：时序逻辑设计</h2>
+<blockquote>
+<p>这一章的时序逻辑分析和设计较为重要，学习过程中可以参考这个油管系列视频：<br>
+<a href="https://www.youtube.com/playlist?list=PLwjK_iyK4LLCCpnnybEztvRqxpMyfgarS" target="_blank" rel="noopener noreferrer">Sequential Circuits - YouTube</a></p>
+<p>学习完成之后可以：</p>
+<ol>
+<li>完成华科的数字逻辑设计头歌平台所有作业</li>
+<li>HDLBits Verilog语言学习</li>
+<li>Vivado/Quartus Verilog编程环境配置</li>
+<li>其他学校的数字电路实验课完成</li>
+</ol>
+</blockquote>
+<h3>3.1 Introduction</h3>
+<ul>
+<li>组合逻辑电路的输出只和输入有关</li>
+<li>时序逻辑电路的输出不只和输入有关，还和之前的状态相关</li>
+<li>本章我们会
+<ul>
+<li>介绍时序逻辑电路的组成</li>
+<li>状态变量的设计</li>
+<li>介绍状态机</li>
+<li>时序逻辑电路的效率</li>
+<li>提高时序逻辑电路效率的方法：并行化</li>
+</ul>
+</li>
+</ul>
+<h3>3.2 Latches and Flip-Flops</h3>
+<p><br>
+上图中表示的是一个维持稳定状态的电路，为什么说它们维持稳定状态呢？</p>
+<ul>
+<li>对（a）中电路，如果 I2 的输入为 0，<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>Q</mi><mo>ˉ</mo></mover></mrow><annotation encoding="application/x-tex">\bar{Q}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0145em;vertical-align:-0.1944em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">Q</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span></span></span></span>为 1，I1 的输入为 0，又传回 I2，电路状态永远不变。当 I2 的输入为 1 时，同上。</li>
+<li>对（b）中电路，如果 I2 的输入为 0，那么 I1 的输入为 1，Q 为 0，<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>Q</mi><mo>ˉ</mo></mover></mrow><annotation encoding="application/x-tex">\bar{Q}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0145em;vertical-align:-0.1944em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">Q</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span></span></span></span>为 1，电路状态保持不变；反之亦然。<br>
+在 Q 和<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>Q</mi><mo>ˉ</mo></mover></mrow><annotation encoding="application/x-tex">\bar{Q}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0145em;vertical-align:-0.1944em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">Q</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span></span></span></span>的值变化的过程中，可能存在其他的状态，这个情况我们在后面会进行讨论。</li>
+</ul>
+<p>以上的电路有 2 个状态，可以承载 1 个 bit 的信息。那么 N 个状态的电路，就可以承载<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi>log</mi><mo>⁡</mo></mrow><mn>2</mn></msub><mi>N</mi></mrow><annotation encoding="application/x-tex">\log_{2}N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9386em;vertical-align:-0.2441em;"></span><span class="mop"><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.207em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span></span></span></span>个 bit 的信息。Q 是该电路的一个有效状态，<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>Q</mi><mo>ˉ</mo></mover></mrow><annotation encoding="application/x-tex">\bar{Q}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0145em;vertical-align:-0.1944em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">Q</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span></span></span></span>也可以说是一个有效状态，但是我们知道它是 Q 的取反，因此知道 Q 就够了。</p>
+<p>但是这个电路的不足在于，我们不知道他是什么状态，我们无法输入，这个问题需要修复。</p>
+<h4>SR Latch</h4>
+<p><br>
+SR 锁存器特点：</p>
+<ul>
+<li>2 个输入：S 和 R</li>
+<li>2 个输出：Q 和<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>Q</mi><mo>ˉ</mo></mover></mrow><annotation encoding="application/x-tex">\bar{Q}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0145em;vertical-align:-0.1944em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">Q</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span></span></span></span></li>
+</ul>
+<p>SR 锁存器真值表：</p>
+<ul>
+<li>S=0，R=0
+<ul>
+<li>N2 输出对 Q 取反，N1 输出对<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>Q</mi><mo>ˉ</mo></mover></mrow><annotation encoding="application/x-tex">\bar{Q}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0145em;vertical-align:-0.1944em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">Q</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span></span></span></span>取反。因为 N2 的输出原本就是<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>Q</mi><mo>ˉ</mo></mover></mrow><annotation encoding="application/x-tex">\bar{Q}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0145em;vertical-align:-0.1944em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">Q</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span></span></span></span>，N1 的输出原本就是 Q，因此状态不变</li>
+</ul>
+</li>
+<li>S=0，R=1
+<ul>
+<li>N1 输出 0（Q=0），N2 这里 Q 和 S 都是 0，因此输出 1（<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>Q</mi><mo>ˉ</mo></mover></mrow><annotation encoding="application/x-tex">\bar{Q}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0145em;vertical-align:-0.1944em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">Q</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span></span></span></span>=1）</li>
+</ul>
+</li>
+<li>S=1，R=0
+<ul>
+<li>N2 输出 0（<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>Q</mi><mo>ˉ</mo></mover></mrow><annotation encoding="application/x-tex">\bar{Q}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0145em;vertical-align:-0.1944em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">Q</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span></span></span></span>=0），N1 这里<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>Q</mi><mo>ˉ</mo></mover></mrow><annotation encoding="application/x-tex">\bar{Q}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0145em;vertical-align:-0.1944em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">Q</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span></span></span></span>和 R 都是 0，因此输出 1（<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi></mrow><annotation encoding="application/x-tex">Q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">Q</span></span></span></span>=1）</li>
+</ul>
+</li>
+<li>S=1，R=1
+<ul>
+<li>Q 和<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>Q</mi><mo>ˉ</mo></mover></mrow><annotation encoding="application/x-tex">\bar{Q}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0145em;vertical-align:-0.1944em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal">Q</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">ˉ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span></span></span></span>都输出 0，冲突，这种情况不应当存在</li>
+</ul>
+</li>
+</ul>
+<p>因为 R=1 时 Q=0，S=1 时 Q=1，因此 S 和 R 称为 Set 和 Reset。</p>
+<p>SR 锁存器有一些问题：</p>
+<ul>
+<li>S 和 R 都为 1 时发生冲突，因此不应该让 SR 同时为 1</li>
+<li>当某个输入被设置为 1 时，状态立刻改变，我们应当对这个改变的时刻加以控制。输入的改变和状态的改变，应当分开进行控制。</li>
+</ul>
+<h4>D Latch</h4>
+<figure><figcaption></figcaption></figure>
+<p>D 锁存器的出现是为了解决 SR 锁存器的上述两个问题，我们进行了两方面的调整：</p>
+<ul>
+<li>引入输入 D</li>
+<li>引入时钟信号 CLK，用 CLK 的高低控制锁存器的开闭</li>
+</ul>
+<p>D 锁存器的工作机制和 SR 锁存器类似，当 CLK=1 时，S=<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>D</mi><mo>ˉ</mo></mover></mrow><annotation encoding="application/x-tex">\bar{D}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8201em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1944em;"><span class="mord">ˉ</span></span></span></span></span></span></span></span></span></span>，否则 SR 寄存器保持原有状态，这种机制称为<code>level-sensitive latch</code>，也就是锁存器状态取决于 CLK 为 1 时电平信号的高低。</p>
+<p>D 锁存器也有一点小小的缺陷，也就是 CLK 为 1 时，锁存器的状态完全取决于 D 电平信号的高低。如果 D 的电平信号震荡，锁存器的状态也会随之上下改变。我们希望能够实现锁存器状态的稳定，让状态更新在一个时刻完成，而不是一段时间，要解决这个问题，下面我们引入 D 触发器。</p>
+<h4>D flip-flop</h4>
+<figure><figcaption>D flip flop</figcaption></figure>
+<p>D 触发器由两个接入相反时钟状态的 D 锁存器构成，前一个称为<code>master</code>，后一个称为<code>slave</code>。其特性在于：</p>
+<ul>
+<li>当 CLK=0 时，<code>master</code>打入值，<code>slave</code>的值不随<code>master</code>改变</li>
+<li>当 CLK=1 时，<code>slave</code>打入值，<code>master</code>的值不随输入改变</li>
+</ul>
+<p>因此，触发器的状态主要取决于 CLK 从 0 到 1 时，实现锁存器的状态转换，而其他时刻状态不变。这样就解决了 D 锁存器状态因转换的时间过长而带来的可能的状态震荡。该触发方式也叫<code>边沿触发</code>。</p>
+<h4>Register</h4>
+<p>寄存器由多个触发器组成，可以存储多位的值，每个触发器存储 1 位的值，通过给他们连接同步的时实现。</p>
+<h4>Enabled Flip-Flop</h4>
+<p><br>
+使能触发器在普通的 D 触发器的基础上，增加了一个 2 选 1 数据选择器。数据选择器的选择端是使能信号，两个数据信号分别是输入 D 和触发器的之前状态。</p>
+<p>其状态如下：</p>
+<ul>
+<li>Enable = 1 时，使能触发器输入为 D</li>
+<li>Enable = 0 时，使能触发器保持之前状态</li>
+</ul>
+<p>使能触发器相对于 D 触发器做出的改进在于：我们只有在希望的时候才打入输入，而不是在每次时钟上升沿都打入。其控制能力相比 D 触发器更上一层。</p>
+<h4>Resettable Flip-Flop</h4>
+<p><br>
+可复位触发器相比使能触发器的区别在于，当 reset 信号为 1 时，与门输出为 0，打入的信号为 0，状态更新为 0，实现状态复位。该设置常用于对触发器进行同步/异步复位。</p>
+<h4>Transistor-Level Latch and Flip-Flop Designs*</h4>
+<blockquote>
+<p>此段省略。</p>
+</blockquote>
+<h4>Putting It All Together</h4>
+<ul>
+<li>D 锁存器：高电平触发</li>
+<li>D 触发器：时钟上升沿触发</li>
+</ul>
+<h4>Summary</h4>
+<p>下面我们对本章介绍的多个锁存器和触发器、以及寄存器进行介绍，最重要的是<strong>D 触发器</strong>。</p>
+<ol>
+<li><strong>SR 锁存器</strong>：实现了<strong>过去状态的存储</strong>，但是 SR 均为 1 时电路无效，并且无法控制状态转换的时刻</li>
+<li><strong>D 锁存器</strong>：解决了 SR=1 时的无效状态，引入 CLK 时钟对电路进行控制，但是状态变化的间隔过长，容易导致在高电平期间，电路状态随着输入变化而持续变化，我们希望在某个时刻完成状态转换，然后保持其不变</li>
+<li><strong>D 触发器</strong>：采用<code>master-slave</code>结构，<code>master</code>接<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mrow><mi>C</mi><mi>L</mi><mi>K</mi></mrow><mo>ˉ</mo></mover></mrow><annotation encoding="application/x-tex">\bar{CLK}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8201em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord mathnormal">L</span><span class="mord mathnormal" style="margin-right:0.07153em;">K</span></span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord">ˉ</span></span></span></span></span></span></span></span></span></span>，而<code>slave</code>接 CLK。<code>master</code>在低电平期间状态改变，其他时候不变。<code>slave</code>在高电平期间状态改变，其他时候不变。因此最终的结果是触发器的状态取决于时钟上升沿。但是在每次时钟上升沿，电路的状态都会随着输入的状态改变。因此我们希望设置一下电路是接受输入，还是保持状态不变</li>
+<li><strong>D 使能触发器</strong>：在 D 触发器的基础上增加一个数据选择器，利用使能信号来选择下一个时钟上升沿，打入<code>slave</code>的值是新的输入，还是电路之前的状态</li>
+<li><strong>D 复位触发器</strong>：将 D 触发器的输入和<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mrow><mi>R</mi><mi>E</mi><mi>S</mi><mi>E</mi><mi>T</mi></mrow><mo>ˉ</mo></mover></mrow><annotation encoding="application/x-tex">\bar{RESET}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8201em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">RESET</span></span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord">ˉ</span></span></span></span></span></span></span></span></span></span>进行与操作，如果<code>RESET = 1</code>，那么<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mrow><mi>R</mi><mi>E</mi><mi>S</mi><mi>E</mi><mi>T</mi></mrow><mo>ˉ</mo></mover><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\bar{RESET} = 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8201em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">RESET</span></span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span>，输入为 0，实现了触发器的复位</li>
+<li><strong>寄存器</strong>：由多个触发器构成，每个触发器接的是相同的时钟</li>
+</ol>
+<h3>3.3 Synchronous Logic Design</h3>
+<h4>3.3.1 Some Problematic Circuits</h4>
+<ol>
+<li>以一段时间为周期的周期性震荡的电路<br>
+</li>
+<li>存在因电路延迟带来的竞争冒险的电路<br>
+</li>
+</ol>
+<h4>3.3.2 Synchronous Sequential Circuits</h4>
+<p>上述电路出现问题的原因：电路中出现了环路</p>
+<p>如何消除环路？通过向环路中间加入寄存器，将环路转化成多个段，每个寄存器都由触发器组成，在时钟上升沿触发，因此我们说该电路是时钟同步电路，以此为基础，我们设计了时序逻辑电路。</p>
+<p>时序逻辑电路有 5 个组成要素：</p>
+<ul>
+<li>多个中间状态</li>
+<li>输入</li>
+<li>输出</li>
+<li>组合逻辑函数</li>
+<li>时序，即一个同步的 CLK
+<ul>
+<li>时钟上升沿 -&gt; 输出开始变化：<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mrow><mi>s</mi><mi>e</mi><mi>t</mi><mi>u</mi><mi>p</mi></mrow></msub></mrow><annotation encoding="application/x-tex">T_{setup}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">se</span><span class="mord mathnormal mtight">t</span><span class="mord mathnormal mtight">u</span><span class="mord mathnormal mtight">p</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span></li>
+<li>时钟上升沿 -&gt; 输出值稳定：<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mrow><mi>h</mi><mi>o</mi><mi>l</mi><mi>d</mi></mrow></msub></mrow><annotation encoding="application/x-tex">T_{hold}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">h</span><span class="mord mathnormal mtight">o</span><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span><span class="mord mathnormal mtight">d</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></li>
+</ul>
+</li>
+</ul>
+<p>时序逻辑电路的特点在于：</p>
+<ul>
+<li>由寄存器（触发器，不是锁存器）和组合逻辑电路组成</li>
+<li>至少有一个寄存器（触发器，不是锁存器）</li>
+<li>所有寄存器接受相同的时钟信号（不可以有延迟）</li>
+<li>每个环路至少有一个寄存器</li>
+</ul>
+<h4>3.3.3 Synchronous and Asynchronous Circuits</h4>
+<p>异步时序逻辑电路比同步时序逻辑电路更常见，但是更复杂。这里不详述。</p>
+<h3>3.4 Finite State Machines</h3>
+<p>时序逻辑电路可以被表示成有限状态机的形式，它通常有如下几个组成部分：</p>
+<ul>
+<li>M 个输入</li>
+<li>N 个输出</li>
+<li>k 位的状态（因此电路一共可以有<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>k</mi></msup></mrow><annotation encoding="application/x-tex">2^{k}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8491em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8491em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span></span></span></span></span></span></span></span></span></span></span></span>个状态）</li>
+<li>一个时钟</li>
+</ul>
+<p>时序逻辑电路又分两种：</p>
+<ul>
+<li>Moore 型电路：电路的状态由电路之前的状态和组合逻辑函数决定</li>
+<li>Mealy 型电路：电路的状态由之前的状态，电路的输入，和组合逻辑函数决定</li>
+</ul>
+<figure><figcaption>Moore and Mealy</figcaption></figure>
+<h4>3.4.1 FSM Design Example</h4>
+<blockquote>
+<p>下面通过一个设计十字路口交通灯的案例，来演示时序逻辑电路的设计。</p>
+</blockquote>
+<h5>步骤一：明确问题背景</h5>
+<ol>
+<li>十字路口有两个传感器：<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mi>A</mi></msub></mrow><annotation encoding="application/x-tex">T_{A}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">A</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>和<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mi>B</mi></msub></mrow><annotation encoding="application/x-tex">T_{B}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05017em;">B</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>，当传感器输出为<code>True</code>代表有学生，输出为<code>False</code>代表道路空</li>
+<li>两个交通灯：<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mi>A</mi></msub></mrow><annotation encoding="application/x-tex">L_{A}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">A</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>和<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mi>B</mi></msub></mrow><annotation encoding="application/x-tex">L_{B}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05017em;">B</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>，每个交通灯都要接受传感器的数据，然后决定是输出<code>红</code>，<code>绿</code>，还是<code>黄</code></li>
+<li>每个交通灯有 5 秒的间隔，交通灯在时钟上升沿通过传感器的输入，更新自己的状态</li>
+<li>控制器还有一个 reset 按钮来实现复位</li>
+</ol>
+<p>交通灯概念图设计如下：<br>
+<br>
+交通灯接口设计如下：<br>
+</p>
+<h5>步骤二：绘制状态转换图</h5>
+<p>电路状态转换过程分析如下：</p>
+<ol>
+<li>状态的初始值（复位状态）如下：<strong>A 路绿，B 路红</strong></li>
+<li>如果<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mi>A</mi></msub></mrow><annotation encoding="application/x-tex">T_{A}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">A</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>为<code>True</code>，那么 A 路持续绿，B 路持续红；否则，A 路进入黄色，B 路红</li>
+<li><strong>A 路黄，B 路红</strong>时，我们无需管<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mi>A</mi></msub></mrow><annotation encoding="application/x-tex">T_{A}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">A</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>的状态。过 5 秒自动切入下一个状态：A 路红，B 路绿</li>
+<li><strong>A 路红，B 路绿</strong>时，如果<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mi>B</mi></msub></mrow><annotation encoding="application/x-tex">T_{B}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05017em;">B</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>为<code>True</code>，那么 A 路持续红，B 路持续绿；否则，A 路红，B 路进入黄色</li>
+<li><strong>A 路红，B 路进入黄色</strong>时，我们无需管<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mi>B</mi></msub></mrow><annotation encoding="application/x-tex">T_{B}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05017em;">B</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>的状态，过 5 秒后回到初始状态，A 路绿，B 路红</li>
+</ol>
+<p>根据以上分析，电路可以划分为以下几个状态：</p>
+<ol>
+<li>A 路绿，B 路红：<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mi>A</mi></msub></mrow><annotation encoding="application/x-tex">T_{A}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">A</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>为<code>True</code>时保持，否则进入状态 2</li>
+<li>A 路黄，B 路红：5 秒后进入状态 3</li>
+<li>A 路红，B 路绿：<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mi>B</mi></msub></mrow><annotation encoding="application/x-tex">T_{B}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05017em;">B</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>为<code>True</code>时保持，否则进入状态 4</li>
+<li>A 路红，B 路黄：5 秒后进入状态 1<br>
+<br>
+电路转换的时机是时钟上升沿</li>
+</ol>
+<h5>步骤三：绘制状态转换表</h5>
+<p>我们将状态转换图，转化为状态转换表。在绘制过程中，我们需要明确如下几样：</p>
+<ul>
+<li>状态表示：这里我们用 S0，S1，S2，S3 来表示</li>
+<li>状态转换输入：用<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mi>A</mi></msub></mrow><annotation encoding="application/x-tex">T_{A}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">A</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>，<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mi>B</mi></msub></mrow><annotation encoding="application/x-tex">T_{B}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05017em;">B</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>来表示，使用 X 来表示无关项（类似卡诺图）</li>
+</ul>
+<p>状态转换表的每行有 3 项：</p>
+<ul>
+<li>该状态</li>
+<li>输入</li>
+<li>下一状态</li>
+</ul>
+<p>绘制状态转换表如下：</p>
+<p>| 当前状态 | 输入<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mi>A</mi></msub></mrow><annotation encoding="application/x-tex">T_{A}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">A</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> | 输入<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mi>B</mi></msub></mrow><annotation encoding="application/x-tex">T_{B}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05017em;">B</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> | 下一状态 |<br>
+|</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>CSAPP Chapter 5：优化程序性能 阅读笔记</title>
+      <link>https://salvely.github.io/course/System/System%20Intro/CMU%2015-213/CSAPP%20Chapter%205%EF%BC%9A%E4%BC%98%E5%8C%96%E7%A8%8B%E5%BA%8F%E6%80%A7%E8%83%BD%20%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0.html</link>
+      <guid>https://salvely.github.io/course/System/System%20Intro/CMU%2015-213/CSAPP%20Chapter%205%EF%BC%9A%E4%BC%98%E5%8C%96%E7%A8%8B%E5%BA%8F%E6%80%A7%E8%83%BD%20%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0.html</guid>
+      <source url="https://salvely.github.io/rss.xml">CSAPP Chapter 5：优化程序性能 阅读笔记</source>
+      <description>前言 写程序的主要目标是： 使它在所有可能的情况下都能正确的工作 代码清晰简洁 让程序运行的快* 什么是快？快”的衡量标准： 程序是否有实时需求 执行很久的程序快 20%也是非常重大的影响 因此我们需要编写高效的程序，那么编写高效程序的奥秘在于： 选择适当的算法和数据结构 编写出编译器能够有效优化以转化成高效可执行代码的程序 如何让编译器进行有效的优化...</description>
+      <pubDate>Thu, 09 May 2024 15:06:40 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>前言</h2>
+<blockquote>
+<p>写程序的主要目标是：</p>
+</blockquote>
+<ol>
+<li>使它在所有可能的情况下都能正确的工作</li>
+<li>代码清晰简洁</li>
+<li><strong>让程序运行的快*</strong></li>
+</ol>
+<blockquote>
+<p>什么是快？快”的衡量标准：</p>
+</blockquote>
+<ol>
+<li>程序是否有实时需求</li>
+<li>执行很久的程序快 20%也是非常重大的影响</li>
+</ol>
+<blockquote>
+<p>因此我们需要编写高效的程序，那么编写高效程序的奥秘在于：</p>
+</blockquote>
+<ol>
+<li>选择适当的算法和数据结构</li>
+<li><strong>编写出编译器能够有效优化以转化成高效可执行代码的程序</strong><br>
+如何让编译器进行有效的优化呢？我们需要理解编译器的能力和优化的局限性。</li>
+<li>将一个任务分成多个部分，这些部分可以在多核和多处理器的某种组合上并行的计算，让每个并行的线程都以最高效率执行。</li>
+</ol>
+<blockquote>
+<p>那么我们应当如何做呢？我们必须：考虑代码使用的方式，以及影响他的关键因素，在实现简单性和速度之间做出权衡。原因有二：</p>
+</blockquote>
+<ol>
+<li>高效的算法需要更长的时间优化</li>
+<li>更大级别的优化容易带来不那么容易读的代码</li>
+</ol>
+<blockquote>
+<p>提高代码性能的技术包括：</p>
+</blockquote>
+<ol>
+<li>消除不必要的工作：
+<ol>
+<li>不依赖目标机器属性的工作包括：包括不必要的函数调用、条件测试和内存引用</li>
+<li>依赖目标机器的属性的工作：我们需要了解处理器时序，因为指令在处理器中可能并行执行，或者顺序不同于他们在程序中出现的顺序 -&gt; 我们提出了基于 Intel 和 AMD 处理器最近设计的高级模型和一种基于图形数据流（data-flow）表示法，可以使处理器对指令的执行形象化，还可以利用它预测程序的性能</li>
+</ol>
+</li>
+<li>利用处理器的指令集并行，同时执行多条指令。核心是降低一个计算的不同部分之间的数据相关，增加并行度</li>
+<li>使用代码剖析程序</li>
+</ol>
+<blockquote>
+<p>一种重要的方法是：</p>
+</blockquote>
+<ol>
+<li>研究程序的汇编代码</li>
+<li>识别出降低性能的属性</li>
+<li>预测什么操作会并行执行：确认关键路径</li>
+</ol>
+<p>总体来看，程序优化可以体现在以下几个方面：</p>
+<ol>
+<li>程序表面：算法和数据结构的选用，消除不必要的函数调用、条件测试和内存引用</li>
+<li>程序编译阶段：编译器的局限性优化</li>
+<li>程序运行阶段：针对处理器时序，是否可以将其拆分为多个阶段并行执行，确认内循环关键路径</li>
+<li>外部力量：使用代码剖析程序</li>
+</ol>
+<h2>优化编译器的能力和局限性</h2>
+<h2>表示程序性能</h2>
+<h2>程序示例</h2>
+<h2>消除循环的低效率</h2>
+<h2>减少过程调用</h2>
+<h2>消除不必要的内存引用</h2>
+<h2>理解现代处理器</h2>
+<h3>整体操作</h3>
+<h3>功能单元的性能</h3>
+<h3>处理器操作的抽象模型</h3>
+<h2>循环展开</h2>
+<h2>提高并行性</h2>
+<h3>多个累积变量</h3>
+<h3>重新结合变换</h3>
+<h2>优化合并代码的结果小结</h2>
+<h2>一些限制因素</h2>
+<h3>寄存器溢出</h3>
+<h3>分支预测和预测错误处罚</h3>
+<h2>理解内存性能</h2>
+<h3>加载的性能</h3>
+<h3>存储的性能</h3>
+<h2>应用：性能提高技术</h2>
+<h2>确认和消除性能瓶颈</h2>
+<h3>程序剖析</h3>
+<h3>使用剖析程序来指导优化</h3>
+<h2>小结</h2>
 ]]></content:encoded>
     </item>
     <item>
