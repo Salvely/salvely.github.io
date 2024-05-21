@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "357b648c1840b4fc",
+        "id": "c119486559a7bfa0",
         "type": "tabs",
         "children": [
           {
-            "id": "1650d377c6efbdf4",
+            "id": "56e0a855179b2c86",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "science/math/离散数学/Prolog解释器实现/Prolog解释器实现记录：REPL实现.md",
+                "file": "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "science/math/离散数学/Prolog解释器实现/Prolog解释器实现记录：REPL实现.md",
+                "file": "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "science/math/离散数学/Prolog解释器实现/Prolog解释器实现记录：REPL实现.md",
+                "file": "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "science/math/离散数学/Prolog解释器实现/Prolog解释器实现记录：REPL实现.md"
+                "file": "science/math/微积分/Ron Larson Calculus 阅读笔记.md"
               }
             }
           }
@@ -147,10 +147,10 @@
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
     }
   },
-  "active": "1650d377c6efbdf4",
+  "active": "56e0a855179b2c86",
   "lastOpenFiles": [
-    "science/math/离散数学/Prolog解释器实现/- ISO Prolog standard, part 1_ General core, ISO-IEC-13211-1 (1995).pdf",
     "science/math/离散数学/Prolog解释器实现/Prolog解释器实现记录：REPL实现.md",
+    "science/math/离散数学/Prolog解释器实现/- ISO Prolog standard, part 1_ General core, ISO-IEC-13211-1 (1995).pdf",
     "science/math/离散数学/Prolog解释器实现/- ISO Prolog standard, part 2_ Modules, ISO-IEC-13211-2 (2000).pdf",
     "life/plan/2024 计划 & 进度记录 &月末总结.md",
     "science/math/离散数学/Jerrold W. Grossman, Daniel R. Jordan - Instructor’s Resource Guide to accompany Kenneth H. Rosen Discrete Mathematics and Its Applications 8th Edition (2019).pdf",
