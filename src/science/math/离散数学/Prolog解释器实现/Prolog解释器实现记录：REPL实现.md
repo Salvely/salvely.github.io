@@ -44,4 +44,6 @@ while 1:
 
 ## Prolog 语言标准
 
-Prolog语言 ISO 标准见此下载：![Prolog](-%20ISO%20Prolog%20standard,%20part%202_%20Modules,%20ISO-IEC-13211-2%20(2000).zip)
+Prolog语言 ISO 标准见此下载：
+- [Prolog标准-1](-%20ISO%20Prolog%20standard,%20part%201_%20General%20core,%20ISO-IEC-13211-1%20(1995).pdf)
+- [Prolog标准-2](-%20ISO%20Prolog%20standard,%20part%202_%20Modules,%20ISO-IEC-13211-2%20(2000).pdf)

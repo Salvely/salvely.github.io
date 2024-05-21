@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "life/plan/2024 计划 & 进度记录 &月末总结.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "870fed657c634528",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
+                "file": "science/math/离散数学/Prolog解释器实现/Prolog解释器实现记录：REPL实现.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "数值",
+                "query": "zip",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
+                "file": "science/math/离散数学/Prolog解释器实现/Prolog解释器实现记录：REPL实现.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
+                "file": "science/math/离散数学/Prolog解释器实现/Prolog解释器实现记录：REPL实现.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "science/math/微积分/Ron Larson Calculus 阅读笔记.md"
+                "file": "science/math/离散数学/Prolog解释器实现/Prolog解释器实现记录：REPL实现.md"
               }
             }
           }
@@ -156,14 +143,22 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
     }
   },
-  "active": "870fed657c634528",
+  "active": "1650d377c6efbdf4",
   "lastOpenFiles": [
-    "science/math/微积分/the spherical coordinate system.png",
+    "science/math/离散数学/Prolog解释器实现/- ISO Prolog standard, part 1_ General core, ISO-IEC-13211-1 (1995).pdf",
+    "science/math/离散数学/Prolog解释器实现/Prolog解释器实现记录：REPL实现.md",
+    "science/math/离散数学/Prolog解释器实现/- ISO Prolog standard, part 2_ Modules, ISO-IEC-13211-2 (2000).pdf",
     "life/plan/2024 计划 & 进度记录 &月末总结.md",
+    "science/math/离散数学/Jerrold W. Grossman, Daniel R. Jordan - Instructor’s Resource Guide to accompany Kenneth H. Rosen Discrete Mathematics and Its Applications 8th Edition (2019).pdf",
+    "science/math/离散数学/Rosen 《离散数学及其应用》 阅读笔记.md",
     "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
+    "science/math/微积分/derivative of a vector-valued function.png",
+    "science/math/微积分/definition of limit.png",
+    "science/math/微积分/the spherical coordinate system.png",
     "science/math/微积分/the cylindrical coordinate system.png",
     "science/math/微积分/surface of revolution.png",
     "science/math/微积分/hyperboloic paraboloid.png",
@@ -171,16 +166,10 @@
     "science/math/微积分/elliptic cone.png",
     "science/math/微积分/hyperboloid of two sheets.png",
     "science/math/微积分/hyperboloid of one sheet.png",
-    "science/math/微积分/ellipsoid.png",
     "science/math/计算机专业数学探索地图.md",
     "life/plan/README.md",
     "life/violin",
-    "science/math/微积分/the triple scalar product.png",
-    "science/math/微积分/cross product magnitude proof.png",
-    "science/math/离散数学/Prolog解释器实现/Prolog解释器实现记录：REPL实现.md",
     "science/math/离散数学/小型推理引擎tie实现/小型推理引擎tie实现.md",
-    "science/math/离散数学/Rosen 《离散数学及其应用》 阅读笔记.md",
-    "science/math/离散数学/Jerrold W. Grossman, Daniel R. Jordan - Instructor’s Resource Guide to accompany Kenneth H. Rosen Discrete Mathematics and Its Applications 8th Edition (2019).pdf",
     "science/math/离散数学/Rosen, Kenneth H - Discrete mathematics and its applications-McGraw-Hill (2019).pdf",
     "science/math/离散数学/小型推理引擎tie实现/小型推理引擎语言tie使用方法 & 语法定义.md",
     "science/math/离散数学/小型推理引擎tie实现",
@@ -199,8 +188,6 @@
     "science/math/离散数学/《离散数学及其应用》阅读笔记.md",
     "course/DS & Algorithms/Algorithms/《深入浅出程序设计竞赛》阅读 & 洛谷刷题 笔记.md",
     "course/DS & Algorithms/Algorithms/《算法4》阅读及实现笔记.md",
-    "competition/OI",
-    "science/physics/电动力学",
     "science/physics/未命名.md",
     "science/math/考研数学/模拟题总结.md",
     "science/math/考研数学/真题总结.md",
