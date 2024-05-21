@@ -5,6 +5,8 @@
     "tags": "tags",
     "order": "number",
     "datetoday": "checkbox",
-    "dir.order": "number"
+    "dir.order": "number",
+    "date": "date",
+    "date created": "date"
   }
 }

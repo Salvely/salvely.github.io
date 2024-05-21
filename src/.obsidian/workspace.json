@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "e50c1c5b0af33d26",
+        "id": "357b648c1840b4fc",
         "type": "tabs",
         "children": [
           {
-            "id": "d9d9a75b4a56c53c",
+            "id": "1650d377c6efbdf4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "life/fitness/README.md",
+                "file": "life/plan/2024 计划 & 进度记录 &月末总结.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "870fed657c634528",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "前言",
+                "query": "数值",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "life/fitness/README.md",
+                "file": "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "life/fitness/README.md",
+                "file": "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "life/fitness/README.md"
+                "file": "science/math/微积分/Ron Larson Calculus 阅读笔记.md"
               }
             }
           }
@@ -146,53 +159,53 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "d9d9a75b4a56c53c",
+  "active": "870fed657c634528",
   "lastOpenFiles": [
-    "life/plan/2024-5月计划 & 进度记录 &月末总结.md",
-    "life/fitness/README.md",
-    "life/fitness/README.md",
+    "science/math/微积分/the spherical coordinate system.png",
+    "life/plan/2024 计划 & 进度记录 &月末总结.md",
+    "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
+    "science/math/微积分/the cylindrical coordinate system.png",
+    "science/math/微积分/surface of revolution.png",
+    "science/math/微积分/hyperboloic paraboloid.png",
+    "science/math/微积分/elliptic paraboloid.png",
+    "science/math/微积分/elliptic cone.png",
+    "science/math/微积分/hyperboloid of two sheets.png",
+    "science/math/微积分/hyperboloid of one sheet.png",
+    "science/math/微积分/ellipsoid.png",
+    "science/math/计算机专业数学探索地图.md",
     "life/plan/README.md",
-    "course/System/System Intro/README.md",
-    "course/System/Digital Design/README.md",
-    "course/System/COD/README.md",
-    "course/System/COD/DDCA阅读笔记/3 inverter loop.png",
-    "course/System/CA/README.md",
-    "course/System/README.md",
-    "course/System/Digital Design/Verilog专题.md",
-    "course/System/Digital Design/综合专题.md",
-    "course/System/Digital Design/EDA工具使用专题.md",
-    "course/System/Digital Design/数电专题.md",
-    "course/System/Digital Design/数字逻辑/README.md",
-    "course/System/Digital Design/数字逻辑",
-    "course/TCS/形式语言与自动机理论/自动机理论初探.md",
-    "course/TCS/形式语言与自动机理论/正则表达式初探.md",
-    "posts/二进制序列探测器实现.md",
-    "about.md",
-    "collect.md",
-    "friend.md",
-    "intro.md",
+    "life/violin",
+    "science/math/微积分/the triple scalar product.png",
+    "science/math/微积分/cross product magnitude proof.png",
+    "science/math/离散数学/Prolog解释器实现/Prolog解释器实现记录：REPL实现.md",
+    "science/math/离散数学/小型推理引擎tie实现/小型推理引擎tie实现.md",
+    "science/math/离散数学/Rosen 《离散数学及其应用》 阅读笔记.md",
+    "science/math/离散数学/Jerrold W. Grossman, Daniel R. Jordan - Instructor’s Resource Guide to accompany Kenneth H. Rosen Discrete Mathematics and Its Applications 8th Edition (2019).pdf",
+    "science/math/离散数学/Rosen, Kenneth H - Discrete mathematics and its applications-McGraw-Hill (2019).pdf",
+    "science/math/离散数学/小型推理引擎tie实现/小型推理引擎语言tie使用方法 & 语法定义.md",
+    "science/math/离散数学/小型推理引擎tie实现",
+    "science/math/离散数学/Prolog解释器实现/小型.md",
+    "science/math/离散数学/Prolog解释器实现/- ISO Prolog standard, part 2_ Modules, ISO-IEC-13211-2 (2000).zip",
+    "science/math/离散数学/- ISO Prolog standard, part 2_ Modules, ISO-IEC-13211-2 (2000).zip",
+    "science/math/离散数学/Prolog解释器实现/Prolog解释器实现记录——前言.md",
+    "science/math/离散数学/Prolog解释器实现",
+    "template/post-template.md",
+    "README.md",
     "visitorsbook.md",
-    "demo/page.md",
-    "demo/markdown.md",
-    "demo/encrypt.md",
-    "demo/disable.md",
-    "science",
-    "competition",
-    "course/Embedded/Robotics",
-    "course/Embedded/Microprocessor",
-    "course/Hardware/Circuit",
-    "course/Hardware/Digital Design",
-    "course/Security/Embedded System Security",
-    "course/Web/DevOps",
-    "math/未命名",
-    "course/System/COD/DDCA阅读笔记/synchronizer implementation.png",
-    "course/System/COD/DDCA阅读笔记/synchronizer.png",
-    "course/System/COD/DDCA阅读笔记/clock skew.png",
-    "course/System/COD/DDCA阅读笔记/path between registers and timing diagram.png",
-    "course/System/COD/DDCA阅读笔记/Moore Mealy.png",
-    "course/System/COD/DDCA阅读笔记/Moore & Mealy.png",
-    "course/System/COD/DDCA阅读笔记/state machine comparsion.png",
-    "course/System/COD/DDCA阅读笔记/factor state machine.png",
-    "course/System/COD/DDCA阅读笔记/counter.png"
+    "2024-05-12.md",
+    "science/math/数学思想 & 数学史/《什么是数学》阅读笔记.md",
+    "science/math/数学思想 & 数学史",
+    "life/fitness/减肥记录帖.md",
+    "science/math/离散数学/《离散数学及其应用》阅读笔记.md",
+    "course/DS & Algorithms/Algorithms/《深入浅出程序设计竞赛》阅读 & 洛谷刷题 笔记.md",
+    "course/DS & Algorithms/Algorithms/《算法4》阅读及实现笔记.md",
+    "competition/OI",
+    "science/physics/电动力学",
+    "science/physics/未命名.md",
+    "science/math/考研数学/模拟题总结.md",
+    "science/math/考研数学/真题总结.md",
+    "science/math/考研数学/概率论与数理统计复习.md",
+    "science/math/考研数学/线性代数复习.md",
+    "science/math/考研数学/微分方程复习.md"
   ]
 }

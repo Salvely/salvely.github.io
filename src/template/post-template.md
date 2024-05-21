@@ -2,7 +2,6 @@
 title: 文章模板
 shortTitle: 文章模板
 author: Salvely
-date: 2023-04-02
 isOriginal: true
 article: true
 timeline: true
