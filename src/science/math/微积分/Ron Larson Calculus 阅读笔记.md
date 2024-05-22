@@ -365,8 +365,8 @@ date updated: 2024-05-20 16:06
 		- 第一条：依照叉乘向量的方向计算方法，等号左右两边的叉乘结果方向相反；也可以直接用代数式计算，得到与几何分析吻合的结果。
 		- 第二条：
 			- 从代数（行列式）的角度分析：
-				- 设$\vec{v}=<v_{1},v_{2},v_{3}>$，$\vec{w}=<w_{1},w_{2},w_{3}>$
-				- $$
+				- 设$\vec{v}=<v_{1},v_{2},v_{3}>$，$\vec{w}=<w_{1},w_{2},w_{3}>$，那么
+				$$
 				\vec{u}\times(\vec{v}+\vec{w})=\begin{bmatrix}\vec{i} & \vec{j} & \vec{k} \\ u_{1} & u_{2} & u_{3} \\ v_{1}+w_{1} & v_{2}+w_{2} & v_{3}+w_{3}\end{bmatrix}
 				$$
 				- 根据行列式的性质（具体参考[第18课 行列式及其性质_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1zx411g7gq/?p=18&vd_source=85acf0a59ded02e4c75ae1158baca207)），可得如下推导：
@@ -512,7 +512,9 @@ date updated: 2024-05-20 16:06
 			- 相交：两平面的法向量不平行
 			- 如果平行的话，两平面间的距离公式为：
 				- 使用平面标准式，则距离为
-					$$d=\frac{|d_{1}-d_{2}|}{\sqrt{a^2+b^2+c^2}}$$
+					$$
+					d=\frac{|d_{1}-d_{2}|}{\sqrt{a^2+b^2+c^2}}
+					$$
 				- 推导
 					- 假设两平面的法向量为$\vec{n_{1}}=(a,b,c)$
 					- 平面一的方程为：$ax+by+cz+d1=0$
@@ -526,7 +528,10 @@ date updated: 2024-05-20 16:06
 						\end{align}
 						$$
 					- 假设点$Q(x_{1},y_{1},z_{1})$为该直线和平面的交点，将其带入平面二的方程，可得如下结果：$$a(x_{0}+at)+b(y_{0}+bt)+c(z_{0}+ct)+d2=0$$
-					- 通过移项可得：$$(ax_{0}+by_{0}+cz_{0}+d2)+(a^2t+b^2t+c^2t)=0$$
+					- 通过移项可得：
+					$$
+					(ax_{0}+by_{0}+cz_{0}+d2)+(a^2t+b^2t+c^2t)=0
+					$$
 					- 那么t的值为：$$t=\frac{-(ax_{0}+by_{0}+cz_{0}+d2)}{a^2+b^2+c^2}$$
 					- 又因为$ax_{0}+by_{0}+cz_{0}+d1=0$，因此$ax_{0}+by_{0}+cz_{0}=-d1$，那么$t$的式子可以改写为$$t=\frac{d1-d2}{a^2+b^2+c^2}$$
 					- 因此向量$$\begin{align}\vec{PQ}=(x_{1}-x_{0},y_{1}-y_{0},z_{1}-z_{0})\\ = (at,bt,ct) \\ =(\frac{a(d1-d2)}{a^2+b^2+c^2},\frac{b(d1-d2)}{a^2+b^2+c^2},\frac{c(d1-d2)}{a^2+b^2+c^2})\end{align}$$
@@ -721,7 +726,49 @@ date updated: 2024-05-20 16:06
 		- 我们可以看到物体瞬时速度的大小就是位移向量值函数的导数，那么加速度作为速度的变化量，可以推导出其值为速度向量值函数的导数
 		- 公式：$\vec{a}=\vec{r}''(t)=\vec{v}'(t)=x''(t)\vec{i}+y''(t)\vec{j}$
 	- 位移、速度、加速度图像
+		- 求公式 -> 带入值 -> 求特特定t下的向量 -> 绘制向量
+	- 初值问题
+		- 通过多次不定积分求解原函数，通过带入值求解常数项
 	- 斜抛运动
+		- 物理分析：垂直方向上的力为重力，水平方向上无作用力（不考虑空气阻力）
+		- 情景假设：该物体以速度$v_{0}$抛出，抛出时速度与水平面夹角为$\theta$，高度为h，物体质量为m，重力加速度为g。下面分析该物体在t时刻的位移和速度。
+		- 坐标系建立：x轴向右，y轴向上，那么起始的位移就是$\vec{r}(0)=h\vec{j}$，起始的速度为$\vec{v}(0)=v_{0}\cos\theta\vec{i}+v_{0}\sin\theta\vec{j}$，唯一的作用力是重力，其可以表示为$\vec{F}=-mg\vec{j}$
+		- 目的：求解时刻$t$的速度 $\vec{v}(t)$ 和位移 $\vec{r}(t)$ 
+		- 数学建模：
+			- 因为加速度$a=-g\vec{j}$，因此速度$\vec{v}(t)=-gt\vec{j}+(C_{1}\vec{i}+C_{2}\vec{j})$
+			- 因为t=0时，$\vec{v}(0)=v_{0}\cos\theta\vec{i}+v_{0}\sin\theta\vec{j}$
+			- 因此，$C_{1}=v_{0}\cos\theta$，$C_{2}=v_{0}\sin\theta$，速度的公式为
+				$$
+				\begin{flalign*}
+				&\vec{v}(t)=-gt\vec{j}+(v_{0}\cos\theta\vec{i}+v_{0}\sin\theta\vec{j}) \\
+				&= v_{0}\cos\theta\vec{i} + (v_{0}\sin\theta-gt)\vec{j}
+				\end{flalign*}
+				$$
+			- 对速度向量值函数进行积分，解得位移公式为
+			$$
+			\vec{x}(t)=v_{0}(\cos\theta)t\vec{i}+(v_{0}(\sin\theta)t-\frac{1}{2}gt^2)\vec{j}+(C_{1}\vec{i}+C_{2}\vec{j})
+			$$
+			- 因为当t=0时，位移为：$\vec{r}(0)=h\vec{j}$，因此$C_{1}=0$，$C_{2}=h$
+			- 因此位移公式为：
+				$$			
+				\begin{flalign*}
+				&\vec{x}(t)=v_{0}(\cos\theta)t\vec{i}+(v_{0}(\sin\theta)t-\frac{1}{2}gt^2)\vec{j}+h\vec{j} \\
+				&= v_{0}(\cos\theta)t\vec{i}+(v_{0}(\sin\theta)t-\frac{1}{2}gt^2+h)\vec{j}
+				\end{flalign*}
+				$$
+		- 斜抛运动总结总结
+			- 速度向量值函数
+				$$
+				\begin{flalign*}
+				&\vec{v}(t)= v_{0}\cos\theta\vec{i} + (v_{0}\sin\theta-gt)\vec{j}
+				\end{flalign*}
+				$$
+			- 位移向量值函数
+				$$
+				\begin{flalign*}
+				&\vec{x}(t) = v_{0}(\cos\theta)t\vec{i}+(v_{0}(\sin\theta)t-\frac{1}{2}gt^2+h)\vec{j}
+				\end{flalign*}
+			$$
 - 切向量 & 法向量
 	- 单位切向量
 	- 切线求解

@@ -67,9 +67,6 @@ devDependencies:
   flowchart.ts:
     specifier: ^2.0.0
     version: 2.0.0
-  katex:
-    specifier: ^0.16.9
-    version: 0.16.9
   mermaid:
     specifier: ^10.8.0
     version: 10.8.0
@@ -99,7 +96,7 @@ devDependencies:
     version: 2.0.0-rc.25(vuepress@2.0.0-rc.8)
   vuepress-theme-hope:
     specifier: 2.0.0-rc.25
-    version: 2.0.0-rc.25(@vue/repl@4.1.1)(@vuepress/plugin-docsearch@2.0.0-rc.17)(@vuepress/plugin-feed@2.0.0-rc.17)(@vuepress/plugin-pwa@2.0.0-rc.17)(@waline/client@3.1.2)(chart.js@4.4.1)(echarts@5.5.0)(flowchart.ts@2.0.0)(hls.js@1.5.6)(katex@0.16.9)(markdown-it@14.0.0)(mermaid@10.8.0)(reveal.js@5.0.4)(vuepress-plugin-search-pro@2.0.0-rc.32)(vuepress@2.0.0-rc.8)
+    version: 2.0.0-rc.25(@vue/repl@4.1.1)(@vuepress/plugin-docsearch@2.0.0-rc.17)(@vuepress/plugin-feed@2.0.0-rc.17)(@vuepress/plugin-pwa@2.0.0-rc.17)(@waline/client@3.1.2)(chart.js@4.4.1)(echarts@5.5.0)(flowchart.ts@2.0.0)(hls.js@1.5.6)(markdown-it@14.0.0)(mermaid@10.8.0)(reveal.js@5.0.4)(vuepress-plugin-search-pro@2.0.0-rc.32)(vuepress@2.0.0-rc.8)
 
 packages:
 
@@ -1929,7 +1926,7 @@ packages:
       upath: 2.0.1
     dev: true
 
-  /@mdit/plugin-katex@0.8.0(katex@0.16.9)(markdown-it@14.0.0):
+  /@mdit/plugin-katex@0.8.0(markdown-it@14.0.0):
     resolution: {integrity: sha512-u7CX3Xv5nuc2bu2sHrk1nil83/9ETKTBMmy0icbW8zlqBC0ykLo1xTCEBXmdhXtnJtPi9f/wUZVs6iMZrJzbNg==}
     engines: {node: '>= 18'}
     peerDependencies:
@@ -1944,7 +1941,6 @@ packages:
       '@mdit/plugin-tex': 0.8.0(markdown-it@14.0.0)
       '@types/katex': 0.16.7
       '@types/markdown-it': 13.0.7
-      katex: 0.16.9
       markdown-it: 14.0.0
     dev: true
 
@@ -3503,11 +3499,6 @@ packages:
     engines: {node: '>= 10'}
     dev: true
 
-  /commander@8.3.0:
-    resolution: {integrity: sha512-OkTL9umf+He2DZkUq8f8J9of7yL6RJKI24dVITBmNfZBmri9zYZQrKkuXiKhyfPSu8tUhnVBB1iKXevvnlR4Ww==}
-    engines: {node: '>= 12'}
-    dev: true
-
   /common-tags@1.8.2:
     resolution: {integrity: sha512-gk/Z852D2Wtb//0I+kRFNKKE9dIIVirjoqPoA1wJU+XePVXZfGeBpk45+A1rKO4Q43prqWBNY/MiIeRLbPWUaA==}
     engines: {node: '>=4.0.0'}
@@ -4840,13 +4831,6 @@ packages:
   /jsonpointer@5.0.1:
     resolution: {integrity: sha512-p/nXbhSEcu3pZRdkW1OfJhpsVtW1gd4Wa1fnQc9YLiTfAjn0312eMKimbdIQzuZl9aa9xUGaRlP9T/CJE/ditQ==}
     engines: {node: '>=0.10.0'}
-    dev: true
-
-  /katex@0.16.9:
-    resolution: {integrity: sha512-fsSYjWS0EEOwvy81j3vRA8TEAhQhKiqO+FQaKWp0m39qwOzHVBgAUBIXWj1pB+O2W3fIpNa6Y9KSKCVbfPhyAQ==}
-    hasBin: true
-    dependencies:
-      commander: 8.3.0
     dev: true
 
   /khroma@2.1.0:
@@ -6455,7 +6439,7 @@ packages:
       - typescript
     dev: true
 
-  /vuepress-plugin-md-enhance@2.0.0-rc.25(@vue/repl@4.1.1)(chart.js@4.4.1)(echarts@5.5.0)(flowchart.ts@2.0.0)(katex@0.16.9)(markdown-it@14.0.0)(mermaid@10.8.0)(reveal.js@5.0.4)(vuepress@2.0.0-rc.8):
+  /vuepress-plugin-md-enhance@2.0.0-rc.25(@vue/repl@4.1.1)(chart.js@4.4.1)(echarts@5.5.0)(flowchart.ts@2.0.0)(markdown-it@14.0.0)(mermaid@10.8.0)(reveal.js@5.0.4)(vuepress@2.0.0-rc.8):
     resolution: {integrity: sha512-zmwWCk92S0yQL/uCF6l5YV1Zm2lsGjL9XJZVHEOVY1guXNfnvc92O0gf1dN9E4v+8henIFag5fluMrsfrUP8UQ==}
     engines: {node: '>=18.16.0', npm: '>=8', pnpm: '>=7', yarn: '>=2'}
     peerDependencies:
@@ -6518,7 +6502,7 @@ packages:
       '@mdit/plugin-img-mark': 0.8.0(markdown-it@14.0.0)
       '@mdit/plugin-img-size': 0.8.0(markdown-it@14.0.0)
       '@mdit/plugin-include': 0.8.0(markdown-it@14.0.0)
-      '@mdit/plugin-katex': 0.8.0(katex@0.16.9)(markdown-it@14.0.0)
+      '@mdit/plugin-katex': 0.8.0(markdown-it@14.0.0)
       '@mdit/plugin-mark': 0.8.0(markdown-it@14.0.0)
       '@mdit/plugin-mathjax': 0.8.0(markdown-it@14.0.0)
       '@mdit/plugin-stylize': 0.8.0(markdown-it@14.0.0)
@@ -6537,7 +6521,6 @@ packages:
       echarts: 5.5.0
       flowchart.ts: 2.0.0
       js-yaml: 4.1.0
-      katex: 0.16.9
       mermaid: 10.8.0
       reveal.js: 5.0.4
       vue: 3.4.19
@@ -6670,7 +6653,7 @@ packages:
       - typescript
     dev: true
 
-  /vuepress-theme-hope@2.0.0-rc.25(@vue/repl@4.1.1)(@vuepress/plugin-docsearch@2.0.0-rc.17)(@vuepress/plugin-feed@2.0.0-rc.17)(@vuepress/plugin-pwa@2.0.0-rc.17)(@waline/client@3.1.2)(chart.js@4.4.1)(echarts@5.5.0)(flowchart.ts@2.0.0)(hls.js@1.5.6)(katex@0.16.9)(markdown-it@14.0.0)(mermaid@10.8.0)(reveal.js@5.0.4)(vuepress-plugin-search-pro@2.0.0-rc.32)(vuepress@2.0.0-rc.8):
+  /vuepress-theme-hope@2.0.0-rc.25(@vue/repl@4.1.1)(@vuepress/plugin-docsearch@2.0.0-rc.17)(@vuepress/plugin-feed@2.0.0-rc.17)(@vuepress/plugin-pwa@2.0.0-rc.17)(@waline/client@3.1.2)(chart.js@4.4.1)(echarts@5.5.0)(flowchart.ts@2.0.0)(hls.js@1.5.6)(markdown-it@14.0.0)(mermaid@10.8.0)(reveal.js@5.0.4)(vuepress-plugin-search-pro@2.0.0-rc.32)(vuepress@2.0.0-rc.8):
     resolution: {integrity: sha512-Mf9YzRRYHEtRy8Mni/nrsEfeKL45wv9700eglZ4rP/RBVJ6kjk/sRr7yohPiDfTRz/RRoWofEYVGTGSTgDDz4w==}
     engines: {node: '>=18.16.0', npm: '>=8', pnpm: '>=7', yarn: '>=2'}
     peerDependencies:
@@ -6731,7 +6714,7 @@ packages:
       vuepress: 2.0.0-rc.8(@vuepress/bundler-vite@2.0.0-rc.8)(vue@3.4.19)
       vuepress-plugin-comment2: 2.0.0-rc.25(@waline/client@3.1.2)(vuepress@2.0.0-rc.8)
       vuepress-plugin-components: 2.0.0-rc.25(hls.js@1.5.6)(vuepress@2.0.0-rc.8)
-      vuepress-plugin-md-enhance: 2.0.0-rc.25(@vue/repl@4.1.1)(chart.js@4.4.1)(echarts@5.5.0)(flowchart.ts@2.0.0)(katex@0.16.9)(markdown-it@14.0.0)(mermaid@10.8.0)(reveal.js@5.0.4)(vuepress@2.0.0-rc.8)
+      vuepress-plugin-md-enhance: 2.0.0-rc.25(@vue/repl@4.1.1)(chart.js@4.4.1)(echarts@5.5.0)(flowchart.ts@2.0.0)(markdown-it@14.0.0)(mermaid@10.8.0)(reveal.js@5.0.4)(vuepress@2.0.0-rc.8)
       vuepress-plugin-sass-palette: 2.0.0-rc.25(vuepress@2.0.0-rc.8)
       vuepress-plugin-search-pro: 2.0.0-rc.32(vuepress@2.0.0-rc.8)
       vuepress-shared: 2.0.0-rc.25(vuepress@2.0.0-rc.8)
