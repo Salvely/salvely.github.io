@@ -621,19 +621,108 @@ date updated: 2024-05-20 16:06
 		
 		- 定义![](derivative%20of%20a%20vector-valued%20function.png)
 			其中，$\vec{r'(t)}$ 在$\vec{r(t)}$的切线方向，指向 $t$ 增加的方向。
-		- 计算：对各个分量的函数求导
+		- 计算：对各个分量的函数求导（为什么？）
 		- 高阶微分计算：直接计算即可
 		- 连续性：导数在定义域上各点连续，而且在定义域上不存在导数为0的情况
 		- 微分性质及其应用![](properties%20of%20the%20derivative.png)
-			- 第一条：
-			- 第二条
-			- 第三条（重点）
-			- 第四条（重点）
+			- 第一条：用一个常数乘以向量，常数会和向量所有函数分量相乘，那么对结果求导，就是对函数分量求导。
+			- 第二条：两个向量相加，会将各自的函数分量相加。对相加后的结果求导，效果就等同与先对各个分量求导，然后再相加。
+			- 第三条（重点）：
+				- 一个普通函数乘以一个向量，这个函数会和这个向量中的各个函数相乘。
+				- 根据链式法则，对两个函数的乘积相乘，结果是：$$(w(t)f(t))'=w'(t)f(t)+w(t)f'(t)$$
+				- 那么原式如下：$$\begin{flalign*}
+					&\frac{d}{dt} (w(t)\vec{r(t)}) = \frac{d}{dt}w(t)(f(t)\vec{i}+g(t)\vec{j}) \\
+					&= \frac{d}{dt}(w(t)f(t)\vec{i}+w(t)g(t)\vec{j})\\
+					&= \frac{d}{dt}(w(t)f(t))\vec{i}+\frac{d}{dt}(w(t)g(t))\vec{j}\\
+					&= (w'(t)f(t)+w(t)f'(t))\vec{i} + (w(t)g'(t)+w'(t)g(t))\vec{j} \\
+					&= (w'(t)f(t)\vec{i}+w'(t)g(t)\vec{j})+(w(t)f'(t)\vec{i}+w(t)g'(t)\vec{j}) \\
+					&= w'(t)\vec{r(t)}+w(t)\vec{r'(t)}
+					\end{flalign*}
+					$$
+			- 第四条（重点）:
+				- 两个向量值函数点乘，相当于各个分量分别相乘，最后相加
+				- 对点乘的结果进行求导，就相当于对各个分量积求导
+				- 推导如下：$$\begin{flalign*}
+					& \frac{d}{dt}(\vec{r(t)}\cdot\vec{u(t)}) \\
+					&= \frac{d}{dt}(f_{1}(t)\vec{i}+g_{1}(t)\vec{j})\cdot(f_{2}(t)\vec{i}+g_{2}(t)\vec{j}) \\
+					&= \frac{d}{dt}(f_{1}(t)f_{2}(t)\vec{i}+g_{1}(t)g_{2}(t)\vec{j}) \\
+					&= \frac{d}{dt}(f_{1}(t)f_{2}(t)\vec{i}) + \frac{d}{dt}(g_{1}(t)g_{2}(t)\vec{j}) \\
+					&= (f'_{1}(t)f_{2}(t)+f_{1}(t)f'_{2}(t))\vec{i}+(g'_{1}(t)g_{2}(t)+g_{1}(t)g'_{2}(t))\vec{j} \\
+					&= (f'_{1}(t)f_{2}(t)\vec{i}+g'_{1}(t)g_{2}(t)\vec{j}) + (f_{1}(t)f'_{2}(t)\vec{i}+g_{1}(t)g'_{2}(t)\vec{j}) \\
+					&= <f'_{1}(t),g'_{1}(t)>\cdot<f_{2}(t),g_{2}(t)>+<f_{1}(t),g_{1}(t)>\cdot<f'_{2}(t),g'_{2}(t)>\\
+					&= \vec{r'(t)}\vec{u(t)}+\vec{r(t)}\vec{u'(t)}
+					\end{flalign*}
+					$$
 			- 第五条（重点）
-			- 第六条（重点）
-			- 第七条
-	- 积分
+				> 注意：平面中的向量没有叉乘，只有空间中的向量才有叉乘。因为叉乘结果德方向垂直于两个向量构成的平面。
+				
+				- 推导如下：$$
+				\begin{flalign*}
+				\frac{d}{dt}(\vec{r}(t)\times\vec{u}(t)) \\
+				&= \frac{d}{dt}(<f_{1}(t),g_{1}(t),h_{1}(t)>\times<f_{2}(t),g_{2}(t),h_{2}(t)>) \\
+				&= \frac{d}{dt}\begin{bmatrix} \vec{i} & \vec{j} & \vec{k} \\
+				f_{1}(t) & g_{1}(t) & h_{1}(t) \\
+				f_{2}(t) & g_{2}(t) & h_{2}(t) \\
+				\end{bmatrix} \\
+				& = \frac{d}{dt}((g_{1}(t)h_{2}(t)-h_{1}(t)g_{2}(t))\vec{i}-(f_{1}(t)h_{2}(t)-h_{1}(t)f_{2}(t))\vec{j}+(f_{1}(t)g_{2}(t)-g_{1}(t)f_{2}(t))\vec{k}) \\
+				\end{flalign*}
+				$$
+						下面我们开始求导，由于式子太长，因此在后续的推导中我们将省略$t$，推导如下 $$ 
+						\begin{flalign*}
+						&= (g_{1}h_{2}-h_{1}g_{2})'\vec{i}-(f_{1}h_{2}-h_{1}f_{2})'\vec{j}+(f_{1}g_{2}-g_{1}f_{2})'\vec{k} \\
+						&= (g_{1}'h_{2}+g_{1}h_{2}'-h_{1}'g_{2}-h_{1}g_{2}')\vec{i}-(f_{1}'h_{2}+f_{1}h_{2}'-h_{1}'f_{2}-h_{1}f_{2}')\vec{j}+(f_{1}'g_{2}+f_{1}g_{2}'-g_{1}'f_{2}-g_{1}f_{2}')\vec{k} \\
+						&= ((g_{1}'h_{2}-h_{1}'g_{2})\vec{i}-(f_{1}'h_{2}-h_{1}'f_{2})\vec{j}+(f_{1}'g_{2}-g_{1}'f_{2})\vec{k}) + ((g_{1}h_{2}'-h_{1}g_{2}')\vec{i}-(f_{1}h_{2}'-h_{1}f_{2}')\vec{j}+(f_{1}g_{2}'-g_{1}f_{2}')\vec{k}) \\
+						&= \begin{vmatrix} \vec{i} & \vec{j} & \vec{k}\\ f_{1}' & g_{1}' & h_{1}'\\f_{2} & g_{2} & h_{2}\\ \end{vmatrix} + \begin{vmatrix} \vec{i} & \vec{j} & \vec{k} \\ f_{1} & g_{1} & h_{1} \\ f_{2}' & g_{2}' & h_{2}'\\ \end{vmatrix} \\
+						&= \vec{r}'(t)\times\vec{u}(t) + \vec{r}(t)\times\vec{u}'(t)
+						\end{flalign*}
+					$$
+			- 第六条（重点）：当向量值函数的参数不再是 简单的$t$，而是 $w(t)$ 时，对$f(w(t))$和$g(w(t))$的求导会遵循链式法则，分别得到$f'(w(t))w'(t)$和$g'(w(t))w'(t)$，得到的结果是 $f'(w(t))w'(t)\vec{i}+g'(w(t))w'(t)\vec{j}$，推导如下: $$\begin{flalign*}
+				& \frac{d}{dt}\vec{r}(w(t)) \\ 
+				&= \frac{d}{dt}(f(w(t))\vec{i}+g(w(t))\vec{j}) \\
+				&= \frac{d}{dt}(f(w(t)))\vec{i}+\frac{d}{dt}(g(w(t)))\vec{j} \\ 
+				&= f'(w(t))w'(t)\vec{i} + g'(w(t))w'(t)\vec{j} \\
+				&= w'(t)(f'(w(t))\vec{i}+g'(w(t))\vec{j}) \\
+				&= w'(t)\vec{r}'(w(t))
+				\end{flalign*}$$
+			- 第七条（重点）：依据第四条点乘公式，求导之后得到$$2\vec{r}\cdot(t)\vec{r}'(t) = 0$$那么很自然可得$\vec{r}(t)\cdot\vec{r}'(t)=0$
+	- 积分：对向量值函数德各个分量分别求定积分和不定积分。
+		- 定积分：直接对各个函数分量求定积分即可
+		- 不定积分
+			> 注意不定积分带带常数。
+			
+			- 推导：假设$f(t)$，$g(t)$和$h(t)$的原函数分别是$F(t)$、$G(t)$ 和 $H(t)$，设向量$\vec{R}(t) = F(t)\vec{i}-G(t)\vec{j}+H(t)\vec{k}$，推导如下：$$
+		\begin{flalign*}
+		& \int{\vec{r}(t)}=\int{f(t)}\vec{i} - \int{g(t)}\vec{j}+\int{h(t)}\vec{k} \\
+		&= (F(t)+C_{1})\vec{i}-(G(t)+C_{2})\vec{j}+(H_{t}+C_{3})\vec{k} \\
+		&= (F(t)\vec{i}-G(t)\vec{j}+H(t)\vec{k}) + (C_{1}\vec{i}-C_{2}\vec{j}+C_{3}\vec{k}) \\
+		&= \vec{R}(t) + \vec{C}
+		\end{flalign*}
+		$$
+				因此也可得$\vec{R}'(t)=\vec{r}(t)$
 - 速度和加速度 & 斜抛运动
+	- 设现在存在一个物体
+	- t时刻位置：$\vec{r}(t)=x(t)\vec{i}+y(t)\vec{j}$
+	- 速度
+		- 推导
+			- 在初始阶段，该物体的位置为$\vec{r}(t)=x(t)\vec{i}+y(t)\vec{j}$
+			- 在$\Delta(t)$ 时间后，该物体的位置为$\vec{r}(t+\Delta{t})=x(t+\Delta{t})\vec{i}+y(t+\Delta{t})\vec{j}$
+			- 因此这段时间的位移量的变化用向量表示为$\vec{r}(t+\Delta{t})-\vec{r}(t)$
+			- 因为一段时间内的平均速度 = 位移量 / 时间长度，设平均速度为$\vec{v}$，那么$$
+			\begin{flalign*}\vec{v}=\frac{\vec{r}(t+\Delta{t})-\vec{r}(t)}{\Delta{t}}\end{flalign*}
+			$$
+			 - 那么要求解瞬时速度，我们需要让$\Delta{t}\rightarrow 0$，由此解得$$			\begin{flalign*}\lim_{\Delta{t}\rightarrow 0}\vec{v}=\lim_{\Delta{t}\rightarrow 0}\frac{\vec{r}(t+\Delta{t})-\vec{r}(t)}{\Delta{t}}\end{flalign*}
+			$$
+			- 该速度表达式也是我们前面提到的向量值函数的导数表达式$\vec{r}'(t)$，我们用向量替换掉$\vec{r}(t+\Delta{t})$和$\vec{r}(t)$，再对其格式进行一下整理，可得$$\begin{flalign*}&\vec{v}=\vec{r}'(t)=\lim_{\Delta{t}\rightarrow 0}\frac{(x(t+\Delta{t})\vec{i}+y(t+\Delta{t})\vec{j})-(x(t)\vec{i}+y(t)\vec{j})}{\Delta{t}}\\
+				&= \lim_{\Delta{t}\rightarrow 0}\frac{x(t+\Delta{t})-x(t)}{\Delta{t}}\vec{i}+\lim_{\Delta{t}\rightarrow 0}\frac{y(t+\Delta{t})-y(t)}{\Delta{t}}\vec{j} \\
+				&= x'(t)\vec{i}+y'(t)\vec{j}
+				\end{flalign*}$$
+			- 那么该速度的大小为$|\vec{v}(t)|=\sqrt{(x'(t))^2+(y'(t))^2}$
+	- 加速度
+		- 我们可以看到物体瞬时速度的大小就是位移向量值函数的导数，那么加速度作为速度的变化量，可以推导出其值为速度向量值函数的导数
+		- 公式：$\vec{a}=\vec{r}''(t)=\vec{v}'(t)=x''(t)\vec{i}+y''(t)\vec{j}$
+	- 位移、速度、加速度图像
+	- 
+	- 斜抛运动
 - 切向量 & 法向量
 	- 单位切向量
 	- 切线求解

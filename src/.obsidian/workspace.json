@@ -128,8 +128,17 @@
                 "file": "science/math/微积分/Ron Larson Calculus 阅读笔记.md"
               }
             }
+          },
+          {
+            "id": "58002ab3cd99ea2a",
+            "type": "leaf",
+            "state": {
+              "type": "side-panel-control-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -147,7 +156,7 @@
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
     }
   },
-  "active": "7643835b76de21e4",
+  "active": "56e0a855179b2c86",
   "lastOpenFiles": [
     "science/math/微积分/properties of the derivative.png",
     "science/math/离散数学/Prolog解释器实现/Prolog解释器实现记录：REPL实现.md",
