@@ -1,5 +1,5 @@
 ---
-date: 2024-05-13 19-05
+date: 2024-05-13
 title: Rosen 《离散数学及其应用》 阅读笔记
 shortTitle: Rosen 《离散数学及其应用》 阅读笔记
 author: Salvely

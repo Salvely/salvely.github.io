@@ -1,5 +1,5 @@
 ---
-date: 2024-05-20 16-05
+date: 2024-05-20
 title: Ron Larson Calculus 阅读笔记
 shortTitle: Ron Larson Calculus 阅读笔记
 author: Salvely

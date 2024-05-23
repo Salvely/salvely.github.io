@@ -2,7 +2,7 @@
 title: 计算机组成原理基础巩固——EDA工具使用专题
 shortTitle: 计算机组成原理基础巩固——EDA工具使用专题
 author: Salvely
-date: 2023-04-02T00:00:00.000Z
+date: 2023-04-02
 isOriginal: true
 article: true
 timeline: true

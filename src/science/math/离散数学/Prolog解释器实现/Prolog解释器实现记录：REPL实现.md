@@ -1,5 +1,5 @@
 ---
-date: 2024-05-23 15-05
+date: 2024-05-23
 title: Prolog解释器实现记录（一）
 shortTitle: Prolog解释器实现记录（一）
 author: Salvely

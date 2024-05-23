@@ -1,5 +1,5 @@
 ---
-date: 2024-05-13 11-05
+date: 2024-05-13
 title: 小型推理引擎语言tie使用方法 & 语法定义
 shortTitle: 小型推理引擎语言tie使用方法 & 语法定义
 author: Salvely
