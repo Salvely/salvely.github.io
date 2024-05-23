@@ -520,28 +520,33 @@ date updated: 2024-05-20 16:06
           $$
           d=\frac{|d_{1}-d_{2}|}{\sqrt{a^2+b^2+c^2}}
           $$
-        - 推导
-          - 假设两平面的法向量为$\vec{n_{1}}=(a,b,c)$
-          - 平面一的方程为：$ax+by+cz+d1=0$
-          - 平面二的方程为：$ax+by+cz+d2=0$
-          - 假设现在有一条从平面一的$P(x_{0},y_{0},z_{0})$发出的射线（P 点满足$ax_{0}+by_{0}+cz_{0}+d1=0$），其方向与法向量平行，该直线的方程为（t 为参数）：
-            $$
+        - 推导 
+          - 假设两平面的法向量为$\vec{n_{1}}=(a,b,c)$ - 平面一的方程为：$ax+by+cz+d1=0$ - 平面二的方程为：$ax+by+cz+d2=0$ - 假设现在有一条从平面一的$P(x_{0},y_{0},z_{0})$发出的射线（P 点满足$ax_{0}+by_{0}+cz_{0}+d1=0$），其方向与法向量平行，该直线的方程为（t 为参数）：
+          	$$
             \begin{align}
             x=x_{0}+at \\
             y=y_{0}+bt \\
             z=z_{0}+ct \\
             \end{align}
             $$
-          - 假设点$Q(x_{1},y_{1},z_{1})$为该直线和平面的交点，将其带入平面二的方程，可得如下结果：$$a(x_{0}+at)+b(y_{0}+bt)+c(z_{0}+ct)+d2=0$$
-          - 通过移项可得：
-            $$
-            (ax_{0}+by_{0}+cz_{0}+d2)+(a^2t+b^2t+c^2t)=0
-            $$
-          - 那么 t 的值为：$$t=\frac{-(ax_{0}+by_{0}+cz_{0}+d2)}{a^2+b^2+c^2}$$
-          - 又因为$ax_{0}+by_{0}+cz_{0}+d1=0$，因此$ax_{0}+by_{0}+cz_{0}=-d1$，那么$t$的式子可以改写为$$t=\frac{d1-d2}{a^2+b^2+c^2}$$
-          - 因此向量$$\begin{align}\vec{PQ}=(x_{1}-x_{0},y_{1}-y_{0},z_{1}-z_{0})\\ = (at,bt,ct) \\ =(\frac{a(d1-d2)}{a^2+b^2+c^2},\frac{b(d1-d2)}{a^2+b^2+c^2},\frac{c(d1-d2)}{a^2+b^2+c^2})\end{align}$$
-          - 那么向量的长度（两平面间的距离）为$$d=\begin{align}\sqrt{\frac{(a^2+b^2+c^2)(d1-d2)^2}{(a^2+b^2+c^2)^2}} \\ =\sqrt{\frac{(d1-d2)^2}{(a^2+b^2+c^2)}} \end{align}$$
-          - 该等式可以化简为$$d=\frac{|d1-d2|}{\sqrt{a^2+b^2+c^2}}$$
+  		 - 假设点$Q(x_{1},y_{1},z_{1})$为该直线和平面的交点，将其带入平面二的方程，可得如下结果：
+			$$
+			a(x_{0}+at)+b(y_{0}+bt)+c(z_{0}+ct)+d2=0
+			$$ 
+    	- 通过移项可得：
+        $$
+          (ax_{0}+by_{0}+cz_{0}+d2)+(a^2t+b^2t+c^2t)=0
+        $$ 
+    	- 那么 t 的值为：
+			$$t=\frac{-(ax_{0}+by_{0}+cz_{0}+d2)}{a^2+b^2+c^2}$$
+        - 又因为$ax_{0}+by_{0}+cz_{0}+d1=0$，因此$ax_{0}+by_{0}+cz_{0}=-d1$，那么$t$的式子可以改写为
+			$$t=\frac{d1-d2}{a^2+b^2+c^2}$$
+        - 因此向量
+			$$\begin{align}\vec{PQ}=(x_{1}-x_{0},y_{1}-y_{0},z_{1}-z_{0})\\ = (at,bt,ct) \\ =(\frac{a(d1-d2)}{a^2+b^2+c^2},\frac{b(d1-d2)}{a^2+b^2+c^2},\frac{c(d1-d2)}{a^2+b^2+c^2})\end{align}$$
+        - 那么向量的长度（两平面间的距离）为
+			$$d=\begin{align}\sqrt{\frac{(a^2+b^2+c^2)(d1-d2)^2}{(a^2+b^2+c^2)^2}} \\ =\sqrt{\frac{(d1-d2)^2}{(a^2+b^2+c^2)}} \end{align}$$
+        - 该等式可以化简为
+			$$d=\frac{|d1-d2|}{\sqrt{a^2+b^2+c^2}}$$
       - 如果相交的话，两平面的交线为：交线的方向向量为两平面的法向量的叉乘（因为交线即垂直于第一个平面的法向量，又垂直于第二个平面的法向量，因此它的方向就是这两个法向量的叉乘）
 
 - 空间中的曲面
@@ -714,7 +719,9 @@ date updated: 2024-05-20 16:06
         &= w'(t)\vec{r}'(w(t))
         \end{aligned}
         $$
-      - 第七条（重点）：依据第四条点乘公式，求导之后得到$$2\vec{r}\cdot(t)\vec{r}'(t) = 0$$那么很自然可得$\vec{r}(t)\cdot\vec{r}'(t)=0$
+      - 第七条（重点）：依据第四条点乘公式，求导之后得到
+  		$$2\vec{r}\cdot(t)\vec{r}'(t) = 0$$
+		那么很自然可得$\vec{r}(t)\cdot\vec{r}'(t)=0$
 
   - 积分：对向量值函数德各个分量分别求定积分和不定积分。
     - 定积分：直接对各个函数分量求定积分即可
@@ -734,7 +741,9 @@ date updated: 2024-05-20 16:06
   - 设现在存在一个物体
   - t 时刻位置：$\vec{r}(t)=x(t)\vec{i}+y(t)\vec{j}$
   - 速度
+
     - 推导
+
       - 在初始阶段，该物体的位置为$\vec{r}(t)=x(t)\vec{i}+y(t)\vec{j}$
       - 在$\Delta(t)$ 时间后，该物体的位置为$\vec{r}(t+\Delta{t})=x(t+\Delta{t})\vec{i}+y(t+\Delta{t})\vec{j}$
       - 因此这段时间的位移量的变化用向量表示为$\vec{r}(t+\Delta{t})-\vec{r}(t)$
@@ -749,14 +758,15 @@ date updated: 2024-05-20 16:06
       - 该速度表达式也是我们前面提到的向量值函数的导数表达式$\vec{r}'(t)$，我们用向量替换掉$\vec{r}(t+\Delta{t})$和$\vec{r}(t)$，再对其格式进行一下整理，可得
 
         $
-    	\begin{aligned}
-		&\vec{v}=\vec{r}'(t)=\lim_{\Delta{t}\rightarrow 0}\frac{(x(t+\Delta{t})\vec{i}+y(t+\Delta{t})\vec{j})-(x(t)\vec{i}+y(t)\vec{j})}{\Delta{t}} \\
-    	&= \lim_{\Delta{t}\rightarrow 0}\frac{x(t+\Delta{t})-x(t)}{\Delta{t}}\vec{i}+\lim_{\Delta{t}\rightarrow 0}\frac{y(t+\Delta{t})-y(t)}{\Delta{t}}\vec{j} \\
-    	&= x'(t)\vec{i}+y'(t)\vec{j} \\
-    	\end{aligned}
-		$
-		
+        \begin{aligned}
+        &\vec{v}=\vec{r}'(t)=\lim*{\Delta{t}\rightarrow 0}\frac{(x(t+\Delta{t})\vec{i}+y(t+\Delta{t})\vec{j})-(x(t)\vec{i}+y(t)\vec{j})}{\Delta{t}} \\
+        &= \lim*{\Delta{t}\rightarrow 0}\frac{x(t+\Delta{t})-x(t)}{\Delta{t}}\vec{i}+\lim\_{\Delta{t}\rightarrow 0}\frac{y(t+\Delta{t})-y(t)}{\Delta{t}}\vec{j} \\
+        &= x'(t)\vec{i}+y'(t)\vec{j} \\
+        \end{aligned}
+        $
+
       - 那么该速度的大小为$|\vec{v}(t)|=\sqrt{(x'(t))^2+(y'(t))^2}$
+
   - 加速度
     - 我们可以看到物体瞬时速度的大小就是位移向量值函数的导数，那么加速度作为速度的变化量，可以推导出其值为速度向量值函数的导数
     - 公式：$\vec{a}=\vec{r}''(t)=\vec{v}'(t)=x''(t)\vec{i}+y''(t)\vec{j}$

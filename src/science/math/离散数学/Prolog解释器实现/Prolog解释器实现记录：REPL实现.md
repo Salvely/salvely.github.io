@@ -1,5 +1,5 @@
 ---
-date: 2024-05-12 14-05
+date: 2024-05-23 15-05
 title: Prolog解释器实现记录（一）
 shortTitle: Prolog解释器实现记录（一）
 author: Salvely
@@ -14,7 +14,7 @@ next: true
 footer: true
 copyright: Salvely
 toc: true
-date updated: 2024-05-12 15:51
+date updated: 2024-05-23 15:45
 ---
 
 ## 前言
@@ -45,5 +45,6 @@ while 1:
 ## Prolog 语言标准
 
 Prolog语言 ISO 标准见此下载：
-- [Prolog标准-1](-%20ISO%20Prolog%20standard,%20part%201_%20General%20core,%20ISO-IEC-13211-1%20(1995).pdf)
-- [Prolog标准-2](-%20ISO%20Prolog%20standard,%20part%202_%20Modules,%20ISO-IEC-13211-2%20(2000).pdf)
+
+- [Prolog标准-1](/-%20ISO%20Prolog%20standard,%20part%201_%20General%20core,%20ISO-IEC-13211-1%20(1995).pdf)
+- [Prolog标准-2](/-%20ISO%20Prolog%20standard,%20part%202_%20Modules,%20ISO-IEC-13211-2%20(2000).pdf)

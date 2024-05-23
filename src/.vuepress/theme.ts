@@ -1,7 +1,7 @@
 import { MyTheme } from "./theme/index";
 import { zhNavbar } from "./navbar/index.js";
 import { zhSidebar } from "./sidebar/index.js";
-import { commentPlugin } from 'vuepress-plugin-comment2'
+import { commentPlugin } from "vuepress-plugin-comment2";
 
 export default MyTheme({
   hotReload: true,
@@ -103,13 +103,13 @@ export default MyTheme({
   plugins: {
     searchPro: true,
     comment: {
-        // 选择一个评论服务
-        provider: "Giscus",
-        repo:"Salvely/salvely.github.io",
-        repoId:"R_kgDOLoDIxw",
-        category:"Announcements",
-        categoryId:"DIC_kwDOLoDIx84CeZBE",
-      },
+      // 选择一个评论服务
+      provider: "Giscus",
+      repo: "Salvely/salvely.github.io",
+      repoId: "R_kgDOLoDIxw",
+      category: "Announcements",
+      categoryId: "DIC_kwDOLoDIx84CeZBE",
+    },
     components: {
       components: ["BiliBili", "Badge"],
     },
@@ -172,6 +172,7 @@ export default MyTheme({
     },
     // all features are enabled for demo, only preserve features you need here
     mdEnhance: {
+      include: true,
       align: true,
       attrs: true,
       chart: true,
@@ -184,7 +185,6 @@ export default MyTheme({
       tasklist: true,
       imgLazyload: true,
       imgSize: true,
-      include: true,
       katex: true,
       mark: true,
       mermaid: true,
@@ -192,7 +192,7 @@ export default MyTheme({
         presets: ["ts", "vue"],
       },
       revealJs: {
-        plugins: ["highlight", "math", "search", "notes", "zoom"]
+        plugins: ["highlight", "math", "search", "notes", "zoom"],
       },
       stylize: [
         {

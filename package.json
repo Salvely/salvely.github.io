@@ -40,6 +40,7 @@
     "@moefy-canvas/theme-popper": "^0.5.2",
     "aplayer": "^1.10.1",
     "axios": "^1.6.7",
+    "cors": "^2.8.5",
     "deepmerge-ts": "^5.1.0",
     "hls.js": "^1.5.6",
     "http-proxy-middleware": "^2.0.6",
