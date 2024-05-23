@@ -6,8 +6,8 @@
     <link>https://salvely.github.io/</link>
     <description>Salvely</description>
     <language>zh-CN</language>
-    <pubDate>Thu, 23 May 2024 08:59:52 GMT</pubDate>
-    <lastBuildDate>Thu, 23 May 2024 08:59:52 GMT</lastBuildDate>
+    <pubDate>Thu, 23 May 2024 09:23:27 GMT</pubDate>
+    <lastBuildDate>Thu, 23 May 2024 09:23:27 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>Vivado</category>
@@ -23,7 +23,7 @@
       <guid>https://salvely.github.io/life/plan/2024%20%E8%AE%A1%E5%88%92%20_%20%E8%BF%9B%E5%BA%A6%E8%AE%B0%E5%BD%95%20_%E6%9C%88%E6%9C%AB%E6%80%BB%E7%BB%93.html</guid>
       <source url="https://salvely.github.io/rss.xml">2024-5月计划 &amp; 进度记录 &amp;月末总结</source>
       <description> Do one thing and do it well. 数学学习 遵循MIT Roadmap，配合一些其他的课程和教材 基础数学课程 代数学 分析 &amp; 几何学 逻辑学 数论 概率 &amp; 统计学 拓扑 &amp; 几何学 组合学 计算机科学 经济 &amp; 金融 计算机科学与工程 应用物理学 统计与数据科学 物理学习 参考以下资料： How to become a ...</description>
-      <pubDate>Tue, 21 May 2024 11:13:40 GMT</pubDate>
+      <pubDate>Sun, 19 May 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<blockquote>
 <p>Do one thing and do it well.</p>
 </blockquote>
@@ -195,7 +195,7 @@
       <guid>https://salvely.github.io/science/math/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%93%E4%B8%9A%E6%95%B0%E5%AD%A6%E6%8E%A2%E7%B4%A2%E5%9C%B0%E5%9B%BE.html</guid>
       <source url="https://salvely.github.io/rss.xml">计算机专业数学探索地图</source>
       <description> 以下为计算机专业的数学探索地图，建立的依据是Math Major Roadmaps (mit.edu)，此外提供了考研数学专题，其中包含：微积分、微分方程、线性代数、概率论与数理统计的笔记，以及考研真题+模拟题的分析讲解。 以下为基础数学部分，学完之后考研数学真题刷到140+后，进入计算机专业数学部分 微积分+数学分析 Ron Larson 微积分课...</description>
-      <pubDate>Tue, 21 May 2024 11:13:40 GMT</pubDate>
+      <pubDate>Thu, 16 May 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<blockquote>
 <p>以下为计算机专业的数学探索地图，建立的依据是<a href="https://math.mit.edu/academics/undergrad/roadmaps.html" target="_blank" rel="noopener noreferrer">Math Major Roadmaps (mit.edu)</a>，此外提供了考研数学专题，其中包含：微积分、微分方程、线性代数、概率论与数理统计的笔记，以及考研真题+模拟题的分析讲解。</p>
 </blockquote>
@@ -207,7 +207,7 @@
       <guid>https://salvely.github.io/science/math/%E5%BE%AE%E7%A7%AF%E5%88%86/Ron%20Larson%20Calculus%20%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0.html</guid>
       <source url="https://salvely.github.io/rss.xml">Ron Larson Calculus 阅读笔记</source>
       <description> 学习本教材的目的是： 掌握微积分基础知识 巩固计算能力 前 5 章内容分别为：微积分前置知识，极限，微分，微分的应用，一些常见的指对数和超越函数介绍。内容较为简单，因此这里不再详细展示。本笔记从第六章：微分方程的解法开始。 Chapter 6：微分方程 本章最开始介绍了Slope Field，即一个函数的导数与其变量 x 和 y 相关，这种形式的方程...</description>
-      <pubDate>Tue, 21 May 2024 11:13:40 GMT</pubDate>
+      <pubDate>Mon, 20 May 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<blockquote>
 <p>学习本教材的目的是：</p>
 <ol>
@@ -4883,7 +4883,7 @@ c-16-25.333-24-45-24-59z"></path></svg></span></span></span></span></span></span
       <guid>https://salvely.github.io/science/math/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/Rosen%20%E3%80%8A%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8%E3%80%8B%20%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0.html</guid>
       <source url="https://salvely.github.io/rss.xml">Rosen 《离散数学及其应用》 阅读笔记</source>
       <description>相关资源 课本pdf可点击这里阅读：Discrete mathematics and its applications 课后习题答案见此：Solutions 笔记完成进度 Chapter 1：逻辑与证明 -&amp;gt; 小型推理引擎实现 Chapter 2：包括集合、函数、序列、求和、矩阵 -&amp;gt; 实现数据结构 Chapter 3：算法 -&amp;gt; 实现算法 Chapt...</description>
-      <pubDate>Tue, 21 May 2024 11:13:40 GMT</pubDate>
+      <pubDate>Mon, 13 May 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<h2>相关资源</h2>
 <ol>
 <li>课本pdf可点击这里阅读：<a href="Rosen,%20Kenneth%20H%20-%20Discrete%20mathematics%20and%20its%20applications-McGraw-Hill%20(2019).pdf">Discrete mathematics and its applications</a></li>
@@ -5183,7 +5183,7 @@ c-16-25.333-24-45-24-59z"></path></svg></span></span></span></span></span></span
       <guid>https://salvely.github.io/science/math/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/Prolog%E8%A7%A3%E9%87%8A%E5%99%A8%E5%AE%9E%E7%8E%B0/Prolog%E8%A7%A3%E9%87%8A%E5%99%A8%E5%AE%9E%E7%8E%B0%E8%AE%B0%E5%BD%95%EF%BC%9AREPL%E5%AE%9E%E7%8E%B0.html</guid>
       <source url="https://salvely.github.io/rss.xml">Prolog解释器实现记录（一）</source>
       <description>前言 Get your hands dirty！ 为什么想实现一个Prolog解释器呢？因为我最近在学离散数学，而离散数学里面涉及到非常多的数据结构和布尔代数、命题、谓词逻辑、证明等。我觉得如果用计算机实现命题的自动推导会很有趣，而Prolog又是一种提供了相关功能的语言。我是个闲不住的人，而且喜欢造轮子。如果只是在学习数学、而不动手写点代码的话，我会...</description>
-      <pubDate>Tue, 21 May 2024 11:13:40 GMT</pubDate>
+      <pubDate>Thu, 23 May 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<h2>前言</h2>
 <blockquote>
 <p>Get your hands dirty！</p>
@@ -5227,7 +5227,7 @@ c-16-25.333-24-45-24-59z"></path></svg></span></span></span></span></span></span
       <guid>https://salvely.github.io/science/math/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/%E5%B0%8F%E5%9E%8B%E6%8E%A8%E7%90%86%E5%BC%95%E6%93%8Etie%E5%AE%9E%E7%8E%B0/%E5%B0%8F%E5%9E%8B%E6%8E%A8%E7%90%86%E5%BC%95%E6%93%8E%E8%AF%AD%E8%A8%80tie%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%20_%20%E8%AF%AD%E6%B3%95%E5%AE%9A%E4%B9%89.html</guid>
       <source url="https://salvely.github.io/rss.xml">小型推理引擎语言tie使用方法 &amp; 语法定义</source>
       <description>使用方法 输入python main.py进入默认的交互模式 输入python main.py -f [filename.tie]，可对tie程序进行解释，并输出到控制台 如果输入为文件，可使用-o [output_filename]，将程序输出重定向到output_filename文件 注释 使用/*表示注释的开始，使用*/表示注释的结束。 英语转化...</description>
-      <pubDate>Tue, 21 May 2024 11:13:40 GMT</pubDate>
+      <pubDate>Mon, 13 May 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<h2>使用方法</h2>
 <ul>
 <li>输入<code>python main.py</code>进入默认的交互模式</li>
@@ -5998,7 +5998,7 @@ SR 锁存器特点：</p>
       <source url="https://salvely.github.io/rss.xml">关于本站</source>
       <description>关于本站 ✨📒 详细记录一下此次建站过程 开始 之前的博客是基于jekyll打造的，要添加和定制化的东西都只能基于html+js+css完成，有些麻烦，所以一直有想更换引擎的想法 直到偶然间发现vuepress，首先是被vue3+typescript+vite吸引，然后看到默认主题属实有点不合符我的期待，自己动手成本又太高，也没有太急着去折腾，直到无...</description>
       <category>Blog</category>
-      <pubDate>Tue, 14 Mar 2023 21:45:45 GMT</pubDate>
+      <pubDate>Mon, 01 Apr 2024 12:10:23 GMT</pubDate>
       <content:encoded><![CDATA[
 <div class="hint-container info">
 <p class="hint-container-title">✨📒</p>
