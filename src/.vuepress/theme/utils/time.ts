@@ -1,5 +1,5 @@
 export const show_runtime = (): void => {
-  const startTime = new Date("10/31/2016 10:00:00").toString();
+  const startTime = new Date("4/2/2024 10:00:00").toString();
   window.setTimeout(show_runtime, 1000);
   const longtime = calculateTimePassed(startTime);
   const el = document.getElementById("runtime_span");
