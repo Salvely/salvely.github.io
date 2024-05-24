@@ -16,7 +16,7 @@ import { hitokotoPlugin } from "./plugins/vuepress-plugin-hitokoto";
 import { shikiPlugin } from "@vuepress/plugin-shiki";
 import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
 import metingPlugin from "vuepress-plugin-meting2";
-
+import { searchProPlugin } from "vuepress-plugin-search-pro";
 const __dirname = getDirname(import.meta.url);
 export default defineUserConfig({
   base: "/",
@@ -59,6 +59,10 @@ export default defineUserConfig({
     // vuePluginOptions: {},
   }),
   plugins: [
+    searchProPlugin({
+      // 配置选项
+      indexContent: true,
+    }),
     metingPlugin({
       metingOptions: {
         global: true,

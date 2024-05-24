@@ -2,6 +2,7 @@ import { MyTheme } from "./theme/index";
 import { zhNavbar } from "./navbar/index.js";
 import { zhSidebar } from "./sidebar/index.js";
 import { commentPlugin } from "vuepress-plugin-comment2";
+import { searchProPlugin } from "vuepress-plugin-search-pro";
 
 export default MyTheme({
   hotReload: true,
