@@ -6,8 +6,8 @@
     <link>https://salvely.github.io/</link>
     <description>Salvely</description>
     <language>zh-CN</language>
-    <pubDate>Fri, 24 May 2024 07:07:37 GMT</pubDate>
-    <lastBuildDate>Fri, 24 May 2024 07:07:37 GMT</lastBuildDate>
+    <pubDate>Fri, 24 May 2024 07:33:44 GMT</pubDate>
+    <lastBuildDate>Fri, 24 May 2024 07:33:44 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>Vivado</category>
@@ -6172,53 +6172,53 @@ SR 锁存器特点：</p>
 <h2>目录结构</h2>
 <div class="language-bash line-numbers-mode" data-ext="sh" data-title="sh"><pre class="shiki one-dark-pro" style="background-color:#282c34;color:#abb2bf" tabindex="0"><code><span class="line"><span style="color:#56B6C2">.</span></span>
 <span class="line"><span style="color:#61AFEF">├──</span><span style="color:#98C379"> .github</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   ├──</span><span style="color:#98C379"> ISSUE_TEMPLATE</span><span style="color:#7F848E;font-style:italic"> # issus 模版</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │</span><span style="color:#98C379">   └──</span><span style="color:#98C379"> bug-report.yml</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   └──</span><span style="color:#98C379"> workflows</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">       └──</span><span style="color:#98C379"> deploy-docs.yml</span><span style="color:#7F848E;font-style:italic"> # 推送脚本</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   ├── ISSUE_TEMPLATE # issus 模版</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   └── bug-report.yml</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   └── workflows</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">       └── deploy-docs.yml # 推送脚本</span></span>
 <span class="line"><span style="color:#61AFEF">├──</span><span style="color:#98C379"> CNAME</span></span>
 <span class="line"><span style="color:#61AFEF">├──</span><span style="color:#98C379"> LICENSE</span></span>
 <span class="line"><span style="color:#61AFEF">├──</span><span style="color:#98C379"> README.md</span></span>
 <span class="line"><span style="color:#61AFEF">├──</span><span style="color:#98C379"> api</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   └──</span><span style="color:#98C379"> proxy.js</span><span style="color:#7F848E;font-style:italic"> # 跨域代理</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   └── proxy.js # 跨域代理</span></span>
 <span class="line"><span style="color:#61AFEF">├──</span><span style="color:#98C379"> env.d.ts</span></span>
 <span class="line"><span style="color:#61AFEF">├──</span><span style="color:#98C379"> package.json</span></span>
 <span class="line"><span style="color:#61AFEF">├──</span><span style="color:#98C379"> pnpm-lock.yaml</span></span>
 <span class="line"><span style="color:#61AFEF">├──</span><span style="color:#98C379"> script</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   ├──</span><span style="color:#98C379"> requirements.txt</span><span style="color:#ABB2BF"> </span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   └──</span><span style="color:#98C379"> submit.py</span><span style="color:#7F848E;font-style:italic"> # Github Actions 推送URL使用脚本</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   ├── requirements.txt </span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   └── submit.py # Github Actions 推送URL使用脚本</span></span>
 <span class="line"><span style="color:#61AFEF">├──</span><span style="color:#98C379"> src</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   ├──</span><span style="color:#98C379"> .vuepress</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │</span><span style="color:#98C379">   ├──</span><span style="color:#98C379"> client.ts</span><span style="color:#7F848E;font-style:italic"> # 客户端配置文件</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │</span><span style="color:#98C379">   ├──</span><span style="color:#98C379"> components</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │</span><span style="color:#98C379">   │</span><span style="color:#98C379">   ├──</span><span style="color:#98C379"> MyCoverLink.vue</span><span style="color:#7F848E;font-style:italic"> # 友链组件</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │</span><span style="color:#98C379">   │</span><span style="color:#98C379">   └──</span><span style="color:#98C379"> Mylink.vue</span><span style="color:#7F848E;font-style:italic"> # 卡片组件</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │</span><span style="color:#98C379">   ├──</span><span style="color:#98C379"> config.ts</span><span style="color:#7F848E;font-style:italic"> # vuepress配置文件</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │</span><span style="color:#98C379">   ├──</span><span style="color:#98C379"> data</span><span style="color:#7F848E;font-style:italic"> # 数据</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │</span><span style="color:#98C379">   ├──</span><span style="color:#98C379"> navbar</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │</span><span style="color:#98C379">   ├──</span><span style="color:#98C379"> plugins</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │</span><span style="color:#98C379">   │</span><span style="color:#98C379">   ├──</span><span style="color:#98C379"> vuepress-plugin-canvas</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │</span><span style="color:#98C379">   │</span><span style="color:#98C379">   ├──</span><span style="color:#98C379"> vuepress-plugin-gradient-cover</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │</span><span style="color:#98C379">   │</span><span style="color:#98C379">   ├──</span><span style="color:#98C379"> vuepress-plugin-hitokoto</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │</span><span style="color:#98C379">   │</span><span style="color:#98C379">   ├──</span><span style="color:#98C379"> vuepress-plugin-live2DAssist</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │</span><span style="color:#98C379">   │</span><span style="color:#98C379">   └──</span><span style="color:#98C379"> vuepress-plugin-popper</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │</span><span style="color:#98C379">   ├──</span><span style="color:#98C379"> public</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │</span><span style="color:#98C379">   │</span><span style="color:#98C379">   ├──</span><span style="color:#98C379"> assets</span><span style="color:#7F848E;font-style:italic"> # 资源</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │</span><span style="color:#98C379">   ├──</span><span style="color:#98C379"> sidebar</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │</span><span style="color:#98C379">   ├──</span><span style="color:#98C379"> styles</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │</span><span style="color:#98C379">   ├──</span><span style="color:#98C379"> theme</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │</span><span style="color:#98C379">   │</span><span style="color:#98C379">   ├──</span><span style="color:#98C379"> api</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │</span><span style="color:#98C379">   │</span><span style="color:#98C379">   │</span><span style="color:#98C379">   └──</span><span style="color:#98C379"> bing.ts</span><span style="color:#7F848E;font-style:italic"> # bing 每日壁纸</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │</span><span style="color:#98C379">   │</span><span style="color:#98C379">   ├──</span><span style="color:#98C379"> components</span><span style="color:#7F848E;font-style:italic"> #自定义组件</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │</span><span style="color:#98C379">   │</span><span style="color:#98C379">   ├──</span><span style="color:#98C379"> index.ts</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │</span><span style="color:#98C379">   │</span><span style="color:#98C379">   ├──</span><span style="color:#98C379"> layouts</span><span style="color:#7F848E;font-style:italic"> # 自定义布局</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │</span><span style="color:#98C379">   │</span><span style="color:#98C379">   └──</span><span style="color:#98C379"> utils</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │</span><span style="color:#98C379">   │</span><span style="color:#98C379">       ├──</span><span style="color:#98C379"> busuanzi.pure.js</span><span style="color:#7F848E;font-style:italic"> # 不蒜子统计</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │</span><span style="color:#98C379">   │</span><span style="color:#98C379">       └──</span><span style="color:#98C379"> time.ts</span><span style="color:#7F848E;font-style:italic"> #运行时间</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │</span><span style="color:#98C379">   └──</span><span style="color:#98C379"> theme.ts</span><span style="color:#7F848E;font-style:italic"> # 主题配置文件</span></span>
-<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   └──</span><span style="color:#98C379"> README.md</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   ├── .vuepress</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   ├── client.ts # 客户端配置文件</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   ├── components</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   │   ├── MyCoverLink.vue # 友链组件</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   │   └── Mylink.vue # 卡片组件</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   ├── config.ts # vuepress配置文件</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   ├── data # 数据</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   ├── navbar</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   ├── plugins</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   │   ├── vuepress-plugin-canvas</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   │   ├── vuepress-plugin-gradient-cover</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   │   ├── vuepress-plugin-hitokoto</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   │   ├── vuepress-plugin-live2DAssist</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   │   └── vuepress-plugin-popper</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   ├── public</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   │   ├── assets # 资源</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   ├── sidebar</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   ├── styles</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   ├── theme</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   │   ├── api</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   │   │   └── bing.ts # bing 每日壁纸</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   │   ├── components #自定义组件</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   │   ├── index.ts</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   │   ├── layouts # 自定义布局</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   │   └── utils</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   │       ├── busuanzi.pure.js # 不蒜子统计</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   │       └── time.ts #运行时间</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   │   └── theme.ts # 主题配置文件</span></span>
+<span class="line"><span style="color:#61AFEF">│</span><span style="color:#98C379">   └── README.md</span></span>
 <span class="line"><span style="color:#61AFEF">├──</span><span style="color:#98C379"> tsconfig.json</span></span>
-<span class="line"><span style="color:#61AFEF">└──</span><span style="color:#98C379"> vercel.json</span><span style="color:#7F848E;font-style:italic"> # vercel 配置文件</span></span>
+<span class="line"><span style="color:#61AFEF">└──</span><span style="color:#98C379"> vercel.json # vercel 配置文件</span></span>
 <span class="line"></span></code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2>框架支持</h2>
 <p><a href="https://v2.vuepress.vuejs.org/zh/" target="_blank" rel="noopener noreferrer">vuepress2.x</a></p>
 <h2>主题支持</h2>
