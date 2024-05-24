@@ -30,20 +30,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "460901344850b4a9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -109,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "science/math/数学学习路径 & 笔记大全.md",
+                "file": "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "science/math/数学学习路径 & 笔记大全.md",
+                "file": "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "science/math/数学学习路径 & 笔记大全.md"
+                "file": "science/math/微积分/Ron Larson Calculus 阅读笔记.md"
               }
             }
           },
@@ -180,11 +169,12 @@
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
     }
   },
-  "active": "eb61d334e5bbb43c",
+  "active": "6348009c26be5ed1",
   "lastOpenFiles": [
+    "google605f27bf54597938.html",
+    "science/math/数学学习路径 & 笔记大全.md",
     "science/math/计算机专业数学探索地图.md",
     "science/math/微信收款码.png",
-    "science/math/数学学习路径 & 笔记大全.md",
     "science/math/支付宝收款码.jpg",
     "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
     "life/plan/2024 计划 & 进度记录 &月末总结.md",
