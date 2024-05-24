@@ -356,7 +356,7 @@ date updated: 2024-05-20 16:06
   - 功的求解：功 = 力在某个位移方向上的投影**的长度** \* 位移量
     - 使用投影 \* 位移
     - 可以直接使用点乘
-      - 可以直接使用点乘的原因是：功是一个标量，**其求解的是 投影的长度 _ 位移量，而不是投影 _ 位移量。**
+      - 可以直接使用点乘的原因是：功是一个标量，**其求解的是投影的长度 * 位移量，而不是投影 * 位移量。**
       - 在前面的推导中我们知道投影的长度为为$|\vec{u}|\cos\theta$，是在其后乘了一个单位向量才让它称为一个向量。
       - 位移是一个矢量，而位移量也是一个标量$|\vec{v}|$
       - 相乘的最后结果为$|\vec{u}||\vec{v}|\cos\theta$，也就是$\vec{u}\cdot\vec{v}$
@@ -542,7 +542,7 @@ date updated: 2024-05-20 16:06
         - 又因为$ax_{0}+by_{0}+cz_{0}+d1=0$，因此$ax_{0}+by_{0}+cz_{0}=-d1$，那么$t$的式子可以改写为
 			$$t=\frac{d1-d2}{a^2+b^2+c^2}$$
         - 因此向量
-			$$\begin{align}\vec{PQ}=(x_{1}-x_{0},y_{1}-y_{0},z_{1}-z_{0})\\ = (at,bt,ct) \\ =(\frac{a(d1-d2)}{a^2+b^2+c^2},\frac{b(d1-d2)}{a^2+b^2+c^2},\frac{c(d1-d2)}{a^2+b^2+c^2})\end{align}$$
+			$$\begin{align}&\vec{PQ}=(x_{1}-x_{0},y_{1}-y_{0},z_{1}-z_{0})\\ &= (at,bt,ct) \\ &=(\frac{a(d1-d2)}{a^2+b^2+c^2},\frac{b(d1-d2)}{a^2+b^2+c^2},\frac{c(d1-d2)}{a^2+b^2+c^2})\end{align}$$
         - 那么向量的长度（两平面间的距离）为
 			$$d=\begin{align}\sqrt{\frac{(a^2+b^2+c^2)(d1-d2)^2}{(a^2+b^2+c^2)^2}} \\ =\sqrt{\frac{(d1-d2)^2}{(a^2+b^2+c^2)}} \end{align}$$
         - 该等式可以化简为
@@ -753,7 +753,7 @@ date updated: 2024-05-20 16:06
         $$
       - 那么要求解瞬时速度，我们需要让$\Delta{t}\rightarrow 0$，由此解得
         $$
-        \begin{aligned}\lim*{\Delta{t}\rightarrow 0}\vec{v}=\lim*{\Delta{t}\rightarrow 0}\frac{\vec{r}(t+\Delta{t})-\vec{r}(t)}{\Delta{t}}\end{aligned}
+        \begin{aligned}\lim_{\Delta{t}\rightarrow 0}\vec{v}=\lim_{\Delta{t}\rightarrow 0}\frac{\vec{r}(t+\Delta{t})-\vec{r}(t)}{\Delta{t}}\end{aligned}
         $$
       - 该速度表达式也是我们前面提到的向量值函数的导数表达式$\vec{r}'(t)$，我们用向量替换掉$\vec{r}(t+\Delta{t})$和$\vec{r}(t)$，再对其格式进行一下整理，可得
 
@@ -821,7 +821,25 @@ date updated: 2024-05-20 16:06
     \vec{T}(t)=\frac{\vec{r}'(t)}{|\vec{r}'(t)|}
     $$
   - 切线求解
+	  - 假设曲线的向量值函数为 $\vec{r}(t)$，求解点 $P(x_{0},y_{0},z_{0})$ 处的切线
+	  - 因为切线的向量值函数为
+		$$
+		\vec{T}(t)=\frac{\vec{r}'(t)}{|\vec{r}'(t)|}
+		$$
+	- 对于点 P，我们需要根据  $x_{0}$, $y_{0}$ 和 $z_{0}$ 求解出 t 的值，然后将其带入  $\vec{T}(t)$, 得到切线的向量
+	- 向量的三个值也就是经过点 P 的直线的方向向量，由此可以得出切线的参数方程
   - 单位法向量
+	  - 推导
+		  - 在之前的结论里面我们知道，如果 $\vec{r}(t)\cdot\vec{r}(t)=c$，那么 $\vec{r}(t)\cdot\vec{r}'(t)=0$
+		  - 因为切向量 $\vec{T}(t)$ 为单位向量，因此 $\vec{T}(t)\cdot\vec{T}(t)=|\vec{T}^2(t)|=1$
+		  - 根据之前的结论 $\vec{T}(t)\cdot\vec{T}(t)=c \rightarrow \vec{T}(t)\cdot\vec{T}'(t)=0$，因此可以看到切向向量及其微分向量方向是垂直的
+		  - 因为单位法向量和单位切向量垂直，因此我们推断单位切向量的微分就是单位法向量
+	- 单位法向量公式（$|\vec{T}'(t)|\ne 0$）
+		$$\vec{N}(t)=\frac{\vec{T}'(t)}{|\vec{T}'(t)|}$$
+	> 这里有两个问题：
+	> 1. 在什么情况下会出现 $\vec{T}(t)\cdot\vec{T}(t)=c$ 的情况？
+	> 2. 为什么单位法向量不直接是 $\vec{T}'(t)$？因为
+		
   - 加速度在水平 & 垂直方向上的分量
 - 弧长和曲率
 - 总结

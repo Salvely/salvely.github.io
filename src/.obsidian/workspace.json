@@ -8,11 +8,39 @@
         "type": "tabs",
         "children": [
           {
+            "id": "eb61d334e5bbb43c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "science/math/数学学习路径 & 笔记大全.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "6348009c26be5ed1",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "460901344850b4a9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "science/math/数学学习路径 & 笔记大全.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "science/math/数学学习路径 & 笔记大全.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,10 +148,21 @@
             "type": "leaf",
             "state": {
               "type": "outline",
+              "state": {
+                "file": "science/math/数学学习路径 & 笔记大全.md"
+              }
+            }
+          },
+          {
+            "id": "2322913bb2c32332",
+            "type": "leaf",
+            "state": {
+              "type": "side-panel-control-view",
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -139,8 +180,14 @@
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
     }
   },
-  "active": "6348009c26be5ed1",
+  "active": "eb61d334e5bbb43c",
   "lastOpenFiles": [
+    "science/math/计算机专业数学探索地图.md",
+    "science/math/微信收款码.png",
+    "science/math/数学学习路径 & 笔记大全.md",
+    "science/math/支付宝收款码.jpg",
+    "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
+    "life/plan/2024 计划 & 进度记录 &月末总结.md",
     "science/math/离散数学/小型推理引擎tie实现/小型推理引擎tie实现.md",
     "2024-05-14.md",
     "science/math/考研数学/真题总结.md",
@@ -158,11 +205,8 @@
     "science/math/离散数学/Prolog解释器实现/- ISO Prolog standard, part 2_ Modules, ISO-IEC-13211-2 (2000).pdf",
     "[Salvely's.md",
     "- ISO Prolog standard, part 2_ Modules, ISO-IEC-13211-2 (2000).md",
-    "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
     "science/math/微积分/properties of the derivative.png",
-    "life/plan/2024 计划 & 进度记录 &月末总结.md",
     "science/math/离散数学/Jerrold W. Grossman, Daniel R. Jordan - Instructor’s Resource Guide to accompany Kenneth H. Rosen Discrete Mathematics and Its Applications 8th Edition (2019).pdf",
-    "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
     "science/math/微积分/derivative of a vector-valued function.png",
     "science/math/微积分/definition of limit.png",
     "science/math/微积分/the spherical coordinate system.png",
@@ -170,9 +214,6 @@
     "science/math/微积分/surface of revolution.png",
     "science/math/微积分/hyperboloic paraboloid.png",
     "science/math/微积分/elliptic paraboloid.png",
-    "science/math/微积分/elliptic cone.png",
-    "science/math/微积分/hyperboloid of two sheets.png",
-    "science/math/计算机专业数学探索地图.md",
     "life/plan/README.md",
     "life/violin",
     "science/math/离散数学/Rosen, Kenneth H - Discrete mathematics and its applications-McGraw-Hill (2019).pdf",
@@ -185,7 +226,6 @@
     "template/post-template.md",
     "README.md",
     "visitorsbook.md",
-    "2024-05-12.md",
     "science/math/数学思想 & 数学史"
   ]
 }
