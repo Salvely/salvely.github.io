@@ -30,7 +30,7 @@ projects:
     link: /visitorsbook
 
   - icon: /assets/shoucang.svg
-    name: 收藏
+    name: 项目
     desc: 有趣的内容
     link: /collect
 

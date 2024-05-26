@@ -242,7 +242,7 @@ export const zhNavbar = navbar([
     ],
   },
   {
-    text: "收藏",
+    text: "项目",
     icon: "hk-shoucang1",
     link: "/collect",
   },

@@ -353,11 +353,11 @@ date updated: 2024-05-20 16:06
     - 正交向量
       - 和投影垂直的是该投影的正交向量，其可以用$\vec{u}-proj_{v}{u}$
   - 力的分解：求解一个力的投影及正交
-  - 功的求解：功 = 力在某个位移方向上的投影**的长度** \* 位移量
+  - 功的求解：功 = 力在某个位移方向上的投影**的长度** \* 位移**量**
     - 使用投影 \* 位移
     - 可以直接使用点乘
       - 可以直接使用点乘的原因是：功是一个标量，**其求解的是投影的长度 * 位移量，而不是投影 * 位移量。**
-      - 在前面的推导中我们知道投影的长度为为$|\vec{u}|\cos\theta$，是在其后乘了一个单位向量才让它称为一个向量。
+      - 在前面的推导中我们知道投影的长度为为$|\vec{u}|\cos\theta$，是在其后乘了一个单位向量才让它成为一个向量。
       - 位移是一个矢量，而位移量也是一个标量$|\vec{v}|$
       - 相乘的最后结果为$|\vec{u}||\vec{v}|\cos\theta$，也就是$\vec{u}\cdot\vec{v}$
 
@@ -840,10 +840,104 @@ date updated: 2024-05-20 16:06
 	> 1. 在什么情况下会出现 $\vec{T}(t)\cdot\vec{T}(t)=c$ 的情况？
 	> 2. 为什么单位法向量不直接是 $\vec{T}'(t)$？
 	
-	- 
-		
+	- 另一种寻找法向量的方法
+		- 假设单位切向量 $\vec{T}(t)=x(t)\vec{i}+y(t)\vec{j}$（$|\vec{T}(t)|=\sqrt{x^2(t)+y^2(t)}=1$），那么其单位法向量可以是
+			- $\vec{N}(t)=y(t)\vec{i}-x(t)\vec{j}$，因为 $\vec{T}(t)\cdot\vec{N}(t)=x(t)y(t)-x(t)y(t)=0$，满足两向量垂直，且 $\vec{N}(t)$ 为单位向量
+			- $\vec{N}(t)=-y(t)\vec{i}+x(t)\vec{j}$，理由同上
+	
   - 加速度在水平 & 垂直方向上的分量
+	  - 物理意义
+		  - 对于以匀速行驶的物体
+			  - 速度和加速度的向量是垂直的（这个是根据前面那个定理，如果 $|\vec{r}'(t)|^2=c$，那么 $\vec{r}'(t)\cdot\vec{r}'(t)=0$，那么式子两边求导可得 $\vec{r}'(t)\cdot\vec{r}''(t)=0$，也就是速度向量和加速度向量垂直）
+		  - 对于以变速行驶的物体
+			  - 速度和加速度向量不一定垂直，如斜抛运动，加速度一直向下，和运动轨迹无关
+	  - 加速度向量
+		  - 加速度向量 $\vec{a}(t)$ 在速度向量 $\vec{T}(t)$ 和速度法向量 $\vec{T}(t)$ 之间
+		  - 推导 1
+			  - 我们想要求解的是 $\vec{a}(t)=\vec{v}'(t)=a_{T}\vec{T}(t)+a_{N}\vec{N}(t)$ 中的 $a_{T}$ 和 $a_{N}$，其中 $\vec{T}(t)$ 和 $\vec{N}(t)$ 分别是和速度平行的单位向量和垂直于速度的单位向量
+			  - 设位移向量为 $\vec{r}(t)$ 
+			  - 那么速度的方向向量  $\vec{v}(t)= \vec{r}'(t)$，其单位向量为 $\vec{T}(t)=\frac{\vec{v}(t)}{|\vec{v}(t)|}$
+			  - 对该式进行移向，得到 $\vec{v}(t)=\vec{T}(t)|\vec{v}(t)|$
+			  - 要得到 $\vec{v}'(t)$，需要对等式两端进行求导，得到 $\vec{v}'(t)=\frac{d}{dt}(\vec{T}(t)|\vec{v}(t)|)$
+			  - 因此 $\vec{a}(t)=\vec{v}'(t)=\vec{T}'(t)|\vec{v}(t)|+\vec{T}(t)\frac{d}{dt}(|\vec{v}(t)|)$
+			  - 又因为 $\vec{N}(t)=\frac{\vec{T}'(t)}{|\vec{T}'(t)|}$
+			  - 移向可得 $\vec{T}'(t)=\vec{N}(t)|\vec{T}'(t)|$
+			  - 带入 $\vec{a}(t)$ 可得 $\vec{a}(t)=\vec{N}(t)|\vec{T}'(t)||\vec{v}(t)|+\vec{T}(t)\frac{d}{dt}(|\vec{v}(t)|)$
+			  - 那么 $\vec{a}(t)=\vec{v}'(t)=a_{T}\vec{T}(t)+a_{N}\vec{N}(t)$ 中的 $a_{T}$ 和 $a_{N}$ 分别为
+				  $$
+				  a_{T}=\frac{d}{dt}(|\vec{v}(t)|)
+				  $$
+				  而
+				  $$
+				  a_{N}=|\vec{T}'(t)||\vec{v}(t)|
+				  $$
+			- 这两个值分别为加速度的切向和法向向量大小
+		- 推导 2
+			> 别记错投影公式！
+			
+			- 不从公式的角度运算，我们还可以这么理解。加速度的切向和法向分量，是加速度向量 $\vec{a}$ 在速度的切向 $\vec{T}$ 和法向 $\vec{N}$ 方向分量上的投影。
+			- 依然假设位移向量为 $\vec{r}(t)$，那么速度向量为 $\vec{v}(t)=\vec{r}'(t)$，加速度向量为 $\vec{a}(t)=\vec{v}'(t)=\vec{r}''(t)$
+			- 而 $\vec{a}(t)=proj_{\vec{T}}{\vec{a}}\vec{T}+proj_{\vec{N}}\vec{a}\vec{N}$
+			- 我们之前学过，一个向量 $\vec{u}$ 在另一个向量 $\vec{v}$ 上的投影的公式为
+				$$
+				proj_{\vec{v}}\vec{u}=\frac{\vec{u}\cdot\vec{v}}{|\vec{v}|^2}\vec{v}
+				$$
+			- 那么该投影的长度为
+				$$
+				|proj_{\vec{v}}|\vec{u}=|\frac{\vec{u}\cdot\vec{v}}{|\vec{v}|^2}\vec{v}|=\frac{\vec{u}\cdot\vec{v}}{|\vec{v}|^2}|\vec{v}|=\frac{\vec{u}\cdot\vec{v}}{|\vec{v}|}
+				$$
+			- 那么由此我们可以得到，向量 $\vec{a}$ 在向量 $\vec{T}$ 上的投影的大小为
+				$$
+				a_{T}=|proj_{\vec{T}}{\vec{a}}|=\frac{\vec{a}\cdot\vec{T}}{|\vec{T}|}=\vec{a}\cdot\vec{T}
+				$$
+			- 以此类推，向量 $\vec{a}$ 在向量 $\vec{N}$ 上的投影的大小为
+				$$
+				a_{N}=|proj_{\vec{N}}\vec{a}|=\frac{\vec{a}\cdot\vec{N}}{|\vec{N}|}=\vec{a}\cdot\vec{N}
+				$$
+			  - 因为 $\vec{T}=\frac{\vec{v}}{|\vec{v}|}$，因此 $a_{T}$ 还可以写成
+				   $$
+				   a_{T}=\frac{\vec{a}\cdot\vec{v}}{|\vec{v}|}
+				   $$
+			  - ~~因为 $\vec{N}=\frac{\vec{T}'(t)}{|\vec{T}'(t)|}$，因此 $a_{N}$ 还可以写成~~（这种方法解不出来）
+				  $$
+				  a_{N}= \frac{\vec{T}'(t)\cdot\vec{a}}{|\vec{T}'(t)|}
+				  $$
+			- 我们现在来看一下几个向量之间的几何关系（设向量 $\vec{T}$ 和向量  $\vec{a}$ 之间的夹角为 $\theta$，向量 $\vec{a}$ 和向量 $a_{N}$ 之间的夹角为 $\phi$）
+				![](geometry%20representation%20of%20vectors.png)
+			- 根据上述图像，可得如下关系式：
+				 $$
+				 \vec{a}\cdot\vec{N}=|\vec{a}||\vec{N}|\cos\phi
+				 $$
+			- 在上述式子中，$|\vec{a}||\cos\phi|=a_{N}$
+			- 而根据几何关系我们还可以看出，$a_{N}=|\vec{a}|\sin\theta$
+			- 因此 $\vec{a}\cdot\vec{N}=|\vec{N}||\vec{a}|\sin\theta$
+			- 因为
+				$$
+				|\vec{N}|=|\vec{T}|=1
+				$$
+			- 因此，$a_{N}=\vec{a}\cdot\vec{N}=|\vec{T}||\vec{a}|\sin\theta=|\vec{a}\times\vec{T}|$
+			- 又因 $\vec{T}=\frac{\vec{v}}{|\vec{v}|}$
+			- 因此原式等于 
+				$$		a_{N}=\vec{a}\cdot\vec{N}=|\vec{T}||\vec{a}|\sin\theta=|\vec{a}\times\vec{T}|=\frac{|\vec{v}\times\vec{a}|}{|\vec{v}|}
+				$$
+	  - 公式总结
+		  - 速度方向上的加速度分量
+			  $$
+			  a_{T}=\vec{a}\cdot\vec{T}=\frac{\vec{a}\cdot\vec{v}}{|\vec{v}|}
+			  $$
+		  - 速度法向量方向上的加速度分量
+			  $$
+			  a_{N}=\vec{a}\cdot\vec{N}=\frac{|\vec{v}\times\vec{a}|}{|\vec{v}|}=\sqrt{\vec{a}^2-a_{T}^2}
+			  $$
 - 弧长和曲率
+	- 弧长
+		> 在对向量值函数求解弧长之前，我们先复习一下对
+	
+		- 求解一段向量值函数的弧长的方法是，对该弧长的每一小段进行求解，然后在 t 的范围内对其求定积分
+		- 设  $\vec{r}(t)=x(t)\vec{i}+y(t)\vec{j}+z(t)\vec{k}$
+		- 那么这个曲线在 $\Delta{t}$ 内的一小段弧长为 $\Delta{r}=\sqrt{\Delta{x}^2+\Delta{y}^2+\Delta{z}^2}$
+		- 
+	- 曲率
 - 总结
 
 ## Chapter 13：多变量函数
