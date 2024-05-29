@@ -931,14 +931,264 @@ date updated: 2024-05-20 16:06
 			  $$
 - 弧长和曲率
 	- 弧长
-		> 在对向量值函数求解弧长之前，我们先复习一下对
-	
-		- 求解一段向量值函数的弧长的方法是，对该弧长的每一小段进行求解，然后在 t 的范围内对其求定积分
-		- 设  $\vec{r}(t)=x(t)\vec{i}+y(t)\vec{j}+z(t)\vec{k}$
-		- 那么这个曲线在 $\Delta{t}$ 内的一小段弧长为 $\Delta{r}=\sqrt{\Delta{x}^2+\Delta{y}^2+\Delta{z}^2}$
-		- 
-	- 曲率
+		- 单变量函数弧长求解复习
+			- 在对向量值函数求解弧长之前，我们先复习一下对单变量函数求解弧长的过程
+			- 设一单变量函数为 $y=f(x)$，那么一段弧长的计算公式是
+				$$
+		 		\Delta{s}=\sqrt{\Delta{x}^2+\Delta{y}^2}
+		 	$$
+			 - 从中提取出 $\Delta{x}$，可以得到
+				 $$
+				 \Delta{s}=\sqrt{1+(\frac{\Delta{y}}{\Delta{x}})^2}\Delta{x}
+				 $$
+			- 将 $\Delta$ 改为微元，可得
+				$$
+				ds=\sqrt{1+(\frac{dy}{dx})^2}dx
+				$$
+			- 通过移向可得
+				$$
+				ds=\sqrt{1+(\frac{dy}{dx})^2}dx
+				$$
+			- 将 s 视作关于 x 的函数，y 视作关于 x 的函数，那么其可写作如下形式
+				$$
+				ds=\sqrt{1+(y')^2}dx
+				$$
+			- 要求解弧长 s，我们对该式关于 x 进行积分，可得如下结果
+				$$
+				s=\int_{a}^{b}{1+(y')^2}dx
+				$$
+		- 向量值函数的弧长求解推导
+			- 求解一段向量值函数的弧长的方法是，对该弧长的每一小段进行求解，然后在 t 的范围内对其求定积分
+			- 设  $\vec{r}(t)=x(t)\vec{i}+y(t)\vec{j}+z(t)\vec{k}$
+			- 那么这个曲线在 $\Delta{t}$ 内的一小段弧长为 $\Delta{r}=\sqrt{\Delta{x}^2+\Delta{y}^2+\Delta{z}^2}$
+			- 将 $\Delta$ 修改为微元，可得 $ds=\sqrt{dx^2+dy^2+dz^2}$
+			- 对右边提取出一个 dt，可得
+				$$
+				ds=\sqrt{(\frac{dx}{dt})^2+(\frac{dy}{dt})^2+(\frac{dz}{dt})^2}dt
+				$$
+			- 该式可以表达如下
+				$$
+				s=\int_{a}^{b}\sqrt{(x')^2+(y')^2+(z')^2}dt
+				$$
+			- 根据之前的内容，我们知道
+				$$
+				\vec{r}'(t)=x'\vec{i}+y'\vec{j}+z'\vec{k}
+				$$
+			- 那么
+				$$
+				s=\int_{a}^{b}\sqrt{(x')^2+(y')^2+(z')^2}dt=\int_{a}^{b}|\vec{r}'(t)|dt
+				$$
+		- 还可以这么理解：$\vec{r}(t)$ 是物体经过的路径，$\vec{v}(t)=|\vec{r}'(t)|$ 是物体在 t 时刻的瞬时速度，在一段时间（t=a 到 t=b 时刻）内对速度进行积分，就可以得到位移的量，这就是 $L=\int_{a}^{b}\vec{r}'(t)dt$
+	- 弧长函数
+		- 当 t 不是一个定值，而是一个变量时，从 a 到 t 时刻的弧长定义如下：
+			$$
+			s(t)=\int_{a}^{t}|\vec{r}'(t)|dt
+			$$
+		- 这个 $s(t)$ 就是 arc length parameter
+		- 微积分前两个定理的解释如图：
+			![](https://upload.wikimedia.org/wikipedia/commons/2/2f/Fundamental_theorem_of_calculus_%28animation%29.gif)
+		- 根据微积分第一定律：
+			$$
+			\frac{d}{dx}\int_{a}^{x}f(x)dx=f(x)
+			$$
+		- 那么
+			$$
+			\frac{d}{dt}\int_{a}^{t}|r'(u)|du=|r'(t)|
+			$$
+		- 需要注意的是，这里的 $s(t)$ 是指的路程，而不是位移。因此该值总是为正。
+	- 弧长参数 s
+		> 这一段我在理解上废了功夫，其中这个 
+		> -  [calculus - How do you determine whether a curve uses arc length as a parameter? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/484142/how-do-you-determine-whether-a-curve-uses-arc-length-as-a-parameter) 问题下的回答
+		> - 这个 [12.5 The Arc Length Parameter and Curvature‣ Chapter 12 Vector Valued Functions ‣ Calculus III (und.edu)](https://sites.und.edu/timothy.prescott/apex/web/apex.Ch12.S5.html) 讲义
+		> - [Parametrize a Curve with Respect to Arc Length (youtube.com)](https://www.youtube.com/watch?v=G0R-qialKlE) 还有这个视频
+		> 给了我很大的启发。
+
+		- 定义
+			- 首先我们需要思考，为什么需要弧长参数 s？这里可以有两种定义轨迹曲线位移的方式：
+				 - 用时刻 t 来定义位移：比如我们想知道 t=1 时，坐标在哪里？
+				 - 用弧长 s 来定义位移：比如我们想知道 s=1 时，坐标在哪里？这个用来标记位置的弧长参数 s 就是我们要寻找的目标
+		- 求解
+			- 根据前文我们可知
+				$$
+				s(t)=\int_{a}^{t}|\vec{r}'(t)|dt
+				$$
+				我们便可以计算出 $s(t)$ 的关系式，将 $t=g(s)$ （$g$ 为 $s$ 的反函数）带入 $\vec{r}(t)$，便可得到 $\vec{r}(s)$
+		- 推导
+			- 因为
+				$$
+				\frac{dr}{dt}=\frac{dr}{ds}\frac{ds}{dt}
+				$$
+			- 利用导数替换掉分式可得：
+				$$
+				\vec{r}'(t)=\vec{r}'(s)s'(t)
+				$$
+			- 通过移向可得
+				$$
+				\vec{r}'(s)=\frac{\vec{r}'(t)}{s'(t)}
+				$$
+			- 又因为
+				$$
+				\frac{ds}{dt}=s'(t)=|\vec{r}'(t)|
+				$$
+			- 可得
+				$$
+				\vec{r}'(s)=\frac{\vec{r}'(t)}{|\vec{r}'(t)|}
+				$$
+			- 这个值我们是见过的，他就是 $\vec{T}(t)$，也就是速度方向上的单位向量
+			- $\vec{r}'(s)$ 与 $\vec{r}'(t)$ 不同的是，$|\vec{r}'(s)|=1$，是个单位向量
+			- 如果要使 t 为弧长参数，当且仅当在 $|\vec{r}'(t)|=1$ 的情况下才能实现，也就是说 $s=t$；同理，当 $|\vec{r}'(t)|=1$ 时，t 为单位向量
+		- 含义
+			- 在前文我们提到过，$\vec{r}(t)$ 相当于位移
+			- $|\vec{r}'(t)|$ 相当于 t 时刻速度的大小
+			- $\vec{T}(t)$ 是速度方向上的单位向量，也是 $\vec{r}'(s)$，当且仅当 $|\vec{r}'(s)|=1$ 时 $s$ 为弧长参数
+		- 结论
+			![](arc%20length%20parameter%20theorem.png)
+	- 弧长参数的应用 -> 曲率
+		> 曲率的学习也可以参考这里：
+		> - [Curvature intuition (youtube.com)](https://www.youtube.com/watch?v=ugtUGhBSeE0)
+		> - [Curvature formula, part 1 (youtube.com)](https://www.youtube.com/watch?v=gspjhwSNMWs)
+		> - [Curvature formula, part 2 (youtube.com)](https://www.youtube.com/watch?v=Q-BxnC-uWQo)
+		> - [Curvature formula, part 3 (youtube.com)](https://www.youtube.com/watch?v=8V4_4M90RfA)
+		> - [12.5 The Arc Length Parameter and Curvature‣ Chapter 12 Vector Valued Functions ‣ Calculus III (und.edu)](https://sites.und.edu/timothy.prescott/apex/web/apex.Ch12.S5.html)
+
+		 - 定义 & 推导
+			 - 曲率是用来衡量曲线的弯曲程度的变量，弯曲越狠，曲率越大 -> 可以这样翻译：在同样的弧长内，单位速度向量的变化越大，曲率越大
+			 - 那么我们这样定义曲率
+				 $$
+				 K=|\frac{d\vec{T}}{ds}|=|\vec{T}'(s)|
+				 $$
+			- 如果 $\vec{r}(s)$ 是以 s 作为弧长参数，那么存在如下式子：
+				$$
+				\vec{T}(s)=\frac{\vec{r}'(s)}{|\vec{r}'(s)|}
+				$$
+			- 我们换一种方法写 $K$：
+				$$
+				\begin{aligned}
+				&K=|\frac{d\vec{T}}{ds}| \\
+				&=|\frac{\frac{d\vec{T}}{dt}}{\frac{ds}{dt}}| \\
+				&=\frac{|\vec{T}'(t)|}{|s'(t)|} \\
+				\end{aligned}
+				$$
+			 - 根据前文我们知道
+				 $$
+				 |s'(t)|=|\vec{r}'(t)|
+				 $$
+			- 因此原式可改写如下
+				$$
+				K=\frac{|\vec{T}'(t)|}{|s'(t)|}=\frac{|\vec{T}'(t)|}{|\vec{r}'(t)|}
+				$$
+			- 因为
+				$$
+				\vec{T}(t)=\frac{\vec{r}'(t)}{|\vec{r}'(t)|}
+				$$
+			- 移向后可得
+				$$
+				\vec{r}'(t)=\vec{T}(t)|\vec{r}'(t)|
+				$$
+			- 对等式两边求导可得
+				$$
+				\vec{r}''(t)=\vec{T}'(t)|\vec{r}'(t)|+\vec{T}(t)|\vec{r}''(t)|
+				$$
+			- 下面我们要做的是将 $|\vec{T}'(t)|$ 的形式给凑出来
+				$$
+				\begin{aligned}
+				&\vec{r}'(t)\times\vec{r}''(t) \\
+				&=(\vec{T}(t)|\vec{r}'(t)|)\times(\vec{T}'(t)|\vec{r}'(t)|+\vec{T}(t)|\vec{r}''(t)|) \\
+				&= \vec{T}(t)|\vec{r}'(t)|\times\vec{T}'(t)|\vec{r}'(t)|+\vec{T}(t)|\vec{r}'(t)|\times\vec{T}(t)|\vec{r}''(t)| \\
+				\end{aligned}
+				$$
+			- 根据叉乘的性质（因为一个向量构不成一个平面，因此不存在其叉乘结果，代数上也可以推导出这个性质。因为当一个行列式的两行都相同时，最后所有的代数余子式都为 0）
+				$$
+				\vec{T}(t)\times\vec{T}(t)=0
+				$$
+			- 原式可以改写为
+				$$
+				\vec{r}'(t)\times\vec{r}''(t)=\vec{T}(t)|\vec{r}'(t)|\times\vec{T}'(t)|\vec{r}'(t)|=(\vec{T}(t)\times\vec{T}'(t))|\vec{r}'(t)|^2
+				$$
+			- 那么
+				$$
+				|\vec{r}'(t)\times\vec{r}''(t)|=|\vec{T}(t)\times\vec{T}'(t)||\vec{r}'(t)|^2
+				$$
+			- 根据叉乘的值的性质我们知道
+				$$
+				|\vec{T}(t)\times\vec{T}'(t)|=|\vec{T}(t)||\vec{T}'(t)|\sin\theta
+				$$
+			- 因为 $\vec{T}(t)$ 是曲线切线方向（速度方向）上的单位向量，因此 $|\vec{T}(t)|=1$，由此 $\vec{T}(t)\cdot\vec{T}(t)=1$，对两边求导可得 $\vec{T}(t)\cdot\vec{T}'(t)=0$
+			- 也就是说 $\vec{T}(t)$ 和 $\vec{T}'(t)$ 垂直。那么 $\sin\theta=1$。因此 $|\vec{T}(t)\times\vec{T}'(t)|=|\vec{T}(t)||\vec{T}'(t)|\sin\theta=|\vec{T}(t)||\vec{T}'(t)|=|\vec{T}'(t)|$ （因为 $\vec{T}(t)$ 是单位向量，长度为 1）
+			- 因此原式可改写为
+				$$
+				|\vec{r}'(t)\times\vec{r}''(t)|=|\vec{T}'(t)||\vec{r}'
+				(t)|^2
+				$$
+			- 那么我们可以得到用 $\vec{r}(t)$ 及其相关导数表示的 $|\vec{T}'(t)|$
+				$$
+				|\vec{T}'(t)|=\frac{|\vec{r}'(t)\times\vec{r}''(t)|}{|\vec{r}'(t)|^2}
+				$$
+			- 因此曲率公式可改写为
+				$$
+				\begin{aligned}
+				&K=\frac{|\vec{T}'(t)|}{|s'(t)|}=\frac{|\vec{T}'(t)|}{|\vec{r}'(t)|} \\
+				&=\frac{|\vec{r}'(t)\times\vec{r}''(t)|}{|\vec{r}'(t)||\vec{r}'(t)|^2} \\
+				&=\frac{|\vec{r}'(t)\times\vec{r}''(t)|}{|\vec{r}'(t)|^3}
+				\end{aligned}
+				$$
+		- 一般函数 $y=f(x)$ 的曲率公式
+			- 设函数为 $y=f(x)$
+			- 该函数用位移 $\vec{r}(x)$ 表示如下
+				> 该函数用向量这样表示是因为，对于一般的向量值函数 $\vec{r}(t)=x(t)\vec{i}+y(t)\vec{j}+z(t)\vec{k}$，x、y 和 z 是关于 t 的函数。而在 $y=f(x)$ 中，这三项是关于 x 的函数，$x=x$，$y=f(x)$，$z=0*x$。
+				
+				$$
+				\vec{r}(x)=x\vec{i}+y\vec{j}
+				$$
+			- 对 $\vec{r}(x)$ 求导得到
+				$$
+				\vec{r}'(x)=\vec{i}+y'\vec{j}
+				$$
+			- 对 $\vec{r}'(x)$ 求导得到
+				$$
+				\vec{r}''(x)=y''\vec{j}
+				$$
+			- 那么按照同样的方式定义曲率 （斜率的变化量/弧长）
+				$$
+				K=|\frac{d\vec{T}}{ds}|=\frac{|\vec{r}'(x)\times\vec{r}''(x)|}{|\vec{r}'(x)|^3}
+				$$
+			- $\vec{r}'(x)\times\vec{r}''(x)$ 的叉乘行列式如下：
+				$$
+				\begin{vmatrix}
+				\vec{i} & \vec{j} & \vec{k} \\
+				1 & y' & 0 \\
+				0 & y'' & 0\\
+				\end{vmatrix}
+				$$
+			- 该行列式的计算结果为
+				$$
+				|\vec{r}'(x)\times\vec{r}''(x)|=|y''\vec{k}|=|y''|
+				$$
+			- 那么曲率的结果为
+				$$
+				K=|\frac{d\vec{T}}{ds}|=\frac{|y''|}{\sqrt{1+(y')^2}}
+				$$
+		- 公式总结
+			- 向量值函数的曲率公式
+				$$
+				\begin{aligned}
+				&K=|\frac{d\vec{T}}{ds}|=|\vec{T}'(s)|\\
+				&=\frac{|\vec{T}'(t)|}{|s'(t)|}=\frac{|\vec{T}'(t)|}{|\vec{r}'(t)|} \\
+				&=\frac{|\vec{r}'(t)\times\vec{r}''(t)|}{|\vec{r}'(t)|^3}
+				\end{aligned}
+				$$
+			- 一般函数的曲率公式
+				$$
+				K=|\frac{d\vec{T}}{ds}|=\frac{|y''|}{(\sqrt{1+(y')^2})^3}
+				$$
+	- 应用：速度，曲率与加速度的关系
+		- 加速度的切向分量：速度的变化率 -> 弧长的变化率
+		- 加速度的法向分量：是速度和曲率的函数
+			![](acceleration,%20speed%20and%20curvature.png)
+			- 推导：如何用速度和曲率表示加速度
+				![](accelerator%20PROOF.png)
 - 总结
+	![](summary%20of%20velocity,%20acceleration%20and%20curvature.png)
 
 ## Chapter 13：多变量函数
 
@@ -986,6 +1236,7 @@ date updated: 2024-05-20 16:06
 - [ ] 代数
 - [ ] 数学分析
 - [ ] 解析几何
+- [ ] 微分几何
 - [ ] 常微分方程
 - [ ] 线性代数
 - [ ] 矩阵论
