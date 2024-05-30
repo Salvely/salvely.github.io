@@ -356,7 +356,7 @@ date updated: 2024-05-20 16:06
   - 功的求解：功 = 力在某个位移方向上的投影**的长度** \* 位移**量**
     - 使用投影 \* 位移
     - 可以直接使用点乘
-      - 可以直接使用点乘的原因是：功是一个标量，**其求解的是投影的长度 * 位移量，而不是投影 * 位移量。**
+      - 可以直接使用点乘的原因是：功是一个标量，**其求解的是投影的长度 _ 位移量，而不是投影 _ 位移量。**
       - 在前面的推导中我们知道投影的长度为为$|\vec{u}|\cos\theta$，是在其后乘了一个单位向量才让它成为一个向量。
       - 位移是一个矢量，而位移量也是一个标量$|\vec{v}|$
       - 相乘的最后结果为$|\vec{u}||\vec{v}|\cos\theta$，也就是$\vec{u}\cdot\vec{v}$
@@ -365,7 +365,8 @@ date updated: 2024-05-20 16:06
 
   - 作用：求解一个垂直于多个向量的向量（至少 3 维空间），使用代数余子式计算
   - 叉乘结果的方向：以$\vec{u}\times\vec{v}$为例，在右手系中，手掌从$\vec{u}$向$\vec{v}$弯曲，大拇指的方向就是叉乘结果的方向
-  - 叉乘的几个代数性质：![](algebraic%20properties%20of%20the%20cross%20product.png)
+  - 叉乘的几个代数性质：
+    ![](algebraic%20properties%20of%20the%20cross%20product.png)
     - 第一条：依照叉乘向量的方向计算方法，等号左右两边的叉乘结果方向相反；也可以直接用代数式计算，得到与几何分析吻合的结果。
     - 第二条：
       - 从代数（行列式）的角度分析：
@@ -382,7 +383,8 @@ date updated: 2024-05-20 16:06
     - 第六条：
       - **从代数（行列式）的角度分析：这个结果是怎么得到的 TODO**
       - **从几何的角度分析：这个结果是怎么得到的 TODO**
-  - 叉乘的几个几何性质![](geometry%20properties%20of%20the%20cross%20product.png)
+  - 叉乘的几个几何性质
+    ![](geometry%20properties%20of%20the%20cross%20product.png)
     - 第一条：根据方向计算方法可解
     - 第二条：课本中提供了从右向左的证明方法，如下：
       ![](cross%20product%20magnitude%20proof.png)
@@ -520,33 +522,33 @@ date updated: 2024-05-20 16:06
           $$
           d=\frac{|d_{1}-d_{2}|}{\sqrt{a^2+b^2+c^2}}
           $$
-        - 推导 
+        - 推导
           - 假设两平面的法向量为$\vec{n_{1}}=(a,b,c)$ - 平面一的方程为：$ax+by+cz+d1=0$ - 平面二的方程为：$ax+by+cz+d2=0$ - 假设现在有一条从平面一的$P(x_{0},y_{0},z_{0})$发出的射线（P 点满足$ax_{0}+by_{0}+cz_{0}+d1=0$），其方向与法向量平行，该直线的方程为（t 为参数）：
-          	$$
+            $$
             \begin{align}
             x=x_{0}+at \\
             y=y_{0}+bt \\
             z=z_{0}+ct \\
             \end{align}
             $$
-  		 - 假设点$Q(x_{1},y_{1},z_{1})$为该直线和平面的交点，将其带入平面二的方程，可得如下结果：
-			$$
-			a(x_{0}+at)+b(y_{0}+bt)+c(z_{0}+ct)+d2=0
-			$$ 
-    	- 通过移项可得：
+      - 假设点$Q(x_{1},y_{1},z_{1})$为该直线和平面的交点，将其带入平面二的方程，可得如下结果：
+        $$
+        a(x_{0}+at)+b(y_{0}+bt)+c(z_{0}+ct)+d2=0
+        $$
+      - 通过移项可得：
         $$
           (ax_{0}+by_{0}+cz_{0}+d2)+(a^2t+b^2t+c^2t)=0
-        $$ 
-    	- 那么 t 的值为：
-			$$t=\frac{-(ax_{0}+by_{0}+cz_{0}+d2)}{a^2+b^2+c^2}$$
+        $$
+      - 那么 t 的值为：
+        $$t=\frac{-(ax_{0}+by_{0}+cz_{0}+d2)}{a^2+b^2+c^2}$$
         - 又因为$ax_{0}+by_{0}+cz_{0}+d1=0$，因此$ax_{0}+by_{0}+cz_{0}=-d1$，那么$t$的式子可以改写为
-			$$t=\frac{d1-d2}{a^2+b^2+c^2}$$
+          $$t=\frac{d1-d2}{a^2+b^2+c^2}$$
         - 因此向量
-			$$\begin{align}&\vec{PQ}=(x_{1}-x_{0},y_{1}-y_{0},z_{1}-z_{0})\\ &= (at,bt,ct) \\ &=(\frac{a(d1-d2)}{a^2+b^2+c^2},\frac{b(d1-d2)}{a^2+b^2+c^2},\frac{c(d1-d2)}{a^2+b^2+c^2})\end{align}$$
+          $$\begin{align}&\vec{PQ}=(x_{1}-x_{0},y_{1}-y_{0},z_{1}-z_{0})\\ &= (at,bt,ct) \\ &=(\frac{a(d1-d2)}{a^2+b^2+c^2},\frac{b(d1-d2)}{a^2+b^2+c^2},\frac{c(d1-d2)}{a^2+b^2+c^2})\end{align}$$
         - 那么向量的长度（两平面间的距离）为
-			$$d=\begin{align}\sqrt{\frac{(a^2+b^2+c^2)(d1-d2)^2}{(a^2+b^2+c^2)^2}} \\ =\sqrt{\frac{(d1-d2)^2}{(a^2+b^2+c^2)}} \end{align}$$
+          $$d=\begin{align}\sqrt{\frac{(a^2+b^2+c^2)(d1-d2)^2}{(a^2+b^2+c^2)^2}} \\ =\sqrt{\frac{(d1-d2)^2}{(a^2+b^2+c^2)}} \end{align}$$
         - 该等式可以化简为
-			$$d=\frac{|d1-d2|}{\sqrt{a^2+b^2+c^2}}$$
+          $$d=\frac{|d1-d2|}{\sqrt{a^2+b^2+c^2}}$$
       - 如果相交的话，两平面的交线为：交线的方向向量为两平面的法向量的叉乘（因为交线即垂直于第一个平面的法向量，又垂直于第二个平面的法向量，因此它的方向就是这两个法向量的叉乘）
 
 - 空间中的曲面
@@ -554,15 +556,22 @@ date updated: 2024-05-20 16:06
   - 平面：$ax+by+cz+d=0$
   - 圆柱：通常方程中只规定两个轴，汇成的曲线沿着没有规定的那个轴平移
   - 二次曲面：$Ax^2+By^2+Cz^2+Dxy+Exz+Fyz+Gx+Hy+Iz+J=0$
-    - 椭圆体（ellipsoid）![](ellipsoid.png)
-    - 单叶双曲面（hyperboloid of one sheet） ![](hyperboloid%20of%20one%20sheet.png)
-    - 双叶双曲面（hyperboloid of two sheets）![](hyperboloid%20of%20two%20sheets.png)
-    - 椭圆锥面（elliptic cone） ![](elliptic%20cone.png)
-    - 椭圆双曲面（elliptic paraboloid）![](elliptic%20paraboloid.png)
-    - 双曲抛物面（hyperbolic paraboloid）![](hyperboloic%20paraboloid.png)
+    - 椭圆体（ellipsoid）
+      ![](ellipsoid.png)
+    - 单叶双曲面（hyperboloid of one sheet）
+      ![](hyperboloid%20of%20one%20sheet.png)
+    - 双叶双曲面（hyperboloid of two sheets）
+      ![](hyperboloid%20of%20two%20sheets.png)
+    - 椭圆锥面（elliptic cone）
+      ![](elliptic%20cone.png)
+    - 椭圆双曲面（elliptic paraboloid）
+      ![](elliptic%20paraboloid.png)
+    - 双曲抛物面（hyperbolic paraboloid）
+      ![](hyperboloic%20paraboloid.png)
   - 旋转面![](surface%20of%20revolution.png)
 - 其他三维空间建系方法及相关计算
-  - 圆柱坐标系（Cylindrical Coordinates）：x 和 y 轴用极坐标表示，z 轴用普通的直角坐标系表示![](the%20cylindrical%20coordinate%20system.png)
+  - 圆柱坐标系（Cylindrical Coordinates）：x 和 y 轴用极坐标表示，z 轴用普通的直角坐标系表示
+    ![](the%20cylindrical%20coordinate%20system.png)
     - 直角坐标系 -> 圆柱坐标系
       - $x=r\cos\theta$
       - $y=r\sin\theta$
@@ -573,7 +582,8 @@ date updated: 2024-05-20 16:06
       - $\tan\theta=\frac{y}{x}$
       - z 保持不变
   - 球系（Spherical Coordinates）
-    - 坐标系定义![](the%20spherical%20coordinate%20system.png)
+    - 坐标系定义
+      ![](the%20spherical%20coordinate%20system.png)
       - 设有一点$P(x,y,z)$，原点为$O(0,0,0)$，向量$\vec{OP}=(x,y,z)$
       - $\theta$ 是$\vec{OP}$在 xOy 平面上的投影与 x 轴之间的夹角
       - $\phi$是$\vec{OP}$与 z 轴之间的夹角
@@ -626,7 +636,8 @@ date updated: 2024-05-20 16:06
     - 加/减：各个方向的函数分量分别加
     - 乘/除：各个方向的分量都乘/除
   - 极限和连续
-    - 极限的定义![](definition%20of%20limit.png)
+    - 极限的定义
+      ![](definition%20of%20limit.png)
     - 极限的求解：对$\vec{r(t))}$极限的求解等同于对其各个分量函数极限的求解
     - 连续性的定义：$t\rightarrow a$时的极限的值=$\vec{r(a)}$
     - 连续的向量函数的定义：该函数在定义域上各处都连续
@@ -636,12 +647,14 @@ date updated: 2024-05-20 16:06
 
     > 注意：向量值函数本质上还是向量，只不过其中的每个分量都是一个关于 t 的函数。其符合向量的通用运算性质，只不过求解得到的结果是函数。只有把特定的 t 值带进去，才会得到一个实数解。
 
-    - 定义![](derivative%20of%20a%20vector-valued%20function.png)
+    - 定义
+      ![](derivative%20of%20a%20vector-valued%20function.png)
       其中，$\vec{r'(t)}$ 在$\vec{r(t)}$的切线方向，指向 $t$ 增加的方向。
     - 计算：对各个分量的函数求导（为什么？）
     - 高阶微分计算：直接计算即可
     - 连续性：导数在定义域上各点连续，而且在定义域上不存在导数为 0 的情况
-    - 微分性质及其应用![](properties%20of%20the%20derivative.png)
+    - 微分性质及其应用
+      ![](properties%20of%20the%20derivative.png)
 
       - 第一条：用一个常数乘以向量，常数会和向量所有函数分量相乘，那么对结果求导，就是对函数分量求导。
       - 第二条：两个向量相加，会将各自的函数分量相加。对相加后的结果求导，效果就等同与先对各个分量求导，然后再相加。
@@ -720,8 +733,8 @@ date updated: 2024-05-20 16:06
         \end{aligned}
         $$
       - 第七条（重点）：依据第四条点乘公式，求导之后得到
-  		$$2\vec{r}\cdot(t)\vec{r}'(t) = 0$$
-		那么很自然可得$\vec{r}(t)\cdot\vec{r}'(t)=0$
+        $$2\vec{r}\cdot(t)\vec{r}'(t) = 0$$
+        那么很自然可得$\vec{r}(t)\cdot\vec{r}'(t)=0$
 
   - 积分：对向量值函数德各个分量分别求定积分和不定积分。
     - 定积分：直接对各个函数分量求定积分即可
@@ -759,7 +772,7 @@ date updated: 2024-05-20 16:06
 
         $
         \begin{aligned}
-        &\vec{v}=\vec{r}'(t)=\lim*{\Delta{t}\rightarrow 0}\frac{(x(t+\Delta{t})\vec{i}+y(t+\Delta{t})\vec{j})-(x(t)\vec{i}+y(t)\vec{j})}{\Delta{t}} \\
+        &\vec{v}=\vec{r}'(t)=\lim_{\Delta{t}\rightarrow 0}\frac{(x(t+\Delta{t})\vec{i}+y(t+\Delta{t})\vec{j})-(x(t)\vec{i}+y(t)\vec{j})}{\Delta{t}} \\
         &= \lim*{\Delta{t}\rightarrow 0}\frac{x(t+\Delta{t})-x(t)}{\Delta{t}}\vec{i}+\lim\_{\Delta{t}\rightarrow 0}\frac{y(t+\Delta{t})-y(t)}{\Delta{t}}\vec{j} \\
         &= x'(t)\vec{i}+y'(t)\vec{j} \\
         \end{aligned}
@@ -816,392 +829,412 @@ date updated: 2024-05-20 16:06
         $$\vec{x}(t) = v_{0}(\cos\theta)t\vec{i}+(v_{0}(\sin\theta)t-\frac{1}{2}gt^2+h)\vec{j}$$
 
 - 切向量 & 法向量
+
   - 单位切向量：方向与$\vec{r}'(t)$相同，表示如下（$\vec{r}'(t)\ne0$）：
     $$
     \vec{T}(t)=\frac{\vec{r}'(t)}{|\vec{r}'(t)|}
     $$
   - 切线求解
-	  - 假设曲线的向量值函数为 $\vec{r}(t)$，求解点 $P(x_{0},y_{0},z_{0})$ 处的切线
-	  - 因为切线的向量值函数为
-		$$
-		\vec{T}(t)=\frac{\vec{r}'(t)}{|\vec{r}'(t)|}
-		$$
-	- 对于点 P，我们需要根据  $x_{0}$, $y_{0}$ 和 $z_{0}$ 求解出 t 的值，然后将其带入  $\vec{T}(t)$, 得到切线的向量
-	- 向量的三个值也就是经过点 P 的直线的方向向量，由此可以得出切线的参数方程
+    - 假设曲线的向量值函数为 $\vec{r}(t)$，求解点 $P(x_{0},y_{0},z_{0})$ 处的切线
+    - 因为切线的向量值函数为
+      $$
+      \vec{T}(t)=\frac{\vec{r}'(t)}{|\vec{r}'(t)|}
+      $$
+  - 对于点 P，我们需要根据 $x_{0}$, $y_{0}$ 和 $z_{0}$ 求解出 t 的值，然后将其带入 $\vec{T}(t)$, 得到切线的向量
+  - 向量的三个值也就是经过点 P 的直线的方向向量，由此可以得出切线的参数方程
   - 单位法向量
-	  - 推导
-		  - 在之前的结论里面我们知道，如果 $\vec{r}(t)\cdot\vec{r}(t)=c$，那么 $\vec{r}(t)\cdot\vec{r}'(t)=0$
-		  - 因为切向量 $\vec{T}(t)$ 为单位向量，因此 $\vec{T}(t)\cdot\vec{T}(t)=|\vec{T}^2(t)|=1$
-		  - 根据之前的结论 $\vec{T}(t)\cdot\vec{T}(t)=c \rightarrow \vec{T}(t)\cdot\vec{T}'(t)=0$，因此可以看到切向向量及其微分向量方向是垂直的
-		  - 因为单位法向量和单位切向量垂直，因此我们推断单位切向量的微分就是单位法向量
-	- 单位法向量公式（$|\vec{T}'(t)|\ne 0$）
-		$$\vec{N}(t)=\frac{\vec{T}'(t)}{|\vec{T}'(t)|}$$
-	> 这里有两个问题：
-	> 1. 在什么情况下会出现 $\vec{T}(t)\cdot\vec{T}(t)=c$ 的情况？
-	> 2. 为什么单位法向量不直接是 $\vec{T}'(t)$？
-	
-	- 另一种寻找法向量的方法
-		- 假设单位切向量 $\vec{T}(t)=x(t)\vec{i}+y(t)\vec{j}$（$|\vec{T}(t)|=\sqrt{x^2(t)+y^2(t)}=1$），那么其单位法向量可以是
-			- $\vec{N}(t)=y(t)\vec{i}-x(t)\vec{j}$，因为 $\vec{T}(t)\cdot\vec{N}(t)=x(t)y(t)-x(t)y(t)=0$，满足两向量垂直，且 $\vec{N}(t)$ 为单位向量
-			- $\vec{N}(t)=-y(t)\vec{i}+x(t)\vec{j}$，理由同上
-	
+    - 推导
+      - 在之前的结论里面我们知道，如果 $\vec{r}(t)\cdot\vec{r}(t)=c$，那么 $\vec{r}(t)\cdot\vec{r}'(t)=0$
+      - 因为切向量 $\vec{T}(t)$ 为单位向量，因此 $\vec{T}(t)\cdot\vec{T}(t)=|\vec{T}^2(t)|=1$
+      - 根据之前的结论 $\vec{T}(t)\cdot\vec{T}(t)=c \rightarrow \vec{T}(t)\cdot\vec{T}'(t)=0$，因此可以看到切向向量及其微分向量方向是垂直的
+      - 因为单位法向量和单位切向量垂直，因此我们推断单位切向量的微分就是单位法向量
+  - 单位法向量公式（$|\vec{T}'(t)|\ne 0$）
+    $$\vec{N}(t)=\frac{\vec{T}'(t)}{|\vec{T}'(t)|}$$
+
+    > 这里有两个问题：
+    >
+    > 1.  在什么情况下会出现 $\vec{T}(t)\cdot\vec{T}(t)=c$ 的情况？
+    > 2.  为什么单位法向量不直接是 $\vec{T}'(t)$？
+
+  - 另一种寻找法向量的方法
+
+    - 假设单位切向量 $\vec{T}(t)=x(t)\vec{i}+y(t)\vec{j}$（$|\vec{T}(t)|=\sqrt{x^2(t)+y^2(t)}=1$），那么其单位法向量可以是
+      - $\vec{N}(t)=y(t)\vec{i}-x(t)\vec{j}$，因为 $\vec{T}(t)\cdot\vec{N}(t)=x(t)y(t)-x(t)y(t)=0$，满足两向量垂直，且 $\vec{N}(t)$ 为单位向量
+      - $\vec{N}(t)=-y(t)\vec{i}+x(t)\vec{j}$，理由同上
+
   - 加速度在水平 & 垂直方向上的分量
-	  - 物理意义
-		  - 对于以匀速行驶的物体
-			  - 速度和加速度的向量是垂直的（这个是根据前面那个定理，如果 $|\vec{r}'(t)|^2=c$，那么 $\vec{r}'(t)\cdot\vec{r}'(t)=0$，那么式子两边求导可得 $\vec{r}'(t)\cdot\vec{r}''(t)=0$，也就是速度向量和加速度向量垂直）
-		  - 对于以变速行驶的物体
-			  - 速度和加速度向量不一定垂直，如斜抛运动，加速度一直向下，和运动轨迹无关
-	  - 加速度向量
-		  - 加速度向量 $\vec{a}(t)$ 在速度向量 $\vec{T}(t)$ 和速度法向量 $\vec{T}(t)$ 之间
-		  - 推导 1
-			  - 我们想要求解的是 $\vec{a}(t)=\vec{v}'(t)=a_{T}\vec{T}(t)+a_{N}\vec{N}(t)$ 中的 $a_{T}$ 和 $a_{N}$，其中 $\vec{T}(t)$ 和 $\vec{N}(t)$ 分别是和速度平行的单位向量和垂直于速度的单位向量
-			  - 设位移向量为 $\vec{r}(t)$ 
-			  - 那么速度的方向向量  $\vec{v}(t)= \vec{r}'(t)$，其单位向量为 $\vec{T}(t)=\frac{\vec{v}(t)}{|\vec{v}(t)|}$
-			  - 对该式进行移向，得到 $\vec{v}(t)=\vec{T}(t)|\vec{v}(t)|$
-			  - 要得到 $\vec{v}'(t)$，需要对等式两端进行求导，得到 $\vec{v}'(t)=\frac{d}{dt}(\vec{T}(t)|\vec{v}(t)|)$
-			  - 因此 $\vec{a}(t)=\vec{v}'(t)=\vec{T}'(t)|\vec{v}(t)|+\vec{T}(t)\frac{d}{dt}(|\vec{v}(t)|)$
-			  - 又因为 $\vec{N}(t)=\frac{\vec{T}'(t)}{|\vec{T}'(t)|}$
-			  - 移向可得 $\vec{T}'(t)=\vec{N}(t)|\vec{T}'(t)|$
-			  - 带入 $\vec{a}(t)$ 可得 $\vec{a}(t)=\vec{N}(t)|\vec{T}'(t)||\vec{v}(t)|+\vec{T}(t)\frac{d}{dt}(|\vec{v}(t)|)$
-			  - 那么 $\vec{a}(t)=\vec{v}'(t)=a_{T}\vec{T}(t)+a_{N}\vec{N}(t)$ 中的 $a_{T}$ 和 $a_{N}$ 分别为
-				  $$
-				  a_{T}=\frac{d}{dt}(|\vec{v}(t)|)
-				  $$
-				  而
-				  $$
-				  a_{N}=|\vec{T}'(t)||\vec{v}(t)|
-				  $$
-			- 这两个值分别为加速度的切向和法向向量大小
-		- 推导 2
-			> 别记错投影公式！
-			
-			- 不从公式的角度运算，我们还可以这么理解。加速度的切向和法向分量，是加速度向量 $\vec{a}$ 在速度的切向 $\vec{T}$ 和法向 $\vec{N}$ 方向分量上的投影。
-			- 依然假设位移向量为 $\vec{r}(t)$，那么速度向量为 $\vec{v}(t)=\vec{r}'(t)$，加速度向量为 $\vec{a}(t)=\vec{v}'(t)=\vec{r}''(t)$
-			- 而 $\vec{a}(t)=proj_{\vec{T}}{\vec{a}}\vec{T}+proj_{\vec{N}}\vec{a}\vec{N}$
-			- 我们之前学过，一个向量 $\vec{u}$ 在另一个向量 $\vec{v}$ 上的投影的公式为
-				$$
-				proj_{\vec{v}}\vec{u}=\frac{\vec{u}\cdot\vec{v}}{|\vec{v}|^2}\vec{v}
-				$$
-			- 那么该投影的长度为
-				$$
-				|proj_{\vec{v}}|\vec{u}=|\frac{\vec{u}\cdot\vec{v}}{|\vec{v}|^2}\vec{v}|=\frac{\vec{u}\cdot\vec{v}}{|\vec{v}|^2}|\vec{v}|=\frac{\vec{u}\cdot\vec{v}}{|\vec{v}|}
-				$$
-			- 那么由此我们可以得到，向量 $\vec{a}$ 在向量 $\vec{T}$ 上的投影的大小为
-				$$
-				a_{T}=|proj_{\vec{T}}{\vec{a}}|=\frac{\vec{a}\cdot\vec{T}}{|\vec{T}|}=\vec{a}\cdot\vec{T}
-				$$
-			- 以此类推，向量 $\vec{a}$ 在向量 $\vec{N}$ 上的投影的大小为
-				$$
-				a_{N}=|proj_{\vec{N}}\vec{a}|=\frac{\vec{a}\cdot\vec{N}}{|\vec{N}|}=\vec{a}\cdot\vec{N}
-				$$
-			  - 因为 $\vec{T}=\frac{\vec{v}}{|\vec{v}|}$，因此 $a_{T}$ 还可以写成
-				   $$
-				   a_{T}=\frac{\vec{a}\cdot\vec{v}}{|\vec{v}|}
-				   $$
-			  - ~~因为 $\vec{N}=\frac{\vec{T}'(t)}{|\vec{T}'(t)|}$，因此 $a_{N}$ 还可以写成~~（这种方法解不出来）
-				  $$
-				  a_{N}= \frac{\vec{T}'(t)\cdot\vec{a}}{|\vec{T}'(t)|}
-				  $$
-			- 我们现在来看一下几个向量之间的几何关系（设向量 $\vec{T}$ 和向量  $\vec{a}$ 之间的夹角为 $\theta$，向量 $\vec{a}$ 和向量 $a_{N}$ 之间的夹角为 $\phi$）
-				![](geometry%20representation%20of%20vectors.png)
-			- 根据上述图像，可得如下关系式：
-				 $$
-				 \vec{a}\cdot\vec{N}=|\vec{a}||\vec{N}|\cos\phi
-				 $$
-			- 在上述式子中，$|\vec{a}||\cos\phi|=a_{N}$
-			- 而根据几何关系我们还可以看出，$a_{N}=|\vec{a}|\sin\theta$
-			- 因此 $\vec{a}\cdot\vec{N}=|\vec{N}||\vec{a}|\sin\theta$
-			- 因为
-				$$
-				|\vec{N}|=|\vec{T}|=1
-				$$
-			- 因此，$a_{N}=\vec{a}\cdot\vec{N}=|\vec{T}||\vec{a}|\sin\theta=|\vec{a}\times\vec{T}|$
-			- 又因 $\vec{T}=\frac{\vec{v}}{|\vec{v}|}$
-			- 因此原式等于 
-				$$		a_{N}=\vec{a}\cdot\vec{N}=|\vec{T}||\vec{a}|\sin\theta=|\vec{a}\times\vec{T}|=\frac{|\vec{v}\times\vec{a}|}{|\vec{v}|}
-				$$
-	  - 公式总结
-		  - 速度方向上的加速度分量
-			  $$
-			  a_{T}=\vec{a}\cdot\vec{T}=\frac{\vec{a}\cdot\vec{v}}{|\vec{v}|}
-			  $$
-		  - 速度法向量方向上的加速度分量
-			  $$
-			  a_{N}=\vec{a}\cdot\vec{N}=\frac{|\vec{v}\times\vec{a}|}{|\vec{v}|}=\sqrt{\vec{a}^2-a_{T}^2}
-			  $$
+
+    - 物理意义
+      - 对于以匀速行驶的物体
+        - 速度和加速度的向量是垂直的（这个是根据前面那个定理，如果 $|\vec{r}'(t)|^2=c$，那么 $\vec{r}'(t)\cdot\vec{r}'(t)=0$，那么式子两边求导可得 $\vec{r}'(t)\cdot\vec{r}''(t)=0$，也就是速度向量和加速度向量垂直）
+      - 对于以变速行驶的物体
+        - 速度和加速度向量不一定垂直，如斜抛运动，加速度一直向下，和运动轨迹无关
+    - 加速度向量
+
+      - 加速度向量 $\vec{a}(t)$ 在速度向量 $\vec{T}(t)$ 和速度法向量 $\vec{T}(t)$ 之间
+      - 推导 1
+
+        - 我们想要求解的是 $\vec{a}(t)=\vec{v}'(t)=a_{T}\vec{T}(t)+a_{N}\vec{N}(t)$ 中的 $a_{T}$ 和 $a_{N}$，其中 $\vec{T}(t)$ 和 $\vec{N}(t)$ 分别是和速度平行的单位向量和垂直于速度的单位向量
+        - 设位移向量为 $\vec{r}(t)$
+        - 那么速度的方向向量 $\vec{v}(t)= \vec{r}'(t)$，其单位向量为 $\vec{T}(t)=\frac{\vec{v}(t)}{|\vec{v}(t)|}$
+        - 对该式进行移向，得到 $\vec{v}(t)=\vec{T}(t)|\vec{v}(t)|$
+        - 要得到 $\vec{v}'(t)$，需要对等式两端进行求导，得到 $\vec{v}'(t)=\frac{d}{dt}(\vec{T}(t)|\vec{v}(t)|)$
+        - 因此 $\vec{a}(t)=\vec{v}'(t)=\vec{T}'(t)|\vec{v}(t)|+\vec{T}(t)\frac{d}{dt}(|\vec{v}(t)|)$
+        - 又因为 $\vec{N}(t)=\frac{\vec{T}'(t)}{|\vec{T}'(t)|}$
+        - 移向可得 $\vec{T}'(t)=\vec{N}(t)|\vec{T}'(t)|$
+        - 带入 $\vec{a}(t)$ 可得 $\vec{a}(t)=\vec{N}(t)|\vec{T}'(t)||\vec{v}(t)|+\vec{T}(t)\frac{d}{dt}(|\vec{v}(t)|)$
+        - 那么 $\vec{a}(t)=\vec{v}'(t)=a_{T}\vec{T}(t)+a_{N}\vec{N}(t)$ 中的 $a_{T}$ 和 $a_{N}$ 分别为
+
+          $$a_{T}=\frac{d}{dt}(|\vec{v}(t)|)$$
+          而
+          $$a_{N}=|\vec{T}'(t)||\vec{v}(t)|$$
+
+      - 这两个值分别为加速度的切向和法向向量大小
+
+    - 推导 2
+
+      > 别记错投影公式！
+
+      - 不从公式的角度运算，我们还可以这么理解。加速度的切向和法向分量，是加速度向量 $\vec{a}$ 在速度的切向 $\vec{T}$ 和法向 $\vec{N}$ 方向分量上的投影。
+      - 依然假设位移向量为 $\vec{r}(t)$，那么速度向量为 $\vec{v}(t)=\vec{r}'(t)$，加速度向量为 $\vec{a}(t)=\vec{v}'(t)=\vec{r}''(t)$
+      - 而 $\vec{a}(t)=proj_{\vec{T}}{\vec{a}}\vec{T}+proj_{\vec{N}}\vec{a}\vec{N}$
+      - 我们之前学过，一个向量 $\vec{u}$ 在另一个向量 $\vec{v}$ 上的投影的公式为
+        $$proj_{\vec{v}}\vec{u}=\frac{\vec{u}\cdot\vec{v}}{|\vec{v}|^2}\vec{v}$$
+      - 那么该投影的长度为
+        $$|proj_{\vec{v}}|\vec{u}=|\frac{\vec{u}\cdot\vec{v}}{|\vec{v}|^2}\vec{v}|=\frac{\vec{u}\cdot\vec{v}}{|\vec{v}|^2}|\vec{v}|=\frac{\vec{u}\cdot\vec{v}}{|\vec{v}|}$$
+      - 那么由此我们可以得到，向量 $\vec{a}$ 在向量 $\vec{T}$ 上的投影的大小为
+        $$
+        a_{T}=|proj_{\vec{T}}{\vec{a}}|=\frac{\vec{a}\cdot\vec{T}}{|\vec{T}|}=\vec{a}\cdot\vec{T}
+        $$
+      - 以此类推，向量 $\vec{a}$ 在向量 $\vec{N}$ 上的投影的大小为
+        $$
+        a_{N}=|proj_{\vec{N}}\vec{a}|=\frac{\vec{a}\cdot\vec{N}}{|\vec{N}|}=\vec{a}\cdot\vec{N}
+        $$
+        - 因为 $\vec{T}=\frac{\vec{v}}{|\vec{v}|}$，因此 $a_{T}$ 还可以写成
+          $$
+          a_{T}=\frac{\vec{a}\cdot\vec{v}}{|\vec{v}|}
+          $$
+        - ~~因为 $\vec{N}=\frac{\vec{T}'(t)}{|\vec{T}'(t)|}$，因此 $a_{N}$ 还可以写成~~（这种方法解不出来）
+          $$
+          a_{N}= \frac{\vec{T}'(t)\cdot\vec{a}}{|\vec{T}'(t)|}
+          $$
+      - 我们现在来看一下几个向量之间的几何关系（设向量 $\vec{T}$ 和向量 $\vec{a}$ 之间的夹角为 $\theta$，向量 $\vec{a}$ 和向量 $a_{N}$ 之间的夹角为 $\phi$）
+        ![](geometry%20representation%20of%20vectors.png)
+      - 根据上述图像，可得如下关系式：
+        $$
+        \vec{a}\cdot\vec{N}=|\vec{a}||\vec{N}|\cos\phi
+        $$
+      - 在上述式子中，$|\vec{a}||\cos\phi|=a_{N}$
+      - 而根据几何关系我们还可以看出，$a_{N}=|\vec{a}|\sin\theta$
+      - 因此 $\vec{a}\cdot\vec{N}=|\vec{N}||\vec{a}|\sin\theta$
+      - 因为
+        $$
+        |\vec{N}|=|\vec{T}|=1
+        $$
+      - 因此，$a_{N}=\vec{a}\cdot\vec{N}=|\vec{T}||\vec{a}|\sin\theta=|\vec{a}\times\vec{T}|$
+      - 又因 $\vec{T}=\frac{\vec{v}}{|\vec{v}|}$
+      - 因此原式等于
+        $$
+        a_{N}=\vec{a}\cdot\vec{N}=|\vec{T}||\vec{a}|\sin\theta=|\vec{a}\times\vec{T}|=\frac{|\vec{v}\times\vec{a}|}{|\vec{v}|}
+        $$
+
+    - 公式总结
+      - 速度方向上的加速度分量
+        $$
+        a_{T}=\vec{a}\cdot\vec{T}=\frac{\vec{a}\cdot\vec{v}}{|\vec{v}|}
+        $$
+      - 速度法向量方向上的加速度分量
+        $$
+        a_{N}=\vec{a}\cdot\vec{N}=\frac{|\vec{v}\times\vec{a}|}{|\vec{v}|}=\sqrt{\vec{a}^2-a_{T}^2}
+        $$
+
 - 弧长和曲率
-	- 弧长
-		- 单变量函数弧长求解复习
-			- 在对向量值函数求解弧长之前，我们先复习一下对单变量函数求解弧长的过程
-			- 设一单变量函数为 $y=f(x)$，那么一段弧长的计算公式是
-				$$
-		 		\Delta{s}=\sqrt{\Delta{x}^2+\Delta{y}^2}
+
+  - 弧长
+    - 单变量函数弧长求解复习
+      - 在对向量值函数求解弧长之前，我们先复习一下对单变量函数求解弧长的过程
+      - 设一单变量函数为 $y=f(x)$，那么一段弧长的计算公式是
+        $$\Delta{s}=\sqrt{\Delta{x}^2+\Delta{y}^2}
 		 	$$
-			 - 从中提取出 $\Delta{x}$，可以得到
-				 $$
-				 \Delta{s}=\sqrt{1+(\frac{\Delta{y}}{\Delta{x}})^2}\Delta{x}
-				 $$
-			- 将 $\Delta$ 改为微元，可得
-				$$
-				ds=\sqrt{1+(\frac{dy}{dx})^2}dx
-				$$
-			- 通过移向可得
-				$$
-				ds=\sqrt{1+(\frac{dy}{dx})^2}dx
-				$$
-			- 将 s 视作关于 x 的函数，y 视作关于 x 的函数，那么其可写作如下形式
-				$$
-				ds=\sqrt{1+(y')^2}dx
-				$$
-			- 要求解弧长 s，我们对该式关于 x 进行积分，可得如下结果
-				$$
-				s=\int_{a}^{b}{1+(y')^2}dx
-				$$
-		- 向量值函数的弧长求解推导
-			- 求解一段向量值函数的弧长的方法是，对该弧长的每一小段进行求解，然后在 t 的范围内对其求定积分
-			- 设  $\vec{r}(t)=x(t)\vec{i}+y(t)\vec{j}+z(t)\vec{k}$
-			- 那么这个曲线在 $\Delta{t}$ 内的一小段弧长为 $\Delta{r}=\sqrt{\Delta{x}^2+\Delta{y}^2+\Delta{z}^2}$
-			- 将 $\Delta$ 修改为微元，可得 $ds=\sqrt{dx^2+dy^2+dz^2}$
-			- 对右边提取出一个 dt，可得
-				$$
-				ds=\sqrt{(\frac{dx}{dt})^2+(\frac{dy}{dt})^2+(\frac{dz}{dt})^2}dt
-				$$
-			- 该式可以表达如下
-				$$
-				s=\int_{a}^{b}\sqrt{(x')^2+(y')^2+(z')^2}dt
-				$$
-			- 根据之前的内容，我们知道
-				$$
-				\vec{r}'(t)=x'\vec{i}+y'\vec{j}+z'\vec{k}
-				$$
-			- 那么
-				$$
-				s=\int_{a}^{b}\sqrt{(x')^2+(y')^2+(z')^2}dt=\int_{a}^{b}|\vec{r}'(t)|dt
-				$$
-		- 还可以这么理解：$\vec{r}(t)$ 是物体经过的路径，$\vec{v}(t)=|\vec{r}'(t)|$ 是物体在 t 时刻的瞬时速度，在一段时间（t=a 到 t=b 时刻）内对速度进行积分，就可以得到位移的量，这就是 $L=\int_{a}^{b}\vec{r}'(t)dt$
-	- 弧长函数
-		- 当 t 不是一个定值，而是一个变量时，从 a 到 t 时刻的弧长定义如下：
-			$$
-			s(t)=\int_{a}^{t}|\vec{r}'(t)|dt
-			$$
-		- 这个 $s(t)$ 就是 arc length parameter
-		- 微积分前两个定理的解释如图：
-			![](https://upload.wikimedia.org/wikipedia/commons/2/2f/Fundamental_theorem_of_calculus_%28animation%29.gif)
-		- 根据微积分第一定律：
-			$$
-			\frac{d}{dx}\int_{a}^{x}f(x)dx=f(x)
-			$$
-		- 那么
-			$$
-			\frac{d}{dt}\int_{a}^{t}|r'(u)|du=|r'(t)|
-			$$
-		- 需要注意的是，这里的 $s(t)$ 是指的路程，而不是位移。因此该值总是为正。
-	- 弧长参数 s
-		> 这一段我在理解上废了功夫，其中这个 
-		> -  [calculus - How do you determine whether a curve uses arc length as a parameter? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/484142/how-do-you-determine-whether-a-curve-uses-arc-length-as-a-parameter) 问题下的回答
-		> - 这个 [12.5 The Arc Length Parameter and Curvature‣ Chapter 12 Vector Valued Functions ‣ Calculus III (und.edu)](https://sites.und.edu/timothy.prescott/apex/web/apex.Ch12.S5.html) 讲义
-		> - [Parametrize a Curve with Respect to Arc Length (youtube.com)](https://www.youtube.com/watch?v=G0R-qialKlE) 还有这个视频
-		> 给了我很大的启发。
+      - 从中提取出 $\Delta{x}$，可以得到
+        $$
+        \Delta{s}=\sqrt{1+(\frac{\Delta{y}}{\Delta{x}})^2}\Delta{x}
+        $$
+      - 将 $\Delta$ 改为微元，可得
+        $$
+        ds=\sqrt{1+(\frac{dy}{dx})^2}dx
+        $$
+      - 将 s 视作关于 x 的函数，y 视作关于 x 的函数，那么其可写作如下形式
+        $$
+        ds=\sqrt{1+(y')^2}dx
+        $$
+      - 要求解弧长 s，我们对该式关于 x 进行积分，可得如下结果
+        $$
+        s=\int_{a}^{b}\sqrt{1+(y')^2}dx
+        $$
+    - 向量值函数的弧长求解推导
+      - 求解一段向量值函数的弧长的方法是，对该弧长的每一小段进行求解，然后在 t 的范围内对其求定积分
+      - 设 $\vec{r}(t)=x(t)\vec{i}+y(t)\vec{j}+z(t)\vec{k}$
+      - 那么这个曲线在 $\Delta{t}$ 内的一小段弧长为 $\Delta{r}=\sqrt{\Delta{x}^2+\Delta{y}^2+\Delta{z}^2}$
+      - 将 $\Delta$ 修改为微元，可得 $ds=\sqrt{dx^2+dy^2+dz^2}$
+      - 对右边提取出一个 dt，可得
+        $$
+        ds=\sqrt{(\frac{dx}{dt})^2+(\frac{dy}{dt})^2+(\frac{dz}{dt})^2}dt
+        $$
+      - 该式可以表达如下
+        $$
+        s=\int_{a}^{b}\sqrt{(x')^2+(y')^2+(z')^2}dt
+        $$
+      - 根据之前的内容，我们知道
+        $$
+        \vec{r}'(t)=x'\vec{i}+y'\vec{j}+z'\vec{k}
+        $$
+      - 那么
+        $$
+        s=\int_{a}^{b}\sqrt{(x')^2+(y')^2+(z')^2}dt=\int_{a}^{b}|\vec{r}'(t)|dt
+        $$
+    - 还可以这么理解：$\vec{r}(t)$ 是物体经过的路径，$\vec{v}(t)=|\vec{r}'(t)|$ 是物体在 t 时刻的瞬时速度，在一段时间（t=a 到 t=b 时刻）内对速度进行积分，就可以得到位移的量，这就是 $L=\int_{a}^{b}\vec{r}'(t)dt$
+  - 弧长函数
+    - 当 t 不是一个定值，而是一个变量时，从 a 到 t 时刻的弧长定义如下：
+      $$
+      s(t)=\int_{a}^{t}|\vec{r}'(t)|dt
+      $$
+    - 这个 $s(t)$ 就是 arc length parameter
+    - 微积分前两个定理的解释如图：
+      ![](https://upload.wikimedia.org/wikipedia/commons/2/2f/Fundamental_theorem_of_calculus_%28animation%29.gif)
+    - 根据微积分第一定律：
+      $$
+      \frac{d}{dx}\int_{a}^{x}f(x)dx=f(x)
+      $$
+    - 那么
+      $$
+      \frac{d}{dt}\int_{a}^{t}|r'(u)|du=|r'(t)|
+      $$
+    - 需要注意的是，这里的 $s(t)$ 是指的路程，而不是位移。因此该值总是为正。
+  - 弧长参数 s
 
-		- 定义
-			- 首先我们需要思考，为什么需要弧长参数 s？这里可以有两种定义轨迹曲线位移的方式：
-				 - 用时刻 t 来定义位移：比如我们想知道 t=1 时，坐标在哪里？
-				 - 用弧长 s 来定义位移：比如我们想知道 s=1 时，坐标在哪里？这个用来标记位置的弧长参数 s 就是我们要寻找的目标
-		- 求解
-			- 根据前文我们可知
-				$$
-				s(t)=\int_{a}^{t}|\vec{r}'(t)|dt
-				$$
-				我们便可以计算出 $s(t)$ 的关系式，将 $t=g(s)$ （$g$ 为 $s$ 的反函数）带入 $\vec{r}(t)$，便可得到 $\vec{r}(s)$
-		- 推导
-			- 因为
-				$$
-				\frac{dr}{dt}=\frac{dr}{ds}\frac{ds}{dt}
-				$$
-			- 利用导数替换掉分式可得：
-				$$
-				\vec{r}'(t)=\vec{r}'(s)s'(t)
-				$$
-			- 通过移向可得
-				$$
-				\vec{r}'(s)=\frac{\vec{r}'(t)}{s'(t)}
-				$$
-			- 又因为
-				$$
-				\frac{ds}{dt}=s'(t)=|\vec{r}'(t)|
-				$$
-			- 可得
-				$$
-				\vec{r}'(s)=\frac{\vec{r}'(t)}{|\vec{r}'(t)|}
-				$$
-			- 这个值我们是见过的，他就是 $\vec{T}(t)$，也就是速度方向上的单位向量
-			- $\vec{r}'(s)$ 与 $\vec{r}'(t)$ 不同的是，$|\vec{r}'(s)|=1$，是个单位向量
-			- 如果要使 t 为弧长参数，当且仅当在 $|\vec{r}'(t)|=1$ 的情况下才能实现，也就是说 $s=t$；同理，当 $|\vec{r}'(t)|=1$ 时，t 为单位向量
-		- 含义
-			- 在前文我们提到过，$\vec{r}(t)$ 相当于位移
-			- $|\vec{r}'(t)|$ 相当于 t 时刻速度的大小
-			- $\vec{T}(t)$ 是速度方向上的单位向量，也是 $\vec{r}'(s)$，当且仅当 $|\vec{r}'(s)|=1$ 时 $s$ 为弧长参数
-		- 结论
-			![](arc%20length%20parameter%20theorem.png)
-	- 弧长参数的应用 -> 曲率
-		> 曲率的学习也可以参考这里：
-		> - [Curvature intuition (youtube.com)](https://www.youtube.com/watch?v=ugtUGhBSeE0)
-		> - [Curvature formula, part 1 (youtube.com)](https://www.youtube.com/watch?v=gspjhwSNMWs)
-		> - [Curvature formula, part 2 (youtube.com)](https://www.youtube.com/watch?v=Q-BxnC-uWQo)
-		> - [Curvature formula, part 3 (youtube.com)](https://www.youtube.com/watch?v=8V4_4M90RfA)
-		> - [12.5 The Arc Length Parameter and Curvature‣ Chapter 12 Vector Valued Functions ‣ Calculus III (und.edu)](https://sites.und.edu/timothy.prescott/apex/web/apex.Ch12.S5.html)
+    > 这一段我在理解上废了功夫，其中这个
+    >
+    > - [calculus - How do you determine whether a curve uses arc length as a parameter? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/484142/how-do-you-determine-whether-a-curve-uses-arc-length-as-a-parameter) 问题下的回答
+    > - 这个 [12.5 The Arc Length Parameter and Curvature‣ Chapter 12 Vector Valued Functions ‣ Calculus III (und.edu)](https://sites.und.edu/timothy.prescott/apex/web/apex.Ch12.S5.html) 讲义
+    > - [Parametrize a Curve with Respect to Arc Length (youtube.com)](https://www.youtube.com/watch?v=G0R-qialKlE) 还有这个视频
+    >   给了我很大的启发。
 
-		 - 定义 & 推导
-			 - 曲率是用来衡量曲线的弯曲程度的变量，弯曲越狠，曲率越大 -> 可以这样翻译：在同样的弧长内，单位速度向量的变化越大，曲率越大
-			 - 那么我们这样定义曲率
-				 $$
-				 K=|\frac{d\vec{T}}{ds}|=|\vec{T}'(s)|
-				 $$
-			- 如果 $\vec{r}(s)$ 是以 s 作为弧长参数，那么存在如下式子：
-				$$
-				\vec{T}(s)=\frac{\vec{r}'(s)}{|\vec{r}'(s)|}
-				$$
-			- 我们换一种方法写 $K$：
-				$$
-				\begin{aligned}
-				&K=|\frac{d\vec{T}}{ds}| \\
-				&=|\frac{\frac{d\vec{T}}{dt}}{\frac{ds}{dt}}| \\
-				&=\frac{|\vec{T}'(t)|}{|s'(t)|} \\
-				\end{aligned}
-				$$
-			 - 根据前文我们知道
-				 $$
-				 |s'(t)|=|\vec{r}'(t)|
-				 $$
-			- 因此原式可改写如下
-				$$
-				K=\frac{|\vec{T}'(t)|}{|s'(t)|}=\frac{|\vec{T}'(t)|}{|\vec{r}'(t)|}
-				$$
-			- 因为
-				$$
-				\vec{T}(t)=\frac{\vec{r}'(t)}{|\vec{r}'(t)|}
-				$$
-			- 移向后可得
-				$$
-				\vec{r}'(t)=\vec{T}(t)|\vec{r}'(t)|
-				$$
-			- 对等式两边求导可得
-				$$
-				\vec{r}''(t)=\vec{T}'(t)|\vec{r}'(t)|+\vec{T}(t)|\vec{r}''(t)|
-				$$
-			- 下面我们要做的是将 $|\vec{T}'(t)|$ 的形式给凑出来
-				$$
-				\begin{aligned}
-				&\vec{r}'(t)\times\vec{r}''(t) \\
-				&=(\vec{T}(t)|\vec{r}'(t)|)\times(\vec{T}'(t)|\vec{r}'(t)|+\vec{T}(t)|\vec{r}''(t)|) \\
-				&= \vec{T}(t)|\vec{r}'(t)|\times\vec{T}'(t)|\vec{r}'(t)|+\vec{T}(t)|\vec{r}'(t)|\times\vec{T}(t)|\vec{r}''(t)| \\
-				\end{aligned}
-				$$
-			- 根据叉乘的性质（因为一个向量构不成一个平面，因此不存在其叉乘结果，代数上也可以推导出这个性质。因为当一个行列式的两行都相同时，最后所有的代数余子式都为 0）
-				$$
-				\vec{T}(t)\times\vec{T}(t)=0
-				$$
-			- 原式可以改写为
-				$$
-				\vec{r}'(t)\times\vec{r}''(t)=\vec{T}(t)|\vec{r}'(t)|\times\vec{T}'(t)|\vec{r}'(t)|=(\vec{T}(t)\times\vec{T}'(t))|\vec{r}'(t)|^2
-				$$
-			- 那么
-				$$
-				|\vec{r}'(t)\times\vec{r}''(t)|=|\vec{T}(t)\times\vec{T}'(t)||\vec{r}'(t)|^2
-				$$
-			- 根据叉乘的值的性质我们知道
-				$$
-				|\vec{T}(t)\times\vec{T}'(t)|=|\vec{T}(t)||\vec{T}'(t)|\sin\theta
-				$$
-			- 因为 $\vec{T}(t)$ 是曲线切线方向（速度方向）上的单位向量，因此 $|\vec{T}(t)|=1$，由此 $\vec{T}(t)\cdot\vec{T}(t)=1$，对两边求导可得 $\vec{T}(t)\cdot\vec{T}'(t)=0$
-			- 也就是说 $\vec{T}(t)$ 和 $\vec{T}'(t)$ 垂直。那么 $\sin\theta=1$。因此 $|\vec{T}(t)\times\vec{T}'(t)|=|\vec{T}(t)||\vec{T}'(t)|\sin\theta=|\vec{T}(t)||\vec{T}'(t)|=|\vec{T}'(t)|$ （因为 $\vec{T}(t)$ 是单位向量，长度为 1）
-			- 因此原式可改写为
-				$$
-				|\vec{r}'(t)\times\vec{r}''(t)|=|\vec{T}'(t)||\vec{r}'
-				(t)|^2
-				$$
-			- 那么我们可以得到用 $\vec{r}(t)$ 及其相关导数表示的 $|\vec{T}'(t)|$
-				$$
-				|\vec{T}'(t)|=\frac{|\vec{r}'(t)\times\vec{r}''(t)|}{|\vec{r}'(t)|^2}
-				$$
-			- 因此曲率公式可改写为
-				$$
-				\begin{aligned}
-				&K=\frac{|\vec{T}'(t)|}{|s'(t)|}=\frac{|\vec{T}'(t)|}{|\vec{r}'(t)|} \\
-				&=\frac{|\vec{r}'(t)\times\vec{r}''(t)|}{|\vec{r}'(t)||\vec{r}'(t)|^2} \\
-				&=\frac{|\vec{r}'(t)\times\vec{r}''(t)|}{|\vec{r}'(t)|^3}
-				\end{aligned}
-				$$
-		- 一般函数 $y=f(x)$ 的曲率公式
-			- 设函数为 $y=f(x)$
-			- 该函数用位移 $\vec{r}(x)$ 表示如下
-				> 该函数用向量这样表示是因为，对于一般的向量值函数 $\vec{r}(t)=x(t)\vec{i}+y(t)\vec{j}+z(t)\vec{k}$，x、y 和 z 是关于 t 的函数。而在 $y=f(x)$ 中，这三项是关于 x 的函数，$x=x$，$y=f(x)$，$z=0*x$。
-				
-				$$
-				\vec{r}(x)=x\vec{i}+y\vec{j}
-				$$
-			- 对 $\vec{r}(x)$ 求导得到
-				$$
-				\vec{r}'(x)=\vec{i}+y'\vec{j}
-				$$
-			- 对 $\vec{r}'(x)$ 求导得到
-				$$
-				\vec{r}''(x)=y''\vec{j}
-				$$
-			- 那么按照同样的方式定义曲率 （斜率的变化量/弧长）
-				$$
-				K=|\frac{d\vec{T}}{ds}|=\frac{|\vec{r}'(x)\times\vec{r}''(x)|}{|\vec{r}'(x)|^3}
-				$$
-			- $\vec{r}'(x)\times\vec{r}''(x)$ 的叉乘行列式如下：
-				$$
-				\begin{vmatrix}
-				\vec{i} & \vec{j} & \vec{k} \\
-				1 & y' & 0 \\
-				0 & y'' & 0\\
-				\end{vmatrix}
-				$$
-			- 该行列式的计算结果为
-				$$
-				|\vec{r}'(x)\times\vec{r}''(x)|=|y''\vec{k}|=|y''|
-				$$
-			- 那么曲率的结果为
-				$$
-				K=|\frac{d\vec{T}}{ds}|=\frac{|y''|}{\sqrt{1+(y')^2}}
-				$$
-		- 公式总结
-			- 向量值函数的曲率公式
-				$$
-				\begin{aligned}
-				&K=|\frac{d\vec{T}}{ds}|=|\vec{T}'(s)|\\
-				&=\frac{|\vec{T}'(t)|}{|s'(t)|}=\frac{|\vec{T}'(t)|}{|\vec{r}'(t)|} \\
-				&=\frac{|\vec{r}'(t)\times\vec{r}''(t)|}{|\vec{r}'(t)|^3}
-				\end{aligned}
-				$$
-			- 一般函数的曲率公式
-				$$
-				K=|\frac{d\vec{T}}{ds}|=\frac{|y''|}{(\sqrt{1+(y')^2})^3}
-				$$
-	- 应用：速度，曲率与加速度的关系
-		- 加速度的切向分量：速度的变化率 -> 弧长的变化率
-		- 加速度的法向分量：是速度和曲率的函数
-			![](acceleration,%20speed%20and%20curvature.png)
-			- 推导：如何用速度和曲率表示加速度
-				- $a_{T}$ 推导如下
-					$$
-					\begin{aligned}
-					&a_{T}=\frac{d}{dt}(|\vec{v}(t)|)
-					\end{aligned}
-					$$
-				- $a_{N}$ 推导如下
-					$$	
-					\begin{aligned}					  &a_{N}=\vec{a}\cdot\vec{N}=\frac{|\vec{v}\times\vec{a}|}{|\vec{v}|}=\sqrt{\vec{a}^2-a_{T}^2} \\
-					&=\frac{ds}{dt}(|\vec{v}|K) \\
-					&=K(\frac{ds}{dt})^2
-					\end{aligned}
-					$$
-				![](accelerator%20PROOF.png)
+    - 定义
+      - 首先我们需要思考，为什么需要弧长参数 s？这里可以有两种定义轨迹曲线位移的方式：
+        - 用时刻 t 来定义位移：比如我们想知道 t=1 时，坐标在哪里？
+        - 用弧长 s 来定义位移：比如我们想知道 s=1 时，坐标在哪里？这个用来标记位置的弧长参数 s 就是我们要寻找的目标
+    - 求解
+      - 根据前文我们可知
+        $$
+        s(t)=\int_{a}^{t}|\vec{r}'(t)|dt
+        $$
+        我们便可以计算出 $s(t)$ 的关系式，将 $t=g(s)$ （$g$ 为 $s$ 的反函数）带入 $\vec{r}(t)$，便可得到 $\vec{r}(s)$
+    - 推导
+      - 因为
+        $$
+        \frac{dr}{dt}=\frac{dr}{ds}\frac{ds}{dt}
+        $$
+      - 利用导数替换掉分式可得：
+        $$
+        \vec{r}'(t)=\vec{r}'(s)s'(t)
+        $$
+      - 通过移向可得
+        $$
+        \vec{r}'(s)=\frac{\vec{r}'(t)}{s'(t)}
+        $$
+      - 又因为
+        $$
+        \frac{ds}{dt}=s'(t)=|\vec{r}'(t)|
+        $$
+      - 可得
+        $$
+        \vec{r}'(s)=\frac{\vec{r}'(t)}{|\vec{r}'(t)|}
+        $$
+      - 这个值我们是见过的，他就是 $\vec{T}(t)$，也就是速度方向上的单位向量
+      - $\vec{r}'(s)$ 与 $\vec{r}'(t)$ 不同的是，$|\vec{r}'(s)|=1$，是个单位向量
+      - 如果要使 t 为弧长参数，当且仅当在 $|\vec{r}'(t)|=1$ 的情况下才能实现，也就是说 $s=t$；同理，当 $|\vec{r}'(t)|=1$ 时，t 为单位向量
+    - 含义
+      - 在前文我们提到过，$\vec{r}(t)$ 相当于位移
+      - $|\vec{r}'(t)|$ 相当于 t 时刻速度的大小
+      - $\vec{T}(t)$ 是速度方向上的单位向量，也是 $\vec{r}'(s)$，当且仅当 $|\vec{r}'(s)|=1$ 时 $s$ 为弧长参数
+    - 结论
+      ![](arc%20length%20parameter%20theorem.png)
+
+  - 弧长参数的应用 -> 曲率
+
+    > 曲率的学习也可以参考这里：
+    >
+    > - [Curvature intuition (youtube.com)](https://www.youtube.com/watch?v=ugtUGhBSeE0)
+    > - [Curvature formula, part 1 (youtube.com)](https://www.youtube.com/watch?v=gspjhwSNMWs)
+    > - [Curvature formula, part 2 (youtube.com)](https://www.youtube.com/watch?v=Q-BxnC-uWQo)
+    > - [Curvature formula, part 3 (youtube.com)](https://www.youtube.com/watch?v=8V4_4M90RfA)
+    > - [12.5 The Arc Length Parameter and Curvature‣ Chapter 12 Vector Valued Functions ‣ Calculus III (und.edu)](https://sites.und.edu/timothy.prescott/apex/web/apex.Ch12.S5.html)
+
+    - 定义 & 推导
+
+      - 曲率是用来衡量曲线的弯曲程度的变量，弯曲越狠，曲率越大 -> 可以这样翻译：在同样的弧长内，单位速度向量的变化越大，曲率越大
+      - 那么我们这样定义曲率
+        $$
+        K=|\frac{d\vec{T}}{ds}|=|\vec{T}'(s)|
+        $$
+      - 如果 $\vec{r}(s)$ 是以 s 作为弧长参数，那么存在如下式子：
+        $$
+        \vec{T}(s)=\frac{\vec{r}'(s)}{|\vec{r}'(s)|}
+        $$
+      - 我们换一种方法写 $K$:
+
+        $$
+        \begin{aligned}
+         &K=|\frac{d\vec{T}}{ds}| \\
+         &=|\frac{\frac{d\vec{T}}{dt}}{\frac{ds}{dt}}| \\
+         &=\frac{|\vec{T}'(t)|}{|s'(t)|} \\
+         \end{aligned}
+        $$
+
+      - 根据前文我们知道
+        $$|s'(t)|=|\vec{r}'(t)|$$
+      - 因此原式可改写如下
+        $$
+        K=\frac{|\vec{T}'(t)|}{|s'(t)|}=\frac{|\vec{T}'(t)|}{|\vec{r}'(t)|}
+        $$
+      - 因为
+        $$
+        \vec{T}(t)=\frac{\vec{r}'(t)}{|\vec{r}'(t)|}
+        $$
+      - 移向后可得
+        $$
+        \vec{r}'(t)=\vec{T}(t)|\vec{r}'(t)|
+        $$
+      - 对等式两边求导可得
+        $$
+        \vec{r}''(t)=\vec{T}'(t)|\vec{r}'(t)|+\vec{T}(t)|\vec{r}''(t)|
+        $$
+      - 下面我们要做的是将 $|\vec{T}'(t)|$ 的形式给凑出来
+        
+        $$
+        \begin{aligned}
+        &\vec{r}'(t)\times\vec{r}''(t) \\
+        &=(\vec{T}(t)|\vec{r}'(t)|)\times(\vec{T}'(t)|\vec{r}'(t)|+\vec{T}(t)|\vec{r}''(t)|) \\
+        &= \vec{T}(t)|\vec{r}'(t)|\times\vec{T}'(t)|\vec{r}'(t)|+\vec{T}(t)|\vec{r}'(t)|\times\vec{T}(t)|\vec{r}''(t)| \\
+        \end{aligned}
+        $$
+  
+      - 根据叉乘的性质（因为一个向量构不成一个平面，因此不存在其叉乘结果，代数上也可以推导出这个性质。因为当一个行列式的两行都相同时，最后所有的代数余子式都为 0）
+        $$
+        \vec{T}(t)\times\vec{T}(t)=0
+        $$
+      - 原式可以改写为
+        $$
+        \vec{r}'(t)\times\vec{r}''(t)=\vec{T}(t)|\vec{r}'(t)|\times\vec{T}'(t)|\vec{r}'(t)|=(\vec{T}(t)\times\vec{T}'(t))|\vec{r}'(t)|^2
+        $$
+      - 那么
+        $$
+        |\vec{r}'(t)\times\vec{r}''(t)|=|\vec{T}(t)\times\vec{T}'(t)||\vec{r}'(t)|^2
+        $$
+      - 根据叉乘的值的性质我们知道
+        $$
+        |\vec{T}(t)\times\vec{T}'(t)|=|\vec{T}(t)||\vec{T}'(t)|\sin\theta
+        $$
+      - 因为 $\vec{T}(t)$ 是曲线切线方向（速度方向）上的单位向量，因此 $|\vec{T}(t)|=1$，由此 $\vec{T}(t)\cdot\vec{T}(t)=1$，对两边求导可得 $\vec{T}(t)\cdot\vec{T}'(t)=0$
+      - 也就是说 $\vec{T}(t)$ 和 $\vec{T}'(t)$ 垂直。那么 $\sin\theta=1$。因此 $|\vec{T}(t)\times\vec{T}'(t)|=|\vec{T}(t)||\vec{T}'(t)|\sin\theta=|\vec{T}(t)||\vec{T}'(t)|=|\vec{T}'(t)|$ （因为 $\vec{T}(t)$ 是单位向量，长度为 1）
+      - 因此原式可改写为
+        $$
+        |\vec{r}'(t)\times\vec{r}''(t)|=|\vec{T}'(t)||\vec{r}'(t)|^2
+        $$
+      - 那么我们可以得到用 $\vec{r}(t)$ 及其相关导数表示的 $|\vec{T}'(t)|$
+        $$
+        |\vec{T}'(t)|=\frac{|\vec{r}'(t)\times\vec{r}''(t)|}{|\vec{r}'(t)|^2}
+        $$
+      - 因此曲率公式可改写为
+        $$
+        \begin{aligned}
+        &K=\frac{|\vec{T}'(t)|}{|s'(t)|}=\frac{|\vec{T}'(t)|}{|\vec{r}'(t)|} \\
+        &=\frac{|\vec{r}'(t)\times\vec{r}''(t)|}{|\vec{r}'(t)||\vec{r}'(t)|^2} \\
+        &=\frac{|\vec{r}'(t)\times\vec{r}''(t)|}{|\vec{r}'(t)|^3}
+        \end{aligned}
+        $$
+
+    - 一般函数 $y=f(x)$ 的曲率公式
+      - 设函数为 $y=f(x)$
+      - 该函数用位移 $\vec{r}(x)$ 表示如下
+
+        > 该函数用向量这样表示是因为，对于一般的向量值函数 $\vec{r}(t)=x(t)\vec{i}+y(t)\vec{j}+z(t)\vec{k}$，x、y 和 z 是关于 t 的函数。而在 $y=f(x)$ 中，这三项是关于 x 的函数，$x=x$，$y=f(x)$，$z=0*x$。
+
+        $$
+        \vec{r}(x)=x\vec{i}+y\vec{j}
+        $$
+
+      - 对 $\vec{r}(x)$ 求导得到
+        $$
+        \vec{r}'(x)=\vec{i}+y'\vec{j}
+        $$
+      - 对 $\vec{r}'(x)$ 求导得到
+        $$
+        \vec{r}''(x)=y''\vec{j}
+        $$
+      - 那么按照同样的方式定义曲率 （斜率的变化量/弧长）
+        $$
+        K=|\frac{d\vec{T}}{ds}|=\frac{|\vec{r}'(x)\times\vec{r}''(x)|}{|\vec{r}'(x)|^3}
+        $$
+      - $\vec{r}'(x)\times\vec{r}''(x)$ 的叉乘行列式如下：
+        $$
+        \begin{vmatrix}
+        \vec{i} & \vec{j} & \vec{k} \\
+        1 & y' & 0 \\
+        0 & y'' & 0\\
+        \end{vmatrix}
+        $$
+      - 该行列式的计算结果为
+        $$
+        |\vec{r}'(x)\times\vec{r}''(x)|=|y''\vec{k}|=|y''|
+        $$
+      - 那么曲率的结果为
+        $$
+        K=|\frac{d\vec{T}}{ds}|=\frac{|y''|}{\sqrt{1+(y')^2}}
+        $$
+    - 公式总结
+      - 向量值函数的曲率公式
+        $$
+        \begin{aligned}
+        &K=|\frac{d\vec{T}}{ds}|=|\vec{T}'(s)|\\
+        &=\frac{|\vec{T}'(t)|}{|s'(t)|}=\frac{|\vec{T}'(t)|}{|\vec{r}'(t)|} \\
+        &=\frac{|\vec{r}'(t)\times\vec{r}''(t)|}{|\vec{r}'(t)|^3}
+        \end{aligned}
+        $$
+      - 一般函数的曲率公式
+        $$
+        K=|\frac{d\vec{T}}{ds}|=\frac{|y''|}{(\sqrt{1+(y')^2})^3}
+        $$
+
+  - 应用：速度，曲率与加速度的关系
+    - 加速度的切向分量：速度的变化率 -> 弧长的变化率
+    - 加速度的法向分量：是速度和曲率的函数
+      ![](acceleration,%20speed%20and%20curvature.png)
+      - 推导：如何用速度和曲率表示加速度
+
+        - $a_{T}$ 推导如下
+
+          $$
+          \begin{aligned}
+          &a_{T}=\frac{d}{dt}(|\vec{v}(t)|)
+          \end{aligned}
+          $$
+
+        - $a_{N}$ 推导如下
+
+          $$
+          \begin{aligned}
+          &a_{N}=\vec{a}\cdot\vec{N}=\frac{|\vec{v}\times\vec{a}|}{|\vec{v}|}=\sqrt{\vec{a}^2-a_{T}^2} \\
+          &=\frac{ds}{dt}(|\vec{v}|K) \\
+          &=K(\frac{ds}{dt})^2
+          \end{aligned}
+          $$
+
+        ![](accelerator%20PROOF.png)
+
 - 总结
-	![](summary%20of%20velocity,%20acceleration%20and%20curvature.png)
+  ![](summary%20of%20velocity,%20acceleration%20and%20curvature.png)
 
 ## Chapter 13：多变量函数
 
