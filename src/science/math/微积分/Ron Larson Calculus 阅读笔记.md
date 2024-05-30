@@ -1186,6 +1186,19 @@ date updated: 2024-05-20 16:06
 		- 加速度的法向分量：是速度和曲率的函数
 			![](acceleration,%20speed%20and%20curvature.png)
 			- 推导：如何用速度和曲率表示加速度
+				- $a_{T}$ 推导如下
+					$$
+					\begin{aligned}
+					&a_{T}=\frac{d}{dt}(|\vec{v}(t)|)
+					\end{aligned}
+					$$
+				- $a_{N}$ 推导如下
+					$$	
+					\begin{aligned}					  &a_{N}=\vec{a}\cdot\vec{N}=\frac{|\vec{v}\times\vec{a}|}{|\vec{v}|}=\sqrt{\vec{a}^2-a_{T}^2} \\
+					&=\frac{ds}{dt}(|\vec{v}|K) \\
+					&=K(\frac{ds}{dt})^2
+					\end{aligned}
+					$$
 				![](accelerator%20PROOF.png)
 - 总结
 	![](summary%20of%20velocity,%20acceleration%20and%20curvature.png)
