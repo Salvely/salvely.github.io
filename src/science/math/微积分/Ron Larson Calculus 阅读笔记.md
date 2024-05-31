@@ -954,8 +954,9 @@ date updated: 2024-05-20 16:06
     - 单变量函数弧长求解复习
       - 在对向量值函数求解弧长之前，我们先复习一下对单变量函数求解弧长的过程
       - 设一单变量函数为 $y=f(x)$，那么一段弧长的计算公式是
-        $$\Delta{s}=\sqrt{\Delta{x}^2+\Delta{y}^2}
-		 	$$
+        $$
+        \Delta{s}=\sqrt{\Delta{x}^2+\Delta{y}^2}
+        $$
       - 从中提取出 $\Delta{x}$，可以得到
         $$
         \Delta{s}=\sqrt{1+(\frac{\Delta{y}}{\Delta{x}})^2}\Delta{x}
@@ -1111,7 +1112,7 @@ date updated: 2024-05-20 16:06
         \vec{r}''(t)=\vec{T}'(t)|\vec{r}'(t)|+\vec{T}(t)|\vec{r}''(t)|
         $$
       - 下面我们要做的是将 $|\vec{T}'(t)|$ 的形式给凑出来
-        
+
         $$
         \begin{aligned}
         &\vec{r}'(t)\times\vec{r}''(t) \\
@@ -1119,7 +1120,7 @@ date updated: 2024-05-20 16:06
         &= \vec{T}(t)|\vec{r}'(t)|\times\vec{T}'(t)|\vec{r}'(t)|+\vec{T}(t)|\vec{r}'(t)|\times\vec{T}(t)|\vec{r}''(t)| \\
         \end{aligned}
         $$
-  
+
       - 根据叉乘的性质（因为一个向量构不成一个平面，因此不存在其叉乘结果，代数上也可以推导出这个性质。因为当一个行列式的两行都相同时，最后所有的代数余子式都为 0）
         $$
         \vec{T}(t)\times\vec{T}(t)=0
@@ -1156,6 +1157,7 @@ date updated: 2024-05-20 16:06
         $$
 
     - 一般函数 $y=f(x)$ 的曲率公式
+
       - 设函数为 $y=f(x)$
       - 该函数用位移 $\vec{r}(x)$ 表示如下
 
@@ -1193,6 +1195,7 @@ date updated: 2024-05-20 16:06
         $$
         K=|\frac{d\vec{T}}{ds}|=\frac{|y''|}{\sqrt{1+(y')^2}}
         $$
+
     - 公式总结
       - 向量值函数的曲率公式
         $$
@@ -1208,9 +1211,11 @@ date updated: 2024-05-20 16:06
         $$
 
   - 应用：速度，曲率与加速度的关系
+
     - 加速度的切向分量：速度的变化率 -> 弧长的变化率
     - 加速度的法向分量：是速度和曲率的函数
       ![](acceleration,%20speed%20and%20curvature.png)
+
       - 推导：如何用速度和曲率表示加速度
 
         - $a_{T}$ 推导如下
@@ -1239,326 +1244,346 @@ date updated: 2024-05-20 16:06
 ## Chapter 13：多变量函数
 
 - 多变量函数简介
-	- 多变量函数介绍
-		![](definition%20of%20a%20function%20of%202%20variables.png)
-		其中，多变量函数的定义域和值域、四则运算规则、复合运算规则，多项式函数、有理函数等都和但变量函数中的规则相同。
-	- 多变量函数图像
-		- 确定定义域，值域
-		- 假设函数为 $f(x,y)$， 令 $z=f(x,y)$，然后绘制不同 z 下的曲线图，综合起来就是函数图像
-	- Level Curve（针对 2 变量函数）
-		- 假设函数为 $z=f(x,y)$，令 z 等于不同的 c（也就是令 $f(x,y)$ 等于不同的常数），可以绘制出不同常数下的曲线
-		- 这种方法常用于在地理上绘制等高线
-		- 称其为 Level Curve 是因为设定函数值为常数时，绘制出的是关于 x 和 y 的曲线
-	- Level Surface（针对 3 变量函数）
-		- 加设函数为 $f(x,y,z)$，令 $f(x,y,z)$ 等于不同的常数 c，即可绘制出 Level Surface
-		- 这种方法常用于工业中用不同颜色来表示不同温度下的曲面
-			![](level%20surface%20application.png)
-		- 称其为 Level Curve 是因为设定函数值为常数时，绘制出的是关于 x、y 和 z 的曲面
-	- 计算机绘制的立体图像
+  - 多变量函数介绍
+    ![](definition%20of%20a%20function%20of%202%20variables.png)
+    其中，多变量函数的定义域和值域、四则运算规则、复合运算规则，多项式函数、有理函数等都和但变量函数中的规则相同。
+  - 多变量函数图像
+    - 确定定义域，值域
+    - 假设函数为 $f(x,y)$， 令 $z=f(x,y)$，然后绘制不同 z 下的曲线图，综合起来就是函数图像
+  - Level Curve（针对 2 变量函数）
+    - 假设函数为 $z=f(x,y)$，令 z 等于不同的 c（也就是令 $f(x,y)$ 等于不同的常数），可以绘制出不同常数下的曲线
+    - 这种方法常用于在地理上绘制等高线
+    - 称其为 Level Curve 是因为设定函数值为常数时，绘制出的是关于 x 和 y 的曲线
+  - Level Surface（针对 3 变量函数）
+    - 加设函数为 $f(x,y,z)$，令 $f(x,y,z)$ 等于不同的常数 c，即可绘制出 Level Surface
+    - 这种方法常用于工业中用不同颜色来表示不同温度下的曲面
+      ![](level%20surface%20application.png)
+    - 称其为 Level Curve 是因为设定函数值为常数时，绘制出的是关于 x、y 和 z 的曲面
+  - 计算机绘制的立体图像
 - 极限和连续
-	- 平面中相邻点的定义
-		- 回顾空间中两点之间的距离函数：$d=\sqrt{(x_{1}-x_{0})^2+(y_{1}-y_{0})^2+(z_{1}-z_{0})^2}$
-		- 设空间中 $\delta-$ 相邻的概念为：以 $(x_{0},y_{0})$ 为圆心的以 $\delta$ 为半径的圆（$\delta > 0$）内的点。用数学语言表示为一个集合，该集合满足 $\{(x,y):\sqrt{(x-x_{0})^2+(y-y_{0})^2<\delta}\}$
-		- `open disk`：公式中为 $\lt$
-		- `closed disk`：公式中为 $\le$
-		- 内部点：内部点的 $\delta$ 半径内，所有点都在 R 区域内
-		- 边界点：边界点 $\delta$ 半径内，部分点在 R 区域里面，部分点在 R 区域外面
-		- 开区间：所有点都是内部点
-		- 闭区间：存在完整的边界
-	- 2 变量函数的极限定义
-		- 单变量函数极限回顾
-			- 在函数 $y=f(x)$ 中，对于坐标 $(x_{0},y_{0})$，对于任意的 $\epsilon>0$，总存在对应的 $\delta$，使得对于任意的  $0<|x-x_{0}|<\delta$，总有 $|y_{0}-L|<\epsilon$；我们称 $y=f(x)$ 在点 $x_{0}$ 处的极限为 $L$
-		- 定义
-			- 在函数 $f(x,y)$ 中，对于坐标 $(x_{0},y_{0},f(x_{0},y_{0}))$；对于任意的 $\epsilon > 0$，总存在对应的 $\delta$，使得对于任意 $0<\sqrt{(x-x_{0})^2+(y-y_{0})^2} < \delta$，总有 $|f(x_{0},y_{0})-L|<\epsilon$；我们称 $f(x,y)$ 在点 $(x_{0},y_{0})$ 处的极限为 $L$
-			- 符号表示为
-				$$
-				\lim_\limits{(x,y)\rightarrow (x_{0},y_{0})}f(x,y)=L
-				$$
-		- 单/多变量函数对比
-			- 坐标中的元素个数：2->3
-			- 两点之间距离的定义变化了：$0<|x-x_{0}|<\delta$ -> $0<\sqrt{(x-x_{0})^2+(y-y_{0})^2} < \delta$
-			- 极限的下标由  $x\rightarrow x_{0}$ 转变为 $(x,y)\rightarrow (x_{0},y_{0})$，从而导致对于 $\rightarrow$ 符号含义的变化
-				- 对于单变量求极限，只需要考虑左极限和右极限；两极限相等，则极限存在
-				- **对于多变量函数求极限，对于任意方向趋近，极限值都必须相等，否则极限不存在**
-		- 证明极限：从 $0<\sqrt{(x-x_{0})^2+(y-y_{0})^2} < \delta$ 推导到 $|f(x_{0},y_{0})-L|<\epsilon$，令 $\delta$ 等于关于 $\epsilon$ 的某个值，证明极限存在（要点：函数的放缩，涉及到不等式的问题）
-			- 案例 1
-				![](limit%20verification%201.png)
-			- 案例 2
-				![](limit%20verification%202.png)
-		- 极限的求解：像单变量一样，直接带入/因式分解/有理化
-		- 极限存在性
-			- 肉眼观察法：如 $\lim\limits_{(x,y)\rightarrow(0,0)}\frac{1}{x^2+y^2}$ 显然不存在，因为 $x^2+y^2$ 无限趋近于 0，那么这个值无限趋近于无穷大
-			- 探测当从各个方向趋近时，极限是否都相同。例如设置 $y=kx$，将其带入极限的求解公式（$k$ 可以是不同的常数）。若求得的极限结果与 $k$ 相关，那么表明从各个方向趋近时（k 不同），极限不同。那么极限不存在，否则极限存在。
-	- 2 变量函数的连续性定义
-		- 函数 $f(x,y)$ 在点 $(x_{0},y_{0})$ 连续
-			- $\lim\limits_{(x,y)\rightarrow (x_{0},y_{0})}f(x,y)=f(x_{0},y_{0})$
-		- 函数 $f(x,y)$ 连续：函数在开区间上任何点都连续，则该函数在开区间上为连续函数
-		- 连续多变量函数在 $(x_{0},y_{0})$ 点的四则运算：用标量乘、函数相乘、加减除，$(x_{0},y_{0})$ 处依然保持连续
-		- 复合函数连续：两复合函数在 $(x_{0},y_{0})$ 处连续，将其复合后在该点依然保持连续
-		- 连续性测试：需要找到不连续的地方（根据函数定义域）
-	- 3 变量函数的连续性定义
-		- 相比两变量函数的变化：邻域点的定义发生了变化，但是依然采用距离公式，内部点和区间的定义也因此做了一些微小的调整，此时邻域为一个球形。其他的定义和定理都和 2 变量情况下类似，此处不再赘述
+  - 平面中相邻点的定义
+    - 回顾空间中两点之间的距离函数：$d=\sqrt{(x_{1}-x_{0})^2+(y_{1}-y_{0})^2+(z_{1}-z_{0})^2}$
+    - 设空间中 $\delta-$ 相邻的概念为：以 $(x_{0},y_{0})$ 为圆心的以 $\delta$ 为半径的圆（$\delta > 0$）内的点。用数学语言表示为一个集合，该集合满足 $\{(x,y):\sqrt{(x-x_{0})^2+(y-y_{0})^2<\delta}\}$
+    - `open disk`：公式中为 $\lt$
+    - `closed disk`：公式中为 $\le$
+    - 内部点：内部点的 $\delta$ 半径内，所有点都在 R 区域内
+    - 边界点：边界点 $\delta$ 半径内，部分点在 R 区域里面，部分点在 R 区域外面
+    - 开区间：所有点都是内部点
+    - 闭区间：存在完整的边界
+  - 2 变量函数的极限定义
+    - 单变量函数极限回顾
+      - 在函数 $y=f(x)$ 中，对于坐标 $(x_{0},y_{0})$，对于任意的 $\epsilon>0$，总存在对应的 $\delta$，使得对于任意的 $0<|x-x_{0}|<\delta$，总有 $|y_{0}-L|<\epsilon$；我们称 $y=f(x)$ 在点 $x_{0}$ 处的极限为 $L$
+    - 定义
+      - 在函数 $f(x,y)$ 中，对于坐标 $(x_{0},y_{0},f(x_{0},y_{0}))$；对于任意的 $\epsilon > 0$，总存在对应的 $\delta$，使得对于任意 $0<\sqrt{(x-x_{0})^2+(y-y_{0})^2} < \delta$，总有 $|f(x_{0},y_{0})-L|<\epsilon$；我们称 $f(x,y)$ 在点 $(x_{0},y_{0})$ 处的极限为 $L$
+      - 符号表示为
+        $$
+        \lim\limits{(x,y)\rightarrow (x_{0},y_{0})}f(x,y)=L
+        $$
+    - 单/多变量函数对比
+      - 坐标中的元素个数：2->3
+      - 两点之间距离的定义变化了：$0<|x-x_{0}|<\delta$ -> $0<\sqrt{(x-x_{0})^2+(y-y_{0})^2} < \delta$
+      - 极限的下标由 $x\rightarrow x_{0}$ 转变为 $(x,y)\rightarrow (x_{0},y_{0})$，从而导致对于 $\rightarrow$ 符号含义的变化
+        - 对于单变量求极限，只需要考虑左极限和右极限；两极限相等，则极限存在
+        - **对于多变量函数求极限，对于任意方向趋近，极限值都必须相等，否则极限不存在**
+    - 证明极限：从 $0<\sqrt{(x-x_{0})^2+(y-y_{0})^2} < \delta$ 推导到 $|f(x_{0},y_{0})-L|<\epsilon$，令 $\delta$ 等于关于 $\epsilon$ 的某个值，证明极限存在（要点：函数的放缩，涉及到不等式的问题）
+      - 案例 1
+        ![](limit%20verification%201.png)
+      - 案例 2
+        ![](limit%20verification%202.png)
+    - 极限的求解：像单变量一样，直接带入/因式分解/有理化
+    - 极限存在性
+      - 肉眼观察法：如 $\lim\limits_{(x,y)\rightarrow(0,0)}\frac{1}{x^2+y^2}$ 显然不存在，因为 $x^2+y^2$ 无限趋近于 0，那么这个值无限趋近于无穷大
+      - 探测当从各个方向趋近时，极限是否都相同。例如设置 $y=kx$，将其带入极限的求解公式（$k$ 可以是不同的常数）。若求得的极限结果与 $k$ 相关，那么表明从各个方向趋近时（k 不同），极限不同。那么极限不存在，否则极限存在。
+  - 2 变量函数的连续性定义
+    - 函数 $f(x,y)$ 在点 $(x_{0},y_{0})$ 连续
+      - $\lim\limits_{(x,y)\rightarrow (x_{0},y_{0})}f(x,y)=f(x_{0},y_{0})$
+    - 函数 $f(x,y)$ 连续：函数在开区间上任何点都连续，则该函数在开区间上为连续函数
+    - 连续多变量函数在 $(x_{0},y_{0})$ 点的四则运算：用标量乘、函数相乘、加减除，$(x_{0},y_{0})$ 处依然保持连续
+    - 复合函数连续：两复合函数在 $(x_{0},y_{0})$ 处连续，将其复合后在该点依然保持连续
+    - 连续性测试：需要找到不连续的地方（根据函数定义域）
+  - 3 变量函数的连续性定义
+    - 相比两变量函数的变化：邻域点的定义发生了变化，但是依然采用距离公式，内部点和区间的定义也因此做了一些微小的调整，此时邻域为一个球形。其他的定义和定理都和 2 变量情况下类似，此处不再赘述
 - 偏导
-	- 2 变量函数的偏导定义 & 计算
-		- 偏导的含义：函数值随单个自变量变化的量度
-			![](definition%20of%20partial%20derivatives%20of%202%20function%20of%202%20vars.png)
-		- 偏导的求解：把其他自变量当作常数，求解函数值对特定自变量（你想要分析的自变量）的导数
-		- 偏导的符号表示
-			![](notation%20for%20partial%20derivatives.png)
-		- 偏导的几何意义
-			- 假设函数为 $z=f(x,y)$（该函数形成的是一个三维空间中的曲面）
-			- 当 $y=y_{0}$ 时，函数 $z=f(x,y_{0})$ 为 $z=f(x,y)$ 和平面 $y=y_{0}$ 的交线。对 $z=f(x,y_{0})$ 求 x 偏导
-				$$
-				z_{x}=\lim\limits_{\Delta{x}\rightarrow 0}\frac{f(x_{0}+\Delta{x},y_{0})-f(x_{0},y_{0})}{\Delta{x}}
-				$$
-			- 当 $x=x_{0}$ 时，函数 $z=f(x_{0},y)$ 为 $z=f(x,y)$ 和平面 $x=x_{0}$ 的交线。对 $z=f(x_{0},y)$ 求 y 偏导
-				$$
-				z_{y}=\lim\limits_{\Delta{y}\rightarrow 0}\frac{f(x_{0},y_{0}+\Delta{y})-f(x_{0},y_{0})}{\Delta{y}}
-				$$
-			- 总结：$\frac{\partial f}{\partial x}$ 和 $\frac{\partial f}{\partial y}$ 分别为函数 $f$ 在 y 和 x 固定时，x 和 y 方向上曲线的斜率
-			- 某点 $(x_{0},y_{0})$ 处的偏导计算：直接带入值即可
-		- 偏导的其他应用：求解函数相对于某一自变量的变化率
-	- 3 变量及更多变量函数的偏导定义 & 计算：和前面两个变量的类似，此处不再赘述
-	- 2 或 3 变量函数的高阶偏导
-		> 最后两种也叫 `mixed partial derivative`，其中，如果 $f_{xy}$ 和 $f_{yx}$ 是开区间 R 上的连续函数，那么对于 R 上的所有 $(x,y)$，都有 $f_{xy}=f_{yx}$。对于 3 个变量及以上的函数，该性质仍然成立。
-		> ![](higher%20order%20derivative%20of%203%20variable%20functions.png)
-			
-		- ![](higher%20order%20differentiate.png)
+  - 2 变量函数的偏导定义 & 计算
+    - 偏导的含义：函数值随单个自变量变化的量度
+      ![](definition%20of%20partial%20derivatives%20of%202%20function%20of%202%20vars.png)
+    - 偏导的求解：把其他自变量当作常数，求解函数值对特定自变量（你想要分析的自变量）的导数
+    - 偏导的符号表示
+      ![](notation%20for%20partial%20derivatives.png)
+    - 偏导的几何意义
+      - 假设函数为 $z=f(x,y)$（该函数形成的是一个三维空间中的曲面）
+      - 当 $y=y_{0}$ 时，函数 $z=f(x,y_{0})$ 为 $z=f(x,y)$ 和平面 $y=y_{0}$ 的交线。对 $z=f(x,y_{0})$ 求 x 偏导
+        $$
+        z_{x}=\lim\limits_{\Delta{x}\rightarrow 0}\frac{f(x_{0}+\Delta{x},y_{0})-f(x_{0},y_{0})}{\Delta{x}}
+        $$
+      - 当 $x=x_{0}$ 时，函数 $z=f(x_{0},y)$ 为 $z=f(x,y)$ 和平面 $x=x_{0}$ 的交线。对 $z=f(x_{0},y)$ 求 y 偏导
+        $$
+        z_{y}=\lim\limits_{\Delta{y}\rightarrow 0}\frac{f(x_{0},y_{0}+\Delta{y})-f(x_{0},y_{0})}{\Delta{y}}
+        $$
+      - 总结：$\frac{\partial f}{\partial x}$ 和 $\frac{\partial f}{\partial y}$ 分别为函数 $f$ 在 y 和 x 固定时，x 和 y 方向上曲线的斜率
+      - 某点 $(x_{0},y_{0})$ 处的偏导计算：直接带入值即可
+    - 偏导的其他应用：求解函数相对于某一自变量的变化率
+  - 3 变量及更多变量函数的偏导定义 & 计算：和前面两个变量的类似，此处不再赘述
+  - 2 或 3 变量函数的高阶偏导
+    > 最后两种也叫 `mixed partial derivative`，其中，如果 $f_{xy}$ 和 $f_{yx}$ 是开区间 R 上的连续函数，那么对于 R 上的所有 $(x,y)$，都有 $f_{xy}=f_{yx}$。对于 3 个变量及以上的函数，该性质仍然成立。
+    > ![](higher%20order%20derivative%20of%203%20variable%20functions.png)
+    - ![](higher%20order%20differentiate.png)
 - 微分
-	- 单变量函数的增量和微分复习
-		- 增量：$f(x+\Delta{x})-f(x)$
-		- 微分：$dy=f'(x)dx$
-	- 增量和微分的概念 & 两变量函数的微分定义
-		- 设函数为 $z=f(x,y)$，$x$ 的增量为 $\Delta{x}$，$y$ 的增量为 $\Delta{y}$
-		- 那么 $z$ 的增量为 $\Delta{z}=f(x+\Delta{x},y+\Delta{y})-f(x,y)$
-		- $x$ 的微分为 $dx$，$y$ 的微分为 $dy$
-		- 全微分的定义如下
-			$$
-			dz=\frac{\partial z}{\partial x}dx+\frac{\partial z}{\partial y}dy=f_{x}(x,y)dx+f_{y}(x,y)dy
-			$$
-		- 全微分公式拓展
-			- 对于有多个变量的全微分，其值等于函数对各个自变量的偏导 * 该自变量的微分的和
-			- 例如对于函数 $z=f(x,y,u,w)$，其全微分为
-				$$
-				dz=\frac{\partial z}{\partial x}dx+\frac{\partial z}{\partial y}dy+\frac{\partial z}{\partial u}du+\frac{\partial z}{\partial w}dw
-				$$
-	- 是否可微判断
-		> 注意多变量函数可微的条件和单变量函数不相同，对于单变量函数，只需要其导数存在即可。而对于多变量函数，$f_{x}$ 和 $f_{y}$ 都存在不一定证明其可微。因为在那个点有可能根本就不可导。
-		
-		- 初步判断
-			> 三元函数的微分形式与可微判断与二元函数类似，此处不再赘述。
-			
-			- 在某个点可微：设函数为 $\Delta{z}$，判断该 $\Delta{z}$ 是否能写成 $f_{x}\Delta{x}+f_{y}\Delta{y}+\epsilon_{1}{\Delta{x}}+\epsilon_{2}{\Delta{y}}$，且当 $(\Delta{x},\Delta{y})\rightarrow(0,0)$ 时，$\epsilon_{1}$ 和 $\epsilon_{2}$ 趋近于 0
-			- 在区域 R 内可微：在区域 R 内的每个点都可微
-		- 严谨判断：对于函数 $f(x,y)$，若 $f_{x}$ 和 $f_{y}$ 都在开区域 R 上连续，那么 $f(x,y)$ 在区域 R 上可微
-	- 微分近似
-		- 设函数为 $z=f(x,y)$
-		- 函数值的微分
-			$$
-			dz=f_{x}dx+f_{y}dy
-			$$
-		- 函数值的变化量
-			$$
-			\Delta{z}=f_{x}\Delta{x}+f_{y}\Delta{y}+\epsilon_{1}\Delta{x}+\epsilon_{2}\Delta{y}
-			$$
-		- 而因为函数可微，当 $\Delta{x}$ 和 $\Delta{y}$ 趋近于 0 时，$\epsilon_{1}$ 和 $\epsilon_{2}$ 趋近于 0。因为此时 $\Delta{x}$ 和 $\Delta{y}$ 并不大，因此我们可以试图使用省略后面两项。将函数值的变化量写作如下形式
-			$$
-			\Delta{z}=f_{x}\Delta{x}+f_{y}\Delta{y}
-			$$
-		- 那么误差为 $\epsilon_{1}\Delta{x}+\epsilon_{2}\Delta{y}$
-		- 这种方法称为线性近似
-	- 误差分析
-		- 相对误差公式为 $\frac{\Delta{V}}{V}$
-		- 其可以近似为 $\frac{dV}{V}$
-	- 可导与连续
-		- 如果函数 $f(x,y)$ 在区间 R 上可导，那么它在 R 上连续。证明如下
-			- 我们的证明目标是从
-				$$
-				\Delta{z}=(f_{x}(x_{0},y_{0})+\epsilon_{1})\Delta{x}+(f_{y}(x_{0},y_{0})+\epsilon_{2})\Delta{y}
-				$$
-				到
-				$$
-				\lim\limits_{(x,y)\rightarrow(x_{0},y_{0})}f(x,y)=f(x_{0},y_{0})
-				$$
-			- \因为 $f(x,y)$ 在区间 R 上可导，因此
-				$$
-				\Delta{z}=(f_{x}(x_{0},y_{0})+\epsilon_{1})\Delta{x}+(f_{y}(x_{0},y_{0})+\epsilon_{2})\Delta{y}
-				$$
-			- 且当 $(\Delta{x},\Delta{y})\rightarrow(0,0)$ 时，$\epsilon_{1}$ 和 $\epsilon_{2}$ 趋近于 0
-			- 因为
-				$$
-				\Delta{z}=f(x_{0}+\Delta{x},y_{0}+\Delta{y})-f(x_{0},y_{0})
-				$$
-			- 那么
-				$$
-				f(x_{0}+\Delta{x},y_{0}+\Delta{y})-f(x_{0},y_{0})=(f_{x}(x_{0},y_{0})+\epsilon_{1})\Delta{x}+(f_{y}(x_{0},y_{0})+\epsilon_{2})\Delta{y}
-				$$
-			- 因为
-				$$
-				\begin{aligned}
-				&\Delta{x}=x-x_{0} \\
-				&\Delta{y}=y-y_{0} \\
-				\end{aligned}
-				$$
-			- 那么原式可以改写为
-				$$
-				f(x_{0}+\Delta{x},y_{0}+\Delta{y})-f(x_{0},y_{0})=(f_{x}(x_{0},y_{0})+\epsilon_{1})(x-x_{0})+(f_{y}(x_{0},y_{0})+\epsilon_{2})(y-y_{0})
-				$$
-			- 令
-				$$
-				\begin{aligned}
-				&x=x_{0}+\Delta{x} \\
-				&y=y_{0}+\Delta{y} \\
-				\end{aligned}
-				$$
-			- 那么原式可以改写为
-				$$
-				f(x,y)-f(x_{0},y_{0})=(f_{x}(x_{0},y_{0})+\epsilon_{1})(x-x_{0})+(f_{y}(x_{0},y_{0})+\epsilon_{2})(y-y_{0})
-				$$
-			- 而当 $(\Delta{x},\Delta{y})\rightarrow(0,0)$，我们可以得到
-				$$
-				\lim_\limits{(x,y)\rightarrow(x_{0},y_{0})}f(x,y)-f(x_{0},y_{0}) = 0
-				$$
-			- 因此
-				$$
-				\lim\limits_{(x,y)\rightarrow(x_{0},y_{0})}f(x,y)=f(x_{0},y_{0})
-				$$
-			- 满足连续性条件，因此当函数 $f(x,y)$ 在 $(x_{0},y_{0})$ 处可微时，函数在该处连续
-		- 如果函数 $f(x,y)$ 在区间 R 上不连续，那么它在 R 上一定不可导
+
+  - 单变量函数的增量和微分复习
+    - 增量：$f(x+\Delta{x})-f(x)$
+    - 微分：$dy=f'(x)dx$
+  - 增量和微分的概念 & 两变量函数的微分定义
+    - 设函数为 $z=f(x,y)$，$x$ 的增量为 $\Delta{x}$，$y$ 的增量为 $\Delta{y}$
+    - 那么 $z$ 的增量为 $\Delta{z}=f(x+\Delta{x},y+\Delta{y})-f(x,y)$
+    - $x$ 的微分为 $dx$，$y$ 的微分为 $dy$
+    - 全微分的定义如下
+      $$
+      dz=\frac{\partial z}{\partial x}dx+\frac{\partial z}{\partial y}dy=f_{x}(x,y)dx+f_{y}(x,y)dy
+      $$
+    - 全微分公式拓展
+      - 对于有多个变量的全微分，其值等于函数对各个自变量的偏导 \* 该自变量的微分的和
+      - 例如对于函数 $z=f(x,y,u,w)$，其全微分为
+        $$
+        dz=\frac{\partial z}{\partial x}dx+\frac{\partial z}{\partial y}dy+\frac{\partial z}{\partial u}du+\frac{\partial z}{\partial w}dw
+        $$
+  - 是否可微判断
+
+    > 注意多变量函数可微的条件和单变量函数不相同，对于单变量函数，只需要其导数存在即可。而对于多变量函数，$f_{x}$ 和 $f_{y}$ 都存在不一定证明其可微。因为在那个点有可能根本就不可导。
+
+    - 初步判断
+
+      > 三元函数的微分形式与可微判断与二元函数类似，此处不再赘述。
+
+      - 在某个点可微：设函数为 $\Delta{z}$，判断该 $\Delta{z}$ 是否能写成 $f_{x}\Delta{x}+f_{y}\Delta{y}+\epsilon_{1}{\Delta{x}}+\epsilon_{2}{\Delta{y}}$，且当 $(\Delta{x},\Delta{y})\rightarrow(0,0)$ 时，$\epsilon_{1}$ 和 $\epsilon_{2}$ 趋近于 0
+      - 在区域 R 内可微：在区域 R 内的每个点都可微
+
+    - 严谨判断：对于函数 $f(x,y)$，若 $f_{x}$ 和 $f_{y}$ 都在开区域 R 上连续，那么 $f(x,y)$ 在区域 R 上可微
+
+  - 微分近似
+    - 设函数为 $z=f(x,y)$
+    - 函数值的微分
+      $$
+      dz=f_{x}dx+f_{y}dy
+      $$
+    - 函数值的变化量
+      $$
+      \Delta{z}=f_{x}\Delta{x}+f_{y}\Delta{y}+\epsilon_{1}\Delta{x}+\epsilon_{2}\Delta{y}
+      $$
+    - 而因为函数可微，当 $\Delta{x}$ 和 $\Delta{y}$ 趋近于 0 时，$\epsilon_{1}$ 和 $\epsilon_{2}$ 趋近于 0。因为此时 $\Delta{x}$ 和 $\Delta{y}$ 并不大，因此我们可以试图使用省略后面两项。将函数值的变化量写作如下形式
+      $$
+      \Delta{z}=f_{x}\Delta{x}+f_{y}\Delta{y}
+      $$
+    - 那么误差为 $\epsilon_{1}\Delta{x}+\epsilon_{2}\Delta{y}$
+    - 这种方法称为线性近似
+  - 误差分析
+    - 相对误差公式为 $\frac{\Delta{V}}{V}$
+    - 其可以近似为 $\frac{dV}{V}$
+  - 可导与连续
+    - 如果函数 $f(x,y)$ 在区间 R 上可导，那么它在 R 上连续。证明如下
+      - 我们的证明目标是从
+        $$
+        \Delta{z}=(f_{x}(x_{0},y_{0})+\epsilon_{1})\Delta{x}+(f_{y}(x_{0},y_{0})+\epsilon_{2})\Delta{y}
+        $$
+        到
+        $$
+        \lim\limits_{(x,y)\rightarrow(x_{0},y_{0})}f(x,y)=f(x_{0},y_{0})
+        $$
+      - \因为 $f(x,y)$ 在区间 R 上可导，因此
+        $$
+        \Delta{z}=(f_{x}(x_{0},y_{0})+\epsilon_{1})\Delta{x}+(f_{y}(x_{0},y_{0})+\epsilon_{2})\Delta{y}
+        $$
+      - 且当 $(\Delta{x},\Delta{y})\rightarrow(0,0)$ 时，$\epsilon_{1}$ 和 $\epsilon_{2}$ 趋近于 0
+      - 因为
+        $$
+        \Delta{z}=f(x_{0}+\Delta{x},y_{0}+\Delta{y})-f(x_{0},y_{0})
+        $$
+      - 那么
+        $$
+        f(x_{0}+\Delta{x},y_{0}+\Delta{y})-f(x_{0},y_{0})=(f_{x}(x_{0},y_{0})+\epsilon_{1})\Delta{x}+(f_{y}(x_{0},y_{0})+\epsilon_{2})\Delta{y}
+        $$
+      - 因为
+        $$
+        \begin{aligned}
+        &\Delta{x}=x-x_{0} \\
+        &\Delta{y}=y-y_{0} \\
+        \end{aligned}
+        $$
+      - 那么原式可以改写为
+        $$
+        f(x_{0}+\Delta{x},y_{0}+\Delta{y})-f(x_{0},y_{0})=(f_{x}(x_{0},y_{0})+\epsilon_{1})(x-x_{0})+(f_{y}(x_{0},y_{0})+\epsilon_{2})(y-y_{0})
+        $$
+      - 令
+        $$
+        \begin{aligned}
+        &x=x_{0}+\Delta{x} \\
+        &y=y_{0}+\Delta{y} \\
+        \end{aligned}
+        $$
+      - 那么原式可以改写为
+        $$
+        f(x,y)-f(x_{0},y_{0})=(f_{x}(x_{0},y_{0})+\epsilon_{1})(x-x_{0})+(f_{y}(x_{0},y_{0})+\epsilon_{2})(y-y_{0})
+        $$
+      - 而当 $(\Delta{x},\Delta{y})\rightarrow(0,0)$，我们可以得到
+        $$
+        \lim\limits{(x,y)\rightarrow(x_{0},y_{0})}f(x,y)-f(x_{0},y_{0}) = 0
+        $$
+      - 因此
+        $$
+        \lim\limits_{(x,y)\rightarrow(x_{0},y_{0})}f(x,y)=f(x_{0},y_{0})
+        $$
+      - 满足连续性条件，因此当函数 $f(x,y)$ 在 $(x_{0},y_{0})$ 处可微时，函数在该处连续
+    - 如果函数 $f(x,y)$ 在区间 R 上不连续，那么它在 R 上一定不可导
+
 - 多变量的链式法则
-	- 多变量链式法则
-		- 简易方法：假设 $w$ 是关于 $x$ 和 $y$ 的函数，而 $x$ 和 $y$ 又是关于 $s$ 和 $t$ 的函数。我们可以直接带入 $x$ 和 $y$ 的函数到 $w$（构成复合函数），以实现对 $s$ 和 $t$ 偏导的直接求解。
-		- 单自变量的链式法则： $w$ 是关于 $x$ 和 $y$ 的函数，而 $x$ 和 $y$ 又是关于 $t$ 的函数。那么 $w$ 关于 $t$ 的导数为
-			> 注意 $\frac{dw}{dt}$ 和 $\frac{\partial w}{\partial t}$ 之间的区别，后者是求偏导，是指在有多个自变量的情况下，求解函数关于其中一个自变量的变化率。如果说只有 t 一个参数，而没有其他的，那么就是求导数。否则则用偏导符号，譬如 $\frac{\partial w}{\partial x}$ 和 $\frac{\partial w}{\partial y}$
-			
-			$$
-			\frac{dw}{dt}=\frac{\partial w}{\partial x}\frac{dx}{dt}+\frac{\partial w}{\partial y}\frac{dy}{dt}
-			$$
-		- 多自变量的链式法则：$w$ 是关于 $x$ 和 $y$ 的函数，而 $x$ 和 $y$ 又是关于 $s$ 和 $t$ 的函数。那么要求 $w$ 关于 $t$ 的偏导，和 $w$ 关于 $s$ 的偏导，我们需要分开求解
-			$$
-			\begin{aligned}
-			&\frac{\partial w}{\partial t}= \frac{\partial w}{\partial x}\frac{\partial x}{\partial t}+\frac{\partial w}{\partial y}\frac{\partial y}{\partial t}\\
-			&\frac{\partial w}{\partial s}= \frac{\partial w}{\partial x}\frac{\partial x}{\partial s}+\frac{\partial w}{\partial y}\frac{\partial y}{\partial s}\\
-			\end{aligned}
-			$$
-		- 对于更多自变量的情况，链式法则依然适用
-	- 隐函数偏导 & 链式法则
-		- 隐函数偏导
-			> 回顾：隐函数是无法直接得出 $y$ 和 $x$ 的关系的函数。其结果隐藏在 $F(x,y)=0$ 中
-		
-			- 设隐函数的格式如下
-				$$
-				F(x,y)=0
-				$$
-			- 令 $w=F(x,y)$。我们现在可以看到，$w$ 是关于 $x$ 和 $y$ 的函数，而 $x$ 是关于 $x$ 的函数，$y$ 是关于 x 的函数。
-			- 换个符号，我们可以这样看，$w$ 是关于 $u$ 和 $v$ 的函数（$w=G(u,v)$），而 $u=x$，$v=f(x)$。
-			- 根据链式法则，$w$ 关于 $x$ 的函数可以这样写
-				$$
-				\frac{dw}{dx}=\frac{\partial w}{\partial u}\frac{du}{dx}+\frac{\partial w}{\partial v}\frac{dv}{dx}
-				$$
-			- 根据前文内容，我们知道 $w=0$，那么 $\frac{dw}{dx}=0$；再将 $u=x,v=f(x)$ 带回式子，可得
-				$$
-				F_{x}+F_{y}\frac{dy}{dx}=0
-				$$
-			- 因此可得隐函数中
-				$$
-				\frac{dy}{dx}=-\frac{F_{x}}{F_{y}}
-				$$
-		- 隐函数链式法则
-			![](chain%20rule%20of%20implicit%20differentiation.png)
+
+  - 多变量链式法则
+
+    - 简易方法：假设 $w$ 是关于 $x$ 和 $y$ 的函数，而 $x$ 和 $y$ 又是关于 $s$ 和 $t$ 的函数。我们可以直接带入 $x$ 和 $y$ 的函数到 $w$（构成复合函数），以实现对 $s$ 和 $t$ 偏导的直接求解。
+    - 单自变量的链式法则： $w$ 是关于 $x$ 和 $y$ 的函数，而 $x$ 和 $y$ 又是关于 $t$ 的函数。那么 $w$ 关于 $t$ 的导数为
+
+      > 注意 $\frac{dw}{dt}$ 和 $\frac{\partial w}{\partial t}$ 之间的区别，后者是求偏导，是指在有多个自变量的情况下，求解函数关于其中一个自变量的变化率。如果说只有 t 一个参数，而没有其他的，那么就是求导数。否则则用偏导符号，譬如 $\frac{\partial w}{\partial x}$ 和 $\frac{\partial w}{\partial y}$
+
+      $$
+      \frac{dw}{dt}=\frac{\partial w}{\partial x}\frac{dx}{dt}+\frac{\partial w}{\partial y}\frac{dy}{dt}
+      $$
+
+    - 多自变量的链式法则：$w$ 是关于 $x$ 和 $y$ 的函数，而 $x$ 和 $y$ 又是关于 $s$ 和 $t$ 的函数。那么要求 $w$ 关于 $t$ 的偏导，和 $w$ 关于 $s$ 的偏导，我们需要分开求解
+      $$
+      \begin{aligned}
+      &\frac{\partial w}{\partial t}= \frac{\partial w}{\partial x}\frac{\partial x}{\partial t}+\frac{\partial w}{\partial y}\frac{\partial y}{\partial t}\\
+      &\frac{\partial w}{\partial s}= \frac{\partial w}{\partial x}\frac{\partial x}{\partial s}+\frac{\partial w}{\partial y}\frac{\partial y}{\partial s}\\
+      \end{aligned}
+      $$
+    - 对于更多自变量的情况，链式法则依然适用
+
+  - 隐函数偏导 & 链式法则
+
+    - 隐函数偏导
+
+      > 回顾：隐函数是无法直接得出 $y$ 和 $x$ 的关系的函数。其结果隐藏在 $F(x,y)=0$ 中
+
+      - 设隐函数的格式如下
+        $$
+        F(x,y)=0
+        $$
+      - 令 $w=F(x,y)$。我们现在可以看到，$w$ 是关于 $x$ 和 $y$ 的函数，而 $x$ 是关于 $x$ 的函数，$y$ 是关于 x 的函数。
+      - 换个符号，我们可以这样看，$w$ 是关于 $u$ 和 $v$ 的函数（$w=G(u,v)$），而 $u=x$，$v=f(x)$。
+      - 根据链式法则，$w$ 关于 $x$ 的函数可以这样写
+        $$
+        \frac{dw}{dx}=\frac{\partial w}{\partial u}\frac{du}{dx}+\frac{\partial w}{\partial v}\frac{dv}{dx}
+        $$
+      - 根据前文内容，我们知道 $w=0$，那么 $\frac{dw}{dx}=0$；再将 $u=x,v=f(x)$ 带回式子，可得
+        $$
+        F_{x}+F_{y}\frac{dy}{dx}=0
+        $$
+      - 因此可得隐函数中
+        $$
+        \frac{dy}{dx}=-\frac{F_{x}}{F_{y}}
+        $$
+
+    - 隐函数链式法则
+      ![](chain%20rule%20of%20implicit%20differentiation.png)
+
 - 方向导数和梯度
-	> 这个油管视频对方向导数和梯度的讲解很清晰：[Directional Derivatives | What's the slope in any direction? - YouTube](https://www.youtube.com/watch?v=GJODOGq7cAY)
-	
-	- 两变量函数的方向导数
-		- 前情提要：设存在一个曲线 $z=f(x,y)$。$f_{x}$ 是当 y 固定时，在 x 方向上的曲线的斜率。$f_{y}$ 是当 x 固定时，在 y 方向上的曲线的斜率。
-		- 问题：根据之前的知识，我们只能求解在 x/y 方向上的斜率，无法求解三维曲面任意方向上的斜率（导数）。
-		- 解决办法：引入方向导数的概念
-			- 设我们想要求解的方向和 $x$ 轴的夹角为 $\theta$，那么该方向在 $x$ 轴和 $y$ 轴上的投影分别是 $\cos\theta$ 和 $\sin\theta$（此处定义的时候我们使用的是 $\theta$，这样做有两个原因，一来是我们暂时不在乎走了多远，只需要定义行走的方向；二来是 $\sqrt{(\cos\theta)^2+(\sin\theta)^2}=1$，说明 $(\cos\theta,\sin\theta)$ 是一个单位向量，后期我们可以用行走的长度乘以这个单位向量，来获取目的地的点坐标）
-			- 假设我们的初始点坐标是 $P(x_{0},y_{0})$。**在 xOy 平面上**，往 $\theta$ 夹角方向走 $t$ 个单位，那么 $x$ 方向的坐标为 $x_{0}+t\cos\theta$，$y$ 方向的坐标为 $y_{0}+t\sin\theta$。因此新的目的地的坐标为 $(x_{0}+t\cos\theta,y_{0}+t\sin\theta)$
-			- 在定义斜率之前，我们先用一个公式来表达对于函数 $z=f(x,y)$，从 $P(x_{0},y_{0})$ 点触发，沿着与 $x$ 轴为 $\theta$ 的角度走 $t$ 个单位时，其函数值（$z$）的变化
-				$$
-				\Delta{z}=f(x_{0}+t\cos\theta,y_{0}+t\sin\theta)-f(x_{0},y_{0})
-				$$
-			- 因为其在 xOy 平面上（**注意不是 x 轴或者 y 轴！**）上行走的单位为 $t$
-			- 那么我们 $\frac{\Delta{z}}{t}$ 来定义该行走长度下的切线斜率
-				$$
-				\frac{\Delta{z}}{t}=\frac{f(x_{0}+t\cos\theta,y_{0}+t\sin\theta)-f(x_{0},y_{0})}{t}
-				$$
-			- 要求解在 $P(x_{0},y_{0})$ 处的切线，我们需要让 $t\rightarrow 0$，那么该式便改写为
-				$$
-				\lim\limits_{t\rightarrow 0}\frac{\Delta{z}}{t}=\lim\limits_{t\rightarrow 0}\frac{f(x_{0}+t\cos\theta,y_{0}+t\sin\theta)-f(x_{0},y_{0})}{t}
-				$$
-			- 若函数在该处可导，根据前文多变量函数微分的性质可得
-				$$
-				f(x_{0}+t\cos\theta,y_{0}+t\sin\theta)-f(x_{0},y_{0})=f_{x}dx+f_{y}dy
-				$$
-				> 证明在这里：
-				> ![](directional%20derivative%20proof.png)
-				
-			- 由于 $dx=t\cos\theta$，$dy=t\sin\theta$，因此上述式子可以改写为
-				$$
-				\lim\limits_{t\rightarrow 0}(f(x_{0}+t\cos\theta,y_{0}+t\sin\theta)-f(x_{0},y_{0}))=dz=f_{x}t\cos\theta+f_{y}t\sin\theta
-				$$
-			- 用该式除以 $t$， 前面的导数公式可以改写为
-				$$
-				\lim\limits_{t\rightarrow 0}\frac{\Delta{z}}{t}=f_{x}\cos\theta+f_{y}\sin\theta
-				$$
-			- 而 $f_{x}\cos\theta+f_{y}\sin\theta$ 可以改写为两个向量的点乘形式
-				$$
-				f_{x}\cos\theta+f_{y}\sin\theta=<f_{x},f_{y}>\cdot<\cos\theta,\sin\theta>
-				$$
-			- 那么前面的导数公式可以改写为
-				$$
-				\lim\limits_{t\rightarrow 0}\frac{\Delta{z}}{t}=f_{x}\cos\theta+f_{y}\sin\theta=<f_{x},f_{y}>\cdot<\cos\theta,\sin\theta>
-				$$
-			- 这里的向量 $(f_{x},f_{y})$ 被称为梯度，也记作 $\nabla f(x,y)$，用来表示分别在 $x$ 和 $y$ 方向上的斜率，也就是随着 x 和 y 变化带来的函数值的变化量；$\cos\theta$ 和 $\sin\theta$ 被称为方向向量，用来表示行走的方向相对于 $x$ 轴偏离的方向（该方向也可以用 $\vec{u}=\cos\theta\vec{i}+\sin\theta\vec{j}$ 表示）；两者的乘积称为方向导数，以用 $D_{\vec{u}}f$ 表示。
-		- 公式总结
-			> 注意：方向向量必须是单位向量，否则公式不成立（因为会把方向向量计算到行走的长度里去）；如果方向向量不是单位向量，那么必须化为单位向量
 
-			- 方向导数
-				$$
-				D_{\vec{u}}f(x,y)=\lim\limits_{t\rightarrow 0}\frac{f(x_{0}+t\cos\theta,y_{0}+t\sin\theta)-f(x_{0},y_{0})}{t}
-				$$
-				若在 $P(x_{0},y_{0})$ 处可导，那么该导数可以改写为
-				$$
-				D_{\vec{u}}f(x,y)=f_{x}\cos\theta+f_{y}\sin\theta=<f_{x},f_{y}>\cdot<\cos\theta,\sin\theta>=\nabla f(x,y)\cdot\vec{u}
-				$$
-	- 两变量函数的梯度
-		- 梯度是**平面中**的一个向量（注意不是空间中，因为 $\nabla f(x,y)$ 只有 2 个分量 $(f_{x},f_{y})$），其指向的是函数值增加最快的方向
-		- 回忆前文，在 $\vec{u}$ 方向上的方向导数的值是梯度和方向向量 $\vec{u}$ 的点乘
-	- 两变量函数梯度的应用
-		> 注意：梯度向量的方向和每一层的 Level curve 垂直（重要！）[这个回答](https://math.stackexchange.com/a/1680729/1326289)解释的很好
+  > 这个油管视频对方向导数和梯度的讲解很清晰：[Directional Derivatives | What's the slope in any direction? - YouTube](https://www.youtube.com/watch?v=GJODOGq7cAY)
 
-		- 寻找让函数值增加最快和最慢的方向
-		- 可以将方向导数的表达式改写一下
-			$$
-			D_{\vec{u}}f(x,y)=|\vec{u}||\nabla f(x,y)|\cos\phi
-			$$
-			由于 $\vec{u}$ 是单位向量，因此 $|\vec{u}|=1$，那么该式由可以改写为
-			$$
-			D_{\vec{u}}f(x,y)=|\nabla f(x,y)|\cos\phi
-			$$
-			其中 $\phi$ 是梯度向量和方向向量的夹角。
-		- 从该式子中可以看出，方向导数的最大值是在 $\cos\phi=1$ 时达到，也就是方向向量和梯度向量平行，最大值为 $|\nabla f(x,y)|$，沿着该方向走上升最快；最小值是在 $\cos\phi=-1$ 时达到，也就是方向向量和梯度向量刚好相反，最小值为 $-|\nabla f(x,y)|$，沿着该方向走下降最快；若 $\nabla f(x,y)=0$，那么方向导数为 0
-		- 对于一个 `Level curve` $f(x(t),y(t))=c$，我们可以对其两边求导得到 $f_{x}x(t)'+f_{y}y(t)'=0$，由于 $(x'(t),y'(t))$ 就是沿着 `level curve` 的方向向量，而 $(f_{x},f_{y})$ 就是对应的梯度，因此对于 `level curve`，梯度向量总是垂直于方向向量
-			![](gradient%20is%20normal%20to%20level%20curves.png)
-	- 三变量函数中的方向导数和梯度：其他方面都和两变量形式类似，只不过这次方向导数不再是斜率了（因为三变量以及函数值，会构成一个四维空间），此外，$\nabla f(x,y,z)$ 垂直于 `level surface` （不是 `level curve` 噢）
-		![](3%20var%20directional%20derivative%20and%20gradient.png)
+  - 两变量函数的方向导数
+
+    - 前情提要：设存在一个曲线 $z=f(x,y)$。$f_{x}$ 是当 y 固定时，在 x 方向上的曲线的斜率。$f_{y}$ 是当 x 固定时，在 y 方向上的曲线的斜率。
+    - 问题：根据之前的知识，我们只能求解在 x/y 方向上的斜率，无法求解三维曲面任意方向上的斜率（导数）。
+    - 解决办法：引入方向导数的概念
+      - 设我们想要求解的方向和 $x$ 轴的夹角为 $\theta$，那么该方向在 $x$ 轴和 $y$ 轴上的投影分别是 $\cos\theta$ 和 $\sin\theta$（此处定义的时候我们使用的是 $\theta$，这样做有两个原因，一来是我们暂时不在乎走了多远，只需要定义行走的方向；二来是 $\sqrt{(\cos\theta)^2+(\sin\theta)^2}=1$，说明 $(\cos\theta,\sin\theta)$ 是一个单位向量，后期我们可以用行走的长度乘以这个单位向量，来获取目的地的点坐标）
+      - 假设我们的初始点坐标是 $P(x_{0},y_{0})$。**在 xOy 平面上**，往 $\theta$ 夹角方向走 $t$ 个单位，那么 $x$ 方向的坐标为 $x_{0}+t\cos\theta$，$y$ 方向的坐标为 $y_{0}+t\sin\theta$。因此新的目的地的坐标为 $(x_{0}+t\cos\theta,y_{0}+t\sin\theta)$
+      - 在定义斜率之前，我们先用一个公式来表达对于函数 $z=f(x,y)$，从 $P(x_{0},y_{0})$ 点触发，沿着与 $x$ 轴为 $\theta$ 的角度走 $t$ 个单位时，其函数值（$z$）的变化
+        $$
+        \Delta{z}=f(x_{0}+t\cos\theta,y_{0}+t\sin\theta)-f(x_{0},y_{0})
+        $$
+      - 因为其在 xOy 平面上（**注意不是 x 轴或者 y 轴！**）上行走的单位为 $t$
+      - 那么我们 $\frac{\Delta{z}}{t}$ 来定义该行走长度下的切线斜率
+        $$
+        \frac{\Delta{z}}{t}=\frac{f(x_{0}+t\cos\theta,y_{0}+t\sin\theta)-f(x_{0},y_{0})}{t}
+        $$
+      - 要求解在 $P(x_{0},y_{0})$ 处的切线，我们需要让 $t\rightarrow 0$，那么该式便改写为
+        $$
+        \lim\limits_{t\rightarrow 0}\frac{\Delta{z}}{t}=\lim\limits_{t\rightarrow 0}\frac{f(x_{0}+t\cos\theta,y_{0}+t\sin\theta)-f(x_{0},y_{0})}{t}
+        $$
+      - 若函数在该处可导，根据前文多变量函数微分的性质可得
+        $$
+        f(x_{0}+t\cos\theta,y_{0}+t\sin\theta)-f(x_{0},y_{0})=f_{x}dx+f_{y}dy
+        $$
+        > 证明在这里：
+        > ![](directional%20derivative%20proof.png)
+      - 由于 $dx=t\cos\theta$，$dy=t\sin\theta$，因此上述式子可以改写为
+        $$
+        \lim\limits_{t\rightarrow 0}(f(x_{0}+t\cos\theta,y_{0}+t\sin\theta)-f(x_{0},y_{0}))=dz=f_{x}t\cos\theta+f_{y}t\sin\theta
+        $$
+      - 用该式除以 $t$， 前面的导数公式可以改写为
+        $$
+        \lim\limits_{t\rightarrow 0}\frac{\Delta{z}}{t}=f_{x}\cos\theta+f_{y}\sin\theta
+        $$
+      - 而 $f_{x}\cos\theta+f_{y}\sin\theta$ 可以改写为两个向量的点乘形式
+        $$
+        f_{x}\cos\theta+f_{y}\sin\theta=<f_{x},f_{y}>\cdot<\cos\theta,\sin\theta>
+        $$
+      - 那么前面的导数公式可以改写为
+        $$
+        \lim\limits_{t\rightarrow 0}\frac{\Delta{z}}{t}=f_{x}\cos\theta+f_{y}\sin\theta=<f_{x},f_{y}>\cdot<\cos\theta,\sin\theta>
+        $$
+      - 这里的向量 $(f_{x},f_{y})$ 被称为梯度，也记作 $\nabla f(x,y)$，用来表示分别在 $x$ 和 $y$ 方向上的斜率，也就是随着 x 和 y 变化带来的函数值的变化量；$\cos\theta$ 和 $\sin\theta$ 被称为方向向量，用来表示行走的方向相对于 $x$ 轴偏离的方向（该方向也可以用 $\vec{u}=\cos\theta\vec{i}+\sin\theta\vec{j}$ 表示）；两者的乘积称为方向导数，以用 $D_{\vec{u}}f$ 表示。
+    - 公式总结
+
+      > 注意：方向向量必须是单位向量，否则公式不成立（因为会把方向向量计算到行走的长度里去）；如果方向向量不是单位向量，那么必须化为单位向量
+
+      - 方向导数
+        $$
+        D_{\vec{u}}f(x,y)=\lim\limits_{t\rightarrow 0}\frac{f(x_{0}+t\cos\theta,y_{0}+t\sin\theta)-f(x_{0},y_{0})}{t}
+        $$
+        若在 $P(x_{0},y_{0})$ 处可导，那么该导数可以改写为
+        $$
+        D_{\vec{u}}f(x,y)=f_{x}\cos\theta+f_{y}\sin\theta=<f_{x},f_{y}>\cdot<\cos\theta,\sin\theta>=\nabla f(x,y)\cdot\vec{u}
+        $$
+
+  - 两变量函数的梯度
+    - 梯度是**平面中**的一个向量（注意不是空间中，因为 $\nabla f(x,y)$ 只有 2 个分量 $(f_{x},f_{y})$），其指向的是函数值增加最快的方向
+    - 回忆前文，在 $\vec{u}$ 方向上的方向导数的值是梯度和方向向量 $\vec{u}$ 的点乘
+  - 两变量函数梯度的应用
+
+    > 注意：梯度向量的方向和每一层的 Level curve 垂直（重要！）[这个回答](https://math.stackexchange.com/a/1680729/1326289)解释的很好
+
+    - 寻找让函数值增加最快和最慢的方向
+    - 可以将方向导数的表达式改写一下
+      $$
+      D_{\vec{u}}f(x,y)=|\vec{u}||\nabla f(x,y)|\cos\phi
+      $$
+      由于 $\vec{u}$ 是单位向量，因此 $|\vec{u}|=1$，那么该式由可以改写为
+      $$
+      D_{\vec{u}}f(x,y)=|\nabla f(x,y)|\cos\phi
+      $$
+      其中 $\phi$ 是梯度向量和方向向量的夹角。
+    - 从该式子中可以看出，方向导数的最大值是在 $\cos\phi=1$ 时达到，也就是方向向量和梯度向量平行，最大值为 $|\nabla f(x,y)|$，沿着该方向走上升最快；最小值是在 $\cos\phi=-1$ 时达到，也就是方向向量和梯度向量刚好相反，最小值为 $-|\nabla f(x,y)|$，沿着该方向走下降最快；若 $\nabla f(x,y)=0$，那么方向导数为 0
+    - 对于一个 `Level curve` $f(x(t),y(t))=c$，我们可以对其两边求导得到 $f_{x}x(t)'+f_{y}y(t)'=0$，由于 $(x'(t),y'(t))$ 就是沿着 `level curve` 的方向向量，而 $(f_{x},f_{y})$ 就是对应的梯度，因此对于 `level curve`，梯度向量总是垂直于方向向量
+      ![](gradient%20is%20normal%20to%20level%20curves.png)
+
+  - 三变量函数中的方向导数和梯度：其他方面都和两变量形式类似，只不过这次方向导数不再是斜率了（因为三变量以及函数值，会构成一个四维空间），此外，$\nabla f(x,y,z)$ 垂直于 `level surface` （不是 `level curve` 噢）
+    ![](3%20var%20directional%20derivative%20and%20gradient.png)
+
 - 切平面和法线
-	- 普通二元函数转化为 `level curve / level surface` 
-	- 切平面和曲面法线的方程
-	- 空间中平面的倾角求解
-	- $\nabla f(x,y)$ 和 $\nabla F(x,y,z)$ 比较
+  - 普通二元函数转化为 `level curve / level surface`
+  - 切平面和曲面法线的方程
+  - 空间中平面的倾角求解
+  - $\nabla f(x,y)$ 和 $\nabla F(x,y,z)$ 比较
 - 两变量函数的极值
-	- 寻找两变量函数的绝对极值和相对极值
-	- 使用二阶偏导找到两变量函数的相对极值
+  - 寻找两变量函数的绝对极值和相对极值
+  - 使用二阶偏导找到两变量函数的相对极值
 - 两变量函数极值的应用
-	- 多变量函数值的最优化问题
-	- 最小二乘法
+  - 多变量函数值的最优化问题
+  - 最小二乘法
 - 拉格朗日乘子法
-	- 拉格朗日乘子法理解
-	- 使用拉格朗日乘子法解决限制条件下的最优化问题
-	- 2 限制条件下的拉格朗日乘子法
+  - 拉格朗日乘子法理解
+  - 使用拉格朗日乘子法解决限制条件下的最优化问题
+  - 2 限制条件下的拉格朗日乘子法
 - 总结
 
 ## Chapter 14：重积分
