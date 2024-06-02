@@ -15,6 +15,8 @@ footer: true
 copyright: Salvely
 toc: true
 date updated: 2024-05-13 11:00
+tags:
+  - all
 ---
 
 ## 使用方法

@@ -16,6 +16,8 @@ copyright: Salvely
 toc: true
 date updated: 2024-05-07 15:10
 order: "3"
+tags:
+  - all
 ---
 ## Vivado 2023.2
 

@@ -15,4 +15,6 @@ footer: true
 copyright: Salvely
 toc: true
 order: "4"
+tags:
+  - all
 ---

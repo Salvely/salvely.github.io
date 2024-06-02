@@ -15,6 +15,8 @@ footer: true
 copyright: Salvely
 toc: true
 date updated: 2024-05-13 19:28
+tags:
+  - all
 ---
 
 ## 相关资源

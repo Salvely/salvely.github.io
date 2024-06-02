@@ -4,6 +4,8 @@ date: 2024-5-2
 index: false
 timeline: true
 article: false
+tags:
+  - all
 ---
 
 :::info

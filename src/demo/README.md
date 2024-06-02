@@ -5,6 +5,8 @@ index: false
 icon: discover
 category:
   - 使用指南
+tags:
+  - all
 ---
 
 ## 目录

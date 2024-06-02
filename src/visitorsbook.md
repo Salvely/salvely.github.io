@@ -2,6 +2,8 @@
 icon: mark
 sidebar: false
 article: false
+tags:
+  - all
 ---
 
 # 留言板 ✨

@@ -15,6 +15,8 @@ footer: true
 copyright: Salvely
 toc: true
 date updated: 2024-05-20 16:06
+tags:
+  - all
 ---
 
 > 学习本教材的目的是：
@@ -1571,7 +1573,28 @@ date updated: 2024-05-20 16:06
 
 - 切平面和法线
   - 普通二元函数转化为 `level curve / level surface`
+	  - 一般的二元函数具有 $f(x,y)$ 的形式，而要将其转化为 `level curve/level surface`，我们可以令 $z=f(x,y)$，那么 $f(x,y)-z=0$
+	  - 我们令 $F(x,y,z)=f(x,y)-z=0$，那么 $F(x,y,z)$ 的图像就是一个 `level surface`
   - 切平面和曲面法线的方程
+	  - 平面的法向量：$\nabla F(x,y,z)$
+		  - 证明如下
+			  - 设该曲面的方程为 $F(x,y,z)=0$。现有一条曲线位于该曲面上，其方程为 $\vec{r}(t)=x(t)\vec{i}+y(t)\vec{j}+z(t)\vec{k}$
+			  - 对 $F(x,y,z)=0$ 求导可得
+				  $$
+				  F_{x}(x,y,z)x'(t)+F_{y}(x,y,z)y'(t)+F_{z}(x,y,z)z'(t)=0
+				  $$
+			- 那么
+				$$
+				\nabla F(x_{0},y_{0},z_{0})\cdot\vec{r}'(t_{0})=0
+				$$
+			- 因为 $\vec{r}'(t)$ 是沿着曲线轨迹的切线方向，因此可以看出 $\nabla F(x,y,z)$ 和该曲线垂直。因为没有特定的指明是曲面上的哪一条曲线，只是过点 $P$，因此 $\nabla F(x,y,z)$ 和曲面上过点 P 的任意一条曲线重合
+			- 因此曲面在 $P$ 这一点的法向量就是 $\nabla F(x_{0},y_{0},z_{0})$
+	  - 切平面
+		  - 假设平面过一点 $P(x_{0},y_{0},z_{0})$，因为平面的法向量为 $\nabla F(x,y,z)$，因此该向量和平面中过 $P$ 的任何向量点乘都等于 0。因此该平面公式如下
+			  $$
+			  F_{x}(x-x_{0})+F_{y}(y-y_{0})+F_{z}(z-z_{0})=0
+			  $$
+	  - 曲面法线
   - 空间中平面的倾角求解
   - $\nabla f(x,y)$ 和 $\nabla F(x,y,z)$ 比较
 - 两变量函数的极值

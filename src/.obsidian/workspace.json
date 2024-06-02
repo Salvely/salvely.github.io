@@ -4,28 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "42c0a4c6bd062dcb",
+        "id": "40f3a611ff392901",
         "type": "tabs",
         "children": [
           {
-            "id": "eb61d334e5bbb43c",
+            "id": "38b06e9357efee3a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
+                "file": "posts/mkdocs-material 网站搭建与配置 & github pages 发布 & 搜索引擎收录.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "6348009c26be5ed1",
+            "id": "8ed917fbe7750c02",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "science/math/数学学习路径 & 笔记大全.md",
+                "file": "posts/mkdocs-material 使用初体验.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
+                "file": "posts/mkdocs-material 网站搭建与配置 & github pages 发布 & 搜索引擎收录.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
+                "file": "posts/mkdocs-material 网站搭建与配置 & github pages 发布 & 搜索引擎收录.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,19 +137,20 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "science/math/微积分/Ron Larson Calculus 阅读笔记.md"
+                "file": "posts/mkdocs-material 网站搭建与配置 & github pages 发布 & 搜索引擎收录.md"
               }
             }
           },
           {
-            "id": "2322913bb2c32332",
+            "id": "e115f82a5fe07895",
             "type": "leaf",
             "state": {
               "type": "side-panel-control-view",
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -167,22 +168,25 @@
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
     }
   },
-  "active": "7643835b76de21e4",
+  "active": "38b06e9357efee3a",
   "lastOpenFiles": [
-    "science/math/微积分/3 var directional derivative and gradient.png",
-    "science/math/微积分/gradient is normal to level curves.png",
-    "science/math/微积分/Pasted image 20240531155113.png",
-    "science/math/微积分/directional derivative proof.png",
-    "science/math/微积分/chain rule of implicit differentiation.png",
-    "science/math/数学学习路径 & 笔记大全.md",
+    "posts/mkdocs-material 使用初体验.md",
+    "posts/mkdocs-material 网站搭建与配置 & github pages 发布 & 搜索引擎收录.md",
+    "posts/python and pip version.png",
+    "posts/Pasted image 20240602152059.png",
+    "posts/sponsor only.png",
+    "posts/软件日常使用小贴士.md",
+    "posts/二进制序列探测器实现.md",
+    "posts/bing webmaster导入.png",
+    "posts/sitemap submit success.png",
+    "posts/ownership verification success.png",
+    "posts/add verification html.png",
+    "posts/verify ownership.png",
+    "posts/select property type.png",
+    "posts/gcs.png",
     "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
+    "science/math/数学学习路径 & 笔记大全.md",
     "science/math/计算机专业数学探索地图.md",
-    "science/math/微积分/differentiability and continuty proof.png",
-    "science/math/微积分/Pasted image 20240530190447.png",
-    "science/math/微积分/Pasted image 20240530193833.png",
-    "science/math/微积分/全微分公式拓展.png",
-    "science/math/微积分/definition of total differential.png",
-    "science/math/微积分/higher order derivative of 3 variable functions.png",
     "science/math/数学思想 & 数学史/《什么是数学》阅读笔记.md",
     "science/math/离散数学/Prolog解释器实现/- ISO Prolog standard, part 1_ General core, ISO-IEC-13211-1 (1995).pdf",
     "science/math/离散数学/Rosen, Kenneth H - Discrete mathematics and its applications-McGraw-Hill (2019).pdf",
@@ -207,13 +211,10 @@
     "science/math/考研数学/微积分复习.md",
     "science/math/考研数学/微分方程复习.md",
     "posts/Verilog环境配置.md",
-    "posts/二进制序列探测器实现.md",
     "[Salvely's.md",
     "- ISO Prolog standard, part 2_ Modules, ISO-IEC-13211-2 (2000).md",
     "life/plan/README.md",
     "science/math/离散数学/Prolog解释器实现/小型.md",
-    "science/math/离散数学/Prolog解释器实现/Prolog解释器实现记录——前言.md",
-    "template/post-template.md",
-    "README.md"
+    "science/math/离散数学/Prolog解释器实现/Prolog解释器实现记录——前言.md"
   ]
 }

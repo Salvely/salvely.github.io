@@ -17,6 +17,8 @@ toc: true
 order: "1"
 dir.order: "2"
 index: false
+tags:
+  - all
 ---
 ## 前言
 

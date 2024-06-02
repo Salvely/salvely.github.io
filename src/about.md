@@ -6,6 +6,8 @@ category:
   - Blog
 tag:
   - Blog
+tags:
+  - all
 ---
 # 关于本站
 

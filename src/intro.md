@@ -7,6 +7,8 @@ category:
 tag:
   - About
 comment: false
+tags:
+  - all
 ---
 # 关于我
 

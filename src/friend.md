@@ -3,6 +3,8 @@ title: 友情链接
 icon: link
 sidebar: false
 article: false
+tags:
+  - all
 ---
 
 ## 小伙伴
