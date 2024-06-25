@@ -5,8 +5,6 @@ index: true
 article: true
 timeline: true
 headerDepth: 1
-tags:
-  - all
 ---
 
 ## 前言

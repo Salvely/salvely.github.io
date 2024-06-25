@@ -6,8 +6,6 @@ article: true
 index: true
 headerDepth: 1
 date updated: 2024-05-08 18:47
-tags:
-  - all
 ---
 
 > 以下是 《Digital Design and Computer Architecture》 第 1-8 章的阅读笔记，目录采用原书结构，笔记内容为自己整理（3.5节 时序逻辑电路的时序特性分析跳过）。数字电路部分还可以参考这本教材：[Fundamentals of Digital Logic with Verilog Design, THIRD EDITION (auhd.edu.ye)](https://www.auhd.edu.ye/upfiles/elibrary/Azal2020-01-22-12-23-12-14318.pdf)

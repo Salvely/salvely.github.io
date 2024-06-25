@@ -99,6 +99,7 @@ export default MyTheme({
   encrypt: {
     config: {
       "/demo/encrypt.html": ["1234"],
+      "/life/plan/": ["1234"],
     },
   },
   plugins: {

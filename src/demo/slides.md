@@ -4,8 +4,6 @@ icon: slides
 date: 2020-01-01
 layout: Slide
 index: false
-tags:
-  - all
 ---
 
 <!-- markdownlint-disable MD024 MD033 MD051 -->

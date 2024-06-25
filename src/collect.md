@@ -33,8 +33,6 @@ features:
     details: Python实现的Scheme语言解释器
     link: https://github.com/Salvely/Tiny-Scheme-Interpreter
 footer: <div><span>Powered by <a href="https://v2.vuepress.vuejs.org/zh/" target="_blank">VuePress</a></span>|<span>Theme by <a href="https://theme-hope.vuejs.press/zh/" target="_blank">Hope</a></span></div>
-tags:
-  - all
 ---
 
 <!-- markdownlint-disable -->

@@ -13,6 +13,4 @@ next: true
 footer: true
 copyright: Salvely
 toc: true
-tags:
-  - all
 ---

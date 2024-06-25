@@ -15,8 +15,6 @@ footer: true
 copyright: Salvely
 toc: true
 index: false
-tags:
-  - all
 ---
 
 :::info

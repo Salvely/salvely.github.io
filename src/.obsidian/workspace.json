@@ -4,34 +4,59 @@
     "type": "split",
     "children": [
       {
-        "id": "40f3a611ff392901",
+        "id": "0a30554bcbf4eef9",
         "type": "tabs",
         "children": [
           {
-            "id": "38b06e9357efee3a",
+            "id": "624d4b1d43756c2d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/mkdocs-material 网站搭建与配置 & github pages 发布 & 搜索引擎收录.md",
+                "file": "science/math/README.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "8ed917fbe7750c02",
+            "id": "00d602a1e22ecf53",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/mkdocs-material 使用初体验.md",
+                "file": "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7611c959457af3d1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "life/plan/我的工作日志.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1e5b7ea03f35e64b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "life/plan/我的人生挑战.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -60,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "2024-05-2",
+                "query": "最速",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -97,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/mkdocs-material 网站搭建与配置 & github pages 发布 & 搜索引擎收录.md",
+                "file": "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/mkdocs-material 网站搭建与配置 & github pages 发布 & 搜索引擎收录.md",
+                "file": "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,12 +162,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/mkdocs-material 网站搭建与配置 & github pages 发布 & 搜索引擎收录.md"
+                "file": "science/math/微积分/Ron Larson Calculus 阅读笔记.md"
               }
             }
           },
           {
-            "id": "e115f82a5fe07895",
+            "id": "e7eead43cf07d5e3",
             "type": "leaf",
             "state": {
               "type": "side-panel-control-view",
@@ -168,53 +193,53 @@
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
     }
   },
-  "active": "38b06e9357efee3a",
+  "active": "00d602a1e22ecf53",
   "lastOpenFiles": [
-    "posts/mkdocs-material 使用初体验.md",
-    "posts/mkdocs-material 网站搭建与配置 & github pages 发布 & 搜索引擎收录.md",
-    "posts/python and pip version.png",
-    "posts/Pasted image 20240602152059.png",
-    "posts/sponsor only.png",
-    "posts/软件日常使用小贴士.md",
-    "posts/二进制序列探测器实现.md",
-    "posts/bing webmaster导入.png",
-    "posts/sitemap submit success.png",
-    "posts/ownership verification success.png",
-    "posts/add verification html.png",
-    "posts/verify ownership.png",
-    "posts/select property type.png",
-    "posts/gcs.png",
     "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
-    "science/math/数学学习路径 & 笔记大全.md",
-    "science/math/计算机专业数学探索地图.md",
-    "science/math/数学思想 & 数学史/《什么是数学》阅读笔记.md",
-    "science/math/离散数学/Prolog解释器实现/- ISO Prolog standard, part 1_ General core, ISO-IEC-13211-1 (1995).pdf",
-    "science/math/离散数学/Rosen, Kenneth H - Discrete mathematics and its applications-McGraw-Hill (2019).pdf",
-    "science/math/离散数学/Rosen 《离散数学及其应用》 阅读笔记.md",
-    "science/math/离散数学/Jerrold W. Grossman, Daniel R. Jordan - Instructor’s Resource Guide to accompany Kenneth H. Rosen Discrete Mathematics and Its Applications 8th Edition (2019).pdf",
-    "science/math/数学思想 & 数学史",
-    "science/math/离散数学/Prolog解释器实现/- ISO Prolog standard, part 2_ Modules, ISO-IEC-13211-2 (2000).pdf",
-    "science/math/离散数学/Prolog解释器实现/- ISO Prolog standard, part 2_ Modules, ISO-IEC-13211-2 (2000).zip",
-    "science/math/离散数学/Prolog解释器实现/Prolog解释器实现记录：REPL实现.md",
-    "science/math/离散数学/Prolog解释器实现",
-    "science/math/离散数学/小型推理引擎tie实现/小型推理引擎tie实现.md",
-    "science/math/离散数学/小型推理引擎tie实现/小型推理引擎语言tie使用方法 & 语法定义.md",
-    "science/math/离散数学/小型推理引擎tie实现",
-    "science/math/离散数学",
-    "google605f27bf54597938.html",
+    "course/README.md",
+    "science/math/README.md",
+    "life/plan/我的工作日志.md",
+    "2024-06-25.md",
+    "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
+    "science/math/微积分/hello.tex",
+    "science/math/微积分/hello.synctex(busy)",
+    "science/math/微积分/hello.log",
+    "science/math/微积分/indent.log",
+    "science/math/微积分/__latexindent_temp_hello.tex",
+    "science/math/微积分/hello.aux",
+    "science/math/微积分/hello.synctex.gz",
+    "science/math/微积分/hello.pdf",
+    "science/math/微积分/Ron Larson Calculus 阅读笔记.html",
+    "science/math/微积分/Ron Larson Calculus 阅读笔记_tmp.html",
+    "science/math/微积分/least square regression line.jpg",
+    "science/math/微积分/tangent point of 2 curves.jpg",
+    "science/math/微积分/lagrange's theorem.jpg",
+    "science/math/微积分/proof of lagrange's theorem.jpg",
+    "science/math/微积分/dydx.jpg",
+    "science/math/微积分/dxdy.jpg",
+    "science/math/微积分/ellipse definition.png",
+    "life/plan/我的人生挑战.md",
+    "science/math/微积分/special polar diagrams.png",
+    "science/math/微积分/Cycloid_f.gif",
+    "science/math/数学笔记汇总.md",
+    "微积分/Ron.md",
+    "science/math/微积分/taylor series summary.png",
     "life/plan/2024 计划 & 进度记录 &月末总结.md",
-    "2024-05-14.md",
-    "science/math/考研数学/真题总结.md",
-    "science/math/考研数学/线性代数复习.md",
-    "science/math/考研数学/模拟题总结.md",
-    "science/math/考研数学/概率论与数理统计复习.md",
-    "science/math/考研数学/微积分复习.md",
-    "science/math/考研数学/微分方程复习.md",
-    "posts/Verilog环境配置.md",
-    "[Salvely's.md",
-    "- ISO Prolog standard, part 2_ Modules, ISO-IEC-13211-2 (2000).md",
     "life/plan/README.md",
-    "science/math/离散数学/Prolog解释器实现/小型.md",
-    "science/math/离散数学/Prolog解释器实现/Prolog解释器实现记录——前言.md"
+    "life/plan/我的项目Todo.md",
+    "demo/page.md",
+    "posts/mkdocs-material 网站搭建与配置 & github pages 发布 & 搜索引擎收录.md",
+    "visitorsbook.md",
+    "course/System/Digital Design/Verilog专题.md",
+    "posts/Verilog环境配置.md",
+    "demo/slides.md",
+    "science/math/离散数学/Rosen 《离散数学及其应用》 阅读笔记.md",
+    "demo/README.md",
+    "course/System/COD/README.md",
+    "course/System/CA/README.md",
+    "course/System/Digital Design/README.md",
+    "course/System/README.md",
+    "course/System/System Intro/README.md",
+    "life/fitness/README.md"
   ]
 }

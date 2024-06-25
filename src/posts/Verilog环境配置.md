@@ -20,8 +20,6 @@ category:
   - FPGA
   - VSCode
 date updated: 2024-05-06 11:34
-tags:
-  - all
 ---
 
 以前学习组成原理与体系结构的时候，用的都是Logisim和Proteus这样的仿真工具，并没有实际写过Verilog代码。教学资源受限是一方面，没有板子又是另一个方面。但是最近找到了中科大的[Digital Lab 2023 (ustc.edu.cn)](https://soc.ustc.edu.cn/Digital/)数字逻辑实验（这是普通班的链接，还有提高班），发现他们提供了一个[About - FPGA Online (ustc.edu.cn)](https://fpgaol.ustc.edu.cn/fpga/usage/)，其中的游客通道可以供校外学生使用，因此我这个暂时没有钱买板子，但是又想学习的学生，终于迎来了系统学习体系结构的机会。（非常感谢中科大开放这么好的资源！）

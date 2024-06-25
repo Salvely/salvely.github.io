@@ -160,7 +160,7 @@ From https://github.com/Salvely/book-reco
 
 在 `push` 到 `github` 之前，我们需要创建一个 `./github/workflows`，在 `  .github/workflows/ci.yml ` 文件下，设置一下工作流（`YAML` 格式）：
 
-```YAML
+```yaml
 name: ci 
 on:
   push:
@@ -380,7 +380,7 @@ copyright: Copyright &copy; 2024 - 2025 Wen Gao # 版权声明
 
 如果你想要某篇文档中隐藏上一个/下一个链接，可以在 `frontmatter` 中进行如下配置：
 
-```YAML
+```yaml
 ---
 hide:
   - footer
@@ -396,7 +396,7 @@ hide:
 
 `mkdocs-material` 中搜索插件默认开启，对于搜索部分我们进行如下配置：
 
-```YAML
+```yaml
 theme:
 features:
   - search.suggest # 开启搜索提示
@@ -432,7 +432,7 @@ features:
 		6. `主题` 默认选择 `用户偏好的色彩方案`
 4. 然后复制 `giscus` 提供的代码段，类似下面 (根据你的 `repo` 信息修改部分的属性)
 
-```HTML
+```html
 <script
   src="https://giscus.app/client.js"
   data-repo="<username>/<repository>"
@@ -467,7 +467,7 @@ custom_dir: overrides
 
 3. 在 `partials` 文件夹中添加 `comments.html`，表示评论系统的 `html` 格式，其内容如下：
 
-```HTML
+```html
 {% if page.meta.comments %}
   <h2 id="__comments">{{ lang.t("meta.comments") }}</h2>
   <!-- Insert generated snippet here -->
@@ -513,7 +513,7 @@ custom_dir: overrides
 4. 在 `Insert generated snippet here` 处插入我们之前复制的 `giscus` 提供的代码，就实现了博客的评论系统的配置啦
 5. 如果想让该博文含有评论系统，需要在 `frontmatter` 中设置 `comments=true`，如下
 
-```YAML
+```yaml
 ---
 comments: true
 ---
@@ -535,14 +535,14 @@ comments: true
 2. 在 `.meta.yml` 中添加 `comments: true`
 3. 在 `mkdocs.yml` 中添加 `meta plugin`
 
-```YAML
+```yaml
 plugins:
 - meta
 ```
 
 此外，如果想禁用 `meta` 插件，可以在 `mkdocs.yml` 中插入如下语句：
 
-```YAML
+```yaml
 plugins:
 - meta:
     enabled: false
@@ -550,7 +550,7 @@ plugins:
 
 如果设置的 `meta` 文件不是 `.meta.yml`，而是其他名称的话，可以在 `mkdocs.yml` 中添加如下语句：
 
-```YAML
+```yaml
 plugins:
 - meta:
     meta_file: file_name.yml
@@ -562,7 +562,7 @@ plugins:
 
 `mkdocs.yml` 中的存储库相关配置如下：
 
-```YAML
+```yaml
 repo_url: # 设置github仓库（或其他仓库）链接
 repo_name: # 自定义的仓库名称
 theme:
@@ -590,7 +590,7 @@ icon:
 
 本项目不制定 `scope`，`mkdocs.yml` 中的网站优化配置如下（如果你是 `sponsor`）：
 
-```YAML
+```yaml
 plugins:
 - projects # 多项目插件，适用于多语言网站、网站旁边构建博客、拆分大型项目代码库等（只有sponsors可用）
 - optimize # 内置的优化插件使用压缩和转换技术自动识别和优化所有媒体文件，作为构建的一部分
@@ -602,7 +602,7 @@ plugins:
 
 ## `mkdocs.yml` 文档配置
 
-```YAML
+```yaml
 site_name: 书籍推荐网
 site_url: https://Salvely.github.io/book-reco
 theme:

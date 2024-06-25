@@ -5,8 +5,6 @@ index: false
 timeline: true
 article: false
 dir.order: "1"
-tags:
-  - all
 ---
 
 :::info

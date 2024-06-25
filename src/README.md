@@ -31,8 +31,6 @@ projects:
     desc: 有趣的内容
     link: /collect
 footer: <div><span>Powered by <a href="https://v2.vuepress.vuejs.org/zh/" target="_blank">VuePress</a></span>|<span>Theme by <a href="https://theme-hope.vuejs.press/zh/" target="_blank">Hope</a></span></div>
-tags:
-  - all
 ---
 
 <meta name="google-site-verification" content="UJapM2d84iH6w1FVXFWeXhz_PoqtMDTU3mmNjGfRe1E" />
