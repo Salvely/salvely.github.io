@@ -101,7 +101,12 @@ date updated: 2024-06-23 10-57
 
 - [ ] MIT Linear Algebra
 
-  - [ ] Introduction to Linear Algebra 课本阅读，阅读笔记见此
+  - [ ] MIT Linear Algebra Lectures 看完
+  - [ ] Introduction to Linear Algebra 课本阅读，在课本上做批注和笔记，并完成习题
+	  > 
+	  > 我原本想边读边做 `latex` 笔记，后来发现这样效率有点低，不如读完了，再用自己的话去总结
+
+  - [ ] Introduction to Linear Algebra 阅读笔记见此
     - [ ] Chapter 1：向量介绍
     - [ ] Chapter 2：解线性方程
     - [ ] Chapter 3：向量空间和子空间

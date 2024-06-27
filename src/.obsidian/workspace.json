@@ -20,12 +20,12 @@
             }
           },
           {
-            "id": "00d602a1e22ecf53",
+            "id": "9500daac67a113d9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
+                "file": "course/README.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
+                "file": "course/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
+                "file": "course/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "science/math/微积分/Ron Larson Calculus 阅读笔记.md"
+                "file": "course/README.md"
               }
             }
           },
@@ -193,12 +193,13 @@
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
     }
   },
-  "active": "00d602a1e22ecf53",
+  "active": "9500daac67a113d9",
   "lastOpenFiles": [
-    "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
+    "life/plan/我的人生挑战.md",
+    "life/plan/我的工作日志.md",
     "course/README.md",
     "science/math/README.md",
-    "life/plan/我的工作日志.md",
+    "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
     "2024-06-25.md",
     "science/math/微积分/Ron Larson Calculus 阅读笔记.md",
     "science/math/微积分/hello.tex",
@@ -218,7 +219,6 @@
     "science/math/微积分/dydx.jpg",
     "science/math/微积分/dxdy.jpg",
     "science/math/微积分/ellipse definition.png",
-    "life/plan/我的人生挑战.md",
     "science/math/微积分/special polar diagrams.png",
     "science/math/微积分/Cycloid_f.gif",
     "science/math/数学笔记汇总.md",

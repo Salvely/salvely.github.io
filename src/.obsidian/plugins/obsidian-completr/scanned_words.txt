@@ -829,6 +829,7 @@ mv
 mXIq
 mt
 mDn
+math
 Notes
 Numerics
 Numerical
