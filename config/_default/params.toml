@@ -29,11 +29,11 @@ license = '<a rel="license external nofollow noopener noreffer" href="https://cr
 bundle = false
 
 [author]
-  name = "PCloud"
-  email = "heige.pcloud@outlook.com"
-  link = "https://github.com/HEIGE-PCloud"
-  avatar = "/images/avatar.webp"
-  gravatarEmail = "heige.pcloud@outlook.com"
+  name = "Salvely"
+  email = "iamgwen9@gmail.com"
+  link = "https://github.com/Salvely"
+  avatar = "/images/Salvely.jpg"
+  gravatarEmail = "iamgwen9@gmail.com"
 
 [image]
   # cache remote images for better optimisations
@@ -90,7 +90,7 @@ bundle = false
   author = true
   # site creation time
   # 网站创立年份
-  since = 2019
+  since = 2024
   # ICP info only in China (HTML format is supported)
   # ICP 备案信息，仅在中国使用 (支持 HTML 格式)
   icp = ""
@@ -407,7 +407,7 @@ bundle = false
     # Utterances comment config (https://utteranc.es/)
     # Utterances comment 评论系统设置 (https://utteranc.es/)
     [page.comment.utterances]
-      enable = true
+      enable = false
       # owner/repo
       repo = "Hugo-DoIt/utterances-comments"
       issueTerm = "pathname"
@@ -445,12 +445,12 @@ bundle = false
     # giscus comment config (https://giscus.app/)
     # giscus comment 评论系统设置 (https://giscus.app/)
     [page.comment.giscus]
-      enable = false
+      enable = true
       # owner/repo
-      dataRepo = ""
-      dataRepoId = ""
-      dataCategory = ""
-      dataCategoryId = ""
+      dataRepo = "Salvely/salvely.github.io"
+      dataRepoId = "R_kgDOM7VfQQ"
+      dataCategory = "Announcements"
+      dataCategoryId = "DIC_kwDOM7VfQc4CjD-y"
       dataMapping = "pathname"
       dataStrict = "0"
       dataReactionsEnabled = "1"
@@ -458,7 +458,7 @@ bundle = false
       dataInputPosition = "bottom"
       lightTheme = "light"
       darkTheme = "dark"
-      dataLang = "en"
+      dataLang = "zh-CN"
       dataLoading = "lazy"
     # artalk comment config (https://artalk.js.org/guide/frontend/config.html)
     # artalk comment 评论系统设置 (https://artalk.js.org/guide/frontend/config.html)
@@ -503,7 +503,7 @@ bundle = false
     # 出版者信息
     [page.seo.publisher]
       name = "xxxx"
-      logoUrl = "/images/avatar.webp"
+      logoUrl = "/images/Salvely.jpg"
   # Related content config
   # 相关文章推荐配置
   [page.related]
@@ -515,8 +515,8 @@ bundle = false
 [sponsor]
   enable = false
   bio = "If you find this post helpful, please consider sponsoring."
-  link = "https://github.com/sponsors/HEIGE-PCloud"
-  # custom = "<a href=\"https://www.buymeacoffee.com/PCloud\" target=\"_blank\"><img src=\"https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png\" alt=\"Buy Me A Coffee\" style=\"height: 40px !important;width: 145 !important;\" ></a>"
+  link = "https://github.com/sponsors/Salvely"
+  # custom = "<a href=\"https://www.buymeacoffee.com/Salvely\" target=\"_blank\"><img src=\"https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png\" alt=\"Buy Me A Coffee\" style=\"height: 40px !important;width: 145 !important;\" ></a>"
 
 # TypeIt config
 # TypeIt 配置
@@ -537,8 +537,8 @@ bundle = false
 # Site verification code for Google/Bing/Yandex/Pinterest/Baidu
 # 网站验证代码，用于 Google/Bing/Yandex/Pinterest/Baidu
 [verification]
-  google = "MQ8DNu27ayX6B_4ObiEDK09vGr1fdy7kOAnbd09hJk4"
-  bing = ""
+  google = "UJapM2d84iH6w1FVXFWeXhz_PoqtMDTU3mmNjGfRe1E"
+  bing = "B9E18E3A198D5371F581EA31B912C562"
   yandex = ""
   pinterest = ""
   baidu = ""
