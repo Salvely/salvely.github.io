@@ -1,16 +1,82 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>我的全新 Hugo 网站</title>
-        <link>http://localhost:1313/</link>
-        <description>我的全新 Hugo 网站</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 04 Oct 2024 18:05:17 &#43;0800</lastBuildDate>
-            <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+        <title>DoIt</title>
+        <link>https://hugodoit.pages.dev/</link>
+        <description>The official documentation for the Hugo DoIt theme</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>heige.pcloud@outlook.com (PCloud)</managingEditor>
+            <webMaster>heige.pcloud@outlook.com (PCloud)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 06 Jun 2024 12:41:49 &#43;0100</lastBuildDate>
+            <atom:link href="https://hugodoit.pages.dev/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>Lorem Generator</title>
-    <link>http://localhost:1313/posts/first_post/</link>
-    <pubDate>Fri, 04 Oct 2024 18:05:17 &#43;0800</pubDate><author>
-        <name>作者</name>
-    </author><guid>http://localhost:1313/posts/first_post/</guid>
-    <description><![CDATA[<p>What you guys are referring to as Linux, is in fact, GNU/Linux, or as I&rsquo;ve recently taken to calling it, GNU plus Linux. Linux is not an operating system unto itself, but rather another free component of a fully functioning GNU system made useful by the GNU corelibs, shell utilities and vital system components comprising a full OS as defined by POSIX. Many computer users run a modified version of the GNU system every day, without realizing it. Through a peculiar turn of events, the version of GNU which is widely used today is often called &ldquo;Linux&rdquo;, and many of its users are not aware that it is basically the GNU system, developed by the GNU Project. There really is a Linux, and these people are using it, but it is just a part of the system they use. Linux is the kernel: the program in the system that allocates the machine&rsquo;s resources to the other programs that you run. The kernel is an essential part of an operating system, but useless by itself; it can only function in the context of a complete operating system. Linux is normally used in combination with the GNU operating system: the whole system is basically GNU with Linux added, or GNU/Linux. All the so-called &ldquo;Linux&rdquo; distributions are really distributions of GNU/Linux.</p>]]></description>
+    <title>Theme Documentation - Basics</title>
+    <link>https://hugodoit.pages.dev/theme-documentation-basics/</link>
+    <pubDate>Tue, 03 Mar 2020 21:29:01 &#43;0800</pubDate><author>
+                        <name>Dillon</name><uri>https://dillonzq.com</uri></author><author>
+                        <name>PCloud</name><uri>https://github.com/HEIGE-PCloud</uri><email>heige.pcloud@outlook.com</email></author><guid>https://hugodoit.pages.dev/theme-documentation-basics/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/theme-documentation-basics/featured-image.webp" referrerpolicy="no-referrer">
+            </div><p>Discover what the Hugo - <strong>DoIt</strong> theme is all about and the core-concepts behind it.</p>]]></description>
+</item><item>
+    <title>Theme Documentation - Content</title>
+    <link>https://hugodoit.pages.dev/theme-documentation-content/</link>
+    <pubDate>Wed, 04 Mar 2020 15:58:26 &#43;0800</pubDate><author>
+                        <name>Dillon</name><uri>https://dillonzq.com</uri></author><author>
+                        <name>PCloud</name><uri>https://github.com/HEIGE-PCloud</uri><email>heige.pcloud@outlook.com</email></author><guid>https://hugodoit.pages.dev/theme-documentation-content/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/theme-documentation-content/featured-image.webp" referrerpolicy="no-referrer">
+            </div><p>Find out how to create and organize your content quickly and intuitively in <strong>DoIt</strong> theme.</p>]]></description>
+</item><item>
+    <title>Theme Documentation - Built-in Shortcodes</title>
+    <link>https://hugodoit.pages.dev/theme-documentation-built-in-shortcodes/</link>
+    <pubDate>Thu, 05 Mar 2020 16:29:41 &#43;0800</pubDate><author>
+                        <name>Dillon</name><uri>https://dillonzq.com</uri></author><author>
+                        <name>PCloud</name><uri>https://github.com/HEIGE-PCloud</uri><email>heige.pcloud@outlook.com</email></author><guid>https://hugodoit.pages.dev/theme-documentation-built-in-shortcodes/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/theme-documentation-built-in-shortcodes/featured-image.webp" referrerpolicy="no-referrer">
+            </div><p><strong>Hugo</strong> provides multiple built-in shortcodes for author convenience and to keep your markdown content clean.</p>]]></description>
+</item><item>
+    <title>Theme Documentation - Extended Shortcodes</title>
+    <link>https://hugodoit.pages.dev/theme-documentation-extended-shortcodes/</link>
+    <pubDate>Fri, 06 Mar 2020 16:29:41 &#43;0800</pubDate><author>
+                        <name>Dillon</name><uri>https://dillonzq.com</uri></author><author>
+                        <name>PCloud</name><uri>https://github.com/HEIGE-PCloud</uri><email>heige.pcloud@outlook.com</email></author><guid>https://hugodoit.pages.dev/theme-documentation-extended-shortcodes/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/theme-documentation-extended-shortcodes/featured-image-preview.webp" referrerpolicy="no-referrer">
+            </div><p><strong>DoIt</strong> theme provides multiple shortcodes on top of built-in ones in Hugo.</p>]]></description>
+</item><item>
+    <title>Basic Markdown Syntax</title>
+    <link>https://hugodoit.pages.dev/basic-markdown-syntax/</link>
+    <pubDate>Sun, 01 Dec 2019 21:57:40 &#43;0800</pubDate><author>
+                        <name>Dillon</name><uri>https://dillonzq.com</uri></author><guid>https://hugodoit.pages.dev/basic-markdown-syntax/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/basic-markdown-syntax/featured-image.webp" referrerpolicy="no-referrer">
+            </div><p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files.</p>]]></description>
+</item><item>
+    <title>Emoji Support</title>
+    <link>https://hugodoit.pages.dev/emoji-support/</link>
+    <pubDate>Tue, 01 Oct 2019 17:55:28 &#43;0800</pubDate><author>
+                        <name>Dillon</name><uri>https://dillonzq.com</uri></author><guid>https://hugodoit.pages.dev/emoji-support/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/emoji-support/featured-image.webp" referrerpolicy="no-referrer">
+            </div><p>Emoji can be enabled in a Hugo project in a number of ways.</p>]]></description>
+</item><item>
+    <title>PWA Support</title>
+    <link>https://hugodoit.pages.dev/pwa-support/</link>
+    <pubDate>Mon, 10 May 2021 16:21:41 &#43;0100</pubDate><author>
+                        <name>PCloud</name><uri>https://github.com/HEIGE-PCloud</uri><email>heige.pcloud@outlook.com</email></author><guid>https://hugodoit.pages.dev/pwa-support/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/pwa-support/featured-image.webp" referrerpolicy="no-referrer">
+            </div><p>Find out how to turn your DoIt site into a Progressive Web App.</p>]]></description>
+</item><item>
+    <title>Related tests</title>
+    <link>https://hugodoit.pages.dev/related-tests/</link>
+    <pubDate>Thu, 11 Aug 2022 14:53:59 &#43;0100</pubDate><author>
+                        <name>PCloud</name><uri>https://github.com/HEIGE-PCloud</uri><email>heige.pcloud@outlook.com</email></author><guid>https://hugodoit.pages.dev/related-tests/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>How to create diagrams in DoIt</title>
+    <link>https://hugodoit.pages.dev/create-diagrams/</link>
+    <pubDate>Mon, 28 Feb 2022 14:27:14 &#43;0000</pubDate><author>
+                        <name>PCloud</name><uri>https://github.com/HEIGE-PCloud</uri><email>heige.pcloud@outlook.com</email></author><guid>https://hugodoit.pages.dev/create-diagrams/</guid>
+    <description><![CDATA[This post explains how you can create custom SVG diagrams in DoIt using GoAT or Mermaid.]]></description>
 </item></channel>
 </rss>
