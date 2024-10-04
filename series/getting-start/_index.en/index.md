@@ -1,3 +1,0 @@
-# Getting start with DoIt
-
-
