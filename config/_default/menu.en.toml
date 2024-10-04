@@ -40,30 +40,6 @@
   title = ""
   weight = 4
 [[main]]
-  identifier = "authors"
-  pre = ""
-  post = ""
-  name = "Authors"
-  url = "/authors/"
-  title = ""
-  weight = 5
-[[main]]
-  identifier = "showcase"
-  pre = ""
-  post = ""
-  name = "Showcase"
-  url = "/showcase/"
-  title = ""
-  weight = 6
-[[main]]
-  identifier = "documentation"
-  pre = ""
-  post = ""
-  name = "Docs"
-  url = "/categories/documentation/"
-  title = ""
-  weight = 7
-[[main]]
   identifier = "about"
   pre = ""
   post = ""
