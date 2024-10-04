@@ -33,27 +33,6 @@
     </author><guid>https://hugodoit.pages.dev/tags/pwa/</guid>
     <description><![CDATA[]]></description>
 </item><item>
-    <title>content</title>
-    <link>https://hugodoit.pages.dev/tags/content/</link>
-    <pubDate>Wed, 04 Mar 2020 15:58:26 &#43;0800</pubDate><author>
-        <name>PCloud</name>
-    </author><guid>https://hugodoit.pages.dev/tags/content/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>configuration</title>
-    <link>https://hugodoit.pages.dev/tags/configuration/</link>
-    <pubDate>Tue, 03 Mar 2020 21:29:01 &#43;0800</pubDate><author>
-        <name>PCloud</name>
-    </author><guid>https://hugodoit.pages.dev/tags/configuration/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>installation</title>
-    <link>https://hugodoit.pages.dev/tags/installation/</link>
-    <pubDate>Tue, 03 Mar 2020 21:29:01 &#43;0800</pubDate><author>
-        <name>PCloud</name>
-    </author><guid>https://hugodoit.pages.dev/tags/installation/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
     <title>HTML</title>
     <link>https://hugodoit.pages.dev/tags/html/</link>
     <pubDate>Sun, 01 Dec 2019 21:57:40 &#43;0800</pubDate><author>
@@ -66,6 +45,27 @@
     <pubDate>Tue, 01 Oct 2019 17:55:28 &#43;0800</pubDate><author>
         <name>PCloud</name>
     </author><guid>https://hugodoit.pages.dev/tags/emoji/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>configuration</title>
+    <link>https://hugodoit.pages.dev/tags/configuration/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate><author>
+        <name>PCloud</name>
+    </author><guid>https://hugodoit.pages.dev/tags/configuration/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>content</title>
+    <link>https://hugodoit.pages.dev/tags/content/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate><author>
+        <name>PCloud</name>
+    </author><guid>https://hugodoit.pages.dev/tags/content/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>installation</title>
+    <link>https://hugodoit.pages.dev/tags/installation/</link>
+    <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate><author>
+        <name>PCloud</name>
+    </author><guid>https://hugodoit.pages.dev/tags/installation/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

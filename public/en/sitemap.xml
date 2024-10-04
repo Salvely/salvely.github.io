@@ -2,7 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://hugodoit.pages.dev/theme-documentation-basics/</loc><lastmod>2020-03-06T21:29:01&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/theme-documentation-basics/</loc><lastmod>2024-10-04T18:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://hugodoit.pages.dev/zh-cn/theme-documentation-basics/"
@@ -11,7 +11,7 @@
                     hreflang="en"
                     href="https://hugodoit.pages.dev/theme-documentation-basics/"
                     /></url><url>
-            <loc>https://hugodoit.pages.dev/theme-documentation-content/</loc><lastmod>2020-03-04T15:58:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/theme-documentation-content/</loc><lastmod>2024-10-04T18:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://hugodoit.pages.dev/zh-cn/theme-documentation-content/"
@@ -20,7 +20,7 @@
                     hreflang="en"
                     href="https://hugodoit.pages.dev/theme-documentation-content/"
                     /></url><url>
-            <loc>https://hugodoit.pages.dev/theme-documentation-built-in-shortcodes/</loc><lastmod>2020-03-05T16:29:41&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/theme-documentation-built-in-shortcodes/</loc><lastmod>2024-10-04T18:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://hugodoit.pages.dev/zh-cn/theme-documentation-built-in-shortcodes/"
@@ -29,7 +29,7 @@
                     hreflang="en"
                     href="https://hugodoit.pages.dev/theme-documentation-built-in-shortcodes/"
                     /></url><url>
-            <loc>https://hugodoit.pages.dev/theme-documentation-extended-shortcodes/</loc><lastmod>2020-03-06T16:29:41&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/theme-documentation-extended-shortcodes/</loc><lastmod>2024-10-04T18:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://hugodoit.pages.dev/zh-cn/theme-documentation-extended-shortcodes/"
@@ -38,7 +38,7 @@
                     hreflang="en"
                     href="https://hugodoit.pages.dev/theme-documentation-extended-shortcodes/"
                     /></url><url>
-            <loc>https://hugodoit.pages.dev/basic-markdown-syntax/</loc><lastmod>2020-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/basic-markdown-syntax/</loc><lastmod>2024-10-04T18:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://hugodoit.pages.dev/zh-cn/basic-markdown-syntax/"
@@ -47,7 +47,7 @@
                     hreflang="en"
                     href="https://hugodoit.pages.dev/basic-markdown-syntax/"
                     /></url><url>
-            <loc>https://hugodoit.pages.dev/emoji-support/</loc><lastmod>2019-10-01T17:55:28&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/emoji-support/</loc><lastmod>2024-10-04T18:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://hugodoit.pages.dev/zh-cn/emoji-support/"
@@ -56,7 +56,7 @@
                     hreflang="en"
                     href="https://hugodoit.pages.dev/emoji-support/"
                     /></url><url>
-            <loc>https://hugodoit.pages.dev/pwa-support/</loc><lastmod>2021-05-10T16:21:41&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/pwa-support/</loc><lastmod>2024-10-04T18:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://hugodoit.pages.dev/zh-cn/pwa-support/"
@@ -65,7 +65,7 @@
                     hreflang="en"
                     href="https://hugodoit.pages.dev/pwa-support/"
                     /></url><url>
-            <loc>https://hugodoit.pages.dev/</loc><lastmod>2024-06-06T12:41:49&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/</loc><lastmod>2024-10-04T18:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://hugodoit.pages.dev/zh-cn/"
@@ -74,7 +74,7 @@
                     hreflang="en"
                     href="https://hugodoit.pages.dev/"
                     /></url><url>
-            <loc>https://hugodoit.pages.dev/posts/</loc><lastmod>2024-06-06T12:41:49&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/posts/</loc><lastmod>2024-10-04T18:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://hugodoit.pages.dev/zh-cn/posts/"
@@ -83,16 +83,7 @@
                     hreflang="en"
                     href="https://hugodoit.pages.dev/posts/"
                     /></url><url>
-            <loc>https://hugodoit.pages.dev/authors/</loc><lastmod>2022-08-11T14:53:59&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="https://hugodoit.pages.dev/zh-cn/authors/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://hugodoit.pages.dev/authors/"
-                    /></url><url>
-            <loc>https://hugodoit.pages.dev/tags/markdown/</loc><lastmod>2022-08-11T14:53:59&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/tags/markdown/</loc><lastmod>2024-10-04T18:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://hugodoit.pages.dev/zh-cn/tags/markdown/"
@@ -101,7 +92,7 @@
                     hreflang="en"
                     href="https://hugodoit.pages.dev/tags/markdown/"
                     /></url><url>
-            <loc>https://hugodoit.pages.dev/authors/pcloud/</loc><lastmod>2022-08-11T14:53:59&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/authors/pcloud/</loc><lastmod>2024-10-04T18:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://hugodoit.pages.dev/zh-cn/authors/pcloud/"
@@ -110,8 +101,8 @@
                     hreflang="en"
                     href="https://hugodoit.pages.dev/authors/pcloud/"
                     /></url><url>
-            <loc>https://hugodoit.pages.dev/related-tests/</loc><lastmod>2022-08-11T14:53:59&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://hugodoit.pages.dev/tags/shortcodes/</loc><lastmod>2022-08-11T14:53:59&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/related-tests/</loc><lastmod>2024-10-04T18:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://hugodoit.pages.dev/tags/shortcodes/</loc><lastmod>2024-10-04T18:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://hugodoit.pages.dev/zh-cn/tags/shortcodes/"
@@ -120,7 +111,7 @@
                     hreflang="en"
                     href="https://hugodoit.pages.dev/tags/shortcodes/"
                     /></url><url>
-            <loc>https://hugodoit.pages.dev/tags/</loc><lastmod>2022-08-11T14:53:59&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/tags/</loc><lastmod>2024-10-04T18:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://hugodoit.pages.dev/zh-cn/tags/"
@@ -129,7 +120,7 @@
                     hreflang="en"
                     href="https://hugodoit.pages.dev/tags/"
                     /></url><url>
-            <loc>https://hugodoit.pages.dev/categories/</loc><lastmod>2022-02-28T14:27:14&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/categories/</loc><lastmod>2024-10-04T18:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://hugodoit.pages.dev/zh-cn/categories/"
@@ -138,7 +129,7 @@
                     hreflang="en"
                     href="https://hugodoit.pages.dev/categories/"
                     /></url><url>
-            <loc>https://hugodoit.pages.dev/tags/diagram/</loc><lastmod>2022-02-28T14:27:14&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/tags/diagram/</loc><lastmod>2024-10-04T18:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://hugodoit.pages.dev/zh-cn/tags/diagram/"
@@ -147,16 +138,7 @@
                     hreflang="en"
                     href="https://hugodoit.pages.dev/tags/diagram/"
                     /></url><url>
-            <loc>https://hugodoit.pages.dev/categories/documentation/</loc><lastmod>2022-02-28T14:27:14&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="https://hugodoit.pages.dev/zh-cn/categories/documentation/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://hugodoit.pages.dev/categories/documentation/"
-                    /></url><url>
-            <loc>https://hugodoit.pages.dev/create-diagrams/</loc><lastmod>2022-02-28T14:27:14&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/create-diagrams/</loc><lastmod>2024-10-04T18:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://hugodoit.pages.dev/zh-cn/create-diagrams/"
@@ -165,25 +147,7 @@
                     hreflang="en"
                     href="https://hugodoit.pages.dev/create-diagrams/"
                     /></url><url>
-            <loc>https://hugodoit.pages.dev/series/how-to-doit/</loc><lastmod>2022-02-28T14:27:14&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="https://hugodoit.pages.dev/zh-cn/series/how-to-doit/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://hugodoit.pages.dev/series/how-to-doit/"
-                    /></url><url>
-            <loc>https://hugodoit.pages.dev/series/</loc><lastmod>2022-02-28T14:27:14&#43;00:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="https://hugodoit.pages.dev/zh-cn/series/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://hugodoit.pages.dev/series/"
-                    /></url><url>
-            <loc>https://hugodoit.pages.dev/showcase/</loc><lastmod>2021-11-01T20:08:29&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/showcase/</loc><lastmod>2024-10-04T18:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://hugodoit.pages.dev/zh-cn/showcase/"
@@ -192,7 +156,7 @@
                     hreflang="en"
                     href="https://hugodoit.pages.dev/showcase/"
                     /></url><url>
-            <loc>https://hugodoit.pages.dev/tags/pwa/</loc><lastmod>2021-05-10T16:21:41&#43;01:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/tags/pwa/</loc><lastmod>2024-10-04T18:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://hugodoit.pages.dev/zh-cn/tags/pwa/"
@@ -201,7 +165,7 @@
                     hreflang="en"
                     href="https://hugodoit.pages.dev/tags/pwa/"
                     /></url><url>
-            <loc>https://hugodoit.pages.dev/authors/dillon/</loc><lastmod>2020-03-06T21:29:01&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/authors/dillon/</loc><lastmod>2024-10-04T18:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://hugodoit.pages.dev/zh-cn/authors/dillon/"
@@ -210,43 +174,7 @@
                     hreflang="en"
                     href="https://hugodoit.pages.dev/authors/dillon/"
                     /></url><url>
-            <loc>https://hugodoit.pages.dev/series/getting-start/</loc><lastmod>2020-03-06T21:29:01&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="https://hugodoit.pages.dev/zh-cn/series/getting-start/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://hugodoit.pages.dev/series/getting-start/"
-                    /></url><url>
-            <loc>https://hugodoit.pages.dev/tags/content/</loc><lastmod>2020-03-04T15:58:26&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="https://hugodoit.pages.dev/zh-cn/tags/content/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://hugodoit.pages.dev/tags/content/"
-                    /></url><url>
-            <loc>https://hugodoit.pages.dev/tags/configuration/</loc><lastmod>2020-03-06T21:29:01&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="https://hugodoit.pages.dev/zh-cn/tags/configuration/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://hugodoit.pages.dev/tags/configuration/"
-                    /></url><url>
-            <loc>https://hugodoit.pages.dev/tags/installation/</loc><lastmod>2020-03-06T21:29:01&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="zh-cn"
-                        href="https://hugodoit.pages.dev/zh-cn/tags/installation/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="https://hugodoit.pages.dev/tags/installation/"
-                    /></url><url>
-            <loc>https://hugodoit.pages.dev/tags/html/</loc><lastmod>2020-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/tags/html/</loc><lastmod>2024-10-04T18:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://hugodoit.pages.dev/zh-cn/tags/html/"
@@ -255,7 +183,7 @@
                     hreflang="en"
                     href="https://hugodoit.pages.dev/tags/html/"
                     /></url><url>
-            <loc>https://hugodoit.pages.dev/tags/emoji/</loc><lastmod>2019-10-01T17:55:28&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/tags/emoji/</loc><lastmod>2024-10-04T18:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://hugodoit.pages.dev/zh-cn/tags/emoji/"
@@ -264,7 +192,7 @@
                     hreflang="en"
                     href="https://hugodoit.pages.dev/tags/emoji/"
                     /></url><url>
-            <loc>https://hugodoit.pages.dev/about/</loc><lastmod>2019-08-02T11:04:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/about/</loc><lastmod>2024-10-04T18:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://hugodoit.pages.dev/zh-cn/about/"
@@ -273,8 +201,80 @@
                     hreflang="en"
                     href="https://hugodoit.pages.dev/about/"
                     /></url><url>
-            <loc>https://hugodoit.pages.dev/offline/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://hugodoit.pages.dev/series/test-series/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://hugodoit.pages.dev/authors/</loc><lastmod>2024-10-04T18:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://hugodoit.pages.dev/zh-cn/authors/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://hugodoit.pages.dev/authors/"
+                    /></url><url>
+            <loc>https://hugodoit.pages.dev/tags/configuration/</loc><lastmod>2024-10-04T18:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://hugodoit.pages.dev/zh-cn/tags/configuration/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://hugodoit.pages.dev/tags/configuration/"
+                    /></url><url>
+            <loc>https://hugodoit.pages.dev/tags/content/</loc><lastmod>2024-10-04T18:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://hugodoit.pages.dev/zh-cn/tags/content/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://hugodoit.pages.dev/tags/content/"
+                    /></url><url>
+            <loc>https://hugodoit.pages.dev/categories/documentation/</loc><lastmod>2024-10-04T18:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://hugodoit.pages.dev/zh-cn/categories/documentation/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://hugodoit.pages.dev/categories/documentation/"
+                    /></url><url>
+            <loc>https://hugodoit.pages.dev/series/getting-start/</loc><lastmod>2024-10-04T18:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://hugodoit.pages.dev/zh-cn/series/getting-start/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://hugodoit.pages.dev/series/getting-start/"
+                    /></url><url>
+            <loc>https://hugodoit.pages.dev/series/how-to-doit/</loc><lastmod>2024-10-04T18:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://hugodoit.pages.dev/zh-cn/series/how-to-doit/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://hugodoit.pages.dev/series/how-to-doit/"
+                    /></url><url>
+            <loc>https://hugodoit.pages.dev/tags/installation/</loc><lastmod>2024-10-04T18:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://hugodoit.pages.dev/zh-cn/tags/installation/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://hugodoit.pages.dev/tags/installation/"
+                    /></url><url>
+            <loc>https://hugodoit.pages.dev/offline/</loc><lastmod>2024-10-04T18:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://hugodoit.pages.dev/series/</loc><lastmod>2024-10-04T18:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="zh-cn"
+                        href="https://hugodoit.pages.dev/zh-cn/series/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://hugodoit.pages.dev/series/"
+                    /></url><url>
+            <loc>https://hugodoit.pages.dev/series/test-series/</loc><lastmod>2024-10-04T18:32:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="https://hugodoit.pages.dev/zh-cn/series/test-series/"
