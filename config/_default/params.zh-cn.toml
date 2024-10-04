@@ -84,7 +84,7 @@ keywords = ["Theme", "Hugo"]
     gravatarEmail = ""
     # URL of avatar shown in home page
     # 主页显示头像的 URL
-    avatarURL = "/images/avatar.webp"
+    avatarURL = "/images/Salvely.jpg"
     # URL the avatar links to
     # 头像的链接指向的 URL
     avatarLinkURL = ""
@@ -93,7 +93,7 @@ keywords = ["Theme", "Hugo"]
     title = ""
     # subtitle shown in home page
     # 主页显示的网站副标题
-    subtitle = "一个简洁、优雅且高效的 Hugo 主题"
+    subtitle = "Wen Gao 的小站"
     # whether to use typeit animation for subtitle
     # 是否为副标题显示打字机动画
     typeit = false
@@ -116,22 +116,22 @@ keywords = ["Theme", "Hugo"]
   Angellist = ""
   Bandcamp = ""
   Behance = ""
-  Bilibili = "xxxx"
+  Bilibili = ""
   Bitbucket = ""
   BuyMeACoffee = ""
   Codepen = ""
   Deviantart = ""
-  Devto = "xxxx"
-  Douban = "xxxx"
+  Devto = ""
+  Douban = ""
   Dribbble = ""
-  Email = "xxxx@xxxx.com"
+  Email = "iamgwen9@gmail.com"
   Facebook = ""
   Fivehundredpx = ""
   Flickr = ""
   Foursquare = ""
   FreeCodeCamp = ""
   Gitea = ""
-  GitHub = "xxxx"
+  GitHub = "https://github.com/Salvely"
   Gitlab = ""
   Goodreads = ""
   Googlescholar = ""
@@ -159,14 +159,14 @@ keywords = ["Theme", "Hugo"]
   Quora = ""
   Reddit = ""
   Researchgate = ""
-  RSS = true
+  # RSS = true
   Skype = ""
   Slidershare = ""
   Snapchat = ""
   Soundcloud = ""
   Spotify = ""
   Stackoverflow = ""
-  Steam = "xxxx"
+  Steam = ""
   Strava = ""
   Telegram = ""
   Thingiverse = ""
@@ -175,7 +175,7 @@ keywords = ["Theme", "Hugo"]
   Twitter = ""
   Vine = ""
   VK = ""
-  Weibo = "xxxx"
+  Weibo = ""
   Whatsapp = ""
   Wordpress = ""
   Xing = ""
@@ -183,14 +183,11 @@ keywords = ["Theme", "Hugo"]
   Youtubechannel = ""
   Youtubecustom = ""
   Youtubelegacy = ""
-  Zhihu = "xxxx"
-  [social.Diaspora]
-    id = "@xxxx"
-    prefix = "https://yyyy/"
+  Zhihu = ""
 # Sponsor config
 # 赞助设置
 [sponsor]
   enable = false
   bio = "如果你觉得这篇文章对你有所帮助，欢迎赞赏~"
-  link = "https://github.com/sponsors/HEIGE-PCloud"
-  # custom = "<a href=\"https://www.buymeacoffee.com/PCloud\" target=\"_blank\"><img src=\"https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png\" alt=\"Buy Me A Coffee\" style=\"height: 40px !important;width: 145 !important;\" ></a>"
+  link = "https://github.com/sponsors/Salvely"
+  # custom = "<a href=\"https://www.buymeacoffee.com/Salvely\" target=\"_blank\"><img src=\"https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png\" alt=\"Buy Me A Coffee\" style=\"height: 40px !important;width: 145 !important;\" ></a>"
