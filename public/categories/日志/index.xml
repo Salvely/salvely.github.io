@@ -1,0 +1,18 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>日志 - 分类 - Wen Gao 的小站</title>
+        <link>http://localhost:1313/categories/%E6%97%A5%E5%BF%97/</link>
+        <description>日志 - 分类 - Wen Gao 的小站</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>iamgwen9@gmail.com (Salvely)</managingEditor>
+            <webMaster>iamgwen9@gmail.com (Salvely)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 26 Oct 2024 23:04:34 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/categories/%E6%97%A5%E5%BF%97/" rel="self" type="application/rss+xml" /><item>
+    <title>日志</title>
+    <link>http://localhost:1313/report/</link>
+    <pubDate>Sat, 26 Oct 2024 23:04:34 &#43;0800</pubDate><author>
+                        <name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>http://localhost:1313/report/</guid>
+    <description><![CDATA[<h1 id="weekly-report" class="headerLink">
+    <a href="#weekly-report" class="header-mark"></a>Weekly-report</h1><blockquote>
+  <p>循此苦旅，以达天际</p>
+<p>这是本人的学习周报记录，参考的是<a href="https://github.com/Kiprey/Skr_Learning" target="_blank" rel="noopener noreferrer">Skr-Learning</a>学习周报。这里定期记录一些学习的内容与进度。
+输入 <code>./create [周数]</code>生成下一周。</p>]]></description>
+</item></channel>
+</rss>

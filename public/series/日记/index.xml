@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>日记 - 系列 - Wen Gao 的小站</title>
+        <link>http://localhost:1313/series/%E6%97%A5%E8%AE%B0/</link>
+        <description>日记 - 系列 - Wen Gao 的小站</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>iamgwen9@gmail.com (Salvely)</managingEditor>
+            <webMaster>iamgwen9@gmail.com (Salvely)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 26 Oct 2024 17:55:29 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/series/%E6%97%A5%E8%AE%B0/" rel="self" type="application/rss+xml" /><item>
+    <title>2024-10-26 日记</title>
+    <link>http://localhost:1313/2024-10-26/</link>
+    <pubDate>Sat, 26 Oct 2024 17:55:29 &#43;0800</pubDate><author>
+                        <name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>http://localhost:1313/2024-10-26/</guid>
+    <description><![CDATA[<p>其实我不喜欢写日记，但是最近发生的一些事情，让人脑子里弯弯绕绕的想法结在一起。于是想到使用日记的方式来整理一下思绪，顺带思考一下未来的人生方向。</p>]]></description>
+</item></channel>
+</rss>
