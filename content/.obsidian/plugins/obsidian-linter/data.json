@@ -58,12 +58,12 @@
       "yaml-sort-order-for-other-keys": "None"
     },
     "yaml-timestamp": {
-      "enabled": false,
+      "enabled": true,
       "date-created": true,
-      "date-created-key": "date created",
+      "date-created-key": "date",
       "date-created-source-of-truth": "file system",
       "date-modified": true,
-      "date-modified-key": "date modified",
+      "date-modified-key": "lastmod",
       "date-modified-source-of-truth": "file system",
       "format": "dddd, MMMM Do YYYY, h:mm:ss a",
       "convert-to-utc": false,
