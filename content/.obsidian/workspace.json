@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "about/index.zh-cn.md",
+                "file": "report/index.zh-cn.md",
                 "mode": "source",
                 "source": false
               },
@@ -165,6 +165,12 @@
   },
   "active": "76cb457b1c105df6",
   "lastOpenFiles": [
+    "about/index.zh-cn.md",
+    "report/index.zh-cn.md",
+    "report",
+    "新建文件夹",
+    "posts/learn-rust/rustlings 通关记录.md.md",
+    "posts/journal/2024-10-26.md",
     "posts/basic-markdown-syntax/index.zh-cn.md",
     "posts/emoji-support/index.zh-cn.md",
     "posts/pwa-support/index.zh-cn.md",
@@ -172,8 +178,6 @@
     "posts/theme-documentation-built-in-shortcodes/index.zh-cn.md",
     "posts/theme-documentation-content/index.zh-cn.md",
     "posts/theme-documentation-extended-shortcodes/index.zh-cn.md",
-    "posts/learn-rust/rustlings 通关记录.md.md",
-    "posts/journal/2024-10-26.md",
     "posts/tests/toc-tests/index.en.md",
     "posts/tests/tab-tests/index.en.md",
     "posts/tests/typeit-tests/index.en.md",
@@ -185,7 +189,6 @@
     "series/getting-start/_index.zh-cn.md",
     "series/how-to-doit/_index.zh-cn.md",
     "posts/template/template.md.md",
-    "about/index.zh-cn.md",
     "posts/tests/aplayer-tests/index.en.md",
     "诺贝尔物理学奖颁发给了深度学习的Hinton和一位物理学家.md",
     "posts/journal",
@@ -193,7 +196,6 @@
     "posts/learn-rust",
     "posts/tests/showcase-tests/index.en.md",
     "posts/pwa-support/featured-image.webp",
-    "categories/documentation/_index.zh-cn.md",
     "posts/template"
   ]
 }
