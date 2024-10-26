@@ -1,4 +1,4 @@
-# 关于 DoIt
+# 关于 Wen Gao
 
 
 > [{{< fa-icon regular edit >}} DoIt](https://github.com/HEIGE-PCloud/DoIt) 是一个由 [HEIGE-PCloud](https://github.com/HEIGE-PCloud) 开发的**简洁**、**优雅**且**高效**的 [Hugo](https://gohugo.io/) 博客主题。
@@ -103,4 +103,12 @@ DoIt 主题中用到了以下项目，感谢它们的作者：
 * [Vssue](https://vssue.js.org/)
 * [cookieconsent](https://github.com/osano/cookieconsent)
 * [Remark42](https://remark42.com/)
+
+## 关于我
+
+## 我的技术
+
+## 我的生活
+
+## 我的信仰
 
