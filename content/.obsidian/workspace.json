@@ -1,0 +1,185 @@
+{
+  "main": {
+    "id": "81be302b9f93fd8b",
+    "type": "split",
+    "children": [
+      {
+        "id": "c10b888407f4511f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c201ed2d387b0248",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/journal/2024-10-26.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2024-10-26"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5f4bc9bfb669e446",
+    "type": "split",
+    "children": [
+      {
+        "id": "eb58403ba5e40bc4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b470808c28ac2c0d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "3ea56b23a0ff7959",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "template.md",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "5b09773c67311119",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b6e242f1b1b8a9b6",
+    "type": "split",
+    "children": [
+      {
+        "id": "b38e8df7a73eedd8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "940da1f7782c1c63",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "posts/learn-rust/rustlings 通关记录.md.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "rustlings 通关记录.md 的反向链接列表"
+            }
+          },
+          {
+            "id": "8ad5859f9bc99bef",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "posts/learn-rust/rustlings 通关记录.md.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "rustlings 通关记录.md 的出链列表"
+            }
+          },
+          {
+            "id": "da8c83666d12ec65",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "6d3c914edcc1f145",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "posts/learn-rust/rustlings 通关记录.md.md"
+              },
+              "icon": "lucide-list",
+              "title": "rustlings 通关记录.md 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "c201ed2d387b0248",
+  "lastOpenFiles": [
+    "about/index.zh-cn.md",
+    "posts/journal/2024-10-26.md",
+    "诺贝尔物理学奖颁发给了深度学习的Hinton和一位物理学家.md",
+    "posts/journal",
+    "posts/learn-rust/rustlings 通关记录.md.md",
+    "posts/learn-rust/Rust 基础语法笔记.md.md",
+    "template/template.md.md",
+    "posts/pwa-support/index.zh-cn.md",
+    "posts/learn-rust",
+    "posts/theme-documentation-basics/index.zh-cn.md",
+    "posts/theme-documentation-content/index.zh-cn.md",
+    "posts/how-to-DoIt/create-diagrams/index.zh-cn.md",
+    "posts/tests/showcase-tests/index.en.md",
+    "posts/pwa-support/featured-image.webp",
+    "series/getting-start/_index.zh-cn.md",
+    "categories/documentation/_index.zh-cn.md",
+    "template"
+  ]
+}

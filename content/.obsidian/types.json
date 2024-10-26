@@ -1,0 +1,12 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "seriesNavigation": "checkbox",
+    "draft": "checkbox",
+    "enableLastMod": "checkbox",
+    "enableWordCount": "checkbox",
+    "enableReadingTime": "checkbox"
+  }
+}
