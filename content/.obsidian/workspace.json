@@ -52,8 +52,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "lastMod",
-                "matchingCase": false,
+                "query": "lastmod",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -166,11 +166,13 @@
   "active": "76cb457b1c105df6",
   "lastOpenFiles": [
     "posts/journal/2024-10-26.md",
-    "posts/theme-documentation-content/index.zh-cn.md",
-    "posts/tests/typeit-tests/index.en.md",
+    "posts/emoji-support/index.zh-cn.md",
     "posts/tests/toc-tests/index.en.md",
-    "posts/tests/image-tests/index.md",
+    "posts/tests/tab-tests/index.en.md",
+    "posts/tests/typeit-tests/index.en.md",
     "posts/learn-rust/rustlings 通关记录.md.md",
+    "posts/theme-documentation-content/index.zh-cn.md",
+    "posts/tests/image-tests/index.md",
     "posts/basic-markdown-syntax/index.zh-cn.md",
     "posts/tests/katex-tests/index.en.md",
     "posts/tests/related-tests/index.en.md",
