@@ -1,20 +1,23 @@
 ---
-weight: 4
-title: "主题文档 - 扩展 Shortcodes"
+title: 主题文档 - 扩展 Shortcodes
 date: 2020-03-06T16:29:59+08:00
 lastmod: 2020-03-06T16:29:59+08:00
 draft: false
-authors: [Dillon, PCloud]
-author: "Dillon"
-authorLink: "https://dillonzq.com"
-description: "DoIt 主题在 Hugo 内置的 shortcode 的基础上提供多个扩展的 shortcode."
-featuredImage: "featured-image.webp"
-featuredImagePreview: "featured-image-preview.webp"
+authors:
+  - Dillon
+  - PCloud
+author: Dillon
+authorLink: https://dillonzq.com
+description: DoIt 主题在 Hugo 内置的 shortcode 的基础上提供多个扩展的 shortcode.
+featuredImage: featured-image.webp
+featuredImagePreview: featured-image-preview.webp
 series_weight: 4
-tags: ["shortcodes"]
-categories: ["documentation"]
-series: ["getting-start"]
-
+tags:
+  - shortcodes
+categories:
+  - documentation
+series:
+  - getting-start
 lightgallery: true
 mapbox:
   lightStyle: mapbox://styles/mapbox/light-zh-v1?optimize=true
