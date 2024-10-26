@@ -15,6 +15,7 @@ seriesNavigation: true
 enableLastMod: true
 enableWordCount: true
 enableReadingTime: true
+lastmod:
 ---
 
 > [!WARNING]
