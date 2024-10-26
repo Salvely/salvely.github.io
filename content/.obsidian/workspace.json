@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "20647283c68908aa",
+        "id": "0ef6e8a5d0a143c6",
         "type": "tabs",
         "children": [
           {
-            "id": "b63bcbd69ae7be6c",
+            "id": "247ce6381753492b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "template/template.md.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "template.md"
             }
           }
         ]
@@ -159,12 +163,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b470808c28ac2c0d",
+  "active": "247ce6381753492b",
   "lastOpenFiles": [
-    "posts/learn-rust/rustlings 通关记录.md.md",
-    "posts/journal/2024-10-26.md",
-    "template/template.md.md",
     "about/index.zh-cn.md",
+    "posts/journal/2024-10-26.md",
+    "posts/learn-rust/rustlings 通关记录.md.md",
+    "posts/tests/aplayer-tests/index.en.md",
+    "template/template.md.md",
     "诺贝尔物理学奖颁发给了深度学习的Hinton和一位物理学家.md",
     "posts/journal",
     "posts/learn-rust/Rust 基础语法笔记.md.md",
