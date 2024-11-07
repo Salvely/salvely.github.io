@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "aeda37801bf9cc5d",
+        "id": "feaa067b3b00046d",
         "type": "tabs",
         "children": [
           {
-            "id": "76cb457b1c105df6",
+            "id": "296a2149f08de06e",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "index.zh-cn"
             }
+          },
+          {
+            "id": "621b6c1b169933ae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/journal/2024-11-07.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2024-11-07"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -52,8 +67,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "weight",
-                "matchingCase": true,
+                "query": "tag:#timeline",
+                "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -93,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/learn-rust/rustlings 通关记录.md.md",
+                "file": "report/index.zh-cn.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +118,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "rustlings 通关记录.md 的反向链接列表"
+              "title": "index.zh-cn 的反向链接列表"
             }
           },
           {
@@ -112,12 +127,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/learn-rust/rustlings 通关记录.md.md",
+                "file": "report/index.zh-cn.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "rustlings 通关记录.md 的出链列表"
+              "title": "index.zh-cn 的出链列表"
             }
           },
           {
@@ -139,18 +154,38 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/learn-rust/rustlings 通关记录.md.md"
+                "file": "report/index.zh-cn.md"
               },
               "icon": "lucide-list",
-              "title": "rustlings 通关记录.md 的大纲"
+              "title": "index.zh-cn 的大纲"
+            }
+          },
+          {
+            "id": "fcf9998930e5aba1",
+            "type": "leaf",
+            "state": {
+              "type": "tasks_timeline_view",
+              "state": {},
+              "icon": "calendar-clock",
+              "title": "Tasks Timeline"
+            }
+          },
+          {
+            "id": "34834c32388633e0",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 376.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -163,14 +198,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b470808c28ac2c0d",
+  "active": "621b6c1b169933ae",
   "lastOpenFiles": [
-    "about/index.zh-cn.md",
     "report/index.zh-cn.md",
+    "posts/journal/2024-11-07.md",
+    "posts/journal/2024-10-26.md",
+    "posts/tests/markdown-tests/index.en.md",
+    "（4246）武汉市江汉区教育局招生考试办公室报考点2025年研究生考试报名温馨提示.md",
+    "posts/fitness/优秀健身及运动书籍.md",
+    "report/timeline.md",
+    "posts/journal/2024-11-01.md",
+    "posts/fitness",
+    "about/index.zh-cn.md",
+    "collection",
     "report",
     "新建文件夹",
     "posts/learn-rust/rustlings 通关记录.md.md",
-    "posts/journal/2024-10-26.md",
     "posts/basic-markdown-syntax/index.zh-cn.md",
     "posts/emoji-support/index.zh-cn.md",
     "posts/pwa-support/index.zh-cn.md",
@@ -187,14 +230,8 @@
     "posts/how-to-DoIt/create-diagrams/index.zh-cn.md",
     "series/test-series/_index.zh-cn.md",
     "series/getting-start/_index.zh-cn.md",
-    "series/how-to-doit/_index.zh-cn.md",
-    "posts/template/template.md.md",
-    "posts/tests/aplayer-tests/index.en.md",
-    "诺贝尔物理学奖颁发给了深度学习的Hinton和一位物理学家.md",
     "posts/journal",
-    "posts/learn-rust/Rust 基础语法笔记.md.md",
     "posts/learn-rust",
-    "posts/tests/showcase-tests/index.en.md",
     "posts/pwa-support/featured-image.webp",
     "posts/template"
   ]

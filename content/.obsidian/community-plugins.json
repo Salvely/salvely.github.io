@@ -1,4 +1,8 @@
 [
   "obsidian-linter",
-  "obsidian-git"
+  "obsidian-git",
+  "obsidian-tasks-plugin",
+  "tasks-calendar-wrapper",
+  "obsidian-timelines",
+  "calendar"
 ]
