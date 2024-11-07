@@ -15,4 +15,11 @@ seriesNavigation: true
 enableLastMod: true
 enableWordCount: true
 enableReadingTime: true
+toc:
+  enable: true
+  auto: false
+code:
+  maxShownlines: 100
 ---
+
+<!--more-->
