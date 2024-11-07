@@ -1,25 +1,5 @@
----
-authors:
-  - Salvely
-title: 优秀健身及运动书籍
-description: 这里记录一些优秀的健身及运动书籍，使用Todo形式记载，打勾的是已经读完的书籍
-tags:
-  - 健身
-  - 书籍
-categories:
-  - 健身
-seriesNavigation: true
-enableLastMod: true
-enableWordCount: true
-enableReadingTime: true
-date: 2024-10-29T21:22:23+08:00
-lastmod: 2024-11-07T15:40:05+08:00
-toc:
-  enable: true
-  auto: false
-code:
-  maxShownLines: 100
----
+# 优秀健身及运动书籍
+
 
 ## 健身
 
@@ -118,3 +98,4 @@ https://www.zhihu.com/question/22306426/answer/20957062 中的书籍阅读
 https://www.zhihu.com/question/22306426/answer/133997276
 - 严谨的健身运动类的入门书籍有哪些？ - 高科的回答 - 知乎
 https://www.zhihu.com/question/22306426/answer/20957062
+

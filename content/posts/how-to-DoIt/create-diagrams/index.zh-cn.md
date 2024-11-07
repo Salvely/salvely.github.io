@@ -1,36 +1,38 @@
 ---
-title: "如何在 DoIt 中创建图表"
-subtitle: "使用 GoAT 与 Mermaid 在 DoIt 中创建 SVG 图表"
+title: 如何在 DoIt 中创建图表
+subtitle: 使用 GoAT 与 Mermaid 在 DoIt 中创建 SVG 图表
 date: 2022-02-28T14:27:14Z
-lastmod: 2022-02-28T14:27:14Z
+lastmod: 2024-11-07T15:36:40+08:00
 draft: false
-authors: [PCloud]
-description: "这篇文档将展示如何在 DoIt 中使用 GoAT 和 Mermaid 创建 SVG 图表。"
-
-tags: ["diagram", "markdown"]
-categories: ["Documentation"]
-series: [how-to-doit]
-
+authors:
+  - PCloud
+description: 这篇文档将展示如何在 DoIt 中使用 GoAT 和 Mermaid 创建 SVG 图表。
+tags:
+  - diagram
+  - markdown
+categories:
+  - Documentation
+series:
+  - how-to-doit
 hiddenFromHomePage: false
 hiddenFromSearch: false
-
 featuredImage: ""
 featuredImagePreview: ""
-
 toc:
   enable: true
   auto: false
-
 code:
-    maxShownLines: 100
+  maxShownLines: 100
 ---
 
 <!--more-->
 
 {{< admonition type=note title="Note" open=true >}}
+
 你需要使用 Hugo [**v0.93.0**](https://github.com/gohugoio/hugo/releases/tag/v0.93.0) 或更新的版本来创建自定义图表。
 
 如果你不得不使用旧版的 Hugo，你可以使用 [`mermaid` shortcode]({{< relref "../../theme-documentation-extended-shortcodes/index.zh-cn.md#mermaid" >}})。
+
 {{< /admonition >}}
 
 ## GoAT
@@ -328,6 +330,7 @@ code:
 ### 流程图
 
 All [Flowcharts](https://mermaid-js.github.io/mermaid/#/./flowchart?id=flowcharts-basic-syntax
+
 ) are composed of nodes, geometric shapes and edges, the arrows or lines. The mermaid code defines the way that these nodes and edges are made and interact.
 
 ````markdown
@@ -351,6 +354,7 @@ graph TD;
 ### 序列图
 
 A [Sequence diagram](https://mermaid-js.github.io/mermaid/#/./sequenceDiagram
+
 ) is an interaction diagram that shows how processes operate with one another and in what order.
 
 ````markdown
