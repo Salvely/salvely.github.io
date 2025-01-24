@@ -852,11 +852,15 @@ Content for chapter one.
 ![Alt text](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
 ```
 
+![Alt text](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
+
 像链接一样, 图片也具有脚注样式的语法:
 
 ```markdown
 ![Alt text][id]
 ```
+
+![Alt text][id]
 
 稍后在文档中提供参考内容, 用来定义 URL 的位置:
 
