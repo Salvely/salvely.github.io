@@ -4,35 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "54b2e5b9d233a1c2",
+        "id": "3dbb625592828e2b",
         "type": "tabs",
         "children": [
           {
-            "id": "d4c5dae17b74a633",
+            "id": "76178c7abc9f1ec7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "about/index.zh-cn.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "index.zh-cn"
-            }
-          },
-          {
-            "id": "5306334d50dca7c3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "posts/math/math-journey.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "math-journey"
+              "title": "新标签页"
             }
           }
         ]
@@ -91,7 +73,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 308.5
+    "width": 300
   },
   "right": {
     "id": "b6e242f1b1b8a9b6",
@@ -160,16 +142,6 @@
             }
           },
           {
-            "id": "651582a8ad3b1b35",
-            "type": "leaf",
-            "state": {
-              "type": "reminder-list",
-              "state": {},
-              "icon": "clock",
-              "title": "Reminders"
-            }
-          },
-          {
             "id": "fcf9998930e5aba1",
             "type": "leaf",
             "state": {
@@ -188,18 +160,9 @@
               "icon": "calendar-with-checkmark",
               "title": "Calendar"
             }
-          },
-          {
-            "id": "ca6b6b2b4f444870",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -211,55 +174,59 @@
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
-      "obsidian-git:Open Git source control": false,
-      "templates:插入模板": false,
       "daily-notes:打开/创建今天的日记": false,
-      "command-palette:打开命令面板": false
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d4c5dae17b74a633",
+  "active": "b470808c28ac2c0d",
   "lastOpenFiles": [
-    "Pasted image 20241112212121.png",
-    "未命名.canvas",
-    "XHS_17349501816051040g00831bebvg5n00105ob99gl0jk5.jpg",
-    "XHS_17349327576431040g00830u3mo259le104a7711e2iuq.jpg",
-    "Pasted image 20241112211858.png",
-    "posts/others/我的抽象人生.md",
-    "report/index.zh-cn.md",
+    "posts/template/journal.md",
+    "posts/others/（4246）武汉市江汉区教育局招生考试办公室报考点2025年研究生考试报名温馨提示.md",
+    "posts/math/math-puzzles.md",
     "posts/math/math-journey.md",
     "posts/math/apostol Calculus阅读记录.md",
-    "posts/journal/2024年11月至12月记录.md",
-    "posts/未命名",
-    "posts/journal/2024-11-10.md",
-    "posts/journal/2025年1月总结.md",
-    "posts/journal/2024-12-26.md",
-    "posts/journal/2024-12-25.md",
-    "posts/math/math-puzzles.md",
     "posts/math",
-    "posts/cs/rust/rustlings 通关记录.md.md",
-    "posts/others",
-    "posts/cs/compiler/stanford-cs143/Stanford CS143 学习笔记.md",
-    "posts/others/（4246）武汉市江汉区教育局招生考试办公室报考点2025年研究生考试报名温馨提示.md",
-    "posts/DoIt",
     "posts/journal/曲折的自动机理论学习历程记录.md",
+    "posts/journal/2024年11月至12月记录.md",
+    "posts/journal/2024-11-10.md",
     "posts/cs/toc/二进制加法图灵机的C语言实现.md",
+    "posts/cs/scientific-research/CCF A类会议截止时间概览.md",
+    "posts/cs/rust/rustlings 通关记录.md.md",
     "posts/cs/toc",
-    "posts/journal/2025-01-05.md",
-    "posts/杂谈",
-    "posts/journal/自我鼓励.md",
-    "posts/cs/compiler/stanford-cs143",
-    "posts/cs/compiler",
+    "posts/cs/scientific-research",
+    "posts/cs/rust",
     "posts/cs",
-    "posts/journal/XHS_17349327576431040g00830u3mo259le104a7711e2iuq.jpg",
     "posts/apply/香港硕士研究生留学申请记录.md",
     "posts/apply/我的雅思备考.md",
-    "posts/apply/MS申请学校选择.md",
-    "posts/journal/2024-12-19.md",
     "posts/apply/phD 申请攻略.md",
-    "posts/《软件工程原理》阅读笔记.md",
-    "posts/template/journal.md",
-    "posts/template/template.md.md",
+    "posts/apply/MS申请学校选择.md",
     "posts/apply",
-    "posts/DoIt/pwa-support/featured-image.webp"
+    "posts/DoIt/tests/typeit-tests/index.en.md",
+    "posts/DoIt/tests/toc-tests/index.en.md",
+    "posts/DoIt/tests/tab-tests/index.en.md",
+    "posts/DoIt/tests/series-taxonomy-tests/index.en.md",
+    "posts/DoIt/tests/showcase-tests/index.en.md",
+    "posts/DoIt/tests/series-taxonomy-tests/index.zh-cn.md",
+    "posts/DoIt/tests/related-tests/index.en.md",
+    "posts/DoIt/tests/music-tests/index.en.md",
+    "posts/DoIt/tests/mermaid-tests/index.en.md",
+    "posts/DoIt/tests/markdown-tests/index.en.md",
+    "posts/DoIt/tests/mapbox-tests/index.en.md",
+    "posts/DoIt/tests/image-tests/pin_white.png",
+    "posts/DoIt/tests/image-tests/pin_red.png",
+    "posts/DoIt/tests/image-tests/pin_black.png",
+    "posts/DoIt/theme-documentation-extended-shortcodes/featured-image.webp",
+    "posts/DoIt/theme-documentation-extended-shortcodes/featured-image-preview.webp",
+    "posts/DoIt/theme-documentation-content/summary.webp",
+    "posts/DoIt/theme-documentation-content/summary.zh-cn.webp",
+    "posts/DoIt/theme-documentation-content/featured-image.webp",
+    "posts/DoIt/theme-documentation-built-in-shortcodes/featured-image.webp",
+    "posts/DoIt/theme-documentation-basics/language-switch.gif",
+    "posts/DoIt/tests/typeit-tests",
+    "posts/DoIt/tests/toc-tests",
+    "posts/DoIt/tests/tab-tests",
+    "posts/DoIt/tests/showcase-tests"
   ]
 }
