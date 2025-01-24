@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "report/index.zh-cn.md",
+                "file": "posts/cs/scientific-research/CCF A类会议截止时间概览.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index.zh-cn"
+              "title": "CCF A类会议截止时间概览"
             }
           }
         ]
@@ -186,6 +186,7 @@
   },
   "active": "76178c7abc9f1ec7",
   "lastOpenFiles": [
+    "report/index.zh-cn.md",
     "posts/template/template.md.md",
     "posts/template/journal.md",
     "posts/pwa-support/featured-image.webp",
@@ -223,7 +224,6 @@
     "posts/theme-documentation-built-in-shortcodes/featured-image.webp",
     "posts/theme-documentation-built-in-shortcodes",
     "posts/theme-documentation-basics/language-switch.gif",
-    "posts/theme-documentation-basics/index.zh-cn.md",
     "posts/theme-documentation-basics/featured-image.webp",
     "posts/theme-documentation-basics",
     "posts/tests/typeit-tests",
