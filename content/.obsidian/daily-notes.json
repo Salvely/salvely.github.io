@@ -1,4 +1,4 @@
 {
   "folder": "posts/journal",
-  "template": "template/template.md"
+  "template": "posts/template/journal"
 }

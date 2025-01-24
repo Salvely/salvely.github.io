@@ -538,7 +538,7 @@ bundle = false
 # 网站验证代码，用于 Google/Bing/Yandex/Pinterest/Baidu
 [verification]
   google = "UJapM2d84iH6w1FVXFWeXhz_PoqtMDTU3mmNjGfRe1E"
-  bing = "B9E18E3A198D5371F581EA31B912C562"
+  bing = "C974411E5F5A79173F7830327E92F59E"
   yandex = ""
   pinterest = ""
   baidu = ""

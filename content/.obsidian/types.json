@@ -10,6 +10,7 @@
     "enableReadingTime": "checkbox",
     "rssFullText": "checkbox",
     "toc": "text",
-    "code": "text"
+    "code": "text",
+    "description": "text"
   }
 }
