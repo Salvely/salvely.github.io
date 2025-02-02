@@ -1,6 +1,5 @@
 {
   "useMarkdownLinks": true,
   "newLinkFormat": "shortest",
-  "alwaysUpdateLinks": true,
-  "showRibbon": true
+  "alwaysUpdateLinks": true
 }
