@@ -22,7 +22,7 @@
             }
           },
           {
-            "id": "f9f5376c9648aba3",
+            "id": "fd1f04e0bf8d47b9",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -238,9 +238,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f9f5376c9648aba3",
+  "active": "fd1f04e0bf8d47b9",
   "lastOpenFiles": [
     "report/index.zh-cn.md",
+    "about/index.zh-cn.md",
     "posts/math/math-journey.md",
     "Pasted image 20250209160200.png",
     "posts/math/math-puzzles.md",
