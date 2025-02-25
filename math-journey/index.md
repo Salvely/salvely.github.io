@@ -10,13 +10,13 @@
 - [x] Book of proof ✅ 2025-01-23
 - [ ] 《陶哲轩实分析》
 - [ ] 普林斯顿数学分析读本
+- [ ] Rudin 数学分析原理
 - [ ] 哈代纯数学教程
 - [ ] 菲赫金哥尔茨《微积分学教程》
-- [ ] Rudin 数学分析原理
 - [ ] 吉米多维奇习题集
+- [ ] 卓里奇《数学分析》
 - [ ] 裴里文《数学分析中的典型问题与方法》
 - [ ] apostol Calculus
-- [ ] 卓里奇《数学分析》
 - [ ] apostol《数学分析》
 - [ ] 龚昇《简明微积分》
 - [ ] 小平邦彦《微积分入门》
@@ -31,7 +31,6 @@
 - [ ] Calculus: One-variable calculus, with an introduction to linear algebra（apostol卷1）
 - [ ] Calculus: Multi-variable calculus and linear algebra, with applications to differential equations and probability（apostol卷2）（学完以后线代、常微分方程和概率论都过了一遍了）
 - [ ] Loomis 高等微积分
-- [ ] Rudin 数学分析原理
  - [ ] Understanding Real Analysis Abbott
 - [ ] [Elementary Analysis: The Theory of Calculus (Undergraduate Texts in Mathematics): Ross, Kenneth A.: 9781441928115: Amazon.com: Books](https://www.amazon.com/dp/1441928111)
 - [ ] [Multidimensional Real Analysis I (豆瓣) (douban.com)](https://book.douban.com/subject/3752070/)
@@ -115,21 +114,38 @@
 - [ ] [Problems and Theorems in Analysis II (豆瓣) (douban.com)](https://book.douban.com/subject/1873367/)
 - [ ] 谢慧民习题集
 
-## 线性代数
-
-## 高等代数
-
 ## 常微分方程
 
 ## 概率论与数理统计
 
+- [ ] MIT 《概率导论》
+- [ ] 卯诗松《概率论与数理统计》+习题完成
+- [ ] 陈希孺《概率论与数理统计》
+- [ ] Statistical inference
+
+## 线性代数
+
+## 高等代数
+
+- [ ] 丘维生《高等代数》+习题指导
+- [ ] 蓝以中《高等代数简明教程》
+- [ ] Linear Algebra done right
+- [ ] Linear algebra done wrong
+
 ## 抽象代数
 
+- [ ] dummit abstract algebra
+
 ## 代数学
+
+- [ ] Artin《代数》
+- [ ] 科斯特利金《代数学引论》
 
 ## 数理逻辑
 
 ## 拓扑学
+
+- [ ] Murkes 拓扑学
 
 ## 组合数学
 
@@ -167,7 +183,7 @@
 
 ## 矩阵论
 
-## 数学物理方法
+> 学到这里以后可以学习计算机，计算机内容学习完成后再来继续后面的纯数学习路径。
 
 ## [纯数学习路径](https://freecomputerbooks.com/puremath.htm)
 
