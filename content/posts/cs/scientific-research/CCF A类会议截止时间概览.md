@@ -6,7 +6,7 @@ authors:
 title: CCF 重要顶会及截止时间概览
 tags:
   - deadline
-series:
+categories:
   - 科研
 seriesNavigation: true
 enableLastMod: true

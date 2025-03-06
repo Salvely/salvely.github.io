@@ -4,8 +4,9 @@ authors:
 title: 二进制加法图灵机的C语言实现
 tags:
   - 图灵机
-categories:
   - 计算理论
+categories:
+  - 理论计算机
 seriesNavigation: true
 enableLastMod: true
 enableWordCount: true
