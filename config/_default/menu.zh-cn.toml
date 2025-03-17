@@ -59,8 +59,9 @@
   identifier = "mood"
   pre = ""
   post = ""
-  name + "心情日志"
+  name = "心情日记"
   url = "/mood/"
+  title = ""
   weight = 7
 [[main]]
   identifier = "github"
