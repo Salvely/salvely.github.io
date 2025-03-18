@@ -11,10 +11,62 @@
             "id": "73843004b93e0edb",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "posts/cs/oi/P1601 A+B Problem（高精）.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "P1601 A+B Problem（高精）"
+            }
+          },
+          {
+            "id": "c06d2c30aa216e20",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "report/index.zh-cn.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "index.zh-cn"
+            }
+          },
+          {
+            "id": "45bead51a0265914",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "report/report.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "report"
+            }
+          },
+          {
+            "id": "efee55c786d8dd69",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mood/index.zh-cn.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "index.zh-cn"
             }
           }
         ]
@@ -193,19 +245,20 @@
   },
   "active": "73843004b93e0edb",
   "lastOpenFiles": [
+    "mood/index.zh-cn.md",
+    "report/report.md",
+    "report/index.zh-cn.md",
+    "posts/cs/oi/P1601 A+B Problem（高精）.md",
+    "posts/cs/oi/集合求和.md",
     "posts/cs/oi/乒乓球.md",
     "posts/template/oi.md",
     "posts/template/journal.md",
     "posts/template/template.md.md",
-    "posts/cs/oi/集合求和.md",
     "posts/cs/tool/git/git push时登陆问题解决.md",
     "posts/cs/tool/proxy/git和终端代理配置问题.md",
-    "report/report.md",
-    "report/index.zh-cn.md",
     "posts/cs/tool/proxy",
     "posts/cs/tool/git",
     "posts/cs/tool",
-    "mood/index.zh-cn.md",
     "posts/cs/oi/未命名",
     "mood",
     "posts/cs/oi",
@@ -224,8 +277,6 @@
     "posts/others/（4246）武汉市江汉区教育局招生考试办公室报考点2025年研究生考试报名温馨提示.md",
     "posts/math/math-journey.md",
     "posts/math/apostol Calculus阅读记录.md",
-    "posts/cs/rust/rustlings 通关记录.md.md",
-    "posts/apply/香港硕士研究生留学申请记录.md",
     "posts/cs/intro",
     "posts/cs/emacs",
     "posts/cs/vim",
