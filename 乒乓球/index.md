@@ -149,3 +149,40 @@ int main(void)
 - 多次模拟中间变量要置0；
 - 确保输出格式正确，换行和空行的数目正确；
 
+## 深基参考题解
+
+《深基》上给了一个版本的答案，但是我用其中一个测试点跑了，发现这个答案是通不过测试的。所以摆在这里仅供参考。
+
+```cpp
+#include <iostream>
+#include <cmath>
+using namespace std;
+int f[2] = {11,21}; // 将两轮分制
+int a[25 * 2500 + 10], n = 0;
+int main() {
+	char tmp;
+	freopen("1.in","r",stdin);
+	freopen("1.out","w",stdout);
+	while(1) {
+		cin >> tmp;
+		if(tmp == 'E') break;
+		else if(tmp == 'W') a[n++] = 1;
+		else if(tmp == 'L') a[n++] = 0;
+	}
+	for(int k = 0; k < 2; k++) {
+		int w = 0, l = 0;
+		for(int i = 0; i < n; i++) {
+			w += a[i];
+			l += l - a[i];
+			if((max(w,l) >= f[k]) && abs(w-l) >= 2) {
+				cout << w << ":" << l << endl;
+				w = l = 0;
+			}
+		}
+		cout << w << ":" << l << endl;
+		cout << endl;
+	}
+	return 0;
+}
+```
+
