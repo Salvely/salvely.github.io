@@ -154,6 +154,7 @@
 	- [ ] Leetcode Medium & Hard 刷完
 	- [ ] USACO 刷完
 	- [ ] Codeforces 比赛
+<!--more-->
 	- [ ] AtCoder 比赛
 - [ ] 打算法比赛搞钱
 
