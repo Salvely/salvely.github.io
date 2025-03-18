@@ -51,16 +51,16 @@
   identifier = "report"
   pre = ""
   post = ""
-  name = "学习日志"
-  url = "/report/"
+  name = "任务列表"
+  url = "/report/任务列表.md"
   title = ""
   weight = 6
 [[main]]
-  identifier = "mood"
+  identifier = "report"
   pre = ""
   post = ""
-  name = "心情日记"
-  url = "/mood/"
+  name = "计算机科学之路"
+  url = "/report/计算机科学之路.md"
   title = ""
   weight = 7
 [[main]]
