@@ -55,7 +55,8 @@
               "title": "2025年3月第四周记录"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -229,10 +230,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c06d2c30aa216e20",
+  "active": "efee55c786d8dd69",
   "lastOpenFiles": [
-    "report/任务列表.md",
     "report/计算机科学之路.md",
+    "report/任务列表.md",
     "posts/journal/2025年3月第四周记录.md",
     "posts/journal/立志.md",
     "posts/journal/抑郁康复记录.md",

@@ -52,7 +52,7 @@
   pre = ""
   post = ""
   name = "任务列表"
-  url = "/report/任务列表.md"
+  url = "/report/任务列表/"
   title = ""
   weight = 6
 [[main]]
@@ -60,7 +60,7 @@
   pre = ""
   post = ""
   name = "计算机科学之路"
-  url = "/report/计算机科学之路.md"
+  url = "/report/计算机科学之路/"
   title = ""
   weight = 7
 [[main]]
