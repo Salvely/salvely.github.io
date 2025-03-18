@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "e0c252319ff14e8e",
+        "id": "a925ae976eecaec2",
         "type": "tabs",
         "children": [
           {
-            "id": "03a3236b3fbad277",
+            "id": "73843004b93e0edb",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "posts/cs/oi/乒乓球.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "乒乓球"
+              "title": "新标签页"
             }
           }
         ]
@@ -78,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "b6e242f1b1b8a9b6",
@@ -196,8 +191,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "03a3236b3fbad277",
+  "active": "73843004b93e0edb",
   "lastOpenFiles": [
+    "posts/cs/oi/乒乓球.md",
+    "posts/template/oi.md",
+    "posts/template/journal.md",
+    "posts/template/template.md.md",
     "posts/cs/oi/集合求和.md",
     "posts/cs/tool/git/git push时登陆问题解决.md",
     "posts/cs/tool/proxy/git和终端代理配置问题.md",
@@ -205,10 +204,8 @@
     "report/index.zh-cn.md",
     "posts/cs/tool/proxy",
     "posts/cs/tool/git",
-    "posts/cs/oi/乒乓球.md",
     "posts/cs/tool",
     "mood/index.zh-cn.md",
-    "posts/template/oi.md",
     "posts/cs/oi/未命名",
     "mood",
     "posts/cs/oi",
@@ -229,8 +226,6 @@
     "posts/math/apostol Calculus阅读记录.md",
     "posts/cs/rust/rustlings 通关记录.md.md",
     "posts/apply/香港硕士研究生留学申请记录.md",
-    "posts/cs/intro/《编码：隐匿在计算机软硬件背后的语言》阅读笔记.md",
-    "posts/apply/phD 申请攻略.md",
     "posts/cs/intro",
     "posts/cs/emacs",
     "posts/cs/vim",
