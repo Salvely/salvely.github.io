@@ -3,7 +3,7 @@ title: CSAPP Chapter 2 - 信息的表示和处理 阅读笔记
 categories:
   - 系统入门
 date: 2024-02-29 11:08:01
-lastmod: 2025-03-19T16:15:38+08:00
+lastmod: 2025-03-19T17:29:37+08:00
 authors:
   - Salvely
 series:
@@ -52,6 +52,8 @@ code:
 > 2. 加法和减法的优先级 > 移位运算优先级，如 `1<<2+3<<4`，因此移位时记得加括号
 
 ## 整数的表示和运算
+
+{{< image src="./numbers.png" >}}
 
 ![numbers.png](numbers.png)
 
