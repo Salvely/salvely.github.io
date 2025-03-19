@@ -61,12 +61,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch2/Ch2.md",
+                "file": "posts/tests/image-tests/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ch2"
+              "title": "index"
             }
           }
         ],
@@ -102,7 +102,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "figure src=",
+                "query": ".png",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -244,11 +244,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fd044762a5014b61",
+  "active": "b470808c28ac2c0d",
   "lastOpenFiles": [
+    "posts/cs/image-tests/pin_white.png",
+    "posts/cs/image-tests/pin_red.png",
+    "posts/cs/image-tests/pin_black.png",
+    "posts/cs/image-tests/index.md",
+    "posts/cs/image-tests",
+    "posts/tests/markdown-tests/index.en.md",
+    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch2/Ch2.md",
     "posts/cs/系统入门/15-213/15-213 Activity/Machine control activity/Machine control activity.md",
     "posts/pwa-support/index.zh-cn.md",
-    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch2/Ch2.md",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch2/numbers.png",
     "posts/basic-markdown-syntax/index.zh-cn.md",
     "posts/journal/2025年3月第四周记录.md",
@@ -271,25 +277,20 @@
     "posts/cs/系统入门/CIT5950/CIT5950_HW3.md",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch3.md",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch1.md",
-    "posts/cs/系统入门/15-213/15-213 Lab/Data lab 实验总结.md",
     "posts/cs/系统入门/15-213/15-213 Lab/Bomb lab 实验总结/fun7.png",
-    "posts/cs/系统入门/15-213/15-213 Lab/Bomb lab 实验总结/Bomb lab 实验总结.md",
     "posts/cs/系统入门/15-213/15-213 Activity/Machine control activity/mov.jpg",
     "zh-cn",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/访存阶段.png",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/译码阶段.png",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/执行阶段.png",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/取指阶段.png",
-    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/writeback.png",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/writeback.drawio",
-    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/updatepc.png",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/updatepc.drawio",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/seq.drawio",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/pipe-.drawio",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/pipe+.drawio",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/mem.drawio",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/execute.drawio",
-    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/fetch.drawio",
-    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/decode.drawio"
+    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/fetch.drawio"
   ]
 }
