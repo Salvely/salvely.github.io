@@ -61,12 +61,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/cs/系统入门/15-213/15-213 Activity/Machine control activity/index.md",
+                "file": "posts/cs/系统入门/15-213/15-213 Activity/Machine control activity/Machine control activity.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Machine control activity"
             }
           }
         ],
@@ -249,7 +249,7 @@
     "task/任务列表.md",
     "roadmap/计算机科学之路.md",
     "posts/journal/2025年3月第四周记录.md",
-    "posts/cs/系统入门/15-213/15-213 Activity/Machine control activity/index.md",
+    "posts/cs/系统入门/15-213/15-213 Activity/Machine control activity/Machine control activity.md",
     "posts/cs/系统入门/15-213/15-213 Lab/Bomb lab 实验总结/Bomb lab 实验总结.md",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch2/Ch2.md",
     "posts/basic-markdown-syntax/index.zh-cn.md",
