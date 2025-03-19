@@ -82,7 +82,7 @@ tw-scrollbar-thin"><span class=line><span class=cl>  <span class=p>(</span><span
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=n>Program</span> <span class=n>received</span> <span class=k>signal</span> <span class=n>SIGTRAP</span><span class=p>,</span> <span class=n>Trace</span><span class=o>/</span><span class=k>breakpoint</span> <span class=n>trap</span><span class=o>.</span>
 </span></span><span class=line><span class=cl><span class=n>main</span> <span class=p>(</span><span class=n>argc</span><span class=o>=&lt;</span><span class=n>optimized</span> <span class=n>out</span><span class=o>&gt;</span><span class=p>,</span> <span class=n>argv</span><span class=o>=&lt;</span><span class=n>optimized</span> <span class=n>out</span><span class=o>&gt;</span><span class=p>)</span> <span class=n>at</span> <span class=n>machine</span><span class=o>-</span><span class=n>procedures</span><span class=o>/</span><span class=n>calls</span><span class=o>.</span><span class=n>c</span><span class=p>:</span><span class=mi>148</span>
-</span></span><span class=line><span class=cl><span class=mi>148</span>     <span class=n>machine</span><span class=o>-</span><span class=n>procedures</span><span class=o>/</span><span class=n>calls</span><span class=o>.</span><span class=n>c</span><span class=p>:</span> <span class=n>No</span> <span class=n>such</span> <span class=n>file</span> <span class=ow>or</span> <span class=n>directory</span><span class=o>.</span></span></span></code></pre></div><p>输入两次<code>c</code>，提示如下：</p><div class="code-block highlight is-closed show-line-numbers tw-group tw-my-2"><div class="code-block-title
+</span></span><span class=line><span class=cl><span class=mi>148</span>     <span class=n>machine</span><span class=o>-</span><span class=n>procedures</span><span class=o>/</span><span class=n>calls</span><span class=o>.</span><span class=n>c</span><span class=p>:</span> <span class=n>No</span> <span class=n>such</span> <span class=n>file</span> <span class=ow>or</span> <span class=n>directory</span><span class=o>.</span></span></span></code></pre></div><p>输入两次<code>c</code>，提示如下：</p><div class="code-block highlight is-open show-line-numbers tw-group tw-my-2"><div class="code-block-title
 tw-flex
 tw-flex-row
 tw-justify-between
@@ -251,7 +251,7 @@ group-[.is-wrap]:tw-text-wrap
 tw-overflow-y-hidden
 tw-overflow-x-auto
 tw-scrollbar-thin"><span class=line><span class=cl>(gdb) x/2gx 0x000000000040117a
-</span></span><span class=line><span class=cl>0x40117a &lt;main+48&gt;:     0xe37e02fb8301c383      0xfea4e800402108bf</span></span></code></pre></div><p><code>gdb</code>显示这里是<code>&lt;main + 48></code>，那么我们对<code>main</code>函数进行反汇编：</p><div class="code-block highlight is-closed show-line-numbers tw-group tw-my-2"><div class="code-block-title
+</span></span><span class=line><span class=cl>0x40117a &lt;main+48&gt;:     0xe37e02fb8301c383      0xfea4e800402108bf</span></span></code></pre></div><p><code>gdb</code>显示这里是<code>&lt;main + 48></code>，那么我们对<code>main</code>函数进行反汇编：</p><div class="code-block highlight is-open show-line-numbers tw-group tw-my-2"><div class="code-block-title
 tw-flex
 tw-flex-row
 tw-justify-between
@@ -330,7 +330,7 @@ tw-scrollbar-thin"><span class=line><span class=cl>(gdb) disassemble main
 </span></span><span class=line><span class=cl>   0x00000000004011a2 &lt;+88&gt;:    mov    $0x0,%eax
 </span></span><span class=line><span class=cl>   0x00000000004011a7 &lt;+93&gt;:    pop    %rbx
 </span></span><span class=line><span class=cl>   0x00000000004011a8 &lt;+94&gt;:    retq
-</span></span><span class=line><span class=cl>End of assembler dump.</span></span></code></pre></div><p>可以看到这个值是<code>callq 0x4011db &lt;showStack></code>的下一条指令地址，也就是<code>callq</code>调用的返回地址。</p><p>输入<code>c</code>继续，提示如下：</p><div class="code-block highlight is-closed show-line-numbers tw-group tw-my-2"><div class="code-block-title
+</span></span><span class=line><span class=cl>End of assembler dump.</span></span></code></pre></div><p>可以看到这个值是<code>callq 0x4011db &lt;showStack></code>的下一条指令地址，也就是<code>callq</code>调用的返回地址。</p><p>输入<code>c</code>继续，提示如下：</p><div class="code-block highlight is-open show-line-numbers tw-group tw-my-2"><div class="code-block-title
 tw-flex
 tw-flex-row
 tw-justify-between
@@ -561,7 +561,7 @@ tw-overflow-x-auto
 tw-scrollbar-thin"><span class=line><span class=cl>(gdb) p $rsp
 </span></span><span class=line><span class=cl>$3 = (void *) 0x7fffffffddf0
 </span></span><span class=line><span class=cl>(gdb) p $rip
-</span></span><span class=line><span class=cl>$4 = (void (*)()) 0x40117a &lt;main+48&gt;</span></span></code></pre></div><p>这里<code>%rsp</code>的值相对于<code>retq</code>前+8，并且<code>$rip</code>的值等于下一条指令的地址。由此可以推断，此处<code>ret</code>指令将栈顶的地址弹出，并赋值给<code>%rip</code>。那么<code>callq</code>指令做的事就是将下一条指令的地址压栈，然后将<code>%rip</code>的值设置为<code>callq</code>的目标地址。</p><p>输入<code>c</code>继续，指令如下：</p><div class="code-block highlight is-closed show-line-numbers tw-group tw-my-2"><div class="code-block-title
+</span></span><span class=line><span class=cl>$4 = (void (*)()) 0x40117a &lt;main+48&gt;</span></span></code></pre></div><p>这里<code>%rsp</code>的值相对于<code>retq</code>前+8，并且<code>$rip</code>的值等于下一条指令的地址。由此可以推断，此处<code>ret</code>指令将栈顶的地址弹出，并赋值给<code>%rip</code>。那么<code>callq</code>指令做的事就是将下一条指令的地址压栈，然后将<code>%rip</code>的值设置为<code>callq</code>的目标地址。</p><p>输入<code>c</code>继续，指令如下：</p><div class="code-block highlight is-open show-line-numbers tw-group tw-my-2"><div class="code-block-title
 tw-flex
 tw-flex-row
 tw-justify-between
@@ -790,7 +790,7 @@ tw-scrollbar-thin"><span class=line><span class=cl>(gdb) disassemble abs
 </span></span><span class=line><span class=cl>   0x0000000000401145 &lt;+3&gt;:     xor    %edx,%eax
 </span></span><span class=line><span class=cl>   0x0000000000401147 &lt;+5&gt;:     sub    %edx,%eax
 </span></span><span class=line><span class=cl>   0x0000000000401149 &lt;+7&gt;:     retq
-</span></span><span class=line><span class=cl>End of assembler dump.</span></span></code></pre></div><p><code>returnOne</code>中的过程是，先<code>callq 0x401142 &lt;abs></code>，然后<code>retq</code>。<code>returnOneOpt</code>改为直接<code>jmpq 0x401142 &lt;abs></code>。而<code>abs</code>执行完后直接<code>retq</code>。</p><p>对<code>returnOne</code>，其过程为：</p><ol><li>将 main 函数中下一条指令地址压栈，将<code>returnOne</code>地址赋给<code>%rip</code></li><li>执行一段，调用<code>abs</code></li><li>将<code>returnOne</code>中下一条指令地址压栈，把<code>abs</code>地址付给<code>%rip</code></li><li>执行一段，从<code>abs</code>返回（执行<code>abs</code>的<code>retq</code>），从栈中弹出<code>returnOne</code>中<code>retq</code>地址赋给<code>$rip</code>，<code>$rip</code>跳转到<code>returnOne</code>的<code>retq</code>。</li><li>执行<code>returnOne</code>的<code>retq</code>，将栈顶返回地址弹出，赋给<code>$rip</code>。</li></ol><p>对<code>returnOneOpt</code>，其过程为：</p><ol><li>将 main 函数中下一条指令地址压栈，将<code>returnOne</code>地址赋给<code>%rip</code></li><li>执行一段，跳转到<code>abs</code></li><li>将<code>returnOne</code>中下一条指令地址压栈，把<code>abs</code>地址付给<code>%rip</code></li><li>执行一段，从<code>abs</code>返回（执行<code>abs</code>的<code>retq</code>），从栈中弹出<code>main</code>中<code>retq</code>地址赋给<code>$rip</code></li></ol><p>可以这样进行优化的原因是两条<code>retq</code>指令连在一起，所以没有必要<code>retq</code>两次，将<code>abs</code>和<code>returnOne</code>的过程接在一起构成一个<code>procedure</code>，<code>retq</code>一次即可。</p><p>输入<code>c</code>，题目中给出了答案：</p><div class="code-block highlight is-closed show-line-numbers tw-group tw-my-2"><div class="code-block-title
+</span></span><span class=line><span class=cl>End of assembler dump.</span></span></code></pre></div><p><code>returnOne</code>中的过程是，先<code>callq 0x401142 &lt;abs></code>，然后<code>retq</code>。<code>returnOneOpt</code>改为直接<code>jmpq 0x401142 &lt;abs></code>。而<code>abs</code>执行完后直接<code>retq</code>。</p><p>对<code>returnOne</code>，其过程为：</p><ol><li>将 main 函数中下一条指令地址压栈，将<code>returnOne</code>地址赋给<code>%rip</code></li><li>执行一段，调用<code>abs</code></li><li>将<code>returnOne</code>中下一条指令地址压栈，把<code>abs</code>地址付给<code>%rip</code></li><li>执行一段，从<code>abs</code>返回（执行<code>abs</code>的<code>retq</code>），从栈中弹出<code>returnOne</code>中<code>retq</code>地址赋给<code>$rip</code>，<code>$rip</code>跳转到<code>returnOne</code>的<code>retq</code>。</li><li>执行<code>returnOne</code>的<code>retq</code>，将栈顶返回地址弹出，赋给<code>$rip</code>。</li></ol><p>对<code>returnOneOpt</code>，其过程为：</p><ol><li>将 main 函数中下一条指令地址压栈，将<code>returnOne</code>地址赋给<code>%rip</code></li><li>执行一段，跳转到<code>abs</code></li><li>将<code>returnOne</code>中下一条指令地址压栈，把<code>abs</code>地址付给<code>%rip</code></li><li>执行一段，从<code>abs</code>返回（执行<code>abs</code>的<code>retq</code>），从栈中弹出<code>main</code>中<code>retq</code>地址赋给<code>$rip</code></li></ol><p>可以这样进行优化的原因是两条<code>retq</code>指令连在一起，所以没有必要<code>retq</code>两次，将<code>abs</code>和<code>returnOne</code>的过程接在一起构成一个<code>procedure</code>，<code>retq</code>一次即可。</p><p>输入<code>c</code>，题目中给出了答案：</p><div class="code-block highlight is-open show-line-numbers tw-group tw-my-2"><div class="code-block-title
 tw-flex
 tw-flex-row
 tw-justify-between
@@ -856,7 +856,7 @@ tw-scrollbar-thin"><span class=line><span class=cl>(gdb) c
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>Use the &#39;q&#39;uit command to leave GDB.
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>[Inferior 1 (process 68527) exited normally]</span></span></code></pre></div><p>原来这里是尾递归优化的精髓啊！明白啦！</p><h2 id=activity-2 class=headerLink><a href=#activity-2 class=header-mark></a>2 Activity 2</h2><p>输入<code>gdb --args ./locals</code>，输入<code>r</code>，再输入<code>c</code>，得到的提示如下：</p><div class="code-block highlight is-closed show-line-numbers tw-group tw-my-2"><div class="code-block-title
+</span></span><span class=line><span class=cl>[Inferior 1 (process 68527) exited normally]</span></span></code></pre></div><p>原来这里是尾递归优化的精髓啊！明白啦！</p><h2 id=activity-2 class=headerLink><a href=#activity-2 class=header-mark></a>2 Activity 2</h2><p>输入<code>gdb --args ./locals</code>，输入<code>r</code>，再输入<code>c</code>，得到的提示如下：</p><div class="code-block highlight is-open show-line-numbers tw-group tw-my-2"><div class="code-block-title
 tw-flex
 tw-flex-row
 tw-justify-between
@@ -923,7 +923,7 @@ tw-scrollbar-thin"><span class=line><span class=cl><span class=n>The</span> <spa
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=n>Program</span> <span class=n>received</span> <span class=k>signal</span> <span class=n>SIGTRAP</span><span class=p>,</span> <span class=n>Trace</span><span class=o>/</span><span class=k>breakpoint</span> <span class=n>trap</span><span class=o>.</span>
 </span></span><span class=line><span class=cl><span class=n>main</span> <span class=p>(</span><span class=n>argc</span><span class=o>=&lt;</span><span class=n>optimized</span> <span class=n>out</span><span class=o>&gt;</span><span class=p>,</span> <span class=n>argv</span><span class=o>=&lt;</span><span class=n>optimized</span> <span class=n>out</span><span class=o>&gt;</span><span class=p>)</span> <span class=n>at</span> <span class=n>machine</span><span class=o>-</span><span class=n>procedures</span><span class=o>/</span><span class=n>locals</span><span class=o>.</span><span class=n>c</span><span class=p>:</span><span class=mi>156</span>
-</span></span><span class=line><span class=cl><span class=mi>156</span>     <span class=ow>in</span> <span class=n>machine</span><span class=o>-</span><span class=n>procedures</span><span class=o>/</span><span class=n>locals</span><span class=o>.</span><span class=n>c</span></span></span></code></pre></div><p>输入<code>disassemble seeArgs</code>，提示如下：</p><div class="code-block highlight is-closed show-line-numbers tw-group tw-my-2"><div class="code-block-title
+</span></span><span class=line><span class=cl><span class=mi>156</span>     <span class=ow>in</span> <span class=n>machine</span><span class=o>-</span><span class=n>procedures</span><span class=o>/</span><span class=n>locals</span><span class=o>.</span><span class=n>c</span></span></span></code></pre></div><p>输入<code>disassemble seeArgs</code>，提示如下：</p><div class="code-block highlight is-open show-line-numbers tw-group tw-my-2"><div class="code-block-title
 tw-flex
 tw-flex-row
 tw-justify-between
@@ -1037,7 +1037,7 @@ group-[.is-wrap]:tw-text-wrap
 tw-overflow-y-hidden
 tw-overflow-x-auto
 tw-scrollbar-thin"><span class=line><span class=cl>(gdb) x/s 0x402016
-</span></span><span class=line><span class=cl>0x402016:       &#34;%d %d %d %d %d&#34;</span></span></code></pre></div><p>确实是<code>int</code>类型，那么此处猜测<code>x/s</code>是打印从该处开始的字符串。</p><p>输入<code>c</code>，提示如下：</p><div class="code-block highlight is-closed show-line-numbers tw-group tw-my-2"><div class="code-block-title
+</span></span><span class=line><span class=cl>0x402016:       &#34;%d %d %d %d %d&#34;</span></span></code></pre></div><p>确实是<code>int</code>类型，那么此处猜测<code>x/s</code>是打印从该处开始的字符串。</p><p>输入<code>c</code>，提示如下：</p><div class="code-block highlight is-open show-line-numbers tw-group tw-my-2"><div class="code-block-title
 tw-flex
 tw-flex-row
 tw-justify-between
@@ -1097,7 +1097,7 @@ tw-scrollbar-thin"><span class=line><span class=cl><span class=p>(</span><span c
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=n>Program</span> <span class=n>received</span> <span class=k>signal</span> <span class=n>SIGTRAP</span><span class=p>,</span> <span class=n>Trace</span><span class=o>/</span><span class=k>breakpoint</span> <span class=n>trap</span><span class=o>.</span>
-</span></span><span class=line><span class=cl><span class=n>main</span> <span class=p>(</span><span class=n>argc</span><span class=o>=&lt;</span><span class=n>optimized</span> <span class=n>out</span><span class=o>&gt;</span><span class=p>,</span> <span class=n>argv</span><span class=o>=&lt;</span><span class=n>optimized</span> <span class=n>out</span><span class=o>&gt;</span><span class=p>)</span> <span class=n>at</span> <span class=n>machine</span><span class=o>-</span><span class=n>procedures</span><span class=o>/</span><span class=n>locals</span><span class=o>.</span><span class=n>c</span><span class=p>:</span><span class=mi>156</span></span></span></code></pre></div><p>输入<code>disassemble seeMoreArgs</code>，输出如下：</p><div class="code-block highlight is-closed show-line-numbers tw-group tw-my-2"><div class="code-block-title
+</span></span><span class=line><span class=cl><span class=n>main</span> <span class=p>(</span><span class=n>argc</span><span class=o>=&lt;</span><span class=n>optimized</span> <span class=n>out</span><span class=o>&gt;</span><span class=p>,</span> <span class=n>argv</span><span class=o>=&lt;</span><span class=n>optimized</span> <span class=n>out</span><span class=o>&gt;</span><span class=p>)</span> <span class=n>at</span> <span class=n>machine</span><span class=o>-</span><span class=n>procedures</span><span class=o>/</span><span class=n>locals</span><span class=o>.</span><span class=n>c</span><span class=p>:</span><span class=mi>156</span></span></span></code></pre></div><p>输入<code>disassemble seeMoreArgs</code>，输出如下：</p><div class="code-block highlight is-open show-line-numbers tw-group tw-my-2"><div class="code-block-title
 tw-flex
 tw-flex-row
 tw-justify-between
@@ -1162,7 +1162,7 @@ tw-scrollbar-thin"><span class=line><span class=cl>(gdb) disassemble seeMoreArgs
 </span></span><span class=line><span class=cl>   0x00000000004011b2 &lt;+45&gt;:    callq  0x401050 &lt;printf@plt&gt;
 </span></span><span class=line><span class=cl>   0x00000000004011b7 &lt;+50&gt;:    add    $0x18,%rsp
 </span></span><span class=line><span class=cl>   0x00000000004011bb &lt;+54&gt;:    retq
-</span></span><span class=line><span class=cl>End of assembler dump.</span></span></code></pre></div><p>第 7 个和第 8 个被压在栈上。寄存器只有 6 个，多的就压在栈上。</p><p>输入<code>c</code>，提示如下：</p><div class="code-block highlight is-closed show-line-numbers tw-group tw-my-2"><div class="code-block-title
+</span></span><span class=line><span class=cl>End of assembler dump.</span></span></code></pre></div><p>第 7 个和第 8 个被压在栈上。寄存器只有 6 个，多的就压在栈上。</p><p>输入<code>c</code>，提示如下：</p><div class="code-block highlight is-open show-line-numbers tw-group tw-my-2"><div class="code-block-title
 tw-flex
 tw-flex-row
 tw-justify-between
@@ -1338,7 +1338,7 @@ tw-scrollbar-thin"><span class=line><span class=cl>(gdb) disassemble getValue
 </span></span><span class=line><span class=cl>Dump of assembler code for function getValue:
 </span></span><span class=line><span class=cl>   0x0000000000401284 &lt;+0&gt;:     mov    (%rdi,%rsi,4),%eax
 </span></span><span class=line><span class=cl>   0x0000000000401287 &lt;+3&gt;:     retq
-</span></span><span class=line><span class=cl>End of assembler dump.</span></span></code></pre></div><p>输入<code>c</code>继续，结果如下：</p><div class="code-block highlight is-closed show-line-numbers tw-group tw-my-2"><div class="code-block-title
+</span></span><span class=line><span class=cl>End of assembler dump.</span></span></code></pre></div><p>输入<code>c</code>继续，结果如下：</p><div class="code-block highlight is-open show-line-numbers tw-group tw-my-2"><div class="code-block-title
 tw-flex
 tw-flex-row
 tw-justify-between
@@ -1406,7 +1406,7 @@ tw-scrollbar-thin"><span class=line><span class=cl><span class=p>(</span><span c
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=n>Program</span> <span class=n>received</span> <span class=k>signal</span> <span class=n>SIGTRAP</span><span class=p>,</span> <span class=n>Trace</span><span class=o>/</span><span class=k>breakpoint</span> <span class=n>trap</span><span class=o>.</span>
-</span></span><span class=line><span class=cl><span class=n>main</span> <span class=p>(</span><span class=n>argc</span><span class=o>=&lt;</span><span class=n>optimized</span> <span class=n>out</span><span class=o>&gt;</span><span class=p>,</span> <span class=n>argv</span><span class=o>=&lt;</span><span class=n>optimized</span> <span class=n>out</span><span class=o>&gt;</span><span class=p>)</span> <span class=n>at</span> <span class=n>machine</span><span class=o>-</span><span class=n>procedures</span><span class=o>/</span><span class=n>locals</span><span class=o>.</span><span class=n>c</span><span class=p>:</span><span class=mi>156</span></span></span></code></pre></div><p>继续输入<code>c</code>，提示如下：</p><div class="code-block highlight is-closed show-line-numbers tw-group tw-my-2"><div class="code-block-title
+</span></span><span class=line><span class=cl><span class=n>main</span> <span class=p>(</span><span class=n>argc</span><span class=o>=&lt;</span><span class=n>optimized</span> <span class=n>out</span><span class=o>&gt;</span><span class=p>,</span> <span class=n>argv</span><span class=o>=&lt;</span><span class=n>optimized</span> <span class=n>out</span><span class=o>&gt;</span><span class=p>)</span> <span class=n>at</span> <span class=n>machine</span><span class=o>-</span><span class=n>procedures</span><span class=o>/</span><span class=n>locals</span><span class=o>.</span><span class=n>c</span><span class=p>:</span><span class=mi>156</span></span></span></code></pre></div><p>继续输入<code>c</code>，提示如下：</p><div class="code-block highlight is-open show-line-numbers tw-group tw-my-2"><div class="code-block-title
 tw-flex
 tw-flex-row
 tw-justify-between
@@ -1535,7 +1535,7 @@ tw-scrollbar-thin"><span class=line><span class=cl><span class=nl>call_echo:</sp
 </span></span><span class=line><span class=cl><span class=nl>echo:</span>
 </span></span><span class=line><span class=cl>    <span class=err>%</span><span class=nf>rbx</span> <span class=err>+=</span> <span class=mi>1</span>
 </span></span><span class=line><span class=cl>    <span class=nf>call</span> <span class=no>printf</span><span class=err>&lt;</span><span class=no>xxxx</span><span class=err>&gt;</span>
-</span></span><span class=line><span class=cl>    <span class=nf>ret</span></span></span></code></pre></div><p>在<code>echo</code>的过程中会修改<code>%rbx</code>的值，那么在对其进行调用前就必须<code>pushq %rbx</code>，并且在调用完后<code>popq %rbx</code>。</p><p>输入<code>disassemble mult4</code>可得如下结果：</p><div class="code-block highlight is-closed show-line-numbers tw-group tw-my-2"><div class="code-block-title
+</span></span><span class=line><span class=cl>    <span class=nf>ret</span></span></span></code></pre></div><p>在<code>echo</code>的过程中会修改<code>%rbx</code>的值，那么在对其进行调用前就必须<code>pushq %rbx</code>，并且在调用完后<code>popq %rbx</code>。</p><p>输入<code>disassemble mult4</code>可得如下结果：</p><div class="code-block highlight is-open show-line-numbers tw-group tw-my-2"><div class="code-block-title
 tw-flex
 tw-flex-row
 tw-justify-between
@@ -1659,7 +1659,7 @@ tw-scrollbar-thin"><span class=line><span class=cl>(gdb) disassemble mult2
 </span></span><span class=line><span class=cl>   0x000000000040124a &lt;+0&gt;:     mov    %edi,%eax
 </span></span><span class=line><span class=cl>   0x000000000040124c &lt;+2&gt;:     imul   %esi,%eax
 </span></span><span class=line><span class=cl>   0x000000000040124f &lt;+5&gt;:     retq
-</span></span><span class=line><span class=cl>End of assembler dump.</span></span></code></pre></div><p>可以看到<code>mult2</code>函数中主要使用到的是<code>%edi</code>和<code>%esi</code>两个寄存器。返回值在<code>%eax</code>中。在<code>mult4</code>中，压入了<code>%rbx %r12 %r13</code>。</p><p>输入<code>c</code>，提示如下：</p><div class="code-block highlight is-closed show-line-numbers tw-group tw-my-2"><div class="code-block-title
+</span></span><span class=line><span class=cl>End of assembler dump.</span></span></code></pre></div><p>可以看到<code>mult2</code>函数中主要使用到的是<code>%edi</code>和<code>%esi</code>两个寄存器。返回值在<code>%eax</code>中。在<code>mult4</code>中，压入了<code>%rbx %r12 %r13</code>。</p><p>输入<code>c</code>，提示如下：</p><div class="code-block highlight is-open show-line-numbers tw-group tw-my-2"><div class="code-block-title
 tw-flex
 tw-flex-row
 tw-justify-between
@@ -1721,7 +1721,7 @@ tw-scrollbar-thin"><span class=line><span class=cl><span class=p>(</span><span c
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=n>Program</span> <span class=n>received</span> <span class=k>signal</span> <span class=n>SIGTRAP</span><span class=p>,</span> <span class=n>Trace</span><span class=o>/</span><span class=k>breakpoint</span> <span class=n>trap</span><span class=o>.</span>
-</span></span><span class=line><span class=cl><span class=n>main</span> <span class=p>(</span><span class=n>argc</span><span class=o>=&lt;</span><span class=n>optimized</span> <span class=n>out</span><span class=o>&gt;</span><span class=p>,</span> <span class=n>argv</span><span class=o>=&lt;</span><span class=n>optimized</span> <span class=n>out</span><span class=o>&gt;</span><span class=p>)</span> <span class=n>at</span> <span class=n>machine</span><span class=o>-</span><span class=n>procedures</span><span class=o>/</span><span class=n>locals</span><span class=o>.</span><span class=n>c</span><span class=p>:</span><span class=mi>156</span></span></span></code></pre></div><p>输入<code>disassemble mrec</code>，得到如下结果：</p><div class="code-block highlight is-closed show-line-numbers tw-group tw-my-2"><div class="code-block-title
+</span></span><span class=line><span class=cl><span class=n>main</span> <span class=p>(</span><span class=n>argc</span><span class=o>=&lt;</span><span class=n>optimized</span> <span class=n>out</span><span class=o>&gt;</span><span class=p>,</span> <span class=n>argv</span><span class=o>=&lt;</span><span class=n>optimized</span> <span class=n>out</span><span class=o>&gt;</span><span class=p>)</span> <span class=n>at</span> <span class=n>machine</span><span class=o>-</span><span class=n>procedures</span><span class=o>/</span><span class=n>locals</span><span class=o>.</span><span class=n>c</span><span class=p>:</span><span class=mi>156</span></span></span></code></pre></div><p>输入<code>disassemble mrec</code>，得到如下结果：</p><div class="code-block highlight is-open show-line-numbers tw-group tw-my-2"><div class="code-block-title
 tw-flex
 tw-flex-row
 tw-justify-between
@@ -1784,7 +1784,7 @@ tw-scrollbar-thin"><span class=line><span class=cl>(gdb) disassemble mrec
 </span></span><span class=line><span class=cl>   0x00000000004011e4 &lt;+20&gt;:    retq
 </span></span><span class=line><span class=cl>   0x00000000004011e5 &lt;+21&gt;:    mov    %edi,%eax
 </span></span><span class=line><span class=cl>   0x00000000004011e7 &lt;+23&gt;:    jmp    0x4011e3 &lt;mrec+19&gt;
-</span></span><span class=line><span class=cl>End of assembler dump.</span></span></code></pre></div><p>将该函数转化为 C 函数，如下：</p><div class="code-block highlight is-closed show-line-numbers tw-group tw-my-2"><div class="code-block-title
+</span></span><span class=line><span class=cl>End of assembler dump.</span></span></code></pre></div><p>将该函数转化为 C 函数，如下：</p><div class="code-block highlight is-open show-line-numbers tw-group tw-my-2"><div class="code-block-title
 tw-flex
 tw-flex-row
 tw-justify-between
