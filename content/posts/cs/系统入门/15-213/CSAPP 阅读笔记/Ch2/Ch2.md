@@ -53,7 +53,7 @@ code:
 
 ## 整数的表示和运算
 
-{{< image src="./numbers.png" >}}
+{{< figure src="./numbers.png" >}}
 
 ![numbers.png](numbers.png)
 
