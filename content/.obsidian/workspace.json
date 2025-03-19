@@ -61,12 +61,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/cs/系统入门/15-213/15-213 Activity/Machine control activity/index.md.md",
+                "file": "posts/cs/系统入门/15-213/15-213 Activity/Machine control activity/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index.md"
+              "title": "index"
             }
           }
         ],
@@ -246,11 +246,12 @@
   },
   "active": "74a61e216e6aa3a6",
   "lastOpenFiles": [
+    "task/任务列表.md",
+    "roadmap/计算机科学之路.md",
+    "posts/journal/2025年3月第四周记录.md",
+    "posts/cs/系统入门/15-213/15-213 Activity/Machine control activity/index.md",
     "posts/cs/系统入门/15-213/15-213 Lab/Bomb lab 实验总结/Bomb lab 实验总结.md",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch2/Ch2.md",
-    "posts/cs/系统入门/15-213/15-213 Activity/Machine control activity/index.md.md",
-    "posts/journal/2025年3月第四周记录.md",
-    "task/任务列表.md",
     "posts/basic-markdown-syntax/index.zh-cn.md",
     "posts/theme-documentation-basics/index.zh-cn.md",
     "zh-cn/theme-documentation-content 1.md",
@@ -259,7 +260,6 @@
     "posts/theme-documentation-content/index.zh-cn.md",
     "posts/cs/tool/cmake/ModernCppStarter配置过程记录.md",
     "posts/cs/系统入门/CIT5950/CIT5950_HW4.md",
-    "roadmap/计算机科学之路.md",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/Ch4.md",
     "posts/cs/系统入门/15-213/15-213 Activity/Attack lab recitation.md",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch3.md",
