@@ -1,5 +1,6 @@
 # Machine data activity
 
+<!--more-->
 
 输入`gdb ./data-layout`，开启`Data activity`之旅。
 

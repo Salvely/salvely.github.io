@@ -1,5 +1,6 @@
 # Machine procedures activity
 
+<!--more-->
 
 ## Activity 1
 

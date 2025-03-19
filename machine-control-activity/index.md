@@ -1,5 +1,6 @@
 # Machine control activity
 
+<!--more-->
 
 ## Basic Control Flow
 

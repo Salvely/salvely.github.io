@@ -1,5 +1,6 @@
 # CIT5950_HW3
 
+<!--more-->
 
 ## Overview
 

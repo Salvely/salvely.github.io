@@ -1,5 +1,6 @@
 # gdb & asm activity
 
+<!--more-->
 
 ## Activity 1
 

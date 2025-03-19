@@ -1,5 +1,6 @@
 # HW4: Shell & Pipe 实现记录
 
+<!--more-->
 
 ## 要求
 

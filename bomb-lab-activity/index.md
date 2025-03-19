@@ -1,5 +1,6 @@
 # Bomb lab activity
 
+<!--more-->
 
 ## Part I
 

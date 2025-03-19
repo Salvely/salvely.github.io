@@ -1,5 +1,6 @@
 # Attack lab recitation
 
+<!--more-->
 
 输入`gdb activity`，开启 activity 之旅。
 

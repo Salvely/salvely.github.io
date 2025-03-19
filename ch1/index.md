@@ -1,5 +1,6 @@
 # CSAPP Ch1：计算机系统漫游
 
+<!--more-->
 
 `CSAPP`的全称是`Computer Systems: A Programmer's Perspective`，中文翻译为`《深入理解计算机系统》`。这本书以`hello world`程序的运行贯穿始终，可以作为应用级别程序员一窥底层概貌的显微镜，也可以作为系统方向研究者的研究的方向概览。下面我们从第一章出发，进入计算机系统的世界。
 

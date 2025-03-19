@@ -1,5 +1,6 @@
 # Bomb lab recitation
 
+<!--more-->
 
 ## act1
 
