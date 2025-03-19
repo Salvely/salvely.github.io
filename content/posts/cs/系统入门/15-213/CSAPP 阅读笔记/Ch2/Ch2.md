@@ -3,7 +3,7 @@ title: CSAPP Chapter 2 - 信息的表示和处理 阅读笔记
 categories:
   - 系统入门
 date: 2024-02-29 11:08:01
-lastmod: 2025-03-19T15:51:11+08:00
+lastmod: 2025-03-19T16:15:38+08:00
 authors:
   - Salvely
 series:
@@ -18,6 +18,7 @@ toc:
 code:
   maxShownlines: 100
 ---
+<!--more-->
 
 ## 信息的表示和处理
 

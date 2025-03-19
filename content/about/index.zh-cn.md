@@ -2,7 +2,7 @@
 title: 关于 Wen Gao
 date: 2024-10-26
 draft: false
-lightgallery: true
+lightgallery: false
 lastmod: 2025-02-13T10:23:26+08:00
 ---
 

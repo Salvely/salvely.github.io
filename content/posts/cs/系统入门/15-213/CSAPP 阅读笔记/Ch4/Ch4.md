@@ -4,7 +4,7 @@ categories:
   - 系统入门
   - 类别
 date: 2024-03-13 09:59:48
-lastmod: 2025-03-19T14:37:12+08:00
+lastmod: 2025-03-19T16:15:42+08:00
 authors:
   - Salvely
 series:
@@ -19,6 +19,7 @@ toc:
 code:
   maxShownlines: 100
 ---
+<!--more-->
 
 本章中我们需要实现 3 个目标：
 

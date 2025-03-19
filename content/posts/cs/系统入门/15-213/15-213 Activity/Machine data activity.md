@@ -19,8 +19,9 @@ toc:
   auto: false
 code:
   maxShownlines: 100
-lastmod: 2025-03-19T14:29:54+08:00
+lastmod: 2025-03-19T16:15:18+08:00
 ---
+<!--more-->
 
 输入`gdb ./data-layout`，开启`Data activity`之旅。
 

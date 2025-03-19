@@ -5,7 +5,7 @@ categories:
 date: 2024-02-05 15:50:22
 tags:
   - 数据表示
-lastmod: 2025-03-19T14:34:33+08:00
+lastmod: 2025-03-19T16:15:35+08:00
 authors:
   - Salvely
 series:
@@ -20,6 +20,7 @@ toc:
 code:
   maxShownlines: 100
 ---
+<!--more-->
 
 部分的题目我参考了一下网上的内容（出处已注明），其他的均为自己实现（有的题目的实现过程可能会有些繁琐），部分 dlc 检测出来可能会报些 error，但是 btest 均能过。
 

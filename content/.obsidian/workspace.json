@@ -61,16 +61,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/cs/系统入门/15-213/15-213 Activity/Machine control activity/Machine control activity.md",
+                "file": "roadmap/计算机科学之路.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Machine control activity"
+              "title": "计算机科学之路"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -102,7 +101,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "图片",
+                "query": "lightgallery",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -244,35 +243,37 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "013f82d08ad23b7f",
+  "active": "efee55c786d8dd69",
   "lastOpenFiles": [
-    "posts/journal/2025年3月第四周记录.md",
     "roadmap/计算机科学之路.md",
     "task/任务列表.md",
-    "posts/cs/系统入门/15-213/15-213 Activity/Machine control activity/Machine control activity.md",
-    "posts/cs/系统入门/15-213/15-213 Lab/Bomb lab 实验总结/Bomb lab 实验总结.md",
-    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch2/Ch2.md",
-    "posts/basic-markdown-syntax/index.zh-cn.md",
-    "posts/theme-documentation-basics/index.zh-cn.md",
-    "zh-cn/theme-documentation-content 1.md",
-    "zh-cn/theme-documentation-content.md",
-    "zh-cn",
+    "posts/tests/extend-shortcodes-tests/index.en.md",
     "posts/theme-documentation-content/index.zh-cn.md",
-    "posts/cs/tool/cmake/ModernCppStarter配置过程记录.md",
+    "posts/theme-documentation-basics/index.zh-cn.md",
+    "about/index.zh-cn.md",
+    "posts/emoji-support/index.zh-cn.md",
+    "posts/basic-markdown-syntax/index.zh-cn.md",
+    "posts/pwa-support/index.zh-cn.md",
+    "posts/theme-documentation-built-in-shortcodes/index.zh-cn.md",
+    "posts/theme-documentation-extended-shortcodes/index.zh-cn.md",
     "posts/cs/系统入门/CIT5950/CIT5950_HW4.md",
-    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/Ch4.md",
-    "posts/cs/系统入门/15-213/15-213 Activity/Attack lab recitation.md",
-    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch3.md",
     "posts/cs/系统入门/CIT5950/CIT5950_HW3.md",
+    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch3.md",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch1.md",
-    "posts/cs/系统入门/CIT5950/CIT5950_Project.md",
+    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/Ch4.md",
+    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch2/Ch2.md",
     "posts/cs/系统入门/15-213/15-213 Lab/Data lab 实验总结.md",
     "posts/cs/系统入门/15-213/15-213 Lab/Attack lab 实验总结.md",
+    "posts/cs/系统入门/15-213/15-213 Lab/Bomb lab 实验总结/fun7.png",
+    "posts/cs/系统入门/15-213/15-213 Lab/Bomb lab 实验总结/Bomb lab 实验总结.md",
     "posts/cs/系统入门/15-213/15-213 Lab/Attack lab 实验总结/Arch Lab实验总结.md",
     "posts/cs/系统入门/15-213/15-213 Activity/Machine procedures activity.md",
-    "posts/cs/系统入门/15-213/15-213 Activity/Bomb lab activity.md",
-    "posts/cs/系统入门/15-213/15-213 Activity/Bomb lab recitation.md",
+    "posts/cs/系统入门/15-213/15-213 Activity/Machine data activity.md",
     "posts/cs/系统入门/15-213/15-213 Activity/gdb & asm activity.md",
+    "posts/cs/系统入门/15-213/15-213 Activity/Bomb lab recitation.md",
+    "posts/cs/系统入门/15-213/15-213 Activity/Bomb lab activity.md",
+    "posts/cs/系统入门/15-213/15-213 Activity/Machine control activity/mov.jpg",
+    "zh-cn",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/访存阶段.png",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/译码阶段.png",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/执行阶段.png",
@@ -286,10 +287,8 @@
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/pipe-.drawio",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/mux4.png",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/pipe+.drawio",
-    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/mem.png",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/mem.drawio",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/execute.drawio",
-    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/execute.png",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/fetch.drawio",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/decode.drawio"
   ]
