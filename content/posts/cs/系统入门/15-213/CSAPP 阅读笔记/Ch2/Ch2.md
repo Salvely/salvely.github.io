@@ -3,7 +3,7 @@ title: CSAPP Chapter 2 - 信息的表示和处理 阅读笔记
 categories:
   - 系统入门
 date: 2024-02-29 11:08:01
-lastmod: 2025-03-19T15:24:42+08:00
+lastmod: 2025-03-19T15:44:32+08:00
 authors:
   - Salvely
 series:
@@ -52,7 +52,7 @@ code:
 
 ## 整数的表示和运算
 
-![numbers.png](../Ch2/numbers.png)
+{{< figure src="/numbers.png" >}}
 
 > 1. 通过引用`#include <stdint.h>`，然后使用`INTX_t`，就可以使用特定位数的某种类型。可以使用宏`%" PRId32 "`来打印串。
 >
