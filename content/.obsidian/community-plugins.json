@@ -5,5 +5,7 @@
   "tasks-calendar-wrapper",
   "obsidian-timelines",
   "calendar",
-  "obsidian-reminder-plugin"
+  "obsidian-reminder-plugin",
+  "simple-code-formatter",
+  "update-relative-links"
 ]
