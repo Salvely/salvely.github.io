@@ -7,7 +7,7 @@
 
 ## 第一阶段任务
 
-> 3 月完成。
+> 本周全部完成。
 
 - [x] vim使用学习，使用vimtutor掌握基础即可，通过后期的实践进行强化 ✅ 2024-11-12
 - [x] 根据[选校梯度 - Open CS Application](https://opencs.app/grade/) 和 [Global CS](https://global-cs-application.github.io/) 选校 ✅ 2024-11-12
@@ -614,6 +614,7 @@
 - [ ] 装备升级
 - [ ] 本周内找到字节跳动工作
 - [ ] 练习英语口语
+- [ ] 把以上所有事情完成之后再休息，否则不要休息
 
 ## 第二阶段任务
 

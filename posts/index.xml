@@ -1,46 +1,328 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>所有文章 - Wen Gao 的小站</title><link>https://salvely.github.io/posts/</link><description>所有文章 | Wen Gao 的小站</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>iamgwen9@gmail.com (Salvely)</managingEditor><webMaster>iamgwen9@gmail.com (Salvely)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 17 Mar 2025 19:31:52 +0800</lastBuildDate><atom:link href="https://salvely.github.io/posts/" rel="self" type="application/rss+xml"/><item><title>2025年3月第四周记录</title><link>https://salvely.github.io/2025%E5%B9%B43%E6%9C%88%E7%AC%AC%E5%9B%9B%E5%91%A8%E8%AE%B0%E5%BD%95/</link><pubDate>Mon, 17 Mar 2025 15:01:55 +0800</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/2025%E5%B9%B43%E6%9C%88%E7%AC%AC%E5%9B%9B%E5%91%A8%E8%AE%B0%E5%BD%95/</guid><description><![CDATA[<h2 id="2025-03-17" class="headerLink">
-    <a href="#2025-03-17" class="header-mark"></a>1 2025-03-17</h2><ul>
-<li>在过去几年内，我深受消化不良的困扰。每次吃完了饭，肚子都涨的叫人呼吸喘不来气。因为肥胖，每每运动都累的不行，最后减肥收效甚微。因为长期不消化， 学习和生活都受到了干扰。整个人长期无力，维生素D都被脂肪吸收了个干净。我一定要击败你！消！化！不！良！</li>
-<li>实在是喘不上气，必须得运动运动了。唉，怎么减个肥这么难啊。我一个黄花大闺女，怎么跟金胖子一个肚子啊。阿西吧。
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>所有文章 - Wen Gao 的小站</title><link>https://salvely.github.io/posts/</link><description>所有文章 | Wen Gao 的小站</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>iamgwen9@gmail.com (Salvely)</managingEditor><webMaster>iamgwen9@gmail.com (Salvely)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 18 Mar 2025 19:19:44 +0800</lastBuildDate><atom:link href="https://salvely.github.io/posts/" rel="self" type="application/rss+xml"/><item><title>CSAPP Ch3：程序的机器级表示</title><link>https://salvely.github.io/ch3/</link><pubDate>Thu, 29 Feb 2024 11:08:11 +0000</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/ch3/</guid><description></description></item><item><title>HW4: Shell &amp; Pipe 实现记录</title><link>https://salvely.github.io/cit5950_hw4/</link><pubDate>Sat, 06 Jan 2024 14:49:15 +0000</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/cit5950_hw4/</guid><description><![CDATA[<h1 id="要求" class="headerLink">
+    <a href="#%e8%a6%81%e6%b1%82" class="header-mark"></a>要求</h1><p>实现一个只含有基本命令和 Pipe(不含重定向符及其他符号)的 Shell。</p>
+<h1 id="指南" class="headerLink">
+    <a href="#%e6%8c%87%e5%8d%97" class="header-mark"></a>指南</h1><h2 id="相关文件" class="headerLink">
+    <a href="#%e7%9b%b8%e5%85%b3%e6%96%87%e4%bb%b6" class="header-mark"></a>1 相关文件</h2><ul>
+<li><code>pipe_shell.cc</code>:在其中实现 shell 程序</li>
+<li><code>sh.cc</code>: 传入一个附带参数的程序，<code>fork()</code>子程序然后<code>execvp()</code>去执行它</li>
+<li><code>stdin_echo.cc</code>: 从<code>stdin</code>中读取，输出读取的内容，直到获取<code>EOF</code>，然后停止</li>
+<li><code>example_tests/</code>: 其中含有示例输入和对应输出</li>
+<li><code>solution_binaries/</code>: 官方答案执行码</li>
+</ul>
+<h2 id="具体要求" class="headerLink">
+    <a href="#%e5%85%b7%e4%bd%93%e8%a6%81%e6%b1%82" class="header-mark"></a>2 具体要求</h2><ul>
+<li>程序一次从标准输入读取一行命令</li>
+<li>一行命令包括命令本身和连接他们的 Pipe</li>
+<li>不停读入直到读入<code>EOF</code>/用户输入<code>exit</code></li>
+<li>在当前命令完成之后才能运行下一条命令</li>
+<li>命令可以是绝对路径或者是程序名（用<code>execvp</code>执行）</li>
+</ul>
+<h2 id="建议方法" class="headerLink">
+    <a href="#%e5%bb%ba%e8%ae%ae%e6%96%b9%e6%b3%95" class="header-mark"></a>3 建议方法</h2><ul>
+<li>通读该指南和提供的源代码，搞清楚作业是在做什么</li>
+<li>执行一下<code>./solution_binaries/pipe_shell</code>，看看结果长什么样</li>
+<li>开始实现<code>pipe_shell.cc</code>，从循环提示用户输入开始，并且打印<code>$</code>提示符，直到无输入或者遇到<code>EOF</code>/输入<code>exit</code></li>
+<li>实现<code>fork()</code>，<code>pipe</code>连接和命令的执行(<code>execvp</code>或者直接运行命令路径)</li>
+</ul>
+<h2 id="实现提示" class="headerLink">
+    <a href="#%e5%ae%9e%e7%8e%b0%e6%8f%90%e7%a4%ba" class="header-mark"></a>4 实现提示</h2><ul>
+<li>可以使用<code>boost</code>库中的<code>split()</code>和<code>trim()</code>方法，</li>
+<li>使用<code>execvp(), fork(), pipe(), waitpid()</code>等函数</li>
+<li>注意不同情形：无管道，一个管道，多于一个管道</li>
+<li>两种方法
 <ul>
-<li><svg class="icon"
-    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M400 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zm0 400H48V80h352v352zm-35.864-241.724L191.547 361.48c-4.705 4.667-12.303 4.637-16.97-.068l-90.781-91.516c-4.667-4.705-4.637-12.303.069-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l59.792 60.277 141.352-140.216c4.705-4.667 12.303-4.637 16.97.068l22.536 22.718c4.667 4.706 4.637 12.304-.068 16.971z"/></svg> T25一套做完 ✅ 2025-03-17</li>
+<li>使用一个 pipe 数组</li>
+<li>每次<code>fork()</code>之前创建一个<code>pipe</code></li>
 </ul>
 </li>
-<li>感觉消化一些了，可能确实像我妈妈所说的，我心理素质太差了，很多消化不良都是情绪问题，只要解决了情绪问题，什么都好说了。</li>
-<li>感觉可能自己需要调整一下心态，不应该把工作学习任务当成负担，而是应该当作自己成长的阶梯。不管是不是有考核，都应该全力以赴去准备，无问西东。加油吧！如果把任务全部完成，我会变得更好，加油！</li>
-<li>我好感谢，我有徐明睿、有罗天笑、有诗诗微微、有爸爸妈妈、有小卉姐姐、有张俊老师。我爱他们。他们是我最好的朋友和家人。我一辈子都喜欢他们。</li>
-<li>今天尽可能多的完成任务，早干完早轻松。</li>
-<li>今天晚上10点照常睡觉，明天早上6点起床继续完成任务。</li>
-<li>我发现我每天中午午饭后容易困倦，那么我应该中午睡一觉，然后完成健身任务，下午再继续完成任务，效率会更高。（发现自己的精力规律啦）</li>
-<li>中午睡一觉以后，真的精神不错，而且只睡了一个小时，今天起来就没有头晕，继续保持！</li>
+<li>每个子进程只需要两个端口，从上一个进程送来的读端口，和给下一个子进程的写端口</li>
+<li>子进程用完端口之后关闭端口，否则程序无法正常退出</li>
 </ul>
-<h2 id="2025-03-18" class="headerLink">
-    <a href="#2025-03-18" class="header-mark"></a>2 2025-03-18</h2><ul>
-<li>有了博客以后，更喜欢写东西了，可以一直分享，很开心。</li>
-<li>经过了一个上午的运转，现在是休息晒太阳时刻！去户外晒个太阳吧！</li>
-<li><svg class="icon"
-    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M400 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zm0 400H48V80h352v352zm-35.864-241.724L191.547 361.48c-4.705 4.667-12.303 4.637-16.97-.068l-90.781-91.516c-4.667-4.705-4.637-12.303.069-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l59.792 60.277 141.352-140.216c4.705-4.667 12.303-4.637 16.97.068l22.536 22.718c4.667 4.706 4.637 12.304-.068 16.971z"/></svg> 吃午饭 ✅ 2025-03-18</li>
-<li><svg class="icon"
-    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M400 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zm0 400H48V80h352v352zm-35.864-241.724L191.547 361.48c-4.705 4.667-12.303 4.637-16.97-.068l-90.781-91.516c-4.667-4.705-4.637-12.303.069-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l59.792 60.277 141.352-140.216c4.705-4.667 12.303-4.637 16.97.068l22.536 22.718c4.667 4.706 4.637 12.304-.068 16.971z"/></svg> 下楼散步2圈 ✅ 2025-03-18</li>
-<li><svg class="icon"
-    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M400 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zm0 400H48V80h352v352zm-35.864-241.724L191.547 361.48c-4.705 4.667-12.303 4.637-16.97-.068l-90.781-91.516c-4.667-4.705-4.637-12.303.069-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l59.792 60.277 141.352-140.216c4.705-4.667 12.303-4.637 16.97.068l22.536 22.718c4.667 4.706 4.637 12.304-.068 16.971z"/></svg> 然后1点钟的时候上来睡一觉 ✅ 2025-03-18</li>
-<li><svg class="icon"
-    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M400 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zm0 400H48V80h352v352zm-35.864-241.724L191.547 361.48c-4.705 4.667-12.303 4.637-16.97-.068l-90.781-91.516c-4.667-4.705-4.637-12.303.069-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l59.792 60.277 141.352-140.216c4.705-4.667 12.303-4.637 16.97.068l22.536 22.718c4.667 4.706 4.637 12.304-.068 16.971z"/></svg> 起来完成T25健身操一套 ✅ 2025-03-18</li>
-<li><svg class="icon"
-    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M400 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zm0 400H48V80h352v352zm-35.864-241.724L191.547 361.48c-4.705 4.667-12.303 4.637-16.97-.068l-90.781-91.516c-4.667-4.705-4.637-12.303.069-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l59.792 60.277 141.352-140.216c4.705-4.667 12.303-4.637 16.97.068l22.536 22.718c4.667 4.706 4.637 12.304-.068 16.971z"/></svg> 洗个澡，换个衣服，喝点水 ✅ 2025-03-18</li>
-<li>cmake这东西好像一段时间不用，就忘记怎么写了，见鬼，之前花了那么多时间掌握它</li>
-<li><svg class="icon"
-    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V86c0-3.3 2.7-6 6-6h340c3.3 0 6 2.7 6 6v340c0 3.3-2.7 6-6 6z"/></svg> 倒腾出新的博客界面（带任务列表、CS学习进度、周记等界面）</li>
-<li><svg class="icon"
-    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M400 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zm0 400H48V80h352v352zm-35.864-241.724L191.547 361.48c-4.705 4.667-12.303 4.637-16.97-.068l-90.781-91.516c-4.667-4.705-4.637-12.303.069-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l59.792 60.277 141.352-140.216c4.705-4.667 12.303-4.637 16.97.068l22.536 22.718c4.667 4.706 4.637 12.304-.068 16.971z"/></svg> 倒腾出博客的周记 ✅ 2025-03-18</li>
-<li><svg class="icon"
-    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V86c0-3.3 2.7-6 6-6h340c3.3 0 6 2.7 6 6v340c0 3.3-2.7 6-6 6z"/></svg> 成功编译ModernCppStarter模板</li>
-<li><svg class="icon"
-    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V86c0-3.3 2.7-6 6-6h340c3.3 0 6 2.7 6 6v340c0 3.3-2.7 6-6 6z"/></svg> 在ModernCppStarter模板中实现List和list的两个实现</li>
-<li><svg class="icon"
-    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V86c0-3.3 2.7-6 6-6h340c3.3 0 6 2.7 6 6v340c0 3.3-2.7 6-6 6z"/></svg> 记录ModernCppStarter的折腾过程</li>
-</ul>]]></description></item><item><title>P1601 A+B Problem（高精）</title><link>https://salvely.github.io/p1601-a-b-problem%E9%AB%98%E7%B2%BE/</link><pubDate>Mon, 17 Mar 2025 19:31:52 +0800</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/p1601-a-b-problem%E9%AB%98%E7%B2%BE/</guid><description><![CDATA[<h2 id="题目描述" class="headerLink">
+<h2 id="测试" class="headerLink">
+    <a href="#%e6%b5%8b%e8%af%95" class="header-mark"></a>5 测试</h2><ul>
+<li>普通测试: <code>make &amp;&amp; ./pipe_shell</code></li>
+<li>内存泄漏测试: <code>valgrind --leak-check=full ./pipe_shell</code></li>
+<li>比较自己的程序和<code>solution_binaries/pipe_shell</code>的结果：</li>
+</ul>
+<div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
+  <div class="
+    code-block-title 
+    
+    tw-flex 
+    tw-flex-row 
+    tw-justify-between 
+    tw-w-full tw-bg-bgColor-secondary
+    ">      
+    <button 
+      class="
+        tw-select-none 
+        tw-mx-2 
+        tw-block
+        group-[.is-open]:tw-rotate-90
+        tw-transition-[transform] 
+        tw-duration-500 
+        tw-ease-in-out
+        print:!tw-hidden"
+      disabled
+      aria-hidden="true"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></button>
+
+    <div class="code-block-title-bar tw-w-full">
+      <p class="tw-select-none !tw-my-1">bash</p>]]></description></item><item><title>CIT5950_HW3</title><link>https://salvely.github.io/cit5950_hw3/</link><pubDate>Thu, 04 Jan 2024 13:27:01 +0000</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/cit5950_hw3/</guid><description><![CDATA[<h1 id="overview" class="headerLink">
+    <a href="#overview" class="header-mark"></a>Overview</h1><p>本作业要求实现:</p>
+<ul>
+<li>Page 对象：
+<ul>
+<li>若 Page 不在 memory 中，那么它的数据被存储在磁盘上的<code>swap file</code>部分。在<code>swap file</code>中，每一页都有对应的顺序存储的数据。</li>
+<li>可以使用 C++ <code>fstream</code>类进行 I/O 读写。尤其是<code>read()</code>和<code>write()</code>方法。</li>
+</ul>
+</li>
+<li>PageTable 对象
+<ul>
+<li>包含多个 page 以及<code>swap file</code></li>
+<li>这里主要要求实现 LRU 算法</li>
+</ul>
+</li>
+</ul>
+<h1 id="相关文件" class="headerLink">
+    <a href="#%e7%9b%b8%e5%85%b3%e6%96%87%e4%bb%b6" class="header-mark"></a>相关文件</h1><h2 id="page" class="headerLink">
+    <a href="#page" class="header-mark"></a>1 Page</h2><ul>
+<li><code>Page.h</code></li>
+<li><code>Page.cc</code></li>
+<li><code>PageTemplates.cc</code></li>
+</ul>
+<h2 id="pagetable" class="headerLink">
+    <a href="#pagetable" class="header-mark"></a>2 PageTable</h2><ul>
+<li><code>PageTable.h</code></li>
+<li><code>PageTable.cc</code></li>
+</ul>
+<h2 id="testing" class="headerLink">
+    <a href="#testing" class="header-mark"></a>3 Testing</h2><ul>
+<li><code>test_page.cc</code></li>
+<li><code>test_pagetable.cc</code></li>
+</ul>
+<h1 id="实现提示" class="headerLink">
+    <a href="#%e5%ae%9e%e7%8e%b0%e6%8f%90%e7%a4%ba" class="header-mark"></a>实现提示</h1><ul>
+<li>map, unordered_map, list, vector 结构都很有用</li>
+<li><code>fstream</code>中的<code>read()</code>和<code>write()</code>很有用</li>
+<li>需要将<code>uint8_t</code>切换到<code>char</code>类型来使用<code>fstream</code></li>
+<li>利用初始化列表来初始化引用类型</li>
+</ul>
+<h1 id="page实现" class="headerLink">
+    <a href="#page%e5%ae%9e%e7%8e%b0" class="header-mark"></a>Page实现</h1><h2 id="page-源码分析" class="headerLink">
+    <a href="#page-%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90" class="header-mark"></a>1 Page 源码分析</h2><p><code>simplevm namespace</code>中存在一个类<code>Page</code>，此外还有一个<code>uint32_t</code>类型(<code>pno_t</code>类型)的变量，用来表示页号。<code>Page</code>页的解释如下:</p>]]></description></item><item><title>Attack lab recitation</title><link>https://salvely.github.io/attack-lab-recitation/</link><pubDate>Thu, 29 Feb 2024 17:20:40 +0000</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/attack-lab-recitation/</guid><description><![CDATA[<p>输入<code>gdb activity</code>，开启 activity 之旅。</p>
+<blockquote>
+  <p>Objective: The goal of this activity is to input a string that causes the program to call win(0x15213),
+and thereby win a cookie.
+在开启之前，先查看一下<code>solve</code>函数的内容：</p>
+</blockquote><div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
+  <div class="
+    code-block-title 
+    
+    tw-flex 
+    tw-flex-row 
+    tw-justify-between 
+    tw-w-full tw-bg-bgColor-secondary
+    ">      
+    <button 
+      class="
+        tw-select-none 
+        tw-mx-2 
+        tw-block
+        group-[.is-open]:tw-rotate-90
+        tw-transition-[transform] 
+        tw-duration-500 
+        tw-ease-in-out
+        print:!tw-hidden"
+      disabled
+      aria-hidden="true"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></button>
+
+    <div class="code-block-title-bar tw-w-full">
+      <p class="tw-select-none !tw-my-1">c</p>]]></description></item><item><title>CSAPP Chapter 2 - 信息的表示和处理 阅读笔记</title><link>https://salvely.github.io/ch2/</link><pubDate>Thu, 29 Feb 2024 11:08:01 +0000</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/ch2/</guid><description><![CDATA[<h2 id="信息的表示和处理" class="headerLink">
+    <a href="#%e4%bf%a1%e6%81%af%e7%9a%84%e8%a1%a8%e7%a4%ba%e5%92%8c%e5%a4%84%e7%90%86" class="header-mark"></a>1 信息的表示和处理</h2><p>信息 = 二进制位的组合 + 对位组合的解释：无符号，补码，有符号整数，浮点数。</p>
+<blockquote>
+  <p>介绍了一点 C 语言的演变历史：汇编不方便 —&gt; ANSI C -&gt; ISC C90 -&gt; ISO C99 -&gt; ISO C11(可以在编译时通过<code>-std=cxx</code>指定编译所使用的版本)</p>]]></description></item><item><title>CSAPP Chapter 4 - 处理器体系结构</title><link>https://salvely.github.io/ch4/</link><pubDate>Wed, 13 Mar 2024 09:59:48 +0000</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/ch4/</guid><description><![CDATA[<p>本章中我们需要实现 3 个目标：</p>
+<ul>
+<li>设计一个顺序结构的 Y86_64 架构处理器</li>
+<li>设计一个流水线结构的 Y86_64 架构处理器</li>
+<li>设计一个包含冒险控制的 Y86_64 架构处理器</li>
+</ul>
+<h2 id="y86_64-指令集架构" class="headerLink">
+    <a href="#y86_64-%e6%8c%87%e4%bb%a4%e9%9b%86%e6%9e%b6%e6%9e%84" class="header-mark"></a>1 Y86_64 指令集架构</h2><p>Y86_64 指令集架构的基本格式如下：</p>]]></description></item><item><title>CSAPP Ch1：计算机系统漫游</title><link>https://salvely.github.io/ch1/</link><pubDate>Thu, 29 Feb 2024 11:06:06 +0000</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/ch1/</guid><description><![CDATA[<p><code>CSAPP</code>的全称是<code>Computer Systems: A Programmer's Perspective</code>，中文翻译为<code>《深入理解计算机系统》</code>。这本书以<code>hello world</code>程序的运行贯穿始终，可以作为应用级别程序员一窥底层概貌的显微镜，也可以作为系统方向研究者的研究的方向概览。下面我们从第一章出发，进入计算机系统的世界。</p>]]></description></item><item><title>Data lab 实验总结</title><link>https://salvely.github.io/data-lab-%E5%AE%9E%E9%AA%8C%E6%80%BB%E7%BB%93/</link><pubDate>Mon, 05 Feb 2024 15:50:22 +0000</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/data-lab-%E5%AE%9E%E9%AA%8C%E6%80%BB%E7%BB%93/</guid><description>&lt;p>部分的题目我参考了一下网上的内容（出处已注明），其他的均为自己实现（有的题目的实现过程可能会有些繁琐），部分 dlc 检测出来可能会报些 error，但是 btest 均能过。&lt;/p></description></item><item><title>Bomb lab 实验总结</title><link>https://salvely.github.io/bomb-lab-%E5%AE%9E%E9%AA%8C%E6%80%BB%E7%BB%93/</link><pubDate>Mon, 26 Feb 2024 16:49:00 +0000</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/bomb-lab-%E5%AE%9E%E9%AA%8C%E6%80%BB%E7%BB%93/</guid><description><![CDATA[<h2 id="前言" class="headerLink">
+    <a href="#%e5%89%8d%e8%a8%80" class="header-mark"></a>1 前言</h2><p>我看见网上非常多的教程里面是一边使用<code>gdb</code>调试（过程中可能引爆炸弹），一边探索结果的。他们可能多次启动了<code>GDB</code>来完成实验。但是我在<code>bomb.c</code>中看到了如下指示:</p>]]></description></item><item><title>Attack lab 实验总结</title><link>https://salvely.github.io/attack-lab-%E5%AE%9E%E9%AA%8C%E6%80%BB%E7%BB%93/</link><pubDate>Thu, 29 Feb 2024 10:36:22 +0000</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/attack-lab-%E5%AE%9E%E9%AA%8C%E6%80%BB%E7%BB%93/</guid><description><![CDATA[<h2 id="准备工作" class="headerLink">
+    <a href="#%e5%87%86%e5%a4%87%e5%b7%a5%e4%bd%9c" class="header-mark"></a>1 准备工作</h2><p>文件夹中的几个重要文件如下：</p>
+<ul>
+<li>cookie.txt: 8 个 16 进制数字的码，用于唯一标记</li>
+<li>ctarget: 准备用于 code injection attack</li>
+<li>farm.c: 用于 return oriented programming attacks</li>
+<li>hex2raw: 用于生成攻击的二进制文件</li>
+<li>README.txt: 介绍了文件夹中文件的内容</li>
+<li>rtarget: 准备用于 return oriented programming attacks</li>
+</ul>
+<p>实验分为 5 个 phase，其中 Phase 1 到 phase 3 是使用 code injection attack，phase 4-5 使用 return oriented programming attack。</p>]]></description></item><item><title>Arch Lab实验总结</title><link>https://salvely.github.io/arch-lab%E5%AE%9E%E9%AA%8C%E6%80%BB%E7%BB%93/</link><pubDate>Tue, 26 Mar 2024 09:59:53 +0000</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/arch-lab%E5%AE%9E%E9%AA%8C%E6%80%BB%E7%BB%93/</guid><description><![CDATA[<h2 id="前言" class="headerLink">
+    <a href="#%e5%89%8d%e8%a8%80" class="header-mark"></a>1 前言</h2><p>本实验中需要我们：</p>
+<ul>
+<li>设计和实现一个流水线化的 Y86-64 架构处理器</li>
+<li>优化处理器</li>
+<li>优化一个基准程序</li>
+</ul>
+<p>本实验包括 3 个部分：</p>
+<ul>
+<li>Part A
+<ul>
+<li>写几个小的 Y86-64 程序</li>
+<li>熟悉 Y86-64 开发工具</li>
+</ul>
+</li>
+<li>Part B
+<ul>
+<li>对 SEQ 模拟器扩展一个新指令</li>
+</ul>
+</li>
+<li>Part C
+<ul>
+<li>优化 Y86-64 基准程序</li>
+<li>优化处理器设计</li>
+</ul>
+</li>
+</ul>
+<h2 id="环境配置" class="headerLink">
+    <a href="#%e7%8e%af%e5%a2%83%e9%85%8d%e7%bd%ae" class="header-mark"></a>2 环境配置</h2><p>输入如下命令解压模拟器压缩包并且进入目录进行编译：</p>]]></description></item><item><title>gdb &amp; asm activity</title><link>https://salvely.github.io/gdb-asm-activity/</link><pubDate>Thu, 29 Feb 2024 17:10:30 +0000</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/gdb-asm-activity/</guid><description><![CDATA[<h2 id="activity-1" class="headerLink">
+    <a href="#activity-1" class="header-mark"></a>1 Activity 1</h2><p>运行</p>
+<div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
+  <div class="
+    code-block-title 
+    
+    tw-flex 
+    tw-flex-row 
+    tw-justify-between 
+    tw-w-full tw-bg-bgColor-secondary
+    ">      
+    <button 
+      class="
+        tw-select-none 
+        tw-mx-2 
+        tw-block
+        group-[.is-open]:tw-rotate-90
+        tw-transition-[transform] 
+        tw-duration-500 
+        tw-ease-in-out
+        print:!tw-hidden"
+      disabled
+      aria-hidden="true"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></button>
+
+    <div class="code-block-title-bar tw-w-full">
+      <p class="tw-select-none !tw-my-1">bash</p>]]></description></item><item><title>Machine control activity</title><link>https://salvely.github.io/machine-control-activity/</link><pubDate>Thu, 29 Feb 2024 17:14:07 +0000</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/machine-control-activity/</guid><description><![CDATA[<h2 id="basic-control-flow" class="headerLink">
+    <a href="#basic-control-flow" class="header-mark"></a>1 Basic Control Flow</h2><p>首先回答 Q1：为什么 JZ 和 JE 指令相同？</p>
+<p>对于 JZ，即 jump if zero，在跳转之前，我们首先需要将其与 0 做差，判断结果的 ZF 是否等于 1。对于 JE，我们首先将两数做差（也可以使用<code>testq</code>指令？），然后判断 ZF 是否等于 1。JZ 和 JE 都是对 ZF 进行判断，然后进行跳转。</p>]]></description></item><item><title>Machine data activity</title><link>https://salvely.github.io/machine-data-activity/</link><pubDate>Thu, 29 Feb 2024 17:15:08 +0000</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/machine-data-activity/</guid><description><![CDATA[<p>输入<code>gdb ./data-layout</code>，开启<code>Data activity</code>之旅。</p>
+<h2 id="integers-and-local-variables" class="headerLink">
+    <a href="#integers-and-local-variables" class="header-mark"></a>1 Integers and Local Variables</h2><p><code>returnOne</code>的 C 语言版本如下：</p>
+<div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
+  <div class="
+    code-block-title 
+    
+    tw-flex 
+    tw-flex-row 
+    tw-justify-between 
+    tw-w-full tw-bg-bgColor-secondary
+    ">      
+    <button 
+      class="
+        tw-select-none 
+        tw-mx-2 
+        tw-block
+        group-[.is-open]:tw-rotate-90
+        tw-transition-[transform] 
+        tw-duration-500 
+        tw-ease-in-out
+        print:!tw-hidden"
+      disabled
+      aria-hidden="true"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></button>
+
+    <div class="code-block-title-bar tw-w-full">
+      <p class="tw-select-none !tw-my-1">c</p>]]></description></item><item><title>Machine procedures activity</title><link>https://salvely.github.io/machine-procedures-activity/</link><pubDate>Thu, 29 Feb 2024 17:18:15 +0000</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/machine-procedures-activity/</guid><description><![CDATA[<h2 id="activity-1" class="headerLink">
+    <a href="#activity-1" class="header-mark"></a>1 Activity 1</h2><p>输入<code>gdb --args ./calls</code>，输入<code>r</code>，提示如下：</p>
+<div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
+  <div class="
+    code-block-title 
+    
+    tw-flex 
+    tw-flex-row 
+    tw-justify-between 
+    tw-w-full tw-bg-bgColor-secondary
+    ">      
+    <button 
+      class="
+        tw-select-none 
+        tw-mx-2 
+        tw-block
+        group-[.is-open]:tw-rotate-90
+        tw-transition-[transform] 
+        tw-duration-500 
+        tw-ease-in-out
+        print:!tw-hidden"
+      disabled
+      aria-hidden="true"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></button>
+
+    <div class="code-block-title-bar tw-w-full">
+      <p class="tw-select-none !tw-my-1">text</p>]]></description></item><item><title>Bomb lab recitation</title><link>https://salvely.github.io/bomb-lab-recitation/</link><pubDate>Thu, 29 Feb 2024 17:19:39 +0000</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/bomb-lab-recitation/</guid><description><![CDATA[<h2 id="act1" class="headerLink">
+    <a href="#act1" class="header-mark"></a>1 act1</h2><p>依次输入如下指令：</p>
+<div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
+  <div class="
+    code-block-title 
+    
+    tw-flex 
+    tw-flex-row 
+    tw-justify-between 
+    tw-w-full tw-bg-bgColor-secondary
+    ">      
+    <button 
+      class="
+        tw-select-none 
+        tw-mx-2 
+        tw-block
+        group-[.is-open]:tw-rotate-90
+        tw-transition-[transform] 
+        tw-duration-500 
+        tw-ease-in-out
+        print:!tw-hidden"
+      disabled
+      aria-hidden="true"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></button>
+
+    <div class="code-block-title-bar tw-w-full">
+      <p class="tw-select-none !tw-my-1">text</p>]]></description></item><item><title>Bomb lab activity</title><link>https://salvely.github.io/bomb-lab-activity/</link><pubDate>Thu, 29 Feb 2024 17:11:59 +0000</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/bomb-lab-activity/</guid><description><![CDATA[<h2 id="part-i" class="headerLink">
+    <a href="#part-i" class="header-mark"></a>1 Part I</h2><p>输入如下命令：</p>
+<div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
+  <div class="
+    code-block-title 
+    
+    tw-flex 
+    tw-flex-row 
+    tw-justify-between 
+    tw-w-full tw-bg-bgColor-secondary
+    ">      
+    <button 
+      class="
+        tw-select-none 
+        tw-mx-2 
+        tw-block
+        group-[.is-open]:tw-rotate-90
+        tw-transition-[transform] 
+        tw-duration-500 
+        tw-ease-in-out
+        print:!tw-hidden"
+      disabled
+      aria-hidden="true"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></button>
+
+    <div class="code-block-title-bar tw-w-full">
+      <p class="tw-select-none !tw-my-1">text</p>]]></description></item><item><title>2025年3月第四周记录</title><link>https://salvely.github.io/2025%E5%B9%B43%E6%9C%88%E7%AC%AC%E5%9B%9B%E5%91%A8%E8%AE%B0%E5%BD%95/</link><pubDate>Mon, 17 Mar 2025 15:01:55 +0800</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/2025%E5%B9%B43%E6%9C%88%E7%AC%AC%E5%9B%9B%E5%91%A8%E8%AE%B0%E5%BD%95/</guid><description><![CDATA[<h2 id="本周任务" class="headerLink">
+    <a href="#%e6%9c%ac%e5%91%a8%e4%bb%bb%e5%8a%a1" class="header-mark"></a>1 本周任务</h2><p>本星期的目标是完成任务列表第一阶段的全部任务。包括各种学习任务、工作任务、生活任务等等。这些都是非常要紧的任务，本周必须完成，不完成不行。所以加油吧。</p>]]></description></item><item><title>ModernCppStarter配置过程记录</title><link>https://salvely.github.io/moderncppstarter%E9%85%8D%E7%BD%AE%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/</link><pubDate>Tue, 18 Mar 2025 19:19:44 +0800</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/moderncppstarter%E9%85%8D%E7%BD%AE%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/</guid><description><![CDATA[<p>之前很久没用<code>CMake</code>了，今天想要用C++重新实现一下各个数据结构，想要使用<code>CMake</code>来配置整个项目，并且在其中添加测试。无奈一上手发现<code>CMake</code>的语法都忘了（太久没写了，挠头）。所幸在<code>Github</code>上找到了一个非常好的<code>CMake</code>模板：<a href="https://github.com/TheLartians/ModernCppStarter" target="_blank" rel="noopener noreferrer">TheLartians/ModernCppStarter: 🚀 Kick-start your C++! A template for modern C++ projects using CMake, CI, code coverage, clang-format, reproducible dependency management and much more.</a>，下面详细记录该模板的配置过程。</p>]]></description></item><item><title>P1601 A+B Problem（高精）</title><link>https://salvely.github.io/p1601-a-b-problem%E9%AB%98%E7%B2%BE/</link><pubDate>Mon, 17 Mar 2025 19:31:52 +0800</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/p1601-a-b-problem%E9%AB%98%E7%B2%BE/</guid><description><![CDATA[<h2 id="题目描述" class="headerLink">
     <a href="#%e9%a2%98%e7%9b%ae%e6%8f%8f%e8%bf%b0" class="header-mark"></a>1 题目描述</h2><p>高精度加法，相当于 a+b problem，<strong>不用考虑负数</strong>。</p>
 <h2 id="输入格式" class="headerLink">
     <a href="#%e8%be%93%e5%85%a5%e6%a0%bc%e5%bc%8f" class="header-mark"></a>2 输入格式</h2><p>分两行输入。a,b≤10500。</p>

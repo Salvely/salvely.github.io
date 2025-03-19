@@ -1,0 +1,198 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>15-213 - 系列 - Wen Gao 的小站</title><link>https://salvely.github.io/series/15-213/</link><description>15-213 - 系列 - Wen Gao 的小站</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>iamgwen9@gmail.com (Salvely)</managingEditor><webMaster>iamgwen9@gmail.com (Salvely)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 26 Mar 2024 09:59:53 +0000</lastBuildDate><atom:link href="https://salvely.github.io/series/15-213/" rel="self" type="application/rss+xml"/><item><title>Arch Lab实验总结</title><link>https://salvely.github.io/arch-lab%E5%AE%9E%E9%AA%8C%E6%80%BB%E7%BB%93/</link><pubDate>Tue, 26 Mar 2024 09:59:53 +0000</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/arch-lab%E5%AE%9E%E9%AA%8C%E6%80%BB%E7%BB%93/</guid><description><![CDATA[<h2 id="前言" class="headerLink">
+    <a href="#%e5%89%8d%e8%a8%80" class="header-mark"></a>1 前言</h2><p>本实验中需要我们：</p>
+<ul>
+<li>设计和实现一个流水线化的 Y86-64 架构处理器</li>
+<li>优化处理器</li>
+<li>优化一个基准程序</li>
+</ul>
+<p>本实验包括 3 个部分：</p>
+<ul>
+<li>Part A
+<ul>
+<li>写几个小的 Y86-64 程序</li>
+<li>熟悉 Y86-64 开发工具</li>
+</ul>
+</li>
+<li>Part B
+<ul>
+<li>对 SEQ 模拟器扩展一个新指令</li>
+</ul>
+</li>
+<li>Part C
+<ul>
+<li>优化 Y86-64 基准程序</li>
+<li>优化处理器设计</li>
+</ul>
+</li>
+</ul>
+<h2 id="环境配置" class="headerLink">
+    <a href="#%e7%8e%af%e5%a2%83%e9%85%8d%e7%bd%ae" class="header-mark"></a>2 环境配置</h2><p>输入如下命令解压模拟器压缩包并且进入目录进行编译：</p>]]></description></item><item><title>CSAPP Chapter 4 - 处理器体系结构</title><link>https://salvely.github.io/ch4/</link><pubDate>Wed, 13 Mar 2024 09:59:48 +0000</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/ch4/</guid><description><![CDATA[<p>本章中我们需要实现 3 个目标：</p>
+<ul>
+<li>设计一个顺序结构的 Y86_64 架构处理器</li>
+<li>设计一个流水线结构的 Y86_64 架构处理器</li>
+<li>设计一个包含冒险控制的 Y86_64 架构处理器</li>
+</ul>
+<h2 id="y86_64-指令集架构" class="headerLink">
+    <a href="#y86_64-%e6%8c%87%e4%bb%a4%e9%9b%86%e6%9e%b6%e6%9e%84" class="header-mark"></a>1 Y86_64 指令集架构</h2><p>Y86_64 指令集架构的基本格式如下：</p>]]></description></item><item><title>Attack lab recitation</title><link>https://salvely.github.io/attack-lab-recitation/</link><pubDate>Thu, 29 Feb 2024 17:20:40 +0000</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/attack-lab-recitation/</guid><description><![CDATA[<p>输入<code>gdb activity</code>，开启 activity 之旅。</p>
+<blockquote>
+  <p>Objective: The goal of this activity is to input a string that causes the program to call win(0x15213),
+and thereby win a cookie.
+在开启之前，先查看一下<code>solve</code>函数的内容：</p>
+</blockquote><div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
+  <div class="
+    code-block-title 
+    
+    tw-flex 
+    tw-flex-row 
+    tw-justify-between 
+    tw-w-full tw-bg-bgColor-secondary
+    ">      
+    <button 
+      class="
+        tw-select-none 
+        tw-mx-2 
+        tw-block
+        group-[.is-open]:tw-rotate-90
+        tw-transition-[transform] 
+        tw-duration-500 
+        tw-ease-in-out
+        print:!tw-hidden"
+      disabled
+      aria-hidden="true"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></button>
+
+    <div class="code-block-title-bar tw-w-full">
+      <p class="tw-select-none !tw-my-1">c</p>]]></description></item><item><title>Bomb lab recitation</title><link>https://salvely.github.io/bomb-lab-recitation/</link><pubDate>Thu, 29 Feb 2024 17:19:39 +0000</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/bomb-lab-recitation/</guid><description><![CDATA[<h2 id="act1" class="headerLink">
+    <a href="#act1" class="header-mark"></a>1 act1</h2><p>依次输入如下指令：</p>
+<div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
+  <div class="
+    code-block-title 
+    
+    tw-flex 
+    tw-flex-row 
+    tw-justify-between 
+    tw-w-full tw-bg-bgColor-secondary
+    ">      
+    <button 
+      class="
+        tw-select-none 
+        tw-mx-2 
+        tw-block
+        group-[.is-open]:tw-rotate-90
+        tw-transition-[transform] 
+        tw-duration-500 
+        tw-ease-in-out
+        print:!tw-hidden"
+      disabled
+      aria-hidden="true"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></button>
+
+    <div class="code-block-title-bar tw-w-full">
+      <p class="tw-select-none !tw-my-1">text</p>]]></description></item><item><title>Machine procedures activity</title><link>https://salvely.github.io/machine-procedures-activity/</link><pubDate>Thu, 29 Feb 2024 17:18:15 +0000</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/machine-procedures-activity/</guid><description><![CDATA[<h2 id="activity-1" class="headerLink">
+    <a href="#activity-1" class="header-mark"></a>1 Activity 1</h2><p>输入<code>gdb --args ./calls</code>，输入<code>r</code>，提示如下：</p>
+<div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
+  <div class="
+    code-block-title 
+    
+    tw-flex 
+    tw-flex-row 
+    tw-justify-between 
+    tw-w-full tw-bg-bgColor-secondary
+    ">      
+    <button 
+      class="
+        tw-select-none 
+        tw-mx-2 
+        tw-block
+        group-[.is-open]:tw-rotate-90
+        tw-transition-[transform] 
+        tw-duration-500 
+        tw-ease-in-out
+        print:!tw-hidden"
+      disabled
+      aria-hidden="true"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></button>
+
+    <div class="code-block-title-bar tw-w-full">
+      <p class="tw-select-none !tw-my-1">text</p>]]></description></item><item><title>Machine data activity</title><link>https://salvely.github.io/machine-data-activity/</link><pubDate>Thu, 29 Feb 2024 17:15:08 +0000</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/machine-data-activity/</guid><description><![CDATA[<p>输入<code>gdb ./data-layout</code>，开启<code>Data activity</code>之旅。</p>
+<h2 id="integers-and-local-variables" class="headerLink">
+    <a href="#integers-and-local-variables" class="header-mark"></a>1 Integers and Local Variables</h2><p><code>returnOne</code>的 C 语言版本如下：</p>
+<div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
+  <div class="
+    code-block-title 
+    
+    tw-flex 
+    tw-flex-row 
+    tw-justify-between 
+    tw-w-full tw-bg-bgColor-secondary
+    ">      
+    <button 
+      class="
+        tw-select-none 
+        tw-mx-2 
+        tw-block
+        group-[.is-open]:tw-rotate-90
+        tw-transition-[transform] 
+        tw-duration-500 
+        tw-ease-in-out
+        print:!tw-hidden"
+      disabled
+      aria-hidden="true"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></button>
+
+    <div class="code-block-title-bar tw-w-full">
+      <p class="tw-select-none !tw-my-1">c</p>]]></description></item><item><title>Machine control activity</title><link>https://salvely.github.io/machine-control-activity/</link><pubDate>Thu, 29 Feb 2024 17:14:07 +0000</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/machine-control-activity/</guid><description><![CDATA[<h2 id="basic-control-flow" class="headerLink">
+    <a href="#basic-control-flow" class="header-mark"></a>1 Basic Control Flow</h2><p>首先回答 Q1：为什么 JZ 和 JE 指令相同？</p>
+<p>对于 JZ，即 jump if zero，在跳转之前，我们首先需要将其与 0 做差，判断结果的 ZF 是否等于 1。对于 JE，我们首先将两数做差（也可以使用<code>testq</code>指令？），然后判断 ZF 是否等于 1。JZ 和 JE 都是对 ZF 进行判断，然后进行跳转。</p>]]></description></item><item><title>Bomb lab activity</title><link>https://salvely.github.io/bomb-lab-activity/</link><pubDate>Thu, 29 Feb 2024 17:11:59 +0000</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/bomb-lab-activity/</guid><description><![CDATA[<h2 id="part-i" class="headerLink">
+    <a href="#part-i" class="header-mark"></a>1 Part I</h2><p>输入如下命令：</p>
+<div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
+  <div class="
+    code-block-title 
+    
+    tw-flex 
+    tw-flex-row 
+    tw-justify-between 
+    tw-w-full tw-bg-bgColor-secondary
+    ">      
+    <button 
+      class="
+        tw-select-none 
+        tw-mx-2 
+        tw-block
+        group-[.is-open]:tw-rotate-90
+        tw-transition-[transform] 
+        tw-duration-500 
+        tw-ease-in-out
+        print:!tw-hidden"
+      disabled
+      aria-hidden="true"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></button>
+
+    <div class="code-block-title-bar tw-w-full">
+      <p class="tw-select-none !tw-my-1">text</p>]]></description></item><item><title>gdb &amp; asm activity</title><link>https://salvely.github.io/gdb-asm-activity/</link><pubDate>Thu, 29 Feb 2024 17:10:30 +0000</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/gdb-asm-activity/</guid><description><![CDATA[<h2 id="activity-1" class="headerLink">
+    <a href="#activity-1" class="header-mark"></a>1 Activity 1</h2><p>运行</p>
+<div class="code-block highlight is-open show-line-numbers  tw-group tw-my-2">
+  <div class="
+    code-block-title 
+    
+    tw-flex 
+    tw-flex-row 
+    tw-justify-between 
+    tw-w-full tw-bg-bgColor-secondary
+    ">      
+    <button 
+      class="
+        tw-select-none 
+        tw-mx-2 
+        tw-block
+        group-[.is-open]:tw-rotate-90
+        tw-transition-[transform] 
+        tw-duration-500 
+        tw-ease-in-out
+        print:!tw-hidden"
+      disabled
+      aria-hidden="true"><svg class="icon"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></button>
+
+    <div class="code-block-title-bar tw-w-full">
+      <p class="tw-select-none !tw-my-1">bash</p>]]></description></item><item><title>CSAPP Ch3：程序的机器级表示</title><link>https://salvely.github.io/ch3/</link><pubDate>Thu, 29 Feb 2024 11:08:11 +0000</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/ch3/</guid><description></description></item></channel></rss>
