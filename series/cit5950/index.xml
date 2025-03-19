@@ -1,31 +1,31 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>CIT5950 - 系列 - Wen Gao 的小站</title><link>https://salvely.github.io/series/cit5950/</link><description>CIT5950 - 系列 - Wen Gao 的小站</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>iamgwen9@gmail.com (Salvely)</managingEditor><webMaster>iamgwen9@gmail.com (Salvely)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 06 Jan 2024 14:49:15 +0000</lastBuildDate><atom:link href="https://salvely.github.io/series/cit5950/" rel="self" type="application/rss+xml"/><item><title>HW4: Shell &amp; Pipe 实现记录</title><link>https://salvely.github.io/cit5950_hw4/</link><pubDate>Sat, 06 Jan 2024 14:49:15 +0000</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/cit5950_hw4/</guid><description><![CDATA[<h1 id="要求" class="headerLink">
-    <a href="#%e8%a6%81%e6%b1%82" class="header-mark"></a>要求</h1><p>实现一个只含有基本命令和 Pipe(不含重定向符及其他符号)的 Shell。</p>
-<h1 id="指南" class="headerLink">
-    <a href="#%e6%8c%87%e5%8d%97" class="header-mark"></a>指南</h1><h2 id="相关文件" class="headerLink">
-    <a href="#%e7%9b%b8%e5%85%b3%e6%96%87%e4%bb%b6" class="header-mark"></a>1 相关文件</h2><ul>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>CIT5950 - 系列 - Wen Gao 的小站</title><link>https://salvely.github.io/series/cit5950/</link><description>CIT5950 - 系列 - Wen Gao 的小站</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>iamgwen9@gmail.com (Salvely)</managingEditor><webMaster>iamgwen9@gmail.com (Salvely)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 06 Jan 2024 14:49:15 +0000</lastBuildDate><atom:link href="https://salvely.github.io/series/cit5950/" rel="self" type="application/rss+xml"/><item><title>HW4: Shell &amp; Pipe 实现记录</title><link>https://salvely.github.io/cit5950_hw4/</link><pubDate>Sat, 06 Jan 2024 14:49:15 +0000</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/cit5950_hw4/</guid><description><![CDATA[<h2 id="要求" class="headerLink">
+    <a href="#%e8%a6%81%e6%b1%82" class="header-mark"></a>1 要求</h2><p>实现一个只含有基本命令和 Pipe(不含重定向符及其他符号)的 Shell。</p>
+<h2 id="指南" class="headerLink">
+    <a href="#%e6%8c%87%e5%8d%97" class="header-mark"></a>2 指南</h2><h3 id="相关文件" class="headerLink">
+    <a href="#%e7%9b%b8%e5%85%b3%e6%96%87%e4%bb%b6" class="header-mark"></a>2.1 相关文件</h3><ul>
 <li><code>pipe_shell.cc</code>:在其中实现 shell 程序</li>
 <li><code>sh.cc</code>: 传入一个附带参数的程序，<code>fork()</code>子程序然后<code>execvp()</code>去执行它</li>
 <li><code>stdin_echo.cc</code>: 从<code>stdin</code>中读取，输出读取的内容，直到获取<code>EOF</code>，然后停止</li>
 <li><code>example_tests/</code>: 其中含有示例输入和对应输出</li>
 <li><code>solution_binaries/</code>: 官方答案执行码</li>
 </ul>
-<h2 id="具体要求" class="headerLink">
-    <a href="#%e5%85%b7%e4%bd%93%e8%a6%81%e6%b1%82" class="header-mark"></a>2 具体要求</h2><ul>
+<h3 id="具体要求" class="headerLink">
+    <a href="#%e5%85%b7%e4%bd%93%e8%a6%81%e6%b1%82" class="header-mark"></a>2.2 具体要求</h3><ul>
 <li>程序一次从标准输入读取一行命令</li>
 <li>一行命令包括命令本身和连接他们的 Pipe</li>
 <li>不停读入直到读入<code>EOF</code>/用户输入<code>exit</code></li>
 <li>在当前命令完成之后才能运行下一条命令</li>
 <li>命令可以是绝对路径或者是程序名（用<code>execvp</code>执行）</li>
 </ul>
-<h2 id="建议方法" class="headerLink">
-    <a href="#%e5%bb%ba%e8%ae%ae%e6%96%b9%e6%b3%95" class="header-mark"></a>3 建议方法</h2><ul>
+<h3 id="建议方法" class="headerLink">
+    <a href="#%e5%bb%ba%e8%ae%ae%e6%96%b9%e6%b3%95" class="header-mark"></a>2.3 建议方法</h3><ul>
 <li>通读该指南和提供的源代码，搞清楚作业是在做什么</li>
 <li>执行一下<code>./solution_binaries/pipe_shell</code>，看看结果长什么样</li>
 <li>开始实现<code>pipe_shell.cc</code>，从循环提示用户输入开始，并且打印<code>$</code>提示符，直到无输入或者遇到<code>EOF</code>/输入<code>exit</code></li>
 <li>实现<code>fork()</code>，<code>pipe</code>连接和命令的执行(<code>execvp</code>或者直接运行命令路径)</li>
 </ul>
-<h2 id="实现提示" class="headerLink">
-    <a href="#%e5%ae%9e%e7%8e%b0%e6%8f%90%e7%a4%ba" class="header-mark"></a>4 实现提示</h2><ul>
+<h3 id="实现提示" class="headerLink">
+    <a href="#%e5%ae%9e%e7%8e%b0%e6%8f%90%e7%a4%ba" class="header-mark"></a>2.4 实现提示</h3><ul>
 <li>可以使用<code>boost</code>库中的<code>split()</code>和<code>trim()</code>方法，</li>
 <li>使用<code>execvp(), fork(), pipe(), waitpid()</code>等函数</li>
 <li>注意不同情形：无管道，一个管道，多于一个管道</li>
@@ -38,8 +38,8 @@
 <li>每个子进程只需要两个端口，从上一个进程送来的读端口，和给下一个子进程的写端口</li>
 <li>子进程用完端口之后关闭端口，否则程序无法正常退出</li>
 </ul>
-<h2 id="测试" class="headerLink">
-    <a href="#%e6%b5%8b%e8%af%95" class="header-mark"></a>5 测试</h2><ul>
+<h3 id="测试" class="headerLink">
+    <a href="#%e6%b5%8b%e8%af%95" class="header-mark"></a>2.5 测试</h3><ul>
 <li>普通测试: <code>make &amp;&amp; ./pipe_shell</code></li>
 <li>内存泄漏测试: <code>valgrind --leak-check=full ./pipe_shell</code></li>
 <li>比较自己的程序和<code>solution_binaries/pipe_shell</code>的结果：</li>
@@ -68,8 +68,8 @@
     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg></button>
 
     <div class="code-block-title-bar tw-w-full">
-      <p class="tw-select-none !tw-my-1">bash</p>]]></description></item><item><title>CIT5950_HW3</title><link>https://salvely.github.io/cit5950_hw3/</link><pubDate>Thu, 04 Jan 2024 13:27:01 +0000</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/cit5950_hw3/</guid><description><![CDATA[<h1 id="overview" class="headerLink">
-    <a href="#overview" class="header-mark"></a>Overview</h1><p>本作业要求实现:</p>
+      <p class="tw-select-none !tw-my-1">bash</p>]]></description></item><item><title>CIT5950_HW3</title><link>https://salvely.github.io/cit5950_hw3/</link><pubDate>Thu, 04 Jan 2024 13:27:01 +0000</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/cit5950_hw3/</guid><description><![CDATA[<h2 id="overview" class="headerLink">
+    <a href="#overview" class="header-mark"></a>1 Overview</h2><p>本作业要求实现:</p>
 <ul>
 <li>Page 对象：
 <ul>
@@ -84,30 +84,30 @@
 </ul>
 </li>
 </ul>
-<h1 id="相关文件" class="headerLink">
-    <a href="#%e7%9b%b8%e5%85%b3%e6%96%87%e4%bb%b6" class="header-mark"></a>相关文件</h1><h2 id="page" class="headerLink">
-    <a href="#page" class="header-mark"></a>1 Page</h2><ul>
+<h2 id="相关文件" class="headerLink">
+    <a href="#%e7%9b%b8%e5%85%b3%e6%96%87%e4%bb%b6" class="header-mark"></a>2 相关文件</h2><h3 id="page" class="headerLink">
+    <a href="#page" class="header-mark"></a>2.1 Page</h3><ul>
 <li><code>Page.h</code></li>
 <li><code>Page.cc</code></li>
 <li><code>PageTemplates.cc</code></li>
 </ul>
-<h2 id="pagetable" class="headerLink">
-    <a href="#pagetable" class="header-mark"></a>2 PageTable</h2><ul>
+<h3 id="pagetable" class="headerLink">
+    <a href="#pagetable" class="header-mark"></a>2.2 PageTable</h3><ul>
 <li><code>PageTable.h</code></li>
 <li><code>PageTable.cc</code></li>
 </ul>
-<h2 id="testing" class="headerLink">
-    <a href="#testing" class="header-mark"></a>3 Testing</h2><ul>
+<h3 id="testing" class="headerLink">
+    <a href="#testing" class="header-mark"></a>2.3 Testing</h3><ul>
 <li><code>test_page.cc</code></li>
 <li><code>test_pagetable.cc</code></li>
 </ul>
-<h1 id="实现提示" class="headerLink">
-    <a href="#%e5%ae%9e%e7%8e%b0%e6%8f%90%e7%a4%ba" class="header-mark"></a>实现提示</h1><ul>
+<h2 id="实现提示" class="headerLink">
+    <a href="#%e5%ae%9e%e7%8e%b0%e6%8f%90%e7%a4%ba" class="header-mark"></a>3 实现提示</h2><ul>
 <li>map, unordered_map, list, vector 结构都很有用</li>
 <li><code>fstream</code>中的<code>read()</code>和<code>write()</code>很有用</li>
 <li>需要将<code>uint8_t</code>切换到<code>char</code>类型来使用<code>fstream</code></li>
 <li>利用初始化列表来初始化引用类型</li>
 </ul>
-<h1 id="page实现" class="headerLink">
-    <a href="#page%e5%ae%9e%e7%8e%b0" class="header-mark"></a>Page实现</h1><h2 id="page-源码分析" class="headerLink">
-    <a href="#page-%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90" class="header-mark"></a>1 Page 源码分析</h2><p><code>simplevm namespace</code>中存在一个类<code>Page</code>，此外还有一个<code>uint32_t</code>类型(<code>pno_t</code>类型)的变量，用来表示页号。<code>Page</code>页的解释如下:</p>]]></description></item></channel></rss>
+<h2 id="page实现" class="headerLink">
+    <a href="#page%e5%ae%9e%e7%8e%b0" class="header-mark"></a>4 Page实现</h2><h3 id="page-源码分析" class="headerLink">
+    <a href="#page-%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90" class="header-mark"></a>4.1 Page 源码分析</h3><p><code>simplevm namespace</code>中存在一个类<code>Page</code>，此外还有一个<code>uint32_t</code>类型(<code>pno_t</code>类型)的变量，用来表示页号。<code>Page</code>页的解释如下:</p>]]></description></item></channel></rss>

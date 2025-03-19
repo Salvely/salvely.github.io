@@ -1,5 +1,5 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>虚拟内存 - 标签 - Wen Gao 的小站</title><link>https://salvely.github.io/tags/%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98/</link><description>虚拟内存 - 标签 - Wen Gao 的小站</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>iamgwen9@gmail.com (Salvely)</managingEditor><webMaster>iamgwen9@gmail.com (Salvely)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 04 Jan 2024 13:27:01 +0000</lastBuildDate><atom:link href="https://salvely.github.io/tags/%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98/" rel="self" type="application/rss+xml"/><item><title>CIT5950_HW3</title><link>https://salvely.github.io/cit5950_hw3/</link><pubDate>Thu, 04 Jan 2024 13:27:01 +0000</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/cit5950_hw3/</guid><description><![CDATA[<h1 id="overview" class="headerLink">
-    <a href="#overview" class="header-mark"></a>Overview</h1><p>本作业要求实现:</p>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>虚拟内存 - 标签 - Wen Gao 的小站</title><link>https://salvely.github.io/tags/%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98/</link><description>虚拟内存 - 标签 - Wen Gao 的小站</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>iamgwen9@gmail.com (Salvely)</managingEditor><webMaster>iamgwen9@gmail.com (Salvely)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 04 Jan 2024 13:27:01 +0000</lastBuildDate><atom:link href="https://salvely.github.io/tags/%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98/" rel="self" type="application/rss+xml"/><item><title>CIT5950_HW3</title><link>https://salvely.github.io/cit5950_hw3/</link><pubDate>Thu, 04 Jan 2024 13:27:01 +0000</pubDate><author><name>Wen Gao</name><uri>https://github.com/Salvely</uri><email>iamgwen9@gmail.com</email></author><guid>https://salvely.github.io/cit5950_hw3/</guid><description><![CDATA[<h2 id="overview" class="headerLink">
+    <a href="#overview" class="header-mark"></a>1 Overview</h2><p>本作业要求实现:</p>
 <ul>
 <li>Page 对象：
 <ul>
@@ -14,30 +14,30 @@
 </ul>
 </li>
 </ul>
-<h1 id="相关文件" class="headerLink">
-    <a href="#%e7%9b%b8%e5%85%b3%e6%96%87%e4%bb%b6" class="header-mark"></a>相关文件</h1><h2 id="page" class="headerLink">
-    <a href="#page" class="header-mark"></a>1 Page</h2><ul>
+<h2 id="相关文件" class="headerLink">
+    <a href="#%e7%9b%b8%e5%85%b3%e6%96%87%e4%bb%b6" class="header-mark"></a>2 相关文件</h2><h3 id="page" class="headerLink">
+    <a href="#page" class="header-mark"></a>2.1 Page</h3><ul>
 <li><code>Page.h</code></li>
 <li><code>Page.cc</code></li>
 <li><code>PageTemplates.cc</code></li>
 </ul>
-<h2 id="pagetable" class="headerLink">
-    <a href="#pagetable" class="header-mark"></a>2 PageTable</h2><ul>
+<h3 id="pagetable" class="headerLink">
+    <a href="#pagetable" class="header-mark"></a>2.2 PageTable</h3><ul>
 <li><code>PageTable.h</code></li>
 <li><code>PageTable.cc</code></li>
 </ul>
-<h2 id="testing" class="headerLink">
-    <a href="#testing" class="header-mark"></a>3 Testing</h2><ul>
+<h3 id="testing" class="headerLink">
+    <a href="#testing" class="header-mark"></a>2.3 Testing</h3><ul>
 <li><code>test_page.cc</code></li>
 <li><code>test_pagetable.cc</code></li>
 </ul>
-<h1 id="实现提示" class="headerLink">
-    <a href="#%e5%ae%9e%e7%8e%b0%e6%8f%90%e7%a4%ba" class="header-mark"></a>实现提示</h1><ul>
+<h2 id="实现提示" class="headerLink">
+    <a href="#%e5%ae%9e%e7%8e%b0%e6%8f%90%e7%a4%ba" class="header-mark"></a>3 实现提示</h2><ul>
 <li>map, unordered_map, list, vector 结构都很有用</li>
 <li><code>fstream</code>中的<code>read()</code>和<code>write()</code>很有用</li>
 <li>需要将<code>uint8_t</code>切换到<code>char</code>类型来使用<code>fstream</code></li>
 <li>利用初始化列表来初始化引用类型</li>
 </ul>
-<h1 id="page实现" class="headerLink">
-    <a href="#page%e5%ae%9e%e7%8e%b0" class="header-mark"></a>Page实现</h1><h2 id="page-源码分析" class="headerLink">
-    <a href="#page-%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90" class="header-mark"></a>1 Page 源码分析</h2><p><code>simplevm namespace</code>中存在一个类<code>Page</code>，此外还有一个<code>uint32_t</code>类型(<code>pno_t</code>类型)的变量，用来表示页号。<code>Page</code>页的解释如下:</p>]]></description></item></channel></rss>
+<h2 id="page实现" class="headerLink">
+    <a href="#page%e5%ae%9e%e7%8e%b0" class="header-mark"></a>4 Page实现</h2><h3 id="page-源码分析" class="headerLink">
+    <a href="#page-%e6%ba%90%e7%a0%81%e5%88%86%e6%9e%90" class="header-mark"></a>4.1 Page 源码分析</h3><p><code>simplevm namespace</code>中存在一个类<code>Page</code>，此外还有一个<code>uint32_t</code>类型(<code>pno_t</code>类型)的变量，用来表示页号。<code>Page</code>页的解释如下:</p>]]></description></item></channel></rss>

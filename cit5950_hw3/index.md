@@ -1,7 +1,7 @@
 # CIT5950_HW3
 
 
-# Overview
+## Overview
 
 本作业要求实现:
 
@@ -12,34 +12,34 @@
   - 包含多个 page 以及`swap file`
   - 这里主要要求实现 LRU 算法
 
-# 相关文件
+## 相关文件
 
-## Page
+### Page
 
 - `Page.h`
 - `Page.cc`
 - `PageTemplates.cc`
 
-## PageTable
+### PageTable
 
 - `PageTable.h`
 - `PageTable.cc`
 
-## Testing
+### Testing
 
 - `test_page.cc`
 - `test_pagetable.cc`
 
-# 实现提示
+## 实现提示
 
 - map, unordered_map, list, vector 结构都很有用
 - `fstream`中的`read()`和`write()`很有用
 - 需要将`uint8_t`切换到`char`类型来使用`fstream`
 - 利用初始化列表来初始化引用类型
 
-# Page实现
+## Page实现
 
-## Page 源码分析
+### Page 源码分析
 
 `simplevm namespace`中存在一个类`Page`，此外还有一个`uint32_t`类型(`pno_t`类型)的变量，用来表示页号。`Page`页的解释如下:
 
@@ -89,9 +89,9 @@ Page 中还包括如下`private`变量:
 - `bool dirty_;`
   - 该 page 是否在 flush 后被写入
 
-## Page 设计
+### Page 设计
 
-## `PageTemplates.cc`实现
+### `PageTemplates.cc`实现
 
 `PageTemplates.cc`在`simplevm namespace`中。源码如下:
 
@@ -153,7 +153,7 @@ namespace simplevm {
 
 ```
 
-## `Page.h`定义
+### `Page.h`定义
 
 `Page.h`在`simplevm namespace`中。源码如下:
 
@@ -357,7 +357,7 @@ class Page {
 
 ```
 
-## `Page.cc`实现
+### `Page.cc`实现
 
 `Page.cc`在`simplevm namespace`中。源码如下:
 
@@ -522,9 +522,9 @@ namespace simplevm {
 
 ```
 
-# PageTable实现
+## PageTable实现
 
-## PageTable 源码分析
+### PageTable 源码分析
 
 PageTable 的作用如下：
 
@@ -575,7 +575,7 @@ PageTable 的作用如下：
 - `std::vector<Page*> page_list`: 记录所有在 physical memory 中的页
 - `std::unordered_map<pno_t,Page*> mp`:
 
-## `PageTable.h`设计
+### `PageTable.h`设计
 
 ```cpp
 #ifndef PAGE_TABLE_H_
@@ -748,7 +748,7 @@ class PageTable {
 
 ```
 
-## `PageTable.cc`实现
+### `PageTable.cc`实现
 
 ```cpp
 #include "./PageTable.h"
