@@ -34,7 +34,7 @@
 
 ## 整数的表示和运算
 
-![numbers.png](../Ch2/numbers.png)
+{{< figure src="/numbers.png" >}}
 
 > 1. 通过引用`#include <stdint.h>`，然后使用`INTX_t`，就可以使用特定位数的某种类型。可以使用宏`%" PRId32 "`来打印串。
 >
