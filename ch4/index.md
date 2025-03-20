@@ -46,29 +46,29 @@ Y86_64 指令集架构的基本格式如下：
 
 符合这个类别的指令包括：`rmmovq`，`mrmovq`，`pushq`，`popq`
 
-|阶段|`rmmovq`|`mrmovq`|`pushq`|`popq`|
-|-|-|-|-|-|
-|取指|<td colspan=3>$icode:ifun\leftarrow M_{1}[PC]$<br>$rA:rB\leftarrow M_{1}[PC+1]$<td>|
-||$valC\leftarrow M_{8}[PC+2]$|$valC\leftarrow M_{8}[PC+2]$|
-||$valP\leftarrow PC+10$|$valP\leftarrow PC+10$|$valP\leftarrow PC+2$|$valP\leftarrow PC+2$|
-|译码|$valA\leftarrow R[rA]$<br>$valB\leftarrow R[rB]$|<br>$valB\leftarrow R[rB]$|$valA\leftarrow R[rA]$<br>$valB\leftarrow R[rsp]$|$valA\leftarrow R[rsp]$<br>$valB\leftarrow R[rsp]$|
-|执行|$valE\leftarrow valB+valC$|$valE\leftarrow valB+valC$|$valE\leftarrow valB+(-8)$|$valE\leftarrow valB+8$|
-|访存|$M[valE]\leftarrow valA$|$valM\leftarrow M[valE]$|$M[valE]\leftarrow valA$|$valM\leftarrow M[valA]$|
-|写回| |$R[rA]\leftarrow valM$|$R[rsp]\leftarrow valE$|$R[rsp]\leftarrow valE$<br>$R[rA]\leftarrow valM$|
-|更新 PC|<td colspan=4>$PC\leftarrow valP$</td>|
+| 阶段    | `rmmovq`                                                                            | `mrmovq`                     | `pushq`                                           | `popq`                                             |
+| ----- | ----------------------------------------------------------------------------------- | ---------------------------- | ------------------------------------------------- | -------------------------------------------------- |
+| 取指    | <td colspan=3>$icode:ifun\leftarrow M_{1}[PC]$<br>$rA:rB\leftarrow M_{1}[PC+1]$<td> |                              |                                                   |                                                    |
+|       | $valC\leftarrow M_{8}[PC+2]$                                                        | $valC\leftarrow M_{8}[PC+2]$ |                                                   |                                                    |
+|       | $valP\leftarrow PC+10$                                                              | $valP\leftarrow PC+10$       | $valP\leftarrow PC+2$                             | $valP\leftarrow PC+2$                              |
+| 译码    | $valA\leftarrow R[rA]$<br>$valB\leftarrow R[rB]$                                    | <br>$valB\leftarrow R[rB]$   | $valA\leftarrow R[rA]$<br>$valB\leftarrow R[rsp]$ | $valA\leftarrow R[rsp]$<br>$valB\leftarrow R[rsp]$ |
+| 执行    | $valE\leftarrow valB+valC$                                                          | $valE\leftarrow valB+valC$   | $valE\leftarrow valB+(-8)$                        | $valE\leftarrow valB+8$                            |
+| 访存    | $M[valE]\leftarrow valA$                                                            | $valM\leftarrow M[valE]$     | $M[valE]\leftarrow valA$                          | $valM\leftarrow M[valA]$                           |
+| 写回    |                                                                                     | $R[rA]\leftarrow valM$       | $R[rsp]\leftarrow valE$                           | $R[rsp]\leftarrow valE$<br>$R[rA]\leftarrow valM$  |
+| 更新 PC | <td colspan=4>$PC\leftarrow valP$</td>                                              |                              |                                                   |                                                    |
 
 ### 跳转，调用及返回指令
 
 符合这个类别的指令包括：`jXX`，`cmovXX`，`call`，`ret`。这些指令中的部分指令也需要访存，并且涉及到修改 PC。
 
-|阶段|`call`|`cmovXX`|`jXX`|`ret`|
-|-|-|-|-|-|
-|取指|$icode:ifun\leftarrow M_{1}[PC]$<br>$valC\leftarrow M_{8}[PC+1]$<br>$valP\leftarrow PC+9$|$icode:ifun\leftarrow M_{1}[PC]$<br>$rA：rB\leftarrow M_{1}[PC+1]$<br>$valP\leftarrow PC+2$|$icode:ifun\leftarrow M_{1}[PC]$<br>$valC\leftarrow M_{8}[PC+1]$<br>$valP\leftarrow PC+9$|$icode:ifun\leftarrow M_{1}[PC]$<br><br><br>$valP\leftarrow PC+1$|
-|译码|$valB\leftarrow R[rsp]$|$valA\leftarrow R[rA]$| |$valA\leftarrow R[rsp]$<br>$valB\leftarrow R[rsp]$|
-|执行|$valE\leftarrow valB+(-8)$| |$Cnd\leftarrow Cond(CC,ifun)$|$valE\leftarrow valB+8$|
-|访存|$M[valE]\leftarrow valP$| | |$valM\leftarrow M[valA]$|
-|写回|$R[rsp]\leftarrow valE$|$R[rB]\leftarrow Cnd?valA$| |$R[rsp]\leftarrow valE$|
-|更新 PC|$PC\leftarrow valC$|$PC\leftarrow valP$|$PC\leftarrow Cnd?valC;valP$|$PC\leftarrow valM$|
+| 阶段    | `call`                                                                                    | `cmovXX`                                                                                   | `jXX`                                                                                     | `ret`                                                             |
+| ----- | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| 取指    | $icode:ifun\leftarrow M_{1}[PC]$<br>$valC\leftarrow M_{8}[PC+1]$<br>$valP\leftarrow PC+9$ | $icode:ifun\leftarrow M_{1}[PC]$<br>$rA：rB\leftarrow M_{1}[PC+1]$<br>$valP\leftarrow PC+2$ | $icode:ifun\leftarrow M_{1}[PC]$<br>$valC\leftarrow M_{8}[PC+1]$<br>$valP\leftarrow PC+9$ | $icode:ifun\leftarrow M_{1}[PC]$<br><br><br>$valP\leftarrow PC+1$ |
+| 译码    | $valB\leftarrow R[rsp]$                                                                   | $valA\leftarrow R[rA]$                                                                     |                                                                                           | $valA\leftarrow R[rsp]$<br>$valB\leftarrow R[rsp]$                |
+| 执行    | $valE\leftarrow valB+(-8)$                                                                |                                                                                            | $Cnd\leftarrow Cond(CC,ifun)$                                                             | $valE\leftarrow valB+8$                                           |
+| 访存    | $M[valE]\leftarrow valP$                                                                  |                                                                                            |                                                                                           | $valM\leftarrow M[valA]$                                          |
+| 写回    | $R[rsp]\leftarrow valE$                                                                   | $R[rB]\leftarrow Cnd?valA$                                                                 |                                                                                           | $R[rsp]\leftarrow valE$                                           |
+| 更新 PC | $PC\leftarrow valC$                                                                       | $PC\leftarrow valP$                                                                        | $PC\leftarrow Cnd?valC;valP$                                                              | $PC\leftarrow valM$                                               |
 
 ### 其他指令
 
