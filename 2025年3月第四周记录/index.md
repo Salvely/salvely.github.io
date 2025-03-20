@@ -8,7 +8,9 @@
 - [ ] 先把todo中的course全部刷完（部分精品系统课程，刷完后需要研究一下源码）
 - [ ] 再把CS-Journey中的其他任务全部完成
 - [ ] 投递简历面试，计算机学习任务全部完成
-- [ ] 剩下的任务全部完成
+- 📅 2025-03-20
+- [ ] 剩下的其他任务全部完成
+- 📅 2025-3-21
 
 ## 2025-03-17
 
@@ -49,29 +51,122 @@
 - [x] 吃早饭 ✅ 2025-03-19
 - [x] 洗鼻子 ✅ 2025-03-19
 - [x] 修复格式问题 ✅ 2025-03-19
-- [ ] 图片链接尚未修复，等候作者回复
+- [x] 图片链接尚未修复 ✅ 2025-03-19
 - 这个图片总是要放在static目录下，很烦啊，弄得都腰疼了，还耽误时间
 - 我好累啊，我真的累。啊，想要休息，可是我不可以休息，时间不容许我休息。
 - [x] 整理一下15-213过去的学习笔记和学习记录，继续完成后面的学习 ✅ 2025-03-19
+- [x] 洗个澡 ✅ 2025-03-19
 - 进入电院复试了，加油，奥里给！
-- 先把图像显示问题解决，然后接下来把学习任务全部完成。
+-  先把图像显示问题解决，然后接下来把学习任务全部完成。
+- 以后一定不要让博客配置这种事情耽误时间，知道吗？
+- 此外，要谨防腰间盘突出，每隔50分钟要做一套帕梅拉腹部训练；
+
+## 2025-3-20
+
+- 昨天晚上睡前总是在为可能的情况思考和担忧，我感觉过度思考和提前焦虑已经严重影响到我的正常生活了。我觉得我提前焦虑是因为我对自己的能力不太有自信，那么应该提升我的能力，而不是在能力不足的情况下去提前预演那些情况。我过去的提前预演，没有一个是奏效了的，最后事情都没有按照我的提前预演去走。所以应该转化为大量的行动，在行动完成之后稍微的准备一下就可以，而不是在那里空想，导致拖延了行动的时间。昨天晚上睡觉也没睡好，一直做梦，早上起来还头疼。这样下去可不行。正确的做法是白天把能做的事情都做完，晚上舒舒服服睡觉。
+- 加油吧！
+- 我妈要不要焦虑是她的课题，我焦不焦虑是我的课题。
+- 今天要做到的：除了吃饭出去以外，坚决不打开房门，不让阿黄进来，如果她大喊大叫，就把耳塞带上。
+- 我需要学习如何修炼内心的平静，不在乎外界的干扰。阿黄只是我修炼路上的第一个怪，我需要先通过阿黄这一关。
+- 在学习之前，为了达到内心的平静，我必须把我的情绪问题解决
+- 我烦躁的来源是，我本来复习压力就大，我的母亲却一而再再而三的不停的询问相关的事情，多次冲进我的房间里来拿东西，经常在外面大喊大叫，让我给她做事，喜欢大声说话打电话外放抖音歌曲，并且对自己的行为毫无悔改，总觉得自己也没干什么，但是总觉得我对她态度不好，脾气不好。一旦我对她有愤怒情绪，她就觉得是我情绪太过激动。她甚至在我凶她之后，会为了逼迫我就范，跟我采取冷暴力和其他的极端行为。
+- 我需要认识到的事情是：我的母亲改变不了，她从不认为自己有错，并且她整个人非常不成熟，心智水平和闹情绪的小孩是一个等级。
+- 那么我需要采取的措施是
+	- 根本上：不能再对她改变抱有期待，多年以来的实践经历证明她是无法被改变的；也不要再指望和她交流，能说服她；
+	- 政策上：QQ将她的消息隐藏会话；
+	- 物理上：
+		- 锁上房门，没有必要不出门应对她；
+		- 如果她外放抖音等，就带上耳塞学习；
+		- 如果她要求进入我房间拿东西，坚决不开门；
+		- 如果她要求我出去帮她做事，坚决不开门；
+	- 心理上：
+		- 我需要学习如何调节自己的情绪，学习如何快速恢复平静，学习如何在嘈杂和不太好的状态下做事，寻找到做事的动机；
+		- 快速调节情绪的方法：
+			- 把事情写下来
+			- 4-7-8方法深呼吸
+			- 喝水平静
+			- 健身，将不满发泄到力量上
+		- 一些心理窍门
+			- 我发现母亲的行为，只要稍加屏蔽，就无法影响到我，因此从根本上我无需担忧，只要专注做事情就可以；
+			- 阿德勒的心理学表明：母亲的行为是母亲的课题，我怎么响应是我的课题，这两种课题是分开的，互不影响的。我觉得母亲烦躁，很大程度上是因为我自己学习学的不好，而母亲在外面吵吵，所以为我不努力学习提供了一个心理上的借口。我应该警惕这种思维陷阱，把注意力专注在我自己的提升上；
+			- 要解决对父母的期待，最重要的是，把对父母的依恋的事情一条条的写下来，然后写出解决方案，然后一条条的解决：
+				- 依恋：期待父母能照顾自己，有事的时候能求助于父母，能得到父母的安慰
+				- 解决方案：
+					- 提升各方面的能力，找到工作，独立赚钱。
+					- 提升生活自理能力，能够自己做家务，完成家里各个事项；
+					- 健身，提升身体素质，不畏惧安全问题；
+				- 依恋：期待父母能了解自己、理解自己、支持自己
+				- 解决方案：
+					- 提升个人能力，社会自然会肯定我，不需要父母的肯定；
+					- 做出更多的突出成就，提升自信心，感受到自我的价值，不需要父母的肯定；
+					- 多赚钱，提升能力，自己就可以支持自己，还会有很多的家人朋友支持自己，不需要父母的支持；
+				- 依恋：期待父母能改变，能变成让人舒服的样子
+				- 解决方案：
+					- 意识到父母无法改变，所以应该努力脱离他们；
+					- 一步步的努力，不要为了当前还处在困境当中而感到不适，应该专注于自己的目标、不懈努力，只有努力才能脱离当前的困境，走向自己的未来；
+			- 核心
+				- 将`遇到事情-抱怨-不满-内耗`的模式，转化为`遇到事情-思考解决方案-一条条列举todo-做事解决`的模式
+		- 我做事情的动机
+			- 这个星期必须要把第一阶段所有的任务完成，这是重大的任务，这是不容置疑的，必须完成的。我所有的一切都是为了做到这件事，所以只要专注于这件事就可以，不要再考虑其他的任何事情。
+		- 精神
+			- 学习阿甘精神，专注、认真、坚持，一定会收获好的未来！
+	- 加油吧！姑娘！你一定可以突破重围，成为更好的自己！
+	- [x] 切断心理上对父母的依恋，和对于他们改变自己的期待。这不是冷血和冷漠，是对自己更好的关怀和成长。 ✅ 2025-03-20
+	- [x] 专注提升个人能力，去应对各种风险和挑战。 ✅ 2025-03-20
+- [x] 完成研究兴趣爱好综合素质调查 ✅ 2025-03-20
+- [x] 订复试酒店和车票 ✅ 2025-03-20
+- [x] 准备资格审查的材料准备好并上传 ✅ 2025-03-20
+- Ch3 笔记整理了一半，感觉有点累了。我感觉身体有点发软，脑子有点无力。开始有点学不动了。我的身体提醒，我现在必须休息，我确定我必须休息。
+- [x] 出去走一圈，晒个太阳（20分钟） ✅ 2025-03-20
+- 晒太阳太舒服了，我真的好喜欢晒太阳！
+- [x] 好好睡一觉，猛猛睡一觉 ✅ 2025-03-20
+- 每天要进行必要的休息，但是切记不可以变成摆烂。要持续的努力完成任务，把自己的人生当成一款RPG游戏，加大有游戏通关的力度。
+- 应该把任务切分成更小的单元，这样可以提高成就感。
+- 要防止压力增加，消耗血清素。
+- [x] 打水，喝点水，平复一下心情，降低一下压力 ✅ 2025-03-20
+- [x] 我的内心有点不太平静，有些压力，我需要排解一下再回来继续我的工作 ✅ 2025-03-20
+- 当个乐观的人，别做悲观的人。面对所有困难，都要一往无前。很多事情没你想像的那么难。
+- 无论这书读不读，下面这些事情都得做完，所以根本的目标应该是把它们做完，而不是在那里想来想去，人应该想尽一切办法去把这些事情完成，而不是感叹压力。
 - [ ] 15213 学习完成，完成所有课程任务和实验，并做实验笔记
-	- [ ] Ch3 总结完成
-	- [ ] Ch4 笔记复习
-	- [ ] Ch4 实验完成并做笔记
+	- [ ] Ch3 总结完成，把几个痛点难点打穿
+	- [ ] Ch4 笔记复习，彻底掌握CPU的设计方法
 	- [ ] Architecture Lab 完成
-	- [ ] 第五章阅读并做笔记
-	- [ ] 第六章阅读并做笔记
+	- [ ] 第五章阅读并做笔记，总结出程序优化的方法
+	- [ ] 第六章阅读并做笔记，深入理解存储系统模型
 	- [ ] Cache Lab 完成并做笔记
 	- [ ] Performance Lab 完成并做笔记
-	- [ ] 第七章阅读并做笔记
-	- [ ] 第八章阅读并做笔记
+	- [ ] 第七章阅读并做笔记，了解程序链接过程
+	- [ ] 第八章阅读并做笔记，学习异常控制流
 	- [ ] Shell Lab 完成并做笔记
-	- [ ] 第九章阅读并做笔记
+	- [ ] 第九章阅读并做笔记，理解虚拟内存
 	- [ ] Malloc Lab 完成并做笔记
-	- [ ] 第10-12章阅读并做笔记
+	- [ ] 第10-12章阅读并做笔记，系统级别IO和网络编程熟悉
 	- [ ] Proxy Lab 完成并做笔记
-	- [ ] 15-213 从The Memory Hierarchy ([pdf](https://www.cs.cmu.edu/~213/lectures/09-memory-hierarchy.pdf), [pptx](https://www.cs.cmu.edu/~213/lectures/09-memory-hierarchy.pptx))开始把后面PPT和活动全部完成
+	- [ ] 15-213 从The Memory Hierarchy ([pdf](https://www.cs.cmu.edu/~213/lectures/09-memory-hierarchy.pdf), [pptx](https://www.cs.cmu.edu/~213/lectures/09-memory-hierarchy.pptx))开始把后面PPT和活动全部完成，彻底结束CSAPP的学习
+- [ ] CS61C 课程学习完成
+- [ ] 清华大学数据结构课程学习完成：课本阅读完成+C++实现所有数据结构+课后习题完成+OJ所有习题完成
+- [ ] 清华rcore实验完成，并研究RCORE源码
+- [ ] Stanford CS144 实验完成，并研究课程源码
+- [ ] UCB chocopy项目完成，并研究课程源码
+- [ ] UCB DB 实验完成，并研究课程源码
+- [ ] CMU 15445 实验完成，并研究课程源码
+- [ ] [华科计算机组成原理实验完成(MIPS COA)(实验)](https://www.educoder.net/paths/hvbz6g9i)
+- [ ] Verilog 语言学习
+- [ ] HDLBits 刷题
+- [ ] 中科大 Verilog OJ 刷题
+- [ ] [中科大数字逻辑实验(Verilog)](https://soc.ustc.edu.cn/Digital/#_9)
+- [ ] [中科大数字逻辑提高班](https://soc.ustc.edu.cn/Digital-Pro/)
+- [ ] 重庆大学 CPU 实验
+- [ ] [北理工计算机组成原理](https://zanpu.spencerwoo.com/)
+- [ ] 雷自己动手写 CPU
+- [ ] [中科大计算机系统综合实验](https://soc.ustc.edu.cn/CECS/)
+- [ ] EECS151
+- [ ] UCB CS152
+- [ ] [计算机体系结构基础教材](https://foxsen.github.io/archbase/)
+- [ ] 汪文详 CPU 设计实战
+- [ ] 姚勇斌 超标量处理器设计
+- [ ] [Digital Design & Computer Architecture](https://safari.ethz.ch/digitaltechnik/spring2023/doku.php?id=start)
+- [ ] [CMU 18-447 Spring 2015](https://course.ece.cmu.edu/~ece447/s15/doku.php?id=start)
 - [ ] 九曲阑干深入理解计算机系统导读 + 华盛顿大学 CSE351 学习完成
 - [ ] 上海交通大学 ICS 课程所有期末习题刷完
 - [ ] [计算机系统概论(加州理工学院，无字幕)：Caltech - Introduction to Computing Systems；公开课推荐：CMU 15-213\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/av8707332/?vd_source=85acf0a59ded02e4c75ae1158baca207)
@@ -89,24 +184,12 @@
 - [ ] MIPS 单周期处理器设计
 - [ ] MIPS 多周期处理器设计
 - [ ] MIPS 流水线结构处理器设计
-- [ ] [华科计算机组成原理实验完成(MIPS COA)(实验)](https://www.educoder.net/paths/hvbz6g9i)
 - [ ] UCB CS61C 2023（RISC-V）
 - [ ] MIT 6.004
 - [ ] MIT 6.175 + 6.375
-- [ ] HDLBits 刷题
-- [ ] 中科大 Verilog OJ 刷题
-- [ ] [中科大数字逻辑实验(Verilog)](https://soc.ustc.edu.cn/Digital/#_9)
-- [ ] [中科大数字逻辑提高班](https://soc.ustc.edu.cn/Digital-Pro/)
 - [ ] 清华大学数字逻辑实验完成
 - [ ] 清华大学组成原理实验完成
-- [ ] 重庆大学 CPU 实验
-- [ ] [北理工计算机组成原理](https://zanpu.spencerwoo.com/)
-- [ ] 雷自己动手写 CPU
-- [ ] [中科大计算机系统综合实验](https://soc.ustc.edu.cn/CECS/)
 - [ ] DDCA 阅读 + DDCA 配套实验
-- [ ] EECS151
-- [ ] [Digital Design & Computer Architecture](https://safari.ethz.ch/digitaltechnik/spring2023/doku.php?id=start)
-- [ ] [CMU 18-447 Spring 2015](https://course.ece.cmu.edu/~ece447/s15/doku.php?id=start)
 - [ ] [清华大学组成原理实验](https://lab.cs.tsinghua.edu.cn/cod-lab-docs/labs/1-overview/)
 - [ ] [Computer Architecture](https://safari.ethz.ch/architecture/fall2022/doku.php?id=schedule)
 - [ ] [Seminar on Computer Architecture](https://safari.ethz.ch/architecture_seminar/spring2021/doku.php)
@@ -115,13 +198,8 @@
 - [ ] https://compas.cs.stonybrook.edu/~nhonarmand/courses/sp15/cse502/
 - [ ] https://pages.cs.wisc.edu/~sinclair/courses/cs752/fall2020/
 - [ ] 东南大学系统综合实验
-- [ ] [计算机体系结构基础教材](https://foxsen.github.io/archbase/)
-- [ ] 汪文详 CPU 设计实战
-- [ ] 姚勇斌 超标量处理器设计
 - [ ] 芯动力——芯片加速
 - [ ] 龙芯杯 CPU 设计
-- [ ] UCB CS152
-- [ ] CSAPP Chapter 3 x86_64 处理器设计学习
 - [ ] NJU ICS PA x86 赛道通关
 - [ ] 用 C 语言实现 Y86 处理器模拟器
 - [ ] NJU ICS PA 其他两个赛道通关
@@ -703,6 +781,7 @@
 | http://cs522.stanford.edu/                                                                                                                                             |
 | https://mlsys.stanford.edu/                                                                                                                                            |
 | https://mlsys.stanford.edu/                                                                                                                                            |
+
 - 数据科学
   - [ ] UCB Data8
   - [ ] UCB Data100
@@ -752,12 +831,8 @@
   - [ ] [CS 329S | Home (stanford-cs329s.github.io)](https://stanford-cs329s.github.io/)
   - [ ] [Stanford MLSys Seminar – Stanford MLSys Seminar Series](https://mlsys.stanford.edu/)
   - [ ] [机器学习系统：设计和实现 — 机器学习系统：设计和实现 1.0.0 documentation (openmlsys.github.io)](https://openmlsys.github.io/index.html)
-
-[DL Systems 学习指南 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/638238880?utm_campaign=&utm_medium=social&utm_oi=58911361073152&utm_psn=1654515914165968896&utm_source=com.tencent.tim)
-
-
-# 宾夕法尼亚大学课程
-
+  - [ ] [DL Systems 学习指南 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/638238880?utm_campaign=&utm_medium=social&utm_oi=58911361073152&utm_psn=1654515914165968896&utm_source=com.tencent.tim)
+- 宾夕法尼亚大学课程
 - [ ] [CIS 1200: Programming Languages and Techniques (upenn.edu)](https://www.seas.upenn.edu/~cis120/23sp/)
 - [ ] [CIS 1210 Data Structures](https://www.cis.upenn.edu/~cis1210/current/index.html)
 - [x] [CIS 2400 (upenn.edu)](https://www.seas.upenn.edu/~cis2400/current/)
@@ -780,9 +855,7 @@
 - [ ] [Applied Machine Learning](https://www.seas.upenn.edu/~cis5190/spring2023/index.html)
 - [ ] [Data structure and algorithms](https://www.seas.upenn.edu/~cis1210/current/index.html)
 - [ ] [Web System](https://cis5550.seas.upenn.edu/)
-
-# Harvey Mudd 课程
-
+- Harvey Mudd 课程
 - [ ] [Computer Systems](https://www.cs.hmc.edu/~geoff/classes/hmc.cs105.202301/)
       [Sp20](https://www.cs.hmc.edu/~geoff/classes/hmc.cs105.202301/)
       [Sp22](https://www.cs.hmc.edu/~geoff/classes/hmc.cs105.202201/syllabus.html)
@@ -802,9 +875,7 @@
       [Win16](https://www.cs.toronto.edu/~ahchinaei/teaching/2016jan/csc358/)
 - [ ] [Machine Learning](https://www.cs.hmc.edu/~yjw/teaching/cs158/)
 - [ ] [Neural Networks](https://www.cs.hmc.edu/~rhodes/cs152/schedule.html)
-
-# Gatech 课程
-
+- Gatech 课程
 - [ ] [Object & Design](https://cs2340.gitlab.io/)
 - [ ] [Computational Foundations for Data Analytics](https://datamastery.gitlab.io/de/)
 - [ ] [Intro to System](https://faculty.cc.gatech.edu/~rama/CS2200-External/)
@@ -838,24 +909,25 @@
 - [ ] [Computer Simulation](https://cx4230.gatech.edu/sp17/)
       [lab](https://github.com/rvuduc/cx4230sp17labs)
 - [ ] [Computer Graphics](https://cs3451-f21.github.io/schedule/)
-
-# 其他课程
-
-- [KAIST 系列课程](https://cs.kaist.ac.kr/education/undergraduate)
-- [awesome-courses](https://github.com/prakhar1989/awesome-courses)
-- [hackway-roadmap](https://hackway.org/docs/cs/intro)
-- [Shanghai Tech](https://i-techx.github.io/iTechX/dashboard)
-- [数据结构课程合集](https://zhuanlan.zhihu.com/p/100310942)
-- [伯克利课程探索](https://www.zhihu.com/tardis/zm/art/392093161?source_id=1005)
-- [斯坦福课程合集](https://docs.google.com/spreadsheets/d/1zfw8nPvJeewxcFUBpKUKmAVE8PjnJI7H0CKimdQXxr0/htmlview)
-- [Gatech 课程合集](https://gt-student-wiki.org/mediawiki/index.php/Category:Courses)
-- [Cornell 课程合集](https://www.cs.cornell.edu/courseinfo/listofcscourses)
-- [Yale 课程合集](https://zoo.cs.yale.edu/classes/)
-- [上海交通大学 ACM 班](https://acm.sjtu.edu.cn/wiki/%E8%AF%BE%E7%A8%8B%E4%B8%AD%E5%BF%83)
-- [浙江大学图灵班](https://zju-turing.github.io/TuringCourses/)
-
-# 其他资料
-
-- [体系结构课程学习路线](https://zhuanlan.zhihu.com/p/654821469)
-- [嵌入式学习路线](https://zhuanlan.zhihu.com/p/457772251)
+- 其他课程
+	- [KAIST 系列课程](https://cs.kaist.ac.kr/education/undergraduate)
+	- [awesome-courses](https://github.com/prakhar1989/awesome-courses)
+	- [hackway-roadmap](https://hackway.org/docs/cs/intro)
+	- [Shanghai Tech](https://i-techx.github.io/iTechX/dashboard)
+	- [数据结构课程合集](https://zhuanlan.zhihu.com/p/100310942)
+	- [伯克利课程探索](https://www.zhihu.com/tardis/zm/art/392093161?source_id=1005)
+	- [斯坦福课程合集](https://docs.google.com/spreadsheets/d/1zfw8nPvJeewxcFUBpKUKmAVE8PjnJI7H0CKimdQXxr0/htmlview)
+	- [Gatech 课程合集](https://gt-student-wiki.org/mediawiki/index.php/Category:Courses)
+	- [Cornell 课程合集](https://www.cs.cornell.edu/courseinfo/listofcscourses)
+	- [Yale 课程合集](https://zoo.cs.yale.edu/classes/)
+	- [上海交通大学 ACM 班](https://acm.sjtu.edu.cn/wiki/%E8%AF%BE%E7%A8%8B%E4%B8%AD%E5%BF%83)
+	- [浙江大学图灵班](https://zju-turing.github.io/TuringCourses/)
+- 其他资料
+	- [体系结构课程学习路线](https://zhuanlan.zhihu.com/p/654821469)
+	- [嵌入式学习路线](https://zhuanlan.zhihu.com/p/457772251)
+- [ ] CS-Journey中的项目全部搞完
+- [ ] 投递工作简历，等待面试
+- [ ] 把任务列表剩下的其他内容全部完成
+- [ ] 打扮一下自己，提升个人形象
+- [ ] 休息，等待各种考核来临
 
