@@ -24,6 +24,20 @@
             }
           },
           {
+            "id": "18ec268d339b83df",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          },
+          {
             "id": "30d6aa5340ea55c1",
             "type": "leaf",
             "pinned": true,
@@ -56,21 +70,21 @@
             }
           },
           {
-            "id": "992c4bb9ee9e4232",
+            "id": "0c6ecd2655b51dc9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch3.md",
+                "file": "posts/cs/系统入门/15-213/15-213 Lab/Arch Lab实验总结.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ch3"
+              "title": "Arch Lab实验总结"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -102,7 +116,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": ".png",
+                "query": "arch lab实验",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -244,16 +258,23 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "992c4bb9ee9e4232",
+  "active": "0c6ecd2655b51dc9",
   "lastOpenFiles": [
+    "posts/cs/系统入门/15-213/15-213 Lab/Arch lab 实验总结/index.md",
+    "posts/cs/系统入门/15-213/15-213 Lab/Arch Lab实验总结.md",
+    "posts/cs/系统入门/15-213/15-213 Lab/Arch lab 实验总结/phase5.png",
+    "posts/cs/系统入门/15-213/15-213 Lab/Arch lab 实验总结/frame3.png",
+    "posts/cs/系统入门/15-213/15-213 Lab/Arch lab 实验总结/frame1.png",
+    "posts/cs/系统入门/15-213/15-213 Lab/Arch lab 实验总结/frame-last.png",
+    "posts/cs/系统入门/15-213/15-213 Lab/Arch lab 实验总结/frame.png",
     "posts/journal/2025年3月第四周记录.md",
-    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch3.md",
-    "roadmap/计算机科学之路.md",
     "task/任务列表.md",
+    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch5.md",
+    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/index.md",
+    "roadmap/计算机科学之路.md",
+    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch3.md",
     "posts/cs/系统入门/15-213/15-213 Activity/Machine control activity/index.md",
     "posts/cs/系统入门/15-213/15-213 Lab/Bomb lab 实验总结/index.md",
-    "posts/cs/系统入门/15-213/15-213 Lab/Attack lab 实验总结/index.md",
-    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/index.md",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch2/index.md",
     "posts/cs/image-tests/index.md",
     "posts/cs/image-tests/numbers.png",
@@ -262,14 +283,12 @@
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch2/numbers.png",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch2/Ch2.md",
     "posts/cs/image-tests/pin_black.png",
-    "posts/cs/image-tests/pin_red.png",
     "posts/tests/image-tests/index.md",
     "posts/cs/image-tests",
     "posts/tests/markdown-tests/index.en.md",
     "posts/cs/系统入门/15-213/15-213 Activity/Machine control activity/Machine control activity.md",
     "posts/pwa-support/index.zh-cn.md",
     "posts/basic-markdown-syntax/index.zh-cn.md",
-    "posts/cs/系统入门/15-213/15-213 Lab/Attack lab 实验总结.md",
     "posts/others/旅游出差必备物品列表.md",
     "posts/theme-documentation-built-in-shortcodes/index.zh-cn.md",
     "posts/theme-documentation-basics/index.zh-cn.md",
@@ -277,13 +296,7 @@
     "posts/theme-documentation-extended-shortcodes/index.zh-cn.md",
     "posts/tests/builtin-shortcodes-tests/index.en.md",
     "posts/tests/extend-shortcodes-tests/index.en.md",
-    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/Ch4.md",
-    "posts/pwa-support/featured-image.webp",
-    "posts/how-to-DoIt/create-diagrams/index.zh-cn.md",
-    "posts/cs/系统入门/15-213/15-213 Lab/Bomb lab 实验总结/fun7.png",
-    "posts/cs/系统入门/15-213/15-213 Activity/Machine control activity/mov.jpg",
     "zh-cn",
-    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/访存阶段.png",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/writeback.drawio",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/updatepc.drawio",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/seq.drawio",
