@@ -285,7 +285,7 @@ verilog/ # 负责从HCL代码转化为Verilog代码
 - 写并且模拟下面 3 个 Y86-64 程序，每个程序的行为都在`examples.c`中
 - 把姓名放在程序开头的注释里
 - 如何测试程序
-  - 将其和 YIS 结合在一起
+  - 用YAS汇编器编译
   - 用 YIS 模拟器运行
 - Y86-64 指令集架构对于函数的处理和 x86-64 相同
   - 传参方式相同
@@ -363,9 +363,232 @@ ele3:
     .quad 0
 ```
 
+在开始写函数之前，我们需要在源文件中初始化好一些内容：
+
+```asm
+# Execution begins at address 0
+        .pos 0
+        irmovq stack, %rsp
+        call main
+        halt
+        
+# Sample linked list
+        .align 8
+ele1:
+        .quad 0x00a
+        .quad ele2
+ele2:
+        .quad 0x0b0
+        .quad ele3
+ele3:
+        .quad 0xc00
+        .quad 0
+
+main:
+		# 此处放置main程序
+
+sum_list:
+		# 此处放置sum_list程序
+		
+		.pos 0x200
+stack:
+```
+
+首先我们需要对源程序进行分析：
+
+```c
+/* linked list element */
+typedef struct ELE {
+    long val;
+    struct ELE *next;
+} *list_ptr;
+```
+
+在这个结构体中，`long`是8个字节，`struct ElE*`是一个指针，占8个字节。这个结构体一共16个字节。那么在计算的过程中，如果传入的是结构体的指针，那么我们通过直接解引这个指针获取`long val`，然后通过`list_ptr + 8`来获取到`next`的地址，通过`*(list_ptr + 8)`来获取`next`指向的结点的地址。
+
+我们要通过`main`调用`sum_list`，需要的步骤有：
+
+1. 将`ele1`的地址放在`%rdi`中
+2. `call sum_list`
+3. `ret`
+
+因此用`Y86-64`汇编可写为：
+
+```asm
+main:
+        # 传递参数
+        irmovq ele1, %rdi
+        call sum_list
+        ret
+```
+
+然后就是观察`sum_list`函数：
+
+```c
+/* sum_list - Sum the elements of a linked list */
+long sum_list(list_ptr ls)
+{
+    long val = 0;
+    while (ls) {
+        val += ls->val;
+        ls = ls->next;
+    }
+    return val;
+}
+```
+
+这个函数获取一个`list_ptr`型的值，可以看到`list_ptr`型就是一个`ElE`型指针，那么这个值占8位。而且因为只有1个参数，因此它会存储在`%rdi`中。根据之前的学习，我们进行过程调用的步骤为：
+
+1. 保存之前的`%rbp`和`%rbx`到栈上；
+	- 本题不需要；
+2. 腾出一部分栈空间；
+	- 本题`val`就是返回值，直接保存在`%rax`中；
+3. 将局部变量保存在在栈上；
+	- 本题不需要；
+4. 保存调用者保存寄存器的值，到被调用者保存寄存器，这样可以在调用完成后从中取出原值；（这是一种保存调用者保存寄存器值的方法）
+	- 本题不需要；
+5. 部分的值的地址需要作为参数传递，那么这些值必须压在栈上，以获取地址；
+	- 本题不需要；
+6. 从第n到第7把参数依次压在栈上，第7个在栈顶；
+	- 本题不需要；
+7. 把其他6个参数保存到寄存器中；
+	- `ls`保存在`%rdi`中；
+8. `call`指令调用过程；
+	- 本题不需要；
+9. 从栈中获取到值，以及从`%rax`中获取到返回值，进行计算；
+	- `val`的值在`%rax`中
+10. 恢复栈空间；
+	- 本题不需要；
+11. 还原调用当前过程的`%rbp`和`%rbx`；
+	- 本题不需要；
+12. 调用`ret`返回；
+
+而现在问题来了，我们需要设计循环的结构，获取`ls`、`ls->val`和`ls->next`。
+
+- 循环结构可采用`jump to middle`方法
+- `ls = %rdi`，`ls->val = *(ls)`，`ls->next = *(ls + 8)`
+
+那么整体过程调用的内容为：
+
+```asm
+sum_list:
+	irmovq $0, %rax # val = 0 -> rax
+	andq %rdi, %rdi
+	jmp test
+loop:
+	mrmovq (%rdi), %r10
+	addq %r10, %rax
+	mrmovq 8(%rdi), %rsi
+        rrmovq %rsi, %rdi
+        andq %rdi, %rdi
+test:
+	jne loop
+	ret
+```
+
+因此总的程序可写为：
+
+> [!WARNING]
+> 注意：
+> 1. 一定要在循环测试前`andq`，否则测试通不过。
+> 2. `stack`后要加一个空行，否则编译通不过。
+
+```asm
+# Execution begins at address 0
+        .pos 0
+        irmovq stack, %rsp
+        call main
+        halt
+        
+# Sample linked list
+        .align 8
+ele1:
+        .quad 0x00a
+        .quad ele2
+ele2:
+        .quad 0x0b0
+        .quad ele3
+ele3:
+        .quad 0xc00
+        .quad 0
+
+main:
+        # 传递参数
+        irmovq ele1, %rdi
+        call sum_list
+        ret
+
+sum_list:
+	irmovq $0, %rax # val = 0 -> rax
+	andq %rdi, %rdi
+	jmp test
+loop:
+	mrmovq (%rdi), %r10
+	addq %r10, %rax
+	mrmovq 8(%rdi), %rdi
+        andq %rdi, %rdi
+test:
+	jne loop
+	ret
+
+        .pos 0x200
+stack:
+
+```
+
 ### 程序二：`rsum.ys`
 
 写一个 Y86-64 程序，它可以递归的计算链表的元素的和，还是用上面的那个三个元素的链表进行测试。
+
+`rsum.ys`和上述程序不一样的地方在于，它使用了递归的子过程，并且把`ls->next`作为子过程的参数传递。此外，它使用了`if-else`结构。需要注意的是，我们没有将局部变量压在栈上，而是使用`%rsi`来存储，但是每次迭代过程中都会产生新的值存在`%rsi`上，因此为了保存`%rsi`，我们需要把`%rsi`压在栈上，在调用返回后从栈中弹出，和`%rax`相加。
+
+完整程序如下：
+
+```asm
+# Execution begins at address 0
+        .pos 0
+        irmovq stack, %rsp
+        call main
+        halt
+        
+# Sample linked list
+        .align 8
+ele1:
+        .quad 0x00a
+        .quad ele2
+ele2:
+        .quad 0x0b0
+        .quad ele3
+ele3:
+        .quad 0xc00
+        .quad 0
+
+main:
+        # 传递参数
+        irmovq ele1, %rdi
+        call rsum_list
+        ret
+
+rsum_list:
+        andq %rdi, %rdi
+        je else
+if:
+        mrmovq (%rdi), %rsi
+        pushq %rsi
+        mrmovq 8(%rdi), %rdi
+        call rsum_list
+        popq %rsi
+        addq %rsi, %rax
+        jmp done
+else:
+        irmovq $0, %rax
+done:
+        ret
+
+        .pos 0x200
+stack:
+
+```
 
 ### 程序三：`copy.ys`
 
@@ -389,6 +612,181 @@ dest:
     .quad 0x111
     .quad 0x222
     .quad 0x333
+```
+
+这个函数和之前的函数又不一样，我们来分析一下：
+
+```c
+long copy_block(long *src, long *dest, long len)
+{
+    long result = 0;
+    while (len > 0) {
+        long val = *src++;
+        *dest++ = val;
+        result ^= val;
+        len--;
+    }
+    return result;
+}
+```
+
+这里我们需要通过`main`传入3个参数，`src`、`dest`和`len`。这三个参数都是8个字节，并且前两个是地址。因此我们通过`%rdi %rsi %rdx`三个寄存器传入。因此`main`部分的代码可以写为
+
+```asm
+main:
+        # 传递参数
+        irmovq src, %rdi
+        irmovq dest, %rsi
+        irmovq $3, %rdx
+        call copy_block
+        ret
+```
+
+而在函数中，没有其他的过程调用，因此不需要保存什么变量到栈上。对于`result`，我们可以保存在`%rax`上（因为最后要返回），那么整体的代码可以翻译为：
+
+```asm
+copy_block:
+	irmovq $0, %rax # long result = 0
+while:
+	andq %rdx, %rdx 
+	jle done
+	addq $1, %rdi # src++
+	mrmovq (%rdi), %r8 # %r8 = val = *src
+	addq $1, %rsi
+	rmmovq %r8,(%rsi)
+	xorq %r8, %rax
+	subq $1, %rdx
+	jmp while
+done:
+	ret
+```
+
+我们进行汇编，发现汇编不成功，报错如下：
+
+```bash
+../misc/yas copy.ys
+Error on line 32: Expecting Register ID
+Line 32, Byte 0x0087:   addq $1, %rdi # src++
+Error on line 34: Expecting Register ID
+Line 34, Byte 0x0093:   addq $1, %rsi
+Error on line 37: Expecting Register ID
+Line 37, Byte 0x00a1:   subq $1, %rdx
+make: *** [Makefile:39: copy.yo] Error 1
+```
+
+回顾`Y86-64`指令集，我们想起来，不可以直接把常数加到寄存器上，因此我们需要用`%r9`寄存器来存储常数1，然后把寄存器相加。代码如下：
+
+```asm
+copy_block:
+	irmovq $0, %rax # long result = 0
+    irmovq $1, %r9
+while:
+	andq %rdx, %rdx 
+	jle done
+	addq %r9, %rdi # src++
+	mrmovq (%rdi), %r8 # %r8 = val = *src
+	addq %r9, %rsi
+	rmmovq %r8,(%rsi)
+	xorq %r8, %rax
+	subq %r9, %rdx
+	jmp while
+done:
+	ret
+```
+
+这段代码虽然编译可以通过，但是我们发现还是有问题，数组一的内容压根就没有复制到数组二中去。经过仔细检查，我们发现问题出在`src++`和`dest++`的处理上，这里`src`和`dest`是指向`long`类型的指针，但是我们在`++`的时候只加了1，按理来说应该加上8（`sizeof(long)`）个单位。我们修改一下程序，新增一个变量`%r10 = 8`。
+
+```asm
+copy_block:
+	irmovq $0, %rax # long result = 0
+        irmovq $1, %r9
+        irmovq $8, %r10
+while:
+	andq %rdx, %rdx 
+	jle done
+	addq %r10, %rdi # src++
+	mrmovq (%rdi), %r8 # %r8 = val = *src
+	addq %r10, %rsi
+	rmmovq %r8,(%rsi)
+	xorq %r8, %rax
+	subq %r9, %rdx
+	jmp while
+done:
+	ret
+```
+
+> [!TIP]
+> 这里我们把数组第二项和第三项成功复制了，但是数组第一项没有。这是因为我们先进行了加，然后才进行的解引运算。但是其实我在网上查找资料的时候发现，C++中后增代码的运算级别是是高于`*`的，所以我才把程序写成这样。如果按照题目的要求，应该是先`*`然后再`++`，也就是说这段代码中的解引和递增的指令顺序应该反过来，才能完成程序的目标。
+
+根据上述Tip，我们进行如下改动：
+
+```asm
+copy_block:
+	irmovq $0, %rax # long result = 0
+        irmovq $1, %r9
+        irmovq $8, %r10
+while:
+	andq %rdx, %rdx 
+	jle done
+	mrmovq (%rdi), %r8 # %r8 = val = *src
+        addq %r10, %rdi # src++
+	rmmovq %r8,(%rsi)
+        addq %r10, %rsi
+	xorq %r8, %rax
+	subq %r9, %rdx
+	jmp while
+done:
+	ret
+```
+
+成功！完整代码如下：
+
+```asm
+# Execution begins at address 0
+        .pos 0
+        irmovq stack, %rsp
+        call main
+        halt
+        
+.align 8
+# Source block
+src:
+    .quad 0x00a
+    .quad 0x0b0
+    .quad 0xc00
+# Destination block
+dest:
+    .quad 0x111
+    .quad 0x222
+    .quad 0x333
+
+main:
+        # 传递参数
+        irmovq src, %rdi
+        irmovq dest, %rsi
+        irmovq $3, %rdx
+        call copy_block
+        ret
+
+copy_block:
+	irmovq $0, %rax # long result = 0
+        irmovq $1, %r9
+        irmovq $8, %r10
+while:
+	andq %rdx, %rdx 
+	jle done
+	mrmovq (%rdi), %r8 # %r8 = val = *src
+        addq %r10, %rdi # src++
+	rmmovq %r8,(%rsi)
+        addq %r10, %rsi
+	xorq %r8, %rax
+	subq %r9, %rdx
+	jmp while
+done:
+	ret
+
+        .pos 0x200
+stack:
 ```
 
 ## Part B
