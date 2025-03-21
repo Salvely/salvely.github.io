@@ -70,6 +70,20 @@
             }
           },
           {
+            "id": "6c799d0a94334223",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch3.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ch3"
+            }
+          },
+          {
             "id": "0c6ecd2655b51dc9",
             "type": "leaf",
             "state": {
@@ -83,7 +97,8 @@
               "title": "Arch Lab实验总结"
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -257,21 +272,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "efee55c786d8dd69",
+  "active": "0c6ecd2655b51dc9",
   "lastOpenFiles": [
-    "posts/cs/系统入门/15-213/15-213 Lab/Arch Lab实验总结.md",
-    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/index.md",
-    "task/任务列表.md",
     "posts/journal/2025年3月第四周记录.md",
-    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch5.md",
+    "posts/cs/系统入门/15-213/15-213 Lab/Arch Lab实验总结.md",
+    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch3.md",
+    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/index.md",
     "roadmap/计算机科学之路.md",
+    "task/任务列表.md",
+    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch5.md",
     "posts/cs/系统入门/15-213/15-213 Lab/Attack lab 实验总结/index.md",
     "posts/cs/系统入门/15-213/15-213 Lab/Attack lab 实验总结/phase5.png",
     "posts/cs/系统入门/15-213/15-213 Lab/Attack lab 实验总结/frame3.png",
     "posts/cs/系统入门/15-213/15-213 Lab/Attack lab 实验总结/frame1.png",
     "posts/cs/系统入门/15-213/15-213 Lab/Attack lab 实验总结/frame-last.png",
     "posts/cs/系统入门/15-213/15-213 Lab/Attack lab 实验总结/frame.png",
-    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch3.md",
     "posts/cs/系统入门/15-213/15-213 Activity/Machine control activity/index.md",
     "posts/cs/系统入门/15-213/15-213 Lab/Bomb lab 实验总结/index.md",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch2/index.md",
