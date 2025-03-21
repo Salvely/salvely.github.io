@@ -791,7 +791,56 @@ stack:
 
 ## Part B
 
+> [!WARNING]
+> 需要注意的点是：`Makefile`文件中`tcl`的版本可能需要更新，另外`ssim.c`中的`matherr`两行需要注释掉，不然会报错。
+> 详情参考：
+> - [CSAPP--Architecture Lab实验记录 - lincx blog](https://lincx-911.github.io/2021/12/architecture_lab/)
+> - [CSAPP : Arch Lab 解题报告 - 知乎](https://zhuanlan.zhihu.com/p/36793761)
+
 在本实验中，你需要在`sim/seq`目录下工作。这个部分我们的目的是扩展 SEQ 处理器，让其支持`iaddq`指令(书本 4.51 & 4.52 练习题内容)，可以通过修改`seq-full.hcl`文件来实现，这里面包含了一些所需要用到的常数量。你的实现中在开头必须包含一个注释，在其中写上你的姓名和 ID，以及`iaddq`的执行过程。
+
+### `iaddq`指令分析
+
+```
+1. 取指：icode:ifun <- M[PC] rA:rB <- M[PC+1] valC <- M[PC+2] valP <- PC+10
+2. 译码：valB <- R[rB]
+3. 执行：valE <- valB + valC
+4. 访存：无
+5. 写回：R[rB] <- valE
+6. 更新PC：PC <- valP
+```
+
+### `seq`优化
+
+在需要改动的信号中，直接将`iaddq`指令加到`hcl`列表中去即可。
+
+#### 取指阶段
+
+需要改动的变量有：`rA,rB,valC,valP`
+
+需要改动的信号有：`needReg,needValC,instr_valid`
+
+#### 译码阶段+写回阶段
+
+> [!WARNING]
+> 这里需要`srcB`，因为我们是要将立即数与`rB`中的值相加，而不是赋值给`rB`
+
+需要改动的变量有：`srcB, dstE`
+
+#### 执行阶段
+
+> [!WARNING]
+> 一定要加`set_cc`，因为`iaddq`指令不属于原有的算术逻辑运算指令（`IOPQ`类）
+
+需要改动的变量有：`aluA, aluB, set_cc`
+
+#### 访存阶段
+
+无改动。
+
+#### 更新PC
+
+无改动。
 
 ### 构建与测试指南
 
