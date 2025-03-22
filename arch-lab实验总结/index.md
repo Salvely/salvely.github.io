@@ -980,6 +980,71 @@ End:
 - 你的姓名和 ID
 - 你的代码解释，对每个场景描述你如何修改代码
 
+### Part C 实验记录
+
+> 这一部分的实验过程参考了一下：
+> - [通俗解说CSAPP的archlab partC - 知乎](https://zhuanlan.zhihu.com/p/61151313)
+> - [CSAPP | Lab4-Architecture Lab 深入解析 - 知乎](https://zhuanlan.zhihu.com/p/480380496)
+> - [《深入理解计算机系统》配套实验：Arch Lab - 知乎](https://zhuanlan.zhihu.com/p/33561203)
+> - [CSAPP : Arch Lab 解题报告 - 知乎](https://zhuanlan.zhihu.com/p/36793761)
+
+首先我们需要将`IIADDQ`指令，像加到`SEQ`中那样加到`PIPE`的各个阶段中去，这里不多说。
+
+下面我们对原始的`ncopy.ys`汇编代码进行测试，看看其效率j如何：
+
+```bash
+Average CPE     15.18
+Score   0.0/60.0
+```
+
+我们可以看到正确性测试可以通过，但是效率测试无法通过。因此我们需要提高效率。
+
+接下来我们查看`ncopy.ys`的汇编代码，进行一些优化工作：
+
+```asm
+	# Loop header
+	xorq %rax,%rax		# count = 0;
+	andq %rdx,%rdx		# len <= 0?
+	jle Done		# if so, goto Done:
+
+Loop:	mrmovq (%rdi), %r10	# read val from src...
+	rmmovq %r10, (%rsi)	# ...and store it to dst
+	andq %r10, %r10		# val <= 0?
+	jle Npos		# if so, goto Npos:
+	irmovq $1, %r10
+	addq %r10, %rax		# count++
+Npos:	irmovq $1, %r10
+	subq %r10, %rdx		# len--
+	irmovq $8, %r10
+	addq %r10, %rdi		# src++
+	addq %r10, %rsi		# dst++
+	andq %rdx,%rdx		# len > 0?
+	jg Loop			# if so, goto Loop:
+```
+
+首先我们利用新添加的`iaddq`指令，把所有的经过寄存器的加法都改成`iaddq`：
+
+```asm
+	# Loop header
+	xorq %rax,%rax		# count = 0;
+	andq %rdx,%rdx		# len <= 0?
+	jle Done		# if so, goto Done:
+
+Loop:	mrmovq (%rdi), %r10	# read val from src...
+	rmmovq %r10, (%rsi)	# ...and store it to dst
+	andq %r10, %r10		# val <= 0?
+	jle Npos		# if so, goto Npos:
+	iaddq $1, %rax  # count++
+Npos:	
+	iaddq $-1, %rdx     # len--
+	iaddq $8, %rdi      # src++
+	iaddq $8, %rsi		# dst++
+	andq %rdx,%rdx		# len > 0?
+	jg Loop			# if so, goto Loop:
+```
+
+怎么直接满分了？啊？！不是应该继续优化的吗？
+
 ### Part C 编码规则
 
 你可以随意修改，但是有如下限制：
