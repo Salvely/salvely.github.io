@@ -83,8 +83,7 @@
               "title": "index"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -258,13 +257,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7247dfc715193dcb",
+  "active": "efee55c786d8dd69",
   "lastOpenFiles": [
-    "posts/journal/2025年3月第四周记录.md",
     "roadmap/计算机科学之路.md",
+    "posts/journal/2025年3月第四周记录.md",
+    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/index.md",
     "task/任务列表.md",
     "posts/cs/系统入门/15-213/15-213 Lab/Arch Lab实验总结.md",
-    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/index.md",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch6.md",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch5.md",
     "posts/others/旅游出差必备物品列表.md",
