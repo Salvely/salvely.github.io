@@ -84,20 +84,6 @@
             }
           },
           {
-            "id": "d44e1d394535cbed",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "posts/journal/2025年3月第三周记录.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025年3月第三周记录"
-            }
-          },
-          {
             "id": "eefe1500d95264c6",
             "type": "leaf",
             "state": {
@@ -110,9 +96,23 @@
               "icon": "lucide-file",
               "title": "2025年3月第四周记录"
             }
+          },
+          {
+            "id": "9f40d218c00d5ab1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/journal/2025年3月第三周记录.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2025年3月第三周记录"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -144,7 +144,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "arch lab实验",
+                "query": "more",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -165,7 +165,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -286,7 +287,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d44e1d394535cbed",
+  "active": "3ea56b23a0ff7959",
   "lastOpenFiles": [
     "posts/journal/2025年3月第四周记录.md",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/index.md",
