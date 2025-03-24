@@ -17,7 +17,7 @@
 - [x] 1点半开始考试，3个小时交卷 ✅ 2025-03-24
 	- 直到最后才想出怎么做，思路都写出来了，代码没写完，完蛋了完蛋了，呜呜呜呜呜
 - [x] 保洁阿姨没法换床垫，我自己给换了，还把床给铺了。剧然能养成这种技能，我自己都觉得不可思议。 ✅ 2025-03-24
-- [ ] 调整一下心态，一直到5点50。5点50开始继续我的学习，不要放弃，一定要坚持。
+- [x] 调整一下心态，一直到5点50。5点50开始继续我的学习，不要放弃，一定要坚持。 ✅ 2025-03-24
 - [ ] 心理 & 生活任务
 	- [x] 勇敢的决定休息，并投入一次彻底的睡眠 ✅ 2025-03-24
 		- 床垫太软了，睡一觉起来不舒服，跟前台说换了硬的。今天晚上应该能睡得好一些。
@@ -233,24 +233,28 @@
 - [ ] AtCoder 比赛
 - [ ] [清华大学计算机系科协引导文档](https://docs.net9.org/)
 - [ ] [USTC LUG 协会培训](https://101.ustclug.org/)
-- [ ] CS61C 学习完成
-- [ ] [华科计算机组成原理实验完成(MIPS COA)(实验)](https://www.educoder.net/paths/hvbz6g9i)
-- [ ] Verilog 语言学习
-- [ ] HDLBits 刷题
-- [ ] 中科大 Verilog OJ 刷题
-- [ ] [中科大数字逻辑实验(Verilog)](https://soc.ustc.edu.cn/Digital/#_9)
-- [ ] [中科大数字逻辑提高班](https://soc.ustc.edu.cn/Digital-Pro/)
-- [ ] 重庆大学 CPU 实验
+- [ ] DDCA 阅读完成
+	- [ ] 之前的笔记复习完成
+	- [ ] 时序逻辑一章的习题完成
+	- [ ] Verilog语言学习
+		- [ ] HDLBits 刷题
+		- [ ] 中科大 Verilog OJ 刷题
+	- [ ] [中科大数字逻辑实验(Verilog)](https://soc.ustc.edu.cn/Digital/#_9)
+	- [ ] [中科大数字逻辑提高班](https://soc.ustc.edu.cn/Digital-Pro/)
+	- [ ] DDCA体系结构部分阅读并做笔记，完成所有习题
+	- [ ] [华科计算机组成原理实验完成(MIPS COA)(实验)](https://www.educoder.net/paths/hvbz6g9i)
+	- [ ] 重庆大学 CPU 实验完成
+	- [ ] [Digital Design & Computer Architecture](https://safari.ethz.ch/digitaltechnik/spring2023/doku.php?id=start)
+	- [ ] [CMU 18-447 Spring 2015](https://course.ece.cmu.edu/~ece447/s15/doku.php?id=start)
+	- [ ] 雷自己动手写 CPU
+	- [ ] 汪文详 CPU 设计实战
+	- [ ] 姚勇斌 超标量处理器设计
+- [x] EECS151 ✅ 2025-03-24（关闭了）
+- [x] UCB CS152 ✅ 2025-03-24（关闭了）
+- [ ] CS61C 学习并完成所有lab和Project
 - [ ] [北理工计算机组成原理](https://zanpu.spencerwoo.com/)
-- [ ] 雷自己动手写 CPU
 - [ ] [中科大计算机系统综合实验](https://soc.ustc.edu.cn/CECS/)
-- [ ] EECS151
-- [ ] UCB CS152
 - [ ] [计算机体系结构基础教材](https://foxsen.github.io/archbase/)
-- [ ] 汪文详 CPU 设计实战
-- [ ] 姚勇斌 超标量处理器设计
-- [ ] [Digital Design & Computer Architecture](https://safari.ethz.ch/digitaltechnik/spring2023/doku.php?id=start)
-- [ ] [CMU 18-447 Spring 2015](https://course.ece.cmu.edu/~ece447/s15/doku.php?id=start)
 - [ ] 九曲阑干深入理解计算机系统导读 + 华盛顿大学 CSE351 学习完成
 - [ ] 上海交通大学 ICS 课程所有期末习题刷完
 - [ ] [计算机系统概论(加州理工学院，无字幕)：Caltech - Introduction to Computing Systems；公开课推荐：CMU 15-213\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/av8707332/?vd_source=85acf0a59ded02e4c75ae1158baca207)
@@ -263,7 +267,6 @@
 - [ ] verilog 数字逻辑设计 学习
 - [ ] DDCA 数字逻辑阅读
 - [ ] 台湾清华大学体系结构课程学习(MIPS COA)(理论) + CS61C(Sp15)
-- [ ] DDCA 组成原理所有章节阅读完成
 - [ ] DDCA 所有实验完成
 - [ ] MIPS 单周期处理器设计
 - [ ] MIPS 多周期处理器设计
@@ -523,9 +526,6 @@
 - [ ] https://arcsysu.github.io/SYsU-lang/
 - [ ] https://s4plus.ustc.edu.cn/_upload/article/files/fa/b5/01fb8c6a4385a6b32996f9172801/4d2da5cf-6b91-4353-9ed6-7d485b5523ac.pdf
 - [ ] https://www.opensourceagenda.com/projects/minisysy-tutorial
-
-下一阶段：
-
 - [ ] **CSE444 Washington Database**
 - [ ] [6.5830/6.5831: Database Systems (formerly 6.814/6.830) (mit.edu)](http://dsg.csail.mit.edu/6.5830/index.php) Fall 2022
 - [ ] **UCB CS186**
