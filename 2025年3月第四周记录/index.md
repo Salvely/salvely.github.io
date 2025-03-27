@@ -29,22 +29,225 @@
 	- [ ] 独立承担一次高挑战任务和高挑战任务带来的心理压力，不通过向他人诉苦解决
 	- [ ] 在有挑战时保证睡眠时长和质量
 	- [x] 自信的去参加一次面试，勇敢的向老师陈述自己的情况 ✅ 2025-03-25
-- [ ] 时间挑战
+- [x] 时间挑战 ✅ 2025-03-26
 	- [x] 9点20之前完成洗漱，并且直接关灯上床睡觉，盖被子之后不再去想现实生活中的任何事情，做到彻底的断舍离 ✅ 2025-03-24
 	- [x] 提前熟悉一下自己准备的资料 ✅ 2025-03-24
 	- [x] 参加机试 ✅ 2025-03-24
-	- [ ] 把后期的学习任务全部完成
 	- [x] 简历制作打印，一式五份 ✅ 2025-03-25
 	- [x] 准备各个复试问题 ✅ 2025-03-25
-- [ ] 洗漱一下，放松15分钟
-- [ ] 收拾一下东西
+- [x] 吃荨麻疹药物 ✅ 2025-03-25
+- [x] 洗漱一下，放松15分钟 ✅ 2025-03-26
+- [x] 收拾一下东西 ✅ 2025-03-27
 - [x] 计算一下明天去火车站的时间 ✅ 2025-03-25
 	- 1点54发车
 	- 1点40开始检票
 	- 11点50就要坐公交出发
-	- 7点钟进校吃早饭，11点30出发回来
-- [ ] 明天早上预定交大的进校
-- [ ] 计算机组成原理学习
+	- 7点钟进校吃早饭，11点10出发回来，11点30回到酒店
+- [x] 明天早上预定交大的进校 ✅ 2025-03-27
+- [x] 回家 ✅ 2025-03-27
+- [ ] 收拾东西，整理行李，换洗衣物
+- [ ] 数据结构与算法
+	- [ ] [15-121 Main Page (cmu.edu)](https://www.cs.cmu.edu/~rdriley/121/index.html) Fall 2022
+	- [ ] Caltech [CS 2 (debuggi.ng)](https://debuggi.ng/23wi/) 实验网址：[cs2-23wi · GitLab (caltech.edu)](https://gitlab.caltech.edu/cs2-23wi)
+	- [ ] [Illionis Data Structure](https://courses.engr.illinois.edu/cs225/fa2022/pages/lectures.html)
+	  - [other semester](https://courses.engr.illinois.edu/cs225/sp2022/)
+	  - [lab](https://github.com/cs225-illinois)
+	- [ ] [CMSC Data strcture](https://www.cs.umd.edu/class/fall2019/cmsc420-0201/index.html)
+	- [ ] [CSE 332 Spring 2023 Schedule](https://courses.cs.washington.edu/courses/cse332/23sp/calendar/)
+		- [x] Git仓库配置完成 ✅ 2025-03-19
+		- [ ] Project 1 Assigned
+			- [x] P1环境配置工作完成 ✅ 2025-03-19
+			- [x] Part 1完成 ✅ 2025-03-19
+			- [ ] TrieMap & TrieSet 实现
+		- [x] Weiss 3.1-3.7 ✅ 2025-03-19
+		- [x] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec01-Intro.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec01-Intro-ink.html) ✅ 2025-03-19
+		- [x] Weiss 2.1-2.4, Math Review: Weiss 1.1-1.6 ✅ 2025-03-19
+		- [x] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec02-AlgorithmAnalysis.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec02-AlgorithmAnalysis-day3.html), [xls](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec02.xlsx), [More on Amortized](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/Amortized.html) ✅ 2025-03-19
+		- [x] [Slides](https://docs.google.com/presentation/d/192lCjhV8SflU0BfdTzkLJoy0kFtN-WtBitQhfF0UIac/edit?usp=sharing), [Handout](https://courses.cs.washington.edu/courses/cse332/23sp/sections/23sp%20Section%2001%20-%20Handout.pdf) [[Solution](https://courses.cs.washington.edu/courses/cse332/23sp/calendar/23sp%20Section%2001%20-%20Handout%20Solution.pdf)], [Tries Microteach](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=988eff88-c621-4f05-9314-afd6013388a2) ✅ 2025-03-19
+		- [x] [Prelim Survey Due](https://canvas.uw.edu/courses/1631650/quizzes/1841974) ✅ 2025-03-19
+		- [x] Weiss 2.1-2.4, Math Review: Weiss 1.1-1.6 ✅ 2025-03-19
+		- [x] [P1 Checkpoint 0](https://courses.cs.washington.edu/courses/cse332/23sp/assignments.html) Due ✅ 2025-03-19
+		- [ ] Weiss 6.1-6.3
+		- [ ] [Slides,](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec03-PriorityQueues.pdf) [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec03-PriorityQueues-day2.html)
+		- [ ] Weiss 6.4-6.5
+		- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec04-BinMinHeapsII.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec04-BinMinHeapsII-ink.html)
+		- [ ] [Slides](https://docs.google.com/presentation/d/1P8F4PIbgWffYzijMPucLMqARozISFX5PuO5fpmxdGWY/edit?usp=sharing), [Handout](https://courses.cs.washington.edu/courses/cse332/23sp/sections/23sp%20Section%2002%20-%20Handout.pdf) [[Solution](https://courses.cs.washington.edu/courses/cse332/23sp/sections/23sp%20Section%2002%20-%20Handout%20Solution.pdf)]
+		- [ ] [P1 Checkpoint 1](https://courses.cs.washington.edu/courses/cse332/23sp/assignments.html) Due
+		- [x] Weiss 2.1-2.4 ✅ 2025-03-19
+		- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec05-AlgorithmAnalysisII.pdf), [worksheet](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/RecurrencesWorksheet-Handout.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec05-AlgorithmAnalysisII-ink.html), [worksheet ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/RecurrencesWorksheet-ink.pdf), [Useful Summations & Logs](https://courses.cs.washington.edu/courses/cse332/23sp/handouts/23sp%20-%20Useful%20Math%20Identities.pdf)
+		- [ ] Weiss 4.1-4.3, 4.6
+			- [ ] 学习如何创建子项目，并且对子项目使用`CMake`
+			- [ ] 学习如何在子项目中使用测试
+			- [ ] 添加`list`子项目到`ds`项目中
+			- [ ] 实现`list`和它的两个实现
+			- [ ] 对`list`添加测试
+			- [ ] 成功使用`CMake`构建并记录
+			- [ ] 实现《数据结构与算法分析——C++语言版》的其他数据结构
+				- [ ] 栈
+					- [ ] 栈接口定义
+					- [ ] 数组栈实现
+					- [ ] 链队栈实现
+					- [ ] 添加栈项目到`CMake`项目中
+					- [ ] 添加栈测试，并通过栈测试
+				- [ ] 队列
+					- [ ] 队列接口定义
+					- [ ] 循环数组队列实现
+					- [ ] 链队列实现
+					- [ ] 添加队列项目到`CMake`项目中
+					- [ ] 添加队列测试，并通过队列测试
+		- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec07-Dictionaries.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec07-Dictionaries-day2.html)
+		- [ ] [EX02 Program Analysis](https://courses.cs.washington.edu/courses/cse332/23sp/assignments.html) Due
+		- [ ] Weiss 4.4
+		- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec08-AVL.pdf), [Worksheet](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/AVL-Worksheet-23sp.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec08-AVL-day2.html)
+		- [ ] [Slides](https://docs.google.com/presentation/d/1G88SfXG8dGqCLRJdJJAhY7z9mNtZmb0m1yBTq6EkrFo/edit?usp=sharing), [Handout](https://courses.cs.washington.edu/courses/cse332/23sp/sections/23sp%20Section%2003%20-%20Handout.pdf) [[Solution](https://courses.cs.washington.edu/courses/cse332/23sp/calendar/23sp%20Section%2003%20-%20Handout%20Solution.pdf)]
+		- [ ] [P1](https://courses.cs.washington.edu/courses/cse332/23sp/assignments.html) Due
+		- [ ] Weiss 4.7
+		- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec09-BTrees.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec09-BTrees-day2.html), [Example](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/B-TreeProblemSoln.pdf)
+		- [ ] [EX03 & EX04 Heaps](https://courses.cs.washington.edu/courses/cse332/23sp/assignments.html) Due
+		- [ ] Weiss 5.1-5.5
+		- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec10-hashing.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec10-Hashing-ink.html)
+		- [ ] [Slides](https://docs.google.com/presentation/d/1l8-aS7eMGmaoJKiTD76xbDa_j5mN3JFDv2JavNWTimI/edit?usp=sharing), [Handout](https://courses.cs.washington.edu/courses/cse332/23sp/sections/23sp%20Section%2004%20-%20Handout.pdf) [[Solution](https://courses.cs.washington.edu/courses/cse332/23sp/sections/23sp%20Section%2004%20-%20Handout%20Solution.pdf)]
+		- [ ] [P2 Checkpoint 1](https://courses.cs.washington.edu/courses/cse332/23sp/assignments.html)
+		- [ ] Weiss 5.1-5.5
+		- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec11-HashingII.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec11-HashingII.html), [proof](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/lecture11.txt), [xls](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec11.xlsx)
+		- [ ] Weiss 7.1-7.3, 7.5-7.7
+		- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec12-ComparisonSorting.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec12-ComparisonSorting-day2.html)
+		- [ ] [EX07 & EX08 AVL](https://courses.cs.washington.edu/courses/cse332/23sp/assignments.html) Due
+		- [ ] Weiss 7.8, 7.11
+		- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec13-BeyondComparisonSorting.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec13-BeyondComparisonSorting-day2.html)
+		- [ ] [Slides](https://docs.google.com/presentation/d/1XMSGUX90XyozZWjvVHPC7-xtcdmpKslDSIRqjCM7zTA/edit?usp=sharing), [Handout](https://courses.cs.washington.edu/courses/cse332/23sp/sections/23sp%20Section%2005%20-%20Handout-v2.pdf) [[Solution](https://courses.cs.washington.edu/courses/cse332/23sp/sections/23sp%20Section%2005%20-%20Handout%20Solutions.pdf)]
+		- [ ] [Midterm exam](https://courses.cs.washington.edu/courses/cse332/23sp/exams/exams.html)
+		- [ ] Weiss 9.1
+		- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec19-GraphsIntro.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec19-GraphsIntro-day2.html)
+		- [ ] [EX09 Hashing](https://courses.cs.washington.edu/courses/cse332/23sp/assignments.html) Due
+		- [ ] Weiss 9.2
+		- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec20-Traversals.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec20-Traversals-ink.html), [traversal examples](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-extraGraphTraversals.html)
+		- [ ] [Slides](https://docs.google.com/presentation/d/1vAivmo9S53ymq3FYFSqo2AICP9nW7XrQN7qVqu0fUII/edit?usp=sharing), [Handout](https://courses.cs.washington.edu/courses/cse332/23sp/sections/23sp%20Section%2006%20-%20Handout.pdf) [[Solution](https://courses.cs.washington.edu/courses/cse332/23sp/sections/23sp%20Section%2006%20-%20Handout%20Solution.pdf)]
+		- [ ] [P2 Checkpoint 2](https://courses.cs.washington.edu/courses/cse332/23sp/assignments.html) Due
+		- [ ] Weiss 9.3
+		- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec21-Dijkstra.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec21-Dijkstra-day2.html)
+		- [ ] [Grossman](http://www.cs.washington.edu/homes/djg/teachingMaterials/spac/sophomoricParallelismAndConcurrency.pdf) 2.1-3.4
+		- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec14-IntroForkJoin.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec14-IntroForkJoin-day2.html)
+		- [ ] [EX10 Sorting](https://courses.cs.washington.edu/courses/cse332/23sp/assignments.html) Due
+		- [ ] [Grossman](http://www.cs.washington.edu/homes/djg/teachingMaterials/spac/sophomoricParallelismAndConcurrency.pdf) 3.5-4.3
+		- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec15-AnalysisForkJoin.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec15-AnalysisForkJoin-day2.html)
+		- [ ] [Slides](https://docs.google.com/presentation/d/1aUcGITwaFEo1h2FZTt-qHRHENwPzt6qrtNDuMAXOkLE/edit?usp=sharing), [Code](https://gitlab.cs.washington.edu/cse332-23sp/section-para) [[Solution](https://gitlab.cs.washington.edu/cse332-23sp/section-para-solution)]
+		- [ ] [P2](https://courses.cs.washington.edu/courses/cse332/23sp/assignments.html) Due
+		- [ ] [Grossman](http://www.cs.washington.edu/homes/djg/teachingMaterials/spac/sophomoricParallelismAndConcurrency.pdf) 5.1-5.4
+		- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec16-PrefixAndSorting.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec16-PrefixAndSorting-day2.html)
+		- [ ] [EX11 Dijkstras](https://courses.cs.washington.edu/courses/cse332/23sp/assignments.html) Due
+		- [ ] [Grossman](http://www.cs.washington.edu/homes/djg/teachingMaterials/spac/sophomoricParallelismAndConcurrency.pdf) 6
+		- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec17-Concurrency-1.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec17-Concurrency-1-day3.html)
+		- [ ] [Slides](https://docs.google.com/presentation/d/1xfFGF2WFwxUqsLx2x-H9_7j3_GX_-92GQs6ymCL0Lcs/edit?usp=sharing), [Handout](https://courses.cs.washington.edu/courses/cse332/23sp/sections/23sp%20Section%2008%20-%20Handout.pdf) [[Solution](https://courses.cs.washington.edu/courses/cse332/23sp/sections/23sp%20Section%2008%20-%20Handout%20Solution.pdf)]
+		- [ ] [P3 Checkpoint 1 Due Sat 5/20](https://courses.cs.washington.edu/courses/cse332/23sp/assignments.html)
+		- [ ] [Grossman](http://www.cs.washington.edu/homes/djg/teachingMaterials/spac/sophomoricParallelismAndConcurrency.pdf) 7.1
+		- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec18-Concurrency-2.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec18-Concurrency-2-day2.html)
+		- [ ] [Grossman](http://www.cs.washington.edu/homes/djg/teachingMaterials/spac/sophomoricParallelismAndConcurrency.pdf) 8, 9
+		- [ ] [EX12-15 Para](https://courses.cs.washington.edu/courses/cse332/23sp/assignments.html) Due
+		- [ ] Weiss 9.2
+		- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec22-TopoSort.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec22-TopoSort-ink.html)
+		- [ ] [Slides](https://docs.google.com/presentation/d/1JAIBy78oARCJRNb1csXIbveTQaQdb-exNah7ogzVJms/edit?usp=sharing), [Handout](https://courses.cs.washington.edu/courses/cse332/23sp/sections/23sp%20Section%2009%20-%20Handout.pdf) [[Solution](https://courses.cs.washington.edu/courses/cse332/23sp/sections/23sp%20Section%2009%20-%20Handout%20Solution.pdf)]
+		- [ ] Weiss 9.5
+		- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec23-MSTs.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec23-MSTs-day2.html)
+		- [ ] [EX16 Concurrency](https://courses.cs.washington.edu/courses/cse332/23sp/assignments.html) Due
+		- [ ] Weiss 9.6.3, 9.7
+		- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec24-NPComplete-part1.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec24-NPComplete-part1-day2.html)
+		- [ ] [P3](https://courses.cs.washington.edu/courses/cse332/23sp/assignments.html) Due
+		- [ ] [Slides](https://docs.google.com/presentation/d/1lRI9RwseoJHWL7-9WRGZ344wX070fuvtf4srsrWsaiM/edit?usp=sharing), [Handout](https://courses.cs.washington.edu/courses/cse332/23sp/sections/23sp%20Section%2010%20-%20Handout.pdf) [[Solution](https://courses.cs.washington.edu/courses/cse332/23sp/sections/23sp%20Section%2010%20-%20Handout%20Solution.pdf)], [Final Review](https://courses.cs.washington.edu/courses/cse332/23sp/sections/Section%2010%20-%20FinalExamReview.pdf) [[Solution](https://courses.cs.washington.edu/courses/cse332/23sp/sections/Section%2010%20-%20FinalExamReview-solns.pdf)]
+		- [ ] Weiss 9.6.3, 9.7
+		- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec25-NPComplete-part2.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec25-NPComplete-part2-ink.html)
+		- [ ] [Final exam](https://courses.cs.washington.edu/courses/cse332/23sp/exams/exams.html)
+	- [ ] [Advanced Data strcture](https://courses.cs.washington.edu/courses/cse373/20wi/)
+	- [ ] CS 61 B sp 18 课程学完
+	  - [x] CS 61 B Lab 5 完成
+	  - [x] CS 61 B Lab 6 完成
+	  - [x] CS 61 B Project 2 需求学习，进行需求分析，制定设计方案
+	  - [x] 随机迷宫算法学习并使用 Prim 算法实现一个随机迷宫，这个讲得好：[C++实现迷宫生成（基于算法：随机 prim)\_c++随机生成迷宫-CSDN 博客](https://blog.csdn.net/qq_38677814/article/details/79745659)
+	  - [x] CS 61 B Project 2 Phase 1 完成
+	  - [x] 在 Lab 6 中设置画布大小，并设置双缓冲
+	  - [x] 熟悉 TERerengine 的画布结构和两个 `initialize` 方法
+	  - [x] CS 61 B Project 2 菜单栏绘制实现
+	  - [x] CS 61 B Project 2 游戏界面绘制实现
+	  - [x] CS 62 B Project 2 HUD 界面绘制实现
+	  - [x] CS 61 B Project 2 用户输入感应实现
+	  - [x] CS 61 B Project 2 鼠标悬停位置感应实现
+	  - [x] 鼠标检测实现
+	  - [x] 游戏的重新加载实现
+	  - [x] CS 61 B Project 2 Phase 2 完成
+	  - [ ] Week 7-15 内容学习，并完成对应的 HW 和 Project
+		- [ ] Week 7
+		- [ ] Week 8
+		- [ ] Week 9
+		- [ ] Week 10
+		- [ ] Week 11
+		- [ ] Week 12
+		- [ ] Week 13
+		- [ ] Week 14
+		- [ ] Week 15
+	- [ ] CS 61 B sp 21 课程学完
+	  - [ ] 所有的 Lab
+	  - [ ] Project 0 2048
+	  - [ ] Project 2 Gitlet
+	  - [ ] HW 2 完成
+	  - [ ] HW 3 完成
+	  - [ ] 其他 Project 把 18 的搬过去就行
+	  - [ ] 其他资料复习一遍
+	- [ ] 清华大学邓俊辉 数据结构学习
+	- [ ] MIT 6.046 算法设计与分析
+	- [ ] MIT 6.851 高级数据结构
+	- [ ] [Introductory Data Structures and Algorithms](https://ilyasergey.net/YSC2229/index.html)（OCmal）
+	- [ ] 《数据结构与算法分析——C++语言版》阅读并完成所有习题
+	- [ ] 普林斯顿《算法》第四版阅读并完成所有习题
+	- [ ] 邓俊辉《数据结构与算法》
+		- [ ] 阅读并完成所有课后习题
+		- [ ] 用C++实现所有数据结构与算法
+		- [ ] OJ刷完
+	- [ ] C++实现各个数据结构
+	- [ ] STL中的数据结构实现学习
+	- [ ] 小型Git实现
+	- [ ] CS61B 其他年份的数据结构项目实现
+	- [ ] 算法课程刷完
+		- [ ] [战疫时期的算法课-南京大学-2020 年春季\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV11341167sn/?share_source=copy_web&vd_source=400d0ff743c6d48be4704900c57dfd98)
+		- [ ] [Leetcode 101: Introduction to Algorithmic Thinking, Spring 2021](https://algorithmicthinking.github.io/#/)
+		- [ ] 代码随想录
+		- [ ] [算法通关手册](https://algo.itcharge.cn/)
+		- [ ] CS70
+		- [ ] UCB CS170
+		- [ ] MIT Introduction to Algorithms 6.006
+		- [ ] [6.045: Automata, Computability, and Complexity Theory (mit.edu)](https://people.csail.mit.edu/rrw/6.045-2020/index.html)
+		- [ ] MIT 6.854 Advanced Algorithms
+		- [ ] [Tim Roughgarden's Online Courses](http://timroughgarden.org/videos.html)
+		- [ ] [CS 161 (stanford.edu)](http://web.stanford.edu/class/cs161/index.html) [CS 161: Design and Analysis of Algorithms (stanford.edu)](https://web.stanford.edu/class/archive/cs/cs161/cs161.1166/)
+		- [ ] [Schedule | CS 161 (Archived) (stanford-cs161.github.io)](https://stanford-cs161.github.io/winter2021/schedule/)
+		- [ ] [CS 161 | CS 161 (Archived) (stanford-cs161.github.io)](https://stanford-cs161.github.io/winter2022/)
+		- [ ] [CS 161 (Archived) | Design and Analysis of Algorithms (stanford-cs161.github.io)](https://stanford-cs161.github.io/winter2021/)
+		- [ ] [CS 161 | CS 161 (Archived) (stanford-cs161.github.io)](https://stanford-cs161.github.io/winter2022/)
+		- [ ] [CMU 15-451/651: Algorithms, Spring 2021: Main Page](https://www.cs.cmu.edu/~15451-s21/schedule.html)
+		- [ ] [15-451 (cmu.edu)](https://www.cs.cmu.edu/~15451/)
+		- [ ] Coding interview university
+		- [ ] Coursera Algorithms I&&II [算法，第一部分 | Coursera](https://www.coursera.org/learn/algorithms-part1)
+		- [ ] [CIS 1890 (upenn.edu)](https://www.cis.upenn.edu/~cis1890/)
+		- [ ] [CS 225 | Home (illinois.edu)](https://courses.engr.illinois.edu/cs225/sp2023/)(理论)
+		- [ ] [Theoretical Computer Science Fa2020](https://madhu.seas.harvard.edu/courses/Fall2020/)
+		- [ ] [Theoretical Computer Science Fall2023](https://cs121.boazbarak.org/)
+	- [ ] 《深入浅出程序设计竞赛》阅读并完成所有习题
+	- [ ] 《挑战程序设计竞赛》阅读完成并完成所有习题
+	- [ ] 《算法导论》阅读并完成所有习题
+		- [ ] 书籍阅读完成
+		- [ ] 所有公式推导完成
+		- [ ] 课后习题全部完成
+		- [ ] 其上的数据结构与算法全部实现（带googletest测试）
+	- [ ] 《程序设计竞赛入门经典》阅读并完成所有习题
+	- [ ] 《程序设计竞赛训练指南》阅读并完成所有习题
+	- [ ] 《程序设计竞赛进阶指南》阅读并完成[李煜东《算法竞赛进阶指南》题单 - 题单 - 洛谷 | 计算机科学教育新生态](https://www.luogu.com.cn/training/400)
+	- [ ] kuangbin带你飞 题单刷完
+	- [ ] Leetcode Medium & Hard 刷完
+	- [ ] USACO 刷完
+	- [ ] Codeforces 比赛
+	- [ ] AtCoder 比赛
+- [ ] [清华大学计算机系科协引导文档](https://docs.net9.org/)
+- [ ] [USTC LUG 协会培训](https://101.ustclug.org/)
+- [ ] 计算机组成原理和体系结构
 	- [ ] 之前的笔记复习完成
 	- [ ] 时序逻辑一章的习题完成
 	- [ ] Verilog语言学习
@@ -342,206 +545,26 @@
 	- [ ] [上交ACM班数据库系统课程设计](https://bcmi.sjtu.edu.cn/home/limu/dbms/#overview)
 	- [ ] pingcap github db 学习资源汇总
 	- [ ] 台湾清华大学 DBMS
-- [ ] [15-121 Main Page (cmu.edu)](https://www.cs.cmu.edu/~rdriley/121/index.html) Fall 2022
-- [ ] Caltech [CS 2 (debuggi.ng)](https://debuggi.ng/23wi/) 实验网址：[cs2-23wi · GitLab (caltech.edu)](https://gitlab.caltech.edu/cs2-23wi)
-- [ ] [Illionis Data Structure](https://courses.engr.illinois.edu/cs225/fa2022/pages/lectures.html)
-  - [other semester](https://courses.engr.illinois.edu/cs225/sp2022/)
-  - [lab](https://github.com/cs225-illinois)
-- [ ] [CMSC Data strcture](https://www.cs.umd.edu/class/fall2019/cmsc420-0201/index.html)
-- [ ] [CSE 332 Spring 2023 Schedule](https://courses.cs.washington.edu/courses/cse332/23sp/calendar/)
-	- [x] Git仓库配置完成 ✅ 2025-03-19
-	- [ ] Project 1 Assigned
-		- [x] P1环境配置工作完成 ✅ 2025-03-19
-		- [x] Part 1完成 ✅ 2025-03-19
-		- [ ] TrieMap & TrieSet 实现
-	- [x] Weiss 3.1-3.7 ✅ 2025-03-19
-	- [x] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec01-Intro.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec01-Intro-ink.html) ✅ 2025-03-19
-	- [x] Weiss 2.1-2.4, Math Review: Weiss 1.1-1.6 ✅ 2025-03-19
-	- [x] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec02-AlgorithmAnalysis.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec02-AlgorithmAnalysis-day3.html), [xls](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec02.xlsx), [More on Amortized](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/Amortized.html) ✅ 2025-03-19
-	- [x] [Slides](https://docs.google.com/presentation/d/192lCjhV8SflU0BfdTzkLJoy0kFtN-WtBitQhfF0UIac/edit?usp=sharing), [Handout](https://courses.cs.washington.edu/courses/cse332/23sp/sections/23sp%20Section%2001%20-%20Handout.pdf) [[Solution](https://courses.cs.washington.edu/courses/cse332/23sp/calendar/23sp%20Section%2001%20-%20Handout%20Solution.pdf)], [Tries Microteach](https://uw.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=988eff88-c621-4f05-9314-afd6013388a2) ✅ 2025-03-19
-	- [x] [Prelim Survey Due](https://canvas.uw.edu/courses/1631650/quizzes/1841974) ✅ 2025-03-19
-	- [x] Weiss 2.1-2.4, Math Review: Weiss 1.1-1.6 ✅ 2025-03-19
-	- [x] [P1 Checkpoint 0](https://courses.cs.washington.edu/courses/cse332/23sp/assignments.html) Due ✅ 2025-03-19
-	- [ ] Weiss 6.1-6.3
-	- [ ] [Slides,](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec03-PriorityQueues.pdf) [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec03-PriorityQueues-day2.html)
-	- [ ] Weiss 6.4-6.5
-	- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec04-BinMinHeapsII.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec04-BinMinHeapsII-ink.html)
-	- [ ] [Slides](https://docs.google.com/presentation/d/1P8F4PIbgWffYzijMPucLMqARozISFX5PuO5fpmxdGWY/edit?usp=sharing), [Handout](https://courses.cs.washington.edu/courses/cse332/23sp/sections/23sp%20Section%2002%20-%20Handout.pdf) [[Solution](https://courses.cs.washington.edu/courses/cse332/23sp/sections/23sp%20Section%2002%20-%20Handout%20Solution.pdf)]
-	- [ ] [P1 Checkpoint 1](https://courses.cs.washington.edu/courses/cse332/23sp/assignments.html) Due
-	- [x] Weiss 2.1-2.4 ✅ 2025-03-19
-	- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec05-AlgorithmAnalysisII.pdf), [worksheet](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/RecurrencesWorksheet-Handout.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec05-AlgorithmAnalysisII-ink.html), [worksheet ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/RecurrencesWorksheet-ink.pdf), [Useful Summations & Logs](https://courses.cs.washington.edu/courses/cse332/23sp/handouts/23sp%20-%20Useful%20Math%20Identities.pdf)
-	- [ ] Weiss 4.1-4.3, 4.6
-		- [ ] 学习如何创建子项目，并且对子项目使用`CMake`
-		- [ ] 学习如何在子项目中使用测试
-		- [ ] 添加`list`子项目到`ds`项目中
-		- [ ] 实现`list`和它的两个实现
-		- [ ] 对`list`添加测试
-		- [ ] 成功使用`CMake`构建并记录
-		- [ ] 实现《数据结构与算法分析——C++语言版》的其他数据结构
-			- [ ] 栈
-				- [ ] 栈接口定义
-				- [ ] 数组栈实现
-				- [ ] 链队栈实现
-				- [ ] 添加栈项目到`CMake`项目中
-				- [ ] 添加栈测试，并通过栈测试
-			- [ ] 队列
-				- [ ] 队列接口定义
-				- [ ] 循环数组队列实现
-				- [ ] 链队列实现
-				- [ ] 添加队列项目到`CMake`项目中
-				- [ ] 添加队列测试，并通过队列测试
-	- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec07-Dictionaries.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec07-Dictionaries-day2.html)
-	- [ ] [EX02 Program Analysis](https://courses.cs.washington.edu/courses/cse332/23sp/assignments.html) Due
-	- [ ] Weiss 4.4
-	- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec08-AVL.pdf), [Worksheet](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/AVL-Worksheet-23sp.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec08-AVL-day2.html)
-	- [ ] [Slides](https://docs.google.com/presentation/d/1G88SfXG8dGqCLRJdJJAhY7z9mNtZmb0m1yBTq6EkrFo/edit?usp=sharing), [Handout](https://courses.cs.washington.edu/courses/cse332/23sp/sections/23sp%20Section%2003%20-%20Handout.pdf) [[Solution](https://courses.cs.washington.edu/courses/cse332/23sp/calendar/23sp%20Section%2003%20-%20Handout%20Solution.pdf)]
-	- [ ] [P1](https://courses.cs.washington.edu/courses/cse332/23sp/assignments.html) Due
-	- [ ] Weiss 4.7
-	- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec09-BTrees.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec09-BTrees-day2.html), [Example](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/B-TreeProblemSoln.pdf)
-	- [ ] [EX03 & EX04 Heaps](https://courses.cs.washington.edu/courses/cse332/23sp/assignments.html) Due
-	- [ ] Weiss 5.1-5.5
-	- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec10-hashing.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec10-Hashing-ink.html)
-	- [ ] [Slides](https://docs.google.com/presentation/d/1l8-aS7eMGmaoJKiTD76xbDa_j5mN3JFDv2JavNWTimI/edit?usp=sharing), [Handout](https://courses.cs.washington.edu/courses/cse332/23sp/sections/23sp%20Section%2004%20-%20Handout.pdf) [[Solution](https://courses.cs.washington.edu/courses/cse332/23sp/sections/23sp%20Section%2004%20-%20Handout%20Solution.pdf)]
-	- [ ] [P2 Checkpoint 1](https://courses.cs.washington.edu/courses/cse332/23sp/assignments.html)
-	- [ ] Weiss 5.1-5.5
-	- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec11-HashingII.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec11-HashingII.html), [proof](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/lecture11.txt), [xls](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec11.xlsx)
-	- [ ] Weiss 7.1-7.3, 7.5-7.7
-	- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec12-ComparisonSorting.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec12-ComparisonSorting-day2.html)
-	- [ ] [EX07 & EX08 AVL](https://courses.cs.washington.edu/courses/cse332/23sp/assignments.html) Due
-	- [ ] Weiss 7.8, 7.11
-	- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec13-BeyondComparisonSorting.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec13-BeyondComparisonSorting-day2.html)
-	- [ ] [Slides](https://docs.google.com/presentation/d/1XMSGUX90XyozZWjvVHPC7-xtcdmpKslDSIRqjCM7zTA/edit?usp=sharing), [Handout](https://courses.cs.washington.edu/courses/cse332/23sp/sections/23sp%20Section%2005%20-%20Handout-v2.pdf) [[Solution](https://courses.cs.washington.edu/courses/cse332/23sp/sections/23sp%20Section%2005%20-%20Handout%20Solutions.pdf)]
-	- [ ] [Midterm exam](https://courses.cs.washington.edu/courses/cse332/23sp/exams/exams.html)
-	- [ ] Weiss 9.1
-	- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec19-GraphsIntro.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec19-GraphsIntro-day2.html)
-	- [ ] [EX09 Hashing](https://courses.cs.washington.edu/courses/cse332/23sp/assignments.html) Due
-	- [ ] Weiss 9.2
-	- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec20-Traversals.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec20-Traversals-ink.html), [traversal examples](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-extraGraphTraversals.html)
-	- [ ] [Slides](https://docs.google.com/presentation/d/1vAivmo9S53ymq3FYFSqo2AICP9nW7XrQN7qVqu0fUII/edit?usp=sharing), [Handout](https://courses.cs.washington.edu/courses/cse332/23sp/sections/23sp%20Section%2006%20-%20Handout.pdf) [[Solution](https://courses.cs.washington.edu/courses/cse332/23sp/sections/23sp%20Section%2006%20-%20Handout%20Solution.pdf)]
-	- [ ] [P2 Checkpoint 2](https://courses.cs.washington.edu/courses/cse332/23sp/assignments.html) Due
-	- [ ] Weiss 9.3
-	- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec21-Dijkstra.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec21-Dijkstra-day2.html)
-	- [ ] [Grossman](http://www.cs.washington.edu/homes/djg/teachingMaterials/spac/sophomoricParallelismAndConcurrency.pdf) 2.1-3.4
-	- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec14-IntroForkJoin.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec14-IntroForkJoin-day2.html)
-	- [ ] [EX10 Sorting](https://courses.cs.washington.edu/courses/cse332/23sp/assignments.html) Due
-	- [ ] [Grossman](http://www.cs.washington.edu/homes/djg/teachingMaterials/spac/sophomoricParallelismAndConcurrency.pdf) 3.5-4.3
-	- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec15-AnalysisForkJoin.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec15-AnalysisForkJoin-day2.html)
-	- [ ] [Slides](https://docs.google.com/presentation/d/1aUcGITwaFEo1h2FZTt-qHRHENwPzt6qrtNDuMAXOkLE/edit?usp=sharing), [Code](https://gitlab.cs.washington.edu/cse332-23sp/section-para) [[Solution](https://gitlab.cs.washington.edu/cse332-23sp/section-para-solution)]
-	- [ ] [P2](https://courses.cs.washington.edu/courses/cse332/23sp/assignments.html) Due
-	- [ ] [Grossman](http://www.cs.washington.edu/homes/djg/teachingMaterials/spac/sophomoricParallelismAndConcurrency.pdf) 5.1-5.4
-	- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec16-PrefixAndSorting.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec16-PrefixAndSorting-day2.html)
-	- [ ] [EX11 Dijkstras](https://courses.cs.washington.edu/courses/cse332/23sp/assignments.html) Due
-	- [ ] [Grossman](http://www.cs.washington.edu/homes/djg/teachingMaterials/spac/sophomoricParallelismAndConcurrency.pdf) 6
-	- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec17-Concurrency-1.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec17-Concurrency-1-day3.html)
-	- [ ] [Slides](https://docs.google.com/presentation/d/1xfFGF2WFwxUqsLx2x-H9_7j3_GX_-92GQs6ymCL0Lcs/edit?usp=sharing), [Handout](https://courses.cs.washington.edu/courses/cse332/23sp/sections/23sp%20Section%2008%20-%20Handout.pdf) [[Solution](https://courses.cs.washington.edu/courses/cse332/23sp/sections/23sp%20Section%2008%20-%20Handout%20Solution.pdf)]
-	- [ ] [P3 Checkpoint 1 Due Sat 5/20](https://courses.cs.washington.edu/courses/cse332/23sp/assignments.html)
-	- [ ] [Grossman](http://www.cs.washington.edu/homes/djg/teachingMaterials/spac/sophomoricParallelismAndConcurrency.pdf) 7.1
-	- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec18-Concurrency-2.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec18-Concurrency-2-day2.html)
-	- [ ] [Grossman](http://www.cs.washington.edu/homes/djg/teachingMaterials/spac/sophomoricParallelismAndConcurrency.pdf) 8, 9
-	- [ ] [EX12-15 Para](https://courses.cs.washington.edu/courses/cse332/23sp/assignments.html) Due
-	- [ ] Weiss 9.2
-	- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec22-TopoSort.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec22-TopoSort-ink.html)
-	- [ ] [Slides](https://docs.google.com/presentation/d/1JAIBy78oARCJRNb1csXIbveTQaQdb-exNah7ogzVJms/edit?usp=sharing), [Handout](https://courses.cs.washington.edu/courses/cse332/23sp/sections/23sp%20Section%2009%20-%20Handout.pdf) [[Solution](https://courses.cs.washington.edu/courses/cse332/23sp/sections/23sp%20Section%2009%20-%20Handout%20Solution.pdf)]
-	- [ ] Weiss 9.5
-	- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec23-MSTs.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec23-MSTs-day2.html)
-	- [ ] [EX16 Concurrency](https://courses.cs.washington.edu/courses/cse332/23sp/assignments.html) Due
-	- [ ] Weiss 9.6.3, 9.7
-	- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec24-NPComplete-part1.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec24-NPComplete-part1-day2.html)
-	- [ ] [P3](https://courses.cs.washington.edu/courses/cse332/23sp/assignments.html) Due
-	- [ ] [Slides](https://docs.google.com/presentation/d/1lRI9RwseoJHWL7-9WRGZ344wX070fuvtf4srsrWsaiM/edit?usp=sharing), [Handout](https://courses.cs.washington.edu/courses/cse332/23sp/sections/23sp%20Section%2010%20-%20Handout.pdf) [[Solution](https://courses.cs.washington.edu/courses/cse332/23sp/sections/23sp%20Section%2010%20-%20Handout%20Solution.pdf)], [Final Review](https://courses.cs.washington.edu/courses/cse332/23sp/sections/Section%2010%20-%20FinalExamReview.pdf) [[Solution](https://courses.cs.washington.edu/courses/cse332/23sp/sections/Section%2010%20-%20FinalExamReview-solns.pdf)]
-	- [ ] Weiss 9.6.3, 9.7
-	- [ ] [Slides](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec25-NPComplete-part2.pdf), [Ink](https://courses.cs.washington.edu/courses/cse332/23sp/lectures/cse332-23sp-lec25-NPComplete-part2-ink.html)
-	- [ ] [Final exam](https://courses.cs.washington.edu/courses/cse332/23sp/exams/exams.html)
-- [ ] [Advanced Data strcture](https://courses.cs.washington.edu/courses/cse373/20wi/)
-- [ ] CS 61 B sp 18 课程学完
-  - [x] CS 61 B Lab 5 完成
-  - [x] CS 61 B Lab 6 完成
-  - [x] CS 61 B Project 2 需求学习，进行需求分析，制定设计方案
-  - [x] 随机迷宫算法学习并使用 Prim 算法实现一个随机迷宫，这个讲得好：[C++实现迷宫生成（基于算法：随机 prim)\_c++随机生成迷宫-CSDN 博客](https://blog.csdn.net/qq_38677814/article/details/79745659)
-  - [x] CS 61 B Project 2 Phase 1 完成
-  - [x] 在 Lab 6 中设置画布大小，并设置双缓冲
-  - [x] 熟悉 TERerengine 的画布结构和两个 `initialize` 方法
-  - [x] CS 61 B Project 2 菜单栏绘制实现
-  - [x] CS 61 B Project 2 游戏界面绘制实现
-  - [x] CS 62 B Project 2 HUD 界面绘制实现
-  - [x] CS 61 B Project 2 用户输入感应实现
-  - [x] CS 61 B Project 2 鼠标悬停位置感应实现
-  - [x] 鼠标检测实现
-  - [x] 游戏的重新加载实现
-  - [x] CS 61 B Project 2 Phase 2 完成
-  - [ ] Week 7-15 内容学习，并完成对应的 HW 和 Project
-	- [ ] Week 7
-	- [ ] Week 8
-	- [ ] Week 9
-	- [ ] Week 10
-	- [ ] Week 11
-	- [ ] Week 12
-	- [ ] Week 13
-	- [ ] Week 14
-	- [ ] Week 15
-- [ ] CS 61 B sp 21 课程学完
-  - [ ] 所有的 Lab
-  - [ ] Project 0 2048
-  - [ ] Project 2 Gitlet
-  - [ ] HW 2 完成
-  - [ ] HW 3 完成
-  - [ ] 其他 Project 把 18 的搬过去就行
-  - [ ] 其他资料复习一遍
-- [ ] 清华大学邓俊辉 数据结构学习
-- [ ] MIT 6.046 算法设计与分析
-- [ ] MIT 6.851 高级数据结构
-- [ ] [Introductory Data Structures and Algorithms](https://ilyasergey.net/YSC2229/index.html)（OCmal）
-- [ ] 《数据结构与算法分析——C++语言版》阅读并完成所有习题
-- [ ] 普林斯顿《算法》第四版阅读并完成所有习题
-- [ ] 邓俊辉《数据结构与算法》
-	- [ ] 阅读并完成所有课后习题
-	- [ ] 用C++实现所有数据结构与算法
-	- [ ] OJ刷完
-- [ ] C++实现各个数据结构
-- [ ] STL中的数据结构实现学习
-- [ ] 小型Git实现
-- [ ] CS61B 其他年份的数据结构项目实现
-- [ ] 算法课程刷完
-	- [ ] [战疫时期的算法课-南京大学-2020 年春季\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV11341167sn/?share_source=copy_web&vd_source=400d0ff743c6d48be4704900c57dfd98)
-	- [ ] [Leetcode 101: Introduction to Algorithmic Thinking, Spring 2021](https://algorithmicthinking.github.io/#/)
-	- [ ] 代码随想录
-	- [ ] [算法通关手册](https://algo.itcharge.cn/)
-	- [ ] CS70
-	- [ ] UCB CS170
-	- [ ] MIT Introduction to Algorithms 6.006
-	- [ ] [6.045: Automata, Computability, and Complexity Theory (mit.edu)](https://people.csail.mit.edu/rrw/6.045-2020/index.html)
-	- [ ] MIT 6.854 Advanced Algorithms
-	- [ ] [Tim Roughgarden's Online Courses](http://timroughgarden.org/videos.html)
-	- [ ] [CS 161 (stanford.edu)](http://web.stanford.edu/class/cs161/index.html) [CS 161: Design and Analysis of Algorithms (stanford.edu)](https://web.stanford.edu/class/archive/cs/cs161/cs161.1166/)
-	- [ ] [Schedule | CS 161 (Archived) (stanford-cs161.github.io)](https://stanford-cs161.github.io/winter2021/schedule/)
-	- [ ] [CS 161 | CS 161 (Archived) (stanford-cs161.github.io)](https://stanford-cs161.github.io/winter2022/)
-	- [ ] [CS 161 (Archived) | Design and Analysis of Algorithms (stanford-cs161.github.io)](https://stanford-cs161.github.io/winter2021/)
-	- [ ] [CS 161 | CS 161 (Archived) (stanford-cs161.github.io)](https://stanford-cs161.github.io/winter2022/)
-	- [ ] [CMU 15-451/651: Algorithms, Spring 2021: Main Page](https://www.cs.cmu.edu/~15451-s21/schedule.html)
-	- [ ] [15-451 (cmu.edu)](https://www.cs.cmu.edu/~15451/)
-	- [ ] Coding interview university
-	- [ ] Coursera Algorithms I&&II [算法，第一部分 | Coursera](https://www.coursera.org/learn/algorithms-part1)
-	- [ ] [CIS 1890 (upenn.edu)](https://www.cis.upenn.edu/~cis1890/)
-	- [ ] [CS 225 | Home (illinois.edu)](https://courses.engr.illinois.edu/cs225/sp2023/)(理论)
-	- [ ] [Theoretical Computer Science Fa2020](https://madhu.seas.harvard.edu/courses/Fall2020/)
-	- [ ] [Theoretical Computer Science Fall2023](https://cs121.boazbarak.org/)
-- [ ] 《深入浅出程序设计竞赛》阅读并完成所有习题
-- [ ] 《挑战程序设计竞赛》阅读完成并完成所有习题
-- [ ] 《算法导论》阅读并完成所有习题
-	- [ ] 书籍阅读完成
-	- [ ] 所有公式推导完成
-	- [ ] 课后习题全部完成
-	- [ ] 其上的数据结构与算法全部实现（带googletest测试）
-- [ ] 《程序设计竞赛入门经典》阅读并完成所有习题
-- [ ] 《程序设计竞赛训练指南》阅读并完成所有习题
-- [ ] 《程序设计竞赛进阶指南》阅读并完成[李煜东《算法竞赛进阶指南》题单 - 题单 - 洛谷 | 计算机科学教育新生态](https://www.luogu.com.cn/training/400)
-- [ ] kuangbin带你飞 题单刷完
-- [ ] Leetcode Medium & Hard 刷完
-- [ ] USACO 刷完
-- [ ] Codeforces 比赛
-- [ ] AtCoder 比赛
-- [ ] [清华大学计算机系科协引导文档](https://docs.net9.org/)
-- [ ] [USTC LUG 协会培训](https://101.ustclug.org/)
+- [ ] 并行与分布式系统
+	- [ ] [15-418/15-618: Parallel Computer Architecture and Programming, Spring 2023 (cmu.edu)](http://www.cs.cmu.edu/~418/)
+	- [ ] [CMU 15-712 Fa23](https://www.cs.cmu.edu/~15712/index.html)
+	- [ ] [CMU 15-712 Sp12](https://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15712-s12/www/index.html)
+	- [ ] [CMU 15-440](https://www.synergylabs.org/courses/15-440/)
+	- [ ] **MIT 6.824 [6.824 Home Page: Spring 2022 (mit.edu)](https://pdos.csail.mit.edu/6.824/)**
+	- [ ] **CMU 15-418 [Distributed Systems (cmu.edu)](https://www.andrew.cmu.edu/course/15-440/)**
+	- [ ] [Brown 分布式系统](https://cs.brown.edu/courses/csci1380/s22/index.html)
+	- [ ] [CS1760 – Multiprocessor Synchronization (brown.edu)](https://cs.brown.edu/courses/csci1760/)
+	- [ ] [CS267 Spring 2022 (google.com)](https://sites.google.com/lbl.gov/cs267-spr2022/home)
+	        [UCB CS267 并行计算](https://sites.google.com/lbl.gov/cs267-spr2021/pre-proposal)
+	- [ ] Stanford [CS149](https://gfxcourses.stanford.edu/cs149/fall21)
+	- [ ] MIT 6.846 [6.846 Home Page (mit.edu)](http://courses.csail.mit.edu/6.846/) 并行计算
+	- [ ] MIT 6.836 多核编程
+	- [ ] [Stanford CME213 2021](https://ericdarve.github.io/cme213-spring-2021/)
+	- [ ] [Stanford CME213](https://ericdarve.github.io/)
+	- [ ] MIT 6.826 Principles of Computer Systems [6.826 / Fall 2020 (mit.edu)](https://6826.csail.mit.edu/2020/index.html)
+	- [ ] MIT 6.827 [6.827 Algorithm Engineering Spring 2022 (mit.edu)](https://people.csail.mit.edu/jshun/6827-s22/)
+	- [ ] 深度学习硬件设计 [6.812/6.825 Hardware Architecture for Deep Learning - Spring 2022 (mit.edu)](http://csg.csail.mit.edu/6.825/index.html)
+	- [ ] [Distributed Storage System](https://www.scs.stanford.edu/06wi-cs240d/)
 - [ ] 其他体系结构任务
 	- [ ] 台湾清华大学体系结构课程学习(MIPS COA)(理论) + CS61C(Sp15)
 	- [ ] DDCA 所有实验完成
@@ -563,71 +586,53 @@
 	- [ ] 东南大学系统综合实验
 	- [ ] 芯动力——芯片加速
 	- [ ] 龙芯杯 CPU 设计
-- [ ] [15-418/15-618: Parallel Computer Architecture and Programming, Spring 2023 (cmu.edu)](http://www.cs.cmu.edu/~418/)
-- [ ] [CMU 15-712 Fa23](https://www.cs.cmu.edu/~15712/index.html)
-- [ ] [CMU 15-712 Sp12](https://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15712-s12/www/index.html)
-- [ ] [CMU 15-440](https://www.synergylabs.org/courses/15-440/)
-- [ ] **MIT 6.824 [6.824 Home Page: Spring 2022 (mit.edu)](https://pdos.csail.mit.edu/6.824/)**
-- [ ] **CMU 15-418 [Distributed Systems (cmu.edu)](https://www.andrew.cmu.edu/course/15-440/)**
-- [ ] [Brown 分布式系统](https://cs.brown.edu/courses/csci1380/s22/index.html)
-- [ ] [CS1760 – Multiprocessor Synchronization (brown.edu)](https://cs.brown.edu/courses/csci1760/)
-- [ ] [CS267 Spring 2022 (google.com)](https://sites.google.com/lbl.gov/cs267-spr2022/home)
-        [UCB CS267 并行计算](https://sites.google.com/lbl.gov/cs267-spr2021/pre-proposal)
-- [ ] Stanford [CS149](https://gfxcourses.stanford.edu/cs149/fall21)
-- [ ] MIT 6.846 [6.846 Home Page (mit.edu)](http://courses.csail.mit.edu/6.846/) 并行计算
-- [ ] MIT 6.836 多核编程
-- [ ] [Stanford CME213 2021](https://ericdarve.github.io/cme213-spring-2021/)
-- [ ] [Stanford CME213](https://ericdarve.github.io/)
-- [ ] MIT 6.826 Principles of Computer Systems [6.826 / Fall 2020 (mit.edu)](https://6826.csail.mit.edu/2020/index.html)
-- [ ] MIT 6.827 [6.827 Algorithm Engineering Spring 2022 (mit.edu)](https://people.csail.mit.edu/jshun/6827-s22/)
-- [ ] 深度学习硬件设计 [6.812/6.825 Hardware Architecture for Deep Learning - Spring 2022 (mit.edu)](http://csg.csail.mit.edu/6.825/index.html)
-- [ ] [Distributed Storage System](https://www.scs.stanford.edu/06wi-cs240d/)
-- [ ] [CSCI 1650 (brown.edu)](https://cs.brown.edu/courses/csci1650/index.html)
-      [CSCI 1951H (brown.edu)](https://cs.brown.edu/courses/csci1951-h/index.html)
-- [ ] [CS166 (Spring 2022) (brown.edu)](https://cs.brown.edu/courses/csci1660/#about)
-- [ ] UCB CS161
-- [ ] [CS155 Computer and Network Security (stanford.edu)](https://cs155.stanford.edu/)
-- [ ] Stanford Cryptography
-      Cryptography I,II,III Stanford Coursera
-- [ ] [CS356: Topics in Computer and Network Security (stanford.edu)](https://cs356.stanford.edu/) Fall 2022
-- [ ] [CS255 Introduction to Cryptography (stanford.edu)](https://crypto.stanford.edu/~dabo/cs255/)
-- [ ] [CS 355 (stanford.edu)](https://crypto.stanford.edu/cs355/20sp/) Topics in Cryptography
-      [CS 355 (stanford.edu)](https://crypto.stanford.edu/cs355/22sp/) Topics in Cryptography Spring 2022
-      [Course Schedule · CS 355 (stanford.edu)](https://crypto.stanford.edu/cs355/23sp/schedule/) Spring 2023
-- [ ] [6.5660 / Spring 2023 (mit.edu)](https://css.csail.mit.edu/6.566/2023/schedule.html)
-- [ ] [6.857: Computer and Network Security - Massachusetts Institute of Technology - Spring 2020 (mit.edu)](https://courses.csail.mit.edu/6.857/2020/)
-      [6.857: Applied Cryptography and Security - Massachusetts Institute of Technology - Spring 2022 (mit.edu)](https://courses.csail.mit.edu/6.857/2022/)
-- [ ] MIT 6.858 [6.858 / Spring 2020 / Schedule (mit.edu)](https://css.csail.mit.edu/6.858/2020/schedule.html)
-      [6.858 / Spring 2022 (mit.edu)](https://css.csail.mit.edu/6.858/2022/general.html)
-- [ ] [MIT 6.875 Foundations of Cryptography (mit6875.org)](http://www.mit6875.org/)
-      [MIT 6.875 Foundations of Cryptography (Fall 2021) (mit6875.github.io)](https://mit6875.github.io/fall2021.html)
-      [MIT 6.5620/6.875/18.425 Foundations of Cryptography (Fall 2022) (mit6875.github.io)](https://mit6875.github.io/)
-- [ ] [MIT 6.875 / Berkeley CS 276: Cryptography (Fall 2020)](https://inst.eecs.berkeley.edu/~cs276/fa20/) Graduate 密码学
-- [ ] [6.876J Advanced Topics in Cryptography (Fall 2015) (mit.edu)](https://people.csail.mit.edu/vinodv/6876-Fall2015/index.html)
-- [ ] 计算机和网络安全 [6.857: Computer and Network Security - Massachusetts Institute of Technology - Spring 2020 (mit.edu)](https://courses.csail.mit.edu/6.857/2020/)
-- [ ] [CMU Security Introduction](https://www.cs.cmu.edu/~rdriley/330/index.html)
-- [ ] [CMU Advanced Security](https://www.andrew.cmu.edu/course/18-330/2023s/lectures/)
-- [ ] [CSE 127: Intro to Computer Security (ucsd.edu)](<https://cseweb.ucsd.edu/~dstefan/cse127-fall21/#evaluationandgrading/programmingassignments(55%25)>)（不全）
-      [CSE 127: Intro to Computer Security (ucsd.edu)](https://cseweb.ucsd.edu/~dstefan/cse127-fall21/)——实验可做
-      [CSE 127: Intro to Computer Security (ucsd.edu)](https://cseweb.ucsd.edu/classes/wi21/cse127-a/) winter 2021
-      [CSE 127: Intro to Computer Security (ucsd.edu)](https://cseweb.ucsd.edu/classes/wi22/cse127-a/) winter 2022
-- [ ] [Systems and Network Hacking (unipi.it)](https://lettieri.iet.unipi.it/hacking/)
-- [ ] [Systems Encyclopedia (illinois.edu)](https://systems-encyclopedia.cs.illinois.edu/)
-- [ ] [Nightmare - Nightmare (guyinatuxedo.github.io)](https://guyinatuxedo.github.io/index.html)
-- [ ] [CS 6V81--005: System Security and Binary Code Analysis (ohio-state.edu)](http://web.cse.ohio-state.edu/~lin.3021/spring2012.html)
-- [ ] [https://documents.uow.edu.au/~fuchun/jow.html](https://documents.uow.edu.au/~fuchun/jow.html)
-- [ ] [Low-Level Software Security for Compiler Developers (llsoftsec.github.io)](https://llsoftsec.github.io/llsoftsecbook/?ref=nicholi.me#introduction)
-- [ ] [mobisec lab](https://mobisec.reyammer.io/)
-- [ ] [mobisec challenges](https://challs.reyammer.io/)
-- [ ] pwn college
-- [ ] [SEED Labs](https://seedsecuritylabs.org/index.html)
-- [ ] [cse545](https://cse545.tiffanybao.com/)
-- [ ] [sjtu sys security](https://gosec.sjtu.edu.cn/courses/is308-2022/)
-- [ ] https://www.cse.wustl.edu/~jain/iucee/index.html
-- [ ] [How to read papers](https://web.stanford.edu/class/cs114/reading-levis.pdf)
-- [ ] https://www.cse.iitb.ac.in/~biswa/courses/CS773/lectures/L2.pdf
-- [ ] https://systems.cs.columbia.edu/ds2-class/papers/keshav-paper.pdf
-- [ ] https://web.stanford.edu/group/nusselab/cgi-bin/lab/sites/default/files/How%20to%20read%20a%20paper.Tips_.pdf
+- [ ] 系统安全和软件安全
+	- [ ] [CSCI 1650 (brown.edu)](https://cs.brown.edu/courses/csci1650/index.html)
+	      [CSCI 1951H (brown.edu)](https://cs.brown.edu/courses/csci1951-h/index.html)
+	- [ ] [CS166 (Spring 2022) (brown.edu)](https://cs.brown.edu/courses/csci1660/#about)
+	- [ ] UCB CS161
+	- [ ] [CS155 Computer and Network Security (stanford.edu)](https://cs155.stanford.edu/)
+	- [ ] Stanford Cryptography
+	      Cryptography I,II,III Stanford Coursera
+	- [ ] [CS356: Topics in Computer and Network Security (stanford.edu)](https://cs356.stanford.edu/) Fall 2022
+	- [ ] [CS255 Introduction to Cryptography (stanford.edu)](https://crypto.stanford.edu/~dabo/cs255/)
+	- [ ] [CS 355 (stanford.edu)](https://crypto.stanford.edu/cs355/20sp/) Topics in Cryptography
+	      [CS 355 (stanford.edu)](https://crypto.stanford.edu/cs355/22sp/) Topics in Cryptography Spring 2022
+	      [Course Schedule · CS 355 (stanford.edu)](https://crypto.stanford.edu/cs355/23sp/schedule/) Spring 2023
+	- [ ] [6.5660 / Spring 2023 (mit.edu)](https://css.csail.mit.edu/6.566/2023/schedule.html)
+	- [ ] [6.857: Computer and Network Security - Massachusetts Institute of Technology - Spring 2020 (mit.edu)](https://courses.csail.mit.edu/6.857/2020/)
+	      [6.857: Applied Cryptography and Security - Massachusetts Institute of Technology - Spring 2022 (mit.edu)](https://courses.csail.mit.edu/6.857/2022/)
+	- [ ] MIT 6.858 [6.858 / Spring 2020 / Schedule (mit.edu)](https://css.csail.mit.edu/6.858/2020/schedule.html)
+	      [6.858 / Spring 2022 (mit.edu)](https://css.csail.mit.edu/6.858/2022/general.html)
+	- [ ] [MIT 6.875 Foundations of Cryptography (mit6875.org)](http://www.mit6875.org/)
+	      [MIT 6.875 Foundations of Cryptography (Fall 2021) (mit6875.github.io)](https://mit6875.github.io/fall2021.html)
+	      [MIT 6.5620/6.875/18.425 Foundations of Cryptography (Fall 2022) (mit6875.github.io)](https://mit6875.github.io/)
+	- [ ] [MIT 6.875 / Berkeley CS 276: Cryptography (Fall 2020)](https://inst.eecs.berkeley.edu/~cs276/fa20/) Graduate 密码学
+	- [ ] [6.876J Advanced Topics in Cryptography (Fall 2015) (mit.edu)](https://people.csail.mit.edu/vinodv/6876-Fall2015/index.html)
+	- [ ] 计算机和网络安全 [6.857: Computer and Network Security - Massachusetts Institute of Technology - Spring 2020 (mit.edu)](https://courses.csail.mit.edu/6.857/2020/)
+	- [ ] [CMU Security Introduction](https://www.cs.cmu.edu/~rdriley/330/index.html)
+	- [ ] [CMU Advanced Security](https://www.andrew.cmu.edu/course/18-330/2023s/lectures/)
+	- [ ] [CSE 127: Intro to Computer Security (ucsd.edu)](<https://cseweb.ucsd.edu/~dstefan/cse127-fall21/#evaluationandgrading/programmingassignments(55%25)>)（不全）
+	      [CSE 127: Intro to Computer Security (ucsd.edu)](https://cseweb.ucsd.edu/~dstefan/cse127-fall21/)——实验可做
+	      [CSE 127: Intro to Computer Security (ucsd.edu)](https://cseweb.ucsd.edu/classes/wi21/cse127-a/) winter 2021
+	      [CSE 127: Intro to Computer Security (ucsd.edu)](https://cseweb.ucsd.edu/classes/wi22/cse127-a/) winter 2022
+	- [ ] [Systems and Network Hacking (unipi.it)](https://lettieri.iet.unipi.it/hacking/)
+	- [ ] [Systems Encyclopedia (illinois.edu)](https://systems-encyclopedia.cs.illinois.edu/)
+	- [ ] [Nightmare - Nightmare (guyinatuxedo.github.io)](https://guyinatuxedo.github.io/index.html)
+	- [ ] [CS 6V81--005: System Security and Binary Code Analysis (ohio-state.edu)](http://web.cse.ohio-state.edu/~lin.3021/spring2012.html)
+	- [ ] [https://documents.uow.edu.au/~fuchun/jow.html](https://documents.uow.edu.au/~fuchun/jow.html)
+	- [ ] [Low-Level Software Security for Compiler Developers (llsoftsec.github.io)](https://llsoftsec.github.io/llsoftsecbook/?ref=nicholi.me#introduction)
+	- [ ] [mobisec lab](https://mobisec.reyammer.io/)
+	- [ ] [mobisec challenges](https://challs.reyammer.io/)
+	- [ ] pwn college
+	- [ ] [SEED Labs](https://seedsecuritylabs.org/index.html)
+	- [ ] [cse545](https://cse545.tiffanybao.com/)
+	- [ ] [sjtu sys security](https://gosec.sjtu.edu.cn/courses/is308-2022/)
+	- [ ] https://www.cse.wustl.edu/~jain/iucee/index.html
+	- [ ] [How to read papers](https://web.stanford.edu/class/cs114/reading-levis.pdf)
+	- [ ] https://www.cse.iitb.ac.in/~biswa/courses/CS773/lectures/L2.pdf
+	- [ ] https://systems.cs.columbia.edu/ds2-class/papers/keshav-paper.pdf
+	- [ ] https://web.stanford.edu/group/nusselab/cgi-bin/lab/sites/default/files/How%20to%20read%20a%20paper.Tips_.pdf
 - [ ] 15213 学习完成，完成所有课程任务和实验，并做实验笔记
 	- [x] Ch3 总结完成，把几个痛点难点打穿 ✅ 2025-03-20
 		- [x] switch case 语句难点解决 ✅ 2025-03-20
@@ -874,4 +879,5 @@
 - [ ] CS-Journey中的项目全部搞完
 - [ ] 简历制作完成
 - [ ] 投递工作简历，等待面试
+- [ ] 第一阶段其他任务全部完成
 
