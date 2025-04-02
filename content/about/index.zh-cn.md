@@ -3,7 +3,7 @@ title: 关于 Wen Gao
 date: 2024-10-26
 draft: false
 lightgallery: false
-lastmod: 2025-02-13T10:23:26+08:00
+lastmod: 2025-04-01T12:35:56+08:00
 ---
 
 > 我有过多次这样的奇遇，
