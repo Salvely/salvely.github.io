@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/journal/2025年4月第一周记录.md",
+                "file": "posts/journal/2025年4月第二周记录.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025年4月第一周记录"
+              "title": "2025年4月第二周记录"
             }
           },
           {
@@ -37,8 +37,7 @@
               "title": "任务列表"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -70,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "more",
+                "query": "2025-7",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -213,17 +212,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "852a8cc5f74c138a",
+  "active": "8f3f0904b956a406",
   "lastOpenFiles": [
-    "posts/journal/2025年4月第一周记录.md",
     "task/任务列表.md",
-    "about/index.zh-cn.md",
+    "posts/journal/2025年4月第二周记录.md",
+    "posts/journal/2025年4月第一周记录.md",
+    "posts/cs/scientific-research/CCF A类会议截止时间概览.md",
     "posts/journal/2025年3月第四周记录.md",
+    "roadmap/计算机科学之路.md",
+    "about/index.zh-cn.md",
     "posts/journal/2025年3月第三周记录.md",
     "posts/journal/录取后的迷茫.md",
     "posts/template/journal.md",
     "posts/journal/上交软院复试记.md",
-    "roadmap/计算机科学之路.md",
     "posts/journal/群体众生相和一些反思.md",
     "posts/journal/年终错误总结报告.md",
     "posts/journal/立志.md",
@@ -251,8 +252,6 @@
     "posts/cs/系统入门/15-213/15-213 Lab/Attack lab 实验总结/index.md",
     "posts/cs/系统入门/15-213/15-213 Activity/Machine control activity/index.md",
     "posts/cs/系统入门/15-213/15-213 Lab/Bomb lab 实验总结/index.md",
-    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch2/index.md",
-    "posts/cs/image-tests/index.md",
     "posts/cs/image-tests",
     "zh-cn",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/writeback.drawio",

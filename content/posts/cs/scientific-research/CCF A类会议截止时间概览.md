@@ -1,6 +1,6 @@
 ---
 date: 2024-11-09T09:06:59+08:00
-lastmod: 2024-11-10T22:38:05+08:00
+lastmod: 2025-04-05T14:57:09+08:00
 authors:
   - Salvely
 title: CCF 重要顶会及截止时间概览
@@ -110,3 +110,13 @@ code:
 - SIGMOD
 - FOCS
 - STOC
+
+## Next Deadline
+
+- [ ] EuroSys 5-9(春)
+- [ ] VLDB 每月一次
+- [ ] SIGMOD 7-18
+- [ ] 9-12 NSDI
+- [ ] FAST 9-17
+- [ ] EuroSys 9-26（秋）
+- [ ] SIGMOD 10-18
