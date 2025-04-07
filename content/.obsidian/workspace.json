@@ -13,16 +13,32 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "posts/cs/计算机体系结构/HDLBits/Getting Started.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Getting Started"
+            }
+          },
+          {
+            "id": "727e28e6f5ae2947",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "posts/journal/2025年4月第二周记录.md",
                 "mode": "source",
                 "source": false
               },
+              "pinned": true,
               "icon": "lucide-file",
               "title": "2025年4月第二周记录"
             }
           },
           {
-            "id": "852a8cc5f74c138a",
+            "id": "310c779127e33768",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -214,8 +230,10 @@
   },
   "active": "8f3f0904b956a406",
   "lastOpenFiles": [
-    "task/任务列表.md",
     "posts/journal/2025年4月第二周记录.md",
+    "posts/cs/计算机体系结构/HDLBits/Getting Started.md",
+    "posts/cs/计算机体系结构/HDLBits",
+    "task/任务列表.md",
     "posts/journal/2025年4月第一周记录.md",
     "posts/cs/scientific-research/CCF A类会议截止时间概览.md",
     "posts/journal/2025年3月第四周记录.md",
@@ -250,15 +268,12 @@
     "posts/others/旅游出差必备物品列表.md",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch3.md",
     "posts/cs/系统入门/15-213/15-213 Lab/Attack lab 实验总结/index.md",
-    "posts/cs/系统入门/15-213/15-213 Activity/Machine control activity/index.md",
-    "posts/cs/系统入门/15-213/15-213 Lab/Bomb lab 实验总结/index.md",
     "posts/cs/image-tests",
     "zh-cn",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/writeback.drawio",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/updatepc.drawio",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/seq.drawio",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/pipe-.drawio",
-    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/pipe+.drawio",
-    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/mem.drawio"
+    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/pipe+.drawio"
   ]
 }
