@@ -3,9 +3,16 @@
 
 <!--more-->
 
-本周主要任务：挑战个人极限，减脂10斤，并完成任务列表中列出的所有任务。
+大病初愈，元气恢复，开肝！~
+
+本周的重要deadline：4月10日完成所有的学习任务（计算机、数学、英语，包括开源贡献、顶级会议论文复现工作完成），以及所有香港申请材料准备，提交申请材料，以及工作简历。
 
 - [ ] 心理 & 生活挑战
+	- [x] 清楚的认识到父亲是有毒的，只有远离他才过的好，不应该为此有任何愧疚 ✅ 2025-04-08
+	- [x] 清楚的认识到只有身体素质强劲，能力强才能做到不为任何事情内耗，过上好的生活 ✅ 2025-04-08
+	- [x] 确立MIT CS phD的目标 ✅ 2025-04-08
+	- [x] 清楚的认识到精力旺盛，努力靠近目标，不内耗的前提是有一个强健的身体素质 ✅ 2025-04-08
+	- [x] 清楚的意识到强健的身体素质需要狠狠的锻炼+大量维生素D补充 ✅ 2025-04-08
 	- [ ] 学习吃药和护肤，把皮肤状态调理好
 	- [ ] 学会睡觉和休息，而不是一味的爆肝
 	- [ ] 尝试少去思考心理、生活和现实问题，把胡思乱想转化为不断做事，观察效果
@@ -19,10 +26,11 @@
 	- [ ] 学会爱自己，取悦自己
 - [ ] 数据结构与算法
 	- [ ] [15-121 Main Page (cmu.edu)](https://www.cs.cmu.edu/~rdriley/121/index.html) Fall 2022
-		- [ ] 几个经典的search和sort算法实现
+		- [x] 几个经典的search和sort算法实现 ✅ 2025-04-07
 			- 网上关于算法的内容质量真的是参差不齐，很多表述非常模糊，也没有数学推导
 			- [数据结构合集 - 快速排序(算法过程, 效率分析, 稳定性分析)_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1y4421Z7hK/?spm_id_from=333.337.search-card.all.click&vd_source=85acf0a59ded02e4c75ae1158baca207) 这个视频快排讲的很好
-		- [ ] 学习java style guide，并运用到项目中
+			- 这个博客讲的也不错：[❤️全面图解快速排序，详细图文并茂解析！❤️_快速排序图解过程-CSDN博客](https://blog.csdn.net/qq_37084904/article/details/119852074)
+		- [x] 学习java style guide，并运用到项目中 ✅ 2025-04-07
 		- [ ] 利用priority heap实现迪杰斯特拉算法，完成Hw6
 	- [ ] Caltech [CS 2 (debuggi.ng)](https://debuggi.ng/23wi/) 实验网址：[cs2-23wi · GitLab (caltech.edu)](https://gitlab.caltech.edu/cs2-23wi)
 	- [ ] [Illionis Data Structure](https://courses.engr.illinois.edu/cs225/fa2022/pages/lectures.html)
@@ -222,13 +230,28 @@
 	- [ ] Codeforces 比赛
 	- [ ] AtCoder 比赛
 - [ ] [清华大学计算机系科协引导文档](https://docs.net9.org/)
+	- 下面列出需要学习的内容
+	- [ ] Linux 基础
+	- [ ] VsCode 配置
+	- [ ] 如何使用搜索引擎
+	- [ ] 编译原理 & 计算机图形学
+		- [ ] 实现C语言编译器
+		- [ ] 实现C++编译器
+		- [ ] 实现Python解释器，带图形界面包，以及ai模块包
+		- [ ] 实现Java编译器
+		- [ ] 实现Javascript解释器，带图形功能
+		- [ ] 编程语言：Typescript 语言基础
+		- [ ] 实现typescript解释器
+		- [ ] 实现rust语言编译器
+	- [ ] 数据结构 & 算法：oi-wiki
+	- [ ] 人工智能 & 机器学习：pytorch入门
+	- [ ] 操作系统：Rust 语言基础
 - [ ] [USTC LUG 协会培训](https://101.ustclug.org/)
 - [ ] 计算机组成原理和体系结构
 	- [ ] 之前的笔记复习完成
 	- [ ] 时序逻辑一章的习题完成
 	- [ ] Verilog语言学习
 		- [ ] HDLBits 刷题
-		- [ ] 中科大 Verilog OJ 刷题
 	- [ ] 台湾清华大学 数位逻辑设计
 	- [ ] [华科数字逻辑实验完成](https://www.educoder.net/shixuns/5q8f4lbg/challenges)
 	- [ ] [中科大数字逻辑实验(Verilog)](https://soc.ustc.edu.cn/Digital/#_9)
