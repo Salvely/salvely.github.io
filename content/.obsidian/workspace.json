@@ -110,8 +110,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "b6e242f1b1b8a9b6",
@@ -233,14 +232,14 @@
     "posts/journal/2025年4月第二周记录.md",
     "posts/cs/计算机体系结构/HDLBits/Verilog Language.md",
     "task/任务列表.md",
+    "posts/journal/2025年4月第一周记录.md",
+    "posts/journal/2025年3月第四周记录.md",
+    "posts/journal/2025年3月第三周记录.md",
     "posts/cs/计算机体系结构/HDLBits/Getting Started.md",
     "posts/cs/计算机体系结构/HDLBits",
-    "posts/journal/2025年4月第一周记录.md",
     "posts/cs/scientific-research/CCF A类会议截止时间概览.md",
-    "posts/journal/2025年3月第四周记录.md",
     "roadmap/计算机科学之路.md",
     "about/index.zh-cn.md",
-    "posts/journal/2025年3月第三周记录.md",
     "posts/journal/录取后的迷茫.md",
     "posts/template/journal.md",
     "posts/journal/上交软院复试记.md",

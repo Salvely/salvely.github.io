@@ -18,7 +18,7 @@ toc:
 code:
   maxShownlines: 100
 date: 2025-04-07T18:31:01+08:00
-lastmod: 2025-04-08T16:16:56+08:00
+lastmod: 2025-04-08T17:14:33+08:00
 ---
 
 <!--more-->
@@ -619,6 +619,48 @@ endmodule
 
 ### Adder-subtractor
 
+对加法器进行变种，实现减法器。代码如下：
+
+```verilog
+module top_module(
+    input [31:0] a,
+    input [31:0] b,
+    input sub,
+    output [31:0] sum
+);
+    wire [31:0] b_in;
+    wire cout;
+    wire cout2;
+    assign b_in = b ^ {32{sub}};
+    add16 adder1(a[15:0],b_in[15:0],sub,sum[15:0],cout);
+    add16 adder2(a[31:16],b_in[31:16],cout,sum[31:16],cout2);
+endmodule
+```
+
+### Module 总结
+
+- module的声明
+- module的连接：connect by name和connect by position
+- vector和module的结合使用
+- always和case语句的使用
+- 半加器，全加器，高校加法器，减法器的实现
+
 ## Procedures
+
+### always blocks (combinational)
+
+### always blocks (clocked)
+
+### if statement
+
+### if statement latches
+
+### case statement
+
+### priority encoder
+
+### priority encoder with casez
+
+### avoiding latches
 
 ## More Verilog Features
