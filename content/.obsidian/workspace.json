@@ -40,7 +40,7 @@
             }
           },
           {
-            "id": "83544ba2e959325f",
+            "id": "da108a51db2e9963",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -238,10 +238,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "83544ba2e959325f",
+  "active": "da108a51db2e9963",
   "lastOpenFiles": [
     "posts/journal/2025年4月第二周记录.md",
     "task/任务列表.md",
+    "about/index.zh-cn.md",
     "posts/others/为人民服务.md",
     "roadmap/计算机科学之路.md",
     "posts/cs/计算机体系结构/HDLBits/Getting Started.md",
@@ -251,7 +252,6 @@
     "posts/journal/2025年3月第三周记录.md",
     "posts/cs/计算机体系结构/HDLBits",
     "posts/cs/scientific-research/CCF A类会议截止时间概览.md",
-    "about/index.zh-cn.md",
     "posts/journal/录取后的迷茫.md",
     "posts/template/journal.md",
     "posts/journal/上交软院复试记.md",
