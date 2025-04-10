@@ -1,3 +1,6 @@
 {
-  "showRibbon": true
+  "showRibbon": true,
+  "textFontFamily": "Noto Sans SC,JetBrains Mono,PingFang SC",
+  "interfaceFontFamily": "Noto Sans SC,PingFang SC",
+  "monospaceFontFamily": "JetBrains Mono"
 }
