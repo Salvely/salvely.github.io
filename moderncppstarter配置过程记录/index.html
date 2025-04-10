@@ -80,7 +80,7 @@ tw-scrollbar-thin"><span class=line><span class=cl>sudo apt install pip
 </span></span><span class=line><span class=cl><span class=nb>source</span> ~/.bashrc
 </span></span><span class=line><span class=cl>sudo apt-get install doxygen
 </span></span><span class=line><span class=cl>pip install jinja2
-</span></span><span class=line><span class=cl>pip install pygments</span></span></code></pre></div><h2 id=初次构建项目 class=headerLink><a href=#%e5%88%9d%e6%ac%a1%e6%9e%84%e5%bb%ba%e9%a1%b9%e7%9b%ae class=header-mark></a>3 初次构建项目</h2><p>项目通过如下命令进行构建，我们将其放在一个<code>run.sh</code>中（放在仓库根目录下），命令如下：</p><div class="code-block highlight is-closed show-line-numbers tw-group tw-my-2"><div class="code-block-title
+</span></span><span class=line><span class=cl>pip install pygments</span></span></code></pre></div><h2 id=初次构建项目 class=headerLink><a href=#%e5%88%9d%e6%ac%a1%e6%9e%84%e5%bb%ba%e9%a1%b9%e7%9b%ae class=header-mark></a>3 初次构建项目</h2><p>项目通过如下命令进行构建，我们将其放在一个<code>run.sh</code>中（放在仓库根目录下），命令如下：</p><div class="code-block highlight is-open show-line-numbers tw-group tw-my-2"><div class="code-block-title
 tw-flex
 tw-flex-row
 tw-justify-between
@@ -140,7 +140,7 @@ tw-scrollbar-thin"><span class=line><span class=cl>cmake -S all -B build
 </span></span><span class=line><span class=cl><span class=c1># run standalone</span>
 </span></span><span class=line><span class=cl>./build/standalone/Greeter --help
 </span></span><span class=line><span class=cl><span class=c1># build docs</span>
-</span></span><span class=line><span class=cl>cmake --build build --target GenerateDocs</span></span></code></pre></div><p>如果想单独构建各个部分，可以分别进行如下操作：</p><div class="code-block highlight is-closed show-line-numbers tw-group tw-my-2"><div class="code-block-title
+</span></span><span class=line><span class=cl>cmake --build build --target GenerateDocs</span></span></code></pre></div><p>如果想单独构建各个部分，可以分别进行如下操作：</p><div class="code-block highlight is-open show-line-numbers tw-group tw-my-2"><div class="code-block-title
 tw-flex
 tw-flex-row
 tw-justify-between
@@ -558,7 +558,7 @@ tw-scrollbar-thin"><span class=line><span class=cl>gwen@gwen-virtual-machine:~/D
 </span></span><span class=line><span class=cl><span class=o>===============================================================================</span>
 </span></span><span class=line><span class=cl><span class=o>[</span>doctest<span class=o>]</span> <span class=nb>test</span> cases: <span class=m>2</span> <span class=p>|</span> <span class=m>2</span> passed <span class=p>|</span> <span class=m>0</span> failed <span class=p>|</span> <span class=m>0</span> skipped
 </span></span><span class=line><span class=cl><span class=o>[</span>doctest<span class=o>]</span> assertions: <span class=m>5</span> <span class=p>|</span> <span class=m>5</span> passed <span class=p>|</span> <span class=m>0</span> failed <span class=p>|</span>
-</span></span><span class=line><span class=cl><span class=o>[</span>doctest<span class=o>]</span> Status: SUCCESS!</span></span></code></pre></div><h2 id=将greeter转化为自己的项目 class=headerLink><a href=#%e5%b0%86greeter%e8%bd%ac%e5%8c%96%e4%b8%ba%e8%87%aa%e5%b7%b1%e7%9a%84%e9%a1%b9%e7%9b%ae class=header-mark></a>4 将<code>Greeter</code>转化为自己的项目</h2><p>要将<code>Greeter</code>转化为我们自己的项目，需要项目中的<code>Greeter</code>（不分大小写）进行一些替换。我们想要将<code>Greeter</code>转化为<code>DsProject</code>，将<code>greeter</code>转化为<code>dsproject</code>。</p><p>首先我们需要看一下项目的结构：</p><div class="code-block highlight is-closed show-line-numbers tw-group tw-my-2"><div class="code-block-title
+</span></span><span class=line><span class=cl><span class=o>[</span>doctest<span class=o>]</span> Status: SUCCESS!</span></span></code></pre></div><h2 id=将greeter转化为自己的项目 class=headerLink><a href=#%e5%b0%86greeter%e8%bd%ac%e5%8c%96%e4%b8%ba%e8%87%aa%e5%b7%b1%e7%9a%84%e9%a1%b9%e7%9b%ae class=header-mark></a>4 将<code>Greeter</code>转化为自己的项目</h2><p>要将<code>Greeter</code>转化为我们自己的项目，需要项目中的<code>Greeter</code>（不分大小写）进行一些替换。我们想要将<code>Greeter</code>转化为<code>DsProject</code>，将<code>greeter</code>转化为<code>dsproject</code>。</p><p>首先我们需要看一下项目的结构：</p><div class="code-block highlight is-open show-line-numbers tw-group tw-my-2"><div class="code-block-title
 tw-flex
 tw-flex-row
 tw-justify-between
@@ -651,7 +651,7 @@ tw-scrollbar-thin"><span class=line><span class=cl>gwen@gwen-virtual-machine:~/D
 </span></span><span class=line><span class=cl>    ├── CMakeLists.txt
 </span></span><span class=line><span class=cl>    └── <span class=nb>source</span>
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=m>19</span> directories, <span class=m>21</span> files</span></span></code></pre></div><p>那么我们主要需要修改的部分包括：</p><ul><li>all/CMakeLists.txt：进行子项目管理</li><li>CMakeLists.txt：进行主要的构建配置</li><li>include/greeter：存放头文件，不用多说</li><li>README.md：README.md说明文件，不用多说</li><li>source/greeter.cpp：存放源代码文件，不用多说</li><li>standalone/* ：standalone为一个可以单独构建的子项目，里面有单独的<code>CMake</code>，不用多说</li><li>test/* ：存放测试文件，其总体结构和standalone相似，也是一个可以单独构建的子项目，不用多说</li></ul><p>接下来我们逐个查看这些文件的内容。</p><h3 id=allcmakeliststxt class=headerLink><a href=#allcmakeliststxt class=header-mark></a>4.1 <code>all/CMakeLists.txt</code></h3><div class="code-block highlight is-closed show-line-numbers tw-group tw-my-2"><div class="code-block-title
+</span></span><span class=line><span class=cl><span class=m>19</span> directories, <span class=m>21</span> files</span></span></code></pre></div><p>那么我们主要需要修改的部分包括：</p><ul><li>all/CMakeLists.txt：进行子项目管理</li><li>CMakeLists.txt：进行主要的构建配置</li><li>include/greeter：存放头文件，不用多说</li><li>README.md：README.md说明文件，不用多说</li><li>source/greeter.cpp：存放源代码文件，不用多说</li><li>standalone/* ：standalone为一个可以单独构建的子项目，里面有单独的<code>CMake</code>，不用多说</li><li>test/* ：存放测试文件，其总体结构和standalone相似，也是一个可以单独构建的子项目，不用多说</li></ul><p>接下来我们逐个查看这些文件的内容。</p><h3 id=allcmakeliststxt class=headerLink><a href=#allcmakeliststxt class=header-mark></a>4.1 <code>all/CMakeLists.txt</code></h3><div class="code-block highlight is-open show-line-numbers tw-group tw-my-2"><div class="code-block-title
 tw-flex
 tw-flex-row
 tw-justify-between
@@ -717,7 +717,7 @@ tw-scrollbar-thin"><span class=line><span class=cl><span class=c># this script a
 </span></span></span><span class=line><span class=cl><span class=err>
 </span></span></span><span class=line><span class=cl><span class=err></span><span class=nb>add_subdirectory</span><span class=p>(</span><span class=o>${</span><span class=nv>CMAKE_CURRENT_LIST_DIR</span><span class=o>}</span><span class=s>/../test</span> <span class=o>${</span><span class=nv>CMAKE_BINARY_DIR</span><span class=o>}</span><span class=s>/test</span><span class=p>)</span><span class=err>
 </span></span></span><span class=line><span class=cl><span class=err>
-</span></span></span><span class=line><span class=cl><span class=err></span><span class=nb>add_subdirectory</span><span class=p>(</span><span class=o>${</span><span class=nv>CMAKE_CURRENT_LIST_DIR</span><span class=o>}</span><span class=s>/../documentation</span> <span class=o>${</span><span class=nv>CMAKE_BINARY_DIR</span><span class=o>}</span><span class=s>/documentation</span><span class=p>)</span></span></span></code></pre></div><p>可以看到，这个<code>CMake</code>文件主要负责子项目的管理，如果要添加子项目进来，就仿照添加<code>standalone</code>那样方式就行。测试和文档已经添加进来，如果要进行改动，直接修改<code>test</code>和<code>documentation</code>下的文件就行。</p><h3 id=cmakeliststxt class=headerLink><a href=#cmakeliststxt class=header-mark></a>4.2 <code>CMakeLists.txt</code></h3><div class="code-block highlight is-closed show-line-numbers tw-group tw-my-2"><div class="code-block-title
+</span></span></span><span class=line><span class=cl><span class=err></span><span class=nb>add_subdirectory</span><span class=p>(</span><span class=o>${</span><span class=nv>CMAKE_CURRENT_LIST_DIR</span><span class=o>}</span><span class=s>/../documentation</span> <span class=o>${</span><span class=nv>CMAKE_BINARY_DIR</span><span class=o>}</span><span class=s>/documentation</span><span class=p>)</span></span></span></code></pre></div><p>可以看到，这个<code>CMake</code>文件主要负责子项目的管理，如果要添加子项目进来，就仿照添加<code>standalone</code>那样方式就行。测试和文档已经添加进来，如果要进行改动，直接修改<code>test</code>和<code>documentation</code>下的文件就行。</p><h3 id=cmakeliststxt class=headerLink><a href=#cmakeliststxt class=header-mark></a>4.2 <code>CMakeLists.txt</code></h3><div class="code-block highlight is-open show-line-numbers tw-group tw-my-2"><div class="code-block-title
 tw-flex
 tw-flex-row
 tw-justify-between
@@ -900,7 +900,7 @@ group-[.is-closed]:!tw-max-h-0
 group-[.is-wrap]:tw-text-wrap
 tw-overflow-y-hidden
 tw-overflow-x-auto
-tw-scrollbar-thin"><span class=line><span class=cl><span class=nb>add_subdirectory</span><span class=p>(</span><span class=o>${</span><span class=nv>CMAKE_CURRENT_LIST_DIR</span><span class=o>}</span><span class=s>/../list</span> <span class=o>${</span><span class=nv>CMAKE_BINARY_DIR</span><span class=o>}</span><span class=s>/list</span><span class=p>)</span></span></span></code></pre></div><p>这里的<code>${CMAKE_CURRENT_LIST_DIR}</code>指的就是当前这个<code>all/CMakeLists.txt</code>文件夹，而<code>${CMAKE_BINARY_DIR}</code>就是<code>build</code>文件夹。我们会在<code>/build/list</code>下生成对应的构建内容。</p><p>接下来我们研究一下<code>standalone</code>子项目的结构，该子项目有一个<code>source</code>文件夹，存放的是<code>.cpp</code>源代码，还有一个<code>CMakeLists.txt</code>，存放的是该子项目的构建文件。</p><p>其中<code>main.cpp</code>的内容如下：</p><div class="code-block highlight is-closed show-line-numbers tw-group tw-my-2"><div class="code-block-title
+tw-scrollbar-thin"><span class=line><span class=cl><span class=nb>add_subdirectory</span><span class=p>(</span><span class=o>${</span><span class=nv>CMAKE_CURRENT_LIST_DIR</span><span class=o>}</span><span class=s>/../list</span> <span class=o>${</span><span class=nv>CMAKE_BINARY_DIR</span><span class=o>}</span><span class=s>/list</span><span class=p>)</span></span></span></code></pre></div><p>这里的<code>${CMAKE_CURRENT_LIST_DIR}</code>指的就是当前这个<code>all/CMakeLists.txt</code>文件夹，而<code>${CMAKE_BINARY_DIR}</code>就是<code>build</code>文件夹。我们会在<code>/build/list</code>下生成对应的构建内容。</p><p>接下来我们研究一下<code>standalone</code>子项目的结构，该子项目有一个<code>source</code>文件夹，存放的是<code>.cpp</code>源代码，还有一个<code>CMakeLists.txt</code>，存放的是该子项目的构建文件。</p><p>其中<code>main.cpp</code>的内容如下：</p><div class="code-block highlight is-open show-line-numbers tw-group tw-my-2"><div class="code-block-title
 tw-flex
 tw-flex-row
 tw-justify-between
@@ -1002,7 +1002,7 @@ tw-scrollbar-thin"><span class=line><span class=cl><span class=cp>#include</span
 </span></span><span class=line><span class=cl>  <span class=n>std</span><span class=o>::</span><span class=n>cout</span> <span class=o>&lt;&lt;</span> <span class=n>dsproject</span><span class=p>.</span><span class=n>greet</span><span class=p>(</span><span class=n>langIt</span><span class=o>-&gt;</span><span class=n>second</span><span class=p>)</span> <span class=o>&lt;&lt;</span> <span class=n>std</span><span class=o>::</span><span class=n>endl</span><span class=p>;</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
-</span></span><span class=line><span class=cl><span class=p>}</span></span></span></code></pre></div><p>我们可以看到，在</p><p>其<code>CMakeLists.txt</code>的内容如下：</p><div class="code-block highlight is-closed show-line-numbers tw-group tw-my-2"><div class="code-block-title
+</span></span><span class=line><span class=cl><span class=p>}</span></span></span></code></pre></div><p>我们可以看到，在</p><p>其<code>CMakeLists.txt</code>的内容如下：</p><div class="code-block highlight is-open show-line-numbers tw-group tw-my-2"><div class="code-block-title
 tw-flex
 tw-flex-row
 tw-justify-between
