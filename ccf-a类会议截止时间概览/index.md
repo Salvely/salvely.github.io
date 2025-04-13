@@ -9,13 +9,13 @@
 
 - ~~SC 4-3/4-7/4-2~~
 - MICRO 4-19/4-29/4-22/4-17
-- ~~HPCA 8-3/8-5/8-2/7-31~~
+- HPCA 8-3/8-5/8-2/7-31
 - PPoPP 8-17/8-5/8-18/8-14/8-14
 - FAST 9-18/9-22/9-23/9-24/9-25
 - EuroSys 10-23/10-20/10-19/10-10/10-10
 - ASPLOS 10-19/12-1/10-21/8-7/8-22
-- ~~ISCA 11-15/11-22/11-22/11-24~~
-- ~~DAC 11-21/11-21/11-22/11-23~~
+- ISCA 11-15/11-22/11-22/11-24
+- DAC 11-21/11-21/11-22/11-23
 - USENIX ATC 1-15/1-13/1-17/1-14/1-13
 - HotOS 2-2
 
@@ -93,13 +93,25 @@
 - FOCS
 - STOC
 
-## Next Deadline
+## 各月份顶会deadline
 
-- [ ] EuroSys 5-9(春)
-- [ ] VLDB 每月一次
-- [ ] SIGMOD 7-18
-- [ ] 9-12 NSDI
-- [ ] FAST 9-17
-- [ ] EuroSys 9-26（秋）
-- [ ] SIGMOD 10-18
+7月：POPL SIGMOD
+
+8月：HPCA PPoPP
+
+9月：FAST NSDI EuroSys
+
+10月：ASPLOS SIDMOD
+
+11月：PLDI
+
+12月：OSDI
+
+1月：USENIX ATC
+
+2月：HOTOS SIGCOMM OOPSLA
+
+4月：MICRO SOSP SIGMOD
+
+5月：EuroSys FAST
 

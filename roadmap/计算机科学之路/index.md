@@ -686,10 +686,22 @@
 
 ## 发表系统顶级会议论文
 
-- [ ] 📅 2025-7-16 SIGMOD
-- [ ] 📅 2025-7-19 ICSE
+- [ ] SOSP
+- [ ] POPL
+- [ ] OOPSLA
+- [ ] OSDI
+- [ ] PLDI
+- [ ] USENIX Security
+- [ ] PPoPP
+- [ ] HPCA
+- [ ] ASPLOS
+- [ ] MICRO
+- [ ] USENIX ATC
 - [ ] 📅 2025-9-17 FAST 9-17
 - [ ] 📅 2025-9-26 EuroSys 9-26
+- [ ] 📅 2025-7-16 SIGMOD
+- [ ] VLDB
+- ICSE（软件工程会议，如果有好的系统软件工具或者其他软件工具，可以发表这个会议的论文）
 
 ## 终极目标
 
