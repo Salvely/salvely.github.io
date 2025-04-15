@@ -5,7 +5,7 @@ title: ModernCppStarter配置过程记录
 tags:
   - CMake
 categories:
-  - tool
+  - 工具
 seriesNavigation: true
 enableLastMod: true
 enableWordCount: true
