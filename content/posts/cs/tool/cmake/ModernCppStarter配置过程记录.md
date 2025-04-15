@@ -5,7 +5,7 @@ title: ModernCppStarter配置过程记录
 tags:
   - CMake
 categories:
-  - 工具
+  - tool
 seriesNavigation: true
 enableLastMod: true
 enableWordCount: true
@@ -16,7 +16,7 @@ toc:
 code:
   maxShownlines: 100
 date: 2025-03-18T19:19:44+08:00
-lastmod: 2025-03-18T21:25:27+08:00
+lastmod: 2025-04-15T19:18:42+08:00
 ---
 
 之前很久没用`CMake`了，今天想要用C++重新实现一下各个数据结构，想要使用`CMake`来配置整个项目，并且在其中添加测试。无奈一上手发现`CMake`的语法都忘了（太久没写了，挠头）。所幸在`Github`上找到了一个非常好的`CMake`模板：[TheLartians/ModernCppStarter: 🚀 Kick-start your C++! A template for modern C++ projects using CMake, CI, code coverage, clang-format, reproducible dependency management and much more.](https://github.com/TheLartians/ModernCppStarter)，下面详细记录该模板的配置过程。
@@ -607,4 +607,3 @@ target_link_libraries(${PROJECT_NAME} DsProject::DsProject cxxopts)
 ## 第一个`list`子项目配置
 
 ## 添加`list`子项目的测试
-
