@@ -8,22 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "dfe5ede4e407415d",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "posts/journal/2025年4月第三周记录.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true,
-              "icon": "lucide-file",
-              "title": "2025年4月第三周记录"
-            }
-          },
-          {
             "id": "3d74e23d4532722b",
             "type": "leaf",
             "pinned": true,
@@ -54,8 +38,23 @@
               "icon": "lucide-file",
               "title": "任务列表"
             }
+          },
+          {
+            "id": "25aa98e7c3b31d2d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/journal/2025年4月第三周记录.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2025年4月第三周记录"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -234,15 +233,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dfe5ede4e407415d",
+  "active": "25aa98e7c3b31d2d",
   "lastOpenFiles": [
     "roadmap/计算机科学之路.md",
+    "posts/journal/2025年4月第三周记录.md",
     "task/任务列表.md",
+    "series/test-series/_index.zh-cn.md",
+    "series/_index.zh-cn.md",
     "posts/cs/rust/rustlings 通关记录.md.md",
+    "posts/cs/rust/2025年4月第三周记录.md",
     "posts/cs/oi/集合求和.md",
     "posts/cs/oi/乒乓球.md",
     "posts/how-to-DoIt/create-diagrams/index.zh-cn.md",
-    "posts/journal/2025年4月第三周记录.md",
     "posts/journal/2025年4月第一周记录.md",
     "posts/journal/立志.md",
     "posts/journal/录取后的迷茫.md",
@@ -259,9 +261,6 @@
     "posts/cs/计算机体系结构/HDLBits/Getting Started.md",
     "posts/cs/计算机体系结构/HDLBits/Verilog Language.md",
     "posts/apply/香港硕士研究生留学申请记录.md",
-    "posts/apply/phD 申请攻略.md",
-    "about/index.zh-cn.md",
-    "posts/others/为人民服务.md",
     "posts/cs/计算机体系结构/HDLBits",
     "posts/cs/计算机体系结构/DDCA阅读笔记/synchronizer.png",
     "posts/cs/计算机体系结构/DDCA阅读笔记/traffic light concept.png",
