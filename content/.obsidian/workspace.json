@@ -112,7 +112,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "b6e242f1b1b8a9b6",
@@ -236,10 +237,12 @@
   },
   "active": "9ed870465cc1a0a9",
   "lastOpenFiles": [
-    "posts/cs/tool/cmake/ModernCppStarter配置过程记录.md",
-    "posts/journal/2025年4月第三周记录.md",
     "task/任务列表.md",
     "roadmap/计算机科学之路.md",
+    "posts/journal/2025年4月第三周记录.md",
+    "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch6.md",
+    "posts/cs/tcs/二进制加法图灵机的C语言实现.md",
+    "posts/cs/tool/cmake/ModernCppStarter配置过程记录.md",
     "posts/cs/rust/rustlings 通关记录.md.md",
     "series/test-series/_index.zh-cn.md",
     "series/_index.zh-cn.md",
@@ -260,8 +263,6 @@
     "posts/others/触底反弹的时刻到了.md",
     "posts/cs/scientific-research/CCF A类会议截止时间概览.md",
     "posts/cs/计算机体系结构/HDLBits/Getting Started.md",
-    "posts/cs/计算机体系结构/HDLBits/Verilog Language.md",
-    "posts/apply/香港硕士研究生留学申请记录.md",
     "posts/cs/计算机体系结构/HDLBits",
     "posts/cs/计算机体系结构/DDCA阅读笔记/synchronizer.png",
     "posts/cs/计算机体系结构/DDCA阅读笔记/traffic light concept.png",
