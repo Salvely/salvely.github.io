@@ -2,9 +2,8 @@
 title: CSAPP Chapter 4 - 处理器体系结构
 categories:
   - 系统入门
-  - 类别
 date: 2024-03-13 09:59:48
-lastmod: 2025-03-21T19:12:48+08:00
+lastmod: 2025-04-17T13:21:33+08:00
 authors:
   - Salvely
 series:
