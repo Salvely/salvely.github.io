@@ -22,23 +22,13 @@
               "icon": "lucide-file",
               "title": "2025年4月第四周记录"
             }
-          },
-          {
-            "id": "3d74e23d4532722b",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "roadmap/计算机科学之路.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true,
-              "icon": "lucide-file",
-              "title": "计算机科学之路"
-            }
-          },
+          }
+        ]
+      },
+      {
+        "id": "60b34fc9cc8ec1bb",
+        "type": "tabs",
+        "children": [
           {
             "id": "310c779127e33768",
             "type": "leaf",
@@ -237,12 +227,18 @@
   },
   "active": "d1fe2bb5f3b6272d",
   "lastOpenFiles": [
-    "task/任务列表.md",
+    "posts/journal/一次失败的选导师经历记录.md",
+    "posts/journal/抑郁康复记录.md",
+    "posts/journal/实验室情况摸底记录.md",
     "posts/journal/2025年4月第四周记录.md",
+    "task/任务列表.md",
+    "posts/journal/录取后的迷茫.md",
+    "posts/journal/上交软院复试记.md",
+    "posts/others/第一次看中医及煎中药记录帖.md",
     "roadmap/计算机科学之路.md",
+    "posts/fitness/优秀健身及运动书籍.md",
     "posts/journal/2025年4月第三周记录.md",
     "posts/journal/未命名.md",
-    "posts/others/第一次看中医及煎中药记录帖.md",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch4/index.md",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch1.md",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch6.md",
@@ -256,13 +252,7 @@
     "posts/how-to-DoIt/create-diagrams/index.zh-cn.md",
     "posts/journal/2025年4月第一周记录.md",
     "posts/journal/立志.md",
-    "posts/journal/录取后的迷茫.md",
     "posts/journal/年终错误总结报告.md",
-    "posts/journal/上交软院复试记.md",
-    "posts/journal/心理对话.md",
-    "posts/journal/抑郁康复记录.md",
-    "posts/journal/2025年3月第三周记录.md",
-    "posts/journal/2025年3月第四周记录.md",
     "posts/cs/计算机体系结构/HDLBits",
     "posts/cs/计算机体系结构/DDCA阅读笔记/synchronizer.png",
     "posts/cs/计算机体系结构/DDCA阅读笔记/traffic light concept.png",
