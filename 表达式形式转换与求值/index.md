@@ -1,0 +1,260 @@
+# 表达式形式转换与求值
+
+<!--more-->
+
+表达式主要有3种形式：前缀表达式、中缀表达式和后缀表达式，其转换依赖于栈和树等数据结构。三种不同形式的表达式写法如下：
+
+- 中缀：`2 + 3`
+- 后缀：`2 3 +`
+- 前缀：`+ 2 3`
+
+## 后缀表达式转中缀表达式
+
+后缀表达式转中缀表达式主要依赖于树的结构，具体过程分为2步：
+
+1. 根据后缀表达式，构造表达式树；
+2. 对表达式树进行中序遍历，在遍历时给对应位置加上括号，生成中缀表达式；
+
+首先我们来看第一个部分。在这个过程中，主要利用了一个栈，在栈上一步步生成表达式树。算法如下：
+
+1. 初始化一个空栈（其元素为结点，每个结点有一个`char`类型数据，用于保存运算符或者操作数，还有左右子树两个域）；
+2. 对于后缀表达式中的每个字符，根据其性质进行不同操作：
+	- 如果是`+ - * /`等二元运算符（这里不考虑一元），从栈上弹出2个结点，将这个运算符作为一颗新树的根结点，两个结点作为这个根节点的左右子树，重新压入栈上；
+	- 如果是操作数，则将其初始化为一个新的结点，压入栈上；
+3. 将字符串处理完后，栈顶上的结点，就是根据后缀表达式生成的表达式树的根结点；
+
+对栈使用`pop()`操作得到表达式树的根结点，下面对其进行中序遍历，得到中缀表达式。
+
+注意在中序遍历的过程中，如果检测到当前子树的根结点为运算符，则在生成的表达式左右两端加上括号。此外，我们不采用简单的`System.out.println`，而是在中序遍历的过程中返回中序遍历的字符串。因此在遍历函数的参数中，我们需要传递之前已经得到的字符串，加上当前子树的遍历结果。对于每棵子树的中序遍历函数，`expr`域应该为`""`，而不是已有的`expr`。因为在刚遍历子树时，还没有对子树生成任何的中序表达式，而是需要得到子树遍历生成的`expr`，和当前的结点值一起返回给上一级（这里非常容易写错）。
+
+整个方法的具体实现如下：
+
+```java
+import java.util.EmptyStackException;  
+import java.util.Stack;  
+  
+public class ExprTree {  
+    private static class Node {  
+        char op; // operator or operand  
+        Node left;  
+        Node right;  
+  
+        /**  
+         * A parameterized constructor for Node         
+         *         
+         * @param op the operand or operator field  
+         * @param left the left child of the subtree  
+         * @param right the right child of the subtree  
+         */        
+        Node(char op, Node left, Node right) {  
+            this.op = op;  
+            this.left = left;  
+            this.right = right;  
+        }  
+  
+        /**  
+         * A parameterized constructor for Node         
+         *         
+         * @param op the operand or operator field  
+         */        
+        Node(char op) {  
+            this(op, null, null);  
+        }  
+    }  
+  
+    /**  
+     * Convert a postfix expression to infix expression     
+     *     
+     * @param line a postfix expression to be converted  
+     * @return the infix expression generated from the postfix expression  
+     */    
+     public static String postFixToInfix(String line) {  
+        // generate an expression tree of the postfix expression  
+        Stack<Node> s = new Stack<>();  
+        int len = line.length();  
+        for(int i = 0; i < len; i++) {  
+            char c = line.charAt(i);  
+            if(c == '+' || c == '-' || c == '*' || c == '/') {  
+                Node op1, op2;  
+                try {  
+                    op2 = s.pop();  
+                    op1 = s.pop();  
+                } catch (EmptyStackException e) {  
+                    System.out.println("The stack is empty, nothing to be popped");  
+                    return null;  
+                }  
+                Node newNode = new Node(c, op1, op2);  
+                s.push(newNode);  
+            } else if (c == ' ') {  
+                continue;  
+            } else {  
+                Node newNode = new Node(c);  
+                s.push(newNode);  
+            }  
+        }  
+        Node tree = s.pop();  
+  
+        // traverse the expression tree to get the infix expression  
+        return inOrderTraverse(tree);  
+    }  
+  
+    /**  
+     * Inorder traverse the tree to print out the infix expression     
+     *     
+     * @param root root of the tree  
+     * @return the infix expression  
+     */    
+    public static String inOrderTraverse(Node root) {  
+        return inOrderTraverse(root, "");  
+    }  
+  
+    /**  
+     * A helper method that generate an infix expression     
+     *     
+     * @param root the current root of the expression tree to be evaluated  
+     * @param expr the previous expression  
+     * @return the new expression by traverse the current tree  
+     */    
+    private static String inOrderTraverse(Node root, String expr) {  
+        if(root == null) {  
+            return "";  
+        }  
+  
+        // if the root contains an operator, then add brackets to its left and right  
+        boolean addBrackets = false;  
+        if(root.op == '+' || root.op == '-' || root.op == '*' || root.op == '/') 
+        {  
+            addBrackets = true;  
+        }  
+  
+        // construct the tree by inorder traverse  
+        if(addBrackets) {  
+            expr += '(';  
+        }  
+        expr += inOrderTraverse(root.left, "");  
+        expr += root.op;  
+        expr += inOrderTraverse(root.right, "");  
+        if(addBrackets) {  
+            expr += ')';  
+        }  
+  
+        return expr;  
+    }  
+  
+    public static void main(String[] args) {  
+        String newInfix = postFixToInfix(" a b + c d e + * *");  
+        System.out.println(newInfix);  
+    }  
+}
+```
+
+## 中缀表达式转后缀表达式
+
+中缀表达式到后缀表达式的转换主要利用栈的结构。这里需要考虑到一个优先级的问题。
+
+假设字符串的操作数为数字，操作符有如下几种：`( ) + - * /`，那么优先级从高到低顺序如下：
+
+1. `( )`
+2. `* /`
+3. `+ -`
+
+对于中缀表达式的处理过程是`O(n)`，也就是对中缀表达式过一遍，就能把后缀表达式计算出来。我们采取如下算法：
+
+1. 初始化一个空栈，用于存储待处理的操作符；
+2. 初始化一个空字符串；
+
+代码如下：
+
+```java
+public static String infixToPostFix(String line) {  
+    int len = line.length();  
+    String output = "";  
+    AStack<Character> s = new AStack<>(len);  
+    for (int i = 0; i < len; i++) {  
+        char c = line.charAt(i);  
+        if (Character.isDigit(c)) {  
+            // if it's a number, write to the output  
+            output += c;  
+        } else if (c == '+' || c == '-') {  
+            while (!s.isEmpty() && s.top() != '(') {  
+                // output the operator that has equal or higher priority except (  
+                output += s.pop();  
+            }  
+            // push the operator onto the stack  
+            s.push(c);  
+        } else if (c == '*' || c == '/') {  
+            char popped;  
+            while (!s.isEmpty() && ((popped = s.top()) != '+')  
+                    && popped != '-' && popped != '(') {  
+                // output the operator that has equal or higher priority except (  
+                popped = s.pop();  
+                output += popped;  
+            }  
+            // push the operator onto the stack  
+            s.push(c);  
+        } else if (c == '(') {  
+            // push the operator onto the stack  
+            s.push(c);  
+        } else if (c == ')') {  
+            char popped;  
+            // pop the operator on the stack until encounter (, pop the ( too  
+            while (!s.isEmpty() && s.top() != '(') {  
+                popped = s.pop();  
+                output += popped;  
+            }  
+            if (s.top() == '(') {  
+                s.pop();  
+            }  
+        } else if (Character.isAlphabetic(c)) {  
+            System.out.println("Invalid character: " + c);  
+            return null;  
+        }  
+    }  
+    // pop the left operator on the stack  
+    while (!s.isEmpty()) {  
+        output += s.pop();  
+    }  
+    return output;  
+}
+```
+
+## 后缀表达式求值
+
+后缀表达式的求值操作较为简单，同样需要利用一个栈。其算法为：
+
+1. 如果读到的是数字，那么将其压入栈上；
+2. 如果读到的是字符串，那么从栈上弹出两个数，根据操作符计算其结果，然后压入栈上；
+3. 最后栈顶的值，就是计算的结果，弹出打印即可。
+
+代码如下：
+
+```java
+public static void evalExpr(String line) {  
+    int len = line.length();  
+    AStack<Integer> s = new AStack<>(len);  
+    for (int i = 0; i < len; i++) {  
+        char c = line.charAt(i);  
+        if (Character.isDigit(c)) {  
+            s.push(c - '0');  
+        } else if (c == '+' || c == '-' || c == '*' || c == '/') {  
+            int op1 = s.pop();  
+            int op2 = s.pop();  
+            if (String.valueOf(op1) == null || String.valueOf(op2) == null) {  
+                System.out.println("Expression invalid, not enough operands");  
+                return;  
+            }  
+            if (c == '+') {  
+                s.push(op1 + op2);  
+            } else if (c == '-') {  
+                s.push(op1 - op2);  
+            } else if (c == '*') {  
+                s.push(op1 * op2);  
+            } else if (c == '/') {  
+                s.push(op1 / op2);  
+            }  
+        }  
+    }  
+    System.out.println(s.top());  
+}
+```
+
