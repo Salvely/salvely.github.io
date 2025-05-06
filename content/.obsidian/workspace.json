@@ -8,19 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d1fe2bb5f3b6272d",
+            "id": "dad5bffe187d0c30",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/journal/2025年4月第四周记录.md",
+                "file": "posts/journal/2025年5月第二周记录.md",
                 "mode": "source",
                 "source": false
               },
               "pinned": true,
               "icon": "lucide-file",
-              "title": "2025年4月第四周记录"
+              "title": "2025年5月第二周记录"
             }
           },
           {
@@ -40,20 +40,21 @@
             }
           },
           {
-            "id": "dad5bffe187d0c30",
+            "id": "4c87595255e9219f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/journal/2025年5月第二周记录.md",
+                "file": "about/index.zh-cn.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025年5月第二周记录"
+              "title": "index.zh-cn"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -232,11 +233,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d1fe2bb5f3b6272d",
+  "active": "4c87595255e9219f",
   "lastOpenFiles": [
     "posts/journal/2025年5月第二周记录.md",
-    "posts/journal/2025年4月第四周记录.md",
     "task/任务列表.md",
+    "about/index.zh-cn.md",
+    "posts/journal/2025年4月第四周记录.md",
     "posts/journal/未命名.md",
     "posts/cs/数据结构/表达式树的构造和求值.md",
     "posts/cs/数据结构/后缀表达式求值.md",
@@ -260,7 +262,6 @@
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch1.md",
     "posts/cs/系统入门/15-213/CSAPP 阅读笔记/Ch6.md",
     "posts/cs/tcs/二进制加法图灵机的C语言实现.md",
-    "posts/cs/tool/cmake/ModernCppStarter配置过程记录.md",
     "posts/cs/计算机体系结构/HDLBits",
     "posts/cs/计算机体系结构/DDCA阅读笔记/synchronizer.png",
     "posts/cs/计算机体系结构/DDCA阅读笔记/traffic light concept.png",
