@@ -15,7 +15,7 @@ toc:
 code:
   maxShownlines: 100
 date: 2024-11-11T07:44:31+08:00
-lastmod: 2024-11-11T10:38:39+08:00
+lastmod: 2025-04-28T19:15:17+08:00
 tags:
   - 留学申请
 draft: true
@@ -181,11 +181,11 @@ _**·表达你的学术兴趣（interest）和学术热情（motivation）**_
 
 **（1）大宜：**
 
-**多举实例。**'The statement will only be convincing if the points are backed up by hard evidence i.e. examples drawn from academic achievements, work experience and extra-curricular activities'
+**多举实例。**'The statement will only be convincing if the points are backed up by **hard evidence** i.e. examples drawn from **academic achievements, work experience and extra-curricular activities**'
 
-**注重相关性。**'The statement needs to be concise and should only include information that is strictly relevant. Don't tell your life story'
+**注重相关性。**'The statement needs to be concise and should only include information that is **strictly relevant**. Don't tell your life story'
 
-**注重结构和整体风格。**'Consideration needs to be given to the content, structure and style of the statement'
+**注重结构和整体风格。**'Consideration needs to be given to th**e content, structure and style of the statement**'
 
 **注重内部逻辑。**'Organise the information; focus on one topic/theme at a time and ensure the text logically progresses'
 
@@ -231,10 +231,10 @@ Point 5: Why the school you are applying to is a good fit and if applicable, wha
 
 是不是真心话老师一眼就能看出来（前提是你老板看了你的ps）
 
-曾经我的个人陈述也是，把自己三年来的牛逼事情罗列出来，然后按照一定的思路想方设法串下来，表现自己多牛逼！然后把自己的经历强制性和未来老板的研究方向扯在一起说两句。后来，我的申请结果并不是很满意，基本不是我喜欢的老师或者研究方向。当时，我恰好在美国某理工大学做毕业设计，一个老教授看了我的个人陈述对我说"优秀的学生多了去了，比你优秀的美国当地学生更不在少数，你应该谦虚平和的表达你的真实想法，你对研究的理解，你四年来的收获，你是认真思考了才觉得读博是你现阶段最好的选择"
+曾经我的个人陈述也是，把自己三年来的牛逼事情罗列出来，然后按照一定的思路想方设法串下来，表现自己多牛逼！然后把自己的经历强制性和未来老板的研究方向扯在一起说两句。后来，我的申请结果并不是很满意，基本不是我喜欢的老师或者研究方向。当时，我恰好在美国某理工大学做毕业设计，一个老教授看了我的个人陈述对我说"优秀的学生多了去了，比你优秀的美国当地学生更不在少数，你应该**谦虚平和的表达你的真实想法，你对研究的理解，你四年来的收获，你是认真思考了才觉得读博是你现阶段最好的选择**"
 
-我拒了offer，重写了PS，这次并没有刻意说我大学里多牛逼，而是说了我为什么放弃了手里的offer，为什么要研究这个，我对这个领域的理解，我自己又做了什么准备，为什么读博，为什么要选在这个学校做这个研究。5月3日，我补申了两个学校，全中，都是我喜欢的研究方向。（其实其中一所我并没有交PS而是在套瓷和面试的过程中表达了我PS中的东西）
+我拒了offer，重写了PS，这次并没有刻意说我大学里多牛逼，而是说了**我为什么放弃了手里的offer，为什么要研究这个，我对这个领域的理解，我自己又做了什么准备，为什么读博，为什么要选在这个学校做这个研究**。5月3日，我补申了两个学校，全中，都是我喜欢的研究方向。（其实其中一所我并没有交PS而是**在套瓷和面试的过程中表达了我PS中的东西**）
 
-所以，我要说的是，夸张是没有意义的，能和你一起竞争的人自然不会比你差。而真诚和热爱，才是真正能够打动老师，也满足自己研究兴趣的最好方法。
+所以，我要说的是，夸张是没有意义的，能和你一起竞争的人自然不会比你差。而**真诚和热爱**，才是真正能够打动老师，也满足自己研究兴趣的最好方法。
 
-最后，我个人是重视研究方向多过学校排名的。选到不喜欢的方向痛苦5年甚至一生，快乐对我比名校光环更重要。
+最后，我个人是**重视研究方向多过学校排名的**。选到不喜欢的方向痛苦5年甚至一生，**快乐对我比名校光环更重要**。

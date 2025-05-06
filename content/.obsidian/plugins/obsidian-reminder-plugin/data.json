@@ -1,19 +1,6 @@
 {
   "scanned": true,
-  "reminders": {
-    "posts/journal/2025年4月第四周记录.md": [
-      {
-        "title": "📅 2025-04-28",
-        "time": "2025-04-27 23:00",
-        "rowNumber": 99
-      },
-      {
-        "title": "📅 2025-04-27",
-        "time": "2025-04-28",
-        "rowNumber": 95
-      }
-    ]
-  },
+  "reminders": {},
   "debug": false,
   "settings": {
     "reminderTime": "09:00",
