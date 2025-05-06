@@ -653,6 +653,12 @@
 	- [ ] 字节跳动科研实习
 	- [ ] 腾讯科研实习
 	- [ ] 微软亚洲研究院系统组科研实习
+		- [MSRA (Shanghai) System and Engineering Group - Microsoft Research](https://www.microsoft.com/en-us/research/group/sh-sys-eng-group/#:~:text=%E5%BE%AE%E8%BD%AF%E4%BA%9A%E6%B4%B2%E7%A0%94%E7%A9%B6%E9%99%A2%EF%BC%88%E4%B8%8A%E6%B5%B7%EF%BC%89%E7%B3%BB%E7%BB%9F%E4%B8%8E%E5%B7%A5%E7%A8%8B%E7%BB%84%20%E6%B7%B1%E8%80%95%E5%9C%A8%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%B3%BB%E7%BB%9F%E9%A2%86%E5%9F%9F%EF%BC%8C%E4%B8%93%E6%B3%A8%E4%BA%8E%E5%B0%86%E5%85%B6%E8%9E%8D%E5%85%A5%E5%A4%A7%E5%9E%8B%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%EF%BC%88LLMs%EF%BC%89%E5%92%8C%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%EF%BC%88AI%EF%BC%89%E7%94%9F%E6%80%81%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B9%BF%E6%B3%9B%E9%A2%86%E5%9F%9F%E3%80%82,%E6%88%91%E4%BB%AC%E7%9A%84%E7%A0%94%E7%A9%B6%E6%B6%B5%E7%9B%96%E5%A4%9A%E4%B8%AA%E6%96%B9%E9%9D%A2%EF%BC%8C%E4%BB%8E%E5%BC%80%E5%8F%91%E9%AB%98%E6%95%88%E7%9A%84%E6%8E%A8%E7%90%86%E5%BC%95%E6%93%8E%EF%BC%8C%E5%85%85%E5%88%86%E5%8F%91%E6%8C%A5%E7%A8%80%E7%96%8F%E6%80%A7%E5%92%8C%E5%8A%A8%E6%80%81%E6%80%A7%E7%9A%84%E6%BD%9C%E5%8A%9B%EF%BC%8C%E5%88%B0%E6%8E%A8%E5%8A%A8AI%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD%E6%8A%80%E6%9C%AF%E7%9A%84%E8%BF%9B%E6%AD%A5%EF%BC%8C%E4%BB%A5%E5%8F%8A%E6%8E%A2%E7%B4%A2LLMs%E7%9A%84%E6%96%B0%E5%85%B4%E5%BA%94%E7%94%A8%E3%80%82%20%E6%88%91%E4%BB%AC%E8%87%B4%E5%8A%9B%E4%BA%8E%E4%BC%98%E5%8C%96%E6%96%B0%E5%85%B4%E6%8A%80%E6%9C%AF%E7%9A%84%E8%AE%A1%E7%AE%97%EF%BC%8C%E5%87%8F%E5%B0%91%E7%A1%AC%E4%BB%B6%E6%95%88%E7%8E%87%E9%97%AE%E9%A2%98%EF%BC%8C%E8%AE%BE%E8%AE%A1%E5%85%A8%E6%96%B0%E7%9A%84%E6%9E%B6%E6%9E%84%E3%80%82)
+		- [Research Intern for Systems Research Group - Microsoft Research](https://www.microsoft.com/en-us/research/opportunity/research-intern-for-systems-research-group/)
+		- [(18 封私信 / 80 条消息) 怎么才能去MSRA实习？ - 知乎](https://www.zhihu.com/question/26481046)
+		- [(18 封私信 / 80 条消息) 微软亚洲研究院 (MSRA) 的实习体验如何？ - 知乎](https://www.zhihu.com/question/22081552)
+		- [科研实习 | 微软亚洲研究院招聘研究实习生 - 知乎](https://zhuanlan.zhihu.com/p/615168734)
+		- [铸星闪耀 | 黄群：从中科院计算所到 MSRA，三个月访问投出一篇论文 - Microsoft Research](https://www.microsoft.com/en-us/research/articles/startrack-qun-huang/)
 - [ ] 找到 Caltech/UC Berkeley/MIT/Stanford/CMU 的科研实习RA工作
 - [ ] 结识音乐方面人脉，**寻找小提琴演出机会**
 - [ ] 进入读研学校的交响乐团，**参与交响乐团排练**
