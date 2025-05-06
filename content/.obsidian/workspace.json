@@ -40,17 +40,17 @@
             }
           },
           {
-            "id": "4c87595255e9219f",
+            "id": "7dd376c1ddd1f080",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "about/index.zh-cn.md",
+                "file": "posts/journal/2025年4月第四周记录.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index.zh-cn"
+              "title": "2025年4月第四周记录"
             }
           }
         ],
@@ -233,7 +233,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4c87595255e9219f",
+  "active": "7dd376c1ddd1f080",
   "lastOpenFiles": [
     "posts/journal/2025年5月第二周记录.md",
     "task/任务列表.md",
