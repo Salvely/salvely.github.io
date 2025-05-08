@@ -1,0 +1,638 @@
+# 二叉搜索树实现
+
+
+<!--more-->
+
+## 设计思路
+
+二叉搜索树是二叉树中的一种，其特点是：
+
+- 二叉搜索树是个递归的搜索树结构，也就是其左右两棵子树也都是二叉搜素树；
+- 当插入节点时，对于比当前搜素树根节点小的值，插在左子树中；对于比当前搜索树根节点大的值，插在右子树中；否则不插入；
+
+我们希望设计一棵能够存储泛型的二叉搜索树，而且这个泛型需要是可比较的，因此在实现类时，我们需要添加语句`<T extends Comparable<T>>`，注意该语句和`public class BinarySearchTree extends Comparable<T>`的差别在于，前者写的是该类型`T`是可比较的，而后者的意思是该二叉搜素树是可比较的。因此，根据前文的需求，我们采用前者的写法。
+
+此外，前文我们提到，二叉搜索树是一个递归的结构，也就是它的左子树和右子树都是二叉搜索树，那么我们很可能做出如下的设计：
+
+```java
+public class BinarySearchTree<T extends Comparable<T>> {
+	private T data;
+	private BinarySearchTree<T> leftChild;
+	private BinarySearchTree<T> rightChild;
+
+	// other methods
+}
+```
+
+该写法也是可以的，但是我们需要用`this`来指代该树的根，因为这里只有`data leftChild rightChild`三个域，对于其左右子树同理。但是如果说该树为空树怎么办呢？难道`this`能设置为`null`嘛？当然不可以，因此就没法表达什么是空树了。因此我们需要一个`root`变量作为树的根，对这个`root`为根的树进行管理。
+
+为了解决上述问题，实现进一步的抽象，我们在`BinarySearchTree`的内部初始化一个`Node`类，这个`Node`类也是三个域，外带一些`get`和`set`方法：
+
+- `T data`
+- `Node leftChild`
+- `Node rightChild`
+
+那么对于`BinarySearchTree`，我们有一个属性，就是`Node`类的`root`。我们通过这个`root`来管理这棵树，当该树为空的时候，`root = null`；否则`root`就有一个`T`类的值。这样就合理多啦！
+
+此外，我们需要实现一些通用方法，其中几个非常关键的方法是：
+
+- `contains` 判断树中是否存在某个值；
+- `findMin` 找到该树的最小值（`findMax`同理，找到最大值）；
+- `insert` 在树中插入值；
+- `remove` 从树中移除值；
+- `printTree` 打印树的结构；
+- `preOrderTraverse/inOrderTraverse/postOrderTraverse` 前序/中序/后序遍历树；
+
+在这其中，`contains findMin printTree`以及3种遍历方法比较好理解，需要重点说明的是`insert`和`remove`两种方法。
+
+## 关键代码详解
+
+### `insert`实现
+
+根据二叉树的特征可知，如果该值等于当前根节点的值，则无需插入；如果比当前根节点的值小，则递归插入左子树中；否则递归插入右子树中。
+
+我们使用`public void insert(T data)`来插入值，如果该根节点是`null`，那么直接将根节点设置为新节点；否则将新节点插入该树中。
+
+我们使用一个`private`权限的helper method来辅助插入，这个方法的好处在于它将当前根节点作为参数传入，而不是最初的根节点，这样方便对子树进行处理。其核心逻辑是：
+
+- 如果发现当前子树的根节点和该值相等，直接返回，无需插入；
+- 如果发现该值小于当前子树的根节点，准备插入左子树
+	- 判断左子树是否为空，如果为空，则将当前节点左孩子设置为包含该值的节点；否则对左子树调用插入方法；
+	- 对右子树处理同上；
+
+课本中使用了另一种方法，也就是如果递归直到发现该子树为空，则返回包含该值的节点到上一层。在上一层接受该节点，并设置左右子树。持续向上返回，直到根节点更新。这里的坏处在于需要一直向上返回，而好处在于写起来比较清晰，无需判断各种情况。
+
+我的实现代码如下：
+
+```java
+/**  
+ * insert the data into the binary search tree     
+ *     
+ * @param data the data to be inserted  
+ */    
+public void insert(T data) {  
+	if (root == null) {  
+		this.root = new Node(data);  
+	}  
+	else {
+		insert(data, root);  
+	}
+}  
+
+/**  
+ * A helper method that insert the data into the current binary search tree       *     
+ * @param data the data to be inserted  
+ * @param currentRoot the root of the current binary search tree  
+ */    
+private void insert(T data, Node currentRoot) {  
+	int ret = data.compareTo(currentRoot.data);  
+	if (ret == 0) {  
+		// the data is already in the tree, do nothing, just return  
+		return;  
+	}  
+	Node newNode = new Node(data);  
+	if (ret < 0) {  
+		// insert into the left subtree  
+		Node left = currentRoot.getLeftChild();  
+		if (left == null) {  
+			currentRoot.setLeftChild(newNode);  
+		} else {  
+			insert(data, left);  
+		}  
+	} else {  
+		// insert into the right subtree  
+		Node right = currentRoot.getRightChild();  
+		if (right == null) {  
+			currentRoot.setRightChild(newNode);  
+		} else {  
+			insert(data, right);  
+		}  
+	}  
+}
+```
+
+### `remove`实现
+
+节点的移除需要判断如下几种情况：
+
+- 该节点是叶子节点，那么直接移除即可；
+- 该节点有左右子树。如果有左子树，可以用左子树中的最右节点替代该节点；否则的话，可以用右子树中的最左节点替代该节点；
+
+在我的实现过程中，同样采用`private`的`helper method`的方式，该方法的返回值是当前树去掉值后的根节点。我的实现算法是：
+
+- 如果该树为空，则无需移除任何节点，直接返回；
+- 如果要移除的值比当前根节点值小，则对左子树递归调用`remove`方法，从左边子树移除该值，拿到移除节点后的左子树，设置为新的左子树；
+- 如果要移除的值比当前根节点值大，则对右子树递归调用`remove`方法，从右边子树移除该值，拿到移除节点后的右子树，设置为新的右子树；
+- 如果刚好根节点就是要移除的节点，我们需要再分情况讨论
+	- 如果该节点是叶子节点，则直接返回`null`即可。
+	- 如果左子树不为空，向下寻找左子树的最右节点，用该节点的值替换它，删除那个节点；返回删除后的左子树根；
+	- 否则寻找右子树的最左节点，用该节点的值替换它，删除那个节点；返回删除后的右子树根；
+
+这里我的替换过程实现是`one-pass`，也就是在向下查找的过程中替换值并删除节点。课本中是先找到这个节点，并进行值替换，然后再调用一次方法删除这个节点。
+
+对于我的算法，以删除左子树的最右节点为例，进行如下操作：
+
+- 将该节点设置为`parent`，左孩子标记为`rightmost`。这里的`parent`用来标记`rightmost`的父节点，以便后面删除节点；
+- 如果左孩子没有右孩子，也就是说这个左孩子已经是最右节点了，那么就直接把左孩子的左孩子设置为当前`parent`的左孩子；
+- 否则向左孩子的右子树中一直向下寻找最右孩子，不断地更新`rightmost`和`parent`；最后把`currentRoot`的值替换为最右孩子的值，然后把这个最右孩子（`rightmost`）的左孩子，设置为`parent`的右孩子；
+
+```java
+/**  
+ * remove the data from the binary search tree     
+ *     
+ * @param data the data to be removed  
+ */    
+public void remove(T data) {  
+	this.root = remove(data, root);  
+}  
+
+/**  
+ * Remove the node containing data from the current binary search tree     *     *  @param data the data to be removed  
+ * @param currentRoot the root of the current binary search tree  
+ * @return the binary search tree after the node removed  
+ */    
+private Node remove(T data, Node currentRoot) {  
+	if (currentRoot == null) {  
+		// if the BST is empty, do nothing  
+		return null;  
+	}  
+	int ret = data.compareTo(currentRoot.getData());  
+	if (ret == 0) {  
+		// judge if it's leaf  
+		Node left = currentRoot.getLeftChild();  
+		Node right = currentRoot.getRightChild();  
+		if ((left == null) && (right == null)) {  
+			return null;  
+		} else if (left != null) {  
+			// get the rightmost node of the left subtree  
+			Node rightmost = left;  
+			Node parent = currentRoot;  
+			if(rightmost.getRightChild() == null) {  
+				// replace the node data with that node data  
+				currentRoot.setData(rightmost.getData());  
+				// there's no right child for the rightmost node,  
+				// so replace the parent's left child with rightmost node's left child                    
+				parent.setLeftChild(rightmost.getLeftChild());  
+			} else {  
+				while (rightmost.getRightChild() != null) {  
+					parent = rightmost;  
+					rightmost = rightmost.getRightChild();  
+				}  
+				// replace the node data with that node data  
+				currentRoot.setData(rightmost.getData());  
+				// and replace that node with its left child  
+				parent.setRightChild(rightmost.getLeftChild());  
+			}  
+		} else {  
+			// get the leftmost node of the right subtree  
+			Node leftmost = right;  
+			Node parent =  currentRoot;  
+			if(leftmost.getLeftChild() == null) {  
+				// replace the node with that node  
+				currentRoot.setData(leftmost.getData());  
+				// there's no left child for the leftmost node,  
+				// so replace the parent's right child with leftmost node's right child                    
+				parent.setRightChild(leftmost.getRightChild());  
+			} else {  
+				while (leftmost.getLeftChild() != null) {  
+					parent = leftmost;  
+					leftmost = leftmost.getLeftChild();  
+				}  
+				// replace the node with that node  
+				currentRoot.setData(leftmost.getData());  
+				// and replace that node with its right child  
+				parent.setLeftChild(leftmost.getRightChild());  
+			}  
+		}  
+	} else if (ret < 0) {  
+		Node left = remove(data, currentRoot.getLeftChild());  
+		currentRoot.setLeftChild(left);  
+	} else {  
+		Node right = remove(data, currentRoot.getRightChild());  
+		currentRoot.setRightChild(right);  
+	}  
+	return currentRoot;  
+}
+```
+
+## 完整代码实现
+
+```java
+public class BinarySearchTree<T extends Comparable<T>> {  
+    private class Node {  
+        private T data;  
+        private Node leftChild;  
+        private Node rightChild;  
+  
+        /**  
+         * Node initializer         
+         *         
+         * @param data the data field  
+         */        
+         Node(T data) {  
+            this(data, null, null);  
+        }  
+  
+        /**  
+         * initializer with 3 parameters         
+         *         
+         * @param data the Node data field  
+         * @param leftChild the Node leftChild field  
+         * @param rightChild the Node rightChild field  
+         */        
+         Node(T data, Node leftChild, Node rightChild) {  
+            this.data = data;  
+            this.leftChild = leftChild;  
+            this.rightChild = rightChild;  
+        }  
+  
+        /**  
+         * Get the data field of Node         
+         *         
+         * @return the data field  
+         */        
+         public T getData() {  
+            return data;  
+        }  
+  
+        /**  
+         * Get the leftChild field of Node         
+         *         
+         * @return the left child field  
+         */        
+         public Node getLeftChild() {  
+            return leftChild;  
+        }  
+  
+        /**  
+         * Get the rightChild field of Node         
+         *         
+         * @return the right child field  
+         */        
+         public Node getRightChild() {  
+            return rightChild;  
+        }  
+  
+        /**  
+         * Set the left child of the node         
+         *         
+         * @param leftChild the left child  
+         */        
+         public void setLeftChild(Node leftChild) {  
+            this.leftChild = leftChild;  
+        }  
+  
+        /**  
+         * Set the right child of the node         
+         *         
+         * @param rightChild the right child  
+         */        
+         public void setRightChild(Node rightChild) {  
+            this.rightChild = rightChild;  
+        }  
+  
+        /**  
+         * Set the data of the node         
+         *         
+         * @param data the data field  
+         */        
+        public void setData(T data) {  
+            this.data = data;  
+        }  
+    }  
+      
+    private Node root; // root of the binary search tree  
+  
+    /**  
+     * the default initializer of the binary search tree     
+     */    
+    public BinarySearchTree() {  
+        root = null;  
+    }  
+  
+    /**  
+     * make the binary search tree empty     
+     */    
+    public void makeEmpty() {  
+        root = null;  
+    }  
+  
+    /**  
+     * check if data is contained in the tree     
+     *     
+     * @param data the data to be searched  
+     * @return if the data is in the tree, return true, otherwise return false  
+     */    
+    public boolean contains(T data) {  
+        return contains(data, root);  
+    }  
+  
+    /**  
+     * a helper method that judges if the data is in the binary search tree     
+     * @param data the data to be searched from the binary search tree  
+     * @param n the current root of the binary search tree to be searched  
+     * @return if data is in the binary search tree with root n,  
+     * then return true, otherwise return false     
+     */    
+    private boolean contains(T data, Node n) {  
+        if (n == null) {  
+            return false;  
+        }  
+        int ret = data.compareTo(n.getData());  
+        if (ret == 0) {  
+            return true;  
+        } else if (ret < 0) {  
+            Node leftChild = n.getLeftChild();  
+            return contains(data, leftChild);  
+        } else {  
+            Node rightChild = n.getRightChild();  
+            return contains(data, rightChild);  
+        }  
+    }  
+  
+    /**  
+     * find the minimum value in the tree     
+     *     
+     * @return the minimum value in the tree  
+     */    
+    public T findMin() {  
+        Node minNode = findMinNode(root);  
+        if (minNode == null) {  
+            return null;  
+        }  
+        return minNode.getData();  
+    }  
+  
+    /**  
+     * A helper method that find the minimum value in the binary search tree     *    * @param currentRoot the root of the binary search tree  
+     * @return the Node containing the minimum value in the tree  
+     */    
+    private Node findMinNode(Node currentRoot) {  
+        if (currentRoot == null) {  
+            return null;  
+        }  
+        Node left = currentRoot.getLeftChild();  
+        if (left == null) {  
+            return currentRoot;  
+        } else {  
+            return findMinNode(left);  
+        }  
+    }  
+  
+    /**  
+     * find the maximum value in the binary search tree     
+     *     
+     * @return the maximum value in the tree  
+     */    
+    public T findMax() {  
+        Node maxNode = findMaxNode(root);  
+        if (maxNode == null) {  
+            return null;  
+        }  
+        return maxNode.getData();  
+    }  
+  
+    /**  
+     * A helper method that find the maximum value in the binary search tree     *    * @param currentRoot the root of the binary search tree  
+     * @return the node containing the maximum value in the tree  
+     */    
+    private Node findMaxNode(Node currentRoot) {  
+        if (currentRoot == null) {  
+            return null;  
+        }  
+        while (currentRoot.getRightChild() != null) {  
+            currentRoot = currentRoot.getRightChild();  
+        }  
+        return currentRoot;  
+    }  
+  
+    /**  
+     * insert the data into the binary search tree     
+     *     
+     * @param data the data to be inserted  
+     */    
+    public void insert(T data) {  
+        if (root == null) {  
+            this.root = new Node(data);  
+        }  
+        else {
+	        insert(data, root);  
+        }
+    }  
+  
+    /**  
+     * A helper method that insert the data into the current binary search tree       *     
+     * @param data the data to be inserted  
+     * @param currentRoot the root of the current binary search tree  
+     */    
+    private void insert(T data, Node currentRoot) {  
+        int ret = data.compareTo(currentRoot.data);  
+        if (ret == 0) {  
+            // the data is already in the tree, do nothing, just return  
+            return;  
+        }  
+        Node newNode = new Node(data);  
+        if (ret < 0) {  
+            // insert into the left subtree  
+            Node left = currentRoot.getLeftChild();  
+            if (left == null) {  
+                currentRoot.setLeftChild(newNode);  
+            } else {  
+                insert(data, left);  
+            }  
+        } else {  
+            // insert into the right subtree  
+            Node right = currentRoot.getRightChild();  
+            if (right == null) {  
+                currentRoot.setRightChild(newNode);  
+            } else {  
+                insert(data, right);  
+            }  
+        }  
+    }  
+  
+    /**  
+     * remove the data from the binary search tree     
+     *     
+     * @param data the data to be removed  
+     */    
+    public void remove(T data) {  
+        this.root = remove(data, root);  
+    }  
+  
+    /**  
+     * Remove the node containing data from the current binary search tree     *     *  @param data the data to be removed  
+     * @param currentRoot the root of the current binary search tree  
+     * @return the binary search tree after the node removed  
+     */    
+    private Node remove(T data, Node currentRoot) {  
+        if (currentRoot == null) {  
+            // if the BST is empty, do nothing  
+            return null;  
+        }  
+        int ret = data.compareTo(currentRoot.getData());  
+        if (ret == 0) {  
+            // judge if it's leaf  
+            Node left = currentRoot.getLeftChild();  
+            Node right = currentRoot.getRightChild();  
+            if ((left == null) && (right == null)) {  
+                return null;  
+            } else if (left != null) {  
+                // get the rightmost node of the left subtree  
+                Node rightmost = left;  
+                Node parent = currentRoot;  
+                if(rightmost.getRightChild() == null) {  
+                    // replace the node data with that node data  
+                    currentRoot.setData(rightmost.getData());  
+                    // there's no right child for the rightmost node,  
+                    // so replace the parent's left child with rightmost node's left child                    parent.setLeftChild(rightmost.getLeftChild());  
+                } else {  
+                    while (rightmost.getRightChild() != null) {  
+                        parent = rightmost;  
+                        rightmost = rightmost.getRightChild();  
+                    }  
+                    // replace the node data with that node data  
+                    currentRoot.setData(rightmost.getData());  
+                    // and replace that node with its left child  
+                    parent.setRightChild(rightmost.getLeftChild());  
+                }  
+            } else {  
+                // get the leftmost node of the right subtree  
+                Node leftmost = right;  
+                Node parent =  currentRoot;  
+                if(leftmost.getLeftChild() == null) {  
+                    // replace the node with that node  
+                    currentRoot.setData(leftmost.getData());  
+                    // there's no left child for the leftmost node,  
+                    // so replace the parent's right child with leftmost node's right child                    parent.setRightChild(leftmost.getRightChild());  
+                } else {  
+                    while (leftmost.getLeftChild() != null) {  
+                        parent = leftmost;  
+                        leftmost = leftmost.getLeftChild();  
+                    }  
+                    // replace the node with that node  
+                    currentRoot.setData(leftmost.getData());  
+                    // and replace that node with its right child  
+                    parent.setLeftChild(leftmost.getRightChild());  
+                }  
+            }  
+        } else if (ret < 0) {  
+            Node left = remove(data, currentRoot.getLeftChild());  
+            currentRoot.setLeftChild(left);  
+        } else {  
+            Node right = remove(data, currentRoot.getRightChild());  
+            currentRoot.setRightChild(right);  
+        }  
+        return currentRoot;  
+    }  
+  
+  
+    /**  
+     * print the search tree     
+     */    
+    public void printTree() {  
+        printTree(root, 0);  
+    }  
+  
+    /**  
+     * A helper method that print the tree from right child to left     
+     *     
+     * @param currentRoot the current root of the tree  
+     * @param depth the depth of the tree  
+     */    
+    private void printTree(Node currentRoot, int depth) {  
+        if (currentRoot == null) {  
+            return;  
+        }  
+        String blank = "-";  
+        printTree(currentRoot.getRightChild(), depth + 1);  
+        System.out.println(blank.repeat(depth) + currentRoot.getData());  
+        printTree(currentRoot.getLeftChild(), depth + 1);  
+    }  
+  
+    /**  
+     * Preorder traverse the tree     
+     */    
+    public void preOrderTraverse() {  
+        preOrderTraverse(root);  
+    }  
+  
+    /**  
+     * PreOrder traverse the tree     
+     *     
+     * @param currentRoot the root of the current binary search tree  
+     */    
+    private void preOrderTraverse(Node currentRoot) {  
+        if (currentRoot == null) {  
+            return;  
+        }  
+        System.out.print(currentRoot.getData() + " ");  
+        preOrderTraverse(currentRoot.getLeftChild());  
+        preOrderTraverse(currentRoot.getRightChild());  
+    }  
+  
+    /**  
+     * Inorder traverse the tree     
+     */    
+    public void inOrderTraverse() {  
+        inOrderTraverse(root);  
+    }  
+  
+    /**  
+     * InOrder traverse the binary search tree     
+     *     
+     * @param currentRoot the root of the current binary search tree  
+     */    
+    private void inOrderTraverse(Node currentRoot) {  
+        if (currentRoot == null) {  
+            return;  
+        }  
+        inOrderTraverse(currentRoot.getLeftChild());  
+        System.out.print(currentRoot.getData() + " ");  
+        inOrderTraverse(currentRoot.getRightChild());  
+    }  
+  
+    /**  
+     * Postorder traverse the tree     
+     */    
+    public void postOrderTraverse() {  
+        postOrderTraverse(root);  
+    }  
+  
+    /**  
+     * PostOrder traverse the binary search tree     
+     *     
+     * @param currentRoot the root of the current binary search tree  
+     */    
+    private void postOrderTraverse(Node currentRoot) {  
+        if (currentRoot == null) {  
+            return;  
+        }  
+        postOrderTraverse(currentRoot.getLeftChild());  
+        postOrderTraverse(currentRoot.getRightChild());  
+        System.out.print(currentRoot.getData() + " ");  
+    }  
+  
+    /**  
+     * check if the binary search tree is empty     
+     *     
+     * @return if the binary search tree is empty, return true, otherwise return false  
+     */    
+    public boolean isEmpty() {  
+        return root == null;  
+    }  
+  
+    /**  
+     * Judge if the Node is a leaf     
+     *     
+     * @param n the Node  
+     * @return if the Node is leaf, return true, otherwise return false  
+     */    
+    private boolean isLeaf(Node n) {  
+        Node left = n.getLeftChild();  
+        Node right = n.getRightChild();  
+        return (left == null) && (right == null);  
+    }  
+}
+```
+
