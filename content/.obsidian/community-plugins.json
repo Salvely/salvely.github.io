@@ -3,9 +3,9 @@
   "obsidian-git",
   "obsidian-tasks-plugin",
   "tasks-calendar-wrapper",
-  "obsidian-timelines",
   "calendar",
-  "obsidian-reminder-plugin",
-  "simple-code-formatter",
-  "update-relative-links"
+  "update-relative-links",
+  "dataview",
+  "obsidian-toggl-integration",
+  "quickadd"
 ]
