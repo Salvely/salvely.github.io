@@ -327,7 +327,7 @@ tw-scrollbar-thin"><span class=line><span class=cl><span class=k>module</span> <
 </span></span><span class=line><span class=cl>    <span class=k>input</span> <span class=n>b</span><span class=p>,</span> 
 </span></span><span class=line><span class=cl>    <span class=k>output</span> <span class=n>out</span> <span class=p>);</span>
 </span></span><span class=line><span class=cl>    <span class=k>assign</span> <span class=n>out</span> <span class=o>=</span> <span class=o>~</span><span class=p>(</span><span class=n>a</span> <span class=o>^</span> <span class=n>b</span><span class=p>);</span>
-</span></span><span class=line><span class=cl><span class=k>endmodule</span></span></span></code></pre></div><h3 id=declaring-wires class=headerLink><a href=#declaring-wires class=header-mark></a>1.7 Declaring Wires</h3><p>有时候电路复杂，我们需要在其中定义其他的<code>wire</code>，定义模式如下：</p><div class="code-block highlight is-closed show-line-numbers tw-group tw-my-2"><div class="tw-flex
+</span></span><span class=line><span class=cl><span class=k>endmodule</span></span></span></code></pre></div><h3 id=declaring-wires class=headerLink><a href=#declaring-wires class=header-mark></a>1.7 Declaring Wires</h3><p>有时候电路复杂，我们需要在其中定义其他的<code>wire</code>，定义模式如下：</p><div class="code-block highlight is-open show-line-numbers tw-group tw-my-2"><div class="tw-flex
 tw-flex-row
 tw-flex-1
 tw-justify-between
@@ -384,7 +384,7 @@ tw-scrollbar-thin"><span class=line><span class=cl><span class=k>module</span> <
 </span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=k>assign</span> <span class=n>not_in</span> <span class=o>=</span> <span class=o>~</span><span class=n>in</span><span class=p>;</span>   <span class=c1>// Assign a value to not_in (create another NOT gate).
 </span></span></span><span class=line><span class=cl><span class=c1></span>
 </span></span><span class=line><span class=cl><span class=k>endmodule</span>   <span class=c1>// End of module &#34;top_module&#34;
-</span></span></span></code></pre></div><p>实现如下电路：</p><ul><li>out = (a & b) | (c & d)</li><li>out_n = ~out</li></ul><p>代码如下：</p><div class="code-block highlight is-closed show-line-numbers tw-group tw-my-2"><div class="tw-flex
+</span></span></span></code></pre></div><p>实现如下电路：</p><ul><li>out = (a & b) | (c & d)</li><li>out_n = ~out</li></ul><p>代码如下：</p><div class="code-block highlight is-open show-line-numbers tw-group tw-my-2"><div class="tw-flex
 tw-flex-row
 tw-flex-1
 tw-justify-between
@@ -445,7 +445,7 @@ tw-scrollbar-thin"><span class=line><span class=cl><span class=no>`default_netty
 </span></span><span class=line><span class=cl>    <span class=k>assign</span> <span class=n>c_and_d</span> <span class=o>=</span> <span class=n>c</span> <span class=o>&amp;</span> <span class=n>d</span><span class=p>;</span>
 </span></span><span class=line><span class=cl>    <span class=k>assign</span> <span class=n>out</span> <span class=o>=</span> <span class=n>a_and_b</span> <span class=o>|</span> <span class=n>c_and_d</span><span class=p>;</span>
 </span></span><span class=line><span class=cl>    <span class=k>assign</span> <span class=n>out_n</span> <span class=o>=</span> <span class=o>~</span><span class=n>out</span><span class=p>;</span>
-</span></span><span class=line><span class=cl><span class=k>endmodule</span></span></span></code></pre></div><h3 id=4758 class=headerLink><a href=#4758 class=header-mark></a>1.8 4758</h3><p>实现7458芯片中的功能，利用上面所学的<code>wire</code>声明。代码如下：</p><div class="code-block highlight is-closed show-line-numbers tw-group tw-my-2"><div class="tw-flex
+</span></span><span class=line><span class=cl><span class=k>endmodule</span></span></span></code></pre></div><h3 id=4758 class=headerLink><a href=#4758 class=header-mark></a>1.8 4758</h3><p>实现7458芯片中的功能，利用上面所学的<code>wire</code>声明。代码如下：</p><div class="code-block highlight is-open show-line-numbers tw-group tw-my-2"><div class="tw-flex
 tw-flex-row
 tw-flex-1
 tw-justify-between
@@ -555,7 +555,7 @@ tw-overflow-y-hidden
 tw-overflow-x-auto
 tw-scrollbar-thin"><span class=line><span class=cl><span class=kt>wire</span> <span class=p>[</span><span class=mh>99</span><span class=o>:</span><span class=mh>0</span><span class=p>]</span> <span class=n>my_vector</span><span class=p>;</span> <span class=c1>// Declare a 100-element vector 
 </span></span></span><span class=line><span class=cl><span class=c1></span><span class=k>assign</span> <span class=n>out</span> <span class=o>=</span> <span class=n>my_vector</span><span class=p>[</span><span class=mh>10</span><span class=p>];</span> <span class=c1>// Part-select one bit out of the vector
-</span></span></span></code></pre></div><p>题目中有一个三位输入<code>vec</code>，输出有4个：</p><ul><li><code>outv</code>：和<code>vec</code>相等，也是三位；</li><li><code>o0</code>：<code>vec</code>的第一位；</li><li><code>o1</code>：<code>vec</code>的第二位；</li><li><code>o2</code>：<code>vec</code>的第三位；</li></ul><p>代码如下：</p><div class="code-block highlight is-closed show-line-numbers tw-group tw-my-2"><div class="tw-flex
+</span></span></span></code></pre></div><p>题目中有一个三位输入<code>vec</code>，输出有4个：</p><ul><li><code>outv</code>：和<code>vec</code>相等，也是三位；</li><li><code>o0</code>：<code>vec</code>的第一位；</li><li><code>o1</code>：<code>vec</code>的第二位；</li><li><code>o2</code>：<code>vec</code>的第三位；</li></ul><p>代码如下：</p><div class="code-block highlight is-open show-line-numbers tw-group tw-my-2"><div class="tw-flex
 tw-flex-row
 tw-flex-1
 tw-justify-between
@@ -872,7 +872,7 @@ tw-scrollbar-thin"><span class=line><span class=cl><span class=k>module</span> <
 </span></span><span class=line><span class=cl>    <span class=k>assign</span> <span class=n>out</span><span class=p>[</span><span class=mh>23</span><span class=o>:</span><span class=mh>16</span><span class=p>]</span> <span class=o>=</span> <span class=n>in</span><span class=p>[</span><span class=mh>15</span><span class=o>:</span><span class=mh>8</span><span class=p>];</span>
 </span></span><span class=line><span class=cl>    <span class=k>assign</span> <span class=n>out</span><span class=p>[</span><span class=mh>15</span><span class=o>:</span><span class=mh>8</span><span class=p>]</span> <span class=o>=</span> <span class=n>in</span><span class=p>[</span><span class=mh>23</span><span class=o>:</span><span class=mh>16</span><span class=p>];</span>
 </span></span><span class=line><span class=cl>    <span class=k>assign</span> <span class=n>out</span><span class=p>[</span><span class=mh>7</span><span class=o>:</span><span class=mh>0</span><span class=p>]</span> <span class=o>=</span> <span class=n>in</span><span class=p>[</span><span class=mh>31</span><span class=o>:</span><span class=mh>24</span><span class=p>];</span>
-</span></span><span class=line><span class=cl><span class=k>endmodule</span></span></span></code></pre></div><h3 id=bitwise-operators class=headerLink><a href=#bitwise-operators class=header-mark></a>2.4 Bitwise operators</h3><p>输入为2个3位的<code>vector</code>，题目要求输出它们的位或，逻辑或，以及6个位的取反。其中<code>b</code>的取反在高3位，<code>a</code>的取反在低3位。代码如下：</p><div class="code-block highlight is-closed show-line-numbers tw-group tw-my-2"><div class="tw-flex
+</span></span><span class=line><span class=cl><span class=k>endmodule</span></span></span></code></pre></div><h3 id=bitwise-operators class=headerLink><a href=#bitwise-operators class=header-mark></a>2.4 Bitwise operators</h3><p>输入为2个3位的<code>vector</code>，题目要求输出它们的位或，逻辑或，以及6个位的取反。其中<code>b</code>的取反在高3位，<code>a</code>的取反在低3位。代码如下：</p><div class="code-block highlight is-open show-line-numbers tw-group tw-my-2"><div class="tw-flex
 tw-flex-row
 tw-flex-1
 tw-justify-between
@@ -1349,7 +1349,7 @@ tw-scrollbar-thin"><span class=line><span class=cl><span class=k>module</span> <
 </span></span></span><span class=line><span class=cl><span class=c1></span>
 </span></span><span class=line><span class=cl>    <span class=c1>// assign out = { replicate-sign-bit , the-input };
 </span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=k>assign</span> <span class=n>out</span> <span class=o>=</span> <span class=p>{{</span><span class=mh>24</span><span class=p>{</span><span class=n>in</span><span class=p>[</span><span class=mh>7</span><span class=p>]}},</span><span class=n>in</span><span class=p>};</span>
-</span></span><span class=line><span class=cl><span class=k>endmodule</span></span></span></code></pre></div><h3 id=more-replication class=headerLink><a href=#more-replication class=header-mark></a>2.9 More replication</h3><p>有5个一位输入<code>a b c d e</code>，构造两个<code>vector</code>，分别是<code>{{5{a}},{5{b}},{5{c}},{5{d}},{5{e}}}</code>和<code>{{5{a,b,c,d,e}}}</code>，输出它们的同或。代码如下：</p><div class="code-block highlight is-closed show-line-numbers tw-group tw-my-2"><div class="tw-flex
+</span></span><span class=line><span class=cl><span class=k>endmodule</span></span></span></code></pre></div><h3 id=more-replication class=headerLink><a href=#more-replication class=header-mark></a>2.9 More replication</h3><p>有5个一位输入<code>a b c d e</code>，构造两个<code>vector</code>，分别是<code>{{5{a}},{5{b}},{5{c}},{5{d}},{5{e}}}</code>和<code>{{5{a,b,c,d,e}}}</code>，输出它们的同或。代码如下：</p><div class="code-block highlight is-open show-line-numbers tw-group tw-my-2"><div class="tw-flex
 tw-flex-row
 tw-flex-1
 tw-justify-between
@@ -1664,7 +1664,7 @@ tw-scrollbar-thin"><span class=line><span class=cl><span class=k>module</span> <
 </span></span><span class=line><span class=cl>    <span class=n>my_dff</span> <span class=n>dff1</span><span class=p>(</span><span class=n>clk</span><span class=p>,</span><span class=n>d</span><span class=p>,</span><span class=n>q1</span><span class=p>);</span>
 </span></span><span class=line><span class=cl>    <span class=n>my_dff</span> <span class=n>dff2</span><span class=p>(</span><span class=n>clk</span><span class=p>,</span><span class=n>q1</span><span class=p>,</span><span class=n>q2</span><span class=p>);</span>
 </span></span><span class=line><span class=cl>    <span class=n>my_dff</span> <span class=n>dff3</span><span class=p>(</span><span class=n>clk</span><span class=p>,</span><span class=n>q2</span><span class=p>,</span><span class=n>q</span><span class=p>);</span>
-</span></span><span class=line><span class=cl><span class=k>endmodule</span></span></span></code></pre></div><h3 id=modules-and-vectors class=headerLink><a href=#modules-and-vectors class=header-mark></a>3.5 Modules and Vectors</h3><div class="code-block highlight is-closed show-line-numbers tw-group tw-my-2"><div class="tw-flex
+</span></span><span class=line><span class=cl><span class=k>endmodule</span></span></span></code></pre></div><h3 id=modules-and-vectors class=headerLink><a href=#modules-and-vectors class=header-mark></a>3.5 Modules and Vectors</h3><div class="code-block highlight is-open show-line-numbers tw-group tw-my-2"><div class="tw-flex
 tw-flex-row
 tw-flex-1
 tw-justify-between
@@ -1788,7 +1788,7 @@ tw-scrollbar-thin"><span class=line><span class=cl><span class=k>module</span> <
 </span></span><span class=line><span class=cl>    <span class=kt>wire</span> <span class=n>cout</span><span class=p>;</span>
 </span></span><span class=line><span class=cl>    <span class=n>add16</span> <span class=n>adder1</span><span class=p>(</span><span class=n>a</span><span class=p>[</span><span class=mh>15</span><span class=o>:</span><span class=mh>0</span><span class=p>],</span><span class=n>b</span><span class=p>[</span><span class=mh>15</span><span class=o>:</span><span class=mh>0</span><span class=p>],</span><span class=n>sum</span><span class=p>[</span><span class=mh>15</span><span class=o>:</span><span class=mh>0</span><span class=p>],</span><span class=n>cin</span><span class=p>);</span>
 </span></span><span class=line><span class=cl>    <span class=n>add16</span> <span class=n>adder2</span><span class=p>(</span><span class=n>a</span><span class=p>[</span><span class=mh>31</span><span class=o>:</span><span class=mh>16</span><span class=p>],</span><span class=n>b</span><span class=p>[</span><span class=mh>31</span><span class=o>:</span><span class=mh>16</span><span class=p>],</span><span class=n>cin</span><span class=p>,</span><span class=n>sum</span><span class=p>[</span><span class=mh>31</span><span class=o>:</span><span class=mh>16</span><span class=p>],</span><span class=n>cout</span><span class=p>);</span>
-</span></span><span class=line><span class=cl><span class=k>endmodule</span></span></span></code></pre></div><h3 id=module-fadd class=headerLink><a href=#module-fadd class=header-mark></a>3.7 Module fadd</h3><p>实现1位全加器和32位加法器（2个16位加法器级联，已经实现），一位全加器的逻辑表达式如下：</p><ul><li>sum = a ^ b ^ cin</li><li>cout = a&amp;b | a&amp;cin | b&amp;cin</li></ul><p>代码如下：</p><div class="code-block highlight is-closed show-line-numbers tw-group tw-my-2"><div class="tw-flex
+</span></span><span class=line><span class=cl><span class=k>endmodule</span></span></span></code></pre></div><h3 id=module-fadd class=headerLink><a href=#module-fadd class=header-mark></a>3.7 Module fadd</h3><p>实现1位全加器和32位加法器（2个16位加法器级联，已经实现），一位全加器的逻辑表达式如下：</p><ul><li>sum = a ^ b ^ cin</li><li>cout = a&amp;b | a&amp;cin | b&amp;cin</li></ul><p>代码如下：</p><div class="code-block highlight is-open show-line-numbers tw-group tw-my-2"><div class="tw-flex
 tw-flex-row
 tw-flex-1
 tw-justify-between
@@ -1850,7 +1850,7 @@ tw-scrollbar-thin"><span class=line><span class=cl><span class=k>module</span> <
 </span></span><span class=line><span class=cl><span class=c1>// Full adder module here
 </span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=k>assign</span> <span class=n>cout</span> <span class=o>=</span> <span class=n>a</span> <span class=o>&amp;</span> <span class=n>b</span> <span class=o>|</span> <span class=n>a</span> <span class=o>&amp;</span> <span class=n>cin</span> <span class=o>|</span> <span class=n>b</span> <span class=o>&amp;</span> <span class=n>cin</span><span class=p>;</span>
 </span></span><span class=line><span class=cl>    <span class=k>assign</span> <span class=n>sum</span> <span class=o>=</span> <span class=n>a</span> <span class=o>^</span> <span class=n>b</span> <span class=o>^</span> <span class=n>cin</span><span class=p>;</span>
-</span></span><span class=line><span class=cl><span class=k>endmodule</span></span></span></code></pre></div><h3 id=carry-select-adder class=headerLink><a href=#carry-select-adder class=header-mark></a>3.8 Carry-select adder</h3><p>前面的加法器，需要等到低16位计算完成，得出carry后才能计算高16位，效率太低了。现在开发新的加法器，先把高16位有carry和没carry的情况都计算出来，然后根据低16位是否有carry，选择一个输出。代码如下：</p><div class="code-block highlight is-closed show-line-numbers tw-group tw-my-2"><div class="tw-flex
+</span></span><span class=line><span class=cl><span class=k>endmodule</span></span></span></code></pre></div><h3 id=carry-select-adder class=headerLink><a href=#carry-select-adder class=header-mark></a>3.8 Carry-select adder</h3><p>前面的加法器，需要等到低16位计算完成，得出carry后才能计算高16位，效率太低了。现在开发新的加法器，先把高16位有carry和没carry的情况都计算出来，然后根据低16位是否有carry，选择一个输出。代码如下：</p><div class="code-block highlight is-open show-line-numbers tw-group tw-my-2"><div class="tw-flex
 tw-flex-row
 tw-flex-1
 tw-justify-between
@@ -1915,7 +1915,7 @@ tw-scrollbar-thin"><span class=line><span class=cl><span class=k>module</span> <
 </span></span><span class=line><span class=cl>            <span class=mh>1</span><span class=mb>&#39;b0</span><span class=o>:</span> <span class=n>sum</span><span class=p>[</span><span class=mh>31</span><span class=o>:</span><span class=mh>16</span><span class=p>]</span> <span class=o>&lt;=</span> <span class=n>out1</span><span class=p>;</span>
 </span></span><span class=line><span class=cl>            <span class=mh>1</span><span class=mb>&#39;b1</span><span class=o>:</span> <span class=n>sum</span><span class=p>[</span><span class=mh>31</span><span class=o>:</span><span class=mh>16</span><span class=p>]</span> <span class=o>&lt;=</span> <span class=n>out2</span><span class=p>;</span>
 </span></span><span class=line><span class=cl>        <span class=k>endcase</span>
-</span></span><span class=line><span class=cl><span class=k>endmodule</span></span></span></code></pre></div><h3 id=adder-subtractor class=headerLink><a href=#adder-subtractor class=header-mark></a>3.9 Adder-subtractor</h3><p>对加法器进行变种，实现减法器。代码如下：</p><div class="code-block highlight is-closed show-line-numbers tw-group tw-my-2"><div class="tw-flex
+</span></span><span class=line><span class=cl><span class=k>endmodule</span></span></span></code></pre></div><h3 id=adder-subtractor class=headerLink><a href=#adder-subtractor class=header-mark></a>3.9 Adder-subtractor</h3><p>对加法器进行变种，实现减法器。代码如下：</p><div class="code-block highlight is-open show-line-numbers tw-group tw-my-2"><div class="tw-flex
 tw-flex-row
 tw-flex-1
 tw-justify-between
