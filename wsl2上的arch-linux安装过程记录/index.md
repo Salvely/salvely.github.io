@@ -78,7 +78,7 @@ PS C:\Windows\system32> wsl --install -d archlinux --location D:\Program_Files\V
 
 安装过程中还会弹出来一个欢迎界面：
 
-![](wsl%20welcome.png)
+![](wsl_welcome.png)
 
 安装完成后，输入`wsl -d archlinux`运行`archlinux`，powershell中的运行效果如下：
 
