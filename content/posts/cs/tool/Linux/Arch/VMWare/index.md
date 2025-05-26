@@ -1,13 +1,13 @@
 ---
 title: VMWare下的Arch Linux安装过程记录
 categories:
-  - 工具
+  - Linux
 tags:
   - Arch
   - Linux
   - 安装
   - 标签
-lastmod: 2025-05-21T16:34:28+08:00
+lastmod: 2025-05-23T18:04:32+08:00
 authors:
   - Salvely
 seriesNavigation: true

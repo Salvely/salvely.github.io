@@ -1,6 +1,6 @@
 ---
 date: 2025-05-21T11:39:37+08:00
-lastmod: 2025-05-21T16:58:21+08:00
+lastmod: 2025-05-23T18:07:16+08:00
 authors:
   - Salvely
 title: WSL2上的Arch Linux安装过程记录
@@ -10,7 +10,7 @@ tags:
   - 配置
   - WSL2
 categories:
-  - 工具
+  - Linux
 seriesNavigation: true
 enableLastMod: true
 enableWordCount: true
@@ -99,7 +99,7 @@ PS C:\Windows\system32> wsl --install -d archlinux --location D:\Program_Files\V
 
 安装过程中还会弹出来一个欢迎界面：
 
-![](wsl%20welcome.png)
+![](wsl_welcome.png)
 
 安装完成后，输入`wsl -d archlinux`运行`archlinux`，powershell中的运行效果如下：
 
