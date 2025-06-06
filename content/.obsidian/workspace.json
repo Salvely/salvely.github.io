@@ -4,22 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "a925ae976eecaec2",
+        "id": "a9a359fd742846ab",
         "type": "tabs",
-        "dimension": 47.92225201072386,
         "children": [
           {
-            "id": "24f91954a864be40",
+            "id": "d16873edf46bf051",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/journal/2025年5月第四周记录.md",
+                "file": "posts/cs/tool/Linux/Arch/Arch Linux探索记录.md",
                 "mode": "source",
                 "source": false
               },
+              "pinned": true,
               "icon": "lucide-file",
-              "title": "2025年5月第四周记录"
+              "title": "Arch Linux探索记录"
             }
           }
         ]
@@ -27,7 +28,6 @@
       {
         "id": "2e647e8e5de14f9b",
         "type": "tabs",
-        "dimension": 52.07774798927613,
         "children": [
           {
             "id": "f802e865d9552502",
@@ -36,7 +36,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/cs/计算机公开课刷课列表.md",
+                "file": "posts/cs/任务追踪/计算机公开课刷课列表.md",
                 "mode": "source",
                 "source": false
               },
@@ -52,7 +52,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/cs/计算机科学之路.md",
+                "file": "posts/cs/任务追踪/计算机科学之路.md",
                 "mode": "source",
                 "source": false
               },
@@ -109,7 +109,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "传火",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -134,8 +134,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "b6e242f1b1b8a9b6",
@@ -257,10 +256,23 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "24f91954a864be40",
+  "active": "f802e865d9552502",
   "lastOpenFiles": [
-    "posts/template/journal.md",
+    "posts/cs/任务追踪/成就列表.md",
+    "posts/cs/tool/Linux/Arch/Arch Linux探索记录.md",
+    "posts/cs/任务追踪/计算机科学之路.md",
+    "posts/cs/任务追踪/计算机学习记录.md",
+    "posts/cs/任务追踪/Linux学习记录.md",
+    "posts/cs/任务追踪/计算机公开课刷课列表.md",
+    "posts/journal/2025年6月第一周记录.md",
+    "posts/template/task_template.md",
+    "posts/cs/任务追踪/Linux基础学习任务追踪.md",
+    "task/任务列表.md",
+    "posts/cs/任务追踪",
+    "posts/cs/计算机学习记录.md",
+    "posts/others/社会问题解决.md",
     "posts/journal/2025年5月第四周记录.md",
+    "posts/template/journal.md",
     "posts/journal/2025年3月第三周记录.md",
     "posts/journal/2025年3月第四周记录.md",
     "posts/journal/2025年4月第二周记录.md",
@@ -273,18 +285,6 @@
     "posts/journal/上交软院复试记.md",
     "posts/journal/一次彻底失败的选导师经历记录.md",
     "posts/journal/抑郁康复记录.md",
-    "posts/journal/录取后的迷茫.md",
-    "posts/journal/立志.md",
-    "posts/cs/tool/Linux/Arch/Arch Linux探索记录.md",
-    "posts/journal/底层环境突围实录.md",
-    "posts/cs/计算机公开课刷课列表.md",
-    "task/任务列表.md",
-    "posts/cs/计算机科学之路.md",
-    "posts/others/社会问题解决.md",
-    "posts/others/我的抽象人生.md",
-    "posts/others/为人民服务.md",
-    "posts/others/旅游出差必备物品列表.md",
-    "posts/others/（4246）武汉市江汉区教育局招生考试办公室报考点2025年研究生考试报名温馨提示.md",
     "posts/cs/tool/Linux",
     "posts/cs/tool/Linux/Arch/WSL2",
     "posts/cs/tool/Linux/Arch/VMWare/upload.png",
@@ -303,7 +303,6 @@
     "posts/cs/数据结构/AVL树实现/2个结点.drawio",
     "posts/cs/数据结构/AVL树实现/2个结点 1.drawio",
     "posts/apply/战略控制塔",
-    "posts/apply/心理",
-    "posts/apply/科研"
+    "posts/apply/心理"
   ]
 }

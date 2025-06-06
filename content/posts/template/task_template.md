@@ -1,9 +1,10 @@
 ---
 authors:
   - Salvely
-title: 2025年5月第四周记录
+title: task_template
+draft: true
 series:
-  - 记录
+  - 任务追踪
 seriesNavigation: true
 enableLastMod: true
 enableWordCount: true
@@ -13,9 +14,8 @@ toc:
   auto: false
 code:
   maxShownlines: 100
-date: 2025-05-26
-lastmod: 2025-05-26T13:42:57+08:00
-draft: true
+date: 2025-06-06T16:48:10+08:00
+lastmod: 2025-06-06T16:48:55+08:00
 ---
 
 <!--more-->
