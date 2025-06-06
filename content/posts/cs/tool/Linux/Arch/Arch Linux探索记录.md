@@ -3,7 +3,7 @@ authors:
   - Salvely
 title: Arch Linux探索记录
 subtitle: 模板文章的副标题
-draft: true
+draft: false
 description: 文章描述
 tags:
   - 标签
