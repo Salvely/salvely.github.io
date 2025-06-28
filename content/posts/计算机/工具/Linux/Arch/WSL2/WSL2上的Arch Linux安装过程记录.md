@@ -1,6 +1,6 @@
 ---
 date: 2025-05-21T11:39:37+08:00
-lastmod: 2025-05-23T18:07:16+08:00
+lastmod: 2025-06-17T15:05:29+08:00
 authors:
   - Salvely
 title: WSL2上的Arch Linux安装过程记录
@@ -20,6 +20,8 @@ toc:
   auto: false
 code:
   maxShownlines: 100
+series:
+  - Arch 探索
 ---
 
 <!--more-->

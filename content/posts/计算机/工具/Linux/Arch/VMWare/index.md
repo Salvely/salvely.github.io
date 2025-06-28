@@ -6,8 +6,7 @@ tags:
   - Arch
   - Linux
   - 安装
-  - 标签
-lastmod: 2025-05-23T18:04:32+08:00
+lastmod: 2025-06-17T15:05:42+08:00
 authors:
   - Salvely
 seriesNavigation: true
@@ -20,6 +19,8 @@ toc:
 code:
   maxShownlines: 100
 date: 2023-10-12T13:50:44+08:00
+series:
+  - Arch 探索
 ---
 
 <!--more-->
