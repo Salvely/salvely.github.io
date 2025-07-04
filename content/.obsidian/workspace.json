@@ -11,10 +11,14 @@
             "id": "2f37861b794ed492",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "about/index.zh-cn.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "index.zh-cn"
             }
           }
         ]
@@ -195,8 +199,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b470808c28ac2c0d",
+  "active": "2f37861b794ed492",
   "lastOpenFiles": [
+    "posts/journal/2025-07-01.md",
+    "posts/journal",
     "posts/我与超算的 2021——一位退役队员的回忆.md",
     "template/template.md.md",
     "template/oi.md",
@@ -222,7 +228,6 @@
     "posts/杂谈/我的抽象人生.md",
     "posts/journal/年终错误总结报告.md",
     "posts/journal/上交软院复试记.md",
-    "posts/journal/一次彻底失败的选导师经历记录.md",
     "task/任务追踪",
     "posts/计算机/工具/Linux",
     "posts/计算机/工具/Linux/Arch/WSL2",
@@ -241,7 +246,6 @@
     "posts/计算机/数据结构/AVL树实现/2个结点",
     "posts/cs/数据结构/AVL树实现/2个结点.drawio",
     "posts/cs/数据结构/AVL树实现/2个结点 1.drawio",
-    "posts/apply/战略控制塔",
-    "posts/apply/心理"
+    "posts/apply/战略控制塔"
   ]
 }
