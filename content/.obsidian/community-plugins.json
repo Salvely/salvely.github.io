@@ -1,11 +1,6 @@
 [
   "obsidian-linter",
   "obsidian-git",
-  "tasks-calendar-wrapper",
-  "calendar",
   "update-relative-links",
-  "dataview",
-  "obsidian-toggl-integration",
-  "quickadd",
   "obsidian-tasks-plugin"
 ]
