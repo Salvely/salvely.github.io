@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3a6e5096abe72bb4",
+        "id": "b4170f031cc683d3",
         "type": "tabs",
         "children": [
           {
-            "id": "1867f9ff7d08e450",
+            "id": "bd85bed8c556e495",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -169,10 +169,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1867f9ff7d08e450",
+  "active": "bd85bed8c556e495",
   "lastOpenFiles": [
-    "posts/工具/草稿.md",
     "posts/工具/vimtutor 总结.md",
+    "posts/工具/草稿.md",
     "posts/工具",
     "about/index.zh-cn.md",
     "posts/journal/2025年7月第二周周报.md",
