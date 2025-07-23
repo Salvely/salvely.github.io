@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/心理/记录我令人难受的父母.md",
+                "file": "posts/工具/vimtutor 总结.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "记录我令人难受的父母"
+              "title": "vimtutor 总结"
             }
           }
         ]
@@ -169,10 +169,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dc033c477a139cf5",
+  "active": "b470808c28ac2c0d",
   "lastOpenFiles": [
-    "posts/工具/vimtutor 总结.md",
+    "posts/tcs/二进制加法图灵机的C语言实现.md",
+    "posts/tcs",
     "posts/心理/记录我令人难受的父母.md",
+    "posts/工具/vimtutor 总结.md",
     "posts/心理",
     "posts/进度追踪/数学进度追踪.md",
     "posts/计算机/计算机体系结构/HDLBits/Verilog Language.md",
@@ -196,7 +198,6 @@
     "posts/计算机/系统入门/15-213/CSAPP 阅读笔记/Ch4/seq.drawio",
     "posts/计算机/系统入门/15-213/CSAPP 阅读笔记/Ch4/pipe-.drawio",
     "posts/计算机/系统入门/15-213/CSAPP 阅读笔记/Ch4/pipe+.drawio",
-    "posts/计算机/系统入门/15-213/CSAPP 阅读笔记/Ch4/mem.drawio",
     "posts/计算机/系统入门/15-213/CSAPP 阅读笔记/Ch4/index.md",
     "posts/计算机/系统入门/15-213/CSAPP 阅读笔记/Ch2/index.md",
     "posts/计算机/系统入门/15-213/15-213 Lab/Bomb lab 实验总结/index.md",
