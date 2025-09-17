@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "6f7ee15c76f7e524",
+        "id": "5d09f4a6354d3bf0",
         "type": "tabs",
         "children": [
           {
-            "id": "80525e6d2f2707d2",
+            "id": "1d29b765a1d4efae",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "posts/笔记/数电/HDLBits 题解记录.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "HDLBits 题解记录"
             }
           }
         ]
@@ -165,43 +169,45 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "80525e6d2f2707d2",
+  "active": "1d29b765a1d4efae",
   "lastOpenFiles": [
-    "posts/工具/Linux/Arch/WSL2 下的 Arch Linux 探索记录.md",
-    "posts/工具/Linux/Arch/Arch Linux下的代理配置.md",
-    "posts/工具/Linux/Arch/再探Pacman和包管理.md",
-    "posts/工具/Linux/Arch/再探用户管理.md",
+    "posts/笔记/tcs/二进制加法图灵机的C语言实现.md",
+    "posts/笔记/数电/HDLBits 题解记录.md",
+    "posts/笔记/数电",
+    "posts/笔记",
     "posts/随记/身体是革命的本钱！.md",
-    "posts/工具/Linux/Arch/WSL2/wsl_welcome.png",
-    "posts/工具/Linux/Arch/WSL2/WSL2上的Arch Linux安装过程记录.md",
-    "posts/工具/Linux/Arch/VMWare/upload.png",
-    "posts/工具/Linux/Arch/VMWare/tsinghua_mirror.png",
-    "posts/工具/Linux/Arch/VMWare/success.png",
-    "posts/工具/Linux/Arch/VMWare/set-timezone.png",
-    "posts/工具/Linux/Arch/VMWare/partition.png",
-    "posts/工具/Linux/Arch/VMWare/network_error.png",
-    "posts/工具/Linux/Arch/VMWare/network.png",
-    "posts/工具/Linux/Arch/VMWare/mirrors.png",
-    "posts/工具/Linux/Arch/VMWare/keymaps.png",
-    "posts/工具/Linux/Arch/VMWare/index.md",
-    "posts/工具/Linux/Arch/WSL2",
-    "posts/工具/Linux/Arch/VMWare",
-    "posts/工具/Linux/Arch",
-    "posts/工具/Linux",
-    "posts/tcs/二进制加法图灵机的C语言实现.md",
+    "posts/数电",
+    "posts/随记/冷静情绪各方法效果测试.md",
+    "posts/笔记/工具/Linux/Arch/WSL2 下的 Arch Linux 探索记录.md",
+    "posts/笔记/工具/Linux/Arch/Arch Linux下的代理配置.md",
+    "posts/笔记/工具/Linux/Arch/再探Pacman和包管理.md",
+    "posts/笔记/工具/Linux/Arch/再探用户管理.md",
+    "posts/笔记/工具/Linux/Arch/WSL2/wsl_welcome.png",
+    "posts/笔记/工具/Linux/Arch/WSL2/WSL2上的Arch Linux安装过程记录.md",
+    "posts/笔记/工具/Linux/Arch/VMWare/upload.png",
+    "posts/笔记/工具/Linux/Arch/VMWare/tsinghua_mirror.png",
+    "posts/笔记/工具/Linux/Arch/VMWare/success.png",
+    "posts/笔记/工具/Linux/Arch/VMWare/set-timezone.png",
+    "posts/笔记/工具/Linux/Arch/VMWare/partition.png",
+    "posts/笔记/工具/Linux/Arch/VMWare/network_error.png",
+    "posts/笔记/工具/Linux/Arch/VMWare/network.png",
+    "posts/笔记/工具/Linux/Arch/VMWare/mirrors.png",
+    "posts/笔记/工具/Linux/Arch/VMWare/keymaps.png",
+    "posts/笔记/工具/Linux/Arch/VMWare/index.md",
+    "posts/笔记/工具/Linux/Arch/WSL2",
+    "posts/笔记/工具/Linux/Arch/VMWare",
+    "posts/笔记/工具/Linux/Arch",
+    "posts/笔记/工具/Linux",
     "template/journal.md",
     "posts/随记",
-    "posts/工具/vimtutor 总结.md",
-    "posts/tcs",
+    "posts/笔记/工具/vimtutor 总结.md",
+    "posts/笔记/tcs",
     "posts/心理/记录我令人难受的父母.md",
     "posts/心理",
     "posts/进度追踪/数学进度追踪.md",
     "posts/计算机/计算机体系结构/HDLBits/Verilog Language.md",
     "posts/计算机/计算机体系结构/HDLBits/Getting Started.md",
     "posts/计算机/计算机体系结构/DDCA阅读笔记/index.md",
-    "posts/计算机/计算机体系结构/HDLBits",
-    "posts/计算机/计算机体系结构/DDCA阅读笔记",
-    "posts/计算机/计算机体系结构",
     "posts/计算机/系统入门/15-213/CSAPP 阅读笔记/Ch4/index.md",
     "posts/计算机/系统入门/15-213/CSAPP 阅读笔记/Ch2/index.md",
     "posts/计算机/系统入门/15-213/15-213 Lab/Bomb lab 实验总结/index.md",
@@ -210,7 +216,6 @@
     "posts/计算机/系统入门/15-213/CSAPP 阅读笔记/Ch6.md",
     "posts/计算机/系统入门/15-213/CSAPP 阅读笔记/Ch5.md",
     "posts/计算机/系统入门/15-213/CSAPP 阅读笔记/Ch3.md",
-    "posts/计算机/系统入门/15-213/CSAPP 阅读笔记/Ch1.md",
-    "posts/计算机/系统入门/15-213/15-213 Lab/Data lab 实验总结.md"
+    "posts/计算机/系统入门/15-213/CSAPP 阅读笔记/Ch1.md"
   ]
 }
