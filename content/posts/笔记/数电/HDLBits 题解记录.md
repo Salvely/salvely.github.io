@@ -17,7 +17,7 @@ toc:
 code:
   maxShownlines: 100
 date: 2025-01-24T23:01:29+08:00
-lastmod: 2025-09-17T11:50:53+08:00
+lastmod: 2025-09-17T12:22:06+08:00
 ---
 
 <!--more-->
@@ -1559,3 +1559,58 @@ module top_module(
     end
 endmodule
 ```
+
+## 参考资料
+
+- [有限状态机 - 数字电路教程](https://vlab.ustc.edu.cn/guide/doc_finite_state_machine.html)
+- [Logisim基本使用 蓝灰红线出现原因_logisim蓝色线怎么变成绿色-CSDN博客](https://blog.csdn.net/a_vegetable/article/details/108920553)
+- [logisim输出值为E是什么意思啊?求告知。_测试-CSDN问答](https://ask.csdn.net/questions/1084068)
+- [数字电路教程](https://vlab.ustc.edu.cn/guide/index.html)
+- [HDLbits学习记录 uwaterloo cs450 - 知乎](https://zhuanlan.zhihu.com/p/482698486)
+- [Verilog Tutorial（6）如何编写一个基础的Testbench_verilog testbench怎么写-CSDN博客](https://blog.csdn.net/wuzhikaidetb/article/details/129396009)
+- [6.6 Verilog 仿真激励 | 菜鸟教程](https://www.runoob.com/w3cnote/verilog-testbench.html)
+- [TestBench 编写及仿真 - 数字电路教程](https://vlab.ustc.edu.cn/guide/doc_testbench.html)
+- [【数字IC设计】Testbench 编写基础 - Hypoxanthine's Blog | 贺云翔的博客](https://hypoxanthine.cn/2024/03/08/%E6%95%B0%E5%AD%97%E7%94%B5%E8%B7%AF%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E8%B7%B5/Testbench%E7%BC%96%E5%86%99%E5%9F%BA%E7%A1%80/)
+- [TestBench基本写法与语法详解 - 知乎](https://zhuanlan.zhihu.com/p/641763200)
+- [6.6 Verilog 仿真激励 | 菜鸟教程](https://www.runoob.com/w3cnote/verilog-testbench.html)
+- [Verilog测试（仿真）文件TestBench如何编写_verilog测试文件怎么写-CSDN博客](https://blog.csdn.net/weixin_42470069/article/details/107602611)
+- [Generate custom waveform in verilog - EDA Playground](https://www.edaplayground.com/x/4MiS)
+- [Verilog Clock Generator - Alphom Silicon](https://elearn.alphomsilicon.com/verilog-clock-generator/)
+- [仿真时间`timescale 1ns/1ps 的定义 延迟赋值与阻塞赋值非阻塞赋值的一个小问题-CSDN博客](https://blog.csdn.net/weixin_44884357/article/details/107891858)
+- [Verilog Clock Generator](https://www.chipverify.com/verilog/verilog-clock-generator)
+- [How to set all the bits to be 0 in a two-dimensional array in Verilog? - Stack Overflow](https://stackoverflow.com/questions/20356857/how-to-set-all-the-bits-to-be-0-in-a-two-dimensional-array-in-verilog)
+- [Verilog初级教程（11）Verilog中的initial块_verilog initial-CSDN博客](https://blog.csdn.net/Reborn_Lee/article/details/107307958)
+- [Verilog Clock Generator - Alphom Silicon](https://elearn.alphomsilicon.com/verilog-clock-generator/)
+- [Verilog Clock Generator](https://www.chipverify.com/verilog/verilog-clock-generator)
+- [Verilog 变量初始化_tlc16c550c初始化verilog-CSDN博客](https://blog.csdn.net/luoai_2666/article/details/116020433)
+- [13.Verilog中的时钟(clk)的产生方法_verilog 时钟-CSDN博客](https://blog.csdn.net/weixin_52002922/article/details/131906642)
+- [HDLbits Lemmings4_falling for 20 cycles is survivable:-CSDN博客](https://blog.csdn.net/gonnabojiang/article/details/118973562)
+- [systemverilog编程陷阱——自加与赋值冲突_system verilog里的++是先赋值还是先加一-CSDN博客](https://blog.csdn.net/kevindas/article/details/122799108)
+- [简单时序逻辑电路 - 数字电路教程](https://vlab.ustc.edu.cn/guide/doc_simple_timing.html)
+- [复杂时序逻辑电路 - 数字电路教程](https://vlab.ustc.edu.cn/guide/doc_complex_timing.html)
+- [7.1 Verilog 除法器设计 | 菜鸟教程](https://www.runoob.com/w3cnote/verilog-dividend.html)
+- [verilog中的除法运算/_verilog 除法-CSDN博客](https://blog.csdn.net/weixin_43369700/article/details/115328322)
+- [Linear-feedback shift register - Wikipedia](https://en.wikipedia.org/wiki/Linear-feedback_shift_register)
+- [【HDLBits刷题笔记】10 Counters - Magnolia666 - 博客园](https://www.cnblogs.com/magnolia666/p/16842297.html)
+- [HDL-Bits 刷题记录 02-阿里云开发者社区](https://developer.aliyun.com/article/1007932)
+- [Verilog之非阻塞赋值（三）—— 赋值延后一个周期_verilog延迟一个周期-CSDN博客](https://blog.csdn.net/huigeyu/article/details/100105428)
+- [Verilog中的#延时_verilog 一定要加延迟吗 #-CSDN博客](https://blog.csdn.net/m0_52090088/article/details/126077968)
+- [为什么时序逻辑电路会落后一拍？ | FPGA 开发圈](https://fpga.eetrend.com/blog/2024/100578177.html)
+- [简单时序逻辑电路 - 数字电路教程](https://vlab.ustc.edu.cn/guide/doc_simple_timing.html)
+- [Verilog中使用连续@posedge会是什么现象，是否可综合_verilog 可以有2个posedge吗-CSDN博客](https://blog.csdn.net/Mr_liu_666/article/details/102955420)
+- [【HDLBits刷题】Exams/ece241 2013 q7._改写下述jk触发器程序,用case语句实现相同功能。请将改写之后的完整程序写出-CSDN博客](https://blog.csdn.net/qq_22774445/article/details/125609086)
+- [FPGA错误集锦(三):[No output dependent on input pin “clk“]-CSDN博客](https://blog.csdn.net/qq_36229876/article/details/108189748)
+- [TestBench 编写及仿真 - 数字电路教程](https://vlab.ustc.edu.cn/guide/doc_testbench.html)
+- [记录一下verilog重复例化的两种方式_verilog 多次例化module-CSDN博客](https://blog.csdn.net/I_learn_code/article/details/130143534)
+- [【HDLBits刷题】Dff8r-CSDN博客](https://blog.csdn.net/qq_22774445/article/details/124333643)
+- [HDLBits - Circuits / Sequential Logic / Latches and Flip-Flops | by yfwang | Medium](https://medium.com/@joe82512/hdlbits-circuits-e52ba16be57d#8b8e)
+- [Verilog使用always块实现时序逻辑 | FPGA 开发圈](https://fpga.eetrend.com/blog/2023/100569225.html)
+- [verilog-doc/HDLBits_doc/verilog.md at master · Yvan-xy/verilog-doc](https://github.com/Yvan-xy/verilog-doc/blob/master/HDLBits_doc/verilog.md)
+- [【HDLBits刷题】Adder100.-CSDN博客](https://blog.csdn.net/qq_22774445/article/details/124264112)
+- [Verilog实现加法运算：从半加器到BCD码加法器-CSDN博客](https://blog.csdn.net/qq_45191342/article/details/124050262)
+- [64，Verilog-2005标准篇：行为模型（behavioral model）简介_数字behavior model-CSDN博客](https://blog.csdn.net/FPGA_LOVE/article/details/140745992)
+- [Verilog 语法 - 数字电路教程](https://vlab.ustc.edu.cn/guide/doc_verilog.html#:~:text=Verilog%20HDL%20%E6%98%AF%E4%B8%80%E7%A7%8D,%E6%89%80%E5%AE%8C%E6%88%90%E7%9A%84%E9%80%BB%E8%BE%91%E5%8A%9F%E8%83%BD%E3%80%82)
+- [行為層次 Behavior Level | Verilog HDL 教學講義](https://hom-wang.gitbooks.io/verilog-hdl/content/Chapter_05.html)
+- [Verilog Behavioral Modeling Part-I](https://www.asic-world.com/verilog/vbehave1.html)
+- [Behavioral Model (Verilog)](https://engineering.jhu.edu/csms/teaching/manual-21/)
+- [【HDLBits刷题笔记】14 Building Larger Circuits - Magnolia666 - 博客园](https://www.cnblogs.com/magnolia666/p/16865545.html)
